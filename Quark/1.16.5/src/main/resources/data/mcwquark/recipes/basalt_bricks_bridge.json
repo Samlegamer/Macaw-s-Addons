@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "stone_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "quark:basalt_bricks_wall"
+        },
+        
+        "W":
+        {
+            "item": "quark:basalt_bricks_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:basalt_bricks_bridge",
+        "count": 4
+    }
+}
