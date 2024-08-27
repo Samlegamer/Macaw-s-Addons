@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "grass_topped",
+    
+    "pattern":
+    [
+		"BGB",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:smooth_sandstone"
+        },    
+        
+		"G":
+        {
+            "item": "minecraft:dirt"
+        }, 
+        
+        "B":
+        {
+            "item": "quark:sandstone_bricks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:sandstone_bricks_grass_topped_wall",
+        "count": 6
+    }
+}
+
+

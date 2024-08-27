@@ -23,11 +23,11 @@ displayName="${mod_name}" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
-displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
+displayURL="https://curseforge.com/minecraft/mc-mods/macaws-quark" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="examplemod.png" #optional
+logoFile="logo.gif" #optional
 # A text field displayed in the mod UI
-credits="" #optional
+credits="sketch_macaw" #optional
 # A text field displayed in the mod UI
 authors="${mod_authors}" #optional
 
@@ -54,4 +54,25 @@ mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
 versionRange="${minecraft_version_range}"
 ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="quark"
+mandatory=true
+versionRange="NONE"
+ordering="BEFORE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="autoreglib"
+mandatory=true
+versionRange="NONE"
+ordering="BEFORE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="addonslib"
+mandatory=true
+versionRange="NONE"
+ordering="BEFORE"
 side="BOTH"

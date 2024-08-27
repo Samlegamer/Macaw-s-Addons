@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "grass_topped",
+    
+    "pattern":
+    [
+		"BGB",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "quark:biotite_block"
+        },    
+        
+		"G":
+        {
+            "item": "minecraft:dirt"
+        }, 
+        
+        "B":
+        {
+            "item": "quark:biotite_bricks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:biotite_bricks_grass_topped_wall",
+        "count": 6
+    }
+}
+
+
