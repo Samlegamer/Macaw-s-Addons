@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomesoplenty:stripped_cherry_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "biomesoplenty:cherry_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:stripped_cherry_desk",
+        "count": 2
+    }
+}
+
+

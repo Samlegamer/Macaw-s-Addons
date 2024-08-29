@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "pyramid",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "biomesoplenty:umbran_log"
+        },
+		
+		"C":
+        {
+            "item": "biomesoplenty:umbran_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:umbran_pyramid_gate",
+        "count": 1
+    }
+}
+
+

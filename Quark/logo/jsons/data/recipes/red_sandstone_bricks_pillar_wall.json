@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "pillarwall",
+    
+    "pattern":
+    [
+		"AAA",
+		"B B"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "quark:smooth_red_sandstone_bricks"
+        },    
+        
+        "B":
+        {
+            "item": "quark:red_sandstone_bricks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:red_sandstone_bricks_pillar_wall",
+        "count": 5
+    }
+}
+
+

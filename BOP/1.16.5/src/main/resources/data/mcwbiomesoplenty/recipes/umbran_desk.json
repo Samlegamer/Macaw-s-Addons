@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomesoplenty:umbran_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "biomesoplenty:umbran_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:umbran_desk",
+        "count": 2
+    }
+}
+
+

@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "cupboard_counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomesoplenty:jacaranda_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwbiomesoplenty:jacaranda_wardrobe"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:jacaranda_cupboard_counter",
+        "count": 1
+    }
+}
+
+

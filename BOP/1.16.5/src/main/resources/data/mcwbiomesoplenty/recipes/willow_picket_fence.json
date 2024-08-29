@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "biomesoplenty:willow_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "biomesoplenty:willow_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:willow_picket_fence",
+        "count": 3
+    }
+}
+
+
