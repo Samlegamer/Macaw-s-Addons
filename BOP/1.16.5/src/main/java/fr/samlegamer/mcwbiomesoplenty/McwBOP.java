@@ -19,6 +19,7 @@ import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.tab.IconRandom;
+import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 
 @Mod(McwBOP.MODID)
 @Mod.EventBusSubscriber(modid = McwBOP.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -53,10 +54,12 @@ public class McwBOP
     	Roofs.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Fences.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Fences.setRegistrationHedges(LEAVES, block, item, MCWBOP_TAB);
+    	Trapdoors.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(Fences::setupClient);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(Furnitures::setupClient);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(Roofs::setupClient);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(Bridges::setupClient);
+    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Trapdoors::setupClient);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
