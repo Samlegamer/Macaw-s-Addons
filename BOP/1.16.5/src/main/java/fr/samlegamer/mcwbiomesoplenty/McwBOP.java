@@ -5,7 +5,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -22,6 +21,7 @@ import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.roofs.Roofs;
+import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
 
@@ -36,18 +36,15 @@ public class McwBOP
     private static final DeferredRegister<Block> block = Registration.blocks(MODID);
     private static final DeferredRegister<Item> item = Registration.items(MODID);
 
-	protected static final RegistryObject<Item> LOGO_BRIDGES = item.register("logob", ()->new Item(new Item.Properties()));
-	protected static final RegistryObject<Item> LOGO_FURNITURES = item.register("logofurni", ()->new Item(new Item.Properties()));
-	protected static final RegistryObject<Item> LOGO_FENCES = item.register("logof", ()->new Item(new Item.Properties()));
-	protected static final RegistryObject<Item> LOGO_ROOFS = item.register("logor", ()->new Item(new Item.Properties()));
-	
 	public static final ItemGroup MCWBOP_TAB = new ItemGroup(MODID + ".tab") {
 	    @Override
 	    public ItemStack makeIcon() {
-	        return new ItemStack(Finder.findBlock(MODID, "cherry_log_bridge_middle"));
+	        return new ItemStack(new NewIconRandom.Properties(Finder.findBlock(MODID, "cherry_roof"), Finder.findBlock(MODID, "cherry_picket_fence"), Finder.findBlock(MODID, "cherry_wardrobe"), 
+	        	    Finder.findBlock(MODID, "cherry_log_bridge_middle"), Finder.findBlock(MODID, "cherry_window"), Finder.findBlock(MODID, "cherry_japanese_door"), 
+	        	    Finder.findBlock(MODID, "cherry_glass_trapdoor"), Finder.findBlock(MODID, "cherry_planks_path")).bridges().fences().furnitures().roofs().doors().paths().trapdoors().windows().buildWood());
 	    }
 	};
-	//new IconRandom.Properties(LOGO_ROOFS, LOGO_FENCES, LOGO_FURNITURES, LOGO_BRIDGES).bridges().fences().furnitures().roofs().buildWood()
+	
     public McwBOP()
     {
     	LOGGER.info("Macaw's Biomes O' Plenty Loading...");
