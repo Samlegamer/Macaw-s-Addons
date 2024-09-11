@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stone_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "autumnity:snail_shell_bricks_wall"
+        },
+        
+        "W":
+        {
+            "item": "autumnity:snail_shell_bricks_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:snail_shell_bricks_bridge",
+        "count": 4
+    }
+}

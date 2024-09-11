@@ -1,0 +1,66 @@
+{
+    "variants": {                     
+		"facing=north,connection=base":  { "model": "mcwabnormals:block/bridge/rope/aspen_base"},
+		"facing=north,connection=base_toggled":  { "model": "mcwabnormals:block/bridge/rope/aspen_base"},
+		
+        "facing=north,connection=middle_ns":  { "model": "mcwabnormals:block/bridge/rope/aspen_middle", "y": 90},
+		"facing=north,connection=middle_ew":  { "model": "mcwabnormals:block/bridge/rope/aspen_middle"},
+
+		"facing=north,connection=middle_end_s":  { "model": "mcwabnormals:block/bridge/rope/aspen_middle_end", "y": 180},
+		"facing=north,connection=middle_end_n":  { "model": "mcwabnormals:block/bridge/rope/aspen_middle_end"},
+		"facing=north,connection=middle_end_w":  { "model": "mcwabnormals:block/bridge/rope/aspen_middle_end", "y": 270},
+		"facing=north,connection=middle_end_e":  { "model": "mcwabnormals:block/bridge/rope/aspen_middle_end", "y": 90},
+
+		"facing=north,connection=corner_nw":  { "model": "mcwabnormals:block/bridge/rope/aspen_corner_clear", "y": 180},
+		"facing=north,connection=corner_ne":  { "model": "mcwabnormals:block/bridge/rope/aspen_corner_clear_r", "y": 270},
+		"facing=north,connection=corner_se":  { "model": "mcwabnormals:block/bridge/rope/aspen_corner_clear"},
+		"facing=north,connection=corner_sw":  { "model": "mcwabnormals:block/bridge/rope/aspen_corner_clear_r", "y": 90},	
+		
+		"facing=north,connection=side_s":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_r"},
+		"facing=north,connection=side_n":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_r", "y": 180},
+		"facing=north,connection=side_w":  { "model": "mcwabnormals:block/bridge/rope/aspen_side", "y": 90},
+		"facing=north,connection=side_e":  { "model": "mcwabnormals:block/bridge/rope/aspen_side", "y": 270},
+		
+		"facing=north,connection=end_n_right":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_right"},
+		"facing=north,connection=end_n_left":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_left", "y": 180},
+		"facing=north,connection=end_e_right":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_right", "y": 180},
+		"facing=north,connection=end_e_left":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_left"},
+		
+		"facing=north,connection=end_s_left":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_left_r", "y": 270},
+		"facing=north,connection=end_s_right":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_right_r", "y": 270},
+		"facing=north,connection=end_w_left":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_left_r", "y": 90},
+		"facing=north,connection=end_w_right":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_right_r", "y": 90},
+		
+		
+		"facing=east,connection=base":  { "model": "mcwabnormals:block/bridge/rope/aspen_base", "y": 90},
+		"facing=east,connection=base_toggled":  { "model": "mcwabnormals:block/bridge/rope/aspen_base", "y": 90},
+		
+        "facing=east,connection=middle_ns":  { "model": "mcwabnormals:block/bridge/rope/aspen_middle", "y": 90},
+		"facing=east,connection=middle_ew":  { "model": "mcwabnormals:block/bridge/rope/aspen_middle"},
+
+		"facing=east,connection=middle_end_s":  { "model": "mcwabnormals:block/bridge/rope/aspen_middle_end", "y": 180},
+		"facing=east,connection=middle_end_n":  { "model": "mcwabnormals:block/bridge/rope/aspen_middle_end"},
+		"facing=east,connection=middle_end_w":  { "model": "mcwabnormals:block/bridge/rope/aspen_middle_end", "y": 270},
+		"facing=east,connection=middle_end_e":  { "model": "mcwabnormals:block/bridge/rope/aspen_middle_end", "y": 90},
+
+		"facing=east,connection=corner_nw":  { "model": "mcwabnormals:block/bridge/rope/aspen_corner_clear_r", "y": 180},
+		"facing=east,connection=corner_ne":  { "model": "mcwabnormals:block/bridge/rope/aspen_corner_clear", "y": 270},
+		"facing=east,connection=corner_se":  { "model": "mcwabnormals:block/bridge/rope/aspen_corner_clear_r"},
+		"facing=east,connection=corner_sw":  { "model": "mcwabnormals:block/bridge/rope/aspen_corner_clear", "y": 90},	
+		
+		"facing=east,connection=side_s":  { "model": "mcwabnormals:block/bridge/rope/aspen_side"},
+		"facing=east,connection=side_n":  { "model": "mcwabnormals:block/bridge/rope/aspen_side", "y": 180},
+		"facing=east,connection=side_w":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_r", "y": 90},
+		"facing=east,connection=side_e":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_r", "y": 270},
+		
+		"facing=east,connection=end_n_right":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_right_r"},
+		"facing=east,connection=end_n_left":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_left_r", "y": 180},
+		"facing=east,connection=end_e_right":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_right_r", "y": 180},
+		"facing=east,connection=end_e_left":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_left_r"},
+		
+		"facing=east,connection=end_s_left":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_left", "y": 270},
+		"facing=east,connection=end_s_right":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_right", "y": 270},
+		"facing=east,connection=end_w_left":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_left", "y": 90},
+		"facing=east,connection=end_w_right":  { "model": "mcwabnormals:block/bridge/rope/aspen_side_right", "y": 90}
+    }
+}
