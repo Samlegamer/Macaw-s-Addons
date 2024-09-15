@@ -4,19 +4,15 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.client.event.sound.SoundEvent;
-import net.minecraftforge.client.event.sound.SoundSetupEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
-
 import java.util.Arrays;
 import java.util.List;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.bridges.Bridges;
 
@@ -58,11 +54,8 @@ public class McwAbnormals
     	Bridges.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental");
     	Bridges.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic");
     	Bridges.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic");
+    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Bridges::setupClient);
+		MinecraftForge.EVENT_BUS.register(MappingsFix.class);
     	LOGGER.info("Macaw's Abnormals Mod Finish !");
-    }
-    
-    private void changeSound(SoundEvent event)
-    {
-    	Block b = Finder.findBlock(MODID, "honeycomb_brick_bridge");
     }
 }
