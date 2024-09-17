@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "endergetic:poise_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "endergetic:poise_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:poise_picket_fence",
+        "count": 3
+    }
+}
+
+

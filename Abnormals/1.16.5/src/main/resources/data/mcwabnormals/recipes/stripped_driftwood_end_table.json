@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "end_table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwabnormals:stripped_driftwood_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "upgrade_aquatic:stripped_driftwood_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:stripped_driftwood_end_table",
+        "count": 1
+    }
+}
+
+

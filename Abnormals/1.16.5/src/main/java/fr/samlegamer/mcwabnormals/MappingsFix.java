@@ -1,5 +1,7 @@
 package fr.samlegamer.mcwabnormals;
 
+import java.util.ArrayList;
+
 import fr.samlegamer.addonslib.mapping.MappingMissing;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -10,7 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = McwAbnormals.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class MappingsFix
 {
-	private static final MappingMissing.Bridges bridges_rock_bb = new MappingMissing.Bridges("mcwbridgesabnormals", McwAbnormals.MODID, McwAbnormals.ROCK_BB);
+	private static final MappingMissing.Bridges bridges_rock_bb = new MappingMissing.Bridges("mcwbridgesabnormals", McwAbnormals.MODID, new ArrayList<String>(),McwAbnormals.ROCK_BB);
 	private static final MappingMissing.Bridges bridges_atmo = new MappingMissing.Bridges("mcwbridgesabnormals", McwAbnormals.MODID, McwAbnormals.WOOD_ATMO, McwAbnormals.ROCK_ATMO);
 	private static final MappingMissing.Bridges bridges_autu = new MappingMissing.Bridges("mcwbridgesabnormals", McwAbnormals.MODID, McwAbnormals.WOOD_AUTU, McwAbnormals.ROCK_AUTU);
 	private static final MappingMissing.Bridges bridges_envi = new MappingMissing.Bridges("mcwbridgesabnormals", McwAbnormals.MODID, McwAbnormals.WOOD_ENVI);

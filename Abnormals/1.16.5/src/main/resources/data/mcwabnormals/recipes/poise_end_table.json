@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "end_table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwabnormals:poise_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "endergetic:poise_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:poise_end_table",
+        "count": 1
+    }
+}
+
+

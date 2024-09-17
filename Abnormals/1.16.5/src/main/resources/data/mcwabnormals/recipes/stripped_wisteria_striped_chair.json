@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "striped_chair",
+    "pattern":
+    [
+        " A",
+        "BC",
+		"CC"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "environmental:stripped_wisteria_log"
+        }, 
+		
+        "B":
+        {
+            "item": "environmental:wisteria_slab"
+        },
+		
+		"C":
+        {
+            "item": "environmental:wisteria_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:stripped_wisteria_striped_chair",
+        "count": 1
+    }
+}
+
+

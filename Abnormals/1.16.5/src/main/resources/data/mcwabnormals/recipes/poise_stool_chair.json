@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stool_chair",
+    "pattern":
+    [
+		"A",
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "endergetic:poise_log"
+        }, 	
+		
+        "B":
+        {
+            "item": "endergetic:poise_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:poise_stool_chair",
+        "count": 1
+    }
+}
+
+

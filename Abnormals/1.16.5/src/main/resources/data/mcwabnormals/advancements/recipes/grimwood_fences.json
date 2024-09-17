@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:grimwood_picket_fence",
+	  "mcwabnormals:grimwood_stockade_fence",
+	  "mcwabnormals:grimwood_horse_fence",
+	  "mcwabnormals:grimwood_wired_fence",
+	  "mcwabnormals:grimwood_highley_gate",
+	  "mcwabnormals:grimwood_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "atmospheric:grimwood_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

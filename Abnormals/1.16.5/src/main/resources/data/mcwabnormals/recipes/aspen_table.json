@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwabnormals:aspen_coffee_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "atmospheric:aspen_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:aspen_table",
+        "count": 1
+    }
+}
+
+

@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "buzzier_bees"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "buzzier_bees:honeycomb_brick"
+    },
+    "result": "mcwabnormals:honeycomb_brick_steep_roof",
+    "group": "roofs",
+    "count": 1
+}

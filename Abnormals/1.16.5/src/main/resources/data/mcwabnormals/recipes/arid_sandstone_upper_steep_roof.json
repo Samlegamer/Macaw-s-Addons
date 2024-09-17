@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "atmospheric:arid_sandstone"
+    },
+    "result": "mcwabnormals:arid_sandstone_upper_steep_roof",
+    "group": "roofs",
+    "count": 1
+}

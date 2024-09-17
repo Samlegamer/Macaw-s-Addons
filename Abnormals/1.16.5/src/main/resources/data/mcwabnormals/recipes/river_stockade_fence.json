@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "upgrade_aquatic:river_log"
+        },    
+        
+        "B":
+        {
+            "item": "upgrade_aquatic:river_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:river_stockade_fence",
+        "count": 3
+    }
+}
+
+
