@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "rope_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "minecraft:string"
+        },
+        
+        "W":
+        {
+            "item": "byg:mangrove_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:rope_mangrove_bridge",
+        "count": 4
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:ebony_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "byg:stripped_ebony_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_ebony_counter",
+        "count": 1
+    }
+}
+
+

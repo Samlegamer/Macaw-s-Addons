@@ -26,7 +26,6 @@ public class McwByg
 {
 	public static final String MODID = "mcwbyg";
     private static final Logger LOGGER = LogManager.getLogger();
-
     public static final List<String> fences_rockable = Arrays.asList("soapstone", "travertine", "dacite", "red_rock", "scoria_stone");
     public static final List<String> bridges_rockable = Arrays.asList("cryptic_stone", "dacite_bricks", "polished_travertine", "purpur_stone", "red_rock_bricks", "scoria_stone_bricks", "soapstone_bricks");
     public static final List<String>  LEAVES = Arrays.asList("aspen","baobab","blue_enchanted","cika","cypress","ebony", "ether", "fir","green_enchanted","holly", "jacaranda", "lament","mahogany","maple",
@@ -38,7 +37,7 @@ public class McwByg
     private static final DeferredRegister<Block> block = Registration.blocks(MODID);
     private static final DeferredRegister<Item> item = Registration.items(MODID);
 
-	public static final ItemGroup MCWBOP_TAB = new ItemGroup(MODID + ".tab") {
+	public static final ItemGroup MCWBYG_TAB = new ItemGroup(MODID + ".tab") {
 	    @Override
 	    public ItemStack makeIcon() {
 	        return new ItemStack(new NewIconRandom.Properties(Finder.findBlock(MODID, "aspen_roof"), Finder.findBlock(MODID, "aspen_picket_fence"), Finder.findBlock(MODID, "aspen_wardrobe"), 
@@ -50,11 +49,14 @@ public class McwByg
     {
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
     	Registration.init(block, item);
-    	Bridges.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Furnitures.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Roofs.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Fences.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Fences.setRegistrationHedges(LEAVES, block, item, MCWBOP_TAB);
+    	Bridges.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
+    	Bridges.setRegistrationRock(bridges_rockable, block, item, MCWBYG_TAB);
+    	Roofs.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
+    	Roofs.setRegistrationRock(fences_rockable, block, item, MCWBYG_TAB);
+    	Fences.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
+    	Fences.setRegistrationRock(fences_rockable, block, item, MCWBYG_TAB);
+    	Fences.setRegistrationHedges(LEAVES, block, item, MCWBYG_TAB);
+    	Furnitures.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(Fences::setupClient);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(Furnitures::setupClient);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(Roofs::setupClient);

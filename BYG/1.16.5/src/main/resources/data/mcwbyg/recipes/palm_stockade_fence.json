@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:palm_log"
+        },    
+        
+        "B":
+        {
+            "item": "byg:palm_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:palm_stockade_fence",
+        "count": 3
+    }
+}
+
+

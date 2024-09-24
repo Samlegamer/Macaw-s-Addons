@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "modern_desk",
+    "pattern":
+    [
+        "AAA",
+        "BCB"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:aspen_log"
+        }, 
+		
+        "B":
+        {
+            "item": "byg:aspen_fence"
+        },
+		
+		"C":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:aspen_modern_desk",
+        "count": 2
+    }
+}
+
+

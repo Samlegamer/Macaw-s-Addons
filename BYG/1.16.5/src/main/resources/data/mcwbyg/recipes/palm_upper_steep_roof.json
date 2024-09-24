@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "upper_steep",
+    
+    "pattern":
+    [
+		" W",
+		" W",
+        "WS"
+    ],
+    
+    "key":
+    {
+        "W":
+        {
+            "item": "byg:palm_log"
+        },
+		"S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcwbyg:palm_upper_steep_roof",
+        "count": 3
+    }
+}

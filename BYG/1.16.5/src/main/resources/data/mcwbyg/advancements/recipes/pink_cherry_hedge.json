@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	"mcwbyg:pink_cherry_hedge"
+    ]
+  },
+  "criteria": {
+    "has_birch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:pink_cherry_leaves"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_birch"
+    ]
+  ]
+}

@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "drawer_counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:blue_enchanted_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwbyg:stripped_blue_enchanted_drawer"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_blue_enchanted_drawer_counter",
+        "count": 1
+    }
+}
+
+
