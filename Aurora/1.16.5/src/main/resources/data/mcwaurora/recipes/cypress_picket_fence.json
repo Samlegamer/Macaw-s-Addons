@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "bayou_blues"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "bayou_blues:cypress_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "bayou_blues:cypress_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:cypress_picket_fence",
+        "count": 3
+    }
+}
+
+

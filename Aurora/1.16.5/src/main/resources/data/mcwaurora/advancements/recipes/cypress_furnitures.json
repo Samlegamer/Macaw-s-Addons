@@ -1,0 +1,91 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwaurora:cypress_wardrobe",
+	  "mcwaurora:cypress_modern_wardrobe",
+	  "mcwaurora:cypress_double_wardrobe",
+	  "mcwaurora:cypress_bookshelf_cupboard",
+	  "mcwaurora:cypress_bookshelf",
+	  "mcwaurora:cypress_drawer",
+	  "mcwaurora:cypress_double_drawer",
+	  "mcwaurora:cypress_bookshelf_drawer",
+	  "mcwaurora:cypress_lower_bookshelf_drawer",
+	  "mcwaurora:cypress_large_drawer",
+	  "mcwaurora:cypress_lower_triple_drawer",
+	  "mcwaurora:cypress_triple_drawer",
+	  "mcwaurora:cypress_desk",
+	  "mcwaurora:cypress_covered_desk",
+	  "mcwaurora:cypress_modern_desk",
+	  "mcwaurora:cypress_table",
+	  "mcwaurora:cypress_end_table",
+	  "mcwaurora:cypress_coffee_table",
+	  "mcwaurora:cypress_glass_table",
+	  "mcwaurora:cypress_chair",
+	  "mcwaurora:cypress_modern_chair",
+	  "mcwaurora:cypress_striped_chair",
+	  "mcwaurora:cypress_stool_chair",
+	  "mcwaurora:cypress_counter",
+	  "mcwaurora:cypress_drawer_counter",
+	  "mcwaurora:cypress_double_drawer_counter",
+	  "mcwaurora:cypress_cupboard_counter",
+	  
+	  "mcwaurora:stripped_cypress_wardrobe",
+	  "mcwaurora:stripped_cypress_modern_wardrobe",
+	  "mcwaurora:stripped_cypress_double_wardrobe",
+	  "mcwaurora:stripped_cypress_bookshelf_cupboard",
+	  "mcwaurora:stripped_cypress_bookshelf",
+	  "mcwaurora:stripped_cypress_drawer",
+	  "mcwaurora:stripped_cypress_double_drawer",
+	  "mcwaurora:stripped_cypress_bookshelf_drawer",
+	  "mcwaurora:stripped_cypress_lower_bookshelf_drawer",
+	  "mcwaurora:stripped_cypress_large_drawer",
+	  "mcwaurora:stripped_cypress_lower_triple_drawer",
+	  "mcwaurora:stripped_cypress_triple_drawer",
+	  "mcwaurora:stripped_cypress_desk",
+	  "mcwaurora:stripped_cypress_covered_desk",
+	  "mcwaurora:stripped_cypress_modern_desk",
+	  "mcwaurora:stripped_cypress_table",
+	  "mcwaurora:stripped_cypress_end_table",
+	  "mcwaurora:stripped_cypress_coffee_table",
+	  "mcwaurora:stripped_cypress_glass_table",
+	  "mcwaurora:stripped_cypress_chair",
+	  "mcwaurora:stripped_cypress_modern_chair",
+	  "mcwaurora:stripped_cypress_striped_chair",
+	  "mcwaurora:stripped_cypress_stool_chair",
+	  "mcwaurora:stripped_cypress_counter",
+	  "mcwaurora:stripped_cypress_drawer_counter",
+	  "mcwaurora:stripped_cypress_double_drawer_counter",
+	  "mcwaurora:stripped_cypress_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bayou_blues:cypress_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwaurora:cypress_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stool_chair",
+    "pattern":
+    [
+		"A",
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "enhanced_mushrooms:stripped_red_mushroom_stem"
+        }, 	
+		
+        "B":
+        {
+            "item": "enhanced_mushrooms:red_mushroom_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:stripped_red_mushroom_stool_chair",
+        "count": 1
+    }
+}
+
+

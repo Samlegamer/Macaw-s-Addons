@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "glass_cabinet",
+    "pattern":
+    [
+        "AA",
+        "BC",
+        "AA"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "enhanced_mushrooms:red_mushroom_stem"
+        }, 
+		
+        "B":
+        {
+            "item": "minecraft:glass"
+        },
+		
+        "C":
+        {
+            "item": "mcwfurnitures:cabinet_door"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:red_mushroom_glass_kitchen_cabinet",
+        "count": 4
+    }
+}
+
+

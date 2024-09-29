@@ -1,0 +1,91 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwaurora:redbud_wardrobe",
+	  "mcwaurora:redbud_modern_wardrobe",
+	  "mcwaurora:redbud_double_wardrobe",
+	  "mcwaurora:redbud_bookshelf_cupboard",
+	  "mcwaurora:redbud_bookshelf",
+	  "mcwaurora:redbud_drawer",
+	  "mcwaurora:redbud_double_drawer",
+	  "mcwaurora:redbud_bookshelf_drawer",
+	  "mcwaurora:redbud_lower_bookshelf_drawer",
+	  "mcwaurora:redbud_large_drawer",
+	  "mcwaurora:redbud_lower_triple_drawer",
+	  "mcwaurora:redbud_triple_drawer",
+	  "mcwaurora:redbud_desk",
+	  "mcwaurora:redbud_covered_desk",
+	  "mcwaurora:redbud_modern_desk",
+	  "mcwaurora:redbud_table",
+	  "mcwaurora:redbud_end_table",
+	  "mcwaurora:redbud_coffee_table",
+	  "mcwaurora:redbud_glass_table",
+	  "mcwaurora:redbud_chair",
+	  "mcwaurora:redbud_modern_chair",
+	  "mcwaurora:redbud_striped_chair",
+	  "mcwaurora:redbud_stool_chair",
+	  "mcwaurora:redbud_counter",
+	  "mcwaurora:redbud_drawer_counter",
+	  "mcwaurora:redbud_double_drawer_counter",
+	  "mcwaurora:redbud_cupboard_counter",
+	  
+	  "mcwaurora:stripped_redbud_wardrobe",
+	  "mcwaurora:stripped_redbud_modern_wardrobe",
+	  "mcwaurora:stripped_redbud_double_wardrobe",
+	  "mcwaurora:stripped_redbud_bookshelf_cupboard",
+	  "mcwaurora:stripped_redbud_bookshelf",
+	  "mcwaurora:stripped_redbud_drawer",
+	  "mcwaurora:stripped_redbud_double_drawer",
+	  "mcwaurora:stripped_redbud_bookshelf_drawer",
+	  "mcwaurora:stripped_redbud_lower_bookshelf_drawer",
+	  "mcwaurora:stripped_redbud_large_drawer",
+	  "mcwaurora:stripped_redbud_lower_triple_drawer",
+	  "mcwaurora:stripped_redbud_triple_drawer",
+	  "mcwaurora:stripped_redbud_desk",
+	  "mcwaurora:stripped_redbud_covered_desk",
+	  "mcwaurora:stripped_redbud_modern_desk",
+	  "mcwaurora:stripped_redbud_table",
+	  "mcwaurora:stripped_redbud_end_table",
+	  "mcwaurora:stripped_redbud_coffee_table",
+	  "mcwaurora:stripped_redbud_glass_table",
+	  "mcwaurora:stripped_redbud_chair",
+	  "mcwaurora:stripped_redbud_modern_chair",
+	  "mcwaurora:stripped_redbud_striped_chair",
+	  "mcwaurora:stripped_redbud_stool_chair",
+	  "mcwaurora:stripped_redbud_counter",
+	  "mcwaurora:stripped_redbud_drawer_counter",
+	  "mcwaurora:stripped_redbud_double_drawer_counter",
+	  "mcwaurora:stripped_redbud_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "abundance:redbud_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwaurora:redbud_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

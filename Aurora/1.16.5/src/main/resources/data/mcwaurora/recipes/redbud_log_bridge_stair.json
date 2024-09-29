@@ -1,0 +1,34 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "abundance"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "log_stairs",
+    
+    "pattern": [
+    "  F",
+    " FF",
+	"FFF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "mcwaurora:redbud_log_bridge_middle"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:redbud_log_bridge_stair",
+        "count": 6
+    }
+}

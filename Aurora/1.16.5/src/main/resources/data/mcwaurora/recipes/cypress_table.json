@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "bayou_blues"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwaurora:cypress_coffee_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "bayou_blues:cypress_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:cypress_table",
+        "count": 1
+    }
+}
+
+

@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "abundance"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "abundance:redbud_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "abundance:stripped_redbud_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:stripped_redbud_counter",
+        "count": 1
+    }
+}
+
+
