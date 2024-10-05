@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "betterlands"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "betterlands:gray_terracotta_bricks"
+    },
+    "result": "mcwsajevius:gray_terracotta_bricks_upper_steep_roof",
+    "group": "roofs",
+    "count": 1
+}

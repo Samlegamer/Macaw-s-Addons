@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "betterlands"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "grass_topped",
+    
+    "pattern":
+    [
+		"BGB",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "betterlands:blue_terracotta_tiles"
+        },    
+        
+		"G":
+        {
+            "item": "minecraft:dirt"
+        }, 
+        
+        "B":
+        {
+            "item": "betterlands:blue_terracotta_bricks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwsajevius:blue_terracotta_bricks_grass_topped_wall",
+        "count": 6
+    }
+}
+
+

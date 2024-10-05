@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "betterlands"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "betterlands:stripped_juniper_log"
+        }, 
+		
+        "B":
+        {
+            "item": "betterlands:juniper_slab"
+        },
+		
+		"C":
+        {
+            "item": "betterlands:juniper_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwsajevius:stripped_juniper_chair",
+        "count": 1
+    }
+}
+
+

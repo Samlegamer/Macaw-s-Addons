@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwsajevius:modern_white_terracotta_bricks_wall",
+	  
+	  "mcwsajevius:railing_white_terracotta_bricks_wall",
+	  
+	  "mcwsajevius:white_terracotta_bricks_railing_gate",
+	  
+	  "mcwsajevius:white_terracotta_bricks_pillar_wall",
+	  
+	  
+	  "mcwsajevius:white_terracotta_bricks_grass_topped_wall"
+    ]
+  },
+  "criteria": {
+    "has_sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "betterlands:white_terracotta_bricks"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand"
+    ]
+  ]
+}

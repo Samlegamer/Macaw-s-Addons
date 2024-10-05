@@ -1,0 +1,34 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "shroomed"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "rope_stairs",
+    
+    "pattern": [
+    "  F",
+    " FF",
+	"FFF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "mcwsajevius:rope_hard_mushroom_bridge"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwsajevius:hard_mushroom_rope_bridge_stair",
+        "count": 6
+    }
+}

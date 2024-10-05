@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwsajevius:orange_hard_mushroom_picket_fence",
+	  "mcwsajevius:orange_hard_mushroom_stockade_fence",
+	  "mcwsajevius:orange_hard_mushroom_horse_fence",
+	  "mcwsajevius:orange_hard_mushroom_wired_fence",
+	  "mcwsajevius:orange_hard_mushroom_highley_gate",
+	  "mcwsajevius:orange_hard_mushroom_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "shroomed:orange_hard_mushroom_stem"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

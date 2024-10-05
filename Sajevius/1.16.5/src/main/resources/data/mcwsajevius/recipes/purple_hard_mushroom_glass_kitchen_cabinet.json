@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "shroomed"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "glass_cabinet",
+    "pattern":
+    [
+        "AA",
+        "BC",
+        "AA"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "shroomed:purple_hard_mushroom_stem"
+        }, 
+		
+        "B":
+        {
+            "item": "minecraft:glass"
+        },
+		
+        "C":
+        {
+            "item": "mcwfurnitures:cabinet_door"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwsajevius:purple_hard_mushroom_glass_kitchen_cabinet",
+        "count": 4
+    }
+}
+
+

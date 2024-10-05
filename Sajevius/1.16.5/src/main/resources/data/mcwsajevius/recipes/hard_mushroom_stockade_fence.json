@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "shroomed"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "shroomed:hard_mushroom_stem"
+        },    
+        
+        "B":
+        {
+            "item": "shroomed:hard_mushroom_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwsajevius:hard_mushroom_stockade_fence",
+        "count": 3
+    }
+}
+
+

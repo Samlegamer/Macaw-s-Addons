@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "shroomed"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "shroomed:hard_mushroom_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "shroomed:hard_mushroom_stem"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwsajevius:hard_mushroom_picket_fence",
+        "count": 3
+    }
+}
+
+

@@ -1,0 +1,37 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "betterlands"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stone_piers",
+    
+    "pattern": [
+    "WFW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "betterlands:white_terracotta_bricks_wall"
+        },
+        
+        "W":
+        {
+            "item": "betterlands:white_terracotta_bricks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwsajevius:white_terracotta_bricks_bridge_pier",
+        "count": 3
+    }
+}

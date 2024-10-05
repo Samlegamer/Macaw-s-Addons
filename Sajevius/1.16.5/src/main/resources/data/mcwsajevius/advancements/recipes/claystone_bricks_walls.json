@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwsajevius:modern_claystone_bricks_wall",
+	  
+	  "mcwsajevius:railing_claystone_bricks_wall",
+	  
+	  "mcwsajevius:claystone_bricks_railing_gate",
+	  
+	  "mcwsajevius:claystone_bricks_pillar_wall",
+	  
+	  
+	  "mcwsajevius:claystone_bricks_grass_topped_wall"
+    ]
+  },
+  "criteria": {
+    "has_sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "betterlands:claystone_bricks"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand"
+    ]
+  ]
+}

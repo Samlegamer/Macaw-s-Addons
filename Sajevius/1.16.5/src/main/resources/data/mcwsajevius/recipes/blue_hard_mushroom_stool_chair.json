@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "shroomed"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stool_chair",
+    "pattern":
+    [
+		"A",
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "shroomed:blue_hard_mushroom_stem"
+        }, 	
+		
+        "B":
+        {
+            "item": "shroomed:blue_hard_mushroom_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwsajevius:blue_hard_mushroom_stool_chair",
+        "count": 1
+    }
+}
+
+

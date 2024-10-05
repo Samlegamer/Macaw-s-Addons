@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwsajevius:modern_cyan_terracotta_bricks_wall",
+	  
+	  "mcwsajevius:railing_cyan_terracotta_bricks_wall",
+	  
+	  "mcwsajevius:cyan_terracotta_bricks_railing_gate",
+	  
+	  "mcwsajevius:cyan_terracotta_bricks_pillar_wall",
+	  
+	  
+	  "mcwsajevius:cyan_terracotta_bricks_grass_topped_wall"
+    ]
+  },
+  "criteria": {
+    "has_sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "betterlands:cyan_terracotta_bricks"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand"
+    ]
+  ]
+}

@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "shroomed"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "drawer_counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "shroomed:hard_mushroom_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwsajevius:hard_mushroom_drawer"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwsajevius:hard_mushroom_drawer_counter",
+        "count": 1
+    }
+}
+
+

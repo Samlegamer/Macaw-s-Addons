@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "betterlands"
+    }
+  ],
+    "type": "minecraft:crafting_shapeless",
+	"group": "recyclable_bridges",
+		
+    "ingredients": [
+        {
+            "item": "mcwsajevius:orange_terracotta_bricks_bridge_stair"
+        }
+    ],
+    "result": {
+        "item": "mcwsajevius:orange_terracotta_bricks_bridge",
+        "count": 1
+    }
+}

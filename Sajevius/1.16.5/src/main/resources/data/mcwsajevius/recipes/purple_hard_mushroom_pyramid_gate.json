@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "shroomed"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "pyramid",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "shroomed:purple_hard_mushroom_stem"
+        },
+		
+		"C":
+        {
+            "item": "shroomed:purple_hard_mushroom_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwsajevius:purple_hard_mushroom_pyramid_gate",
+        "count": 1
+    }
+}
+
+
