@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "striped_chair",
+    "pattern":
+    [
+        " A",
+        "BC",
+		"CC"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "premium_wood:stripped_willow_log"
+        }, 
+		
+        "B":
+        {
+            "item": "premium_wood:willow_slab"
+        },
+		
+		"C":
+        {
+            "item": "premium_wood:willow_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwmoddinglegacy:stripped_pwood_willow_striped_chair",
+        "count": 1
+    }
+}
+
+

@@ -1,0 +1,45 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "modern_chair",
+    "pattern":
+    [
+        "BA",
+        "CC"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "blue_skies:frostbright_log"
+        }, 
+		
+        "B":
+        {
+            "item": "blue_skies:frostbright_slab"
+        },
+		
+		"C":
+        {
+            "item": "blue_skies:frostbright_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwmoddinglegacy:bsky_frostbright_modern_chair",
+        "count": 1
+    }
+}
+
+
