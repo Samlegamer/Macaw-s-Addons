@@ -36,8 +36,6 @@ public class McwByg
     "flowering_jacaranda", "flowering_orchard", "flowering_palo_verde", "palo_verde");
     public static final List<String> WOOD = Arrays.asList("aspen","baobab", "blue_enchanted","cherry","cika","cypress","ebony","ether","fir","green_enchanted","holly","jacaranda",
     "lament","mahogany","mangrove","maple","nightshade","palm","pine","rainbow_eucalyptus","redwood","skyris", "willow", "witch_hazel", "zelkova", "bulbis", "imparius", "sythian");
-    //private static final DeferredRegister<Block> block = Registration.blocks(MODID);
-    //private static final DeferredRegister<Item> item = Registration.items(MODID);
 
 	public static final ItemGroup MCWBYG_TAB = new ItemGroup(MODID + ".tab") {
 	    @Override
@@ -50,18 +48,6 @@ public class McwByg
     public McwByg()
     {
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
-    	/*Registration.init(block, item);
-    	Bridges.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
-    	Bridges.setRegistrationRock(bridges_rockable, block, item, MCWBYG_TAB);
-    	Roofs.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
-    	Roofs.setRegistrationRock(fences_rockable, block, item, MCWBYG_TAB);
-    	Fences.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
-    	Fences.setRegistrationRock(fences_rockable, block, item, MCWBYG_TAB);
-    	Fences.setRegistrationHedges(LEAVES, block, item, MCWBYG_TAB);
-    	Furnitures.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);*/
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Fences::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Furnitures::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Roofs::setupClient);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
@@ -71,6 +57,12 @@ public class McwByg
     {
     	Bridges.clientWood(event, MODID, WOOD);
     	Bridges.clientStone(event, MODID, bridges_rockable);
+    	Fences.clientWood(event, MODID, WOOD);
+    	Fences.clientHedge(event, MODID, LEAVES);
+    	Fences.clientStone(event, MODID, fences_rockable);
+    	Roofs.clientWood(event, MODID, WOOD);
+    	Roofs.clientStone(event, MODID, fences_rockable);
+    	Furnitures.clientWood(event, MODID, WOOD);
     }
     
     @SubscribeEvent

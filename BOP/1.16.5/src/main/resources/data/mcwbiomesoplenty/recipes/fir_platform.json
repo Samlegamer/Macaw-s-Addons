@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " Z ", " W ", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "biomesoplenty:fir_log"
+    },
+    "Z" : {
+      "item" : "biomesoplenty:fir_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwbiomesoplenty:fir_platform",
+    "count" : 6
+  }
+}

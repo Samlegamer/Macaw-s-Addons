@@ -6,6 +6,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import java.util.Arrays;
@@ -21,6 +22,7 @@ import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.roofs.Roofs;
+import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
@@ -58,15 +60,23 @@ public class McwBOP
     	Paths.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Doors.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Windows.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Fences::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Furnitures::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Roofs::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Bridges::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Trapdoors::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Paths::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Doors::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Windows::setupClient);
+    	Stairs.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
+    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
+    }
+    
+    private void client(FMLClientSetupEvent e)
+    {
+    	Stairs.clientWood(e, MODID, WOOD);
+    	Fences.clientWood(e, MODID, WOOD);
+    	Fences.clientHedge(e, MODID, LEAVES);
+    	Furnitures.clientWood(e, MODID, WOOD);
+    	Roofs.clientWood(e, MODID, WOOD);
+    	Bridges.clientWood(e, MODID, WOOD);
+    	Trapdoors.clientWood(e, MODID, WOOD);
+    	Paths.clientWood(e, MODID, WOOD);
+    	Doors.clientWood(e, MODID, WOOD);
+    	Windows.clientWood(e, MODID, WOOD);
     }
 }
