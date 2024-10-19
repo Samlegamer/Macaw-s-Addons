@@ -2,19 +2,20 @@ package fr.samlegamer.mcwbyg;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
 import java.util.Arrays;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.bridges.Bridges;
 import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
@@ -22,6 +23,7 @@ import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 
 @Mod(McwByg.MODID)
+@Mod.EventBusSubscriber(modid = McwByg.MODID, bus = Bus.MOD)
 public class McwByg
 {
 	public static final String MODID = "mcwbyg";
@@ -34,8 +36,8 @@ public class McwByg
     "flowering_jacaranda", "flowering_orchard", "flowering_palo_verde", "palo_verde");
     public static final List<String> WOOD = Arrays.asList("aspen","baobab", "blue_enchanted","cherry","cika","cypress","ebony","ether","fir","green_enchanted","holly","jacaranda",
     "lament","mahogany","mangrove","maple","nightshade","palm","pine","rainbow_eucalyptus","redwood","skyris", "willow", "witch_hazel", "zelkova", "bulbis", "imparius", "sythian");
-    private static final DeferredRegister<Block> block = Registration.blocks(MODID);
-    private static final DeferredRegister<Item> item = Registration.items(MODID);
+    //private static final DeferredRegister<Block> block = Registration.blocks(MODID);
+    //private static final DeferredRegister<Item> item = Registration.items(MODID);
 
 	public static final ItemGroup MCWBYG_TAB = new ItemGroup(MODID + ".tab") {
 	    @Override
@@ -48,7 +50,7 @@ public class McwByg
     public McwByg()
     {
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
-    	Registration.init(block, item);
+    	/*Registration.init(block, item);
     	Bridges.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
     	Bridges.setRegistrationRock(bridges_rockable, block, item, MCWBYG_TAB);
     	Roofs.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
@@ -56,12 +58,31 @@ public class McwByg
     	Fences.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
     	Fences.setRegistrationRock(fences_rockable, block, item, MCWBYG_TAB);
     	Fences.setRegistrationHedges(LEAVES, block, item, MCWBYG_TAB);
-    	Furnitures.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
+    	Furnitures.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);*/
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(Fences::setupClient);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(Furnitures::setupClient);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(Roofs::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Bridges::setupClient);
+    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
+    }
+    
+    private void client(FMLClientSetupEvent event)
+    {
+    	Bridges.clientWood(event, MODID, WOOD);
+    	Bridges.clientStone(event, MODID, bridges_rockable);
+    }
+    
+    @SubscribeEvent
+    public static void registry(final RegistryEvent.Register<Block> event)
+    {
+    	Bridges.registryWood(event, WOOD, MCWBYG_TAB);
+    	Bridges.registryStone(event, bridges_rockable, MCWBYG_TAB);
+    	Roofs.registryWood(event, WOOD, MCWBYG_TAB);
+    	Roofs.registryStone(event, fences_rockable, MCWBYG_TAB);
+    	Fences.registryWood(event, WOOD, MCWBYG_TAB);
+    	Fences.registryHedges(event, LEAVES, MCWBYG_TAB);
+    	Fences.registryStone(event, fences_rockable, MCWBYG_TAB);
+    	Furnitures.registryWood(event, WOOD, MCWBYG_TAB);
     }
 }
