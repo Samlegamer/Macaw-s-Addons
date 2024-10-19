@@ -4,18 +4,13 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.ToolType;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -27,13 +22,13 @@ import fr.samlegamer.addonslib.bridges.Bridges;
 import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.roofs.Roofs;
+import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
 @Mod(McwModdingLegacy.MODID)
-@Mod.EventBusSubscriber(modid = McwModdingLegacy.MODID, bus = Bus.MOD)
 public class McwModdingLegacy
 {
 	public static final String MODID = "mcwmoddinglegacy";
@@ -59,30 +54,29 @@ public class McwModdingLegacy
     	LOGGER.info("Macaw's Modding Legacy Mod Loading...");
     	Registration.init(block, item);
 
-    	final AbstractBlock.Properties wood = AbstractBlock.Properties.of(Material.WOOD).harvestTool(ToolType.AXE).strength(0.5F, 2.5F).sound(SoundType.WOOD);
+    	final AbstractBlock.Properties wood = AbstractBlock.Properties.copy(Blocks.OAK_PLANKS);
     	final AbstractBlock.Properties leaves = AbstractBlock.Properties.copy(Blocks.OAK_LEAVES);
-    	final AbstractBlock.Properties glass = AbstractBlock.Properties.of(Material.WOOD).harvestTool(ToolType.AXE).strength(0.5F, 2.5F).sound(SoundType.GLASS);
+    	final AbstractBlock.Properties glass = AbstractBlock.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.GLASS);
     	
-    	//Bridges.setRegistrationWoodModLoaded(wood_blue_skies, block, item, MCWMODDINGLEGACY_TAB, "blue_skies", wood);
+    	Bridges.setRegistrationWoodModLoaded(wood_blue_skies, block, item, MCWMODDINGLEGACY_TAB, "blue_skies", wood);
     	Roofs.setRegistrationWoodModLoaded(wood_blue_skies, block, item, MCWMODDINGLEGACY_TAB, "blue_skies", wood);
     	Fences.setRegistrationWoodModLoaded(wood_blue_skies, block, item, MCWMODDINGLEGACY_TAB, "blue_skies", wood);
     	Furnitures.setRegistrationWoodModLoaded(wood_blue_skies, block, item, MCWMODDINGLEGACY_TAB, "blue_skies");
+    	Stairs.setRegistrationWoodModLoaded(wood_blue_skies, block, item, MCWMODDINGLEGACY_TAB, "blue_skies", wood);
     	Fences.setRegistrationHedgesModLoaded(wood_blue_skies, block, item, MCWMODDINGLEGACY_TAB, "blue_skies", leaves);
     	
-    	//Bridges.setRegistrationWoodModLoaded(wood_crystallized, block, item, MCWMODDINGLEGACY_TAB, "blue_skies", glass);
+    	Bridges.setRegistrationWoodModLoaded(wood_crystallized, block, item, MCWMODDINGLEGACY_TAB, "blue_skies", glass);
     	Roofs.setRegistrationWoodModLoaded(wood_crystallized, block, item, MCWMODDINGLEGACY_TAB, "blue_skies", glass);
     	Fences.setRegistrationHedgesModLoaded(wood_crystallized, block, item, MCWMODDINGLEGACY_TAB, "blue_skies", leaves);
 
-    	//Bridges.setRegistrationWoodModLoaded(wood_premium_wood, block, item, MCWMODDINGLEGACY_TAB, "premium_wood", wood);
+    	Bridges.setRegistrationWoodModLoaded(wood_premium_wood, block, item, MCWMODDINGLEGACY_TAB, "premium_wood", wood);
     	Roofs.setRegistrationWoodModLoaded(wood_premium_wood, block, item, MCWMODDINGLEGACY_TAB, "premium_wood", wood);
     	Fences.setRegistrationWoodModLoaded(wood_premium_wood, block, item, MCWMODDINGLEGACY_TAB, "premium_wood", wood);
     	Furnitures.setRegistrationWoodModLoaded(wood_premium_wood, block, item, MCWMODDINGLEGACY_TAB, "premium_wood");
+    	Stairs.setRegistrationWoodModLoaded(wood_premium_wood, block, item, MCWMODDINGLEGACY_TAB, "blue_skies", wood);
     	Fences.setRegistrationHedgesModLoaded(wood_premium_wood, block, item, MCWMODDINGLEGACY_TAB, "premium_wood", leaves);
 
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Roofs::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Fences::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Furnitures::setupClient);
         MinecraftForge.EVENT_BUS.register(MappingsFix.class);
     	LOGGER.info("Macaw's Modding Legacy Mod Finish !");
     }
@@ -92,14 +86,18 @@ public class McwModdingLegacy
     	Bridges.clientWood(event, MODID, wood_blue_skies);
     	Bridges.clientWood(event, MODID, wood_crystallized, RenderType.translucent());
     	Bridges.clientWood(event, MODID, wood_premium_wood);
-    }
-
-    @SubscribeEvent
-    public static void registry(final RegistryEvent.Register<Block> event)
-    {
-    	Bridges.registryWood(event, wood_blue_skies, MCWMODDINGLEGACY_TAB);
-    	Bridges.registryWood(event, wood_crystallized, MCWMODDINGLEGACY_TAB);
-    	Bridges.registryWood(event, wood_premium_wood, MCWMODDINGLEGACY_TAB);
+    	Roofs.clientWood(event, MODID, wood_crystallized, RenderType.translucent());
+    	Roofs.clientWood(event, MODID, wood_premium_wood);
+    	Roofs.clientWood(event, MODID, wood_blue_skies);
+    	Fences.clientWood(event, MODID, wood_crystallized);
+    	Fences.clientWood(event, MODID, wood_premium_wood);
+    	Fences.clientHedge(event, MODID, wood_blue_skies);
+    	Fences.clientHedge(event, MODID, wood_crystallized, RenderType.translucent());
+    	Fences.clientHedge(event, MODID, wood_premium_wood);
+    	Furnitures.clientWood(event, MODID, wood_blue_skies);
+    	Furnitures.clientWood(event, MODID, wood_premium_wood);
+    	Stairs.clientWood(event, MODID, wood_blue_skies);
+    	Stairs.clientWood(event, MODID, wood_premium_wood);
     }
     
     private static String randomNaming()
@@ -130,6 +128,6 @@ public class McwModdingLegacy
 				return "pwood_purple_heart";
 			}
 		}
-		return "purple_hard_mushroom";
+		return "bsky_bluebright";
 	}
 }
