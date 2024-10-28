@@ -12,6 +12,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import java.util.Arrays;
@@ -25,6 +26,7 @@ import fr.samlegamer.addonslib.bridges.Bridges;
 import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.roofs.Roofs;
+import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 
 @Mod(McwSajevius.MODID)
@@ -76,23 +78,44 @@ public class McwSajevius
     	Roofs.setRegistrationWoodModLoaded(wood_shroomed, block, item, MCWSAJEVIUS_TAB, "shroomed", wood);
     	Fences.setRegistrationWoodModLoaded(wood_shroomed, block, item, MCWSAJEVIUS_TAB, "shroomed", wood);
     	Furnitures.setRegistrationWoodModLoaded(wood_shroomed, block, item, MCWSAJEVIUS_TAB, "shroomed");
-    	
+    	Stairs.setRegistrationWoodModLoaded(wood_shroomed, block, item, MCWSAJEVIUS_TAB, "shroomed", wood);
+
     	Bridges.setRegistrationWoodModLoaded(wood_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", wood);
     	Roofs.setRegistrationWoodModLoaded(wood_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", wood);
     	Fences.setRegistrationWoodModLoaded(wood_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", wood);
     	Furnitures.setRegistrationWoodModLoaded(wood_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands");
     	Fences.setRegistrationHedgesModLoaded(wood_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", leaves);
+    	Stairs.setRegistrationWoodModLoaded(wood_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", wood);
 
     	Bridges.setRegistrationRockModLoaded(stone_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", stone);
     	Roofs.setRegistrationRockModLoaded(stone_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", stone);
     	Fences.setRegistrationRockModLoaded(stone_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", stone);
     	
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Bridges::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Roofs::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Fences::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Furnitures::setupClient);
+    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
         MinecraftForge.EVENT_BUS.register(MappingsFix.class);
     	LOGGER.info("Macaw's Sajevius Mod Finish !");
+    }
+    
+    private void client(FMLClientSetupEvent e)
+    {
+    	Bridges.clientWood(e, MODID, wood_shroomed);
+    	Bridges.clientWood(e, MODID, wood_betterlands);
+    	Bridges.clientStone(e, MODID, stone_betterlands);
+    	
+    	Roofs.clientWood(e, MODID, wood_shroomed);
+    	Roofs.clientWood(e, MODID, wood_betterlands);
+    	Roofs.clientStone(e, MODID, stone_betterlands);
+
+    	Fences.clientWood(e, MODID, wood_shroomed);
+    	Fences.clientWood(e, MODID, wood_betterlands);
+    	Fences.clientStone(e, MODID, stone_betterlands);
+    	Fences.clientHedge(e, MODID, wood_betterlands);
+    	
+    	Furnitures.clientWood(e, MODID, wood_shroomed);
+    	Furnitures.clientWood(e, MODID, wood_betterlands);
+
+    	Stairs.clientWood(e, MODID, wood_shroomed);
+    	Stairs.clientWood(e, MODID, wood_betterlands);
     }
     
 	private static String randomNaming()

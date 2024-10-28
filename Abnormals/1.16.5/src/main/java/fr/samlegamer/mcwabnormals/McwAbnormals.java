@@ -12,6 +12,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import java.util.Arrays;
@@ -23,6 +24,7 @@ import fr.samlegamer.addonslib.bridges.Bridges;
 import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.roofs.Roofs;
+import fr.samlegamer.addonslib.stairs.Stairs;
 
 @Mod(McwAbnormals.MODID)
 public class McwAbnormals
@@ -60,9 +62,9 @@ public class McwAbnormals
     	LOGGER.info("Macaw's Abnormals Mod Loading...");
     	Registration.init(block, item);
     	
-    	final AbstractBlock.Properties wood = AbstractBlock.Properties.of(Material.WOOD).harvestTool(ToolType.AXE).strength(0.5F, 2.5F).sound(SoundType.WOOD);
+    	final AbstractBlock.Properties wood = AbstractBlock.Properties.copy(Blocks.OAK_PLANKS);
     	final AbstractBlock.Properties stone = AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).strength(3.0F, 5.0F).sound(SoundType.STONE);
-    	final AbstractBlock.Properties honey = AbstractBlock.Properties.of(Material.CLAY).strength(0.6F).sound(SoundType.CORAL_BLOCK).harvestTool(ToolType.PICKAXE);
+    	final AbstractBlock.Properties honey = AbstractBlock.Properties.copy(Blocks.HONEYCOMB_BLOCK);
     	final AbstractBlock.Properties leaves = AbstractBlock.Properties.copy(Blocks.OAK_LEAVES);
     	
     	Bridges.setRegistrationRockModLoaded(ROCK_BB, block, item, MCWABNORMALS_TAB, "buzzier_bees", honey);
@@ -103,11 +105,61 @@ public class McwAbnormals
     	Furnitures.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic");
     	Furnitures.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic");
 
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Bridges::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Roofs::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Fences::setupClient);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(Furnitures::setupClient);
+    	Stairs.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, MCWABNORMALS_TAB, "atmospheric", wood);
+    	Stairs.setRegistrationWoodModLoaded(WOOD_AUTU, block, item, MCWABNORMALS_TAB, "autumnity", wood);
+    	Stairs.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental", wood);
+    	Stairs.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic", wood);
+    	Stairs.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic", wood);
+    	
+    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
 		MinecraftForge.EVENT_BUS.register(MappingsFix.class);
     	LOGGER.info("Macaw's Abnormals Mod Finish !");
+    }
+    
+    private void client(FMLClientSetupEvent e)
+    {
+    	Bridges.clientStone(e, MODID, ROCK_BB);
+    	Bridges.clientWood(e, MODID, WOOD_ATMO);    	
+    	Bridges.clientStone(e, MODID, ROCK_ATMO);
+    	Bridges.clientWood(e, MODID, WOOD_AUTU);
+    	Bridges.clientStone(e, MODID, ROCK_AUTU);
+    	Bridges.clientWood(e, MODID, WOOD_ENVI);
+    	Bridges.clientWood(e, MODID, WOOD_UAQUA);
+    	Bridges.clientWood(e, MODID, WOOD_ENDER);
+    	
+    	Roofs.clientStone(e, MODID, ROCK_BB);
+    	Roofs.clientWood(e, MODID, WOOD_ATMO);    	
+    	Roofs.clientStone(e, MODID, ROCK_ATMO);
+    	Roofs.clientWood(e, MODID, WOOD_AUTU);
+    	Roofs.clientStone(e, MODID, ROCK_AUTU);
+    	Roofs.clientWood(e, MODID, WOOD_ENVI);
+    	Roofs.clientWood(e, MODID, WOOD_UAQUA);
+    	Roofs.clientWood(e, MODID, WOOD_ENDER);
+
+    	Fences.clientStone(e, MODID, ROCK_BB);
+    	Fences.clientWood(e, MODID, WOOD_ATMO);    	
+    	Fences.clientStone(e, MODID, ROCK_ATMO);
+    	Fences.clientWood(e, MODID, WOOD_AUTU);
+    	Fences.clientStone(e, MODID, ROCK_AUTU);
+    	Fences.clientWood(e, MODID, WOOD_ENVI);
+    	Fences.clientWood(e, MODID, WOOD_UAQUA);
+    	Fences.clientWood(e, MODID, WOOD_ENDER);
+    	
+    	Fences.clientHedge(e, MODID, LEAVES_ATMO);    	
+    	Fences.clientHedge(e, MODID, LEAVES_AUTU);
+    	Fences.clientHedge(e, MODID, LEAVES_ENVI);
+    	Fences.clientHedge(e, MODID, LEAVES_UAQUA);
+    	
+    	Furnitures.clientWood(e, MODID, WOOD_ATMO);    	
+    	Furnitures.clientWood(e, MODID, WOOD_AUTU);
+    	Furnitures.clientWood(e, MODID, WOOD_ENVI);
+    	Furnitures.clientWood(e, MODID, WOOD_UAQUA);
+    	Furnitures.clientWood(e, MODID, WOOD_ENDER);
+
+    	Stairs.clientWood(e, MODID, WOOD_ATMO);    	
+    	Stairs.clientWood(e, MODID, WOOD_AUTU);
+    	Stairs.clientWood(e, MODID, WOOD_ENVI);
+    	Stairs.clientWood(e, MODID, WOOD_UAQUA);
+    	Stairs.clientWood(e, MODID, WOOD_ENDER);
     }
 }
