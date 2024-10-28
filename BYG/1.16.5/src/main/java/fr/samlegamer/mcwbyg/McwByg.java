@@ -20,6 +20,7 @@ import fr.samlegamer.addonslib.bridges.Bridges;
 import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.roofs.Roofs;
+import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 
 @Mod(McwByg.MODID)
@@ -63,6 +64,7 @@ public class McwByg
     	Roofs.clientWood(event, MODID, WOOD);
     	Roofs.clientStone(event, MODID, fences_rockable);
     	Furnitures.clientWood(event, MODID, WOOD);
+    	Stairs.clientWood(event, MODID, WOOD);
     }
     
     @SubscribeEvent
@@ -76,5 +78,6 @@ public class McwByg
     	Fences.registryHedges(event, LEAVES, MCWBYG_TAB);
     	Fences.registryStone(event, fences_rockable, MCWBYG_TAB);
     	Furnitures.registryWood(event, WOOD, MCWBYG_TAB);
+    	Stairs.registryWood(event, WOOD, MCWBYG_TAB);
     }
 }
