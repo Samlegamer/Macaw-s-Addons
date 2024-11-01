@@ -28,6 +28,7 @@ import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
+import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 
 @Mod(McwSajevius.MODID)
 public class McwSajevius
@@ -60,8 +61,12 @@ public class McwSajevius
     public static final ItemGroup MCWSAJEVIUS_TAB = new ItemGroup(MODID + ".tab") {
 	    @Override
 	    public ItemStack makeIcon() {
-	        return new ItemStack(new NewIconRandom.Properties(Finder.findBlock(MODID, randomNaming()+"_roof"), Finder.findBlock(MODID, randomNaming()+"_picket_fence"), Finder.findBlock(MODID, randomNaming()+"_wardrobe"), 
-	        	    Finder.findBlock(MODID, randomNaming()+"_log_bridge_middle"), Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE).bridges().fences().furnitures().roofs().buildWood());
+	    	NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(Finder.findBlock(MODID, randomNaming()+"_roof"), Finder.findBlock(MODID, randomNaming()+"_picket_fence"), Finder.findBlock(MODID, randomNaming()+"_wardrobe"), 
+	        Finder.findBlock(MODID, randomNaming()+"_log_bridge_middle"), Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Finder.findBlock(MODID, randomNaming()+"_skyline_stairs"));
+	        
+	    	prop.addType(BlockType.ROOFS).addType(BlockType.BRIDGES).addType(BlockType.FENCES).addType(BlockType.FURNITURES).addType(BlockType.STAIRS);
+	    	Block icon = prop.buildIcon(BlockType.ROOFS, BlockType.BRIDGES, BlockType.FENCES, BlockType.FURNITURES, BlockType.STAIRS);
+	    	return new ItemStack(icon);
 	    }
 	};
 

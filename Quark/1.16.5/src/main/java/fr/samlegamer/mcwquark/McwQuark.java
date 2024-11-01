@@ -1,6 +1,7 @@
 package fr.samlegamer.mcwquark;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.RegistryEvent;
@@ -18,6 +19,7 @@ import fr.samlegamer.addonslib.bridges.Bridges;
 import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
+import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 
 @Mod(McwQuark.MODID)
 @Mod.EventBusSubscriber(modid = McwQuark.MODID, bus = Bus.MOD)
@@ -37,7 +39,12 @@ public class McwQuark
 	public static final ItemGroup MCWQUARK_TAB = new ItemGroup(MODID + ".tab") {
 	    @Override
 	    public ItemStack makeIcon() {
-	        return new ItemStack(new NewIconRandom.Properties(Finder.findBlock(MODID, "limestone_bricks_roof"), Finder.findBlock(MODID, "orange_blossom_hedge"), Finder.findBlock(MODID, "marble_bricks_bridge")).bridges().fences().roofs().buildStone());
+	    	NewIconRandom.NewProperties propIcon = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "limestone_bricks_roof"), Finder.findBlock(MODID, "orange_blossom_hedge"), Blocks.CRAFTING_TABLE,
+	    	Finder.findBlock(MODID, "marble_bricks_bridge"), Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE);
+	    	
+	    	propIcon.addType(BlockType.BRIDGES).addType(BlockType.ROOFS).addType(BlockType.FENCES);
+	    	Block icon = propIcon.buildIcon(BlockType.BRIDGES, BlockType.ROOFS, BlockType.FENCES);
+	        return new ItemStack(icon);
 	    }
 	};
 	

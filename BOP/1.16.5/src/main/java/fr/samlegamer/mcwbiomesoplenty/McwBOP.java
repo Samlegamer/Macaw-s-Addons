@@ -24,6 +24,7 @@ import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
+import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
 
@@ -41,9 +42,21 @@ public class McwBOP
 	public static final ItemGroup MCWBOP_TAB = new ItemGroup(MODID + ".tab") {
 	    @Override
 	    public ItemStack makeIcon() {
-	        return new ItemStack(new NewIconRandom.Properties(Finder.findBlock(MODID, "cherry_roof"), Finder.findBlock(MODID, "cherry_picket_fence"), Finder.findBlock(MODID, "cherry_wardrobe"), 
-	        	    Finder.findBlock(MODID, "cherry_log_bridge_middle"), Finder.findBlock(MODID, "cherry_window"), Finder.findBlock(MODID, "cherry_japanese_door"), 
-	        	    Finder.findBlock(MODID, "cherry_glass_trapdoor"), Finder.findBlock(MODID, "cherry_planks_path")).bridges().fences().furnitures().roofs().doors().paths().trapdoors().windows().buildWood());
+	    	NewIconRandom.NewProperties woodProperties = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "cherry_roof"), Finder.findBlock(MODID, "cherry_picket_fence"), Finder.findBlock(MODID, "cherry_wardrobe"), 
+	    	        Finder.findBlock(MODID, "cherry_log_bridge_middle"), Finder.findBlock(MODID, "cherry_window"), Finder.findBlock(MODID, "cherry_japanese_door"), Finder.findBlock(MODID, "cherry_glass_trapdoor"), 
+	    	        Finder.findBlock(MODID, "cherry_planks_path"), Finder.findBlock(MODID, "cherry_loft_stairs"));
+	    	    	woodProperties
+	    	    	.addType(BlockType.ROOFS)
+	    	    	.addType(BlockType.FENCES)
+	    	    	.addType(BlockType.FURNITURES)
+	    	    	.addType(BlockType.BRIDGES)
+	    	    	.addType(BlockType.WINDOWS)
+	    	    	.addType(BlockType.DOORS)
+	    	    	.addType(BlockType.TRAPDOORS)
+	    	    	.addType(BlockType.PATHS)
+	    	    	.addType(BlockType.STAIRS);
+	    	        Block icon = woodProperties.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.STAIRS);
+	    	        return new ItemStack(icon);
 	    }
 	};
 	
@@ -68,12 +81,12 @@ public class McwBOP
     
     private void client(FMLClientSetupEvent e)
     {
-    	Stairs.clientWood(e, MODID, WOOD);
+    	Bridges.clientWood(e, MODID, WOOD);
+    	Roofs.clientWood(e, MODID, WOOD);
     	Fences.clientWood(e, MODID, WOOD);
     	Fences.clientHedge(e, MODID, LEAVES);
     	Furnitures.clientWood(e, MODID, WOOD);
-    	Roofs.clientWood(e, MODID, WOOD);
-    	Bridges.clientWood(e, MODID, WOOD);
+    	Stairs.clientWood(e, MODID, WOOD);
     	Trapdoors.clientWood(e, MODID, WOOD);
     	Paths.clientWood(e, MODID, WOOD);
     	Doors.clientWood(e, MODID, WOOD);

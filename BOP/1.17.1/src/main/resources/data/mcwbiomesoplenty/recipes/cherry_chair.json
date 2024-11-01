@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomesoplenty:cherry_log"
+        }, 
+		
+        "B":
+        {
+            "item": "biomesoplenty:cherry_slab"
+        },
+		
+		"C":
+        {
+            "item": "biomesoplenty:cherry_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:cherry_chair",
+        "count": 1
+    }
+}
+
+

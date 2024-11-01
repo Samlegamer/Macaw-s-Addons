@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : {
+      "item" : "biomesoplenty:stripped_mahogany_log"
+    },
+    "Z" : {
+      "item" : "biomesoplenty:mahogany_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwbiomesoplenty:mahogany_terrace_stairs",
+    "count" : 5
+  }
+}

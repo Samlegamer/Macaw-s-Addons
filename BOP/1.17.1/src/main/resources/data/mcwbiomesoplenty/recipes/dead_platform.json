@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " Z ", " W ", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "biomesoplenty:dead_log"
+    },
+    "Z" : {
+      "item" : "biomesoplenty:dead_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwbiomesoplenty:dead_platform",
+    "count" : 6
+  }
+}

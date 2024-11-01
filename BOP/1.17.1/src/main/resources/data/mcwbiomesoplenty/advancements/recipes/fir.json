@@ -1,0 +1,91 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbiomesoplenty:fir_wardrobe",
+	  "mcwbiomesoplenty:fir_modern_wardrobe",
+	  "mcwbiomesoplenty:fir_double_wardrobe",
+	  "mcwbiomesoplenty:fir_bookshelf_cupboard",
+	  "mcwbiomesoplenty:fir_bookshelf",
+	  "mcwbiomesoplenty:fir_drawer",
+	  "mcwbiomesoplenty:fir_double_drawer",
+	  "mcwbiomesoplenty:fir_bookshelf_drawer",
+	  "mcwbiomesoplenty:fir_lower_bookshelf_drawer",
+	  "mcwbiomesoplenty:fir_large_drawer",
+	  "mcwbiomesoplenty:fir_lower_triple_drawer",
+	  "mcwbiomesoplenty:fir_triple_drawer",
+	  "mcwbiomesoplenty:fir_desk",
+	  "mcwbiomesoplenty:fir_covered_desk",
+	  "mcwbiomesoplenty:fir_modern_desk",
+	  "mcwbiomesoplenty:fir_table",
+	  "mcwbiomesoplenty:fir_end_table",
+	  "mcwbiomesoplenty:fir_coffee_table",
+	  "mcwbiomesoplenty:fir_glass_table",
+	  "mcwbiomesoplenty:fir_chair",
+	  "mcwbiomesoplenty:fir_modern_chair",
+	  "mcwbiomesoplenty:fir_striped_chair",
+	  "mcwbiomesoplenty:fir_stool_chair",
+	  "mcwbiomesoplenty:fir_counter",
+	  "mcwbiomesoplenty:fir_drawer_counter",
+	  "mcwbiomesoplenty:fir_double_drawer_counter",
+	  "mcwbiomesoplenty:fir_cupboard_counter",
+	  
+	  "mcwbiomesoplenty:stripped_fir_wardrobe",
+	  "mcwbiomesoplenty:stripped_fir_modern_wardrobe",
+	  "mcwbiomesoplenty:stripped_fir_double_wardrobe",
+	  "mcwbiomesoplenty:stripped_fir_bookshelf_cupboard",
+	  "mcwbiomesoplenty:stripped_fir_bookshelf",
+	  "mcwbiomesoplenty:stripped_fir_drawer",
+	  "mcwbiomesoplenty:stripped_fir_double_drawer",
+	  "mcwbiomesoplenty:stripped_fir_bookshelf_drawer",
+	  "mcwbiomesoplenty:stripped_fir_lower_bookshelf_drawer",
+	  "mcwbiomesoplenty:stripped_fir_large_drawer",
+	  "mcwbiomesoplenty:stripped_fir_lower_triple_drawer",
+	  "mcwbiomesoplenty:stripped_fir_triple_drawer",
+	  "mcwbiomesoplenty:stripped_fir_desk",
+	  "mcwbiomesoplenty:stripped_fir_covered_desk",
+	  "mcwbiomesoplenty:stripped_fir_modern_desk",
+	  "mcwbiomesoplenty:stripped_fir_table",
+	  "mcwbiomesoplenty:stripped_fir_end_table",
+	  "mcwbiomesoplenty:stripped_fir_coffee_table",
+	  "mcwbiomesoplenty:stripped_fir_glass_table",
+	  "mcwbiomesoplenty:stripped_fir_chair",
+	  "mcwbiomesoplenty:stripped_fir_modern_chair",
+	  "mcwbiomesoplenty:stripped_fir_striped_chair",
+	  "mcwbiomesoplenty:stripped_fir_stool_chair",
+	  "mcwbiomesoplenty:stripped_fir_counter",
+	  "mcwbiomesoplenty:stripped_fir_drawer_counter",
+	  "mcwbiomesoplenty:stripped_fir_double_drawer_counter",
+	  "mcwbiomesoplenty:stripped_fir_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:fir_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbiomesoplenty:fir_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

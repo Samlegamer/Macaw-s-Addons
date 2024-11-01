@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbiomesoplenty:cherry_tropical_door",
+	  "mcwbiomesoplenty:cherry_bark_glass_door",
+	  "mcwbiomesoplenty:cherry_barn_door",
+	  "mcwbiomesoplenty:cherry_barn_glass_door",
+	  "mcwbiomesoplenty:cherry_beach_door",
+	  "mcwbiomesoplenty:cherry_classic_door",
+	  "mcwbiomesoplenty:cherry_cottage_door",
+	  "mcwbiomesoplenty:cherry_four_panel_door",
+	  "mcwbiomesoplenty:cherry_glass_door",
+	  "mcwbiomesoplenty:cherry_japanese_door",
+	  "mcwbiomesoplenty:cherry_japanese2_door",
+	  "mcwbiomesoplenty:cherry_modern_door",
+	  "mcwbiomesoplenty:cherry_mystic_door",
+	  "mcwbiomesoplenty:cherry_nether_door",
+	  "mcwbiomesoplenty:cherry_paper_door",
+	  "mcwbiomesoplenty:cherry_stable_door",
+	  "mcwbiomesoplenty:cherry_stable_head_door",
+	  "mcwbiomesoplenty:cherry_swamp_door",
+	  "mcwbiomesoplenty:cherry_western_door",
+	  "mcwbiomesoplenty:cherry_waffle_door",
+	  "mcwbiomesoplenty:cherry_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:cherry_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
