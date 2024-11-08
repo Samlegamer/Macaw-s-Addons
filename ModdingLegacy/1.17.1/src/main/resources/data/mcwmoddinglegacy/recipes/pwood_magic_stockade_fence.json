@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "premium_wood:magic_log"
+        },    
+        
+        "B":
+        {
+            "item": "premium_wood:magic_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwmoddinglegacy:pwood_magic_stockade_fence",
+        "count": 3
+    }
+}
+
+

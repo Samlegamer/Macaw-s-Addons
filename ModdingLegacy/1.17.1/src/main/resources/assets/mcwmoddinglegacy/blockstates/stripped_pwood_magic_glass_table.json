@@ -1,0 +1,24 @@
+{
+    "variants": {                   
+
+        "north=false,east=false,west=false,south=false":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_single"},
+		"north=true,east=false,west=false,south=true":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_middle", "y": 90},
+		"north=false,east=true,west=true,south=false":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_middle"},
+		"north=true,east=true,west=true,south=true":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_center"},
+
+		"north=true,east=true,west=false,south=true":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_middle_three", "y": 90},
+		"north=false,east=true,west=true,south=true":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_middle_three", "y": 180},
+		"north=true,east=false,west=true,south=true":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_middle_three", "y": 270},
+		"north=true,east=true,west=true,south=false":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_middle_three"},
+		
+		"north=true,east=false,west=true,south=false":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_corner", "y": 90},
+		"north=true,east=true,west=false,south=false":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_corner", "y": 180},
+		"north=false,east=true,west=false,south=true":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_corner", "y": 270},
+		"north=false,east=false,west=true,south=true":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_corner"},
+		
+        "north=true,east=false,west=false,south=false":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_side", "y": 90},
+		"north=false,east=true,west=false,south=false":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_side", "y": 180},
+		"north=false,east=false,west=false,south=true":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_side", "y": 270},
+		"north=false,east=false,west=true,south=false":  { "model": "mcwmoddinglegacy:block/table/stripped_pwood_magic_glass_table_side"}
+    }
+}

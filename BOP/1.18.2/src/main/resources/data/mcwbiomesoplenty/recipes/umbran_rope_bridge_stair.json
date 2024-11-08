@@ -1,0 +1,30 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "rope_stairs",
+    
+    "pattern": [
+    "  F",
+    " FF",
+	"FFF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "mcwbiomesoplenty:rope_umbran_bridge"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:umbran_rope_bridge_stair",
+        "count": 6
+    }
+}

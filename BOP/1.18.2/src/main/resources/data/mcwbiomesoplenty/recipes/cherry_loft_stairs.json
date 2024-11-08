@@ -1,0 +1,20 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "loft_stairs",
+  "pattern" : [ "W  ", " W ", "  W" ],
+  "key" : {
+    "W" : {
+      "item" : "biomesoplenty:stripped_cherry_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwbiomesoplenty:cherry_loft_stairs",
+    "count" : 3
+  }
+}

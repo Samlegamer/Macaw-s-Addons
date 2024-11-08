@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwmoddinglegacy:pwood_silverbell_picket_fence",
+	  "mcwmoddinglegacy:pwood_silverbell_stockade_fence",
+	  "mcwmoddinglegacy:pwood_silverbell_horse_fence",
+	  "mcwmoddinglegacy:pwood_silverbell_wired_fence",
+	  "mcwmoddinglegacy:pwood_silverbell_highley_gate",
+	  "mcwmoddinglegacy:pwood_silverbell_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "premium_wood:silverbell_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}
