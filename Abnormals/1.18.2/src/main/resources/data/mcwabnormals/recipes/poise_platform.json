@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " Z ", " W ", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "endergetic:poise_stem"
+    },
+    "Z" : {
+      "item" : "endergetic:poise_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwabnormals:poise_platform",
+    "count" : 6
+  }
+}

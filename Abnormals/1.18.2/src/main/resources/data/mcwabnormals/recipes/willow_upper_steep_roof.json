@@ -1,0 +1,39 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "upper_steep",
+    
+    "pattern":
+    [
+		" W",
+		" W",
+        "WS"
+    ],
+    
+    "key":
+    {
+        "W":
+        {
+            "item": "environmental:willow_log"
+        },
+		"S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcwabnormals:willow_upper_steep_roof",
+        "count": 3
+    }
+}

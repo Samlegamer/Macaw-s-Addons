@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "environmental:stripped_cherry_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "environmental:cherry_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:stripped_cherry_desk",
+        "count": 2
+    }
+}
+
+

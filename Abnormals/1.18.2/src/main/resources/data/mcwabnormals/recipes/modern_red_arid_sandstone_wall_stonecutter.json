@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "atmospheric:red_arid_sandstone"
+    },
+    "result": "mcwabnormals:modern_red_arid_sandstone_wall",
+    "group": "fences",
+    "count": 1
+}

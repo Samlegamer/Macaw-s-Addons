@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "double_cabinet",
+    "pattern":
+    [
+        "AA",
+        "CC",
+        "AA"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "atmospheric:stripped_grimwood_log"
+        }, 
+		
+        "C":
+        {
+            "item": "mcwfurnitures:cabinet_door"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:stripped_grimwood_double_kitchen_cabinet",
+        "count": 4
+    }
+}
+
+

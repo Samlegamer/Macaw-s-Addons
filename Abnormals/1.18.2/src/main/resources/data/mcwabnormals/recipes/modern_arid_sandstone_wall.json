@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "modern",
+    
+    "pattern":
+    [
+		"ABA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "atmospheric:smooth_arid_sandstone"
+        },    
+        
+        "B":
+        {
+            "item": "atmospheric:arid_sandstone"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:modern_arid_sandstone_wall",
+        "count": 6
+    }
+}
+
+

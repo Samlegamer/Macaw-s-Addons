@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "buzzier_bees"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "buzzier_bees:honeycomb_bricks"
+    },
+    "result": "mcwabnormals:modern_honeycomb_brick_wall",
+    "group": "fences",
+    "count": 1
+}

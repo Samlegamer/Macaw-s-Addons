@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:modern_snail_shell_tiles_wall",
+	  
+	  "mcwabnormals:railing_snail_shell_tiles_wall",
+	  
+	  "mcwabnormals:snail_shell_tiles_railing_gate",
+	  
+	  "mcwabnormals:snail_shell_tiles_pillar_wall",
+	  
+	  
+	  "mcwabnormals:snail_shell_tiles_grass_topped_wall"
+    ]
+  },
+  "criteria": {
+    "has_sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "autumnity:snail_shell_tiles"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand"
+    ]
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:wisteria_picket_fence",
+	  "mcwabnormals:wisteria_stockade_fence",
+	  "mcwabnormals:wisteria_horse_fence",
+	  "mcwabnormals:wisteria_wired_fence",
+	  "mcwabnormals:wisteria_highley_gate",
+	  "mcwabnormals:wisteria_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "environmental:wisteria_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

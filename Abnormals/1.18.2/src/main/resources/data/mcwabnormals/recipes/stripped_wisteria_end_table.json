@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "end_table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwabnormals:stripped_wisteria_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "environmental:stripped_wisteria_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:stripped_wisteria_end_table",
+        "count": 1
+    }
+}
+
+

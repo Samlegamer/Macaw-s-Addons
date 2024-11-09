@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "cupboard_counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "environmental:wisteria_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwabnormals:stripped_wisteria_wardrobe"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:stripped_wisteria_cupboard_counter",
+        "count": 1
+    }
+}
+
+

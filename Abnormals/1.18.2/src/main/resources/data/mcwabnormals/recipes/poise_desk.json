@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "endergetic:poise_stem"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "endergetic:poise_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:poise_desk",
+        "count": 2
+    }
+}
+
+

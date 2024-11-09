@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "loft_stairs",
+  "pattern" : [ "W  ", " W ", "  W" ],
+  "key" : {
+    "W" : {
+      "item" : "upgrade_aquatic:stripped_driftwood_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwabnormals:driftwood_loft_stairs",
+    "count" : 3
+  }
+}

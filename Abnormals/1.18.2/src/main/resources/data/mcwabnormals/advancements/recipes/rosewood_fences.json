@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:rosewood_picket_fence",
+	  "mcwabnormals:rosewood_stockade_fence",
+	  "mcwabnormals:rosewood_horse_fence",
+	  "mcwabnormals:rosewood_wired_fence",
+	  "mcwabnormals:rosewood_highley_gate",
+	  "mcwabnormals:rosewood_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "atmospheric:rosewood_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

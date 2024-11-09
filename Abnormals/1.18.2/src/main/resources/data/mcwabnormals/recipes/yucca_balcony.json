@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_balcony",
+  "pattern" : [ "WWW", "Z Z", "WWW" ],
+  "key" : {
+    "W" : {
+      "item" : "minecraft:stick"
+    },
+    "Z" : {
+      "item" : "atmospheric:yucca_fence"
+    }
+  },
+  "result" : {
+    "item" : "mcwabnormals:yucca_balcony",
+    "count" : 6
+  }
+}
