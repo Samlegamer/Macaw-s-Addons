@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "skyline_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : {
+      "item" : "enhanced_mushrooms:stripped_brown_mushroom_stem"
+    },
+    "Z" : {
+      "item" : "enhanced_mushrooms:brown_mushroom_stem"
+    }
+  },
+  "result" : {
+    "item" : "mcwaurora:brown_mushroom_skyline_stairs",
+    "count" : 6
+  }
+}

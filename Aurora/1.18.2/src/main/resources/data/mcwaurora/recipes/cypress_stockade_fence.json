@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "bayou_blues"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "bayou_blues:cypress_log"
+        },    
+        
+        "B":
+        {
+            "item": "bayou_blues:cypress_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:cypress_stockade_fence",
+        "count": 3
+    }
+}
+
+

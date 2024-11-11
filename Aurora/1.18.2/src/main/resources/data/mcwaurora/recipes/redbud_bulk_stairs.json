@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "abundance"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bulk_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : {
+      "item" : "abundance:stripped_redbud_log"
+    },
+    "Z" : {
+      "item" : "abundance:redbud_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwaurora:redbud_bulk_stairs",
+    "count" : 6
+  }
+}

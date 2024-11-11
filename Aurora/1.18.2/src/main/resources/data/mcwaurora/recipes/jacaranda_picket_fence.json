@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "abundance"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "abundance:jacaranda_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "abundance:jacaranda_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:jacaranda_picket_fence",
+        "count": 3
+    }
+}
+
+

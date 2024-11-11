@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "abundance"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stool_chair",
+    "pattern":
+    [
+		"A",
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "abundance:jacaranda_log"
+        }, 	
+		
+        "B":
+        {
+            "item": "abundance:jacaranda_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:jacaranda_stool_chair",
+        "count": 1
+    }
+}
+
+

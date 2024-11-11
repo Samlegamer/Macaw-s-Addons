@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwaurora:red_mushroom_picket_fence",
+	  "mcwaurora:red_mushroom_stockade_fence",
+	  "mcwaurora:red_mushroom_horse_fence",
+	  "mcwaurora:red_mushroom_wired_fence",
+	  "mcwaurora:red_mushroom_highley_gate",
+	  "mcwaurora:red_mushroom_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "enhanced_mushrooms:red_mushroom_stem"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

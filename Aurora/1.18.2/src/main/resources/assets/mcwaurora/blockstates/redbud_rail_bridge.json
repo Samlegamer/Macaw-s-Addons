@@ -1,0 +1,15 @@
+{
+    "variants": {                                                                        
+        "facing=north,powered=false":  { "model": "mcwaurora:block/bridge/rail/redbud", "y": 90},
+		"facing=east,powered=false":  { "model": "mcwaurora:block/bridge/rail/redbud"},
+		"facing=south,powered=false":  { "model": "mcwaurora:block/bridge/rail/redbud", "y": 90},
+		"facing=west,powered=false":  { "model": "mcwaurora:block/bridge/rail/redbud"},
+
+		"facing=north,powered=true":  { "model": "mcwaurora:block/bridge/rail/redbud_powered", "y": 90},
+		"facing=east,powered=true":  { "model": "mcwaurora:block/bridge/rail/redbud_powered"},
+		"facing=south,powered=true":  { "model": "mcwaurora:block/bridge/rail/redbud_powered", "y": 90},
+		"facing=west,powered=true":  { "model": "mcwaurora:block/bridge/rail/redbud_powered"}			
+    }
+}
+
+

@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "abundance"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "striped_chair",
+    "pattern":
+    [
+        " A",
+        "BC",
+		"CC"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "abundance:stripped_jacaranda_log"
+        }, 
+		
+        "B":
+        {
+            "item": "abundance:jacaranda_slab"
+        },
+		
+		"C":
+        {
+            "item": "abundance:jacaranda_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:stripped_jacaranda_striped_chair",
+        "count": 1
+    }
+}
+
+

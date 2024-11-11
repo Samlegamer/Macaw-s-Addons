@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "abundance"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "abundance:jacaranda_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "abundance:jacaranda_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:jacaranda_desk",
+        "count": 2
+    }
+}
+
+
