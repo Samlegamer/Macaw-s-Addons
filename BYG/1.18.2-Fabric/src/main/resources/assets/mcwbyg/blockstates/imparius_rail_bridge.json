@@ -1,0 +1,15 @@
+{
+    "variants": {                                                                        
+        "facing=north,powered=false":  { "model": "mcwbyg:block/bridge/rail/imparius", "y": 90},
+		"facing=east,powered=false":  { "model": "mcwbyg:block/bridge/rail/imparius"},
+		"facing=south,powered=false":  { "model": "mcwbyg:block/bridge/rail/imparius", "y": 90},
+		"facing=west,powered=false":  { "model": "mcwbyg:block/bridge/rail/imparius"},
+
+		"facing=north,powered=true":  { "model": "mcwbyg:block/bridge/rail/imparius_powered", "y": 90},
+		"facing=east,powered=true":  { "model": "mcwbyg:block/bridge/rail/imparius_powered"},
+		"facing=south,powered=true":  { "model": "mcwbyg:block/bridge/rail/imparius_powered", "y": 90},
+		"facing=west,powered=true":  { "model": "mcwbyg:block/bridge/rail/imparius_powered"}			
+    }
+}
+
+

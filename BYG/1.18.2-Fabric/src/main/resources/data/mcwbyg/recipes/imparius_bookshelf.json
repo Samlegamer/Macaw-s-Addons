@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bookshelf",
+	
+    "pattern":
+    [
+        "AAA",
+        "BBB",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:imparius_stem"
+        }, 
+		
+        "B":
+        {
+            "item": "minecraft:book"
+        }
+
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:imparius_bookshelf",
+        "count": 4
+    }
+}
+
+

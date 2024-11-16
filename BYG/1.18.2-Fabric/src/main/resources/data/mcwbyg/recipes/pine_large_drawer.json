@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "large_drawer",
+    "pattern":
+    [
+        "ABA",
+        "AAA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:pine_log"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwfurnitures:cabinet_drawer"
+        }
+		
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:pine_large_drawer",
+        "count": 4
+    }
+}
+
+

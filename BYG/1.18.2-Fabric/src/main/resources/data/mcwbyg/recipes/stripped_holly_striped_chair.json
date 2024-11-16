@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "striped_chair",
+    "pattern":
+    [
+        " A",
+        "BC",
+		"CC"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:stripped_holly_log"
+        }, 
+		
+        "B":
+        {
+            "item": "byg:holly_slab"
+        },
+		
+		"C":
+        {
+            "item": "byg:holly_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_holly_striped_chair",
+        "count": 1
+    }
+}
+
+
