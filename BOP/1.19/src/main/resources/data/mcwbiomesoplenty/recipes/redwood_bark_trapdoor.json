@@ -1,0 +1,36 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "bark_trapdoor",
+    "pattern":
+    [
+        "ABA",
+        "ABA"              
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomesoplenty:redwood_log"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:glass_pane"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:redwood_bark_trapdoor",
+        "count": 2
+    }
+}
+
+

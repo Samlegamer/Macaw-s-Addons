@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "biomesoplenty:magic_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "biomesoplenty:magic_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:magic_picket_fence",
+        "count": 3
+    }
+}
+
+
