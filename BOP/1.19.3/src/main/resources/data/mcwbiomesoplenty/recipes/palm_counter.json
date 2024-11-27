@@ -1,0 +1,36 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomesoplenty:palm_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "biomesoplenty:palm_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:palm_counter",
+        "count": 1
+    }
+}
+
+
