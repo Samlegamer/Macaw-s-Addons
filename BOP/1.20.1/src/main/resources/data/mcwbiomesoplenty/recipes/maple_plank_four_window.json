@@ -1,0 +1,37 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "windows_four",
+	
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "mcwwindows:window_centre_bar_base"
+        },    
+
+		
+        "B":
+        {
+            "item": "biomesoplenty:maple_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:maple_plank_four_window",
+        "count": 8
+    }
+}

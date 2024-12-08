@@ -1,0 +1,36 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "blinds",
+	
+    "pattern":
+    [
+        "AAA",
+        "BBB",
+        "BBB"		
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "A":
+        {
+            "item": "biomesoplenty:empyreal_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:empyreal_blinds",
+        "count": 3
+    }
+}

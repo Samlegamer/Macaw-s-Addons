@@ -1,0 +1,36 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "windows",
+	
+    "pattern":
+    [
+        " A ",
+        "ABA",
+        " A "                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "mcwwindows:window_base"
+        },    
+        
+        "B":
+        {
+            "item": "biomesoplenty:mahogany_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:mahogany_window",
+        "count": 4
+    }
+}

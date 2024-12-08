@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "shoji_two",
+    
+    "pattern":
+    [
+        "BB",
+        "BB",
+        "AA"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomesoplenty:redwood_slab"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:paper"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:redwood_japanese2_door",
+        "count": 3
+    }
+}
+
+

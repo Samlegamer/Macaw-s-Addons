@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stable",
+	
+    "pattern":
+    [
+        "BB",
+        "AA",
+		"AA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomesoplenty:maple_planks"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:iron_bars"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:maple_stable_door",
+        "count": 3
+    }
+}
+
+
