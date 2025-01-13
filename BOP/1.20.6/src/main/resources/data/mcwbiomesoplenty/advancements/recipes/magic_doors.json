@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbiomesoplenty:magic_tropical_door",
+	  "mcwbiomesoplenty:magic_bark_glass_door",
+	  "mcwbiomesoplenty:magic_barn_door",
+	  "mcwbiomesoplenty:magic_barn_glass_door",
+	  "mcwbiomesoplenty:magic_beach_door",
+	  "mcwbiomesoplenty:magic_classic_door",
+	  "mcwbiomesoplenty:magic_cottage_door",
+	  "mcwbiomesoplenty:magic_four_panel_door",
+	  "mcwbiomesoplenty:magic_glass_door",
+	  "mcwbiomesoplenty:magic_japanese_door",
+	  "mcwbiomesoplenty:magic_japanese2_door",
+	  "mcwbiomesoplenty:magic_modern_door",
+	  "mcwbiomesoplenty:magic_mystic_door",
+	  "mcwbiomesoplenty:magic_nether_door",
+	  "mcwbiomesoplenty:magic_paper_door",
+	  "mcwbiomesoplenty:magic_stable_door",
+	  "mcwbiomesoplenty:magic_stable_head_door",
+	  "mcwbiomesoplenty:magic_swamp_door",
+	  "mcwbiomesoplenty:magic_western_door",
+	  "mcwbiomesoplenty:magic_waffle_door",
+	  "mcwbiomesoplenty:magic_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:magic_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

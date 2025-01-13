@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "parapets",
+  "pattern" : [ "AAA", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:stick"
+    },
+    "B" : {
+      "item" : "biomesoplenty:maple_log"
+    }
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwbiomesoplenty:maple_log_parapet"
+  }
+}

@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "glassed",
+  "pattern" : [ "AB", "BB", "AB" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:jacaranda_planks"
+    },
+    "B" : {
+      "item" : "minecraft:glass_pane"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:jacaranda_glass_door"
+  }
+}

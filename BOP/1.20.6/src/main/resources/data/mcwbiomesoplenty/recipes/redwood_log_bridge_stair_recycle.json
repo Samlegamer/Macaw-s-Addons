@@ -1,0 +1,17 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    }
+  ],
+  "type" : "minecraft:crafting_shapeless",
+  "group" : "recyclable_bridges",
+  "ingredients" : [ {
+    "item" : "mcwbiomesoplenty:redwood_log_bridge_stair"
+  } ],
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:redwood_log_bridge_middle"
+  }
+}
