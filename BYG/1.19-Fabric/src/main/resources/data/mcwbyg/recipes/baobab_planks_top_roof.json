@@ -1,0 +1,33 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "top",
+    
+    "pattern":
+    [
+        "WSW"
+    ],
+    
+    "key":
+    {
+        "W":
+        {
+            "item": "byg:baobab_planks"
+        },
+		"S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcwbyg:baobab_planks_top_roof",
+        "count": 2
+    }
+}

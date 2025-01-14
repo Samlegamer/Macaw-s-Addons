@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " Z ", " W ", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "byg:cypress_log"
+    },
+    "Z" : {
+      "item" : "byg:cypress_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:cypress_platform",
+    "count" : 6
+  }
+}

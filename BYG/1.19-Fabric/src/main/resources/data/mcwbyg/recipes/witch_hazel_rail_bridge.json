@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "rail_bridges",
+    
+    "pattern": [
+    "F F",
+    "FWF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "byg:witch_hazel_fence"
+        },
+        
+        "W":
+        {
+            "item": "byg:witch_hazel_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:witch_hazel_rail_bridge",
+        "count": 4
+    }
+}

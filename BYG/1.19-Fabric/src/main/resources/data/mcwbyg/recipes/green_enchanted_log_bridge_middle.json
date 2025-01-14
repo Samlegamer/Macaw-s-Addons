@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "log_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "byg:green_enchanted_fence"
+        },
+        
+        "W":
+        {
+            "item": "byg:green_enchanted_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:green_enchanted_log_bridge_middle",
+        "count": 4
+    }
+}

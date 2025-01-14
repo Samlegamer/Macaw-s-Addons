@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "coffee_table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:aspen_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "byg:aspen_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:aspen_coffee_table",
+        "count": 1
+    }
+}
+
+

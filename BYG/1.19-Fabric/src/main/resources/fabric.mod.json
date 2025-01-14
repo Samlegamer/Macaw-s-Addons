@@ -1,40 +1,43 @@
 {
 	"schemaVersion": 1,
-	"id": "template-mod",
-	"version": "${version}",
-	"name": "Template Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
+	  "id": "mcwbyg",
+	  "version": "1.19-1.0",
+	  "name": "Macaw's - Oh the Biomes You'll Go",
+	  "description": "A multiple compability for Oh the Biomes You'll Go with Macaw's Mods like Bridges/Roofs/Fences or Furnitures.",
+	  "authors": [
+	    "Samlegamer"
+	  ],
+	  "contact": {
+	    "homepage": "",
+	    "sources": "https://github.com/Samlegamer/Macaw-s-Addons"
+	  },
 	"license": "CC0-1.0",
-	"icon": "assets/template-mod/icon.png",
+  "icon": "assets/mcwbyg/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"com.example.TemplateMod"
-		],
-		"client": [
-			"com.example.TemplateModClient"
-		]
+	    "main": [
+	      "fr.samlegamer.mcwbyg.McwByg"
+	    ],
+	    "client": [
+	      "fr.samlegamer.mcwbyg.client.Client"
+	    ]
 	},
-	"mixins": [
-		"template-mod.mixins.json",
-		{
-			"config": "template-mod.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
 		"minecraft": "~1.19",
 		"java": ">=17",
-		"fabric": "*"
+		"fabric": "*",
+		"addonslib": "*",
+	    "byg": "*",
+	    "updatefixerupper": "*"
 	},
+	"recommends": {
+	  	"mcwbridges":"*",
+	  	"mcwfences":"*",
+	  	"mcwfurnitures":"*",
+	  	"mcwroofs":"*",
+	  	"mcwstairs":"*"
+  	},
 	"suggests": {
 		"another-mod": "*"
 	}
