@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : {
+      "item" : "byg:stripped_holly_log"
+    },
+    "Z" : {
+      "item" : "byg:holly_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:holly_terrace_stairs",
+    "count" : 5
+  }
+}

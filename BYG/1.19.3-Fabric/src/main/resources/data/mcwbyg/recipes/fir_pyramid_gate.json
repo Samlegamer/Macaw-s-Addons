@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "pyramid",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:fir_log"
+        },
+		
+		"C":
+        {
+            "item": "byg:fir_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:fir_pyramid_gate",
+        "count": 1
+    }
+}
+
+

@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "pyramid",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:jacaranda_log"
+        },
+		
+		"C":
+        {
+            "item": "byg:jacaranda_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:jacaranda_pyramid_gate",
+        "count": 1
+    }
+}
+
+

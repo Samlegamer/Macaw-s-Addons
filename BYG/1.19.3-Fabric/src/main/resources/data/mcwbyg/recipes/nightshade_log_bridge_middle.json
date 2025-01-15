@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "log_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "byg:nightshade_fence"
+        },
+        
+        "W":
+        {
+            "item": "byg:nightshade_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:nightshade_log_bridge_middle",
+        "count": 4
+    }
+}

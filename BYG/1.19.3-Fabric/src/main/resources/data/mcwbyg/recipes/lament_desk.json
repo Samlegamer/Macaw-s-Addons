@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:lament_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "byg:lament_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:lament_desk",
+        "count": 2
+    }
+}
+
+

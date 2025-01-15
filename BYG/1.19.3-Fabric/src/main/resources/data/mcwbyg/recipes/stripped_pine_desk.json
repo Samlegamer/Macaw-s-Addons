@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:stripped_pine_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "byg:pine_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_pine_desk",
+        "count": 2
+    }
+}
+
+
