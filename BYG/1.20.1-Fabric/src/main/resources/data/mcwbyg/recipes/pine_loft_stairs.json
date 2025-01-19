@@ -1,0 +1,20 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "loft_stairs",
+  "pattern" : [ "W  ", " W ", "  W" ],
+  "key" : {
+    "W" : {
+      "item" : "biomeswevegone:stripped_pine_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:pine_loft_stairs",
+    "count" : 3
+  }
+}

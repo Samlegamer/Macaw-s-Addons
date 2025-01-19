@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "modern_chair",
+    "pattern":
+    [
+        "BA",
+        "CC"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:stripped_rainbow_eucalyptus_log"
+        }, 
+		
+        "B":
+        {
+            "item": "biomeswevegone:rainbow_eucalyptus_slab"
+        },
+		
+		"C":
+        {
+            "item": "biomeswevegone:rainbow_eucalyptus_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_rainbow_eucalyptus_modern_chair",
+        "count": 1
+    }
+}
+
+

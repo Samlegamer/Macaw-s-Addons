@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomeswevegone:pink_sandstone"
+    },
+    "result": "mcwbyg:modern_pink_sandstone_wall",
+    "group": "fences",
+    "count": 1
+}

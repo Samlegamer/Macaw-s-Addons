@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "modern",
+    
+    "pattern":
+    [
+		"ABA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomeswevegone:smooth_blue_sandstone"
+        },    
+        
+        "B":
+        {
+            "item": "biomeswevegone:blue_sandstone"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:modern_blue_sandstone_wall",
+        "count": 6
+    }
+}
+
+

@@ -1,0 +1,33 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_piers",
+    
+    "pattern": [
+    "WFW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "biomeswevegone:sakura_fence"
+        },
+        
+        "W":
+        {
+            "item": "biomeswevegone:sakura_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:sakura_bridge_pier",
+        "count": 3
+    }
+}

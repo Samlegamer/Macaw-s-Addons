@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " Z ", " W ", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "biomeswevegone:green_enchanted_log"
+    },
+    "Z" : {
+      "item" : "biomeswevegone:green_enchanted_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:green_enchanted_platform",
+    "count" : 6
+  }
+}

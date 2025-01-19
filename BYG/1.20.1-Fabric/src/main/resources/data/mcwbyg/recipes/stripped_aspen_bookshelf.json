@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bookshelf",
+	
+    "pattern":
+    [
+        "AAA",
+        "BBB",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:stripped_aspen_log"
+        }, 
+		
+        "B":
+        {
+            "item": "minecraft:book"
+        }
+
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_aspen_bookshelf",
+        "count": 4
+    }
+}
+
+

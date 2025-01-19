@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:florus_stem"
+        }, 
+		
+        "B":
+        {
+            "item": "biomeswevegone:florus_slab"
+        },
+		
+		"C":
+        {
+            "item": "biomeswevegone:florus_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:florus_chair",
+        "count": 1
+    }
+}
+
+

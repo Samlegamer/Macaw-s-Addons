@@ -1,0 +1,20 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    }
+  ],
+    "type": "minecraft:crafting_shapeless",
+	"group": "recyclable_bridges",
+		
+    "ingredients": [
+        {
+            "item": "mcwbyg:rainbow_eucalyptus_rope_bridge_stair"
+        }
+    ],
+    "result": {
+        "item": "mcwbyg:rope_rainbow_eucalyptus_bridge",
+        "count": 1
+    }
+}

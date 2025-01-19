@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "striped_chair",
+    "pattern":
+    [
+        " A",
+        "BC",
+		"CC"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:stripped_fir_log"
+        }, 
+		
+        "B":
+        {
+            "item": "biomeswevegone:fir_slab"
+        },
+		
+		"C":
+        {
+            "item": "biomeswevegone:fir_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_fir_striped_chair",
+        "count": 1
+    }
+}
+
+

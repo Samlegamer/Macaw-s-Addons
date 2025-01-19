@@ -1,0 +1,20 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    }
+  ],
+    "type": "minecraft:crafting_shapeless",
+	"group": "recyclable_bridges",
+		
+    "ingredients": [
+        {
+            "item": "mcwbyg:cika_log_bridge_stair"
+        }
+    ],
+    "result": {
+        "item": "mcwbyg:cika_log_bridge_middle",
+        "count": 1
+    }
+}

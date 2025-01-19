@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " Z ", " W ", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "biomeswevegone:cika_log"
+    },
+    "Z" : {
+      "item" : "biomeswevegone:cika_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:cika_platform",
+    "count" : 6
+  }
+}

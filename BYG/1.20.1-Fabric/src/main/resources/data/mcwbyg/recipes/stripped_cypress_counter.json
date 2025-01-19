@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:cypress_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "biomeswevegone:stripped_cypress_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_cypress_counter",
+        "count": 1
+    }
+}
+
+

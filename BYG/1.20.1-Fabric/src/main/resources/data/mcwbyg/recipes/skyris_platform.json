@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " Z ", " W ", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "biomeswevegone:skyris_log"
+    },
+    "Z" : {
+      "item" : "biomeswevegone:skyris_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:skyris_platform",
+    "count" : 6
+  }
+}

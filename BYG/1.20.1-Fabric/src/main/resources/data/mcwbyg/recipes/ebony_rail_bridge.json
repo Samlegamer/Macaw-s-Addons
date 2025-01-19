@@ -1,0 +1,34 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "rail_bridges",
+    
+    "pattern": [
+    "F F",
+    "FWF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "biomeswevegone:ebony_fence"
+        },
+        
+        "W":
+        {
+            "item": "biomeswevegone:ebony_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:ebony_rail_bridge",
+        "count": 4
+    }
+}

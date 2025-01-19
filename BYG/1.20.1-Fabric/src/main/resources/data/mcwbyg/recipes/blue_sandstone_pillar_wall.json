@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "pillarwall",
+    
+    "pattern":
+    [
+		"AAA",
+		"B B"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomeswevegone:smooth_blue_sandstone"
+        },    
+        
+        "B":
+        {
+            "item": "biomeswevegone:blue_sandstone"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:blue_sandstone_pillar_wall",
+        "count": 5
+    }
+}
+
+

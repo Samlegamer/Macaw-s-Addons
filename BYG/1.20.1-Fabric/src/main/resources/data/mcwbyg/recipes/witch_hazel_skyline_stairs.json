@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "skyline_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : {
+      "item" : "biomeswevegone:stripped_witch_hazel_log"
+    },
+    "Z" : {
+      "item" : "biomeswevegone:witch_hazel_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:witch_hazel_skyline_stairs",
+    "count" : 6
+  }
+}

@@ -1,0 +1,34 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "log_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "biomeswevegone:florus_fence"
+        },
+        
+        "W":
+        {
+            "item": "biomeswevegone:florus_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:florus_log_bridge_middle",
+        "count": 4
+    }
+}

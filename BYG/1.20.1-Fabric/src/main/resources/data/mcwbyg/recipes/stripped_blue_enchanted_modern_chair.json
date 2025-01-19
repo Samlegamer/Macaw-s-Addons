@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "modern_chair",
+    "pattern":
+    [
+        "BA",
+        "CC"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:stripped_blue_enchanted_log"
+        }, 
+		
+        "B":
+        {
+            "item": "biomeswevegone:blue_enchanted_slab"
+        },
+		
+		"C":
+        {
+            "item": "biomeswevegone:blue_enchanted_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_blue_enchanted_modern_chair",
+        "count": 1
+    }
+}
+
+

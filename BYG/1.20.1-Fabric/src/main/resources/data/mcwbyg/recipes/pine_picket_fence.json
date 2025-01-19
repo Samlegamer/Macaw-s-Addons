@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "biomeswevegone:pine_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "biomeswevegone:pine_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:pine_picket_fence",
+        "count": 3
+    }
+}
+
+
