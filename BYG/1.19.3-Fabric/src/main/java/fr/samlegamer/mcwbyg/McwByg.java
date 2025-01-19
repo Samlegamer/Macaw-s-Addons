@@ -19,10 +19,10 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
-public class McwByg implements ModInitializer
+public class McwByg implements ModInitializer 
 {
 	public static final String MODID = "mcwbyg";
-    private static final Logger LOGGER = LogManager.getLogger();
+	public static final Logger LOGGER = LogManager.getLogger();
     public static final ItemGroup MCWBYG_TAB = FabricItemGroup.builder(new Identifier(MODID + ".tab")).icon(() -> new ItemStack(icon())).build();
     
 	public static final List<String> WOOD = List.of("aspen","baobab", "blue_enchanted","cherry","cika","cypress","ebony","ether","fir","green_enchanted","holly","jacaranda",
@@ -38,6 +38,8 @@ public class McwByg implements ModInitializer
 	public void onInitialize()
 	{
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
+    	Mapping.configDataFixerFiles();
+
     	Bridges.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
     	Bridges.setRegistrationRock(MODID, bridges_rockable, MCWBYG_TAB);
     	Roofs.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
@@ -58,15 +60,12 @@ public class McwByg implements ModInitializer
     	Furnitures.addToTabWood(MODID, WOOD, MCWBYG_TAB);
     	Stairs.addToTabWood(MODID, WOOD, MCWBYG_TAB);
     	
-		Mapping.missingnoWoodBlock();
-		
     	Bridges.fuelWood(MODID, WOOD);
 		Roofs.fuelWood(MODID, WOOD);
     	Fences.fuelWood(MODID, WOOD);
     	Fences.fuelHedge(MODID, LEAVES);
     	Furnitures.fuelWood(MODID, WOOD);
     	Stairs.fuelWood(MODID, WOOD);
-
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
 	}
 	
