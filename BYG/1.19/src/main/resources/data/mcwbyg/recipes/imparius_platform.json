@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " Z ", " W ", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "byg:imparius_stem"
+    },
+    "Z" : {
+      "item" : "byg:imparius_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:imparius_platform",
+    "count" : 6
+  }
+}

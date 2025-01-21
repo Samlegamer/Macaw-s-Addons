@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:stripped_baobab_log"
+        }, 
+		
+        "B":
+        {
+            "item": "byg:baobab_slab"
+        },
+		
+		"C":
+        {
+            "item": "byg:baobab_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_baobab_chair",
+        "count": 1
+    }
+}
+
+

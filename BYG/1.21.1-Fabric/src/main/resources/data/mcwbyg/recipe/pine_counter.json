@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:pine_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "biomeswevegone:pine_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:pine_counter",
+        "count": 1
+    }
+}
+
+

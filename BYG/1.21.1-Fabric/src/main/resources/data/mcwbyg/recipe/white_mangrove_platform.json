@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " Z ", " W ", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "biomeswevegone:white_mangrove_log"
+    },
+    "Z" : {
+      "item" : "biomeswevegone:white_mangrove_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:white_mangrove_platform",
+    "count" : 6
+  }
+}

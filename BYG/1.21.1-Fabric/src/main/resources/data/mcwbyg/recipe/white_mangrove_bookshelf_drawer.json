@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bookshelf_drawer",
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:white_mangrove_log"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwfurnitures:cabinet_drawer"
+        },
+		
+	    "C":
+        {
+            "item": "minecraft:book"
+        } 
+		
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:white_mangrove_bookshelf_drawer",
+        "count": 4
+    }
+}
+
+

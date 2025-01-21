@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:blue_enchanted_picket_fence",
+	  "mcwbyg:blue_enchanted_stockade_fence",
+	  "mcwbyg:blue_enchanted_horse_fence",
+	  "mcwbyg:blue_enchanted_wired_fence",
+	  "mcwbyg:blue_enchanted_highley_gate",
+	  "mcwbyg:blue_enchanted_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomeswevegone:blue_enchanted_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

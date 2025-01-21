@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "striped_chair",
+    "pattern":
+    [
+        " A",
+        "BC",
+		"CC"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:willow_log"
+        }, 
+		
+        "B":
+        {
+            "item": "biomeswevegone:willow_slab"
+        },
+		
+		"C":
+        {
+            "item": "biomeswevegone:willow_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:willow_striped_chair",
+        "count": 1
+    }
+}
+
+

@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	  "id": "mcwbyg",
+	  "version": "1.21.1-1.0",
+	  "name": "Macaw's - Oh The Biomes We've Gone",
+	  "description": "A multiple compability for Oh The Biomes We've Gone with Macaw's Mods like Bridges/Roofs/Fences or Furnitures.",
+	  "authors": [
+	    "Samlegamer"
+	  ],
+	  "contact": {
+	    "homepage": "",
+	    "sources": "https://github.com/Samlegamer/Macaw-s-Addons"
+	  },
+	"license": "CC0-1.0",
+  "icon": "assets/mcwbyg/icon.png",
+	"environment": "*",
+	"entrypoints": {
+	    "main": [
+	      "fr.samlegamer.mcwbyg.McwByg"
+	    ],
+	    "client": [
+	      "fr.samlegamer.mcwbyg.client.Client"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"addonslib": "*",
+	    "biomeswevegone": "*"
+	},
+		"recommends": {
+	  	"mcwbridges":"*",
+	  	"mcwfences":"*",
+	  	"mcwfurnitures":"*",
+	  	"mcwroofs":"*",
+	  	"mcwstairs":"*",
+	  	"configurable_everything":"*"
+  	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

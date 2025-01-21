@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "log_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "byg:witch_hazel_fence"
+        },
+        
+        "W":
+        {
+            "item": "byg:witch_hazel_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:witch_hazel_log_bridge_middle",
+        "count": 4
+    }
+}

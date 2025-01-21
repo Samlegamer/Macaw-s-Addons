@@ -1,0 +1,37 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "hedge",
+
+    "pattern":
+    [
+		"AA",
+		"AA"
+    ],
+    
+    "key":
+    { 
+
+        "A":
+        {
+            "item": "biomeswevegone:brown_birch_leaves"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:brown_birch_hedge",
+        "count": 4
+    }
+}
+
+

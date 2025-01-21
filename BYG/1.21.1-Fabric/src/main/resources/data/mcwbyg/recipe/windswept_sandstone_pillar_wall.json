@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "pillarwall",
+    
+    "pattern":
+    [
+		"AAA",
+		"B B"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomeswevegone:smooth_windswept_sandstone"
+        },    
+        
+        "B":
+        {
+            "item": "biomeswevegone:windswept_sandstone"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:windswept_sandstone_pillar_wall",
+        "count": 5
+    }
+}
+
+

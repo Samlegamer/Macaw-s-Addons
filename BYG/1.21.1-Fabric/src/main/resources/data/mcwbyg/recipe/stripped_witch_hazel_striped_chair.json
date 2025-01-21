@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "striped_chair",
+    "pattern":
+    [
+        " A",
+        "BC",
+		"CC"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:stripped_witch_hazel_log"
+        }, 
+		
+        "B":
+        {
+            "item": "biomeswevegone:witch_hazel_slab"
+        },
+		
+		"C":
+        {
+            "item": "biomeswevegone:witch_hazel_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_witch_hazel_striped_chair",
+        "count": 1
+    }
+}
+
+

@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " Z ", " W ", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "byg:holly_log"
+    },
+    "Z" : {
+      "item" : "byg:holly_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:holly_platform",
+    "count" : 6
+  }
+}

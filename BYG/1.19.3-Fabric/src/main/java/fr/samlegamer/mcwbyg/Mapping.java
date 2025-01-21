@@ -12,7 +12,7 @@ public final class Mapping
 		
 	public static void configDataFixerFiles()
 	{
-        File file = FabricLoader.getInstance().getConfigDir().resolve("configurabledatafixers.RENAMETHISjson5").toFile();
+        File file = FabricLoader.getInstance().getConfigDir().resolve("configurabledatafixers.FORBYGRENAMETHISjson5").toFile();
         
         if (!file.exists())
         {

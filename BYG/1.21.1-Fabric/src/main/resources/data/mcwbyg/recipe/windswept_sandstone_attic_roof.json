@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomeswevegone:windswept_sandstone"
+    },
+    "result": "mcwbyg:windswept_sandstone_attic_roof",
+    "group": "roofs",
+    "count": 1
+}

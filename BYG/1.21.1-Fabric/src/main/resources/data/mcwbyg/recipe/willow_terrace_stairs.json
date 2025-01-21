@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : {
+      "item" : "biomeswevegone:stripped_willow_log"
+    },
+    "Z" : {
+      "item" : "biomeswevegone:willow_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:willow_terrace_stairs",
+    "count" : 5
+  }
+}

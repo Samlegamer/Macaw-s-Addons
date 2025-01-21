@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "modern_desk",
+    "pattern":
+    [
+        "AAA",
+        "BCB"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:rainbow_eucalyptus_log"
+        }, 
+		
+        "B":
+        {
+            "item": "biomeswevegone:rainbow_eucalyptus_fence"
+        },
+		
+		"C":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:rainbow_eucalyptus_modern_desk",
+        "count": 2
+    }
+}
+
+

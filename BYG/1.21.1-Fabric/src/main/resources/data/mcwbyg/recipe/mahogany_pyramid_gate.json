@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "pyramid",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "biomeswevegone:mahogany_log"
+        },
+		
+		"C":
+        {
+            "item": "biomeswevegone:mahogany_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:mahogany_pyramid_gate",
+        "count": 1
+    }
+}
+
+

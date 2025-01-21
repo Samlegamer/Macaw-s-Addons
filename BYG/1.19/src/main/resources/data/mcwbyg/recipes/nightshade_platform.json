@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " Z ", " W ", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "byg:nightshade_log"
+    },
+    "Z" : {
+      "item" : "byg:nightshade_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:nightshade_platform",
+    "count" : 6
+  }
+}

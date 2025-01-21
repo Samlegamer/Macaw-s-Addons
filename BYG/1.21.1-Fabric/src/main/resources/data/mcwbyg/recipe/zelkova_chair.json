@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:zelkova_log"
+        }, 
+		
+        "B":
+        {
+            "item": "biomeswevegone:zelkova_slab"
+        },
+		
+		"C":
+        {
+            "item": "biomeswevegone:zelkova_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:zelkova_chair",
+        "count": 1
+    }
+}
+
+
