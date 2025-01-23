@@ -1,0 +1,54 @@
+{
+    "variants": {
+        "facing=east,shape=straight,half=bottom":  { "model": "mcwbyg:block/lower/ether_planks_lower", "y": 180 },
+        "facing=west,shape=straight,half=bottom":  { "model": "mcwbyg:block/lower/ether_planks_lower" },
+        "facing=south,shape=straight,half=bottom": { "model": "mcwbyg:block/lower/ether_planks_lower", "y": 270 },
+        "facing=north,shape=straight,half=bottom": { "model": "mcwbyg:block/lower/ether_planks_lower", "y": 90 },
+        
+        "facing=east,shape=outer_right,half=bottom":  { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "y": 270 },
+        "facing=west,shape=outer_right,half=bottom":  { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "y": 90 },
+        "facing=south,shape=outer_right,half=bottom": { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "y": 0 },
+        "facing=north,shape=outer_right,half=bottom": { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "y": 180  },
+        
+        "facing=east,shape=outer_left,half=bottom":  { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "y": 180  },
+        "facing=west,shape=outer_left,half=bottom":  { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "y": 0 },
+        "facing=south,shape=outer_left,half=bottom": { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "y": 270 },
+        "facing=north,shape=outer_left,half=bottom": { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "y": 90 },
+        
+        "facing=east,shape=inner_right,half=bottom":  { "model": "mcwbyg:block/lower/ether_planks_lower_inner", "y": 180 },
+        "facing=west,shape=inner_right,half=bottom":  { "model": "mcwbyg:block/lower/ether_planks_lower_inner" },
+        "facing=south,shape=inner_right,half=bottom": { "model": "mcwbyg:block/lower/ether_planks_lower_inner", "y": 270 },
+        "facing=north,shape=inner_right,half=bottom": { "model": "mcwbyg:block/lower/ether_planks_lower_inner", "y": 90 },
+        
+        "facing=east,shape=inner_left,half=bottom":  { "model": "mcwbyg:block/lower/ether_planks_lower_inner", "y": 90 },
+        "facing=west,shape=inner_left,half=bottom":  { "model": "mcwbyg:block/lower/ether_planks_lower_inner", "y": 270 },
+        "facing=south,shape=inner_left,half=bottom": { "model": "mcwbyg:block/lower/ether_planks_lower_inner", "y": 180 },
+        "facing=north,shape=inner_left,half=bottom": { "model": "mcwbyg:block/lower/ether_planks_lower_inner" },
+
+
+        "facing=east,shape=straight,half=top":  { "model": "mcwbyg:block/lower/ether_planks_lower", "x": 180, "y": 180 },
+        "facing=west,shape=straight,half=top":  { "model": "mcwbyg:block/lower/ether_planks_lower", "x": 180 },
+        "facing=south,shape=straight,half=top": { "model": "mcwbyg:block/lower/ether_planks_lower", "x": 180, "y": 270 },
+        "facing=north,shape=straight,half=top": { "model": "mcwbyg:block/lower/ether_planks_lower", "x": 180, "y": 90 },
+        
+        "facing=east,shape=outer_right,half=top":  { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "x": 180, "y": 180 },
+        "facing=west,shape=outer_right,half=top":  { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "x": 180 },
+        "facing=south,shape=outer_right,half=top": { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "x": 180, "y": 270 },
+        "facing=north,shape=outer_right,half=top": { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "x": 180, "y": 90 },
+        
+        "facing=east,shape=outer_left,half=top":  { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "x": 180, "y": 90 },
+        "facing=west,shape=outer_left,half=top":  { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "x": 180, "y": 270 },
+        "facing=south,shape=outer_left,half=top": { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "x": 180, "y": 180 },
+        "facing=north,shape=outer_left,half=top": { "model": "mcwbyg:block/lower/ether_planks_lower_outer", "x": 180 },
+        
+        "facing=east,shape=inner_right,half=top":  { "model": "mcwbyg:block/lower/ether_planks_lower_inner", "x": 180, "y": 270 },
+        "facing=west,shape=inner_right,half=top":  { "model": "mcwbyg:block/lower/ether_planks_lower_inner", "x": 180, "y": 90 },
+        "facing=south,shape=inner_right,half=top": { "model": "mcwbyg:block/lower/ether_planks_lower_inner", "x": 180 },
+        "facing=north,shape=inner_right,half=top": { "model": "mcwbyg:block/lower/ether_planks_lower_inner", "x": 180, "y": 180 },
+        
+        "facing=east,shape=inner_left,half=top":  { "model": "mcwbyg:block/lower/ether_planks_lower_inner", "x": 180, "y": 180 },
+        "facing=west,shape=inner_left,half=top":  { "model": "mcwbyg:block/lower/ether_planks_lower_inner", "x": 180 },
+        "facing=south,shape=inner_left,half=top": { "model": "mcwbyg:block/lower/ether_planks_lower_inner", "x": 180, "y": 270 },
+        "facing=north,shape=inner_left,half=top": { "model": "mcwbyg:block/lower/ether_planks_lower_inner", "x": 180, "y": 90 }
+    }
+}

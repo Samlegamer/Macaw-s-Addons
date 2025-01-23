@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:modern_red_rock_wall",
+	  
+	  "mcwbyg:railing_red_rock_wall",
+	  
+	  "mcwbyg:red_rock_railing_gate",
+	  
+	  "mcwbyg:red_rock_pillar_wall",
+	  
+	  
+	  "mcwbyg:red_rock_grass_topped_wall"
+    ]
+  },
+  "criteria": {
+    "has_sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:red_rock"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand"
+    ]
+  ]
+}

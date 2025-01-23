@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "horse",
+    
+    "pattern":
+    [
+		"ABA",
+		"BAB"
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "A":
+        {
+            "item": "byg:holly_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:holly_horse_fence",
+        "count": 3
+    }
+}
+
+

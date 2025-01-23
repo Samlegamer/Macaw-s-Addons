@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:florus_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "biomeswevegone:stripped_florus_stem"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_florus_counter",
+        "count": 1
+    }
+}
+
+

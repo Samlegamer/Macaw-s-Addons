@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " Z ", " W ", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "biomeswevegone:florus_stem"
+    },
+    "Z" : {
+      "item" : "biomeswevegone:florus_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:florus_platform",
+    "count" : 6
+  }
+}

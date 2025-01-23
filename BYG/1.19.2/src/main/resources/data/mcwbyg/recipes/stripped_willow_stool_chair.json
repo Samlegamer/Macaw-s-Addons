@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "stool_chair",
+    "pattern":
+    [
+		"A",
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:stripped_willow_log"
+        }, 	
+		
+        "B":
+        {
+            "item": "byg:willow_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_willow_stool_chair",
+        "count": 1
+    }
+}
+
+

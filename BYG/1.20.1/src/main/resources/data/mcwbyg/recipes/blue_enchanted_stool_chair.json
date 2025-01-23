@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "stool_chair",
+    "pattern":
+    [
+		"A",
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:blue_enchanted_log"
+        }, 	
+		
+        "B":
+        {
+            "item": "biomeswevegone:blue_enchanted_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:blue_enchanted_stool_chair",
+        "count": 1
+    }
+}
+
+

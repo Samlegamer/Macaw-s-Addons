@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "rope_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "minecraft:string"
+        },
+        
+        "W":
+        {
+            "item": "byg:green_enchanted_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:rope_green_enchanted_bridge",
+        "count": 4
+    }
+}

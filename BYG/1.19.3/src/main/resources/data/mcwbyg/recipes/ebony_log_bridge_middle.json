@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "log_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "byg:ebony_fence"
+        },
+        
+        "W":
+        {
+            "item": "byg:ebony_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:ebony_log_bridge_middle",
+        "count": 4
+    }
+}

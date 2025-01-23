@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "coffee_table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:imparius_stem"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "byg:imparius_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:imparius_coffee_table",
+        "count": 1
+    }
+}
+
+

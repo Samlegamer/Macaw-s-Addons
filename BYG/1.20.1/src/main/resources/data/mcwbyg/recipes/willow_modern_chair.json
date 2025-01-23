@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "modern_chair",
+    "pattern":
+    [
+        "BA",
+        "CC"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:willow_log"
+        }, 
+		
+        "B":
+        {
+            "item": "biomeswevegone:willow_slab"
+        },
+		
+		"C":
+        {
+            "item": "biomeswevegone:willow_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:willow_modern_chair",
+        "count": 1
+    }
+}
+
+

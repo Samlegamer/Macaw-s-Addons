@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bulk_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : {
+      "item" : "biomeswevegone:stripped_cika_log"
+    },
+    "Z" : {
+      "item" : "biomeswevegone:cika_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:cika_bulk_stairs",
+    "count" : 6
+  }
+}

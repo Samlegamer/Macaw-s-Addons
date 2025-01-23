@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomeswevegone:stripped_pine_log"
+        }, 
+		
+        "B":
+        {
+            "item": "biomeswevegone:pine_slab"
+        },
+		
+		"C":
+        {
+            "item": "biomeswevegone:pine_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_pine_chair",
+        "count": 1
+    }
+}
+
+

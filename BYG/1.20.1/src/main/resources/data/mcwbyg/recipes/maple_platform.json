@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " Z ", " W ", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "biomeswevegone:maple_log"
+    },
+    "Z" : {
+      "item" : "biomeswevegone:maple_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:maple_platform",
+    "count" : 6
+  }
+}

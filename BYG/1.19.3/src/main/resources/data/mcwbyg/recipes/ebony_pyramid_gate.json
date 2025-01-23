@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "pyramid",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:ebony_log"
+        },
+		
+		"C":
+        {
+            "item": "byg:ebony_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:ebony_pyramid_gate",
+        "count": 1
+    }
+}
+
+

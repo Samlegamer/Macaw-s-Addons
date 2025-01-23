@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "stone_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "byg:soapstone_brick_wall"
+        },
+        
+        "W":
+        {
+            "item": "byg:soapstone_brick_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:soapstone_bricks_bridge",
+        "count": 4
+    }
+}

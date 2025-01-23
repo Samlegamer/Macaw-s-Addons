@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:sakura_bulk_stairs",
+	  "mcwbyg:sakura_compact_stairs",
+	  "mcwbyg:sakura_loft_stairs",
+	  "mcwbyg:sakura_skyline_stairs",
+	  "mcwbyg:sakura_terrace_stairs",
+	  "mcwbyg:sakura_railing",
+	  "mcwbyg:sakura_balcony",
+	  "mcwbyg:sakura_platform"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomeswevegone:sakura_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

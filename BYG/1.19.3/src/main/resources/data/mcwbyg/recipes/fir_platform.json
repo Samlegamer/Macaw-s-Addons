@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " Z ", " W ", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "byg:fir_log"
+    },
+    "Z" : {
+      "item" : "byg:fir_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:fir_platform",
+    "count" : 6
+  }
+}

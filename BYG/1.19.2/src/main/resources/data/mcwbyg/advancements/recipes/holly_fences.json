@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:holly_picket_fence",
+	  "mcwbyg:holly_stockade_fence",
+	  "mcwbyg:holly_horse_fence",
+	  "mcwbyg:holly_wired_fence",
+	  "mcwbyg:holly_highley_gate",
+	  "mcwbyg:holly_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:holly_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

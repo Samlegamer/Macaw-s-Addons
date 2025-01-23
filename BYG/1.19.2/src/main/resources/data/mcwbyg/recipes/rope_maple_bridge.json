@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "rope_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "minecraft:string"
+        },
+        
+        "W":
+        {
+            "item": "byg:maple_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:rope_maple_bridge",
+        "count": 4
+    }
+}

@@ -1,0 +1,120 @@
+{
+  "multipart" : [ {
+    "apply" : {
+      "model" : "mcwbyg:block/balcony/witch_hazel_classic_balcony",
+      "uvlock" : true,
+      "y" : 270
+    },
+    "when" : {
+      "north" : "true",
+      "style" : "classic"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwbyg:block/balcony/witch_hazel_classic_balcony",
+      "uvlock" : true
+    },
+    "when" : {
+      "east" : "true",
+      "style" : "classic"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwbyg:block/balcony/witch_hazel_classic_balcony",
+      "uvlock" : true,
+      "y" : 90
+    },
+    "when" : {
+      "south" : "true",
+      "style" : "classic"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwbyg:block/balcony/witch_hazel_classic_balcony",
+      "uvlock" : true,
+      "y" : 180
+    },
+    "when" : {
+      "west" : "true",
+      "style" : "classic"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwbyg:block/balcony/witch_hazel_harp_balcony",
+      "uvlock" : true,
+      "y" : 270
+    },
+    "when" : {
+      "north" : "true",
+      "style" : "harp"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwbyg:block/balcony/witch_hazel_harp_balcony",
+      "uvlock" : true
+    },
+    "when" : {
+      "east" : "true",
+      "style" : "harp"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwbyg:block/balcony/witch_hazel_harp_balcony",
+      "uvlock" : true,
+      "y" : 90
+    },
+    "when" : {
+      "south" : "true",
+      "style" : "harp"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwbyg:block/balcony/witch_hazel_harp_balcony",
+      "uvlock" : true,
+      "y" : 180
+    },
+    "when" : {
+      "west" : "true",
+      "style" : "harp"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwbyg:block/balcony/witch_hazel_smooth_balcony",
+      "uvlock" : true,
+      "y" : 270
+    },
+    "when" : {
+      "north" : "true",
+      "style" : "smooth"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwbyg:block/balcony/witch_hazel_smooth_balcony",
+      "uvlock" : true
+    },
+    "when" : {
+      "east" : "true",
+      "style" : "smooth"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwbyg:block/balcony/witch_hazel_smooth_balcony",
+      "uvlock" : true,
+      "y" : 90
+    },
+    "when" : {
+      "south" : "true",
+      "style" : "smooth"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwbyg:block/balcony/witch_hazel_smooth_balcony",
+      "uvlock" : true,
+      "y" : 180
+    },
+    "when" : {
+      "west" : "true",
+      "style" : "smooth"
+    }
+  } ]
+}
