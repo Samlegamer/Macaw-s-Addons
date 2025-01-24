@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+    "type": "minecraft:crafting_shapeless",
+	"group": "recyclable_bridges",
+		
+    "ingredients": [
+        {
+            "item": "mcwabnormals:maple_rope_bridge_stair"
+        }
+    ],
+    "result": {
+        "item": "mcwabnormals:rope_maple_bridge",
+        "count": 1
+    }
+}

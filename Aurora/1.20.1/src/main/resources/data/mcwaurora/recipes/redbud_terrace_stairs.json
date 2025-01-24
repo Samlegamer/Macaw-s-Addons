@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "abundance"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : {
+      "item" : "abundance:stripped_redbud_log"
+    },
+    "Z" : {
+      "item" : "abundance:redbud_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwaurora:redbud_terrace_stairs",
+    "count" : 5
+  }
+}

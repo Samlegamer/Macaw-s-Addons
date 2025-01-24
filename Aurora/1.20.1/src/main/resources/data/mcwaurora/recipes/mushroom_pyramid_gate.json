@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "pyramid",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:mushroom_stem"
+        },
+		
+		"C":
+        {
+            "item": "enhanced_mushrooms:mushroom_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:mushroom_pyramid_gate",
+        "count": 1
+    }
+}
+
+

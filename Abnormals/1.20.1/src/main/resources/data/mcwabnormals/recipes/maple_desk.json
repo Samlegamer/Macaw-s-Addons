@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "autumnity:maple_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "autumnity:maple_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:maple_desk",
+        "count": 2
+    }
+}
+
+

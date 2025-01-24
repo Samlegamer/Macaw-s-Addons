@@ -1,0 +1,37 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_piers",
+    
+    "pattern": [
+    "WFW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "environmental:willow_fence"
+        },
+        
+        "W":
+        {
+            "item": "environmental:willow_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:willow_bridge_pier",
+        "count": 3
+    }
+}

@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : {
+      "item" : "environmental:stripped_wisteria_log"
+    },
+    "Z" : {
+      "item" : "environmental:wisteria_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwabnormals:wisteria_terrace_stairs",
+    "count" : 5
+  }
+}

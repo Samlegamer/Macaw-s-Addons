@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "atmospheric:rosewood_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "atmospheric:rosewood_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:rosewood_desk",
+        "count": 2
+    }
+}
+
+

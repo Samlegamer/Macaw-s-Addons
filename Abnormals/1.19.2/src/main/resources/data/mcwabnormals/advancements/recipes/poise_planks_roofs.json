@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:poise_planks_roof",
+	  "mcwabnormals:poise_planks_attic_roof",
+	  "mcwabnormals:poise_planks_top_roof",
+	  "mcwabnormals:poise_planks_lower_roof",
+	  "mcwabnormals:poise_planks_steep_roof",
+	  "mcwabnormals:poise_planks_upper_lower_roof",
+	  "mcwabnormals:poise_planks_upper_steep_roof"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endergetic:poise_planks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

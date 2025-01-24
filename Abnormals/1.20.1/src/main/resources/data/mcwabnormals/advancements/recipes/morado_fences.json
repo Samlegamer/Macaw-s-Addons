@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:morado_picket_fence",
+	  "mcwabnormals:morado_stockade_fence",
+	  "mcwabnormals:morado_horse_fence",
+	  "mcwabnormals:morado_wired_fence",
+	  "mcwabnormals:morado_highley_gate",
+	  "mcwabnormals:morado_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "atmospheric:morado_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

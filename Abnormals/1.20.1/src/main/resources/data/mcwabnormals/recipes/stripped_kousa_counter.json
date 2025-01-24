@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "atmospheric:kousa_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "atmospheric:stripped_kousa_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:stripped_kousa_counter",
+        "count": 1
+    }
+}
+
+

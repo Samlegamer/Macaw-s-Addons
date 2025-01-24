@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stool_chair",
+    "pattern":
+    [
+		"A",
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "atmospheric:stripped_laurel_log"
+        }, 	
+		
+        "B":
+        {
+            "item": "atmospheric:laurel_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:stripped_laurel_stool_chair",
+        "count": 1
+    }
+}
+
+

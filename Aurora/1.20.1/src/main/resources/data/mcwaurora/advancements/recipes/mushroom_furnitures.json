@@ -1,0 +1,91 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwaurora:mushroom_wardrobe",
+	  "mcwaurora:mushroom_modern_wardrobe",
+	  "mcwaurora:mushroom_double_wardrobe",
+	  "mcwaurora:mushroom_bookshelf_cupboard",
+	  "mcwaurora:mushroom_bookshelf",
+	  "mcwaurora:mushroom_drawer",
+	  "mcwaurora:mushroom_double_drawer",
+	  "mcwaurora:mushroom_bookshelf_drawer",
+	  "mcwaurora:mushroom_lower_bookshelf_drawer",
+	  "mcwaurora:mushroom_large_drawer",
+	  "mcwaurora:mushroom_lower_triple_drawer",
+	  "mcwaurora:mushroom_triple_drawer",
+	  "mcwaurora:mushroom_desk",
+	  "mcwaurora:mushroom_covered_desk",
+	  "mcwaurora:mushroom_modern_desk",
+	  "mcwaurora:mushroom_table",
+	  "mcwaurora:mushroom_end_table",
+	  "mcwaurora:mushroom_coffee_table",
+	  "mcwaurora:mushroom_glass_table",
+	  "mcwaurora:mushroom_chair",
+	  "mcwaurora:mushroom_modern_chair",
+	  "mcwaurora:mushroom_striped_chair",
+	  "mcwaurora:mushroom_stool_chair",
+	  "mcwaurora:mushroom_counter",
+	  "mcwaurora:mushroom_drawer_counter",
+	  "mcwaurora:mushroom_double_drawer_counter",
+	  "mcwaurora:mushroom_cupboard_counter",
+	  
+	  "mcwaurora:stripped_mushroom_wardrobe",
+	  "mcwaurora:stripped_mushroom_modern_wardrobe",
+	  "mcwaurora:stripped_mushroom_double_wardrobe",
+	  "mcwaurora:stripped_mushroom_bookshelf_cupboard",
+	  "mcwaurora:stripped_mushroom_bookshelf",
+	  "mcwaurora:stripped_mushroom_drawer",
+	  "mcwaurora:stripped_mushroom_double_drawer",
+	  "mcwaurora:stripped_mushroom_bookshelf_drawer",
+	  "mcwaurora:stripped_mushroom_lower_bookshelf_drawer",
+	  "mcwaurora:stripped_mushroom_large_drawer",
+	  "mcwaurora:stripped_mushroom_lower_triple_drawer",
+	  "mcwaurora:stripped_mushroom_triple_drawer",
+	  "mcwaurora:stripped_mushroom_desk",
+	  "mcwaurora:stripped_mushroom_covered_desk",
+	  "mcwaurora:stripped_mushroom_modern_desk",
+	  "mcwaurora:stripped_mushroom_table",
+	  "mcwaurora:stripped_mushroom_end_table",
+	  "mcwaurora:stripped_mushroom_coffee_table",
+	  "mcwaurora:stripped_mushroom_glass_table",
+	  "mcwaurora:stripped_mushroom_chair",
+	  "mcwaurora:stripped_mushroom_modern_chair",
+	  "mcwaurora:stripped_mushroom_striped_chair",
+	  "mcwaurora:stripped_mushroom_stool_chair",
+	  "mcwaurora:stripped_mushroom_counter",
+	  "mcwaurora:stripped_mushroom_drawer_counter",
+	  "mcwaurora:stripped_mushroom_double_drawer_counter",
+	  "mcwaurora:stripped_mushroom_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhanced_mushrooms:mushroom_stem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwaurora:mushroom_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

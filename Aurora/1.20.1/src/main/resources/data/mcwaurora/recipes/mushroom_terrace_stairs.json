@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : {
+      "item" : "enhanced_mushrooms:stripped_mushroom_stem"
+    },
+    "Z" : {
+      "item" : "minecraft:mushroom_stem"
+    }
+  },
+  "result" : {
+    "item" : "mcwaurora:mushroom_terrace_stairs",
+    "count" : 5
+  }
+}

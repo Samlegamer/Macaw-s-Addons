@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "buzzier_bees"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "balustrade_bridges",
+    
+    "pattern": [
+    "FFF",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "buzzier_bees:honeycomb_brick_wall"
+        },
+        
+        "W":
+        {
+            "item": "buzzier_bees:honeycomb_brick_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:balustrade_honeycomb_brick_bridge",
+        "count": 5
+    }
+}

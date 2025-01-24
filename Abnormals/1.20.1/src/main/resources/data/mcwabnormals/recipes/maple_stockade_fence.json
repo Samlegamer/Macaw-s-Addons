@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "autumnity:maple_log"
+        },    
+        
+        "B":
+        {
+            "item": "autumnity:maple_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:maple_stockade_fence",
+        "count": 3
+    }
+}
+
+

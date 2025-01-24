@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "bayou_blues"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "end_table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwaurora:stripped_cypress_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "bayou_blues:stripped_cypress_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:stripped_cypress_end_table",
+        "count": 1
+    }
+}
+
+

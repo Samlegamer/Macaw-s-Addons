@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:grimwood_planks_roof",
+	  "mcwabnormals:grimwood_planks_attic_roof",
+	  "mcwabnormals:grimwood_planks_top_roof",
+	  "mcwabnormals:grimwood_planks_lower_roof",
+	  "mcwabnormals:grimwood_planks_steep_roof",
+	  "mcwabnormals:grimwood_planks_upper_lower_roof",
+	  "mcwabnormals:grimwood_planks_upper_steep_roof"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "atmospheric:grimwood_planks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

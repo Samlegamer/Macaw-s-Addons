@@ -1,0 +1,91 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwabnormals:wisteria_wardrobe",
+	  "mcwabnormals:wisteria_modern_wardrobe",
+	  "mcwabnormals:wisteria_double_wardrobe",
+	  "mcwabnormals:wisteria_bookshelf_cupboard",
+	  "mcwabnormals:wisteria_bookshelf",
+	  "mcwabnormals:wisteria_drawer",
+	  "mcwabnormals:wisteria_double_drawer",
+	  "mcwabnormals:wisteria_bookshelf_drawer",
+	  "mcwabnormals:wisteria_lower_bookshelf_drawer",
+	  "mcwabnormals:wisteria_large_drawer",
+	  "mcwabnormals:wisteria_lower_triple_drawer",
+	  "mcwabnormals:wisteria_triple_drawer",
+	  "mcwabnormals:wisteria_desk",
+	  "mcwabnormals:wisteria_covered_desk",
+	  "mcwabnormals:wisteria_modern_desk",
+	  "mcwabnormals:wisteria_table",
+	  "mcwabnormals:wisteria_end_table",
+	  "mcwabnormals:wisteria_coffee_table",
+	  "mcwabnormals:wisteria_glass_table",
+	  "mcwabnormals:wisteria_chair",
+	  "mcwabnormals:wisteria_modern_chair",
+	  "mcwabnormals:wisteria_striped_chair",
+	  "mcwabnormals:wisteria_stool_chair",
+	  "mcwabnormals:wisteria_counter",
+	  "mcwabnormals:wisteria_drawer_counter",
+	  "mcwabnormals:wisteria_double_drawer_counter",
+	  "mcwabnormals:wisteria_cupboard_counter",
+	  
+	  "mcwabnormals:stripped_wisteria_wardrobe",
+	  "mcwabnormals:stripped_wisteria_modern_wardrobe",
+	  "mcwabnormals:stripped_wisteria_double_wardrobe",
+	  "mcwabnormals:stripped_wisteria_bookshelf_cupboard",
+	  "mcwabnormals:stripped_wisteria_bookshelf",
+	  "mcwabnormals:stripped_wisteria_drawer",
+	  "mcwabnormals:stripped_wisteria_double_drawer",
+	  "mcwabnormals:stripped_wisteria_bookshelf_drawer",
+	  "mcwabnormals:stripped_wisteria_lower_bookshelf_drawer",
+	  "mcwabnormals:stripped_wisteria_large_drawer",
+	  "mcwabnormals:stripped_wisteria_lower_triple_drawer",
+	  "mcwabnormals:stripped_wisteria_triple_drawer",
+	  "mcwabnormals:stripped_wisteria_desk",
+	  "mcwabnormals:stripped_wisteria_covered_desk",
+	  "mcwabnormals:stripped_wisteria_modern_desk",
+	  "mcwabnormals:stripped_wisteria_table",
+	  "mcwabnormals:stripped_wisteria_end_table",
+	  "mcwabnormals:stripped_wisteria_coffee_table",
+	  "mcwabnormals:stripped_wisteria_glass_table",
+	  "mcwabnormals:stripped_wisteria_chair",
+	  "mcwabnormals:stripped_wisteria_modern_chair",
+	  "mcwabnormals:stripped_wisteria_striped_chair",
+	  "mcwabnormals:stripped_wisteria_stool_chair",
+	  "mcwabnormals:stripped_wisteria_counter",
+	  "mcwabnormals:stripped_wisteria_drawer_counter",
+	  "mcwabnormals:stripped_wisteria_double_drawer_counter",
+	  "mcwabnormals:stripped_wisteria_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "environmental:wisteria_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwabnormals:wisteria_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

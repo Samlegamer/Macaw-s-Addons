@@ -87,7 +87,7 @@ public class McwByg
     	    	.addType(BlockType.FURNITURES)
     	    	.addType(BlockType.BRIDGES)
     	    	.addType(BlockType.STAIRS);
-       final Block icon = woodProperties.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.STAIRS);
+       final Block icon = woodProperties.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.STAIRS);
        return icon;
     }
     

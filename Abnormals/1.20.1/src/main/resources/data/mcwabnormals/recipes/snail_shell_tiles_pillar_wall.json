@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "pillarwall",
+    
+    "pattern":
+    [
+		"AAA",
+		"B B"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:smooth_sandstone"
+        },    
+        
+        "B":
+        {
+            "item": "autumnity:snail_shell_tiles"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:snail_shell_tiles_pillar_wall",
+        "count": 5
+    }
+}
+
+

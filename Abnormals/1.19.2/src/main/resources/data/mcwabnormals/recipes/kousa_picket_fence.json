@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "atmospheric:kousa_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "atmospheric:kousa_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:kousa_picket_fence",
+        "count": 3
+    }
+}
+
+

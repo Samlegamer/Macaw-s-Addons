@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwabnormals:stripped_rosewood_coffee_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "atmospheric:rosewood_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:stripped_rosewood_table",
+        "count": 1
+    }
+}
+
+

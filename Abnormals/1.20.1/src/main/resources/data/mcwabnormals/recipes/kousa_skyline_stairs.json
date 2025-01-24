@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "skyline_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : {
+      "item" : "atmospheric:stripped_kousa_log"
+    },
+    "Z" : {
+      "item" : "atmospheric:kousa_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwabnormals:kousa_skyline_stairs",
+    "count" : 6
+  }
+}

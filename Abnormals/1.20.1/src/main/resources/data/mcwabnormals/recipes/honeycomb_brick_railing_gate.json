@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "buzzier_bees"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "railing_gate",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:iron_bars"
+        },    
+        
+        "B":
+        {
+            "item": "buzzier_bees:honeycomb_bricks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:honeycomb_brick_railing_gate",
+        "count": 1
+    }
+}
+
+

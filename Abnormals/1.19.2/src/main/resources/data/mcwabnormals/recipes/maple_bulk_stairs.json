@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bulk_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : {
+      "item" : "autumnity:stripped_maple_log"
+    },
+    "Z" : {
+      "item" : "autumnity:maple_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwabnormals:maple_bulk_stairs",
+    "count" : 6
+  }
+}

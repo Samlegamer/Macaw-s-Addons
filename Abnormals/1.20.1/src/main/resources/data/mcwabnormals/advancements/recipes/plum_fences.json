@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:plum_picket_fence",
+	  "mcwabnormals:plum_stockade_fence",
+	  "mcwabnormals:plum_horse_fence",
+	  "mcwabnormals:plum_wired_fence",
+	  "mcwabnormals:plum_highley_gate",
+	  "mcwabnormals:plum_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "environmental:plum_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwabnormals:stripped_kousa_coffee_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "atmospheric:kousa_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:stripped_kousa_table",
+        "count": 1
+    }
+}
+
+

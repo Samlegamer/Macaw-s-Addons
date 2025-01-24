@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "endergetic:poise_stem"
+        },    
+        
+        "B":
+        {
+            "item": "endergetic:poise_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:poise_stockade_fence",
+        "count": 3
+    }
+}
+
+

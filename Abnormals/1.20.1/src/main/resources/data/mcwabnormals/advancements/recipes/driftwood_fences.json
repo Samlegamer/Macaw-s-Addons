@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:driftwood_picket_fence",
+	  "mcwabnormals:driftwood_stockade_fence",
+	  "mcwabnormals:driftwood_horse_fence",
+	  "mcwabnormals:driftwood_wired_fence",
+	  "mcwabnormals:driftwood_highley_gate",
+	  "mcwabnormals:driftwood_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "upgrade_aquatic:driftwood_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

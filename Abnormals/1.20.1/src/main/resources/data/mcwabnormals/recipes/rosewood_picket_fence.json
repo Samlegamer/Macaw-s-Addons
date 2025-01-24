@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "atmospheric:rosewood_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "atmospheric:rosewood_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:rosewood_picket_fence",
+        "count": 3
+    }
+}
+
+

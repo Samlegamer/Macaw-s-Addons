@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "log_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "environmental:plum_fence"
+        },
+        
+        "W":
+        {
+            "item": "environmental:plum_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:plum_log_bridge_middle",
+        "count": 4
+    }
+}

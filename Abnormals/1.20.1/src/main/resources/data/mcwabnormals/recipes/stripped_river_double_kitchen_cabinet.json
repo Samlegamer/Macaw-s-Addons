@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "double_cabinet",
+    "pattern":
+    [
+        "AA",
+        "CC",
+        "AA"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "upgrade_aquatic:stripped_river_log"
+        }, 
+		
+        "C":
+        {
+            "item": "mcwfurnitures:cabinet_door"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:stripped_river_double_kitchen_cabinet",
+        "count": 4
+    }
+}
+
+

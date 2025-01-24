@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "balustrade_bridges",
+    
+    "pattern": [
+    "FFF",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "autumnity:snail_shell_tile_wall"
+        },
+        
+        "W":
+        {
+            "item": "autumnity:snail_shell_tile_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:balustrade_snail_shell_tiles_bridge",
+        "count": 5
+    }
+}

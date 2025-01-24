@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:poise_picket_fence",
+	  "mcwabnormals:poise_stockade_fence",
+	  "mcwabnormals:poise_horse_fence",
+	  "mcwabnormals:poise_wired_fence",
+	  "mcwabnormals:poise_highley_gate",
+	  "mcwabnormals:poise_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "endergetic:poise_stem"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

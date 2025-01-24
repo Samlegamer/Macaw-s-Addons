@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:kousa_picket_fence",
+	  "mcwabnormals:kousa_stockade_fence",
+	  "mcwabnormals:kousa_horse_fence",
+	  "mcwabnormals:kousa_wired_fence",
+	  "mcwabnormals:kousa_highley_gate",
+	  "mcwabnormals:kousa_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "atmospheric:kousa_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

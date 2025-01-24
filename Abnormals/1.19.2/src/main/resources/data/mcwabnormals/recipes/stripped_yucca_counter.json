@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "atmospheric:yucca_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "atmospheric:stripped_yucca_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:stripped_yucca_counter",
+        "count": 1
+    }
+}
+
+

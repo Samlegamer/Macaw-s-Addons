@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwaurora:redbud_picket_fence",
+	  "mcwaurora:redbud_stockade_fence",
+	  "mcwaurora:redbud_horse_fence",
+	  "mcwaurora:redbud_wired_fence",
+	  "mcwaurora:redbud_highley_gate",
+	  "mcwaurora:redbud_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "abundance:redbud_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

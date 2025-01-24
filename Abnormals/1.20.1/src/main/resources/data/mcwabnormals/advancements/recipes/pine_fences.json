@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:pine_picket_fence",
+	  "mcwabnormals:pine_stockade_fence",
+	  "mcwabnormals:pine_horse_fence",
+	  "mcwabnormals:pine_wired_fence",
+	  "mcwabnormals:pine_highley_gate",
+	  "mcwabnormals:pine_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "environmental:pine_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

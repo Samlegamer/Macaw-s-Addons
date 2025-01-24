@@ -1,0 +1,45 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "modern_chair",
+    "pattern":
+    [
+        "BA",
+        "CC"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "atmospheric:laurel_log"
+        }, 
+		
+        "B":
+        {
+            "item": "atmospheric:laurel_slab"
+        },
+		
+		"C":
+        {
+            "item": "atmospheric:laurel_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:laurel_modern_chair",
+        "count": 1
+    }
+}
+
+
