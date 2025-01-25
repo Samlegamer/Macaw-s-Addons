@@ -1,0 +1,91 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbiomesoplenty:maple_wardrobe",
+	  "mcwbiomesoplenty:maple_modern_wardrobe",
+	  "mcwbiomesoplenty:maple_double_wardrobe",
+	  "mcwbiomesoplenty:maple_bookshelf_cupboard",
+	  "mcwbiomesoplenty:maple_bookshelf",
+	  "mcwbiomesoplenty:maple_drawer",
+	  "mcwbiomesoplenty:maple_double_drawer",
+	  "mcwbiomesoplenty:maple_bookshelf_drawer",
+	  "mcwbiomesoplenty:maple_lower_bookshelf_drawer",
+	  "mcwbiomesoplenty:maple_large_drawer",
+	  "mcwbiomesoplenty:maple_lower_triple_drawer",
+	  "mcwbiomesoplenty:maple_triple_drawer",
+	  "mcwbiomesoplenty:maple_desk",
+	  "mcwbiomesoplenty:maple_covered_desk",
+	  "mcwbiomesoplenty:maple_modern_desk",
+	  "mcwbiomesoplenty:maple_table",
+	  "mcwbiomesoplenty:maple_end_table",
+	  "mcwbiomesoplenty:maple_coffee_table",
+	  "mcwbiomesoplenty:maple_glass_table",
+	  "mcwbiomesoplenty:maple_chair",
+	  "mcwbiomesoplenty:maple_modern_chair",
+	  "mcwbiomesoplenty:maple_striped_chair",
+	  "mcwbiomesoplenty:maple_stool_chair",
+	  "mcwbiomesoplenty:maple_counter",
+	  "mcwbiomesoplenty:maple_drawer_counter",
+	  "mcwbiomesoplenty:maple_double_drawer_counter",
+	  "mcwbiomesoplenty:maple_cupboard_counter",
+	  
+	  "mcwbiomesoplenty:stripped_maple_wardrobe",
+	  "mcwbiomesoplenty:stripped_maple_modern_wardrobe",
+	  "mcwbiomesoplenty:stripped_maple_double_wardrobe",
+	  "mcwbiomesoplenty:stripped_maple_bookshelf_cupboard",
+	  "mcwbiomesoplenty:stripped_maple_bookshelf",
+	  "mcwbiomesoplenty:stripped_maple_drawer",
+	  "mcwbiomesoplenty:stripped_maple_double_drawer",
+	  "mcwbiomesoplenty:stripped_maple_bookshelf_drawer",
+	  "mcwbiomesoplenty:stripped_maple_lower_bookshelf_drawer",
+	  "mcwbiomesoplenty:stripped_maple_large_drawer",
+	  "mcwbiomesoplenty:stripped_maple_lower_triple_drawer",
+	  "mcwbiomesoplenty:stripped_maple_triple_drawer",
+	  "mcwbiomesoplenty:stripped_maple_desk",
+	  "mcwbiomesoplenty:stripped_maple_covered_desk",
+	  "mcwbiomesoplenty:stripped_maple_modern_desk",
+	  "mcwbiomesoplenty:stripped_maple_table",
+	  "mcwbiomesoplenty:stripped_maple_end_table",
+	  "mcwbiomesoplenty:stripped_maple_coffee_table",
+	  "mcwbiomesoplenty:stripped_maple_glass_table",
+	  "mcwbiomesoplenty:stripped_maple_chair",
+	  "mcwbiomesoplenty:stripped_maple_modern_chair",
+	  "mcwbiomesoplenty:stripped_maple_striped_chair",
+	  "mcwbiomesoplenty:stripped_maple_stool_chair",
+	  "mcwbiomesoplenty:stripped_maple_counter",
+	  "mcwbiomesoplenty:stripped_maple_drawer_counter",
+	  "mcwbiomesoplenty:stripped_maple_double_drawer_counter",
+	  "mcwbiomesoplenty:stripped_maple_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:maple_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbiomesoplenty:maple_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

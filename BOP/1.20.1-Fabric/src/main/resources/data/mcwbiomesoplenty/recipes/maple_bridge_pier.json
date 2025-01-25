@@ -1,0 +1,33 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_piers",
+    
+    "pattern": [
+    "WFW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "biomesoplenty:maple_fence"
+        },
+        
+        "W":
+        {
+            "item": "biomesoplenty:maple_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:maple_bridge_pier",
+        "count": 3
+    }
+}

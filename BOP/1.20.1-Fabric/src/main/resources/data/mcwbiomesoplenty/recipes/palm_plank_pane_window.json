@@ -1,0 +1,37 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "windows_pane",
+	
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "mcwwindows:window_base"
+        },    
+
+		
+        "B":
+        {
+            "item": "biomesoplenty:palm_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:palm_plank_pane_window",
+        "count": 8
+    }
+}

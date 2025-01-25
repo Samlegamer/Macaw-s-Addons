@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shoji",
+  "pattern" : [ "BB", "BB", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:hellbark_planks"
+    },
+    "B" : {
+      "item" : "minecraft:paper"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:hellbark_japanese_door"
+  }
+}

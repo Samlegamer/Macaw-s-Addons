@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "waffle",
+    
+    "pattern":
+    [
+        "A",
+        "B",
+        "A"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomesoplenty:empyreal_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwdoors:print_waffle"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:empyreal_waffle_door",
+        "count": 1
+    }
+}
+
+
