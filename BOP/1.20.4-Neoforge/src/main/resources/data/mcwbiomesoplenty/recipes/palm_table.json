@@ -1,0 +1,37 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwbiomesoplenty:palm_coffee_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "biomesoplenty:palm_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:palm_table",
+        "count": 1
+    }
+}
+
+

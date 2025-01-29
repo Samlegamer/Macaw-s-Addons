@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "coffee_table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:hellbark_log"
+    },
+    "B" : {
+      "item" : "biomesoplenty:hellbark_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:hellbark_coffee_table"
+  }
+}

@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "curtain_rods",
+  "pattern" : [ "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:stick"
+    },
+    "B" : {
+      "item" : "biomesoplenty:pine_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwbiomesoplenty:pine_curtain_rod",
+    "count" : 5
+  }
+}

@@ -38,7 +38,7 @@ public class McwBOP implements ModInitializer
 	"orange_maple", "red_maple", "yellow_maple", "cypress", "snowblossom", "flowering_oak", "rainbow_birch", "origin");
 
     public static final ItemGroup MCWBOP_TAB = FabricItemGroup.builder()
-    .icon(() -> new ItemStack(getIcon())).displayName(Text.translatable("itemGroup.mcwbiomesoplenty.tab")).build();
+    .icon(() -> new ItemStack(getIcon())).displayName(Text.translatable("mcwbiomesoplenty.tab")).build();
 
 	private static final Identifier TAB_ID = new Identifier(MODID + ".tab");
 

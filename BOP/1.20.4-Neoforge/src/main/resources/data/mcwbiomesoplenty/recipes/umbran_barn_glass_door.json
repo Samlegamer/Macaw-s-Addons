@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "barn_glass",
+    
+    "pattern":
+    [
+        "BB",
+        "AA",
+        "AA"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomesoplenty:umbran_planks"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:glass_pane"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:umbran_barn_glass_door",
+        "count": 3
+    }
+}
+
+

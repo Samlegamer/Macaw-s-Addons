@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	"mcwbiomesoplenty:cypress_hedge"
+    ]
+  },
+  "criteria": {
+    "has_birch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:cypress_leaves"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_birch"
+    ]
+  ]
+}

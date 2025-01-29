@@ -1,0 +1,33 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "top",
+    
+    "pattern":
+    [
+        "WSW"
+    ],
+    
+    "key":
+    {
+        "W":
+        {
+            "item": "biomesoplenty:pine_log"
+        },
+		"S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcwbiomesoplenty:pine_top_roof",
+        "count": 2
+    }
+}

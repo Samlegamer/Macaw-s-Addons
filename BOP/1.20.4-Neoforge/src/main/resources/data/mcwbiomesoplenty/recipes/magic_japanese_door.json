@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "shoji",
+    
+    "pattern":
+    [
+        "BB",
+        "BB",
+        "AA"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomesoplenty:magic_planks"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:paper"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:magic_japanese_door",
+        "count": 3
+    }
+}
+
+

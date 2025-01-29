@@ -20,6 +20,10 @@ repositories
         name = "CurseMaven"
         url = "https://www.cursemaven.com"
     }
+    maven {
+        name = "ModrinthMaven"
+        url = "https://api.modrinth.com/maven"
+    }
 }
 
 loom {
@@ -40,7 +44,8 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "curse.maven:addonslib-1090999:6107143"
-	
+	//modImplementation "maven.modrinth:frozenlib:1.9.3-mc1.20.6"
+
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	

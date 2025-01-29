@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:mahogany_slab"
+    },
+    "B" : {
+      "item" : "biomesoplenty:mahogany_log"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:mahogany_counter"
+  }
+}
