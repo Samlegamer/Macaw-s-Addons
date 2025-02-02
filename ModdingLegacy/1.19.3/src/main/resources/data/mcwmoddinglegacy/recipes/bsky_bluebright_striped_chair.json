@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "striped_chair",
+    "pattern":
+    [
+        " A",
+        "BC",
+		"CC"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "blue_skies:bluebright_log"
+        }, 
+		
+        "B":
+        {
+            "item": "blue_skies:bluebright_slab"
+        },
+		
+		"C":
+        {
+            "item": "blue_skies:bluebright_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwmoddinglegacy:bsky_bluebright_striped_chair",
+        "count": 1
+    }
+}
+
+

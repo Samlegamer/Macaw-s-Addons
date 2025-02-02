@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "cabinet",
+    "pattern":
+    [
+        "AA",
+        "AC",
+        "AA"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "blue_skies:dusk_log"
+        }, 
+		
+        "C":
+        {
+            "item": "mcwfurnitures:cabinet_door"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwmoddinglegacy:bsky_dusk_kitchen_cabinet",
+        "count": 4
+    }
+}
+
+

@@ -1,10 +1,12 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
+import fr.samlegamer.addonslib.mapping.MappingMissing;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -35,13 +37,19 @@ public class McwBOP
 	"empyreal",
 	"pine",
 	"orange_maple", "red_maple", "yellow_maple", "cypress", "snowblossom", "flowering_oak", "rainbow_birch", "origin");
-    private static final DeferredRegister.Blocks block = Registration.blocks(MODID);
-    private static final DeferredRegister.Items item = DeferredRegister.createItems(MODID); //CHANGE THIS IN THE NEXT ADDONSLIB UPDATE
-    public static final DeferredRegister<CreativeModeTab> ct = Registration.creativeModeTab(McwBOP.MODID);
+    protected static final DeferredRegister.Blocks block = Registration.blocks(MODID);
+	protected static final DeferredRegister.Items item = DeferredRegister.createItems(MODID); //CHANGE THIS IN THE NEXT ADDONSLIB UPDATE
+	protected static final DeferredRegister<CreativeModeTab> ct = Registration.creativeModeTab(McwBOP.MODID);
 
-	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MCWBOP_TAB = Registration.tabs(ct, McwBOP.MODID, "tab", getIcon());
-	
-    public McwBOP(IEventBus bus)
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MCWBOP_TAB = ct.register("tab", () -> CreativeModeTab.builder()
+			.title(Component.translatable(McwBOP.MODID + "." + "tab")).icon(() -> { return new ItemStack(getIcon()); }).build());
+
+	private static final MappingMissing.Bridges bridges = new MappingMissing.Bridges("macawsbridgesbop", McwBOP.MODID, McwBOP.WOOD);
+	private static final MappingMissing.Furnitures furnitures = new MappingMissing.Furnitures("mcwfurnituresbop", McwBOP.MODID, McwBOP.WOOD);
+	private static final MappingMissing.Fences fences = new MappingMissing.Fences("mcwfencesbop", McwBOP.MODID, McwBOP.WOOD);
+	private static final MappingMissing.Roofs roofs = new MappingMissing.Roofs("macawsroofsbop", McwBOP.MODID, McwBOP.WOOD);
+
+	public McwBOP(IEventBus bus)
     {
     	LOGGER.info("Macaw's Biomes O' Plenty Loading...");
      	Registration.init(bus, block, item, ct);
@@ -55,9 +63,23 @@ public class McwBOP
     	Doors.setRegistrationWood(WOOD, block, item, null);
     	Windows.setRegistrationWood(WOOD, block, item, null);
     	Stairs.setRegistrationWood(WOOD, block, item, null);
+		McwBOP.LOGGER.info("Start convert blocks");
+		fences.leavesAdding(McwBOP.LEAVES);
+		bridges.missingnoWoodBlock(McwBOP.block);
+		furnitures.missingnoWoodBlock(McwBOP.block);
+		fences.missingnoWoodBlock(McwBOP.block);
+		roofs.missingnoWoodBlock(McwBOP.block);
+		McwBOP.LOGGER.info("Finish convert blocks");
+		McwBOP.LOGGER.info("Start convert items");
+		fences.leavesAdding(McwBOP.LEAVES);
+		bridges.missingnoWoodItem(McwBOP.item);
+		furnitures.missingnoWoodItem(McwBOP.item);
+		fences.missingnoWoodItem(McwBOP.item);
+		roofs.missingnoWoodItem(McwBOP.item);
+		McwBOP.LOGGER.info("Finish convert items");
 
     	bus.addListener(this::addTotab);
-		NeoForge.EVENT_BUS.register(Mapping.class); /* Not work ??? */
+		//NeoForge.EVENT_BUS.register(Mapping.class); /* Not work ??? */
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
     

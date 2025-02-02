@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bark",
+  "pattern" : [ "AB", "BB", "AB" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:empyreal_log"
+    },
+    "B" : {
+      "item" : "minecraft:glass"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:empyreal_bark_glass_door"
+  }
+}

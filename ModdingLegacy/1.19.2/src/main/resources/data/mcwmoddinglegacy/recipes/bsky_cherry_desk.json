@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "blue_skies:cherry_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "blue_skies:cherry_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwmoddinglegacy:bsky_cherry_desk",
+        "count": 2
+    }
+}
+
+

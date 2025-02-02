@@ -1,0 +1,26 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "striped_chair",
+  "pattern" : [ " A", "BC", "CC" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:stripped_fir_log"
+    },
+    "B" : {
+      "item" : "biomesoplenty:fir_slab"
+    },
+    "C" : {
+      "item" : "biomesoplenty:fir_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:stripped_fir_striped_chair"
+  }
+}

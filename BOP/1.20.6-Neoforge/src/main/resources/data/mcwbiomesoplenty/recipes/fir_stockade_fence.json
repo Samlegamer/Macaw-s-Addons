@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stockade",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:fir_log"
+    },
+    "B" : {
+      "item" : "biomesoplenty:fir_planks"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:fir_stockade_fence"
+  }
+}

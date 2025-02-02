@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "blue_skies:stripped_dusk_log"
+        }, 
+		
+        "B":
+        {
+            "item": "blue_skies:dusk_slab"
+        },
+		
+		"C":
+        {
+            "item": "blue_skies:dusk_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwmoddinglegacy:stripped_bsky_dusk_chair",
+        "count": 1
+    }
+}
+
+

@@ -1,0 +1,26 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern_desk",
+  "pattern" : [ "AAA", "BCB" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:hellbark_log"
+    },
+    "B" : {
+      "item" : "biomesoplenty:hellbark_fence"
+    },
+    "C" : {
+      "item" : "minecraft:stick"
+    }
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwbiomesoplenty:hellbark_modern_desk"
+  }
+}

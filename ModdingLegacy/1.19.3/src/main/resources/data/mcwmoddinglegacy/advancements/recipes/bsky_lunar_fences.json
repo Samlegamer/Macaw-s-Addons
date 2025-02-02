@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwmoddinglegacy:bsky_lunar_picket_fence",
+	  "mcwmoddinglegacy:bsky_lunar_stockade_fence",
+	  "mcwmoddinglegacy:bsky_lunar_horse_fence",
+	  "mcwmoddinglegacy:bsky_lunar_wired_fence",
+	  "mcwmoddinglegacy:bsky_lunar_highley_gate",
+	  "mcwmoddinglegacy:bsky_lunar_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "blue_skies:lunar_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "blue_skies:dusk_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "blue_skies:dusk_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwmoddinglegacy:bsky_dusk_counter",
+        "count": 1
+    }
+}
+
+

@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows_four",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwwindows:window_centre_bar_base"
+    },
+    "B" : {
+      "item" : "biomesoplenty:hellbark_planks"
+    }
+  },
+  "result" : {
+    "count" : 8,
+    "id" : "mcwbiomesoplenty:hellbark_plank_four_window"
+  }
+}

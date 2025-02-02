@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwbiomesoplenty:jacaranda_coffee_table"
+    },
+    "B" : {
+      "item" : "biomesoplenty:jacaranda_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:jacaranda_table"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwbiomesoplenty:dead_window",
+	 "mcwbiomesoplenty:dead_window2",
+	 "mcwbiomesoplenty:dead_four_window",
+	 "mcwbiomesoplenty:stripped_dead_log_window",
+	 "mcwbiomesoplenty:stripped_dead_log_window2",
+	 "mcwbiomesoplenty:stripped_dead_log_four_window",
+	 "mcwbiomesoplenty:dead_plank_window",
+	 "mcwbiomesoplenty:dead_plank_window2",
+	 "mcwbiomesoplenty:dead_plank_four_window",
+	 "mcwbiomesoplenty:dead_pane_window",
+	 "mcwbiomesoplenty:stripped_dead_pane_window",
+	 "mcwbiomesoplenty:dead_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:dead_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+

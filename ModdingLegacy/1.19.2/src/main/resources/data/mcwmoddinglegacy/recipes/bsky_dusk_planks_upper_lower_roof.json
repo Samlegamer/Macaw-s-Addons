@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "upper_lower",
+    
+    "pattern":
+    [
+		"  W",
+        "WWS"
+    ],
+    
+    "key":
+    {
+        "W":
+        {
+            "item": "blue_skies:dusk_planks"
+        },
+		"S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcwmoddinglegacy:bsky_dusk_planks_upper_lower_roof",
+        "count": 3
+    }
+}

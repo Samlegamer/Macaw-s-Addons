@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_balcony",
+  "pattern" : [ "WWW", "Z Z", "WWW" ],
+  "key" : {
+    "W" : {
+      "item" : "minecraft:stick"
+    },
+    "Z" : {
+      "item" : "premium_wood:magic_fence"
+    }
+  },
+  "result" : {
+    "item" : "mcwmoddinglegacy:pwood_magic_balcony",
+    "count" : 6
+  }
+}

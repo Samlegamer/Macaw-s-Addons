@@ -74,7 +74,7 @@ public class McwBOP
     	    	.addType(BlockType.PATHS)
     	    	.addType(BlockType.STAIRS);
        final Block icon = woodProperties.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.STAIRS);
-       MCWBOP_TAB =Registration.tabs(event, MODID, "tab", icon);
+       MCWBOP_TAB = Registration.tabs(event, MODID, "tab", icon);
     }
     
     private void addTotab(CreativeModeTabEvent.BuildContents event)

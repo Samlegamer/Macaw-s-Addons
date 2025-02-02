@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : {
+      "item" : "blue_skies:stripped_lunar_log"
+    },
+    "Z" : {
+      "item" : "blue_skies:lunar_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwmoddinglegacy:bsky_lunar_terrace_stairs",
+    "count" : 5
+  }
+}

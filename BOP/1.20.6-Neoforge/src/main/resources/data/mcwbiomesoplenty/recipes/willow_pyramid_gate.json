@@ -1,0 +1,26 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "pyramid",
+  "pattern" : [ "ABA", "ACA" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:stick"
+    },
+    "B" : {
+      "item" : "biomesoplenty:willow_log"
+    },
+    "C" : {
+      "item" : "biomesoplenty:willow_planks"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:willow_pyramid_gate"
+  }
+}
