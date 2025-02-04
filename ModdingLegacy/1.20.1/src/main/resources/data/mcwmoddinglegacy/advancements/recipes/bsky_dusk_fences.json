@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwmoddinglegacy:bsky_dusk_picket_fence",
+	  "mcwmoddinglegacy:bsky_dusk_stockade_fence",
+	  "mcwmoddinglegacy:bsky_dusk_horse_fence",
+	  "mcwmoddinglegacy:bsky_dusk_wired_fence",
+	  "mcwmoddinglegacy:bsky_dusk_highley_gate",
+	  "mcwmoddinglegacy:bsky_dusk_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "blue_skies:dusk_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

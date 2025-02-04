@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwmoddinglegacy:bsky_comet_picket_fence",
+	  "mcwmoddinglegacy:bsky_comet_stockade_fence",
+	  "mcwmoddinglegacy:bsky_comet_horse_fence",
+	  "mcwmoddinglegacy:bsky_comet_wired_fence",
+	  "mcwmoddinglegacy:bsky_comet_highley_gate",
+	  "mcwmoddinglegacy:bsky_comet_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "blue_skies:comet_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

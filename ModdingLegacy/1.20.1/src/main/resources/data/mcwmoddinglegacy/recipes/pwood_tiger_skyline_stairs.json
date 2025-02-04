@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "skyline_stairs",
+  "pattern" : [ "W  ", "ZW " ],
+  "key" : {
+    "W" : {
+      "item" : "premium_wood:tiger_stripped_log"
+    },
+    "Z" : {
+      "item" : "premium_wood:tiger_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwmoddinglegacy:pwood_tiger_skyline_stairs",
+    "count" : 4
+  }
+}

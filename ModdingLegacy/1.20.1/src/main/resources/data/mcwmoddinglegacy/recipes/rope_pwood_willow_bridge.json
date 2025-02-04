@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "rope_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "minecraft:string"
+        },
+        
+        "W":
+        {
+            "item": "premium_wood:willow_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwmoddinglegacy:rope_pwood_willow_bridge",
+        "count": 4
+    }
+}
