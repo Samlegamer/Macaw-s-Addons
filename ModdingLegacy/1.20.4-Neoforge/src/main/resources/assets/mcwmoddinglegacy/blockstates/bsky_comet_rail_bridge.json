@@ -1,0 +1,15 @@
+{
+    "variants": {                                                                        
+        "facing=north,powered=false":  { "model": "mcwmoddinglegacy:block/bridge/rail/bsky_comet", "y": 90},
+		"facing=east,powered=false":  { "model": "mcwmoddinglegacy:block/bridge/rail/bsky_comet"},
+		"facing=south,powered=false":  { "model": "mcwmoddinglegacy:block/bridge/rail/bsky_comet", "y": 90},
+		"facing=west,powered=false":  { "model": "mcwmoddinglegacy:block/bridge/rail/bsky_comet"},
+
+		"facing=north,powered=true":  { "model": "mcwmoddinglegacy:block/bridge/rail/bsky_comet_powered", "y": 90},
+		"facing=east,powered=true":  { "model": "mcwmoddinglegacy:block/bridge/rail/bsky_comet_powered"},
+		"facing=south,powered=true":  { "model": "mcwmoddinglegacy:block/bridge/rail/bsky_comet_powered", "y": 90},
+		"facing=west,powered=true":  { "model": "mcwmoddinglegacy:block/bridge/rail/bsky_comet_powered"}			
+    }
+}
+
+

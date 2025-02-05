@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bulk_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : {
+      "item" : "premium_wood:stripped_magic_log"
+    },
+    "Z" : {
+      "item" : "premium_wood:magic_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwmoddinglegacy:pwood_magic_bulk_stairs",
+    "count" : 6
+  }
+}

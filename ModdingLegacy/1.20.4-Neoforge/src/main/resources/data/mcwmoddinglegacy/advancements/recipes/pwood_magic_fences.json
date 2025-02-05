@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwmoddinglegacy:pwood_magic_picket_fence",
+	  "mcwmoddinglegacy:pwood_magic_stockade_fence",
+	  "mcwmoddinglegacy:pwood_magic_horse_fence",
+	  "mcwmoddinglegacy:pwood_magic_wired_fence",
+	  "mcwmoddinglegacy:pwood_magic_highley_gate",
+	  "mcwmoddinglegacy:pwood_magic_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "premium_wood:magic_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

@@ -1,0 +1,15 @@
+{
+    "variants": {                                                                        
+        "facing=north,powered=false":  { "model": "mcwmoddinglegacy:block/bridge/rail/pwood_magic", "y": 90},
+		"facing=east,powered=false":  { "model": "mcwmoddinglegacy:block/bridge/rail/pwood_magic"},
+		"facing=south,powered=false":  { "model": "mcwmoddinglegacy:block/bridge/rail/pwood_magic", "y": 90},
+		"facing=west,powered=false":  { "model": "mcwmoddinglegacy:block/bridge/rail/pwood_magic"},
+
+		"facing=north,powered=true":  { "model": "mcwmoddinglegacy:block/bridge/rail/pwood_magic_powered", "y": 90},
+		"facing=east,powered=true":  { "model": "mcwmoddinglegacy:block/bridge/rail/pwood_magic_powered"},
+		"facing=south,powered=true":  { "model": "mcwmoddinglegacy:block/bridge/rail/pwood_magic_powered", "y": 90},
+		"facing=west,powered=true":  { "model": "mcwmoddinglegacy:block/bridge/rail/pwood_magic_powered"}			
+    }
+}
+
+

@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwmoddinglegacy:bsky_maple_roof",
+	  "mcwmoddinglegacy:bsky_maple_attic_roof",
+	  "mcwmoddinglegacy:bsky_maple_top_roof",
+	  "mcwmoddinglegacy:bsky_maple_lower_roof",
+	  "mcwmoddinglegacy:bsky_maple_steep_roof",
+	  "mcwmoddinglegacy:bsky_maple_upper_lower_roof",
+	  "mcwmoddinglegacy:bsky_maple_upper_steep_roof"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:maple_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}
