@@ -64,6 +64,13 @@ ordering="BEFORE"
 side="BOTH"
 
 [[dependencies.${mod_id}]]
+modId="addonslib"
+mandatory=true
+versionRange="NONE"
+ordering="BEFORE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
 modId="mcwbridges"
 mandatory=false
 versionRange="NONE"

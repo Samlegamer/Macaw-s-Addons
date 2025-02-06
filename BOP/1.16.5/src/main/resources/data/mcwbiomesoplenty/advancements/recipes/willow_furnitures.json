@@ -1,0 +1,91 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbiomesoplenty:willow_wardrobe",
+	  "mcwbiomesoplenty:willow_modern_wardrobe",
+	  "mcwbiomesoplenty:willow_double_wardrobe",
+	  "mcwbiomesoplenty:willow_bookshelf_cupboard",
+	  "mcwbiomesoplenty:willow_bookshelf",
+	  "mcwbiomesoplenty:willow_drawer",
+	  "mcwbiomesoplenty:willow_double_drawer",
+	  "mcwbiomesoplenty:willow_bookshelf_drawer",
+	  "mcwbiomesoplenty:willow_lower_bookshelf_drawer",
+	  "mcwbiomesoplenty:willow_large_drawer",
+	  "mcwbiomesoplenty:willow_lower_triple_drawer",
+	  "mcwbiomesoplenty:willow_triple_drawer",
+	  "mcwbiomesoplenty:willow_desk",
+	  "mcwbiomesoplenty:willow_covered_desk",
+	  "mcwbiomesoplenty:willow_modern_desk",
+	  "mcwbiomesoplenty:willow_table",
+	  "mcwbiomesoplenty:willow_end_table",
+	  "mcwbiomesoplenty:willow_coffee_table",
+	  "mcwbiomesoplenty:willow_glass_table",
+	  "mcwbiomesoplenty:willow_chair",
+	  "mcwbiomesoplenty:willow_modern_chair",
+	  "mcwbiomesoplenty:willow_striped_chair",
+	  "mcwbiomesoplenty:willow_stool_chair",
+	  "mcwbiomesoplenty:willow_counter",
+	  "mcwbiomesoplenty:willow_drawer_counter",
+	  "mcwbiomesoplenty:willow_double_drawer_counter",
+	  "mcwbiomesoplenty:willow_cupboard_counter",
+	  
+	  "mcwbiomesoplenty:stripped_willow_wardrobe",
+	  "mcwbiomesoplenty:stripped_willow_modern_wardrobe",
+	  "mcwbiomesoplenty:stripped_willow_double_wardrobe",
+	  "mcwbiomesoplenty:stripped_willow_bookshelf_cupboard",
+	  "mcwbiomesoplenty:stripped_willow_bookshelf",
+	  "mcwbiomesoplenty:stripped_willow_drawer",
+	  "mcwbiomesoplenty:stripped_willow_double_drawer",
+	  "mcwbiomesoplenty:stripped_willow_bookshelf_drawer",
+	  "mcwbiomesoplenty:stripped_willow_lower_bookshelf_drawer",
+	  "mcwbiomesoplenty:stripped_willow_large_drawer",
+	  "mcwbiomesoplenty:stripped_willow_lower_triple_drawer",
+	  "mcwbiomesoplenty:stripped_willow_triple_drawer",
+	  "mcwbiomesoplenty:stripped_willow_desk",
+	  "mcwbiomesoplenty:stripped_willow_covered_desk",
+	  "mcwbiomesoplenty:stripped_willow_modern_desk",
+	  "mcwbiomesoplenty:stripped_willow_table",
+	  "mcwbiomesoplenty:stripped_willow_end_table",
+	  "mcwbiomesoplenty:stripped_willow_coffee_table",
+	  "mcwbiomesoplenty:stripped_willow_glass_table",
+	  "mcwbiomesoplenty:stripped_willow_chair",
+	  "mcwbiomesoplenty:stripped_willow_modern_chair",
+	  "mcwbiomesoplenty:stripped_willow_striped_chair",
+	  "mcwbiomesoplenty:stripped_willow_stool_chair",
+	  "mcwbiomesoplenty:stripped_willow_counter",
+	  "mcwbiomesoplenty:stripped_willow_drawer_counter",
+	  "mcwbiomesoplenty:stripped_willow_double_drawer_counter",
+	  "mcwbiomesoplenty:stripped_willow_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:willow_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbiomesoplenty:willow_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

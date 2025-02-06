@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbiomesoplenty:jacaranda_picket_fence",
+	  "mcwbiomesoplenty:jacaranda_stockade_fence",
+	  "mcwbiomesoplenty:jacaranda_horse_fence",
+	  "mcwbiomesoplenty:jacaranda_wired_fence",
+	  "mcwbiomesoplenty:jacaranda_highley_gate",
+	  "mcwbiomesoplenty:jacaranda_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:jacaranda_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}
