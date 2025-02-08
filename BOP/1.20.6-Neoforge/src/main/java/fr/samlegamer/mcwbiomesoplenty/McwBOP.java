@@ -1,25 +1,13 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
 import fr.samlegamer.addonslib.mapping.MappingMissing;
-import net.minecraft.client.telemetry.events.WorldLoadEvent;
-import net.minecraft.core.Registry;
-import net.minecraft.core.WritableRegistry;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
-import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
-import net.neoforged.neoforge.event.ModMismatchEvent;
 import net.neoforged.neoforge.registries.*;
 
 import java.util.List;
@@ -40,8 +28,6 @@ import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
 
-import javax.annotation.Nullable;
-
 @Mod(McwBOP.MODID)
 public class McwBOP
 {
@@ -61,14 +47,28 @@ public class McwBOP
 
 	public McwBOP(IEventBus bus)
     {
-		//bus.addListener(MissingnoAlias::fix);
-
 		LOGGER.info("Macaw's Biomes O' Plenty Loading...");
 		Registration.init(bus, block, item, ct);
 
-		bus.register(MissingnoAlias.class);
-		//McwBOP.block.addAlias(new ResourceLocation("macawsroofsbop", "dead_roof"), new ResourceLocation(McwBOP.MODID, "dead_roof"));
-		//McwBOP.item.addAlias(new ResourceLocation("macawsroofsbop", "dead_roof"), new ResourceLocation(McwBOP.MODID, "dead_roof"));
+		final MappingMissing.Bridges bridges = new MappingMissing.Bridges("macawsbridgesbop", McwBOP.MODID, McwBOP.WOOD);
+		final MappingMissing.Furnitures furnitures = new MappingMissing.Furnitures("mcwfurnituresbop", McwBOP.MODID, McwBOP.WOOD);
+		final MappingMissing.Fences fences = new MappingMissing.Fences("mcwfencesbop", McwBOP.MODID, McwBOP.WOOD);
+		final MappingMissing.Roofs roofs = new MappingMissing.Roofs("macawsroofsbop", McwBOP.MODID, McwBOP.WOOD);
+
+		McwBOP.LOGGER.info("Start convert blocks");
+		fences.leavesAdding(McwBOP.LEAVES);
+		bridges.missingnoWoodBlock(McwBOP.block);
+		furnitures.missingnoWoodBlock(McwBOP.block);
+		fences.missingnoWoodBlock(McwBOP.block);
+		roofs.missingnoWoodBlock(McwBOP.block);
+		McwBOP.LOGGER.info("Finish convert blocks");
+		McwBOP.LOGGER.info("Start convert items");
+		fences.leavesAdding(McwBOP.LEAVES);
+		bridges.missingnoWoodItem(McwBOP.item);
+		furnitures.missingnoWoodItem(McwBOP.item);
+		fences.missingnoWoodItem(McwBOP.item);
+		roofs.missingnoWoodItem(McwBOP.item);
+		McwBOP.LOGGER.info("Finish convert items");
 
 		Bridges.setRegistrationWood(WOOD, block, item, null);
     	Fences.setRegistrationWood(WOOD, block, item, null);
@@ -80,27 +80,10 @@ public class McwBOP
     	Doors.setRegistrationWood(WOOD, block, item, null);
     	Windows.setRegistrationWood(WOOD, block, item, null);
     	Stairs.setRegistrationWood(WOOD, block, item, null);
-		block.addAlias(new ResourceLocation("macawsroofsbop", "dead_roof"), new ResourceLocation(MODID, "dead_roof"));
-		//bus.addListener(MissingnoAlias::fixAlias);
-		//NeoForge.EVENT_BUS.register(MissingnoAlias.class);
-		//bus.addListener(this::registerEvent);
+
 		bus.addListener(this::addTotab);
-		bus.addListener(this::catchModVersionMismatch);
-		//IdMappingEvent
-		//MissingnoAlias.fixAlias();
 		LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
-
-	/*private void registerEvent(RegisterEvent event) {
-		event.getRegistry().addAlias(new ResourceLocation("macawsroofsbop", "dead_roof"), new ResourceLocation(MODID, "dead_roof"));
-	}*/
-
-
-
-	public void catchModVersionMismatch(ModMismatchEvent event) {
-		event.markResolved(MODID);
-	}
-
 
 	private static Block getIcon()
     {

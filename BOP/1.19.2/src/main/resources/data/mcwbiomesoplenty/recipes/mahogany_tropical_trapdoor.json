@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "tropical_trapdoors",
+    
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+		"AAA"           
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomesoplenty:mahogany_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwtrpdoors:print_tropical"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:mahogany_tropical_trapdoor",
+        "count": 1
+    }
+}
+
+

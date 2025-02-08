@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "whispering_trapdoors",
+    
+    "pattern":
+    [
+        " A ",
+        "ABA",
+        " A "               
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomesoplenty:dead_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwtrpdoors:print_whispering"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:dead_whispering_trapdoor",
+        "count": 4
+    }
+}
+
+

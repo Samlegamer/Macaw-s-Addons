@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 @Mod.EventBusSubscriber(modid = McwBOP.MODID, bus = Bus.MOD, value = Dist.CLIENT)
 public class Client
 {
-	private static final List<String> LEAVES_NO_COLORED = Arrays.asList("mahogany", "willow", "palm", "flowering_oak");
+	private static final List<String> LEAVES_NO_COLORED = Arrays.asList("mahogany", "pine", "willow", "palm", "flowering_oak");
 	private static final ColorRegistry COLOR = new ColorRegistry(McwBOP.MODID, LEAVES_NO_COLORED);
 
 	@SubscribeEvent
