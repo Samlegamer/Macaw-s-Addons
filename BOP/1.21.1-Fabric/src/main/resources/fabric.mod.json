@@ -8,11 +8,11 @@
 		"Samlegamer"
 	],
 	"contact": {
-		"homepage": "",
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/macaws-biomes-o-plenty",
 		"sources": "https://github.com/Samlegamer/Macaw-s-Addons/"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/mcwbiomesoplenty/icon.png",
+	"icon": "logo.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -26,7 +26,9 @@
 		"fabricloader": ">=0.16.10",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"biomesoplenty": "*",
+		"addonslib": "*"
 	},
 	"suggests": {
 		"another-mod": "*"
