@@ -1,7 +1,10 @@
 package fr.samlegamer.mcwbyg;
 
+import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -42,8 +45,16 @@ public class McwByg
 	public static final ItemGroup MCWBYG_TAB = new ItemGroup(MODID + ".tab") {
 	    @Override
 	    public ItemStack makeIcon() {
-	    	NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "aspen_roof"), Finder.findBlock(MODID, "aspen_picket_fence"), Finder.findBlock(MODID, "aspen_wardrobe"), 
-	        Finder.findBlock(MODID, "aspen_log_bridge_middle"), Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Finder.findBlock(MODID, "aspen_bulk_stairs"));
+	    	NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
+					Finder.findBlock(MODID, "aspen_roof"),
+					Finder.findBlock(MODID, "aspen_picket_fence"),
+					Finder.findBlock(MODID, "aspen_wardrobe"),
+	        		Finder.findBlock(MODID, "aspen_log_bridge_middle"),
+					Finder.findBlock(MODID, "aspen_plank_window2"),
+					Finder.findBlock(MODID, "aspen_paper_door"),
+					Finder.findBlock(MODID, "aspen_blossom_trapdoor"),
+					Finder.findBlock(MODID, "aspen_planks_path"),
+					Finder.findBlock(MODID, "aspen_bulk_stairs"));
 	    	
 	    	prop.addType(BlockType.ROOFS).addType(BlockType.FENCES).addType(BlockType.BRIDGES).addType(BlockType.FURNITURES).addType(BlockType.STAIRS);
 	    	Block icon = prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.BRIDGES, BlockType.FURNITURES, BlockType.STAIRS);
@@ -70,6 +81,11 @@ public class McwByg
     	Roofs.clientStone(event, MODID, fences_rockable);
     	Furnitures.clientWood(event, MODID, WOOD);
     	Stairs.clientWood(event, MODID, WOOD);
+
+		Paths.clientWood(event, MODID, WOOD);
+		Doors.clientWood(event, MODID, WOOD);
+		Trapdoors.clientWood(event, MODID, WOOD);
+		Windows.clientWood(event, MODID, WOOD);
     }
     
     @SubscribeEvent
@@ -84,5 +100,10 @@ public class McwByg
     	Fences.registryStone(event, fences_rockable, MCWBYG_TAB);
     	Furnitures.registryWood(event, WOOD, MCWBYG_TAB);
     	Stairs.registryWood(event, WOOD, MCWBYG_TAB);
+
+		Paths.registryWood(event, WOOD, MCWBYG_TAB);
+		Doors.registryWood(event, WOOD, MCWBYG_TAB);
+		Trapdoors.registryWood(event, WOOD, MCWBYG_TAB);
+		Windows.registryWood(event, WOOD, MCWBYG_TAB);
     }
 }
