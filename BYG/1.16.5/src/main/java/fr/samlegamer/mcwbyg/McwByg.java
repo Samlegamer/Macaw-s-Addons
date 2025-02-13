@@ -26,6 +26,7 @@ import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
+import javax.annotation.Nonnull;
 
 @Mod(McwByg.MODID)
 @Mod.EventBusSubscriber(modid = McwByg.MODID, bus = Bus.MOD)
@@ -44,6 +45,7 @@ public class McwByg
 
 	public static final ItemGroup MCWBYG_TAB = new ItemGroup(MODID + ".tab") {
 	    @Override
+		@Nonnull
 	    public ItemStack makeIcon() {
 	    	NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
 					Finder.findBlock(MODID, "aspen_roof"),
@@ -56,8 +58,18 @@ public class McwByg
 					Finder.findBlock(MODID, "aspen_planks_path"),
 					Finder.findBlock(MODID, "aspen_bulk_stairs"));
 	    	
-	    	prop.addType(BlockType.ROOFS).addType(BlockType.FENCES).addType(BlockType.BRIDGES).addType(BlockType.FURNITURES).addType(BlockType.STAIRS);
-	    	Block icon = prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.BRIDGES, BlockType.FURNITURES, BlockType.STAIRS);
+					prop
+					.addType(BlockType.ROOFS)
+					.addType(BlockType.FENCES)
+					.addType(BlockType.BRIDGES)
+					.addType(BlockType.FURNITURES)
+					.addType(BlockType.STAIRS)
+					.addType(BlockType.DOORS)
+					.addType(BlockType.TRAPDOORS)
+					.addType(BlockType.PATHS)
+					.addType(BlockType.WINDOWS);
+	    	Block icon = prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.BRIDGES, BlockType.FURNITURES, BlockType.STAIRS,
+					BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.WINDOWS);
 	        return new ItemStack(icon);
 	    }
 	};
@@ -81,7 +93,7 @@ public class McwByg
     	Roofs.clientStone(event, MODID, fences_rockable);
     	Furnitures.clientWood(event, MODID, WOOD);
     	Stairs.clientWood(event, MODID, WOOD);
-
+		// 1.1 Update
 		Paths.clientWood(event, MODID, WOOD);
 		Doors.clientWood(event, MODID, WOOD);
 		Trapdoors.clientWood(event, MODID, WOOD);
@@ -100,7 +112,7 @@ public class McwByg
     	Fences.registryStone(event, fences_rockable, MCWBYG_TAB);
     	Furnitures.registryWood(event, WOOD, MCWBYG_TAB);
     	Stairs.registryWood(event, WOOD, MCWBYG_TAB);
-
+		// 1.1 Update
 		Paths.registryWood(event, WOOD, MCWBYG_TAB);
 		Doors.registryWood(event, WOOD, MCWBYG_TAB);
 		Trapdoors.registryWood(event, WOOD, MCWBYG_TAB);

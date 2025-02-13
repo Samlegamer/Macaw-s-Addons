@@ -1,6 +1,10 @@
 package fr.samlegamer.mcwbyg;
 
 import java.util.List;
+import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.windows.Windows;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
@@ -14,7 +18,6 @@ import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -47,6 +50,11 @@ public class McwByg implements ModInitializer
     	Fences.setRegistrationRock(MODID, fences_rockable, MCWBYG_TAB);
     	Furnitures.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
     	Stairs.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
+		// 1.1 update
+		Doors.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
+		Trapdoors.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
+		Paths.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
+		Windows.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
 
 		Mapping.missingnoWoodBlock();
 		
@@ -56,15 +64,39 @@ public class McwByg implements ModInitializer
     	Fences.fuelHedge(MODID, LEAVES);
     	Furnitures.fuelWood(MODID, WOOD);
     	Stairs.fuelWood(MODID, WOOD);
+		// 1.1 update
+		Doors.fuelWood(MODID, WOOD);
+		Trapdoors.fuelWood(MODID, WOOD);
+		Paths.fuelWood(MODID, WOOD);
+		Windows.fuelWood(MODID, WOOD);
 
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
 	}
 	
 	private static Block icon()
 	{
-		final NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "aspen_roof"), Finder.findBlock(MODID, "aspen_picket_fence"), Finder.findBlock(MODID, "aspen_wardrobe"), 
-		        Finder.findBlock(MODID, "aspen_log_bridge_middle"), Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Finder.findBlock(MODID, "aspen_bulk_stairs"));
-    	prop.addType(BlockType.ROOFS).addType(BlockType.FENCES).addType(BlockType.BRIDGES).addType(BlockType.FURNITURES).addType(BlockType.STAIRS);
-        return prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.BRIDGES, BlockType.FURNITURES, BlockType.STAIRS);
+		NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
+				Finder.findBlock(MODID, "aspen_roof"),
+				Finder.findBlock(MODID, "aspen_picket_fence"),
+				Finder.findBlock(MODID, "aspen_wardrobe"),
+				Finder.findBlock(MODID, "aspen_log_bridge_middle"),
+				Finder.findBlock(MODID, "aspen_plank_window2"),
+				Finder.findBlock(MODID, "aspen_paper_door"),
+				Finder.findBlock(MODID, "aspen_blossom_trapdoor"),
+				Finder.findBlock(MODID, "aspen_planks_path"),
+				Finder.findBlock(MODID, "aspen_bulk_stairs"));
+
+		prop
+				.addType(BlockType.ROOFS)
+				.addType(BlockType.FENCES)
+				.addType(BlockType.BRIDGES)
+				.addType(BlockType.FURNITURES)
+				.addType(BlockType.STAIRS)
+				.addType(BlockType.DOORS)
+				.addType(BlockType.TRAPDOORS)
+				.addType(BlockType.PATHS)
+				.addType(BlockType.WINDOWS);
+		return prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.BRIDGES, BlockType.FURNITURES, BlockType.STAIRS,
+				BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.WINDOWS);
 	}
 }

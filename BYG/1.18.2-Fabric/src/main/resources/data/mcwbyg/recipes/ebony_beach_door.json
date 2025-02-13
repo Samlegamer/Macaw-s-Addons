@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "beach",
+    
+    "pattern":
+    [
+        "A",
+        "B",
+        "A"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:ebony_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwdoors:print_jungle"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:ebony_beach_door",
+        "count": 1
+    }
+}
+
+
