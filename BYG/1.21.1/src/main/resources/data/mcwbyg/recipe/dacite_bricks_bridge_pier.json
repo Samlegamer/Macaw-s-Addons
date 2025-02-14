@@ -9,19 +9,29 @@
       "modid": "biomeswevegone"
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "stone_piers",
-  "pattern" : [ "WFW" ],
-  "key" : {
-    "F" : {
-      "item" : "biomeswevegone:dacite_brick_wall"
+    "type": "minecraft:crafting_shaped",
+	"group": "stone_piers",
+    
+    "pattern": [
+    "WFW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "biomeswevegone:dacite_brick_wall"
+        },
+        
+        "W":
+        {
+            "item": "biomeswevegone:dacite_bricks"
+        }
     },
-    "W" : {
-      "item" : "biomeswevegone:dacite_bricks"
+    
+    "result":
+    {
+        "item":  "mcwbyg:dacite_bricks_bridge_pier",
+        "count": 3
     }
-  },
-  "result" : {
-    "count" : 3,
-    "id" : "mcwbyg:dacite_bricks_bridge_pier"
-  }
 }

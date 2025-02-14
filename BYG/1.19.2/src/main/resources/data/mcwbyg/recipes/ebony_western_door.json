@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "western",
+    
+    "pattern":
+    [
+        "  A",
+        "ABA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:ebony_planks"
+        },
+		
+		"B":
+        {
+            "item": "byg:ebony_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:ebony_western_door",
+        "count": 3
+    }
+}
+
+

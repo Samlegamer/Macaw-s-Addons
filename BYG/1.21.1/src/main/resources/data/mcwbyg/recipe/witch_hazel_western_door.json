@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "western",
+  "pattern" : [ "  A", "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "biomeswevegone:witch_hazel_planks"
+    },
+    "B" : {
+      "item" : "biomeswevegone:witch_hazel_slab"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:witch_hazel_western_door"
+  }
+}

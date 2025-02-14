@@ -9,22 +9,38 @@
       "modid": "biomeswevegone"
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "grass_topped",
-  "pattern" : [ "BGB", "AAA" ],
-  "key" : {
-    "A" : {
-      "item" : "biomeswevegone:smooth_purple_sandstone"
+    "type": "minecraft:crafting_shaped",
+	"group": "grass_topped",
+    
+    "pattern":
+    [
+		"BGB",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomeswevegone:smooth_purple_sandstone"
+        },    
+        
+		"G":
+        {
+            "item": "minecraft:dirt"
+        }, 
+        
+        "B":
+        {
+            "item": "biomeswevegone:purple_sandstone"
+        }
     },
-    "G" : {
-      "item" : "minecraft:dirt"
-    },
-    "B" : {
-      "item" : "biomeswevegone:purple_sandstone"
+    
+    "result":
+    {
+        "item":  "mcwbyg:purple_sandstone_grass_topped_wall",
+        "count": 6
     }
-  },
-  "result" : {
-    "count" : 6,
-    "id" : "mcwbyg:purple_sandstone_grass_topped_wall"
-  }
 }
+
+

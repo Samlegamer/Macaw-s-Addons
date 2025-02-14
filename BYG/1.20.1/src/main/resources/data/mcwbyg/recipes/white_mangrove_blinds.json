@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "blinds",
+	
+    "pattern":
+    [
+        "AAA",
+        "BBB",
+        "BBB"		
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "A":
+        {
+            "item": "biomeswevegone:white_mangrove_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:white_mangrove_blinds",
+        "count": 3
+    }
+}

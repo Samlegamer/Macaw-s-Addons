@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "western",
+    
+    "pattern":
+    [
+        "  A",
+        "ABA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomeswevegone:white_mangrove_planks"
+        },
+		
+		"B":
+        {
+            "item": "biomeswevegone:white_mangrove_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:white_mangrove_western_door",
+        "count": 3
+    }
+}
+
+

@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "waffle",
+    
+    "pattern":
+    [
+        "A",
+        "B",
+        "A"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomeswevegone:maple_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwdoors:print_waffle"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:maple_waffle_door",
+        "count": 1
+    }
+}
+
+

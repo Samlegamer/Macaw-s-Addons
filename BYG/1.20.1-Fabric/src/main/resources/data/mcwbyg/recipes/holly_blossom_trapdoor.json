@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "blossom_trapdoors",
+    
+    "pattern":
+    [
+        "A",
+        "B",
+        "A"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomeswevegone:holly_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwtrpdoors:print_blossom"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:holly_blossom_trapdoor",
+        "count": 1
+    }
+}
+
+

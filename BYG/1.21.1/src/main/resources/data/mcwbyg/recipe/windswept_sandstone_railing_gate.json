@@ -9,19 +9,33 @@
       "modid": "biomeswevegone"
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "railing_gate",
-  "pattern" : [ "ABA", "ABA" ],
-  "key" : {
-    "A" : {
-      "item" : "minecraft:iron_bars"
+    "type": "minecraft:crafting_shaped",
+	"group": "railing_gate",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:iron_bars"
+        },    
+        
+        "B":
+        {
+            "item": "biomeswevegone:windswept_sandstone"
+        }
     },
-    "B" : {
-      "item" : "biomeswevegone:windswept_sandstone"
+    
+    "result":
+    {
+        "item":  "mcwbyg:windswept_sandstone_railing_gate",
+        "count": 1
     }
-  },
-  "result" : {
-    "count" : 1,
-    "id" : "mcwbyg:windswept_sandstone_railing_gate"
-  }
 }
+
+

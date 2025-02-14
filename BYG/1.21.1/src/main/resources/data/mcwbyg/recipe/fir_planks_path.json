@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "group": "woodenpaths",
+  "ingredients": [
+    {
+      "item": "biomeswevegone:fir_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:fir_planks_path"
+  }
+}

@@ -9,19 +9,33 @@
       "modid": "biomeswevegone"
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "modern",
-  "pattern" : [ "ABA", "AAA" ],
-  "key" : {
-    "A" : {
-      "item" : "biomeswevegone:red_rock"
+    "type": "minecraft:crafting_shaped",
+	"group": "modern",
+    
+    "pattern":
+    [
+		"ABA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomeswevegone:red_rock_bricks"
+        },    
+        
+        "B":
+        {
+            "item": "biomeswevegone:red_rock_bricks"
+        }
     },
-    "B" : {
-      "item" : "biomeswevegone:red_rock_bricks"
+    
+    "result":
+    {
+        "item":  "mcwbyg:modern_red_rock_bricks_wall",
+        "count": 6
     }
-  },
-  "result" : {
-    "count" : 6,
-    "id" : "mcwbyg:modern_red_rock_bricks_wall"
-  }
 }
+
+

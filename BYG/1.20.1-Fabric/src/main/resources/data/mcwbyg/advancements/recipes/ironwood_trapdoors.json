@@ -1,0 +1,56 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwdoors:acacia_bark_glass_door",
+	  "mcwdoors:acacia_barn_door",
+	  "mcwdoors:acacia_barn_glass_door",
+	  "mcwdoors:acacia_beach_door",
+	  "mcwdoors:acacia_classic_door",
+	  "mcwdoors:acacia_cottage_door",
+	  "mcwdoors:acacia_four_panel_door",
+	  "mcwdoors:acacia_glass_door",
+	  "mcwdoors:acacia_japanese_door",
+	  "mcwdoors:acacia_japanese2_door",
+	  "mcwdoors:acacia_modern_door",
+	  "mcwdoors:acacia_mystic_door",
+	  "mcwdoors:acacia_nether_door",
+	  "mcwdoors:acacia_paper_door",
+	  "mcwdoors:acacia_stable_door",
+	  "mcwdoors:acacia_stable_head_door",
+	  "mcwdoors:acacia_swamp_door",
+	  "mcwdoors:acacia_western_door",
+	  "mcwdoors:acacia_waffle_door",
+	  "mcwdoors:acacia_whispering_door",
+	  "mcwdoors:acacia_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomeswevegone:ironwood_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

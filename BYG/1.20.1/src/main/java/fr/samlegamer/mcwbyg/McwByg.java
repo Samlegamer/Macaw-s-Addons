@@ -1,22 +1,23 @@
 package fr.samlegamer.mcwbyg;
 
+import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.bridges.Bridges;
@@ -66,24 +67,42 @@ public class McwByg
     	Fences.setRegistrationRock(STONE, block, item, null);
     	Furnitures.setRegistrationWood(WOOD, block, item, null);
     	Stairs.setRegistrationWood(WOOD, block, item, null);
+		// 1.1 Update
+		Paths.setRegistrationWood(WOOD, block, item, null);
+		Doors.setRegistrationWood(WOOD, block, item, null);
+		Trapdoors.setRegistrationWood(WOOD, block, item, null);
+		Windows.setRegistrationWood(WOOD, block, item, null);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addTotab);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
     }
-    
-    private static Block getIcon()
-    {
-    	NewIconRandom.NewProperties woodProperties = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "aspen_roof"), Finder.findBlock(MODID, "aspen_picket_fence"), Finder.findBlock(MODID, "aspen_wardrobe"), 
-    	        Finder.findBlock(MODID, "aspen_log_bridge_middle"), Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Finder.findBlock(MODID, "aspen_bulk_stairs"));
-    	    	woodProperties
-    	    	.addType(BlockType.ROOFS)
-    	    	.addType(BlockType.FENCES)
-    	    	.addType(BlockType.FURNITURES)
-    	    	.addType(BlockType.BRIDGES)
-    	    	.addType(BlockType.STAIRS);
-       final Block icon = woodProperties.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.STAIRS);
-       return icon;
-    }
+
+	private static Block getIcon()
+	{
+		NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
+				Finder.findBlock(MODID, "aspen_roof"),
+				Finder.findBlock(MODID, "aspen_picket_fence"),
+				Finder.findBlock(MODID, "aspen_wardrobe"),
+				Finder.findBlock(MODID, "aspen_log_bridge_middle"),
+				Finder.findBlock(MODID, "aspen_plank_window2"),
+				Finder.findBlock(MODID, "aspen_paper_door"),
+				Finder.findBlock(MODID, "aspen_blossom_trapdoor"),
+				Finder.findBlock(MODID, "aspen_planks_path"),
+				Finder.findBlock(MODID, "aspen_bulk_stairs"));
+
+		prop
+				.addType(BlockType.ROOFS)
+				.addType(BlockType.FENCES)
+				.addType(BlockType.BRIDGES)
+				.addType(BlockType.FURNITURES)
+				.addType(BlockType.STAIRS)
+				.addType(BlockType.DOORS)
+				.addType(BlockType.TRAPDOORS)
+				.addType(BlockType.PATHS)
+				.addType(BlockType.WINDOWS);
+		return prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.BRIDGES, BlockType.FURNITURES, BlockType.STAIRS,
+				BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.WINDOWS);
+	}
     
     private void addTotab(BuildCreativeModeTabContentsEvent event)
     {
@@ -96,5 +115,10 @@ public class McwByg
     	Fences.addToTabStone(event, MODID, STONE, MCWBYG_TAB.get());
     	Furnitures.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
     	Stairs.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
+		// 1.1 Update
+		Paths.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
+		Doors.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
+		Trapdoors.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
+		Windows.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
     }
 }

@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "biomeswevegone:green_enchanted_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwbyg:green_enchanted_planks_path",
+    "count": 3
+  }
+}

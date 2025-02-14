@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "barrel_trapdoors",
+  "pattern" : [ " A ", "ABA", " A " ],
+  "key" : {
+    "A" : {
+      "item" : "biomeswevegone:holly_planks"
+    },
+    "B" : {
+      "item" : "minecraft:barrel"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:holly_barrel_trapdoor"
+  }
+}

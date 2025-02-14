@@ -9,19 +9,29 @@
       "modid": "biomeswevegone"
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "stone_piers",
-  "pattern" : [ "WFW" ],
-  "key" : {
-    "F" : {
-      "item" : "biomeswevegone:black_sandstone_wall"
+    "type": "minecraft:crafting_shaped",
+	"group": "stone_piers",
+    
+    "pattern": [
+    "WFW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "biomeswevegone:black_sandstone_wall"
+        },
+        
+        "W":
+        {
+            "item": "biomeswevegone:black_sandstone"
+        }
     },
-    "W" : {
-      "item" : "biomeswevegone:black_sandstone"
+    
+    "result":
+    {
+        "item":  "mcwbyg:black_sandstone_bridge_pier",
+        "count": 3
     }
-  },
-  "result" : {
-    "count" : 3,
-    "id" : "mcwbyg:black_sandstone_bridge_pier"
-  }
 }

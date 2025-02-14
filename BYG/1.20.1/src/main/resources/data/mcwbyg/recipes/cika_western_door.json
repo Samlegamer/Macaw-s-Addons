@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "western",
+    
+    "pattern":
+    [
+        "  A",
+        "ABA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomeswevegone:cika_planks"
+        },
+		
+		"B":
+        {
+            "item": "biomeswevegone:cika_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:cika_western_door",
+        "count": 3
+    }
+}
+
+

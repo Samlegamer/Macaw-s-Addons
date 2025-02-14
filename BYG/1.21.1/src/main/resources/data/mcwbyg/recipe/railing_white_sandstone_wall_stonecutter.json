@@ -9,13 +9,11 @@
       "modid": "biomeswevegone"
     }
   ],
-  "type" : "minecraft:stonecutting",
-  "ingredient" : {
-    "item" : "biomeswevegone:white_sandstone"
-  },
-  "result" : {
-    "count" : 1,
-    "id" : "mcwbyg:railing_white_sandstone_wall"
-  },
-  "group" : "fences"
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomeswevegone:white_sandstone"
+    },
+    "result": "mcwbyg:railing_white_sandstone_wall",
+    "group": "fences",
+    "count": 1
 }

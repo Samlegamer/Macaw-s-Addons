@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "whispering_trapdoors",
+  "pattern" : [ " A ", "ABA", " A " ],
+  "key" : {
+    "A" : {
+      "item" : "biomeswevegone:ironwood_planks"
+    },
+    "B" : {
+      "item" : "mcwtrpdoors:print_whispering"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:ironwood_whispering_trapdoor"
+  }
+}

@@ -1,0 +1,39 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "parapets",
+    
+    "pattern":
+    [
+		"AAA",
+        "ABA"               
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:ebony_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:ebony_plank_parapet",
+        "count": 5
+    }
+}

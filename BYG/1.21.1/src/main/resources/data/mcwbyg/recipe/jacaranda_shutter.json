@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shutters",
+  "pattern" : [ "B", "B", "B" ],
+  "key" : {
+    "B" : {
+      "item" : "biomeswevegone:jacaranda_trapdoor"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:jacaranda_shutter"
+  }
+}

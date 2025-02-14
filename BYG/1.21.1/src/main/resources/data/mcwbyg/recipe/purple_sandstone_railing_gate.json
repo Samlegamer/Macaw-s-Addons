@@ -9,19 +9,33 @@
       "modid": "biomeswevegone"
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "railing_gate",
-  "pattern" : [ "ABA", "ABA" ],
-  "key" : {
-    "A" : {
-      "item" : "minecraft:iron_bars"
+    "type": "minecraft:crafting_shaped",
+	"group": "railing_gate",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:iron_bars"
+        },    
+        
+        "B":
+        {
+            "item": "biomeswevegone:purple_sandstone"
+        }
     },
-    "B" : {
-      "item" : "biomeswevegone:purple_sandstone"
+    
+    "result":
+    {
+        "item":  "mcwbyg:purple_sandstone_railing_gate",
+        "count": 1
     }
-  },
-  "result" : {
-    "count" : 1,
-    "id" : "mcwbyg:purple_sandstone_railing_gate"
-  }
 }
+
+

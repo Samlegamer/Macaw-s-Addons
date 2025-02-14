@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:sakura_tropical_door",
+	  "mcwbyg:sakura_bark_glass_door",
+	  "mcwbyg:sakura_barn_door",
+	  "mcwbyg:sakura_barn_glass_door",
+	  "mcwbyg:sakura_beach_door",
+	  "mcwbyg:sakura_classic_door",
+	  "mcwbyg:sakura_cottage_door",
+	  "mcwbyg:sakura_four_panel_door",
+	  "mcwbyg:sakura_glass_door",
+	  "mcwbyg:sakura_japanese_door",
+	  "mcwbyg:sakura_japanese2_door",
+	  "mcwbyg:sakura_modern_door",
+	  "mcwbyg:sakura_mystic_door",
+	  "mcwbyg:sakura_nether_door",
+	  "mcwbyg:sakura_paper_door",
+	  "mcwbyg:sakura_stable_door",
+	  "mcwbyg:sakura_stable_head_door",
+	  "mcwbyg:sakura_swamp_door",
+	  "mcwbyg:sakura_western_door",
+	  "mcwbyg:sakura_waffle_door",
+	  "mcwbyg:sakura_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomeswevegone:sakura_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

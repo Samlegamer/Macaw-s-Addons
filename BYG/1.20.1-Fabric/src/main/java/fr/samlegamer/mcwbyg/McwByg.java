@@ -1,6 +1,11 @@
 package fr.samlegamer.mcwbyg;
 
 import java.util.List;
+
+import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.windows.Windows;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
@@ -29,7 +34,7 @@ public class McwByg implements ModInitializer
 	public static final String MODID = "mcwbyg";
 	public static final Logger LOGGER = LogManager.getLogger();
     public static final ItemGroup MCWBYG_TAB = FabricItemGroup.builder()
-    .icon(() -> new ItemStack(icon())).displayName(Text.translatable("itemGroup.mcwbyg.tab")).build();
+    .icon(() -> new ItemStack(getIcon())).displayName(Text.translatable("itemGroup.mcwbyg.tab")).build();
     
 	public static final List<String> WOOD = List.of("aspen", "baobab", "blue_enchanted", "cika", "cypress", "ebony", "fir", 
 	"green_enchanted", "holly", "ironwood", "jacaranda", "mahogany","maple", "palm", "pine", "rainbow_eucalyptus", "redwood", "sakura", 
@@ -60,6 +65,11 @@ public class McwByg implements ModInitializer
     	Fences.setRegistrationRock(MODID, STONE, MCWBYG_TAB);
     	Furnitures.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
     	Stairs.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
+		// 1.1 Update
+		Paths.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
+		Doors.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
+		Trapdoors.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
+		Windows.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
 
         Registry.register(Registries.ITEM_GROUP, TAB_ID, MCWBYG_TAB);
         RegistryKey<ItemGroup> group_key = RegistryKey.of(RegistryKeys.ITEM_GROUP, TAB_ID);
@@ -73,6 +83,11 @@ public class McwByg implements ModInitializer
     	Fences.addToTabStone(MODID, STONE, group_key);
     	Furnitures.addToTabWood(MODID, WOOD, group_key);
     	Stairs.addToTabWood(MODID, WOOD, group_key);
+		// 1.1 Update
+		Paths.addToTabWood(MODID, WOOD, group_key);
+		Doors.addToTabWood(MODID, WOOD, group_key);
+		Trapdoors.addToTabWood(MODID, WOOD, group_key);
+		Windows.addToTabWood(MODID, WOOD, group_key);
     	
     	Bridges.fuelWood(MODID, WOOD);
 		Roofs.fuelWood(MODID, WOOD);
@@ -80,14 +95,40 @@ public class McwByg implements ModInitializer
     	Fences.fuelHedge(MODID, LEAVES);
     	Furnitures.fuelWood(MODID, WOOD);
     	Stairs.fuelWood(MODID, WOOD);
+		// 1.1 Update
+		Paths.fuelWood(MODID, WOOD);
+		Doors.fuelWood(MODID, WOOD);
+		Trapdoors.fuelWood(MODID, WOOD);
+		Windows.fuelWood(MODID, WOOD);
+
     	LOGGER.info("Macaw's Oh The Biomes We've Gone Is Charged !");
 	}
-	
-	private static Block icon()
+
+	private static Block getIcon()
 	{
-		final NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "aspen_roof"), Finder.findBlock(MODID, "aspen_picket_fence"), Finder.findBlock(MODID, "aspen_wardrobe"), 
-		        Finder.findBlock(MODID, "aspen_log_bridge_middle"), Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Finder.findBlock(MODID, "aspen_bulk_stairs"));
-    	prop.addType(BlockType.ROOFS).addType(BlockType.FENCES).addType(BlockType.BRIDGES).addType(BlockType.FURNITURES).addType(BlockType.STAIRS);
-        return prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.BRIDGES, BlockType.FURNITURES, BlockType.STAIRS);
+		NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
+				Finder.findBlock(MODID, "aspen_roof"),
+				Finder.findBlock(MODID, "aspen_picket_fence"),
+				Finder.findBlock(MODID, "aspen_wardrobe"),
+				Finder.findBlock(MODID, "aspen_log_bridge_middle"),
+				Finder.findBlock(MODID, "aspen_plank_window2"),
+				Finder.findBlock(MODID, "aspen_paper_door"),
+				Finder.findBlock(MODID, "aspen_blossom_trapdoor"),
+				Finder.findBlock(MODID, "aspen_planks_path"),
+				Finder.findBlock(MODID, "aspen_bulk_stairs"));
+
+		prop
+				.addType(BlockType.ROOFS)
+				.addType(BlockType.FENCES)
+				.addType(BlockType.BRIDGES)
+				.addType(BlockType.FURNITURES)
+				.addType(BlockType.STAIRS)
+				.addType(BlockType.DOORS)
+				.addType(BlockType.TRAPDOORS)
+				.addType(BlockType.PATHS)
+				.addType(BlockType.WINDOWS);
+		return prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.BRIDGES, BlockType.FURNITURES, BlockType.STAIRS,
+				BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.WINDOWS);
 	}
+
 }

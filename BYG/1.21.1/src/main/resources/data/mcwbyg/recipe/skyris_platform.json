@@ -3,11 +3,15 @@
     {
       "type": "forge:mod_loaded",
       "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "mcwstairs_platform",
-  "pattern" : [ " Z ", " W ", "   " ],
+  "pattern" : [ " ZZ", " WW", "   " ],
   "key" : {
     "W" : {
       "item" : "biomeswevegone:skyris_log"
@@ -17,7 +21,7 @@
     }
   },
   "result" : {
-    "count" : 6,
+    "count" : 12,
     "id" : "mcwbyg:skyris_platform"
   }
 }

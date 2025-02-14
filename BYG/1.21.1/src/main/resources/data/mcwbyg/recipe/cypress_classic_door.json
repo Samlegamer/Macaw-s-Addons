@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "classic",
+  "pattern" : [ "A", "B", "A" ],
+  "key" : {
+    "A" : {
+      "item" : "biomeswevegone:cypress_planks"
+    },
+    "B" : {
+      "item" : "mcwdoors:print_oak"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:cypress_classic_door"
+  }
+}

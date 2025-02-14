@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "biomeswevegone:florus_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwbyg:florus_planks_path",
+    "count": 3
+  }
+}

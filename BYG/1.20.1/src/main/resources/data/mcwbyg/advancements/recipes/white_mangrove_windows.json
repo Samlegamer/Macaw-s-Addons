@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwbyg:white_mangrove_window",
+	 "mcwbyg:white_mangrove_window2",
+	 "mcwbyg:white_mangrove_four_window",
+	 "mcwbyg:stripped_white_mangrove_log_window",
+	 "mcwbyg:stripped_white_mangrove_log_window2",
+	 "mcwbyg:stripped_white_mangrove_log_four_window",
+	 "mcwbyg:white_mangrove_plank_window",
+	 "mcwbyg:white_mangrove_plank_window2",
+	 "mcwbyg:white_mangrove_plank_four_window",
+	 "mcwbyg:white_mangrove_pane_window",
+	 "mcwbyg:stripped_white_mangrove_pane_window",
+	 "mcwbyg:white_mangrove_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomeswevegone:white_mangrove_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+

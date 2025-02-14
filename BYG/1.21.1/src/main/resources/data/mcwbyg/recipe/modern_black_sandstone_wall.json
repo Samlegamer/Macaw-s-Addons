@@ -9,19 +9,33 @@
       "modid": "biomeswevegone"
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "modern",
-  "pattern" : [ "ABA", "AAA" ],
-  "key" : {
-    "A" : {
-      "item" : "biomeswevegone:smooth_black_sandstone"
+    "type": "minecraft:crafting_shaped",
+	"group": "modern",
+    
+    "pattern":
+    [
+		"ABA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomeswevegone:smooth_black_sandstone"
+        },    
+        
+        "B":
+        {
+            "item": "biomeswevegone:black_sandstone"
+        }
     },
-    "B" : {
-      "item" : "biomeswevegone:black_sandstone"
+    
+    "result":
+    {
+        "item":  "mcwbyg:modern_black_sandstone_wall",
+        "count": 6
     }
-  },
-  "result" : {
-    "count" : 6,
-    "id" : "mcwbyg:modern_black_sandstone_wall"
-  }
 }
+
+

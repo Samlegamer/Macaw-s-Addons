@@ -9,13 +9,16 @@
       "modid": "biomeswevegone"
     }
   ],
-  "type" : "minecraft:crafting_shapeless",
-  "group" : "recyclable_bridges",
-  "ingredients" : [ {
-    "item" : "mcwbyg:black_sandstone_bridge_stair"
-  } ],
-  "result" : {
-    "count" : 1,
-    "id" : "mcwbyg:black_sandstone_bridge"
-  }
+    "type": "minecraft:crafting_shapeless",
+	"group": "recyclable_bridges",
+		
+    "ingredients": [
+        {
+            "item": "mcwbyg:black_sandstone_bridge_stair"
+        }
+    ],
+    "result": {
+        "item": "mcwbyg:black_sandstone_bridge",
+        "count": 1
+    }
 }

@@ -3,11 +3,15 @@
     {
       "type": "forge:mod_loaded",
       "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "skyline_stairs",
-  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "pattern" : [ "W  ", "ZW " ],
   "key" : {
     "W" : {
       "item" : "biomeswevegone:stripped_willow_log"
@@ -17,7 +21,7 @@
     }
   },
   "result" : {
-    "count" : 6,
+    "count" : 4,
     "id" : "mcwbyg:willow_skyline_stairs"
   }
 }

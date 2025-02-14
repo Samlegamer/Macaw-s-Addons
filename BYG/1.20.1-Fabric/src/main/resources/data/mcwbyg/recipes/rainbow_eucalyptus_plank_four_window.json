@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "windows_four",
+	
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "mcwwindows:window_centre_bar_base"
+        },    
+
+		
+        "B":
+        {
+            "item": "biomeswevegone:rainbow_eucalyptus_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:rainbow_eucalyptus_plank_four_window",
+        "count": 8
+    }
+}

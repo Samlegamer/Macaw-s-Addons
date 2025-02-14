@@ -9,16 +9,26 @@
       "modid": "biomeswevegone"
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "stone_stairs",
-  "pattern" : [ "  F", " FF", "FFF" ],
-  "key" : {
-    "F" : {
-      "item" : "mcwbyg:red_rock_bricks_bridge"
+    "type": "minecraft:crafting_shaped",
+    "group": "stone_stairs",
+    
+    "pattern": [
+    "  F",
+    " FF",
+	"FFF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "mcwbyg:red_rock_bricks_bridge"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:red_rock_bricks_bridge_stair",
+        "count": 6
     }
-  },
-  "result" : {
-    "count" : 6,
-    "id" : "mcwbyg:red_rock_bricks_bridge_stair"
-  }
 }

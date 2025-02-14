@@ -9,19 +9,30 @@
       "modid": "biomeswevegone"
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "balustrade_bridges",
-  "pattern" : [ "FFF", "WWW" ],
-  "key" : {
-    "F" : {
-      "item" : "biomeswevegone:red_rock_brick_wall"
+    "type": "minecraft:crafting_shaped",
+    "group": "balustrade_bridges",
+    
+    "pattern": [
+    "FFF",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "biomeswevegone:red_rock_brick_wall"
+        },
+        
+        "W":
+        {
+            "item": "biomeswevegone:red_rock_brick_slab"
+        }
     },
-    "W" : {
-      "item" : "biomeswevegone:red_rock_brick_slab"
+    
+    "result":
+    {
+        "item":  "mcwbyg:balustrade_red_rock_bricks_bridge",
+        "count": 5
     }
-  },
-  "result" : {
-    "count" : 5,
-    "id" : "mcwbyg:balustrade_red_rock_bricks_bridge"
-  }
 }

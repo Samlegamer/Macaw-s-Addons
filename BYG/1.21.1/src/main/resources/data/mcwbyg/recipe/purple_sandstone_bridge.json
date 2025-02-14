@@ -9,19 +9,30 @@
       "modid": "biomeswevegone"
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "stone_bridges",
-  "pattern" : [ "F F", "WWW" ],
-  "key" : {
-    "F" : {
-      "item" : "biomeswevegone:purple_sandstone_wall"
+    "type": "minecraft:crafting_shaped",
+    "group": "stone_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "biomeswevegone:purple_sandstone_wall"
+        },
+        
+        "W":
+        {
+            "item": "biomeswevegone:purple_sandstone_slab"
+        }
     },
-    "W" : {
-      "item" : "biomeswevegone:purple_sandstone_slab"
+    
+    "result":
+    {
+        "item":  "mcwbyg:purple_sandstone_bridge",
+        "count": 4
     }
-  },
-  "result" : {
-    "count" : 4,
-    "id" : "mcwbyg:purple_sandstone_bridge"
-  }
 }

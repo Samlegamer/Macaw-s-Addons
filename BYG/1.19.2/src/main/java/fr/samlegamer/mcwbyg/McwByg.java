@@ -1,10 +1,13 @@
 package fr.samlegamer.mcwbyg;
 
+import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,6 +23,7 @@ import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
+import org.jetbrains.annotations.NotNull;
 
 @Mod(McwByg.MODID)
 public class McwByg
@@ -37,12 +41,30 @@ public class McwByg
 
 	public static final CreativeModeTab MCWBYG_TAB = new CreativeModeTab(MODID + ".tab") {
 	    @Override
-	    public ItemStack makeIcon() {
-	    	NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "aspen_roof"), Finder.findBlock(MODID, "aspen_picket_fence"), Finder.findBlock(MODID, "aspen_wardrobe"), 
-	        Finder.findBlock(MODID, "aspen_log_bridge_middle"), Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Finder.findBlock(MODID, "aspen_bulk_stairs"));
-	    	
-	    	prop.addType(BlockType.ROOFS).addType(BlockType.FENCES).addType(BlockType.BRIDGES).addType(BlockType.FURNITURES).addType(BlockType.STAIRS);
-	    	Block icon = prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.BRIDGES, BlockType.FURNITURES, BlockType.STAIRS);
+	    public @NotNull ItemStack makeIcon() {
+				NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
+						Finder.findBlock(MODID, "aspen_roof"),
+						Finder.findBlock(MODID, "aspen_picket_fence"),
+						Finder.findBlock(MODID, "aspen_wardrobe"),
+						Finder.findBlock(MODID, "aspen_log_bridge_middle"),
+						Finder.findBlock(MODID, "aspen_plank_window2"),
+						Finder.findBlock(MODID, "aspen_paper_door"),
+						Finder.findBlock(MODID, "aspen_blossom_trapdoor"),
+						Finder.findBlock(MODID, "aspen_planks_path"),
+						Finder.findBlock(MODID, "aspen_bulk_stairs"));
+
+				prop
+						.addType(BlockType.ROOFS)
+						.addType(BlockType.FENCES)
+						.addType(BlockType.BRIDGES)
+						.addType(BlockType.FURNITURES)
+						.addType(BlockType.STAIRS)
+						.addType(BlockType.DOORS)
+						.addType(BlockType.TRAPDOORS)
+						.addType(BlockType.PATHS)
+						.addType(BlockType.WINDOWS);
+				Block icon = prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.BRIDGES, BlockType.FURNITURES, BlockType.STAIRS,
+						BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.WINDOWS);
 	        return new ItemStack(icon);
 	    }
 	};
@@ -62,6 +84,11 @@ public class McwByg
     	Fences.setRegistrationRock(fences_rockable, block, item, MCWBYG_TAB);
     	Furnitures.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
     	Stairs.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
+		// 1.1 Update
+		Paths.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
+		Doors.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
+		Trapdoors.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
+		Windows.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
     }

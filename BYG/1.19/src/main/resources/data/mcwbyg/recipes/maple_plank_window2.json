@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "windows_two",
+	
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "mcwwindows:window_half_bar_base"
+        },    
+        
+        "B":
+        {
+            "item": "byg:maple_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:maple_plank_window2",
+        "count": 8
+    }
+}

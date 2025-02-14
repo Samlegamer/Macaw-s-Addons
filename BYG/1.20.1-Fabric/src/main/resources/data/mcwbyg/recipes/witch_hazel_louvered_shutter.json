@@ -1,0 +1,35 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "shutters",
+	
+    "pattern":
+    [
+        "B",
+        "B",
+        "B"		
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "biomeswevegone:witch_hazel_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:witch_hazel_louvered_shutter",
+        "count": 3
+    }
+}

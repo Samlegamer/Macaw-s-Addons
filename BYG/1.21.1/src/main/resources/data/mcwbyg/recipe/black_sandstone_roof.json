@@ -9,13 +9,11 @@
       "modid": "biomeswevegone"
     }
   ],
-  "type" : "minecraft:stonecutting",
-  "ingredient" : {
-    "item" : "biomeswevegone:black_sandstone"
-  },
-  "result" : {
-    "count" : 1,
-    "id" : "mcwbyg:black_sandstone_roof"
-  },
-  "group" : "roofs"
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomeswevegone:black_sandstone"
+    },
+    "result": "mcwbyg:black_sandstone_roof",
+    "group": "roofs",
+    "count": 1
 }

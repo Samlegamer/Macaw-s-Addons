@@ -9,13 +9,11 @@
       "modid": "biomeswevegone"
     }
   ],
-  "type" : "minecraft:stonecutting",
-  "ingredient" : {
-    "item" : "biomeswevegone:windswept_sandstone"
-  },
-  "result" : {
-    "count" : 1,
-    "id" : "mcwbyg:windswept_sandstone_roof"
-  },
-  "group" : "roofs"
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomeswevegone:windswept_sandstone"
+    },
+    "result": "mcwbyg:windswept_sandstone_roof",
+    "group": "roofs",
+    "count": 1
 }

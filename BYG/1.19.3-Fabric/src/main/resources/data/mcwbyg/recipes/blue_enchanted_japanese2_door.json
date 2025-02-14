@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "shoji_two",
+    
+    "pattern":
+    [
+        "BB",
+        "BB",
+        "AA"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:blue_enchanted_slab"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:paper"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:blue_enchanted_japanese2_door",
+        "count": 3
+    }
+}
+
+
