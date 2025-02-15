@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "barn_glass",
+  "pattern" : [ "BB", "AA", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "biomeswevegone:florus_planks"
+    },
+    "B" : {
+      "item" : "minecraft:glass_pane"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:florus_barn_glass_door"
+  }
+}

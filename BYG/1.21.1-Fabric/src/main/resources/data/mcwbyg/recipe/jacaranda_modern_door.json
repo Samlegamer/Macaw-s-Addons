@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern",
+  "pattern" : [ "AB", "AA", "AB" ],
+  "key" : {
+    "A" : {
+      "item" : "biomeswevegone:jacaranda_planks"
+    },
+    "B" : {
+      "item" : "minecraft:glass_pane"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:jacaranda_modern_door"
+  }
+}

@@ -115,7 +115,6 @@ public class McwByg
 				BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.WINDOWS);
 	}
 
-
 	private void addTotab(BuildCreativeModeTabContentsEvent event)
     {
     	Bridges.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());

@@ -1,0 +1,56 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwbyg:maple_bark_glass_door",
+	  "mcwbyg:maple_barn_door",
+	  "mcwbyg:maple_barn_glass_door",
+	  "mcwbyg:maple_beach_door",
+	  "mcwbyg:maple_classic_door",
+	  "mcwbyg:maple_cottage_door",
+	  "mcwbyg:maple_four_panel_door",
+	  "mcwbyg:maple_glass_door",
+	  "mcwbyg:maple_japanese_door",
+	  "mcwbyg:maple_japanese2_door",
+	  "mcwbyg:maple_modern_door",
+	  "mcwbyg:maple_mystic_door",
+	  "mcwbyg:maple_nether_door",
+	  "mcwbyg:maple_paper_door",
+	  "mcwbyg:maple_stable_door",
+	  "mcwbyg:maple_stable_head_door",
+	  "mcwbyg:maple_swamp_door",
+	  "mcwbyg:maple_western_door",
+	  "mcwbyg:maple_waffle_door",
+	  "mcwbyg:maple_tropical_door",
+	  "mcwbyg:maple_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomeswevegone:maple_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

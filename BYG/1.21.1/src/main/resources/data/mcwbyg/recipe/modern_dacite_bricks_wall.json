@@ -9,33 +9,19 @@
       "modid": "biomeswevegone"
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "modern",
-    
-    "pattern":
-    [
-		"ABA",
-		"AAA"
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "biomeswevegone:dacite_bricks"
-        },    
-        
-        "B":
-        {
-            "item": "biomeswevegone:dacite_bricks"
-        }
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern",
+  "pattern" : [ "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "biomeswevegone:dacite_bricks"
     },
-    
-    "result":
-    {
-        "item":  "mcwbyg:modern_dacite_bricks_wall",
-        "count": 6
+    "B" : {
+      "item" : "biomeswevegone:dacite_bricks"
     }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:modern_dacite_bricks_wall"
+  }
 }
-
-

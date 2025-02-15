@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "group": "woodenpaths",
+  "ingredients": [
+    {
+      "item": "biomeswevegone:white_mangrove_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:white_mangrove_planks_path"
+  }
+}

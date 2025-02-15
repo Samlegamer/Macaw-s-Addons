@@ -9,38 +9,22 @@
       "modid": "biomeswevegone"
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "grass_topped",
-    
-    "pattern":
-    [
-		"BGB",
-		"AAA"
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "biomeswevegone:dacite_bricks"
-        },    
-        
-		"G":
-        {
-            "item": "minecraft:dirt"
-        }, 
-        
-        "B":
-        {
-            "item": "biomeswevegone:dacite_bricks"
-        }
+  "type" : "minecraft:crafting_shaped",
+  "group" : "grass_topped",
+  "pattern" : [ "BGB", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "biomeswevegone:dacite_bricks"
     },
-    
-    "result":
-    {
-        "item":  "mcwbyg:dacite_bricks_grass_topped_wall",
-        "count": 6
+    "G" : {
+      "item" : "minecraft:dirt"
+    },
+    "B" : {
+      "item" : "biomeswevegone:dacite_bricks"
     }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:dacite_bricks_grass_topped_wall"
+  }
 }
-
-

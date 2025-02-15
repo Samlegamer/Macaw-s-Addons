@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stable_head",
+  "pattern" : [ "A" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwbyg:aspen_stable_door"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:aspen_stable_head_door"
+  }
+}

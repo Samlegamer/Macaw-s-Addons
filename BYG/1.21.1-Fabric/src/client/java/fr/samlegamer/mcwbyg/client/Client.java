@@ -29,5 +29,10 @@ public class Client implements ClientModInitializer
     	APIRenderer.Fences.clientStone(McwByg.MODID, McwByg.STONE);
     	APIRenderer.Furnitures.clientWood(McwByg.MODID, McwByg.WOOD);
     	APIRenderer.Stairs.clientWood(McwByg.MODID, McwByg.WOOD);
+		// 1.1 Update
+		APIRenderer.Paths.clientWood(McwByg.MODID, McwByg.WOOD);
+		APIRenderer.Doors.clientWood(McwByg.MODID, McwByg.WOOD);
+		APIRenderer.Trapdoors.clientWood(McwByg.MODID, McwByg.WOOD);
+		APIRenderer.Windows.clientWood(McwByg.MODID, McwByg.WOOD);
 	}
 }
