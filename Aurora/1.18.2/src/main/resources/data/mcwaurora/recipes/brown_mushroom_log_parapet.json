@@ -1,0 +1,39 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "parapets",
+    
+    "pattern":
+    [
+		"AAA",
+        "ABA"               
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "enhanced_mushrooms:brown_mushroom_stem"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:brown_mushroom_log_parapet",
+        "count": 5
+    }
+}

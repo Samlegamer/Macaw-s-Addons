@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwaurora:redbud_window",
+	 "mcwaurora:redbud_window2",
+	 "mcwaurora:redbud_four_window",
+	 "mcwaurora:stripped_redbud_log_window",
+	 "mcwaurora:stripped_redbud_log_window2",
+	 "mcwaurora:stripped_redbud_log_four_window",
+	 "mcwaurora:redbud_plank_window",
+	 "mcwaurora:redbud_plank_window2",
+	 "mcwaurora:redbud_plank_four_window",
+	 "mcwaurora:redbud_pane_window",
+	 "mcwaurora:stripped_redbud_pane_window",
+	 "mcwaurora:redbud_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "abundance:redbud_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+

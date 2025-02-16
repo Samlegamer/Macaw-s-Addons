@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "beach",
+    
+    "pattern":
+    [
+        "A",
+        "B",
+        "A"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "enhanced_mushrooms:red_mushroom_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwdoors:print_jungle"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:red_mushroom_beach_door",
+        "count": 1
+    }
+}
+
+

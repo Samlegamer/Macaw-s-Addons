@@ -1,4 +1,14 @@
 {
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
   "type" : "minecraft:crafting_shaped",
   "group" : "hedge",
   "pattern" : [ "AA", "AA" ],

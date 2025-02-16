@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "abundance"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "beach_trapdoors",
+    
+    "pattern":
+    [
+        "A",
+        "B",
+        "A"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "abundance:jacaranda_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwtrpdoors:print_beach"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:jacaranda_beach_trapdoor",
+        "count": 1
+    }
+}
+
+

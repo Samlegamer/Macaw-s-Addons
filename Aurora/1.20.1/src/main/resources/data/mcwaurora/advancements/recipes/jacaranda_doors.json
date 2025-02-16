@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwaurora:jacaranda_tropical_door",
+	  "mcwaurora:jacaranda_bark_glass_door",
+	  "mcwaurora:jacaranda_barn_door",
+	  "mcwaurora:jacaranda_barn_glass_door",
+	  "mcwaurora:jacaranda_beach_door",
+	  "mcwaurora:jacaranda_classic_door",
+	  "mcwaurora:jacaranda_cottage_door",
+	  "mcwaurora:jacaranda_four_panel_door",
+	  "mcwaurora:jacaranda_glass_door",
+	  "mcwaurora:jacaranda_japanese_door",
+	  "mcwaurora:jacaranda_japanese2_door",
+	  "mcwaurora:jacaranda_modern_door",
+	  "mcwaurora:jacaranda_mystic_door",
+	  "mcwaurora:jacaranda_nether_door",
+	  "mcwaurora:jacaranda_paper_door",
+	  "mcwaurora:jacaranda_stable_door",
+	  "mcwaurora:jacaranda_stable_head_door",
+	  "mcwaurora:jacaranda_swamp_door",
+	  "mcwaurora:jacaranda_western_door",
+	  "mcwaurora:jacaranda_waffle_door",
+	  "mcwaurora:jacaranda_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "abundance:jacaranda_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

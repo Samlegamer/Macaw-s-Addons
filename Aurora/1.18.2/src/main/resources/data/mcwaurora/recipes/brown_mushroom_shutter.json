@@ -1,0 +1,35 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "shutters",
+	
+    "pattern":
+    [
+        "B",
+        "B",
+        "B"		
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "enhanced_mushrooms:brown_mushroom_trapdoor"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:brown_mushroom_shutter",
+        "count": 3
+    }
+}

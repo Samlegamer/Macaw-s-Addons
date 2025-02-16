@@ -1,0 +1,35 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "bayou_blues"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "shutters",
+	
+    "pattern":
+    [
+        "B",
+        "B",
+        "B"		
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "bayou_blues:cypress_trapdoor"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:cypress_shutter",
+        "count": 3
+    }
+}

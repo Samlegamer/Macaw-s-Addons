@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "enhanced_mushrooms:mushroom_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwaurora:mushroom_planks_path",
+    "count": 3
+  }
+}

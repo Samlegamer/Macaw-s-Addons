@@ -1,5 +1,9 @@
 package fr.samlegamer.mcwaurora;
 
+import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -77,6 +81,22 @@ public class McwAurora
     	Stairs.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, null, "enhanced_mushrooms", wood);
     	Stairs.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance", wood);
 
+		Paths.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, null, "bayou_blues");
+		Paths.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, null, "enhanced_mushrooms");
+		Paths.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance");
+
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, null, "bayou_blues");
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, null, "enhanced_mushrooms");
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance");
+
+		Doors.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, null, "bayou_blues");
+		Doors.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, null, "enhanced_mushrooms");
+		Doors.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance");
+
+		Windows.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, null, "bayou_blues");
+		Windows.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, null, "enhanced_mushrooms");
+		Windows.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance");
+
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addTotab);
         MinecraftForge.EVENT_BUS.register(MappingsFix.class);
     	LOGGER.info("Macaw's Aurora Mod Finish !");
@@ -94,6 +114,10 @@ public class McwAurora
 	        	Fences.addToTabHedge(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
 	        	Furnitures.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
 	        	Stairs.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
+				Paths.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
+				Trapdoors.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
+				Doors.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
+				Windows.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
 			}
 
 			if(ModList.get().isLoaded("enhanced_mushrooms"))
@@ -103,6 +127,10 @@ public class McwAurora
 	        	Fences.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
 	        	Furnitures.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
 	        	Stairs.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
+				Paths.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
+				Trapdoors.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
+				Doors.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
+				Windows.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
 			}
 			
 			if(ModList.get().isLoaded("abundance"))
@@ -113,17 +141,38 @@ public class McwAurora
 	        	Fences.addToTabHedge(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
 	        	Furnitures.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
 	        	Stairs.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
+				Paths.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
+				Trapdoors.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
+				Doors.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
+				Windows.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
 			}
     	}
     }
     
     private static ItemStack getIcon()
     {
-    	NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(Finder.findBlock(MODID, randomNaming()+"_roof"), Finder.findBlock(MODID, randomNaming()+"_picket_fence"), Finder.findBlock(MODID, randomNaming()+"_wardrobe"), 
-    	Finder.findBlock(MODID, randomNaming()+"_log_bridge_middle"), Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Finder.findBlock(MODID, randomNaming()+"_skyline_stairs"));
-    	        
-    	prop.addType(BlockType.BRIDGES).addType(BlockType.ROOFS).addType(BlockType.FENCES).addType(BlockType.FURNITURES).addType(BlockType.STAIRS);
-    	Block icon = prop.buildIcon(BlockType.BRIDGES, BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.STAIRS);
+		NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
+				Finder.findBlock(MODID, randomNaming()+"_roof"),
+				Finder.findBlock(MODID, randomNaming()+"_picket_fence"),
+				Finder.findBlock(MODID, randomNaming()+"_wardrobe"),
+				Finder.findBlock(MODID, randomNaming()+"_log_bridge_middle"),
+				Finder.findBlock(MODID, randomNaming()+"_pane_window"),
+				Finder.findBlock(MODID, randomNaming()+"_modern_door"),
+				Finder.findBlock(MODID, randomNaming()+"_mystic_trapdoor"),
+				Finder.findBlock(MODID, randomNaming()+"_planks_path"),
+				Finder.findBlock(MODID, randomNaming()+"_skyline_stairs"));
+
+		prop.addType(BlockType.BRIDGES)
+				.addType(BlockType.ROOFS)
+				.addType(BlockType.FENCES)
+				.addType(BlockType.FURNITURES)
+				.addType(BlockType.STAIRS)
+				.addType(BlockType.PATHS)
+				.addType(BlockType.WINDOWS)
+				.addType(BlockType.DOORS)
+				.addType(BlockType.TRAPDOORS);
+		Block icon = prop.buildIcon(BlockType.BRIDGES, BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.STAIRS,
+				BlockType.PATHS, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS);
     	return new ItemStack(icon);
     }
     
@@ -133,17 +182,14 @@ public class McwAurora
 
 		if(ModList.get().isLoaded("bayou_blues") && ModList.get().isLoaded("enhanced_mushrooms") && ModList.get().isLoaded("abundance"))
 		{
-			int i = rand.nextInt(2);
+			int i = rand.nextInt(3);
 
-			switch(i)
-			{
-			case 0:
-					return "cypress";
-			case 1:
-					return "mushroom";
-			case 2:
-					return "jacaranda";
-			}
+			return switch (i) {
+				case 0 -> "cypress";
+				case 1 -> "mushroom";
+				case 2 -> "jacaranda";
+				default -> "mushroom";
+			};
 		}
 		else
 		{
