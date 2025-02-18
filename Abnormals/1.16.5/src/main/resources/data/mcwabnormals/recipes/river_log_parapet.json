@@ -1,0 +1,39 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "parapets",
+    
+    "pattern":
+    [
+		"AAA",
+        "ABA"               
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "upgrade_aquatic:river_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:river_log_parapet",
+        "count": 5
+    }
+}

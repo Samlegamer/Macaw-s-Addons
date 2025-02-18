@@ -1,7 +1,6 @@
 package fr.samlegamer.mcwabnormals;
 
 import java.util.ArrayList;
-
 import fr.samlegamer.addonslib.mapping.MappingMissing;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;

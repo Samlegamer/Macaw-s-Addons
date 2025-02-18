@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwabnormals:kousa_window",
+	 "mcwabnormals:kousa_window2",
+	 "mcwabnormals:kousa_four_window",
+	 "mcwabnormals:stripped_kousa_log_window",
+	 "mcwabnormals:stripped_kousa_log_window2",
+	 "mcwabnormals:stripped_kousa_log_four_window",
+	 "mcwabnormals:kousa_plank_window",
+	 "mcwabnormals:kousa_plank_window2",
+	 "mcwabnormals:kousa_plank_four_window",
+	 "mcwabnormals:kousa_pane_window",
+	 "mcwabnormals:stripped_kousa_pane_window",
+	 "mcwabnormals:kousa_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "atmospheric:kousa_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+

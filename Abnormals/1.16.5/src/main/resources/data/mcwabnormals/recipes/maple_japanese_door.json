@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "shoji",
+    
+    "pattern":
+    [
+        "BB",
+        "BB",
+        "AA"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "autumnity:maple_planks"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:paper"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:maple_japanese_door",
+        "count": 3
+    }
+}
+
+

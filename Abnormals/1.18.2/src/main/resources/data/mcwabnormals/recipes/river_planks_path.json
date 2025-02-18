@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "upgrade_aquatic:river_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwabnormals:river_planks_path",
+    "count": 3
+  }
+}

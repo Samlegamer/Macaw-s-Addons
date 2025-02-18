@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:cherry_tropical_door",
+	  "mcwabnormals:cherry_bark_glass_door",
+	  "mcwabnormals:cherry_barn_door",
+	  "mcwabnormals:cherry_barn_glass_door",
+	  "mcwabnormals:cherry_beach_door",
+	  "mcwabnormals:cherry_classic_door",
+	  "mcwabnormals:cherry_cottage_door",
+	  "mcwabnormals:cherry_four_panel_door",
+	  "mcwabnormals:cherry_glass_door",
+	  "mcwabnormals:cherry_japanese_door",
+	  "mcwabnormals:cherry_japanese2_door",
+	  "mcwabnormals:cherry_modern_door",
+	  "mcwabnormals:cherry_mystic_door",
+	  "mcwabnormals:cherry_nether_door",
+	  "mcwabnormals:cherry_paper_door",
+	  "mcwabnormals:cherry_stable_door",
+	  "mcwabnormals:cherry_stable_head_door",
+	  "mcwabnormals:cherry_swamp_door",
+	  "mcwabnormals:cherry_western_door",
+	  "mcwabnormals:cherry_waffle_door",
+	  "mcwabnormals:cherry_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "environmental:cherry_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

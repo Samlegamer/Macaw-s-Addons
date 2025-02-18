@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:river_tropical_door",
+	  "mcwabnormals:river_bark_glass_door",
+	  "mcwabnormals:river_barn_door",
+	  "mcwabnormals:river_barn_glass_door",
+	  "mcwabnormals:river_beach_door",
+	  "mcwabnormals:river_classic_door",
+	  "mcwabnormals:river_cottage_door",
+	  "mcwabnormals:river_four_panel_door",
+	  "mcwabnormals:river_glass_door",
+	  "mcwabnormals:river_japanese_door",
+	  "mcwabnormals:river_japanese2_door",
+	  "mcwabnormals:river_modern_door",
+	  "mcwabnormals:river_mystic_door",
+	  "mcwabnormals:river_nether_door",
+	  "mcwabnormals:river_paper_door",
+	  "mcwabnormals:river_stable_door",
+	  "mcwabnormals:river_stable_head_door",
+	  "mcwabnormals:river_swamp_door",
+	  "mcwabnormals:river_western_door",
+	  "mcwabnormals:river_waffle_door",
+	  "mcwabnormals:river_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "upgrade_aquatic:river_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

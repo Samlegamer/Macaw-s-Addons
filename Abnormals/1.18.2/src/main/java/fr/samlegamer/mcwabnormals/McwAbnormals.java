@@ -1,5 +1,9 @@
 package fr.samlegamer.mcwabnormals;
 
+import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -22,6 +26,8 @@ import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.stairs.Stairs;
+
+import javax.annotation.Nonnull;
 
 @Mod(McwAbnormals.MODID)
 public class McwAbnormals
@@ -49,6 +55,7 @@ public class McwAbnormals
 	
 	public static final CreativeModeTab MCWABNORMALS_TAB = new CreativeModeTab(MODID + ".tab") {
 	    @Override
+		@Nonnull
 	    public ItemStack makeIcon() {
 	        return new ItemStack(LOGO.get());
 	    }
@@ -107,7 +114,31 @@ public class McwAbnormals
     	Stairs.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental", wood);
     	Stairs.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic", wood);
     	Stairs.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic", wood);
-    	
+
+		Paths.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, MCWABNORMALS_TAB, "atmospheric");
+		Paths.setRegistrationWoodModLoaded(WOOD_AUTU, block, item, MCWABNORMALS_TAB, "autumnity");
+		Paths.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental");
+		Paths.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic");
+		Paths.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic");
+
+		Doors.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, MCWABNORMALS_TAB, "atmospheric");
+		Doors.setRegistrationWoodModLoaded(WOOD_AUTU, block, item, MCWABNORMALS_TAB, "autumnity");
+		Doors.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental");
+		Doors.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic");
+		Doors.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic");
+
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, MCWABNORMALS_TAB, "atmospheric");
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_AUTU, block, item, MCWABNORMALS_TAB, "autumnity");
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental");
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic");
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic");
+
+		Windows.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, MCWABNORMALS_TAB, "atmospheric");
+		Windows.setRegistrationWoodModLoaded(WOOD_AUTU, block, item, MCWABNORMALS_TAB, "autumnity");
+		Windows.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental");
+		Windows.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic");
+		Windows.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic");
+
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
 		MinecraftForge.EVENT_BUS.register(MappingsFix.class);
     	LOGGER.info("Macaw's Abnormals Mod Finish !");
@@ -158,5 +189,29 @@ public class McwAbnormals
     	Stairs.clientWood(e, MODID, WOOD_ENVI);
     	Stairs.clientWood(e, MODID, WOOD_UAQUA);
     	Stairs.clientWood(e, MODID, WOOD_ENDER);
+
+		Paths.clientWood(e, MODID, WOOD_ATMO);
+		Paths.clientWood(e, MODID, WOOD_AUTU);
+		Paths.clientWood(e, MODID, WOOD_ENVI);
+		Paths.clientWood(e, MODID, WOOD_UAQUA);
+		Paths.clientWood(e, MODID, WOOD_ENDER);
+
+		Doors.clientWood(e, MODID, WOOD_ATMO);
+		Doors.clientWood(e, MODID, WOOD_AUTU);
+		Doors.clientWood(e, MODID, WOOD_ENVI);
+		Doors.clientWood(e, MODID, WOOD_UAQUA);
+		Doors.clientWood(e, MODID, WOOD_ENDER);
+
+		Trapdoors.clientWood(e, MODID, WOOD_ATMO);
+		Trapdoors.clientWood(e, MODID, WOOD_AUTU);
+		Trapdoors.clientWood(e, MODID, WOOD_ENVI);
+		Trapdoors.clientWood(e, MODID, WOOD_UAQUA);
+		Trapdoors.clientWood(e, MODID, WOOD_ENDER);
+
+		Windows.clientWood(e, MODID, WOOD_ATMO);
+		Windows.clientWood(e, MODID, WOOD_AUTU);
+		Windows.clientWood(e, MODID, WOOD_ENVI);
+		Windows.clientWood(e, MODID, WOOD_UAQUA);
+		Windows.clientWood(e, MODID, WOOD_ENDER);
     }
 }

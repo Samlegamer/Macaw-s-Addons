@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:maple_tropical_door",
+	  "mcwabnormals:maple_bark_glass_door",
+	  "mcwabnormals:maple_barn_door",
+	  "mcwabnormals:maple_barn_glass_door",
+	  "mcwabnormals:maple_beach_door",
+	  "mcwabnormals:maple_classic_door",
+	  "mcwabnormals:maple_cottage_door",
+	  "mcwabnormals:maple_four_panel_door",
+	  "mcwabnormals:maple_glass_door",
+	  "mcwabnormals:maple_japanese_door",
+	  "mcwabnormals:maple_japanese2_door",
+	  "mcwabnormals:maple_modern_door",
+	  "mcwabnormals:maple_mystic_door",
+	  "mcwabnormals:maple_nether_door",
+	  "mcwabnormals:maple_paper_door",
+	  "mcwabnormals:maple_stable_door",
+	  "mcwabnormals:maple_stable_head_door",
+	  "mcwabnormals:maple_swamp_door",
+	  "mcwabnormals:maple_western_door",
+	  "mcwabnormals:maple_waffle_door",
+	  "mcwabnormals:maple_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "autumnity:maple_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
