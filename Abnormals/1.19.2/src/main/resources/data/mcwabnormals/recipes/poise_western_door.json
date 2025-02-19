@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "western",
+    
+    "pattern":
+    [
+        "  A",
+        "ABA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "endergetic:poise_planks"
+        },
+		
+		"B":
+        {
+            "item": "endergetic:poise_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:poise_western_door",
+        "count": 3
+    }
+}
+
+

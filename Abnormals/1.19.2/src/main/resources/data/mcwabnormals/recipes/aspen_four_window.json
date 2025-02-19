@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "windows_four",
+	
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "mcwwindows:window_centre_bar_base"
+        },    
+		
+        
+        "B":
+        {
+            "item": "atmospheric:aspen_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:aspen_four_window",
+        "count": 8
+    }
+}

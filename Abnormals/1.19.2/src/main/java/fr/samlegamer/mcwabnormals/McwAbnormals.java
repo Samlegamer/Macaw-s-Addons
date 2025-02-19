@@ -1,5 +1,9 @@
 package fr.samlegamer.mcwabnormals;
 
+import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -19,25 +23,27 @@ import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.stairs.Stairs;
+import org.jetbrains.annotations.NotNull;
 
 @Mod(McwAbnormals.MODID)
 public class McwAbnormals
 {
 	public static final String MODID = "mcwabnormals";
     private static final Logger LOGGER = LogManager.getLogger();
-    public static final List<String> ROCK_BB = Arrays.asList("honeycomb_brick", "honeycomb_tile");
-    public static final List<String> WOOD_ATMO = Arrays.asList("aspen", "grimwood", "kousa", "morado", "rosewood", "yucca");
-    public static final List<String> ROCK_ATMO = Arrays.asList("arid_sandstone", "red_arid_sandstone");
-    public static final List<String> WOOD_AUTU = Arrays.asList("maple");
-    public static final List<String> ROCK_AUTU = Arrays.asList("snail_shell_bricks", "snail_shell_tiles");
-    public static final List<String> WOOD_ENVI = Arrays.asList("cherry", "wisteria", "willow");
-    public static final List<String> WOOD_UAQUA = Arrays.asList("driftwood", "river");
-    public static final List<String> WOOD_ENDER = Arrays.asList("poise");
-    
-    public static final List<String> LEAVES_ATMO = Arrays.asList("aspen", "grimwood", "kousa", "morado", "rosewood", "yucca");
-    public static final List<String> LEAVES_AUTU = Arrays.asList("maple", "red_maple", "yellow_maple","orange_maple");
-    public static final List<String> LEAVES_ENVI = Arrays.asList("cherry", "blue_wisteria", "pink_wisteria", "white_wisteria", "purple_wisteria", "willow");
-    public static final List<String> LEAVES_UAQUA = Arrays.asList("river");
+    public static final List<String> ROCK_BB = List.of("honeycomb_brick", "honeycomb_tile");
+    public static final List<String> WOOD_ATMO = List.of("aspen", "grimwood", "kousa", "morado", "rosewood", "yucca");
+    public static final List<String> ROCK_ATMO = List.of("arid_sandstone", "red_arid_sandstone");
+    public static final List<String> WOOD_AUTU = List.of("maple");
+    public static final List<String> ROCK_AUTU = List.of("snail_shell_bricks", "snail_shell_tiles");
+    public static final List<String> WOOD_ENVI = List.of("cherry", "wisteria", "willow");
+    public static final List<String> WOOD_UAQUA = List.of("driftwood", "river");
+    public static final List<String> WOOD_ENDER = List.of("poise");
+	public static final List<String> WOOD_CAVERNSCHASMS = List.of("azalea");
+
+	public static final List<String> LEAVES_ATMO = List.of("aspen", "grimwood", "kousa", "morado", "rosewood", "yucca");
+    public static final List<String> LEAVES_AUTU = List.of("maple", "red_maple", "yellow_maple","orange_maple");
+    public static final List<String> LEAVES_ENVI = List.of("cherry", "blue_wisteria", "pink_wisteria", "white_wisteria", "purple_wisteria", "willow");
+    public static final List<String> LEAVES_UAQUA = List.of("river");
     
     private static final DeferredRegister<Block> block = Registration.blocks(MODID);
     private static final DeferredRegister<Item> item = Registration.items(MODID);
@@ -46,7 +52,7 @@ public class McwAbnormals
 	
 	public static final CreativeModeTab MCWABNORMALS_TAB = new CreativeModeTab(MODID + ".tab") {
 	    @Override
-	    public ItemStack makeIcon() {
+	    public @NotNull ItemStack makeIcon() {
 	        return new ItemStack(LOGO.get());
 	    }
 	};
@@ -69,8 +75,9 @@ public class McwAbnormals
     	Bridges.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental", wood);
     	Bridges.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic", wood);
     	Bridges.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic", wood);
-    	
-    	Roofs.setRegistrationRockModLoaded(ROCK_BB, block, item, MCWABNORMALS_TAB, "buzzier_bees", honey);
+		Bridges.setRegistrationWoodModLoaded(WOOD_CAVERNSCHASMS, block, item, MCWABNORMALS_TAB, "caverns_and_chasms", wood);
+
+		Roofs.setRegistrationRockModLoaded(ROCK_BB, block, item, MCWABNORMALS_TAB, "buzzier_bees", honey);
     	Roofs.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, MCWABNORMALS_TAB, "atmospheric", wood);
     	Roofs.setRegistrationRockModLoaded(ROCK_ATMO, block, item, MCWABNORMALS_TAB, "atmospheric", stone);
     	Roofs.setRegistrationWoodModLoaded(WOOD_AUTU, block, item, MCWABNORMALS_TAB, "autumnity", wood);
@@ -78,6 +85,7 @@ public class McwAbnormals
     	Roofs.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental", wood);
     	Roofs.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic", wood);
     	Roofs.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic", wood);
+		Roofs.setRegistrationWoodModLoaded(WOOD_CAVERNSCHASMS, block, item, MCWABNORMALS_TAB, "caverns_and_chasms", wood);
     	
     	Fences.setRegistrationRockModLoaded(ROCK_BB, block, item, MCWABNORMALS_TAB, "buzzier_bees", honey);
     	Fences.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, MCWABNORMALS_TAB, "atmospheric", wood);
@@ -87,6 +95,7 @@ public class McwAbnormals
     	Fences.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental", wood);
     	Fences.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic", wood);
     	Fences.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic", wood);
+		Fences.setRegistrationWoodModLoaded(WOOD_CAVERNSCHASMS, block, item, MCWABNORMALS_TAB, "caverns_and_chasms", wood);
 
     	Fences.setRegistrationHedgesModLoaded(LEAVES_ATMO, block, item, MCWABNORMALS_TAB, "atmospheric", leaves);
     	Fences.setRegistrationHedgesModLoaded(LEAVES_AUTU, block, item, MCWABNORMALS_TAB, "autumnity", leaves);
@@ -98,14 +107,44 @@ public class McwAbnormals
     	Furnitures.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental");
     	Furnitures.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic");
     	Furnitures.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic");
+		Furnitures.setRegistrationWoodModLoaded(WOOD_CAVERNSCHASMS, block, item, MCWABNORMALS_TAB, "caverns_and_chasms");
 
     	Stairs.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, MCWABNORMALS_TAB, "atmospheric", wood);
     	Stairs.setRegistrationWoodModLoaded(WOOD_AUTU, block, item, MCWABNORMALS_TAB, "autumnity", wood);
     	Stairs.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental", wood);
     	Stairs.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic", wood);
     	Stairs.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic", wood);
+		Stairs.setRegistrationWoodModLoaded(WOOD_CAVERNSCHASMS, block, item, MCWABNORMALS_TAB, "caverns_and_chasms", wood);
 
-    	MinecraftForge.EVENT_BUS.register(MappingsFix.class);
+		Paths.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, MCWABNORMALS_TAB, "atmospheric");
+		Paths.setRegistrationWoodModLoaded(WOOD_AUTU, block, item, MCWABNORMALS_TAB, "autumnity");
+		Paths.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental");
+		Paths.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic");
+		Paths.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic");
+		Paths.setRegistrationWoodModLoaded(WOOD_CAVERNSCHASMS, block, item, MCWABNORMALS_TAB, "caverns_and_chasms");
+
+		Doors.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, MCWABNORMALS_TAB, "atmospheric");
+		Doors.setRegistrationWoodModLoaded(WOOD_AUTU, block, item, MCWABNORMALS_TAB, "autumnity");
+		Doors.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental");
+		Doors.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic");
+		Doors.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic");
+		Doors.setRegistrationWoodModLoaded(WOOD_CAVERNSCHASMS, block, item, MCWABNORMALS_TAB, "caverns_and_chasms");
+
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, MCWABNORMALS_TAB, "atmospheric");
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_AUTU, block, item, MCWABNORMALS_TAB, "autumnity");
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental");
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic");
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic");
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_CAVERNSCHASMS, block, item, MCWABNORMALS_TAB, "caverns_and_chasms");
+
+		Windows.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, MCWABNORMALS_TAB, "atmospheric");
+		Windows.setRegistrationWoodModLoaded(WOOD_AUTU, block, item, MCWABNORMALS_TAB, "autumnity");
+		Windows.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, MCWABNORMALS_TAB, "environmental");
+		Windows.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic");
+		Windows.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic");
+		Windows.setRegistrationWoodModLoaded(WOOD_CAVERNSCHASMS, block, item, MCWABNORMALS_TAB, "caverns_and_chasms");
+
+		MinecraftForge.EVENT_BUS.register(MappingsFix.class);
     	LOGGER.info("Macaw's Abnormals Mod Finish !");
     }
 }
