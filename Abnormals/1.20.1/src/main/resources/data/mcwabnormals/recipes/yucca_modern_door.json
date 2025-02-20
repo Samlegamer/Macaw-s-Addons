@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "modern",
+    
+    "pattern":
+    [
+        "AB",
+        "AA",
+        "AB"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "atmospheric:yucca_planks"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:glass_pane"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:yucca_modern_door",
+        "count": 3
+    }
+}
+
+

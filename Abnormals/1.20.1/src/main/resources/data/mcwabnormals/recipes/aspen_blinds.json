@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "blinds",
+	
+    "pattern":
+    [
+        "AAA",
+        "BBB",
+        "BBB"		
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "A":
+        {
+            "item": "atmospheric:aspen_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:aspen_blinds",
+        "count": 3
+    }
+}

@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:pine_tropical_door",
+	  "mcwabnormals:pine_bark_glass_door",
+	  "mcwabnormals:pine_barn_door",
+	  "mcwabnormals:pine_barn_glass_door",
+	  "mcwabnormals:pine_beach_door",
+	  "mcwabnormals:pine_classic_door",
+	  "mcwabnormals:pine_cottage_door",
+	  "mcwabnormals:pine_four_panel_door",
+	  "mcwabnormals:pine_glass_door",
+	  "mcwabnormals:pine_japanese_door",
+	  "mcwabnormals:pine_japanese2_door",
+	  "mcwabnormals:pine_modern_door",
+	  "mcwabnormals:pine_mystic_door",
+	  "mcwabnormals:pine_nether_door",
+	  "mcwabnormals:pine_paper_door",
+	  "mcwabnormals:pine_stable_door",
+	  "mcwabnormals:pine_stable_head_door",
+	  "mcwabnormals:pine_swamp_door",
+	  "mcwabnormals:pine_western_door",
+	  "mcwabnormals:pine_waffle_door",
+	  "mcwabnormals:pine_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "environmental:pine_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:plum_tropical_door",
+	  "mcwabnormals:plum_bark_glass_door",
+	  "mcwabnormals:plum_barn_door",
+	  "mcwabnormals:plum_barn_glass_door",
+	  "mcwabnormals:plum_beach_door",
+	  "mcwabnormals:plum_classic_door",
+	  "mcwabnormals:plum_cottage_door",
+	  "mcwabnormals:plum_four_panel_door",
+	  "mcwabnormals:plum_glass_door",
+	  "mcwabnormals:plum_japanese_door",
+	  "mcwabnormals:plum_japanese2_door",
+	  "mcwabnormals:plum_modern_door",
+	  "mcwabnormals:plum_mystic_door",
+	  "mcwabnormals:plum_nether_door",
+	  "mcwabnormals:plum_paper_door",
+	  "mcwabnormals:plum_stable_door",
+	  "mcwabnormals:plum_stable_head_door",
+	  "mcwabnormals:plum_swamp_door",
+	  "mcwabnormals:plum_western_door",
+	  "mcwabnormals:plum_waffle_door",
+	  "mcwabnormals:plum_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "environmental:plum_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

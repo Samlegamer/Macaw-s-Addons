@@ -1,0 +1,52 @@
+{
+    "variants": {
+        "facing=east,half=lower,hinge=left,open=false":  { "model": "mcwabnormals:block/western/maple_western_door_bot" },
+        "facing=south,half=lower,hinge=left,open=false": { "model": "mcwabnormals:block/western/maple_western_door_bot", "y": 90 },
+        "facing=west,half=lower,hinge=left,open=false":  { "model": "mcwabnormals:block/western/maple_western_door_bot", "y": 180 },
+        "facing=north,half=lower,hinge=left,open=false": { "model": "mcwabnormals:block/western/maple_western_door_bot", "y": 270 },
+        "facing=east,half=lower,hinge=right,open=false":  { "model": "mcwabnormals:block/western/maple_western_door_bot_rh" },
+        "facing=south,half=lower,hinge=right,open=false": { "model": "mcwabnormals:block/western/maple_western_door_bot_rh", "y": 90 },
+        "facing=west,half=lower,hinge=right,open=false":  { "model": "mcwabnormals:block/western/maple_western_door_bot_rh", "y": 180 },
+        "facing=north,half=lower,hinge=right,open=false": { "model": "mcwabnormals:block/western/maple_western_door_bot_rh", "y": 270 },
+		
+		
+		
+        "facing=east,half=lower,hinge=left,open=true":  { "model": "mcwabnormals:block/western/maple_western_door_bot_rh_open", "y": 90 },
+        "facing=south,half=lower,hinge=left,open=true": { "model": "mcwabnormals:block/western/maple_western_door_bot_rh_open", "y": 180 },
+        "facing=west,half=lower,hinge=left,open=true":  { "model": "mcwabnormals:block/western/maple_western_door_bot_rh_open", "y": 270 },
+        "facing=north,half=lower,hinge=left,open=true": { "model": "mcwabnormals:block/western/maple_western_door_bot_rh_open" },
+		
+		
+		
+        "facing=east,half=lower,hinge=right,open=true":  { "model": "mcwabnormals:block/western/maple_western_door_bot_open", "y": 270 },
+        "facing=south,half=lower,hinge=right,open=true": { "model": "mcwabnormals:block/western/maple_western_door_bot_open" },
+        "facing=west,half=lower,hinge=right,open=true":  { "model": "mcwabnormals:block/western/maple_western_door_bot_open", "y": 90 },
+        "facing=north,half=lower,hinge=right,open=true": { "model": "mcwabnormals:block/western/maple_western_door_bot_open", "y": 180 },
+		
+		
+		
+		
+        "facing=east,half=upper,hinge=left,open=false":  { "model": "mcwabnormals:block/western/maple_western_door_top" },
+        "facing=south,half=upper,hinge=left,open=false": { "model": "mcwabnormals:block/western/maple_western_door_top", "y": 90 },
+        "facing=west,half=upper,hinge=left,open=false":  { "model": "mcwabnormals:block/western/maple_western_door_top", "y": 180 },
+        "facing=north,half=upper,hinge=left,open=false": { "model": "mcwabnormals:block/western/maple_western_door_top", "y": 270 },
+        "facing=east,half=upper,hinge=right,open=false":  { "model": "mcwabnormals:block/western/maple_western_door_top_rh" },
+        "facing=south,half=upper,hinge=right,open=false": { "model": "mcwabnormals:block/western/maple_western_door_top_rh", "y": 90 },
+        "facing=west,half=upper,hinge=right,open=false":  { "model": "mcwabnormals:block/western/maple_western_door_top_rh", "y": 180 },
+        "facing=north,half=upper,hinge=right,open=false": { "model": "mcwabnormals:block/western/maple_western_door_top_rh", "y": 270 },
+		
+		
+		
+		
+        "facing=east,half=upper,hinge=left,open=true":  { "model": "mcwabnormals:block/western/maple_western_door_top_rh_open", "y": 90 },
+        "facing=south,half=upper,hinge=left,open=true": { "model": "mcwabnormals:block/western/maple_western_door_top_rh_open", "y": 180 },
+        "facing=west,half=upper,hinge=left,open=true":  { "model": "mcwabnormals:block/western/maple_western_door_top_rh_open", "y": 270 },
+        "facing=north,half=upper,hinge=left,open=true": { "model": "mcwabnormals:block/western/maple_western_door_top_rh_open" },
+		
+		
+        "facing=east,half=upper,hinge=right,open=true":  { "model": "mcwabnormals:block/western/maple_western_door_top_open", "y": 270 },
+        "facing=south,half=upper,hinge=right,open=true": { "model": "mcwabnormals:block/western/maple_western_door_top_open" },
+        "facing=west,half=upper,hinge=right,open=true":  { "model": "mcwabnormals:block/western/maple_western_door_top_open", "y": 90 },
+        "facing=north,half=upper,hinge=right,open=true": { "model": "mcwabnormals:block/western/maple_western_door_top_open", "y": 180 }
+    }
+}

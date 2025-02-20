@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "caverns_and_chasms:azalea_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwabnormals:azalea_planks_path",
+    "count": 3
+  }
+}

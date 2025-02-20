@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "atmospheric:morado_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwabnormals:morado_planks_path",
+    "count": 3
+  }
+}

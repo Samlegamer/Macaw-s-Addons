@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "windows_pane",
+	
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "mcwwindows:window_base"
+        },    
+
+		
+        "B":
+        {
+            "item": "caverns_and_chasms:azalea_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwabnormals:azalea_plank_pane_window",
+        "count": 8
+    }
+}
