@@ -1,0 +1,43 @@
+{
+    "variants": {
+        "facing=east,half=lower,hinge=left,open=false":  { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_closed" },
+        "facing=south,half=lower,hinge=left,open=false": { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_closed", "y": 90 },
+        "facing=west,half=lower,hinge=left,open=false":  { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_closed", "y": 180 },
+        "facing=north,half=lower,hinge=left,open=false": { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_closed", "y": 270 },
+		
+        "facing=east,half=lower,hinge=right,open=false":  { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_closed_rh" },
+        "facing=south,half=lower,hinge=right,open=false": { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_closed_rh", "y": 90 },
+        "facing=west,half=lower,hinge=right,open=false":  { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_closed_rh", "y": 180 },
+        "facing=north,half=lower,hinge=right,open=false": { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_closed_rh", "y": 270 },
+		
+        "facing=east,half=lower,hinge=left,open=true":  { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_open_rh", "y": 90 },
+        "facing=south,half=lower,hinge=left,open=true": { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_open_rh", "y": 180 },
+        "facing=west,half=lower,hinge=left,open=true":  { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_open_rh", "y": 270 },
+        "facing=north,half=lower,hinge=left,open=true": { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_open_rh" },
+		
+        "facing=east,half=lower,hinge=right,open=true":  { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_open", "y": 270 },
+        "facing=south,half=lower,hinge=right,open=true": { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_open" },
+        "facing=west,half=lower,hinge=right,open=true":  { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_open", "y": 90 },
+        "facing=north,half=lower,hinge=right,open=true": { "model": "mcwmoddinglegacy:block/stable/bsky_dusk_stable_door_bot_open", "y": 180 },
+		
+        "facing=east,half=upper,hinge=left,open=false":  { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_closed" },
+        "facing=south,half=upper,hinge=left,open=false": { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_closed", "y": 90 },
+        "facing=west,half=upper,hinge=left,open=false":  { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_closed", "y": 180 },
+        "facing=north,half=upper,hinge=left,open=false": { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_closed", "y": 270 },
+		
+        "facing=east,half=upper,hinge=right,open=false":  { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_closed_rh" },
+        "facing=south,half=upper,hinge=right,open=false": { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_closed_rh", "y": 90 },
+        "facing=west,half=upper,hinge=right,open=false":  { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_closed_rh", "y": 180 },
+        "facing=north,half=upper,hinge=right,open=false": { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_closed_rh", "y": 270 },
+		
+        "facing=east,half=upper,hinge=left,open=true":  { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_open_rh", "y": 90 },
+        "facing=south,half=upper,hinge=left,open=true": { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_open_rh", "y": 180 },
+        "facing=west,half=upper,hinge=left,open=true":  { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_open_rh", "y": 270 },
+        "facing=north,half=upper,hinge=left,open=true": { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_open_rh" },
+		
+        "facing=east,half=upper,hinge=right,open=true":  { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_open", "y": 270 },
+        "facing=south,half=upper,hinge=right,open=true": { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_open" },
+        "facing=west,half=upper,hinge=right,open=true":  { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_open", "y": 90 },
+        "facing=north,half=upper,hinge=right,open=true": { "model": "mcwmoddinglegacy:block/stable_head/bsky_dusk_stable_head_door_top_open", "y": 180 }
+    }
+}

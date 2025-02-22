@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "premium_wood:willow_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwmoddinglegacy:pwood_willow_planks_path",
+    "count": 3
+  }
+}
