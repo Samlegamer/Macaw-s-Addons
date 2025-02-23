@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwmoddinglegacy:bsky_cherry_tropical_door",
+	  "mcwmoddinglegacy:bsky_cherry_bark_glass_door",
+	  "mcwmoddinglegacy:bsky_cherry_barn_door",
+	  "mcwmoddinglegacy:bsky_cherry_barn_glass_door",
+	  "mcwmoddinglegacy:bsky_cherry_beach_door",
+	  "mcwmoddinglegacy:bsky_cherry_classic_door",
+	  "mcwmoddinglegacy:bsky_cherry_cottage_door",
+	  "mcwmoddinglegacy:bsky_cherry_four_panel_door",
+	  "mcwmoddinglegacy:bsky_cherry_glass_door",
+	  "mcwmoddinglegacy:bsky_cherry_japanese_door",
+	  "mcwmoddinglegacy:bsky_cherry_japanese2_door",
+	  "mcwmoddinglegacy:bsky_cherry_modern_door",
+	  "mcwmoddinglegacy:bsky_cherry_mystic_door",
+	  "mcwmoddinglegacy:bsky_cherry_nether_door",
+	  "mcwmoddinglegacy:bsky_cherry_paper_door",
+	  "mcwmoddinglegacy:bsky_cherry_stable_door",
+	  "mcwmoddinglegacy:bsky_cherry_stable_head_door",
+	  "mcwmoddinglegacy:bsky_cherry_swamp_door",
+	  "mcwmoddinglegacy:bsky_cherry_western_door",
+	  "mcwmoddinglegacy:bsky_cherry_waffle_door",
+	  "mcwmoddinglegacy:bsky_cherry_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:cherry_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

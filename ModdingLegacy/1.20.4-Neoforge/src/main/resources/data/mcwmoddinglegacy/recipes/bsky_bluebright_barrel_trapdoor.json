@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "barrel_trapdoors",
+    
+    "pattern":
+    [
+        " A ",
+        "ABA",
+        " A "               
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "blue_skies:bluebright_planks"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:barrel"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwmoddinglegacy:bsky_bluebright_barrel_trapdoor",
+        "count": 4
+    }
+}
+
+

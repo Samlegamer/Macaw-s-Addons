@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blue_skies:bluebright_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwmoddinglegacy:bsky_bluebright_planks_path",
+    "count": 3
+  }
+}

@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "bark",
+	
+    "pattern":
+    [
+        "AB",
+        "BB",
+		"AB"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "premium_wood:purple_heart_log"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:glass"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwmoddinglegacy:pwood_purple_heart_bark_glass_door",
+        "count": 3
+    }
+}
+
+

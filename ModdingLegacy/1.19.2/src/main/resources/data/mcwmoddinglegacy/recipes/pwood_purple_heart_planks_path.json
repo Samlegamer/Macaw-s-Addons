@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "premium_wood:purple_heart_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwmoddinglegacy:pwood_purple_heart_planks_path",
+    "count": 3
+  }
+}
