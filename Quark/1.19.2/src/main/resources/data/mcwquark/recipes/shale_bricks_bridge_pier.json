@@ -1,0 +1,37 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stone_piers",
+    
+    "pattern": [
+    "WFW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "quark:shale_bricks_wall"
+        },
+        
+        "W":
+        {
+            "item": "quark:shale_bricks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:shale_bricks_bridge_pier",
+        "count": 3
+    }
+}

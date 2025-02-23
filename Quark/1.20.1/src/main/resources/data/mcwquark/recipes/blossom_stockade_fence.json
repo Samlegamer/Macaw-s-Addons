@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "quark:blossom_log"
+        },    
+        
+        "B":
+        {
+            "item": "quark:blossom_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:blossom_stockade_fence",
+        "count": 3
+    }
+}
+
+

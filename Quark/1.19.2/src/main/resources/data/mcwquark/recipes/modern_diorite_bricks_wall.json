@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "modern",
+    
+    "pattern":
+    [
+		"ABA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:diorite"
+        },    
+        
+        "B":
+        {
+            "item": "quark:diorite_bricks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:modern_diorite_bricks_wall",
+        "count": 6
+    }
+}
+
+

@@ -1,0 +1,91 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwquark:ancient_wardrobe",
+	  "mcwquark:ancient_modern_wardrobe",
+	  "mcwquark:ancient_double_wardrobe",
+	  "mcwquark:ancient_bookshelf_cupboard",
+	  "mcwquark:ancient_bookshelf",
+	  "mcwquark:ancient_drawer",
+	  "mcwquark:ancient_double_drawer",
+	  "mcwquark:ancient_bookshelf_drawer",
+	  "mcwquark:ancient_lower_bookshelf_drawer",
+	  "mcwquark:ancient_large_drawer",
+	  "mcwquark:ancient_lower_triple_drawer",
+	  "mcwquark:ancient_triple_drawer",
+	  "mcwquark:ancient_desk",
+	  "mcwquark:ancient_covered_desk",
+	  "mcwquark:ancient_modern_desk",
+	  "mcwquark:ancient_table",
+	  "mcwquark:ancient_end_table",
+	  "mcwquark:ancient_coffee_table",
+	  "mcwquark:ancient_glass_table",
+	  "mcwquark:ancient_chair",
+	  "mcwquark:ancient_modern_chair",
+	  "mcwquark:ancient_striped_chair",
+	  "mcwquark:ancient_stool_chair",
+	  "mcwquark:ancient_counter",
+	  "mcwquark:ancient_drawer_counter",
+	  "mcwquark:ancient_double_drawer_counter",
+	  "mcwquark:ancient_cupboard_counter",
+	  
+	  "mcwquark:stripped_ancient_wardrobe",
+	  "mcwquark:stripped_ancient_modern_wardrobe",
+	  "mcwquark:stripped_ancient_double_wardrobe",
+	  "mcwquark:stripped_ancient_bookshelf_cupboard",
+	  "mcwquark:stripped_ancient_bookshelf",
+	  "mcwquark:stripped_ancient_drawer",
+	  "mcwquark:stripped_ancient_double_drawer",
+	  "mcwquark:stripped_ancient_bookshelf_drawer",
+	  "mcwquark:stripped_ancient_lower_bookshelf_drawer",
+	  "mcwquark:stripped_ancient_large_drawer",
+	  "mcwquark:stripped_ancient_lower_triple_drawer",
+	  "mcwquark:stripped_ancient_triple_drawer",
+	  "mcwquark:stripped_ancient_desk",
+	  "mcwquark:stripped_ancient_covered_desk",
+	  "mcwquark:stripped_ancient_modern_desk",
+	  "mcwquark:stripped_ancient_table",
+	  "mcwquark:stripped_ancient_end_table",
+	  "mcwquark:stripped_ancient_coffee_table",
+	  "mcwquark:stripped_ancient_glass_table",
+	  "mcwquark:stripped_ancient_chair",
+	  "mcwquark:stripped_ancient_modern_chair",
+	  "mcwquark:stripped_ancient_striped_chair",
+	  "mcwquark:stripped_ancient_stool_chair",
+	  "mcwquark:stripped_ancient_counter",
+	  "mcwquark:stripped_ancient_drawer_counter",
+	  "mcwquark:stripped_ancient_double_drawer_counter",
+	  "mcwquark:stripped_ancient_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "quark:ancient_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwquark:ancient_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

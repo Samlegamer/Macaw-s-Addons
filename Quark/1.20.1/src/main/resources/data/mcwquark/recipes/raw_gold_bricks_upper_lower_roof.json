@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:raw_gold_bricks"
+    },
+    "result": "mcwquark:raw_gold_bricks_upper_lower_roof",
+    "group": "roofs",
+    "count": 1
+}

@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stool_chair",
+    "pattern":
+    [
+		"A",
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "quark:blossom_log"
+        }, 	
+		
+        "B":
+        {
+            "item": "quark:blossom_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:blossom_stool_chair",
+        "count": 1
+    }
+}
+
+

@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:cobblestone_bricks"
+    },
+    "result": "mcwquark:cobblestone_bricks_railing_gate",
+    "group": "fences",
+    "count": 1
+}

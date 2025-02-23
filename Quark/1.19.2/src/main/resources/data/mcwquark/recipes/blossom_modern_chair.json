@@ -1,0 +1,45 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "modern_chair",
+    "pattern":
+    [
+        "BA",
+        "CC"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "quark:blossom_log"
+        }, 
+		
+        "B":
+        {
+            "item": "quark:blossom_planks_slab"
+        },
+		
+		"C":
+        {
+            "item": "quark:blossom_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:blossom_modern_chair",
+        "count": 1
+    }
+}
+
+

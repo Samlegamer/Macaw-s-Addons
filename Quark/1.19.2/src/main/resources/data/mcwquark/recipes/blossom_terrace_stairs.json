@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : {
+      "item" : "quark:stripped_blossom_log"
+    },
+    "Z" : {
+      "item" : "quark:blossom_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwquark:blossom_terrace_stairs",
+    "count" : 5
+  }
+}

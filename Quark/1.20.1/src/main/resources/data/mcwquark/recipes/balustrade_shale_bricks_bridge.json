@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "balustrade_bridges",
+    
+    "pattern": [
+    "FFF",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "quark:shale_bricks_wall"
+        },
+        
+        "W":
+        {
+            "item": "quark:shale_bricks_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:balustrade_shale_bricks_bridge",
+        "count": 5
+    }
+}

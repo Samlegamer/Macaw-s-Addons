@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:cobblestone_bricks"
+    },
+    "result": "mcwquark:cobblestone_bricks_attic_roof",
+    "group": "roofs",
+    "count": 1
+}

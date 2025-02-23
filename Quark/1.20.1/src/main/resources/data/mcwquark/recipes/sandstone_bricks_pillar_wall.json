@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "pillarwall",
+    
+    "pattern":
+    [
+		"AAA",
+		"B B"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:smooth_sandstone"
+        },    
+        
+        "B":
+        {
+            "item": "quark:sandstone_bricks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:sandstone_bricks_pillar_wall",
+        "count": 5
+    }
+}
+
+

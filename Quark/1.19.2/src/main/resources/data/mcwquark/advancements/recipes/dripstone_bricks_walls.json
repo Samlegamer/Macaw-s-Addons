@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwquark:modern_dripstone_bricks_wall",
+	  
+	  "mcwquark:railing_dripstone_bricks_wall",
+	  
+	  "mcwquark:dripstone_bricks_railing_gate",
+	  
+	  "mcwquark:dripstone_bricks_pillar_wall",
+	  
+	  
+	  "mcwquark:dripstone_bricks_grass_topped_wall"
+    ]
+  },
+  "criteria": {
+    "has_sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "quark:dripstone_bricks"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand"
+    ]
+  ]
+}

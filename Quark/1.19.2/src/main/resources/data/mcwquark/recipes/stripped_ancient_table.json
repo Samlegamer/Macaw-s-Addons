@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwquark:stripped_ancient_coffee_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "quark:ancient_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:stripped_ancient_table",
+        "count": 1
+    }
+}
+
+

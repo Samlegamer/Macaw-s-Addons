@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "end_table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwquark:blossom_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "quark:blossom_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:blossom_end_table",
+        "count": 1
+    }
+}
+
+

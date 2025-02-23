@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "quark:blossom_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "quark:blossom_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:blossom_picket_fence",
+        "count": 3
+    }
+}
+
+

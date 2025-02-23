@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "quark:ancient_planks_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "quark:stripped_ancient_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:stripped_ancient_counter",
+        "count": 1
+    }
+}
+
+

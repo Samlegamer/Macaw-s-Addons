@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "mcwquark:ancient_blossom_trapdoor"
+    ]
+  },
+  "criteria": {
+    "has_plankss": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": 
+			[ "quark:ancient_planks"
+                      ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwquark:ancient_blossom_trapdoor"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_plankss",
+      "has_the_recipe"
+    ]
+  ]
+}

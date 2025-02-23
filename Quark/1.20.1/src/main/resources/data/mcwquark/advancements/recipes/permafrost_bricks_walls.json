@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwquark:modern_permafrost_bricks_wall",
+	  
+	  "mcwquark:railing_permafrost_bricks_wall",
+	  
+	  "mcwquark:permafrost_bricks_railing_gate",
+	  
+	  "mcwquark:permafrost_bricks_pillar_wall",
+	  
+	  
+	  "mcwquark:permafrost_bricks_grass_topped_wall"
+    ]
+  },
+  "criteria": {
+    "has_sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "quark:permafrost_bricks"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand"
+    ]
+  ]
+}

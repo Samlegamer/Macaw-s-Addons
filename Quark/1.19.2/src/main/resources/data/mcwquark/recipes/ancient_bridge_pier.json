@@ -1,0 +1,37 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_piers",
+    
+    "pattern": [
+    "WFW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "quark:ancient_fence"
+        },
+        
+        "W":
+        {
+            "item": "quark:ancient_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:ancient_bridge_pier",
+        "count": 3
+    }
+}

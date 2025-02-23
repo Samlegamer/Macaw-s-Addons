@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "double_drawer_counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "quark:blossom_planks_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwquark:stripped_blossom_double_drawer"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:stripped_blossom_double_drawer_counter",
+        "count": 1
+    }
+}
+
+

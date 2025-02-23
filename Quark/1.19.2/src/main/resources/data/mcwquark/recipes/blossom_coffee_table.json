@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "coffee_table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "quark:blossom_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "quark:blossom_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:blossom_coffee_table",
+        "count": 1
+    }
+}
+
+

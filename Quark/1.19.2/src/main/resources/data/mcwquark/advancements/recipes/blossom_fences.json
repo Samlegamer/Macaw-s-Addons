@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwquark:blossom_picket_fence",
+	  "mcwquark:blossom_stockade_fence",
+	  "mcwquark:blossom_horse_fence",
+	  "mcwquark:blossom_wired_fence",
+	  "mcwquark:blossom_highley_gate",
+	  "mcwquark:blossom_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "quark:blossom_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

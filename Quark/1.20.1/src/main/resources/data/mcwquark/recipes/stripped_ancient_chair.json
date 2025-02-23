@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "quark:stripped_ancient_log"
+        }, 
+		
+        "B":
+        {
+            "item": "quark:ancient_planks_slab"
+        },
+		
+		"C":
+        {
+            "item": "quark:ancient_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:stripped_ancient_chair",
+        "count": 1
+    }
+}
+
+
