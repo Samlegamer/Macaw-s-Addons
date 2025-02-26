@@ -1,0 +1,37 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "traverse"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_piers",
+    
+    "pattern": [
+    "WFW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "traverse:fir_fence"
+        },
+        
+        "W":
+        {
+            "item": "traverse:fir_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:fir_bridge_pier",
+        "count": 3
+    }
+}

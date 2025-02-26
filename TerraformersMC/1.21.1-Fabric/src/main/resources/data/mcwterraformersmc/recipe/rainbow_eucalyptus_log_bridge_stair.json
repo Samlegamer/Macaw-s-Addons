@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "log_stairs",
+  "pattern" : [ "  F", " FF", "FFF" ],
+  "key" : {
+    "F" : {
+      "item" : "mcwterraformersmc:rainbow_eucalyptus_log_bridge_middle"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwterraformersmc:rainbow_eucalyptus_log_bridge_stair"
+  }
+}

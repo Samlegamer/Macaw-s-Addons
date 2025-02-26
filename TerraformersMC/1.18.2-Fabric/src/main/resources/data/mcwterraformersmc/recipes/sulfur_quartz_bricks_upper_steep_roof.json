@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "cinderscapes:sulfur_quartz_bricks"
+    },
+    "result": "mcwterraformersmc:sulfur_quartz_bricks_upper_steep_roof",
+    "group": "roofs",
+    "count": 1
+}

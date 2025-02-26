@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "traverse"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "traverse:fir_log"
+        },    
+        
+        "B":
+        {
+            "item": "traverse:fir_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:fir_stockade_fence",
+        "count": 3
+    }
+}
+
+

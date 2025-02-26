@@ -1,0 +1,56 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwterraformersmc:scorched_bark_glass_door",
+	  "mcwterraformersmc:scorched_barn_door",
+	  "mcwterraformersmc:scorched_barn_glass_door",
+	  "mcwterraformersmc:scorched_beach_door",
+	  "mcwterraformersmc:scorched_classic_door",
+	  "mcwterraformersmc:scorched_cottage_door",
+	  "mcwterraformersmc:scorched_four_panel_door",
+	  "mcwterraformersmc:scorched_glass_door",
+	  "mcwterraformersmc:scorched_japanese_door",
+	  "mcwterraformersmc:scorched_japanese2_door",
+	  "mcwterraformersmc:scorched_modern_door",
+	  "mcwterraformersmc:scorched_mystic_door",
+	  "mcwterraformersmc:scorched_nether_door",
+	  "mcwterraformersmc:scorched_paper_door",
+	  "mcwterraformersmc:scorched_stable_door",
+	  "mcwterraformersmc:scorched_stable_head_door",
+	  "mcwterraformersmc:scorched_swamp_door",
+	  "mcwterraformersmc:scorched_western_door",
+	  "mcwterraformersmc:scorched_waffle_door",
+	  "mcwterraformersmc:scorched_tropical_door",
+	  "mcwterraformersmc:scorched_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cinderscapes:scorched_stem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bulk_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : {
+      "item" : "terrestria:stripped_hemlock_log"
+    },
+    "Z" : {
+      "item" : "terrestria:hemlock_log"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwterraformersmc:hemlock_bulk_stairs"
+  }
+}

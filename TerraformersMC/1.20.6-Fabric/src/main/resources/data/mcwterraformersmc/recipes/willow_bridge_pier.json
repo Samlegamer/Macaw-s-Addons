@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "wooden_piers",
+  "pattern" : [ "WFW" ],
+  "key" : {
+    "F" : {
+      "item" : "terrestria:willow_fence"
+    },
+    "W" : {
+      "item" : "terrestria:willow_log"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwterraformersmc:willow_bridge_pier"
+  }
+}

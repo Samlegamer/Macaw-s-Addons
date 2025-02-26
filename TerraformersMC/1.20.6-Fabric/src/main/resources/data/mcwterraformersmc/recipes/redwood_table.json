@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwterraformersmc:redwood_coffee_table"
+    },
+    "B" : {
+      "item" : "terrestria:redwood_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:redwood_table"
+  }
+}

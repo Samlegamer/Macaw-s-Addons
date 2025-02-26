@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "wooden_piers",
+  "pattern" : [ "WFW" ],
+  "key" : {
+    "F" : {
+      "item" : "terrestria:japanese_maple_fence"
+    },
+    "W" : {
+      "item" : "terrestria:japanese_maple_log"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwterraformersmc:japanese_maple_bridge_pier"
+  }
+}

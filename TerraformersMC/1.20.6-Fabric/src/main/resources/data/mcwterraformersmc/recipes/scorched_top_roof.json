@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "top",
+  "pattern" : [ "WSW" ],
+  "key" : {
+    "W" : {
+      "item" : "cinderscapes:scorched_stem"
+    },
+    "S" : {
+      "item" : "minecraft:stick"
+    }
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwterraformersmc:scorched_top_roof"
+  }
+}

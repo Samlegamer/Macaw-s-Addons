@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shutters",
+  "pattern" : [ "B", "B", "B" ],
+  "key" : {
+    "B" : {
+      "item" : "terrestria:redwood_trapdoor"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwterraformersmc:redwood_shutter"
+  }
+}

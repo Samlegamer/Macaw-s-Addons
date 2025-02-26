@@ -1,0 +1,56 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwterraformersmc:japanese_maple_bark_glass_door",
+	  "mcwterraformersmc:japanese_maple_barn_door",
+	  "mcwterraformersmc:japanese_maple_barn_glass_door",
+	  "mcwterraformersmc:japanese_maple_beach_door",
+	  "mcwterraformersmc:japanese_maple_classic_door",
+	  "mcwterraformersmc:japanese_maple_cottage_door",
+	  "mcwterraformersmc:japanese_maple_four_panel_door",
+	  "mcwterraformersmc:japanese_maple_glass_door",
+	  "mcwterraformersmc:japanese_maple_japanese_door",
+	  "mcwterraformersmc:japanese_maple_japanese2_door",
+	  "mcwterraformersmc:japanese_maple_modern_door",
+	  "mcwterraformersmc:japanese_maple_mystic_door",
+	  "mcwterraformersmc:japanese_maple_nether_door",
+	  "mcwterraformersmc:japanese_maple_paper_door",
+	  "mcwterraformersmc:japanese_maple_stable_door",
+	  "mcwterraformersmc:japanese_maple_stable_head_door",
+	  "mcwterraformersmc:japanese_maple_swamp_door",
+	  "mcwterraformersmc:japanese_maple_western_door",
+	  "mcwterraformersmc:japanese_maple_waffle_door",
+	  "mcwterraformersmc:japanese_maple_tropical_door",
+	  "mcwterraformersmc:japanese_maple_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:japanese_maple_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stone_bridges",
+  "pattern" : [ "F F", "WWW" ],
+  "key" : {
+    "F" : {
+      "item" : "terrestria:basalt_brick_wall"
+    },
+    "W" : {
+      "item" : "terrestria:basalt_brick_slab"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:basalt_bricks_bridge"
+  }
+}

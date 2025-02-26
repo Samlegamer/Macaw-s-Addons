@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "group": "woodenpaths",
+  "ingredients": [
+    {
+      "item": "terrestria:rubber_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwterraformersmc:rubber_planks_path"
+  }
+}

@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "railing_wall",
+  "pattern" : [ "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "cinderscapes:smoky_quartz_block"
+    },
+    "B" : {
+      "item" : "minecraft:iron_bars"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwterraformersmc:railing_smoky_quartz_bricks_wall"
+  }
+}

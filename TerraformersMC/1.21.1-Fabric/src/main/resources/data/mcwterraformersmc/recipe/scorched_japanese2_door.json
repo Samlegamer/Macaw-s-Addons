@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shoji_two",
+  "pattern" : [ "BB", "BB", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "cinderscapes:scorched_slab"
+    },
+    "B" : {
+      "item" : "minecraft:paper"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwterraformersmc:scorched_japanese2_door"
+  }
+}

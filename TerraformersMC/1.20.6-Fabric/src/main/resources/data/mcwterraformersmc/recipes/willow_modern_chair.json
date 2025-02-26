@@ -1,0 +1,30 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern_chair",
+  "pattern" : [ "BA", "CC" ],
+  "key" : {
+    "A" : {
+      "item" : "terrestria:willow_log"
+    },
+    "B" : {
+      "item" : "terrestria:willow_slab"
+    },
+    "C" : {
+      "item" : "terrestria:willow_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:willow_modern_chair"
+  }
+}

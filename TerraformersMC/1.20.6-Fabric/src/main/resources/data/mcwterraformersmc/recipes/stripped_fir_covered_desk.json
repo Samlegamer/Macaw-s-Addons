@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "traverse"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "covered_desk",
+  "pattern" : [ "AAA", "A A" ],
+  "key" : {
+    "A" : {
+      "item" : "traverse:stripped_fir_log"
+    }
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwterraformersmc:stripped_fir_covered_desk"
+  }
+}

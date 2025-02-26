@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "horse",
+    
+    "pattern":
+    [
+		"ABA",
+		"BAB"
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "A":
+        {
+            "item": "terrestria:rainbow_eucalyptus_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:rainbow_eucalyptus_horse_fence",
+        "count": 3
+    }
+}
+
+

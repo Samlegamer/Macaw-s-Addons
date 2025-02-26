@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "log_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "terrestria:yucca_palm_fence"
+        },
+        
+        "W":
+        {
+            "item": "terrestria:yucca_palm_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:yucca_palm_log_bridge_middle",
+        "count": 4
+    }
+}

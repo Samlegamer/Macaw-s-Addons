@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "rail_bridges",
+    
+    "pattern": [
+    "F F",
+    "FWF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "cinderscapes:umbral_fence"
+        },
+        
+        "W":
+        {
+            "item": "cinderscapes:umbral_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:umbral_rail_bridge",
+        "count": 4
+    }
+}

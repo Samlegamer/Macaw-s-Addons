@@ -1,0 +1,30 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "glass_cabinet",
+  "pattern" : [ "AA", "BC", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "cinderscapes:stripped_umbral_stem"
+    },
+    "B" : {
+      "item" : "minecraft:glass"
+    },
+    "C" : {
+      "item" : "mcwfurnitures:cabinet_door"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:stripped_umbral_glass_kitchen_cabinet"
+  }
+}

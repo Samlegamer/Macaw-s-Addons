@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "covered_desk",
+  "pattern" : [ "AAA", "A A" ],
+  "key" : {
+    "A" : {
+      "item" : "cinderscapes:stripped_umbral_stem"
+    }
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwterraformersmc:stripped_umbral_covered_desk"
+  }
+}

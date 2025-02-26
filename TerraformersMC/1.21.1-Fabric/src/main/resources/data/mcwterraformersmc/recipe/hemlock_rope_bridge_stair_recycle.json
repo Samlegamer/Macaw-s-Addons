@@ -1,0 +1,21 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shapeless",
+  "group" : "recyclable_bridges",
+  "ingredients" : [ {
+    "item" : "mcwterraformersmc:hemlock_rope_bridge_stair"
+  } ],
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:rope_hemlock_bridge"
+  }
+}

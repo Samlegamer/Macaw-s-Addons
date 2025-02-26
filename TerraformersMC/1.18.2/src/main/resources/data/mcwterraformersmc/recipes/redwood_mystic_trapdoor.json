@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "mystic_trapdoors",
+    
+    "pattern":
+    [
+        "A",
+        "B",
+        "A"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "terrestria:redwood_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwtrpdoors:print_mystic"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:redwood_mystic_trapdoor",
+        "count": 1
+    }
+}
+
+

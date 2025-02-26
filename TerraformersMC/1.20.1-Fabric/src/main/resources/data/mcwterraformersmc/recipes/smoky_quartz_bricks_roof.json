@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "cinderscapes:smoky_quartz_bricks"
+    },
+    "result": "mcwterraformersmc:smoky_quartz_bricks_roof",
+    "group": "roofs",
+    "count": 1
+}

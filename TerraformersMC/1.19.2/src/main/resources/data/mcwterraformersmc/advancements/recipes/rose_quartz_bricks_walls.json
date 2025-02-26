@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwterraformersmc:modern_rose_quartz_bricks_wall",
+	  
+	  "mcwterraformersmc:railing_rose_quartz_bricks_wall",
+	  
+	  "mcwterraformersmc:rose_quartz_bricks_railing_gate",
+	  
+	  "mcwterraformersmc:rose_quartz_bricks_pillar_wall",
+	  
+	  
+	  "mcwterraformersmc:rose_quartz_bricks_grass_topped_wall"
+    ]
+  },
+  "criteria": {
+    "has_sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "cinderscapes:rose_quartz_bricks"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand"
+    ]
+  ]
+}

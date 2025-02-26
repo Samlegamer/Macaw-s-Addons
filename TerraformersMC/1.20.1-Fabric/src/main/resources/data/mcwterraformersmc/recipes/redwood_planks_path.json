@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "terrestria:redwood_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwterraformersmc:redwood_planks_path",
+    "count": 3
+  }
+}

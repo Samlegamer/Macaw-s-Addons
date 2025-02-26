@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "terrestria:stripped_japanese_maple_log"
+        }, 
+		
+        "B":
+        {
+            "item": "terrestria:japanese_maple_slab"
+        },
+		
+		"C":
+        {
+            "item": "terrestria:japanese_maple_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:stripped_japanese_maple_chair",
+        "count": 1
+    }
+}
+
+

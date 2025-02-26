@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "traverse"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "windows",
+	
+    "pattern":
+    [
+        " A ",
+        "ABA",
+        " A "                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "mcwwindows:window_base"
+        },    
+        
+        "B":
+        {
+            "item": "traverse:fir_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:fir_plank_window",
+        "count": 4
+    }
+}

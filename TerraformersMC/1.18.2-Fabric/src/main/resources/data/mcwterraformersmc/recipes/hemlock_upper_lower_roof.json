@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "upper_lower",
+    
+    "pattern":
+    [
+		"  W",
+        "WWS"
+    ],
+    
+    "key":
+    {
+        "W":
+        {
+            "item": "terrestria:hemlock_log"
+        },
+		"S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcwterraformersmc:hemlock_upper_lower_roof",
+        "count": 3
+    }
+}

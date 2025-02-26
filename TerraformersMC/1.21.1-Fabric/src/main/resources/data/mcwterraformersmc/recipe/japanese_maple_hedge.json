@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "hedge",
+  "pattern" : [ "AA", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "terrestria:japanese_maple_leaves"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:japanese_maple_hedge"
+  }
+}

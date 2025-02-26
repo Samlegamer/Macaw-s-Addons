@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "western",
+    
+    "pattern":
+    [
+        "  A",
+        "ABA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "terrestria:sakura_planks"
+        },
+		
+		"B":
+        {
+            "item": "terrestria:sakura_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:sakura_western_door",
+        "count": 3
+    }
+}
+
+

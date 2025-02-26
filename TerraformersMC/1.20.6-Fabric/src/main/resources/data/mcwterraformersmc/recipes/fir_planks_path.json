@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "traverse"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "group": "woodenpaths",
+  "ingredients": [
+    {
+      "item": "traverse:fir_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwterraformersmc:fir_planks_path"
+  }
+}

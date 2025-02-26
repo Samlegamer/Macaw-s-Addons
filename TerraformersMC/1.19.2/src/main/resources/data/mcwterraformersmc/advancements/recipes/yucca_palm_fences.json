@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwterraformersmc:yucca_palm_picket_fence",
+	  "mcwterraformersmc:yucca_palm_stockade_fence",
+	  "mcwterraformersmc:yucca_palm_horse_fence",
+	  "mcwterraformersmc:yucca_palm_wired_fence",
+	  "mcwterraformersmc:yucca_palm_highley_gate",
+	  "mcwterraformersmc:yucca_palm_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "terrestria:yucca_palm_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

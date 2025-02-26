@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "western",
+    
+    "pattern":
+    [
+        "  A",
+        "ABA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "terrestria:redwood_planks"
+        },
+		
+		"B":
+        {
+            "item": "terrestria:redwood_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:redwood_western_door",
+        "count": 3
+    }
+}
+
+

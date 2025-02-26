@@ -1,0 +1,30 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bookshelf_drawer",
+  "pattern" : [ "AAA", "ABA", "ACA" ],
+  "key" : {
+    "A" : {
+      "item" : "cinderscapes:umbral_stem"
+    },
+    "B" : {
+      "item" : "mcwfurnitures:cabinet_drawer"
+    },
+    "C" : {
+      "item" : "minecraft:book"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:umbral_bookshelf_drawer"
+  }
+}

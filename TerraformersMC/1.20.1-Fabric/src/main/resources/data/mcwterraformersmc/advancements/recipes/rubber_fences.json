@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwterraformersmc:rubber_picket_fence",
+	  "mcwterraformersmc:rubber_stockade_fence",
+	  "mcwterraformersmc:rubber_horse_fence",
+	  "mcwterraformersmc:rubber_wired_fence",
+	  "mcwterraformersmc:rubber_highley_gate",
+	  "mcwterraformersmc:rubber_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "terrestria:rubber_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

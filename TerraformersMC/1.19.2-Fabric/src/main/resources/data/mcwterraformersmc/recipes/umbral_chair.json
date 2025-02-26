@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "cinderscapes:umbral_stem"
+        }, 
+		
+        "B":
+        {
+            "item": "cinderscapes:umbral_slab"
+        },
+		
+		"C":
+        {
+            "item": "cinderscapes:umbral_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:umbral_chair",
+        "count": 1
+    }
+}
+
+

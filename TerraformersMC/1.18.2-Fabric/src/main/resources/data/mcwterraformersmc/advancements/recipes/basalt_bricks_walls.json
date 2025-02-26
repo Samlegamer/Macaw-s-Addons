@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwterraformersmc:modern_basalt_bricks_wall",
+	  
+	  "mcwterraformersmc:railing_basalt_bricks_wall",
+	  
+	  "mcwterraformersmc:basalt_bricks_railing_gate",
+	  
+	  "mcwterraformersmc:basalt_bricks_pillar_wall",
+	  
+	  
+	  "mcwterraformersmc:basalt_bricks_grass_topped_wall"
+    ]
+  },
+  "criteria": {
+    "has_sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "terrestria:basalt_bricks"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand"
+    ]
+  ]
+}

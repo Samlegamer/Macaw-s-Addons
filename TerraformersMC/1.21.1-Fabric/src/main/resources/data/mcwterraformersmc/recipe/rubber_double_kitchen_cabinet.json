@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "double_cabinet",
+  "pattern" : [ "AA", "CC", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "terrestria:rubber_log"
+    },
+    "C" : {
+      "item" : "mcwfurnitures:cabinet_door"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:rubber_double_kitchen_cabinet"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwterraformersmc:willow_tropical_door",
+	  "mcwterraformersmc:willow_bark_glass_door",
+	  "mcwterraformersmc:willow_barn_door",
+	  "mcwterraformersmc:willow_barn_glass_door",
+	  "mcwterraformersmc:willow_beach_door",
+	  "mcwterraformersmc:willow_classic_door",
+	  "mcwterraformersmc:willow_cottage_door",
+	  "mcwterraformersmc:willow_four_panel_door",
+	  "mcwterraformersmc:willow_glass_door",
+	  "mcwterraformersmc:willow_japanese_door",
+	  "mcwterraformersmc:willow_japanese2_door",
+	  "mcwterraformersmc:willow_modern_door",
+	  "mcwterraformersmc:willow_mystic_door",
+	  "mcwterraformersmc:willow_nether_door",
+	  "mcwterraformersmc:willow_paper_door",
+	  "mcwterraformersmc:willow_stable_door",
+	  "mcwterraformersmc:willow_stable_head_door",
+	  "mcwterraformersmc:willow_swamp_door",
+	  "mcwterraformersmc:willow_western_door",
+	  "mcwterraformersmc:willow_waffle_door",
+	  "mcwterraformersmc:willow_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:willow_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

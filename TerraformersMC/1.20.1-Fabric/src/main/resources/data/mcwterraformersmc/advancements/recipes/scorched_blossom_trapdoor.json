@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "mcwterraformersmc:scorched_blossom_trapdoor"
+    ]
+  },
+  "criteria": {
+    "has_plankss": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": 
+			[ "cinderscapes:scorched_planks"
+                      ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwterraformersmc:scorched_blossom_trapdoor"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_plankss",
+      "has_the_recipe"
+    ]
+  ]
+}

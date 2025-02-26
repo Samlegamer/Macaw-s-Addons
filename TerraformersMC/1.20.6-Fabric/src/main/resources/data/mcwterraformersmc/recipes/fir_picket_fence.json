@@ -1,0 +1,30 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "traverse"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "picket",
+  "pattern" : [ "CBC", "CAC" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:stick"
+    },
+    "B" : {
+      "item" : "traverse:fir_planks"
+    },
+    "C" : {
+      "item" : "traverse:fir_log"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwterraformersmc:fir_picket_fence"
+  }
+}

@@ -1,0 +1,34 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stone_stairs",
+    
+    "pattern": [
+    "  F",
+    " FF",
+	"FFF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "mcwterraformersmc:smoky_quartz_bricks_bridge"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:smoky_quartz_bricks_bridge_stair",
+        "count": 6
+    }
+}

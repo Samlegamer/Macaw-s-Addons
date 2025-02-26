@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "double_drawer",
+  "pattern" : [ "AAA", "ABA", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "terrestria:rainbow_eucalyptus_log"
+    },
+    "B" : {
+      "item" : "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:rainbow_eucalyptus_double_drawer"
+  }
+}

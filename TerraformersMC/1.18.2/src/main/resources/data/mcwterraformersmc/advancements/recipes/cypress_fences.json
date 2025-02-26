@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwterraformersmc:cypress_picket_fence",
+	  "mcwterraformersmc:cypress_stockade_fence",
+	  "mcwterraformersmc:cypress_horse_fence",
+	  "mcwterraformersmc:cypress_wired_fence",
+	  "mcwterraformersmc:cypress_highley_gate",
+	  "mcwterraformersmc:cypress_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "terrestria:cypress_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

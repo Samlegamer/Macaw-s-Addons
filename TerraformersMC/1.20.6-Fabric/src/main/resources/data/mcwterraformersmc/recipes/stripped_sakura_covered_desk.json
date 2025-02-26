@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "covered_desk",
+  "pattern" : [ "AAA", "A A" ],
+  "key" : {
+    "A" : {
+      "item" : "terrestria:stripped_sakura_log"
+    }
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwterraformersmc:stripped_sakura_covered_desk"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwterraformersmc:rainbow_eucalyptus_wardrobe",
+	  "mcwterraformersmc:rainbow_eucalyptus_modern_wardrobe",
+	  "mcwterraformersmc:rainbow_eucalyptus_double_wardrobe",
+	  "mcwterraformersmc:rainbow_eucalyptus_bookshelf_cupboard",
+	  "mcwterraformersmc:rainbow_eucalyptus_bookshelf",
+	  "mcwterraformersmc:rainbow_eucalyptus_drawer",
+	  "mcwterraformersmc:rainbow_eucalyptus_double_drawer",
+	  "mcwterraformersmc:rainbow_eucalyptus_bookshelf_drawer",
+	  "mcwterraformersmc:rainbow_eucalyptus_lower_bookshelf_drawer",
+	  "mcwterraformersmc:rainbow_eucalyptus_large_drawer",
+	  "mcwterraformersmc:rainbow_eucalyptus_lower_triple_drawer",
+	  "mcwterraformersmc:rainbow_eucalyptus_triple_drawer",
+	  "mcwterraformersmc:rainbow_eucalyptus_desk",
+	  "mcwterraformersmc:rainbow_eucalyptus_covered_desk",
+	  "mcwterraformersmc:rainbow_eucalyptus_modern_desk",
+	  "mcwterraformersmc:rainbow_eucalyptus_table",
+	  "mcwterraformersmc:rainbow_eucalyptus_end_table",
+	  "mcwterraformersmc:rainbow_eucalyptus_coffee_table",
+	  "mcwterraformersmc:rainbow_eucalyptus_glass_table",
+	  "mcwterraformersmc:rainbow_eucalyptus_chair",
+	  "mcwterraformersmc:rainbow_eucalyptus_modern_chair",
+	  "mcwterraformersmc:rainbow_eucalyptus_striped_chair",
+	  "mcwterraformersmc:rainbow_eucalyptus_stool_chair",
+	  "mcwterraformersmc:rainbow_eucalyptus_counter",
+	  "mcwterraformersmc:rainbow_eucalyptus_drawer_counter",
+	  "mcwterraformersmc:rainbow_eucalyptus_double_drawer_counter",
+	  "mcwterraformersmc:rainbow_eucalyptus_cupboard_counter",
+	  
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_wardrobe",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_modern_wardrobe",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_double_wardrobe",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_bookshelf_cupboard",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_bookshelf",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_drawer",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_double_drawer",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_bookshelf_drawer",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_lower_bookshelf_drawer",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_large_drawer",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_lower_triple_drawer",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_triple_drawer",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_desk",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_covered_desk",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_modern_desk",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_table",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_end_table",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_coffee_table",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_glass_table",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_chair",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_modern_chair",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_striped_chair",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_stool_chair",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_counter",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_drawer_counter",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_double_drawer_counter",
+	  "mcwterraformersmc:stripped_rainbow_eucalyptus_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:rainbow_eucalyptus_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwterraformersmc:rainbow_eucalyptus_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

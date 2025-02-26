@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stool_chair",
+    "pattern":
+    [
+		"A",
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "terrestria:stripped_cypress_log"
+        }, 	
+		
+        "B":
+        {
+            "item": "terrestria:cypress_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:stripped_cypress_stool_chair",
+        "count": 1
+    }
+}
+
+

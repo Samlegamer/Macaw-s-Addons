@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwterraformersmc:redwood_bulk_stairs",
+	  "mcwterraformersmc:redwood_compact_stairs",
+	  "mcwterraformersmc:redwood_loft_stairs",
+	  "mcwterraformersmc:redwood_skyline_stairs",
+	  "mcwterraformersmc:redwood_terrace_stairs",
+	  "mcwterraformersmc:redwood_railing",
+	  "mcwterraformersmc:redwood_balcony",
+	  "mcwterraformersmc:redwood_platform"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:redwood_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwterraformersmc:sakura_tropical_door",
+	  "mcwterraformersmc:sakura_bark_glass_door",
+	  "mcwterraformersmc:sakura_barn_door",
+	  "mcwterraformersmc:sakura_barn_glass_door",
+	  "mcwterraformersmc:sakura_beach_door",
+	  "mcwterraformersmc:sakura_classic_door",
+	  "mcwterraformersmc:sakura_cottage_door",
+	  "mcwterraformersmc:sakura_four_panel_door",
+	  "mcwterraformersmc:sakura_glass_door",
+	  "mcwterraformersmc:sakura_japanese_door",
+	  "mcwterraformersmc:sakura_japanese2_door",
+	  "mcwterraformersmc:sakura_modern_door",
+	  "mcwterraformersmc:sakura_mystic_door",
+	  "mcwterraformersmc:sakura_nether_door",
+	  "mcwterraformersmc:sakura_paper_door",
+	  "mcwterraformersmc:sakura_stable_door",
+	  "mcwterraformersmc:sakura_stable_head_door",
+	  "mcwterraformersmc:sakura_swamp_door",
+	  "mcwterraformersmc:sakura_western_door",
+	  "mcwterraformersmc:sakura_waffle_door",
+	  "mcwterraformersmc:sakura_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:sakura_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

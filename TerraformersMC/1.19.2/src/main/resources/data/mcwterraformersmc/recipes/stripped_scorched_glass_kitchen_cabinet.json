@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "glass_cabinet",
+    "pattern":
+    [
+        "AA",
+        "BC",
+        "AA"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "cinderscapes:stripped_scorched_stem"
+        }, 
+		
+        "B":
+        {
+            "item": "minecraft:glass"
+        },
+		
+        "C":
+        {
+            "item": "mcwfurnitures:cabinet_door"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:stripped_scorched_glass_kitchen_cabinet",
+        "count": 4
+    }
+}
+
+

@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "lower_triple_drawer",
+  "pattern" : [ "AAA", "BAB", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "terrestria:stripped_japanese_maple_log"
+    },
+    "B" : {
+      "item" : "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:stripped_japanese_maple_lower_triple_drawer"
+  }
+}

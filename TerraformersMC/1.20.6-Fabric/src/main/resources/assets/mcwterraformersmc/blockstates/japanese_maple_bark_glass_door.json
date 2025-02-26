@@ -1,0 +1,33 @@
+{
+    "variants": {
+        "facing=east,half=lower,open=false":  { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_bot" },
+        "facing=south,half=lower,open=false": { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_bot", "y": 90 },
+        "facing=west,half=lower,open=false":  { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_bot", "y": 180 },
+        "facing=north,half=lower,open=false": { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_bot", "y": 270 },
+		
+        "facing=east,half=lower,hinge=left,open=true":  { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_bot", "y": 90 },
+        "facing=south,half=lower,hinge=left,open=true": { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_bot", "y": 180 },
+        "facing=west,half=lower,hinge=left,open=true":  { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_bot", "y": 270 },
+        "facing=north,half=lower,hinge=left,open=true": { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_bot" },
+		
+        "facing=east,half=lower,hinge=right,open=true":  { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_bot", "y": 270 },
+        "facing=south,half=lower,hinge=right,open=true": { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_bot" },
+        "facing=west,half=lower,hinge=right,open=true":  { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_bot", "y": 90 },
+        "facing=north,half=lower,hinge=right,open=true": { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_bot", "y": 180 },
+		
+        "facing=east,half=upper,open=false":  { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_top" },
+        "facing=south,half=upper,open=false": { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_top", "y": 90 },
+        "facing=west,half=upper,open=false":  { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_top", "y": 180 },
+        "facing=north,half=upper,open=false": { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_top", "y": 270 },
+		
+        "facing=east,half=upper,hinge=left,open=true":  { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_top", "y": 90 },
+        "facing=south,half=upper,hinge=left,open=true": { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_top", "y": 180 },
+        "facing=west,half=upper,hinge=left,open=true":  { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_top", "y": 270 },
+        "facing=north,half=upper,hinge=left,open=true": { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_top" },
+		
+        "facing=east,half=upper,hinge=right,open=true":  { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_top", "y": 270 },
+        "facing=south,half=upper,hinge=right,open=true": { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_top" },
+        "facing=west,half=upper,hinge=right,open=true":  { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_top", "y": 90 },
+        "facing=north,half=upper,hinge=right,open=true": { "model": "mcwterraformersmc:block/bark/japanese_maple_bark_glass_door_top", "y": 180 }
+    }
+}

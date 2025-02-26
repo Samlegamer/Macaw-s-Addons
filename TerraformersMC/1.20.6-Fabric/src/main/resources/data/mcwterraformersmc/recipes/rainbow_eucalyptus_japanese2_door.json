@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shoji_two",
+  "pattern" : [ "BB", "BB", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "terrestria:rainbow_eucalyptus_slab"
+    },
+    "B" : {
+      "item" : "minecraft:paper"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwterraformersmc:rainbow_eucalyptus_japanese2_door"
+  }
+}

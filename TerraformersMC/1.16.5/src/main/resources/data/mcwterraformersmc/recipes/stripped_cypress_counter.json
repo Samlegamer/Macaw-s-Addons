@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "terrestria:cypress_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "terrestria:stripped_cypress_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:stripped_cypress_counter",
+        "count": 1
+    }
+}
+
+

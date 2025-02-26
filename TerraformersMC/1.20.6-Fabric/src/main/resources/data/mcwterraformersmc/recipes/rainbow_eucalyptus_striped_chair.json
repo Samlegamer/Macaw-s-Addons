@@ -1,0 +1,30 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "striped_chair",
+  "pattern" : [ " A", "BC", "CC" ],
+  "key" : {
+    "A" : {
+      "item" : "terrestria:rainbow_eucalyptus_log"
+    },
+    "B" : {
+      "item" : "terrestria:rainbow_eucalyptus_slab"
+    },
+    "C" : {
+      "item" : "terrestria:rainbow_eucalyptus_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:rainbow_eucalyptus_striped_chair"
+  }
+}

@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "rail_bridges",
+    
+    "pattern": [
+    "F F",
+    "FWF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "terrestria:sakura_fence"
+        },
+        
+        "W":
+        {
+            "item": "terrestria:sakura_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:sakura_rail_bridge",
+        "count": 4
+    }
+}

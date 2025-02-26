@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "traverse"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "large_drawer",
+  "pattern" : [ "ABA", "AAA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "traverse:stripped_fir_log"
+    },
+    "B" : {
+      "item" : "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:stripped_fir_large_drawer"
+  }
+}

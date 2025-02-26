@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cinderscapes:scorched_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwterraformersmc:scorched_planks_path",
+    "count": 3
+  }
+}

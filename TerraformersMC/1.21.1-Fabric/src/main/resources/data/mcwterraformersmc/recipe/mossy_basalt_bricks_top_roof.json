@@ -1,0 +1,21 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:stonecutting",
+  "ingredient" : {
+    "item" : "terrestria:mossy_basalt_bricks"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:mossy_basalt_bricks_top_roof"
+  },
+  "group" : "roofs"
+}

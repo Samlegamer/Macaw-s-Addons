@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "upper_steep",
+  "pattern" : [ " W", " W", "WS" ],
+  "key" : {
+    "W" : {
+      "item" : "terrestria:japanese_maple_planks"
+    },
+    "S" : {
+      "item" : "minecraft:stick"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwterraformersmc:japanese_maple_planks_upper_steep_roof"
+  }
+}

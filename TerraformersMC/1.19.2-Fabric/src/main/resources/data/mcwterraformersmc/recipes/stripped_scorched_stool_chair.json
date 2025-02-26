@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stool_chair",
+    "pattern":
+    [
+		"A",
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "cinderscapes:stripped_scorched_stem"
+        }, 	
+		
+        "B":
+        {
+            "item": "cinderscapes:scorched_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:stripped_scorched_stool_chair",
+        "count": 1
+    }
+}
+
+

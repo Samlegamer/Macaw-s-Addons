@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cinderscapes"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : {
+      "item" : "cinderscapes:stripped_scorched_stem"
+    },
+    "Z" : {
+      "item" : "cinderscapes:scorched_stem"
+    }
+  },
+  "result" : {
+    "item" : "mcwterraformersmc:scorched_terrace_stairs",
+    "count" : 5
+  }
+}

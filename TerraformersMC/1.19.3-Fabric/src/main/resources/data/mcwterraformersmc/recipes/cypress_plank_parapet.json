@@ -1,0 +1,39 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "parapets",
+    
+    "pattern":
+    [
+		"AAA",
+        "ABA"               
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "terrestria:cypress_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:cypress_plank_parapet",
+        "count": 5
+    }
+}

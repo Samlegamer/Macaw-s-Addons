@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "glass_cabinet",
+    "pattern":
+    [
+        "AA",
+        "BC",
+        "AA"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "terrestria:stripped_rubber_log"
+        }, 
+		
+        "B":
+        {
+            "item": "minecraft:glass"
+        },
+		
+        "C":
+        {
+            "item": "mcwfurnitures:cabinet_door"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:stripped_rubber_glass_kitchen_cabinet",
+        "count": 4
+    }
+}
+
+
