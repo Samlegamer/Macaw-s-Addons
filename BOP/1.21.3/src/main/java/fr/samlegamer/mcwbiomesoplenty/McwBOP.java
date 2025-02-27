@@ -1,5 +1,6 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
+import fr.samlegamer.addonslib.client.RendererMcw;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -10,6 +11,7 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -67,12 +69,27 @@ public class McwBOP
     	Doors.setRegistrationWood(WOOD, MODID, block, item, null);
     	Windows.setRegistrationWood(WOOD, MODID, block, item, null);
     	Stairs.setRegistrationWood(WOOD, MODID, block, item, null);
-    	context.getModEventBus().addListener(this::commonSetup);
-    	context.getModEventBus().addListener(this::addTotab);
+    	context.getModEventBus().addListener(this::clientSetup);
+		context.getModEventBus().addListener(this::commonSetup);
+		context.getModEventBus().addListener(this::addTotab);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
-    
+
+	private void clientSetup(FMLClientSetupEvent event)
+	{
+		RendererMcw.Bridges.clientWood(event, MODID, WOOD);
+		RendererMcw.Roofs.clientWood(event, MODID, WOOD);
+		RendererMcw.Fences.clientWood(event, MODID, WOOD);
+		RendererMcw.Fences.clientHedge(event, MODID, LEAVES);
+		RendererMcw.Furnitures.clientWood(event, MODID, WOOD);
+		RendererMcw.Trapdoors.clientWood(event, MODID, WOOD);
+		RendererMcw.Paths.clientWood(event, MODID, WOOD);
+		RendererMcw.Stairs.clientWood(event, MODID, WOOD);
+		RendererMcw.Doors.clientWood(event, MODID, WOOD);
+		RendererMcw.Windows.clientWood(event, MODID, WOOD);
+	}
+
 	private void commonSetup(FMLCommonSetupEvent event)
 	{
 		if(ModList.get().isLoaded("mcwfurnitures"))
