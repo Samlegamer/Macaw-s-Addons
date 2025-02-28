@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "attic",
+  "pattern" : [ " W", "WG" ],
+  "key" : {
+    "W" : {
+      "item" : "biomesoplenty:dead_log"
+    },
+    "G" : {
+      "item" : "minecraft:glass"
+    }
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwbiomesoplenty:dead_attic_roof"
+  }
+}

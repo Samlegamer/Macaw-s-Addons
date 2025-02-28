@@ -12,7 +12,7 @@ import net.fabricmc.api.Environment;
 @Environment(EnvType.CLIENT)
 public class Client implements ClientModInitializer
 {
-	private static final List<String> LEAVES_NO_COLORED = Arrays.asList("mahogany", "willow", "palm", "flowering_oak");
+	private static final List<String> LEAVES_NO_COLORED = Arrays.asList("pine", "mahogany", "willow", "palm", "flowering_oak");
 	private static final ColorRegistry COLOR = new ColorRegistry(McwBOP.MODID, LEAVES_NO_COLORED);
 
 	@Override

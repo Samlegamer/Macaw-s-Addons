@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "rail_bridges",
+  "pattern" : [ "F F", "FWF" ],
+  "key" : {
+    "F" : {
+      "item" : "biomesoplenty:empyreal_fence"
+    },
+    "W" : {
+      "item" : "biomesoplenty:empyreal_slab"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:empyreal_rail_bridge"
+  }
+}

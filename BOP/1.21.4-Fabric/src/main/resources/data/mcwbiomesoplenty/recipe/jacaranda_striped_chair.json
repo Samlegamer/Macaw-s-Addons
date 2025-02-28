@@ -1,0 +1,26 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "striped_chair",
+  "pattern" : [ " A", "BC", "CC" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:jacaranda_log"
+    },
+    "B" : {
+      "item" : "biomesoplenty:jacaranda_slab"
+    },
+    "C" : {
+      "item" : "biomesoplenty:jacaranda_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:jacaranda_striped_chair"
+  }
+}

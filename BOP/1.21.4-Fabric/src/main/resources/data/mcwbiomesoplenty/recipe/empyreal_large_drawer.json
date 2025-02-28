@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "large_drawer",
+  "pattern" : [ "ABA", "AAA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:empyreal_log"
+    },
+    "B" : {
+      "item" : "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:empyreal_large_drawer"
+  }
+}

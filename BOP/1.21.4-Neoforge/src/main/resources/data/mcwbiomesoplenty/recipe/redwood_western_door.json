@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "western",
+  "pattern" : [ "  A", "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:redwood_planks"
+    },
+    "B" : {
+      "item" : "biomesoplenty:redwood_slab"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:redwood_western_door"
+  }
+}

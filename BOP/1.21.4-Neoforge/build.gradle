@@ -22,7 +22,7 @@ repositories {
 }
 
 base {
-    archivesName = mod_id
+    archivesName = mod_id + "-neoforge"
 }
 
 // Mojang ships Java 21 to end users starting in 1.20.5, so mods should target Java 21.
@@ -111,6 +111,18 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
+repositories
+        {
+            maven {
+                name = "CurseForge"
+                url = "https://minecraft.curseforge.com/api/maven/"
+            }
+            maven {
+                name = "CurseMaven"
+                url = "https://www.cursemaven.com"
+            }
+        }
+
 dependencies {
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
@@ -118,6 +130,7 @@ dependencies {
     // compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
     // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it
     // localRuntime "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
+    implementation "curse.maven:addonslib-1090999:6247345"
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
