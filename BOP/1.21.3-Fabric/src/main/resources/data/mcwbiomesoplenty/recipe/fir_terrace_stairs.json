@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : {
+      "item" : "biomesoplenty:stripped_fir_log"
+    },
+    "Z" : {
+      "item" : "biomesoplenty:fir_log"
+    }
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwbiomesoplenty:fir_terrace_stairs"
+  }
+}

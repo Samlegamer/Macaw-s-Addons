@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bamboo_trapdoors",
+  "pattern" : [ "A", "B", "A" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:jacaranda_planks"
+    },
+    "B" : {
+      "item" : "mcwtrpdoors:print_bamboo"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:jacaranda_bamboo_trapdoor"
+  }
+}

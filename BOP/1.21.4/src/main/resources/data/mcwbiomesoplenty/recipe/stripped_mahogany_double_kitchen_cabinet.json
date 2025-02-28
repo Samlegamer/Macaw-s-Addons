@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "double_cabinet",
+  "pattern" : [ "AA", "CC", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:stripped_mahogany_log"
+    },
+    "C" : {
+      "item" : "mcwfurnitures:cabinet_door"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:stripped_mahogany_double_kitchen_cabinet"
+  }
+}

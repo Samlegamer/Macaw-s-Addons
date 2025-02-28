@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "horse",
+  "pattern" : [ "ABA", "BAB" ],
+  "key" : {
+    "B" : {
+      "item" : "minecraft:stick"
+    },
+    "A" : {
+      "item" : "biomesoplenty:dead_log"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:dead_horse_fence"
+  }
+}

@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "blinds",
+  "pattern" : [ "AAA", "BBB", "BBB" ],
+  "key" : {
+    "B" : {
+      "item" : "minecraft:stick"
+    },
+    "A" : {
+      "item" : "biomesoplenty:umbran_slab"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:umbran_blinds"
+  }
+}
