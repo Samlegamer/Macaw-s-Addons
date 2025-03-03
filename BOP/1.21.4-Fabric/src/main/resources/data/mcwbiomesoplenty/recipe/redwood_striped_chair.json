@@ -1,23 +1,20 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "striped_chair",
   "pattern" : [ " A", "BC", "CC" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:redwood_log"
-    },
-    "B" : {
-      "item" : "biomesoplenty:redwood_slab"
-    },
-    "C" : {
-      "item" : "biomesoplenty:redwood_fence"
-    }
+    "A" : "biomesoplenty:redwood_log",
+    "B" : "biomesoplenty:redwood_slab",
+    "C" : "biomesoplenty:redwood_fence"
   },
   "result" : {
     "count" : 1,

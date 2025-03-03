@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern_desk",
+  "pattern" : [ "AAA", "BCB" ],
+  "key" : {
+    "A": "premium_wood:stripped_silverbell_log",
+    "B": "premium_wood:silverbell_fence",
+    "C": "minecraft:stick"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwmoddinglegacy:stripped_pwood_silverbell_modern_desk"
+  }
+}

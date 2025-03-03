@@ -1,4 +1,19 @@
 {
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
@@ -53,4 +68,7 @@
       "has_the_recipe"
     ]
   ]
+}
+
+]
 }

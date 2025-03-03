@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "picket",
+  "pattern" : [ "CBC", "CAC" ],
+  "key" : {
+    "A": "minecraft:stick",
+    "B": "blue_skies:dusk_planks",
+    "C": "blue_skies:dusk_log"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwmoddinglegacy:bsky_dusk_picket_fence"
+  }
+}

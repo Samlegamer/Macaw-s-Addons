@@ -1,17 +1,19 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "log_stairs",
   "pattern" : [ "  F", " FF", "FFF" ],
   "key" : {
-    "F" : {
-      "item" : "mcwbiomesoplenty:magic_log_bridge_middle"
-    }
+    "F" : "mcwbiomesoplenty:magic_log_bridge_middle"
   },
   "result" : {
     "count" : 6,

@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "highley",
   "pattern" : [ "ABA", "ABA" ],
   "key" : {
-    "A" : {
-      "item" : "minecraft:stick"
-    },
-    "B" : {
-      "item" : "biomesoplenty:palm_log"
-    }
+    "A" : "minecraft:stick",
+    "B" : "biomesoplenty:palm_log"
   },
   "result" : {
     "count" : 1,

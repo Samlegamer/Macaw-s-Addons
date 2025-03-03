@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "barn",
+  "pattern" : [ "BB", "AA", "AA" ],
+  "key" : {
+    "A": "blue_skies:frostbright_planks",
+    "B": "minecraft:stick"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwmoddinglegacy:bsky_frostbright_barn_door"
+  }
+}

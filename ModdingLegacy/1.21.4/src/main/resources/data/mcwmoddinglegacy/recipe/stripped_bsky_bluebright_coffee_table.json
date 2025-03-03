@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "coffee_table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A": "blue_skies:stripped_bluebright_log",
+    "B": "blue_skies:bluebright_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:stripped_bsky_bluebright_coffee_table"
+  }
+}

@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwdoors"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "waffle",
   "pattern" : [ "A", "B", "A" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:pine_planks"
-    },
-    "B" : {
-      "item" : "mcwdoors:print_waffle"
-    }
+    "A" : "biomesoplenty:pine_planks",
+    "B" : "mcwdoors:print_waffle"
   },
   "result" : {
     "count" : 1,
     "id" : "mcwbiomesoplenty:pine_waffle_door"
   }
+}
+  ]
 }

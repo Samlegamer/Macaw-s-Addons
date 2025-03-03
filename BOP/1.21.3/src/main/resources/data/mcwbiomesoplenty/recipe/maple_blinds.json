@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwwindows"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwwindows"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "blinds",
   "pattern" : [ "AAA", "BBB", "BBB" ],
   "key" : {
-    "B" : {
-      "item" : "minecraft:stick"
-    },
-    "A" : {
-      "item" : "biomesoplenty:maple_slab"
-    }
+    "B" : "minecraft:stick",
+    "A" : "biomesoplenty:maple_slab"
   },
   "result" : {
     "count" : 3,
     "id" : "mcwbiomesoplenty:maple_blinds"
   }
+}
+  ]
 }

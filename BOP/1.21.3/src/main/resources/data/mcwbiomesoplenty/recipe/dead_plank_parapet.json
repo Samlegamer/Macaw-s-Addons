@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwwindows"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwwindows"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "parapets",
   "pattern" : [ "AAA", "ABA" ],
   "key" : {
-    "A" : {
-      "item" : "minecraft:stick"
-    },
-    "B" : {
-      "item" : "biomesoplenty:dead_planks"
-    }
+    "A" : "minecraft:stick",
+    "B" : "biomesoplenty:dead_planks"
   },
   "result" : {
     "count" : 5,
     "id" : "mcwbiomesoplenty:dead_plank_parapet"
   }
+}
+  ]
 }

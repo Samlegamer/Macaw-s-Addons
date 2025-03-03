@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwtrpdoors"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "paper_trapdoors",
   "pattern" : [ "A", "B", "A" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:willow_planks"
-    },
-    "B" : {
-      "item" : "mcwtrpdoors:print_paper"
-    }
+    "A" : "biomesoplenty:willow_planks",
+    "B" : "mcwtrpdoors:print_paper"
   },
   "result" : {
     "count" : 1,

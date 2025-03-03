@@ -1,5 +1,19 @@
 {
-  "parent": "minecraft:recipes/root",
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },  "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
 	"mcwbiomesoplenty:hellbark_hedge"
@@ -22,4 +36,6 @@
       "has_birch"
     ]
   ]
+}
+]
 }

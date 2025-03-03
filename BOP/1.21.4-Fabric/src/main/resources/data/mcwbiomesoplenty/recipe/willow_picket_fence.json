@@ -1,23 +1,20 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "picket",
   "pattern" : [ "CBC", "CAC" ],
   "key" : {
-    "A" : {
-      "item" : "minecraft:stick"
-    },
-    "B" : {
-      "item" : "biomesoplenty:willow_planks"
-    },
-    "C" : {
-      "item" : "biomesoplenty:willow_log"
-    }
+    "A" : "minecraft:stick",
+    "B" : "biomesoplenty:willow_planks",
+    "C" : "biomesoplenty:willow_log"
   },
   "result" : {
     "count" : 3,

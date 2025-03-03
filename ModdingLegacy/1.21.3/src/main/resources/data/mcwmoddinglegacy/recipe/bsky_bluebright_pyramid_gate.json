@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "pyramid",
+  "pattern" : [ "ABA", "ACA" ],
+  "key" : {
+    "A": "minecraft:stick",
+    "B": "blue_skies:bluebright_log",
+    "C": "blue_skies:bluebright_planks"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:bsky_bluebright_pyramid_gate"
+  }
+}

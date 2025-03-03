@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "skyline_stairs",
+  "pattern" : [ "W  ", "ZW " ],
+  "key" : {
+    "W": "blue_skies:stripped_dusk_log",
+    "Z": "blue_skies:dusk_log"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwmoddinglegacy:bsky_dusk_skyline_stairs"
+  }
+}

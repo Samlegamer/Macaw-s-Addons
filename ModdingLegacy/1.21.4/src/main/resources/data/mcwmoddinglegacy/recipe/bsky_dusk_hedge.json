@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "hedge",
+  "pattern" : [ "AA", "AA" ],
+  "key" : {
+    "A": "blue_skies:dusk_leaves"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwmoddinglegacy:bsky_dusk_hedge"
+  }
+}

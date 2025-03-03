@@ -1,20 +1,20 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "wooden_piers",
   "pattern" : [ "WFW" ],
   "key" : {
-    "F" : {
-      "item" : "biomesoplenty:empyreal_fence"
-    },
-    "W" : {
-      "item" : "biomesoplenty:empyreal_log"
-    }
+    "F" : "biomesoplenty:empyreal_fence",
+    "W" : "biomesoplenty:empyreal_log"
   },
   "result" : {
     "count" : 3,

@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "compact_stairs",
+  "pattern" : [ "W  ", "WW ", "WWW" ],
+  "key" : {
+    "W": "blue_skies:stripped_starlit_log"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwmoddinglegacy:bsky_starlit_compact_stairs"
+  }
+}

@@ -1,26 +1,31 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "glass_cabinet",
   "pattern" : [ "AA", "BC", "AA" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:redwood_log"
-    },
-    "B" : {
-      "item" : "minecraft:glass"
-    },
-    "C" : {
-      "item" : "mcwfurnitures:cabinet_door"
-    }
+    "A" : "biomesoplenty:redwood_log",
+    "B" : "minecraft:glass",
+    "C" : "mcwfurnitures:cabinet_door"
   },
   "result" : {
     "count" : 4,
     "id" : "mcwbiomesoplenty:redwood_glass_kitchen_cabinet"
   }
+}
+  ]
 }

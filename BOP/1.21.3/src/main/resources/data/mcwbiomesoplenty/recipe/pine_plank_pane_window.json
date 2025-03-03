@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwwindows"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwwindows"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "windows_pane",
   "pattern" : [ "AAA", "ABA", "AAA" ],
   "key" : {
-    "A" : {
-      "item" : "mcwwindows:window_base"
-    },
-    "B" : {
-      "item" : "biomesoplenty:pine_planks"
-    }
+    "A" : "mcwwindows:window_base",
+    "B" : "biomesoplenty:pine_planks"
   },
   "result" : {
     "count" : 8,
     "id" : "mcwbiomesoplenty:pine_plank_pane_window"
   }
+}
+  ]
 }

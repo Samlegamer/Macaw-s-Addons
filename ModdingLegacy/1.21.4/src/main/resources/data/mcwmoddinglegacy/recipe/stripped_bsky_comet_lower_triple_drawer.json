@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "lower_triple_drawer",
+  "pattern" : [ "AAA", "BAB", "ABA" ],
+  "key" : {
+    "A": "blue_skies:stripped_comet_log",
+    "B": "mcwfurnitures:cabinet_drawer"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwmoddinglegacy:stripped_bsky_comet_lower_triple_drawer"
+  }
+}

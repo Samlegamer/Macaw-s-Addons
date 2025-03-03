@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwtrpdoors"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "barn_trapdoors",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:maple_planks"
-    },
-    "B" : {
-      "item" : "mcwbiomesoplenty:maple_glass_trapdoor"
-    }
+    "A" : "biomesoplenty:maple_planks",
+    "B" : "mcwbiomesoplenty:maple_glass_trapdoor"
   },
   "result" : {
     "count" : 1,

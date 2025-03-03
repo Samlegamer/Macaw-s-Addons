@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwstairs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "mcwstairs_balcony",
   "pattern" : [ "WWW", "Z Z", "WWW" ],
   "key" : {
-    "W" : {
-      "item" : "minecraft:stick"
-    },
-    "Z" : {
-      "item" : "biomesoplenty:fir_fence"
-    }
+    "W" : "minecraft:stick",
+    "Z" : "biomesoplenty:fir_fence"
   },
   "result" : {
     "count" : 6,
     "id" : "mcwbiomesoplenty:fir_balcony"
   }
+}
+  ]
 }

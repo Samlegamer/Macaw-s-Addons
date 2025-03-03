@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwtrpdoors"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwtrpdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "barrel_trapdoors",
   "pattern" : [ " A ", "ABA", " A " ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:hellbark_planks"
-    },
-    "B" : {
-      "item" : "minecraft:barrel"
-    }
+    "A" : "biomesoplenty:hellbark_planks",
+    "B" : "minecraft:barrel"
   },
   "result" : {
     "count" : 4,
     "id" : "mcwbiomesoplenty:hellbark_barrel_trapdoor"
   }
+}
+  ]
 }

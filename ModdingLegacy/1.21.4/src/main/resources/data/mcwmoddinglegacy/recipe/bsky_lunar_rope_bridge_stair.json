@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "rope_stairs",
+  "pattern" : [ "  F", " FF", "FFF" ],
+  "key" : {
+    "F": "mcwmoddinglegacy:rope_bsky_lunar_bridge"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwmoddinglegacy:bsky_lunar_rope_bridge_stair"
+  }
+}

@@ -1,17 +1,18 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "loft_stairs",
   "pattern" : [ "W  ", " W ", "  W" ],
   "key" : {
-    "W" : {
-      "item" : "biomesoplenty:stripped_redwood_log"
-    }
+    "W" : "biomesoplenty:stripped_redwood_log"
   },
   "result" : {
     "count" : 3,

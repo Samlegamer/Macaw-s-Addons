@@ -1,20 +1,20 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "log_bridges",
   "pattern" : [ "F F", "WWW" ],
   "key" : {
-    "F" : {
-      "item" : "biomesoplenty:hellbark_fence"
-    },
-    "W" : {
-      "item" : "biomesoplenty:hellbark_slab"
-    }
+    "F" : "biomesoplenty:hellbark_fence",
+    "W" : "biomesoplenty:hellbark_slab"
   },
   "result" : {
     "count" : 4,

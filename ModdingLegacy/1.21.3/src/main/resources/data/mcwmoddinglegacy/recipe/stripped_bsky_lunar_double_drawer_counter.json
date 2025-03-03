@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "double_drawer_counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A": "blue_skies:lunar_slab",
+    "B": "mcwmoddinglegacy:stripped_bsky_lunar_double_drawer"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:stripped_bsky_lunar_double_drawer_counter"
+  }
+}

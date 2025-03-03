@@ -1,20 +1,20 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "terrace_stairs",
   "pattern" : [ "W  ", "ZW ", " ZW" ],
   "key" : {
-    "W" : {
-      "item" : "biomesoplenty:stripped_willow_log"
-    },
-    "Z" : {
-      "item" : "biomesoplenty:willow_log"
-    }
+    "W" : "biomesoplenty:stripped_willow_log",
+    "Z" : "biomesoplenty:willow_log"
   },
   "result" : {
     "count" : 5,

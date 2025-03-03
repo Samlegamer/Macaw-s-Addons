@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W": "premium_wood:stripped_magic_log",
+    "Z": "premium_wood:magic_log"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwmoddinglegacy:pwood_magic_terrace_stairs"
+  }
+}

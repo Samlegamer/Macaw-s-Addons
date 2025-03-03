@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwbridges"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "rail_bridges",
   "pattern" : [ "F F", "FWF" ],
   "key" : {
-    "F" : {
-      "item" : "biomesoplenty:umbran_fence"
-    },
-    "W" : {
-      "item" : "biomesoplenty:umbran_slab"
-    }
+    "F" : "biomesoplenty:umbran_fence",
+    "W" : "biomesoplenty:umbran_slab"
   },
   "result" : {
     "count" : 4,
     "id" : "mcwbiomesoplenty:umbran_rail_bridge"
   }
+}
+  ]
 }

@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "double_drawer_counter",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:maple_slab"
-    },
-    "B" : {
-      "item" : "mcwbiomesoplenty:maple_double_drawer"
-    }
+    "A" : "biomesoplenty:maple_slab",
+    "B" : "mcwbiomesoplenty:maple_double_drawer"
   },
   "result" : {
     "count" : 1,
     "id" : "mcwbiomesoplenty:maple_double_drawer_counter"
   }
+}
+  ]
 }

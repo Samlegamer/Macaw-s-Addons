@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwwindows"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwwindows"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "windows_two",
   "pattern" : [ "AAA", "ABA", "AAA" ],
   "key" : {
-    "A" : {
-      "item" : "mcwwindows:window_half_bar_base"
-    },
-    "B" : {
-      "item" : "biomesoplenty:palm_log"
-    }
+    "A" : "mcwwindows:window_half_bar_base",
+    "B" : "biomesoplenty:palm_log"
   },
   "result" : {
     "count" : 8,
     "id" : "mcwbiomesoplenty:palm_window2"
   }
+}
+  ]
 }

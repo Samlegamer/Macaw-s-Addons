@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " ZZ", " WW", "   " ],
+  "key" : {
+    "W": "blue_skies:comet_log",
+    "Z": "blue_skies:comet_slab"
+  },
+  "result" : {
+    "count" : 12,
+    "id" : "mcwmoddinglegacy:bsky_comet_platform"
+  }
+}

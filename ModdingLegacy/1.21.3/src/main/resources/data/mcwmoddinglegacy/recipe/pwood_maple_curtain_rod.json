@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "curtain_rods",
+  "pattern" : [ "ABA" ],
+  "key" : {
+    "A": "minecraft:stick",
+    "B": "premium_wood:maple_log"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwmoddinglegacy:pwood_maple_curtain_rod"
+  }
+}

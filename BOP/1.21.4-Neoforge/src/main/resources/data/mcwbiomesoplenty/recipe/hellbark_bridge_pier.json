@@ -1,20 +1,20 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "wooden_piers",
   "pattern" : [ "WFW" ],
   "key" : {
-    "F" : {
-      "item" : "biomesoplenty:hellbark_fence"
-    },
-    "W" : {
-      "item" : "biomesoplenty:hellbark_log"
-    }
+    "F" : "biomesoplenty:hellbark_fence",
+    "W" : "biomesoplenty:hellbark_log"
   },
   "result" : {
     "count" : 3,

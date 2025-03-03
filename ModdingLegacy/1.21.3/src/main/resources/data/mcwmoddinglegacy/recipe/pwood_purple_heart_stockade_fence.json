@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stockade",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A": "premium_wood:purple_heart_log",
+    "B": "premium_wood:purple_heart_planks"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwmoddinglegacy:pwood_purple_heart_stockade_fence"
+  }
+}

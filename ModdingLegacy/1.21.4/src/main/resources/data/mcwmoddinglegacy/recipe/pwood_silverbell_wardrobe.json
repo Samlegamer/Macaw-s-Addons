@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "wardrobe",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A": "premium_wood:silverbell_log",
+    "B": "mcwfurnitures:cabinet_door"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwmoddinglegacy:pwood_silverbell_wardrobe"
+  }
+}

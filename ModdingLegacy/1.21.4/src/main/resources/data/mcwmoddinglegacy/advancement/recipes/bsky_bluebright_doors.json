@@ -1,0 +1,66 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwmoddinglegacy:bsky_bluebright_bark_glass_door",
+	  "mcwmoddinglegacy:bsky_bluebright_barn_door",
+	  "mcwmoddinglegacy:bsky_bluebright_barn_glass_door",
+	  "mcwmoddinglegacy:bsky_bluebright_beach_door",
+	  "mcwmoddinglegacy:bsky_bluebright_classic_door",
+	  "mcwmoddinglegacy:bsky_bluebright_cottage_door",
+	  "mcwmoddinglegacy:bsky_bluebright_four_panel_door",
+	  "mcwmoddinglegacy:bsky_bluebright_glass_door",
+	  "mcwmoddinglegacy:bsky_bluebright_japanese_door",
+	  "mcwmoddinglegacy:bsky_bluebright_japanese2_door",
+	  "mcwmoddinglegacy:bsky_bluebright_modern_door",
+	  "mcwmoddinglegacy:bsky_bluebright_mystic_door",
+	  "mcwmoddinglegacy:bsky_bluebright_nether_door",
+	  "mcwmoddinglegacy:bsky_bluebright_paper_door",
+	  "mcwmoddinglegacy:bsky_bluebright_stable_door",
+	  "mcwmoddinglegacy:bsky_bluebright_stable_head_door",
+	  "mcwmoddinglegacy:bsky_bluebright_swamp_door",
+	  "mcwmoddinglegacy:bsky_bluebright_western_door",
+	  "mcwmoddinglegacy:bsky_bluebright_waffle_door",
+	  "mcwmoddinglegacy:bsky_bluebright_tropical_door",
+	  "mcwmoddinglegacy:bsky_bluebright_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:bluebright_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

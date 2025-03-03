@@ -1,20 +1,20 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "table",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A" : {
-      "item" : "mcwbiomesoplenty:empyreal_coffee_table"
-    },
-    "B" : {
-      "item" : "biomesoplenty:empyreal_fence"
-    }
+    "A" : "mcwbiomesoplenty:empyreal_coffee_table",
+    "B" : "biomesoplenty:empyreal_fence"
   },
   "result" : {
     "count" : 1,

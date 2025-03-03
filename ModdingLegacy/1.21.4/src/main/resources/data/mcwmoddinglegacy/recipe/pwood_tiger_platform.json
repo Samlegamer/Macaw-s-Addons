@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " ZZ", " WW", "   " ],
+  "key" : {
+    "W": "premium_wood:tiger_log",
+    "Z": "premium_wood:tiger_slab"
+  },
+  "result" : {
+    "count" : 12,
+    "id" : "mcwmoddinglegacy:pwood_tiger_platform"
+  }
+}

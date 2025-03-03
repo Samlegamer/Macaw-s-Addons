@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "log_bridges",
   "pattern" : [ "F F", "WWW" ],
   "key" : {
-    "F" : {
-      "item" : "biomesoplenty:fir_fence"
-    },
-    "W" : {
-      "item" : "biomesoplenty:fir_slab"
-    }
+    "F" : "biomesoplenty:fir_fence",
+    "W" : "biomesoplenty:fir_slab"
   },
   "result" : {
     "count" : 4,

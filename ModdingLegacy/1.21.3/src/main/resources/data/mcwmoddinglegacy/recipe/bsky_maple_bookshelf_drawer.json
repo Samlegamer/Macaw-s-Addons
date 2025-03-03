@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bookshelf_drawer",
+  "pattern" : [ "AAA", "ABA", "ACA" ],
+  "key" : {
+    "A": "blue_skies:maple_log",
+    "B": "mcwfurnitures:cabinet_drawer",
+    "C": "minecraft:book"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwmoddinglegacy:bsky_maple_bookshelf_drawer"
+  }
+}

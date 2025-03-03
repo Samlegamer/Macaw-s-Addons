@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfences"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "biomesoplenty"
     }
   ],
@@ -13,9 +13,7 @@
   "group" : "hedge",
   "pattern" : [ "AA", "AA" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:mahogany_leaves"
-    }
+    "A" : "biomesoplenty:mahogany_leaves"
   },
   "result" : {
     "count" : 4,

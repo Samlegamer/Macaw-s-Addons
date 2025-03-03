@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "upper_steep",
+  "pattern" : [ " W", " W", "WS" ],
+  "key" : {
+    "W": "blue_skies:dusk_planks",
+    "S": "minecraft:stick"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwmoddinglegacy:bsky_dusk_planks_upper_steep_roof"
+  }
+}

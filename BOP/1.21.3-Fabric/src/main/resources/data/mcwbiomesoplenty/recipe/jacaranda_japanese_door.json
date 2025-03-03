@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwdoors"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "shoji",
   "pattern" : [ "BB", "BB", "AA" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:jacaranda_planks"
-    },
-    "B" : {
-      "item" : "minecraft:paper"
-    }
+    "A" : "biomesoplenty:jacaranda_planks",
+    "B" : "minecraft:paper"
   },
   "result" : {
     "count" : 3,

@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "ranch_trapdoors",
+  "pattern" : [ "ABA", "BBB", "ABA" ],
+  "key" : {
+    "A": "premium_wood:purple_heart_log",
+    "B": "minecraft:stick"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwmoddinglegacy:pwood_purple_heart_ranch_trapdoor"
+  }
+}

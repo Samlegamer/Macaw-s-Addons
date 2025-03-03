@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "end_table",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A" : {
-      "item" : "mcwbiomesoplenty:empyreal_table"
-    },
-    "B" : {
-      "item" : "biomesoplenty:empyreal_log"
-    }
+    "A" : "mcwbiomesoplenty:empyreal_table",
+    "B" : "biomesoplenty:empyreal_log"
   },
   "result" : {
     "count" : 1,

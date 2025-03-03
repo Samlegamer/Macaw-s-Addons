@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "wired",
+  "pattern" : [ "ACA", "ABA" ],
+  "key" : {
+    "A": "minecraft:stick",
+    "B": "blue_skies:frostbright_log",
+    "C": "minecraft:iron_bars"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwmoddinglegacy:bsky_frostbright_wired_fence"
+  }
+}

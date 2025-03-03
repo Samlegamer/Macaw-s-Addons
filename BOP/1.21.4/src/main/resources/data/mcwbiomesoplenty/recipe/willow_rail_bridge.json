@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwbridges"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "rail_bridges",
   "pattern" : [ "F F", "FWF" ],
   "key" : {
-    "F" : {
-      "item" : "biomesoplenty:willow_fence"
-    },
-    "W" : {
-      "item" : "biomesoplenty:willow_slab"
-    }
+    "F" : "biomesoplenty:willow_fence",
+    "W" : "biomesoplenty:willow_slab"
   },
   "result" : {
     "count" : 4,
     "id" : "mcwbiomesoplenty:willow_rail_bridge"
   }
+}
+  ]
 }

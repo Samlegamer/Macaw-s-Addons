@@ -1,20 +1,20 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "stockade",
   "pattern" : [ "ABA", "ABA" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:hellbark_log"
-    },
-    "B" : {
-      "item" : "biomesoplenty:hellbark_planks"
-    }
+    "A" : "biomesoplenty:hellbark_log",
+    "B" : "biomesoplenty:hellbark_planks"
   },
   "result" : {
     "count" : 3,

@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "terrace_stairs",
   "pattern" : [ "W  ", "ZW ", " ZW" ],
   "key" : {
-    "W" : {
-      "item" : "biomesoplenty:stripped_hellbark_log"
-    },
-    "Z" : {
-      "item" : "biomesoplenty:hellbark_log"
-    }
+    "W" : "biomesoplenty:stripped_hellbark_log",
+    "Z" : "biomesoplenty:hellbark_log"
   },
   "result" : {
     "count" : 5,

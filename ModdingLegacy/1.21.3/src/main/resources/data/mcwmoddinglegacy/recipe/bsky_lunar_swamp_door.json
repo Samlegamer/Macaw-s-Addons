@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "swamp",
+  "pattern" : [ "A", "B", "A" ],
+  "key" : {
+    "A": "blue_skies:lunar_planks",
+    "B": "mcwdoors:print_swamp"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:bsky_lunar_swamp_door"
+  }
+}

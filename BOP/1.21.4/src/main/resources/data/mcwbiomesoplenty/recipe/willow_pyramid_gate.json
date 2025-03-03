@@ -1,26 +1,31 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "pyramid",
   "pattern" : [ "ABA", "ACA" ],
   "key" : {
-    "A" : {
-      "item" : "minecraft:stick"
-    },
-    "B" : {
-      "item" : "biomesoplenty:willow_log"
-    },
-    "C" : {
-      "item" : "biomesoplenty:willow_planks"
-    }
+    "A" : "minecraft:stick",
+    "B" : "biomesoplenty:willow_log",
+    "C" : "biomesoplenty:willow_planks"
   },
   "result" : {
     "count" : 1,
     "id" : "mcwbiomesoplenty:willow_pyramid_gate"
   }
+}
+  ]
 }

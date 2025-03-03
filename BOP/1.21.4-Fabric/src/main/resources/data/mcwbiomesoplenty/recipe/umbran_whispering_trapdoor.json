@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwtrpdoors"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "whispering_trapdoors",
   "pattern" : [ " A ", "ABA", " A " ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:umbran_planks"
-    },
-    "B" : {
-      "item" : "mcwtrpdoors:print_whispering"
-    }
+    "A" : "biomesoplenty:umbran_planks",
+    "B" : "mcwtrpdoors:print_whispering"
   },
   "result" : {
     "count" : 4,

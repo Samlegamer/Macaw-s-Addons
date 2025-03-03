@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bookshelf_cupboard",
+  "pattern" : [ "AAA", "BAC", "AAA" ],
+  "key" : {
+    "A": "premium_wood:stripped_magic_log",
+    "B": "mcwfurnitures:cabinet_door",
+    "C": "minecraft:book"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwmoddinglegacy:stripped_pwood_magic_bookshelf_cupboard"
+  }
+}

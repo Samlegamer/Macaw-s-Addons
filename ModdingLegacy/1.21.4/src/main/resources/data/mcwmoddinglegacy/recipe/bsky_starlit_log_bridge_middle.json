@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shapeless",
+  "group" : "recyclable_bridges",
+  "ingredients" : [ "mcwmoddinglegacy:bsky_starlit_log_bridge_stair" ],
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:bsky_starlit_log_bridge_middle"
+  }
+}

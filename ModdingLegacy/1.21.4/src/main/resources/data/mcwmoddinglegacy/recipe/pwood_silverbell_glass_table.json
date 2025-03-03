@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "glass_table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A": "mcwmoddinglegacy:pwood_silverbell_end_table",
+    "B": "minecraft:glass"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:pwood_silverbell_glass_table"
+  }
+}

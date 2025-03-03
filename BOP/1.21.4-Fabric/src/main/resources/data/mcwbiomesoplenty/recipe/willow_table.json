@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "table",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A" : {
-      "item" : "mcwbiomesoplenty:willow_coffee_table"
-    },
-    "B" : {
-      "item" : "biomesoplenty:willow_fence"
-    }
+    "A" : "mcwbiomesoplenty:willow_coffee_table",
+    "B" : "biomesoplenty:willow_fence"
   },
   "result" : {
     "count" : 1,

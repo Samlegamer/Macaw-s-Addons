@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwdoors"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "glassed",
   "pattern" : [ "AB", "BB", "AB" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:empyreal_planks"
-    },
-    "B" : {
-      "item" : "minecraft:glass_pane"
-    }
+    "A" : "biomesoplenty:empyreal_planks",
+    "B" : "minecraft:glass_pane"
   },
   "result" : {
     "count" : 3,

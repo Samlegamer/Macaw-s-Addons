@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwbridges"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "wooden_piers",
   "pattern" : [ "WFW" ],
   "key" : {
-    "F" : {
-      "item" : "biomesoplenty:umbran_fence"
-    },
-    "W" : {
-      "item" : "biomesoplenty:umbran_log"
-    }
+    "F" : "biomesoplenty:umbran_fence",
+    "W" : "biomesoplenty:umbran_log"
   },
   "result" : {
     "count" : 3,
     "id" : "mcwbiomesoplenty:umbran_bridge_pier"
   }
+}
+  ]
 }

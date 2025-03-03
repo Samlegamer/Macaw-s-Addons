@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "drawer_counter",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:pine_slab"
-    },
-    "B" : {
-      "item" : "mcwbiomesoplenty:pine_drawer"
-    }
+    "A" : "biomesoplenty:pine_slab",
+    "B" : "mcwbiomesoplenty:pine_drawer"
   },
   "result" : {
     "count" : 1,

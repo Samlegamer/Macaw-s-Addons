@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "double_cabinet",
   "pattern" : [ "AA", "CC", "AA" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:stripped_hellbark_log"
-    },
-    "C" : {
-      "item" : "mcwfurnitures:cabinet_door"
-    }
+    "A" : "biomesoplenty:stripped_hellbark_log",
+    "C" : "mcwfurnitures:cabinet_door"
   },
   "result" : {
     "count" : 4,

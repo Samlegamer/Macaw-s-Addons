@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "end_table",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A" : {
-      "item" : "mcwbiomesoplenty:stripped_magic_table"
-    },
-    "B" : {
-      "item" : "biomesoplenty:stripped_magic_log"
-    }
+    "A" : "mcwbiomesoplenty:stripped_magic_table",
+    "B" : "biomesoplenty:stripped_magic_log"
   },
   "result" : {
     "count" : 1,

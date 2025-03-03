@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern",
+  "pattern" : [ "AB", "AA", "AB" ],
+  "key" : {
+    "A": "premium_wood:magic_planks",
+    "B": "minecraft:glass_pane"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwmoddinglegacy:pwood_magic_modern_door"
+  }
+}

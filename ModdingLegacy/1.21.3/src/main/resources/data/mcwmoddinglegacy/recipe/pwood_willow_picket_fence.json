@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "picket",
+  "pattern" : [ "CBC", "CAC" ],
+  "key" : {
+    "A": "minecraft:stick",
+    "B": "premium_wood:willow_planks",
+    "C": "premium_wood:willow_log"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwmoddinglegacy:pwood_willow_picket_fence"
+  }
+}

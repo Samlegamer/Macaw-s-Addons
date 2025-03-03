@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A": "blue_skies:maple_slab",
+    "B": "blue_skies:stripped_maple_log"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:stripped_bsky_maple_counter"
+  }
+}

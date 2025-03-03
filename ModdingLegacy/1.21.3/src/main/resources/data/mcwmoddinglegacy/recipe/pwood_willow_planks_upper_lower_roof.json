@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "upper_lower",
+  "pattern" : [ "  W", "WWS" ],
+  "key" : {
+    "W": "premium_wood:willow_planks",
+    "S": "minecraft:stick"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwmoddinglegacy:pwood_willow_planks_upper_lower_roof"
+  }
+}

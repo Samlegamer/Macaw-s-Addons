@@ -1,20 +1,20 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "upper_lower",
   "pattern" : [ "  W", "WWS" ],
   "key" : {
-    "W" : {
-      "item" : "biomesoplenty:fir_log"
-    },
-    "S" : {
-      "item" : "minecraft:stick"
-    }
+    "W" : "biomesoplenty:fir_log",
+    "S" : "minecraft:stick"
   },
   "result" : {
     "count" : 3,

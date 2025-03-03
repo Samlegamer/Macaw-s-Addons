@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwdoors"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "classic",
   "pattern" : [ "A", "B", "A" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:mahogany_planks"
-    },
-    "B" : {
-      "item" : "mcwdoors:print_oak"
-    }
+    "A" : "biomesoplenty:mahogany_planks",
+    "B" : "mcwdoors:print_oak"
   },
   "result" : {
     "count" : 1,
     "id" : "mcwbiomesoplenty:mahogany_classic_door"
   }
+}
+  ]
 }

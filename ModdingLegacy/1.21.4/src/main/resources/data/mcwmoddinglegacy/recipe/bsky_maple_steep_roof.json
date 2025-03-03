@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "steep",
+  "pattern" : [ " W", "WW", "WS" ],
+  "key" : {
+    "W": "blue_skies:maple_log",
+    "S": "minecraft:stick"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwmoddinglegacy:bsky_maple_steep_roof"
+  }
+}

@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "attic",
+  "pattern" : [ " W", "WG" ],
+  "key" : {
+    "W": "blue_skies:starlit_log",
+    "G": "minecraft:glass"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwmoddinglegacy:bsky_starlit_attic_roof"
+  }
+}

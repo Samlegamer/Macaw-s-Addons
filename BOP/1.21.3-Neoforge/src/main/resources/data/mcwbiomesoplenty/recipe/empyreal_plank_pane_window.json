@@ -1,20 +1,20 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "windows_pane",
   "pattern" : [ "AAA", "ABA", "AAA" ],
   "key" : {
-    "A" : {
-      "item" : "mcwwindows:window_base"
-    },
-    "B" : {
-      "item" : "biomesoplenty:empyreal_planks"
-    }
+    "A" : "mcwwindows:window_base",
+    "B" : "biomesoplenty:empyreal_planks"
   },
   "result" : {
     "count" : 8,

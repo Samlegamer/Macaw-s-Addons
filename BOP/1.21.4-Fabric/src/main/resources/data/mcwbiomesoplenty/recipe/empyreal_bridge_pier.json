@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "wooden_piers",
   "pattern" : [ "WFW" ],
   "key" : {
-    "F" : {
-      "item" : "biomesoplenty:empyreal_fence"
-    },
-    "W" : {
-      "item" : "biomesoplenty:empyreal_log"
-    }
+    "F" : "biomesoplenty:empyreal_fence",
+    "W" : "biomesoplenty:empyreal_log"
   },
   "result" : {
     "count" : 3,

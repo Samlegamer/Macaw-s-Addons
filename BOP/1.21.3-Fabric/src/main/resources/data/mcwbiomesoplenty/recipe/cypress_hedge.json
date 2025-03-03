@@ -1,21 +1,18 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "biomesoplenty"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "hedge",
   "pattern" : [ "AA", "AA" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:cypress_leaves"
-    }
+    "A" : "biomesoplenty:cypress_leaves"
   },
   "result" : {
     "count" : 4,

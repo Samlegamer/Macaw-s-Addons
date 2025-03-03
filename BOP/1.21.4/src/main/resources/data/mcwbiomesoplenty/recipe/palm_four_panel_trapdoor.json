@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwtrpdoors"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwtrpdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "four_panel_trapdoors",
   "pattern" : [ "A", "B", "A" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:palm_planks"
-    },
-    "B" : {
-      "item" : "mcwtrpdoors:print_four_panel"
-    }
+    "A" : "biomesoplenty:palm_planks",
+    "B" : "mcwtrpdoors:print_four_panel"
   },
   "result" : {
     "count" : 1,
     "id" : "mcwbiomesoplenty:palm_four_panel_trapdoor"
   }
+}
+  ]
 }

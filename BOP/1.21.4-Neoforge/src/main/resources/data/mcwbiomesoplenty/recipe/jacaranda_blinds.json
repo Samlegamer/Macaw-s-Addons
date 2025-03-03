@@ -1,20 +1,20 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "blinds",
   "pattern" : [ "AAA", "BBB", "BBB" ],
   "key" : {
-    "B" : {
-      "item" : "minecraft:stick"
-    },
-    "A" : {
-      "item" : "biomesoplenty:jacaranda_slab"
-    }
+    "B" : "minecraft:stick",
+    "A" : "biomesoplenty:jacaranda_slab"
   },
   "result" : {
     "count" : 3,

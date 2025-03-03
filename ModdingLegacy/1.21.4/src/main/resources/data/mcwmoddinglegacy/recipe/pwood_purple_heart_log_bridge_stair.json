@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "log_stairs",
+  "pattern" : [ "  F", " FF", "FFF" ],
+  "key" : {
+    "F": "mcwmoddinglegacy:pwood_purple_heart_log_bridge_middle"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwmoddinglegacy:pwood_purple_heart_log_bridge_stair"
+  }
+}

@@ -1,20 +1,20 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "western",
   "pattern" : [ "  A", "ABA", "AAA" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:magic_planks"
-    },
-    "B" : {
-      "item" : "biomesoplenty:magic_slab"
-    }
+    "A" : "biomesoplenty:magic_planks",
+    "B" : "biomesoplenty:magic_slab"
   },
   "result" : {
     "count" : 3,

@@ -1,0 +1,67 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwbiomesoplenty:jacaranda_window",
+	 "mcwbiomesoplenty:jacaranda_window2",
+	 "mcwbiomesoplenty:jacaranda_four_window",
+	 "mcwbiomesoplenty:stripped_jacaranda_log_window",
+	 "mcwbiomesoplenty:stripped_jacaranda_log_window2",
+	 "mcwbiomesoplenty:stripped_jacaranda_log_four_window",
+	 "mcwbiomesoplenty:jacaranda_plank_window",
+	 "mcwbiomesoplenty:jacaranda_plank_window2",
+	 "mcwbiomesoplenty:jacaranda_plank_four_window",
+	 "mcwbiomesoplenty:jacaranda_pane_window",
+	 "mcwbiomesoplenty:stripped_jacaranda_pane_window",
+	 "mcwbiomesoplenty:jacaranda_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:jacaranda_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+

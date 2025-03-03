@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "skyline_stairs",
   "pattern" : [ "W  ", "ZW " ],
   "key" : {
-    "W" : {
-      "item" : "biomesoplenty:stripped_redwood_log"
-    },
-    "Z" : {
-      "item" : "biomesoplenty:redwood_log"
-    }
+    "W" : "biomesoplenty:stripped_redwood_log",
+    "Z" : "biomesoplenty:redwood_log"
   },
   "result" : {
     "count" : 4,

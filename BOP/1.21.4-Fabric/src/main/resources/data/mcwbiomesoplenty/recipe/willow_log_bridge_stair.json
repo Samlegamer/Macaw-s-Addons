@@ -1,17 +1,18 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "log_stairs",
   "pattern" : [ "  F", " FF", "FFF" ],
   "key" : {
-    "F" : {
-      "item" : "mcwbiomesoplenty:willow_log_bridge_middle"
-    }
+    "F" : "mcwbiomesoplenty:willow_log_bridge_middle"
   },
   "result" : {
     "count" : 6,

@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "stockade",
   "pattern" : [ "ABA", "ABA" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:hellbark_log"
-    },
-    "B" : {
-      "item" : "biomesoplenty:hellbark_planks"
-    }
+    "A" : "biomesoplenty:hellbark_log",
+    "B" : "biomesoplenty:hellbark_planks"
   },
   "result" : {
     "count" : 3,

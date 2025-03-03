@@ -1,20 +1,20 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "cupboard_counter",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:maple_slab"
-    },
-    "B" : {
-      "item" : "mcwbiomesoplenty:maple_wardrobe"
-    }
+    "A" : "biomesoplenty:maple_slab",
+    "B" : "mcwbiomesoplenty:maple_wardrobe"
   },
   "result" : {
     "count" : 1,

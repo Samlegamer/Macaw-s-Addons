@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "cabinet",
   "pattern" : [ "AA", "AC", "AA" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:maple_log"
-    },
-    "C" : {
-      "item" : "mcwfurnitures:cabinet_door"
-    }
+    "A" : "biomesoplenty:maple_log",
+    "C" : "mcwfurnitures:cabinet_door"
   },
   "result" : {
     "count" : 4,

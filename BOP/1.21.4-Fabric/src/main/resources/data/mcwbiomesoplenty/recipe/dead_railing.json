@@ -1,17 +1,18 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "mcwstairs_railing",
   "pattern" : [ "W  ", "WW ", "WWW" ],
   "key" : {
-    "W" : {
-      "item" : "mcwbiomesoplenty:dead_balcony"
-    }
+    "W" : "mcwbiomesoplenty:dead_balcony"
   },
   "result" : {
     "count" : 6,

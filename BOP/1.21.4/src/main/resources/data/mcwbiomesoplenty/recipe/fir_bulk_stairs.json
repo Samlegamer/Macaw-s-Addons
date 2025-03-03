@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwstairs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "bulk_stairs",
   "pattern" : [ "W  ", "ZW ", "ZZW" ],
   "key" : {
-    "W" : {
-      "item" : "biomesoplenty:stripped_fir_log"
-    },
-    "Z" : {
-      "item" : "biomesoplenty:fir_log"
-    }
+    "W" : "biomesoplenty:stripped_fir_log",
+    "Z" : "biomesoplenty:fir_log"
   },
   "result" : {
     "count" : 6,
     "id" : "mcwbiomesoplenty:fir_bulk_stairs"
   }
+}
+  ]
 }

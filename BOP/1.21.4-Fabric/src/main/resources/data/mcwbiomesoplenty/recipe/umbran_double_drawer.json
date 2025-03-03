@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "double_drawer",
   "pattern" : [ "AAA", "ABA", "ABA" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:umbran_log"
-    },
-    "B" : {
-      "item" : "mcwfurnitures:cabinet_drawer"
-    }
+    "A" : "biomesoplenty:umbran_log",
+    "B" : "mcwfurnitures:cabinet_drawer"
   },
   "result" : {
     "count" : 4,

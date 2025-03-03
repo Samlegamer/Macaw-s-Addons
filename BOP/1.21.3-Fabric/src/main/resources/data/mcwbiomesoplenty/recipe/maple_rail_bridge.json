@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "rail_bridges",
   "pattern" : [ "F F", "FWF" ],
   "key" : {
-    "F" : {
-      "item" : "biomesoplenty:maple_fence"
-    },
-    "W" : {
-      "item" : "biomesoplenty:maple_slab"
-    }
+    "F" : "biomesoplenty:maple_fence",
+    "W" : "biomesoplenty:maple_slab"
   },
   "result" : {
     "count" : 4,

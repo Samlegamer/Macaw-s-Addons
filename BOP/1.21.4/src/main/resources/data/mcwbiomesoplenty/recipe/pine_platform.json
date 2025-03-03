@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwstairs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "mcwstairs_platform",
   "pattern" : [ " ZZ", " WW", "   " ],
   "key" : {
-    "W" : {
-      "item" : "biomesoplenty:pine_log"
-    },
-    "Z" : {
-      "item" : "biomesoplenty:pine_slab"
-    }
+    "W" : "biomesoplenty:pine_log",
+    "Z" : "biomesoplenty:pine_slab"
   },
   "result" : {
     "count" : 12,
     "id" : "mcwbiomesoplenty:pine_platform"
   }
+}
+  ]
 }

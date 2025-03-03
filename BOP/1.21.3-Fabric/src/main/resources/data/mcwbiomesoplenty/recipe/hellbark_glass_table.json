@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "glass_table",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A" : {
-      "item" : "mcwbiomesoplenty:hellbark_end_table"
-    },
-    "B" : {
-      "item" : "minecraft:glass"
-    }
+    "A" : "mcwbiomesoplenty:hellbark_end_table",
+    "B" : "minecraft:glass"
   },
   "result" : {
     "count" : 1,

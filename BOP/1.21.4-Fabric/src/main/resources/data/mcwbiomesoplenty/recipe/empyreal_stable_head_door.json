@@ -1,17 +1,18 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwdoors"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "stable_head",
   "pattern" : [ "A" ],
   "key" : {
-    "A" : {
-      "item" : "mcwbiomesoplenty:empyreal_stable_door"
-    }
+    "A" : "mcwbiomesoplenty:empyreal_stable_door"
   },
   "result" : {
     "count" : 1,

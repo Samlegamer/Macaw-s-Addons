@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwtrpdoors"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwtrpdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "bark_trapdoors",
   "pattern" : [ "ABA", "ABA" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:mahogany_log"
-    },
-    "B" : {
-      "item" : "minecraft:glass_pane"
-    }
+    "A" : "biomesoplenty:mahogany_log",
+    "B" : "minecraft:glass_pane"
   },
   "result" : {
     "count" : 2,
     "id" : "mcwbiomesoplenty:mahogany_bark_trapdoor"
   }
+}
+  ]
 }

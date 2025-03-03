@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwwindows"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwwindows"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "curtain_rods",
   "pattern" : [ "ABA" ],
   "key" : {
-    "A" : {
-      "item" : "minecraft:stick"
-    },
-    "B" : {
-      "item" : "biomesoplenty:magic_log"
-    }
+    "A" : "minecraft:stick",
+    "B" : "biomesoplenty:magic_log"
   },
   "result" : {
     "count" : 5,
     "id" : "mcwbiomesoplenty:magic_curtain_rod"
   }
+}
+  ]
 }

@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "rope_bridges",
+  "pattern" : [ "F F", "WWW" ],
+  "key" : {
+    "F": "minecraft:string",
+    "W": "blue_skies:bluebright_slab"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwmoddinglegacy:rope_bsky_bluebright_bridge"
+  }
+}

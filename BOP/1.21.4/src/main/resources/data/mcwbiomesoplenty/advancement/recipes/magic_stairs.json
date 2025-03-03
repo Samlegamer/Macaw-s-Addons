@@ -1,4 +1,19 @@
 {
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwstairs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
@@ -31,4 +46,7 @@
       "has_planks"
     ]
   ]
+}
+
+]
 }

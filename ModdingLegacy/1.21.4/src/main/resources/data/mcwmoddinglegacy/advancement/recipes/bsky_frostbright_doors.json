@@ -1,0 +1,66 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwmoddinglegacy:bsky_frostbright_bark_glass_door",
+	  "mcwmoddinglegacy:bsky_frostbright_barn_door",
+	  "mcwmoddinglegacy:bsky_frostbright_barn_glass_door",
+	  "mcwmoddinglegacy:bsky_frostbright_beach_door",
+	  "mcwmoddinglegacy:bsky_frostbright_classic_door",
+	  "mcwmoddinglegacy:bsky_frostbright_cottage_door",
+	  "mcwmoddinglegacy:bsky_frostbright_four_panel_door",
+	  "mcwmoddinglegacy:bsky_frostbright_glass_door",
+	  "mcwmoddinglegacy:bsky_frostbright_japanese_door",
+	  "mcwmoddinglegacy:bsky_frostbright_japanese2_door",
+	  "mcwmoddinglegacy:bsky_frostbright_modern_door",
+	  "mcwmoddinglegacy:bsky_frostbright_mystic_door",
+	  "mcwmoddinglegacy:bsky_frostbright_nether_door",
+	  "mcwmoddinglegacy:bsky_frostbright_paper_door",
+	  "mcwmoddinglegacy:bsky_frostbright_stable_door",
+	  "mcwmoddinglegacy:bsky_frostbright_stable_head_door",
+	  "mcwmoddinglegacy:bsky_frostbright_swamp_door",
+	  "mcwmoddinglegacy:bsky_frostbright_western_door",
+	  "mcwmoddinglegacy:bsky_frostbright_waffle_door",
+	  "mcwmoddinglegacy:bsky_frostbright_tropical_door",
+	  "mcwmoddinglegacy:bsky_frostbright_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:frostbright_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

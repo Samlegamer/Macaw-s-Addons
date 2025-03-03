@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bookshelf_cupboard",
+  "pattern" : [ "AAA", "BAC", "AAA" ],
+  "key" : {
+    "A": "blue_skies:bluebright_log",
+    "B": "mcwfurnitures:cabinet_door",
+    "C": "minecraft:book"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwmoddinglegacy:bsky_bluebright_bookshelf_cupboard"
+  }
+}

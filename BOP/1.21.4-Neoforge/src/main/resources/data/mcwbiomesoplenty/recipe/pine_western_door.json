@@ -1,20 +1,20 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "western",
   "pattern" : [ "  A", "ABA", "AAA" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:pine_planks"
-    },
-    "B" : {
-      "item" : "biomesoplenty:pine_slab"
-    }
+    "A" : "biomesoplenty:pine_planks",
+    "B" : "biomesoplenty:pine_slab"
   },
   "result" : {
     "count" : 3,

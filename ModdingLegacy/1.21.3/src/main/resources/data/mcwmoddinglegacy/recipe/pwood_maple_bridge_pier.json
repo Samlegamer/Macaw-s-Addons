@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "wooden_piers",
+  "pattern" : [ "WFW" ],
+  "key" : {
+    "F": "premium_wood:maple_fence",
+    "W": "premium_wood:maple_log"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwmoddinglegacy:pwood_maple_bridge_pier"
+  }
+}

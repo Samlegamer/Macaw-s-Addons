@@ -1,23 +1,20 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "modern_desk",
   "pattern" : [ "AAA", "BCB" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:umbran_log"
-    },
-    "B" : {
-      "item" : "biomesoplenty:umbran_fence"
-    },
-    "C" : {
-      "item" : "minecraft:stick"
-    }
+    "A" : "biomesoplenty:umbran_log",
+    "B" : "biomesoplenty:umbran_fence",
+    "C" : "minecraft:stick"
   },
   "result" : {
     "count" : 2,

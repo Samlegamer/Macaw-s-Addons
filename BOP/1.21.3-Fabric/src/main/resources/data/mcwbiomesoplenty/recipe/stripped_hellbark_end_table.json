@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "end_table",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A" : {
-      "item" : "mcwbiomesoplenty:stripped_hellbark_table"
-    },
-    "B" : {
-      "item" : "biomesoplenty:stripped_hellbark_log"
-    }
+    "A" : "mcwbiomesoplenty:stripped_hellbark_table",
+    "B" : "biomesoplenty:stripped_hellbark_log"
   },
   "result" : {
     "count" : 1,

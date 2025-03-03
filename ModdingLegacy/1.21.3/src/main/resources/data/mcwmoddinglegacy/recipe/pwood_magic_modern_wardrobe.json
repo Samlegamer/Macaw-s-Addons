@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern_wardrobe",
+  "pattern" : [ "AAA", "AAB", "AAA" ],
+  "key" : {
+    "A": "premium_wood:magic_log",
+    "B": "mcwfurnitures:cabinet_door"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwmoddinglegacy:pwood_magic_modern_wardrobe"
+  }
+}

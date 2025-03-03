@@ -1,23 +1,30 @@
 {
-"conditions": [
+"forge:conditional": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
-    }
-  ],
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwbridges"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
   "type" : "minecraft:crafting_shaped",
   "group" : "log_bridges",
   "pattern" : [ "F F", "WWW" ],
   "key" : {
-    "F" : {
-      "item" : "biomesoplenty:empyreal_fence"
-    },
-    "W" : {
-      "item" : "biomesoplenty:empyreal_slab"
-    }
+    "F" : "biomesoplenty:empyreal_fence",
+    "W" : "biomesoplenty:empyreal_slab"
   },
   "result" : {
     "count" : 4,
     "id" : "mcwbiomesoplenty:empyreal_log_bridge_middle"
   }
+}
+  ]
 }

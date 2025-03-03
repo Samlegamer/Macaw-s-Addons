@@ -1,23 +1,20 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "chair",
   "pattern" : [ " A", "BA", "CC" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:umbran_log"
-    },
-    "B" : {
-      "item" : "biomesoplenty:umbran_slab"
-    },
-    "C" : {
-      "item" : "biomesoplenty:umbran_fence"
-    }
+    "A" : "biomesoplenty:umbran_log",
+    "B" : "biomesoplenty:umbran_slab",
+    "C" : "biomesoplenty:umbran_fence"
   },
   "result" : {
     "count" : 1,

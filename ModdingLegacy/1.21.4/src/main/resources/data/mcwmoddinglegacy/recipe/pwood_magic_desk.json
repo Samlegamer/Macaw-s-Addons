@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "desk",
+  "pattern" : [ "AAA", "B B" ],
+  "key" : {
+    "A": "premium_wood:magic_log",
+    "B": "premium_wood:magic_fence"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwmoddinglegacy:pwood_magic_desk"
+  }
+}

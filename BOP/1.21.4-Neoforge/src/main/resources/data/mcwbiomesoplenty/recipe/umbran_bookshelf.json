@@ -1,20 +1,20 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "bookshelf",
   "pattern" : [ "AAA", "BBB", "AAA" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:umbran_log"
-    },
-    "B" : {
-      "item" : "minecraft:book"
-    }
+    "A" : "biomesoplenty:umbran_log",
+    "B" : "minecraft:book"
   },
   "result" : {
     "count" : 4,

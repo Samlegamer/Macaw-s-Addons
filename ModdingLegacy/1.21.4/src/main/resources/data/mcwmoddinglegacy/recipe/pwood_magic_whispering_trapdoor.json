@@ -1,0 +1,23 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "whispering_trapdoors",
+  "pattern" : [ " A ", "ABA", " A " ],
+  "key" : {
+    "A": "premium_wood:magic_planks",
+    "B": "mcwtrpdoors:print_whispering"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwmoddinglegacy:pwood_magic_whispering_trapdoor"
+  }
+}

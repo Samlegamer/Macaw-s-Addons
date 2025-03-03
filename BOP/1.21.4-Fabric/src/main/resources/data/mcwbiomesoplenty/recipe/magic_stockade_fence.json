@@ -1,20 +1,19 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "stockade",
   "pattern" : [ "ABA", "ABA" ],
   "key" : {
-    "A" : {
-      "item" : "biomesoplenty:magic_log"
-    },
-    "B" : {
-      "item" : "biomesoplenty:magic_planks"
-    }
+    "A" : "biomesoplenty:magic_log",
+    "B" : "biomesoplenty:magic_planks"
   },
   "result" : {
     "count" : 3,

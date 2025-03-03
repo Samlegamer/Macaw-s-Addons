@@ -1,17 +1,18 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",
   "group" : "compact_stairs",
   "pattern" : [ "W  ", "WW ", "WWW" ],
   "key" : {
-    "W" : {
-      "item" : "biomesoplenty:stripped_magic_log"
-    }
+    "W" : "biomesoplenty:stripped_magic_log"
   },
   "result" : {
     "count" : 6,
