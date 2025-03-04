@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "cupboard_counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "terrestria:cypress_slab",
+    "B" : "mcwterraformersmc:stripped_cypress_wardrobe"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:stripped_cypress_cupboard_counter"
+  }
+}

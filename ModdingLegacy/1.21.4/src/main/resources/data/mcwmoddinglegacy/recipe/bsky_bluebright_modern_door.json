@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwdoors"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "modern",
   "pattern" : [ "AB", "AA", "AB" ],
   "key" : {
-    "A": "blue_skies:bluebright_planks",
-    "B": "minecraft:glass_pane"
+    "A" : "blue_skies:bluebright_planks",
+    "B" : "minecraft:glass_pane"
   },
   "result" : {
     "count" : 3,

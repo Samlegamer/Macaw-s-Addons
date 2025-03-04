@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "pillarwall",
+  "pattern" : [ "AAA", "B B" ],
+  "key" : {
+    "A" : "cinderscapes:sulfur_quartz_block",
+    "B" : "cinderscapes:sulfur_quartz_bricks"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwterraformersmc:sulfur_quartz_bricks_pillar_wall"
+  }
+}

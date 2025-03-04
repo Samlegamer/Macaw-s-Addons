@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "barn_trapdoors",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "terrestria:sakura_planks",
+    "B" : "mcwterraformersmc:sakura_glass_trapdoor"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:sakura_barn_trapdoor"
+  }
+}

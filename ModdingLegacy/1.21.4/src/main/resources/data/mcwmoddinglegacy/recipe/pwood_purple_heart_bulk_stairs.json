@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwstairs"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "bulk_stairs",
   "pattern" : [ "W  ", "ZW ", "ZZW" ],
   "key" : {
-    "W": "premium_wood:stripped_purple_heart_log",
-    "Z": "premium_wood:purple_heart_log"
+    "W" : "premium_wood:stripped_purple_heart_log",
+    "Z" : "premium_wood:purple_heart_log"
   },
   "result" : {
     "count" : 6,

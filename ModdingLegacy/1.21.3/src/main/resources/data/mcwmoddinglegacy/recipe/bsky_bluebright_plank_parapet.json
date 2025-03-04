@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwwindows"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "parapets",
   "pattern" : [ "AAA", "ABA" ],
   "key" : {
-    "A": "minecraft:stick",
-    "B": "blue_skies:bluebright_planks"
+    "A" : "minecraft:stick",
+    "B" : "blue_skies:bluebright_planks"
   },
   "result" : {
     "count" : 5,

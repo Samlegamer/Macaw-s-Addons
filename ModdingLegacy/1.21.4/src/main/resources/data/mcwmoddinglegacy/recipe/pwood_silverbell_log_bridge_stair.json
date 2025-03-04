@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwbridges"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,7 +13,7 @@
   "group" : "log_stairs",
   "pattern" : [ "  F", " FF", "FFF" ],
   "key" : {
-    "F": "mcwmoddinglegacy:pwood_silverbell_log_bridge_middle"
+    "F" : "mcwmoddinglegacy:pwood_silverbell_log_bridge_middle"
   },
   "result" : {
     "count" : 6,

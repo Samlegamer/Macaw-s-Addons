@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwstairs"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "terrace_stairs",
   "pattern" : [ "W  ", "ZW ", " ZW" ],
   "key" : {
-    "W": "blue_skies:stripped_comet_log",
-    "Z": "blue_skies:comet_log"
+    "W" : "blue_skies:stripped_comet_log",
+    "Z" : "blue_skies:comet_log"
   },
   "result" : {
     "count" : 5,

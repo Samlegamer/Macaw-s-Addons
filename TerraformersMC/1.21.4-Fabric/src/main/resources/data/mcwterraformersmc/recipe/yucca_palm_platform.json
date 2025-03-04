@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " ZZ", " WW", "   " ],
+  "key" : {
+    "W" : "terrestria:yucca_palm_log",
+    "Z" : "terrestria:yucca_palm_slab"
+  },
+  "result" : {
+    "count" : 12,
+    "id" : "mcwterraformersmc:yucca_palm_platform"
+  }
+}

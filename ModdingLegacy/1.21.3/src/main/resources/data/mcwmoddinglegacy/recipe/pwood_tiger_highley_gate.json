@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfences"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "highley",
   "pattern" : [ "ABA", "ABA" ],
   "key" : {
-    "A": "minecraft:stick",
-    "B": "premium_wood:tiger_log"
+    "A" : "minecraft:stick",
+    "B" : "premium_wood:tiger_log"
   },
   "result" : {
     "count" : 1,

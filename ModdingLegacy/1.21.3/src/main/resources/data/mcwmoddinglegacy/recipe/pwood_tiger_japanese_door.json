@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwdoors"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "shoji",
   "pattern" : [ "BB", "BB", "AA" ],
   "key" : {
-    "A": "premium_wood:tiger_planks",
-    "B": "minecraft:paper"
+    "A" : "premium_wood:tiger_planks",
+    "B" : "minecraft:paper"
   },
   "result" : {
     "count" : 3,

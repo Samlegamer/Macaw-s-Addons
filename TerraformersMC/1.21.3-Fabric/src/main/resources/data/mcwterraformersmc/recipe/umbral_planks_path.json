@@ -1,0 +1,20 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "group" : "wooden_paths",
+  "ingredients": [
+    "cinderscapes:umbral_slab"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwterraformersmc:umbral_planks_path"
+  }
+}

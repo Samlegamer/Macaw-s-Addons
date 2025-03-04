@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwwindows"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,7 +13,7 @@
   "group" : "shutters",
   "pattern" : [ "B", "B", "B" ],
   "key" : {
-    "B": "blue_skies:dusk_trapdoor"
+    "B" : "blue_skies:dusk_trapdoor"
   },
   "result" : {
     "count" : 3,

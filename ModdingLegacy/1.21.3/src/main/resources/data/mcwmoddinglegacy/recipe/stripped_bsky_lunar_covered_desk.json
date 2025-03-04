@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,7 +13,7 @@
   "group" : "covered_desk",
   "pattern" : [ "AAA", "A A" ],
   "key" : {
-    "A": "blue_skies:stripped_lunar_log"
+    "A" : "blue_skies:stripped_lunar_log"
   },
   "result" : {
     "count" : 2,

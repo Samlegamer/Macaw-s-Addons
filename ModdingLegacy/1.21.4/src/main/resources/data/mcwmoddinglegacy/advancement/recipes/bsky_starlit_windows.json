@@ -1,0 +1,67 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwmoddinglegacy:bsky_starlit_window",
+	 "mcwmoddinglegacy:bsky_starlit_window2",
+	 "mcwmoddinglegacy:bsky_starlit_four_window",
+	 "mcwmoddinglegacy:stripped_bsky_starlit_log_window",
+	 "mcwmoddinglegacy:stripped_bsky_starlit_log_window2",
+	 "mcwmoddinglegacy:stripped_bsky_starlit_log_four_window",
+	 "mcwmoddinglegacy:bsky_starlit_plank_window",
+	 "mcwmoddinglegacy:bsky_starlit_plank_window2",
+	 "mcwmoddinglegacy:bsky_starlit_plank_four_window",
+	 "mcwmoddinglegacy:bsky_starlit_pane_window",
+	 "mcwmoddinglegacy:stripped_bsky_starlit_pane_window",
+	 "mcwmoddinglegacy:bsky_starlit_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:starlit_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+

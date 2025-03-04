@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "wired",
+  "pattern" : [ "ACA", "ABA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "cinderscapes:umbral_stem",
+    "C" : "minecraft:iron_bars"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwterraformersmc:umbral_wired_fence"
+  }
+}

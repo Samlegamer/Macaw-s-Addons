@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwtrpdoors"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "barrel_trapdoors",
   "pattern" : [ " A ", "ABA", " A " ],
   "key" : {
-    "A": "blue_skies:starlit_planks",
-    "B": "minecraft:barrel"
+    "A" : "blue_skies:starlit_planks",
+    "B" : "minecraft:barrel"
   },
   "result" : {
     "count" : 4,

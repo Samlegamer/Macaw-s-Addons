@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "large_drawer",
+  "pattern" : [ "ABA", "AAA", "AAA" ],
+  "key" : {
+    "A" : "cinderscapes:umbral_stem",
+    "B" : "mcwfurnitures:cabinet_drawer"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:umbral_large_drawer"
+  }
+}

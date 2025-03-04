@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "cinderscapes:umbral_slab",
+    "B" : "cinderscapes:stripped_umbral_stem"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:stripped_umbral_counter"
+  }
+}

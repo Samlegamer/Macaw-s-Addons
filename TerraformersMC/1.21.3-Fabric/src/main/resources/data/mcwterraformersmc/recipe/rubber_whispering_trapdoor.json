@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "whispering_trapdoors",
+  "pattern" : [ " A ", "ABA", " A " ],
+  "key" : {
+    "A" : "terrestria:rubber_planks",
+    "B" : "mcwtrpdoors:print_whispering"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:rubber_whispering_trapdoor"
+  }
+}

@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "upper_steep",
+  "pattern" : [ " W", " W", "WS" ],
+  "key" : {
+    "W" : "terrestria:rainbow_eucalyptus_log",
+    "S" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwterraformersmc:rainbow_eucalyptus_upper_steep_roof"
+  }
+}

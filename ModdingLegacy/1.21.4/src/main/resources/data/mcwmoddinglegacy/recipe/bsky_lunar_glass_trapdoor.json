@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwtrpdoors"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "glass_trapdoors",
   "pattern" : [ "ABA", "ABA" ],
   "key" : {
-    "A": "blue_skies:lunar_planks",
-    "B": "minecraft:glass_pane"
+    "A" : "blue_skies:lunar_planks",
+    "B" : "minecraft:glass_pane"
   },
   "result" : {
     "count" : 2,

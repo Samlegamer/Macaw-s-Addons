@@ -1,0 +1,67 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwbyg:skyris_window",
+	 "mcwbyg:skyris_window2",
+	 "mcwbyg:skyris_four_window",
+	 "mcwbyg:stripped_skyris_log_window",
+	 "mcwbyg:stripped_skyris_log_window2",
+	 "mcwbyg:stripped_skyris_log_four_window",
+	 "mcwbyg:skyris_plank_window",
+	 "mcwbyg:skyris_plank_window2",
+	 "mcwbyg:skyris_plank_four_window",
+	 "mcwbyg:skyris_pane_window",
+	 "mcwbyg:stripped_skyris_pane_window",
+	 "mcwbyg:skyris_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomeswevegone:skyris_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+

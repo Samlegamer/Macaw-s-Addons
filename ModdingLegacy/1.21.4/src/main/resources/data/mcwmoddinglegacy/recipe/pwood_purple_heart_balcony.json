@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwstairs"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "mcwstairs_balcony",
   "pattern" : [ "WWW", "Z Z", "WWW" ],
   "key" : {
-    "W": "minecraft:stick",
-    "Z": "premium_wood:purple_heart_fence"
+    "W" : "minecraft:stick",
+    "Z" : "premium_wood:purple_heart_fence"
   },
   "result" : {
     "count" : 6,

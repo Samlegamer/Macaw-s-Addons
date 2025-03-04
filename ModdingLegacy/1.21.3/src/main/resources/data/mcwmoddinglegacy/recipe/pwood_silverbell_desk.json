@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "desk",
   "pattern" : [ "AAA", "B B" ],
   "key" : {
-    "A": "premium_wood:silverbell_log",
-    "B": "premium_wood:silverbell_fence"
+    "A" : "premium_wood:silverbell_log",
+    "B" : "premium_wood:silverbell_fence"
   },
   "result" : {
     "count" : 2,

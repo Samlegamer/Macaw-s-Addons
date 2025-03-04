@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "bookshelf",
   "pattern" : [ "AAA", "BBB", "AAA" ],
   "key" : {
-    "A": "blue_skies:lunar_log",
-    "B": "minecraft:book"
+    "A" : "blue_skies:lunar_log",
+    "B" : "minecraft:book"
   },
   "result" : {
     "count" : 4,

@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwbridges"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "wooden_piers",
   "pattern" : [ "WFW" ],
   "key" : {
-    "F": "blue_skies:dusk_fence",
-    "W": "blue_skies:dusk_log"
+    "F" : "blue_skies:dusk_fence",
+    "W" : "blue_skies:dusk_log"
   },
   "result" : {
     "count" : 3,

@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfences"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,7 +13,7 @@
   "group" : "hedge",
   "pattern" : [ "AA", "AA" ],
   "key" : {
-    "A": "premium_wood:willow_leaves"
+    "A" : "premium_wood:willow_leaves"
   },
   "result" : {
     "count" : 4,

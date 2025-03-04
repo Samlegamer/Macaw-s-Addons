@@ -1,16 +1,15 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwpaths"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "traverse"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "traverse"
+      ]
     }
   ],
   "type": "minecraft:crafting_shapeless",
-  "group": "woodenpaths",
+  "group": "wooden_paths",
   "ingredients": [
     {
       "item": "traverse:fir_slab"

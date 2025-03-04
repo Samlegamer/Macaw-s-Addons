@@ -1,0 +1,18 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:stonecutting",
+  "ingredient" : "terrestria:basalt_bricks",
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:basalt_bricks_upper_lower_roof"
+  },
+  "group" : "roofs"
+}

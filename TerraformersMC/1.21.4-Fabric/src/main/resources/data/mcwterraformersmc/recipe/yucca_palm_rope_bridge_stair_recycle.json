@@ -1,0 +1,20 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shapeless",
+  "group" : "recyclable_bridges",
+  "ingredients" : [
+    "mcwterraformersmc:yucca_palm_rope_bridge_stair"
+   ],
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:rope_yucca_palm_bridge"
+  }
+}

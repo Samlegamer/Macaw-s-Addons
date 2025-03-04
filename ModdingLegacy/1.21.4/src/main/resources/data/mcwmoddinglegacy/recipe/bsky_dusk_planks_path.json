@@ -1,16 +1,16 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwpaths"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
   "type": "minecraft:crafting_shapeless",
-  "group": "wooden_paths",
+  "group" : "wooden_paths",
   "ingredients": [
     "blue_skies:dusk_slab"
   ],

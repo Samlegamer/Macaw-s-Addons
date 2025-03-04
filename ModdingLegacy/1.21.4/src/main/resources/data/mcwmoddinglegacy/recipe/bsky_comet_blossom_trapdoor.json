@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwtrpdoors"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "blossom_trapdoors",
   "pattern" : [ "A", "B", "A" ],
   "key" : {
-    "A": "blue_skies:comet_planks",
-    "B": "mcwtrpdoors:print_blossom"
+    "A" : "blue_skies:comet_planks",
+    "B" : "mcwtrpdoors:print_blossom"
   },
   "result" : {
     "count" : 1,

@@ -1,5 +1,14 @@
 {
-  "parent": "minecraft:recipes/root",
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],  "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
 	"mcwmoddinglegacy:bsky_maple_hedge"

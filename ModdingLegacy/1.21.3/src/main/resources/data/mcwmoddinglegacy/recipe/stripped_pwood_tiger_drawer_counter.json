@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "drawer_counter",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A": "premium_wood:tiger_slab",
-    "B": "mcwmoddinglegacy:stripped_pwood_tiger_drawer"
+    "A" : "premium_wood:tiger_slab",
+    "B" : "mcwmoddinglegacy:stripped_pwood_tiger_drawer"
   },
   "result" : {
     "count" : 1,

@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "counter",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A": "premium_wood:purple_heart_slab",
-    "B": "premium_wood:purple_heart_log"
+    "A" : "premium_wood:purple_heart_slab",
+    "B" : "premium_wood:purple_heart_log"
   },
   "result" : {
     "count" : 1,

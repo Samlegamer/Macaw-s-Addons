@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "end_table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "mcwterraformersmc:umbral_table",
+    "B" : "cinderscapes:umbral_stem"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:umbral_end_table"
+  }
+}

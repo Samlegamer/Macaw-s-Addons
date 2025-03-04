@@ -1,12 +1,11 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "biomesoplenty"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomesoplenty"
+      ]
     }
   ],
   "type" : "minecraft:crafting_shaped",

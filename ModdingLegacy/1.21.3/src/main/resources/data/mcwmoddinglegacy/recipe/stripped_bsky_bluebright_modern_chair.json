@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,9 +13,9 @@
   "group" : "modern_chair",
   "pattern" : [ "BA", "CC" ],
   "key" : {
-    "A": "blue_skies:stripped_bluebright_log",
-    "B": "blue_skies:bluebright_slab",
-    "C": "blue_skies:bluebright_fence"
+    "A" : "blue_skies:stripped_bluebright_log",
+    "B" : "blue_skies:bluebright_slab",
+    "C" : "blue_skies:bluebright_fence"
   },
   "result" : {
     "count" : 1,

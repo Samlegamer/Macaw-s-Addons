@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "glass_table",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A": "mcwmoddinglegacy:stripped_pwood_maple_end_table",
-    "B": "minecraft:glass"
+    "A" : "mcwmoddinglegacy:stripped_pwood_maple_end_table",
+    "B" : "minecraft:glass"
   },
   "result" : {
     "count" : 1,

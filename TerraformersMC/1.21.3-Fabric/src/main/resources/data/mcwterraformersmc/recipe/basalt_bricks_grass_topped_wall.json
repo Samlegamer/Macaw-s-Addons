@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "grass_topped",
+  "pattern" : [ "BGB", "AAA" ],
+  "key" : {
+    "A" : "terrestria:basalt_cobblestone",
+    "G" : "minecraft:dirt",
+    "B" : "terrestria:basalt_bricks"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwterraformersmc:basalt_bricks_grass_topped_wall"
+  }
+}

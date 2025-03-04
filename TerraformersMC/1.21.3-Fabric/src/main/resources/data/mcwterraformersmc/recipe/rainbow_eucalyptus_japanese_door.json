@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shoji",
+  "pattern" : [ "BB", "BB", "AA" ],
+  "key" : {
+    "A" : "terrestria:rainbow_eucalyptus_planks",
+    "B" : "minecraft:paper"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwterraformersmc:rainbow_eucalyptus_japanese_door"
+  }
+}

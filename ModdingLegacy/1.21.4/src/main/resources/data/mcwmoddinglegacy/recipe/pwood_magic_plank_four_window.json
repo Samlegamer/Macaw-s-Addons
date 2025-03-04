@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwwindows"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "windows_four",
   "pattern" : [ "AAA", "ABA", "AAA" ],
   "key" : {
-    "A": "mcwwindows:window_centre_bar_base",
-    "B": "premium_wood:magic_planks"
+    "A" : "mcwwindows:window_centre_bar_base",
+    "B" : "premium_wood:magic_planks"
   },
   "result" : {
     "count" : 8,

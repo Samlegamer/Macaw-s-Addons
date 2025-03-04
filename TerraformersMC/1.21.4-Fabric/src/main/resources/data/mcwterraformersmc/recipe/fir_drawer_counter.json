@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "traverse"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "drawer_counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "traverse:fir_slab",
+    "B" : "mcwterraformersmc:fir_drawer"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:fir_drawer_counter"
+  }
+}

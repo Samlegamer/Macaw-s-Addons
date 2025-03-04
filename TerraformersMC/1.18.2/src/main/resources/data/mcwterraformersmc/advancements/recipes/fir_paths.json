@@ -1,4 +1,14 @@
 {
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "traverse"
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [

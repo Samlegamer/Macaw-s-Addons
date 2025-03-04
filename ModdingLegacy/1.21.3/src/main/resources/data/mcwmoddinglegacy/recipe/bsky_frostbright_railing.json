@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwstairs"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,7 +13,7 @@
   "group" : "mcwstairs_railing",
   "pattern" : [ "W  ", "WW ", "WWW" ],
   "key" : {
-    "W": "mcwmoddinglegacy:bsky_frostbright_balcony"
+    "W" : "mcwmoddinglegacy:bsky_frostbright_balcony"
   },
   "result" : {
     "count" : 6,

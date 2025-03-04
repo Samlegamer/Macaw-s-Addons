@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwstairs"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "mcwstairs_platform",
   "pattern" : [ " ZZ", " WW", "   " ],
   "key" : {
-    "W": "premium_wood:tiger_log",
-    "Z": "premium_wood:tiger_slab"
+    "W" : "premium_wood:tiger_log",
+    "Z" : "premium_wood:tiger_slab"
   },
   "result" : {
     "count" : 12,

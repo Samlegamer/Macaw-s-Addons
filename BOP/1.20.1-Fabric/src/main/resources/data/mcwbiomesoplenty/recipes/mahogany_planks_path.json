@@ -1,8 +1,11 @@
 {
-"conditions": [
+ "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwpaths"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "biomesoplenty"
+      ]
     }
   ],
   "type": "minecraft:crafting_shapeless",

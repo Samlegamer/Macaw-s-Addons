@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "desk",
+  "pattern" : [ "AAA", "B B" ],
+  "key" : {
+    "A" : "terrestria:stripped_sakura_log",
+    "B" : "terrestria:sakura_fence"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwterraformersmc:stripped_sakura_desk"
+  }
+}

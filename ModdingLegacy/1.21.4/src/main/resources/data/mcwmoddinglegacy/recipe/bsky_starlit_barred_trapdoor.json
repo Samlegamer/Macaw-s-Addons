@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwtrpdoors"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "barred_trapdoors",
   "pattern" : [ "A", "B", "A" ],
   "key" : {
-    "A": "blue_skies:starlit_planks",
-    "B": "mcwtrpdoors:print_barred"
+    "A" : "blue_skies:starlit_planks",
+    "B" : "mcwtrpdoors:print_barred"
   },
   "result" : {
     "count" : 1,

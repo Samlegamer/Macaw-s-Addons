@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "double_wardrobe",
   "pattern" : [ "AAA", "BAB", "AAA" ],
   "key" : {
-    "A": "blue_skies:bluebright_log",
-    "B": "mcwfurnitures:cabinet_door"
+    "A" : "blue_skies:bluebright_log",
+    "B" : "mcwfurnitures:cabinet_door"
   },
   "result" : {
     "count" : 4,

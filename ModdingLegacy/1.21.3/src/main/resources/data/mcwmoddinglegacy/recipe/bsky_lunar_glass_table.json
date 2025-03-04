@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "glass_table",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A": "mcwmoddinglegacy:bsky_lunar_end_table",
-    "B": "minecraft:glass"
+    "A" : "mcwmoddinglegacy:bsky_lunar_end_table",
+    "B" : "minecraft:glass"
   },
   "result" : {
     "count" : 1,

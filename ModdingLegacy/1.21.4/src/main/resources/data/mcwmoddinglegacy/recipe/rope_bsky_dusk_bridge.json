@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwbridges"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,12 @@
   "group" : "rope_bridges",
   "pattern" : [ "F F", "WWW" ],
   "key" : {
-    "F": "minecraft:string",
-    "W": "blue_skies:dusk_slab"
+    "F" : {
+      "item" : "minecraft:string"
+    },
+    "W" : {
+      "item" : "blue_skies:dusk_slab"
+    }
   },
   "result" : {
     "count" : 4,

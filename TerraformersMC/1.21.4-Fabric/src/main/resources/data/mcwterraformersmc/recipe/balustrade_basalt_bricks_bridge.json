@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "balustrade_bridges",
+  "pattern" : [ "FFF", "WWW" ],
+  "key" : {
+    "F" : "terrestria:basalt_brick_wall",
+    "W" : "terrestria:basalt_brick_slab"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwterraformersmc:balustrade_basalt_bricks_bridge"
+  }
+}

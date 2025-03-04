@@ -1,0 +1,21 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stone_stairs",
+  "pattern" : [ "  F", " FF", "FFF" ],
+  "key" : {
+    "F" : "mcwterraformersmc:mossy_basalt_bricks_bridge"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwterraformersmc:mossy_basalt_bricks_bridge_stair"
+  }
+}

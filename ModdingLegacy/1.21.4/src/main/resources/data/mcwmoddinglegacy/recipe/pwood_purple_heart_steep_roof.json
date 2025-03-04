@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwroofs"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "steep",
   "pattern" : [ " W", "WW", "WS" ],
   "key" : {
-    "W": "premium_wood:purple_heart_log",
-    "S": "minecraft:stick"
+    "W" : "premium_wood:purple_heart_log",
+    "S" : "minecraft:stick"
   },
   "result" : {
     "count" : 4,

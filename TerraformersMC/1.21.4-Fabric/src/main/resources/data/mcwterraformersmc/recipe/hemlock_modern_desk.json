@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern_desk",
+  "pattern" : [ "AAA", "BCB" ],
+  "key" : {
+    "A" : "terrestria:hemlock_log",
+    "B" : "terrestria:hemlock_fence",
+    "C" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwterraformersmc:hemlock_modern_desk"
+  }
+}

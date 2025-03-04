@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "hedge",
+  "pattern" : [ "AA", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "cinderscapes:scorched_leaves"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:scorched_hedge"
+  }
+}

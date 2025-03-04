@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfences"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "stockade",
   "pattern" : [ "ABA", "ABA" ],
   "key" : {
-    "A": "premium_wood:silverbell_log",
-    "B": "premium_wood:silverbell_planks"
+    "A" : "premium_wood:silverbell_log",
+    "B" : "premium_wood:silverbell_planks"
   },
   "result" : {
     "count" : 3,

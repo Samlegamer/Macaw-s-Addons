@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "four_panel",
+  "pattern" : [ "A", "B", "A" ],
+  "key" : {
+    "A" : "cinderscapes:scorched_planks",
+    "B" : "mcwdoors:print_dark_oak"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:scorched_four_panel_door"
+  }
+}

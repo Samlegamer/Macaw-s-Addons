@@ -1,16 +1,26 @@
 {
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-	  "mcwabnormals:modern_arid_sandstone_wall",
-	  
-	  "mcwabnormals:railing_arid_sandstone_wall",
-	  
+	  "mcwfences:modern_sandstone_wall",
+	  "mcwfences:modern_red_sandstone_wall",
+	  "mcwfences:railing_sandstone_wall",
+	  "mcwfences:railing_red_sandstone_wall",
 	  "mcwabnormals:arid_sandstone_railing_gate",
-	  
+	  "mcwfences:red_sandstone_railing_gate",
 	  "mcwabnormals:arid_sandstone_pillar_wall",
-	  
-	  
+	  "mcwfences:red_sandstone_pillar_wall",
+	  "mcwfences:red_sandstone_grass_topped_wall",
 	  "mcwabnormals:arid_sandstone_grass_topped_wall"
     ]
   },
@@ -20,7 +30,7 @@
       "conditions": {
         "items": [
           {
-            "item": "atmospheric:arid_sandstone"
+            "item": "minecraft:sand"
           }
         ]
       }

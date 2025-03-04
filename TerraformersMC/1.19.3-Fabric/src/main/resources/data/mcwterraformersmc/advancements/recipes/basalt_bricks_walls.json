@@ -1,16 +1,25 @@
 {
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-	  "mcwterraformersmc:modern_basalt_bricks_wall",
-	  
-	  "mcwterraformersmc:railing_basalt_bricks_wall",
-	  
+	  "mcwfences:modern_sandstone_wall",
+	  "mcwfences:modern_red_sandstone_wall",
+	  "mcwfences:railing_sandstone_wall",
+	  "mcwfences:railing_red_sandstone_wall",
 	  "mcwterraformersmc:basalt_bricks_railing_gate",
-	  
+	  "mcwfences:red_sandstone_railing_gate",
 	  "mcwterraformersmc:basalt_bricks_pillar_wall",
-	  
-	  
+	  "mcwfences:red_sandstone_pillar_wall",
+	  "mcwfences:red_sandstone_grass_topped_wall",
 	  "mcwterraformersmc:basalt_bricks_grass_topped_wall"
     ]
   },
@@ -20,7 +29,7 @@
       "conditions": {
         "items": [
           {
-            "item": "terrestria:basalt_bricks"
+            "item": "minecraft:sand"
           }
         ]
       }

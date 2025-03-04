@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stable",
+  "pattern" : [ "BB", "AA", "AA" ],
+  "key" : {
+    "A" : "terrestria:cypress_planks",
+    "B" : "minecraft:iron_bars"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwterraformersmc:cypress_stable_door"
+  }
+}

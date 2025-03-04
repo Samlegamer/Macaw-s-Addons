@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "cupboard_counter",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A": "premium_wood:magic_slab",
-    "B": "mcwmoddinglegacy:pwood_magic_wardrobe"
+    "A" : "premium_wood:magic_slab",
+    "B" : "mcwmoddinglegacy:pwood_magic_wardrobe"
   },
   "result" : {
     "count" : 1,

@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "coffee_table",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A": "blue_skies:stripped_starlit_log",
-    "B": "blue_skies:starlit_fence"
+    "A" : "blue_skies:stripped_starlit_log",
+    "B" : "blue_skies:starlit_fence"
   },
   "result" : {
     "count" : 1,

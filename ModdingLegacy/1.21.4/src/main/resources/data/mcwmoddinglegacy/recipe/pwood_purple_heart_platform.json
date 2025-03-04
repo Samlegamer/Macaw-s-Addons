@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwstairs"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "mcwstairs_platform",
   "pattern" : [ " ZZ", " WW", "   " ],
   "key" : {
-    "W": "premium_wood:purple_heart_log",
-    "Z": "premium_wood:purple_heart_slab"
+    "W" : "premium_wood:purple_heart_log",
+    "Z" : "premium_wood:purple_heart_slab"
   },
   "result" : {
     "count" : 12,

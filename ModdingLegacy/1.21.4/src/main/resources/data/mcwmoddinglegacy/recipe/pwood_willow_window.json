@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwwindows"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "windows",
   "pattern" : [ " A ", "ABA", " A " ],
   "key" : {
-    "A": "mcwwindows:window_base",
-    "B": "premium_wood:willow_log"
+    "A" : "mcwwindows:window_base",
+    "B" : "premium_wood:willow_log"
   },
   "result" : {
     "count" : 4,

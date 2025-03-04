@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwbridges"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,7 +13,7 @@
   "group" : "rope_stairs",
   "pattern" : [ "  F", " FF", "FFF" ],
   "key" : {
-    "F": "mcwmoddinglegacy:rope_pwood_magic_bridge"
+    "F" : "mcwmoddinglegacy:rope_pwood_magic_bridge"
   },
   "result" : {
     "count" : 6,

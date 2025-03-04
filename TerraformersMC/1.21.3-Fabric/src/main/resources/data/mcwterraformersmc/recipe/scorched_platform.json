@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " ZZ", " WW", "   " ],
+  "key" : {
+    "W" : "cinderscapes:scorched_stem",
+    "Z" : "cinderscapes:scorched_slab"
+  },
+  "result" : {
+    "count" : 12,
+    "id" : "mcwterraformersmc:scorched_platform"
+  }
+}

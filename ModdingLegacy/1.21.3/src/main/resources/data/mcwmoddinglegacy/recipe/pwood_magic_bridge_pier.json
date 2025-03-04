@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwbridges"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "wooden_piers",
   "pattern" : [ "WFW" ],
   "key" : {
-    "F": "premium_wood:magic_fence",
-    "W": "premium_wood:magic_log"
+    "F" : "premium_wood:magic_fence",
+    "W" : "premium_wood:magic_log"
   },
   "result" : {
     "count" : 3,

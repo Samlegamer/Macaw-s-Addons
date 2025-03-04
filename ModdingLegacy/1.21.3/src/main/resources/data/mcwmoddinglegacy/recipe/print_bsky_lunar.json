@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "prints",
+  "pattern" : [ " A ", "ABA", " A " ],
+  "key" : {
+    "A" : "minecraft:paper",
+    "B" : "blue_skies:lunar_door"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwdoors:print_acacia"
+  }
+}

@@ -1,4 +1,14 @@
 {
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [

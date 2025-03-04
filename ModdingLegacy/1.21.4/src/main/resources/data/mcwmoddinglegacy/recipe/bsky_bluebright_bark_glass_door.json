@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwdoors"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "bark",
   "pattern" : [ "AB", "BB", "AB" ],
   "key" : {
-    "A": "blue_skies:bluebright_log",
-    "B": "minecraft:glass"
+    "A" : "blue_skies:bluebright_log",
+    "B" : "minecraft:glass"
   },
   "result" : {
     "count" : 3,

@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "lower",
+  "pattern" : [ " WW", "WWS" ],
+  "key" : {
+    "W" : "terrestria:rainbow_eucalyptus_planks",
+    "S" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:rainbow_eucalyptus_planks_lower_roof"
+  }
+}

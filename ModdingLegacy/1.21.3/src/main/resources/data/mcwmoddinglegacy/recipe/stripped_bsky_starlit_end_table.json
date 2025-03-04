@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfurnitures"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "end_table",
   "pattern" : [ "A", "B" ],
   "key" : {
-    "A": "mcwmoddinglegacy:stripped_bsky_starlit_table",
-    "B": "blue_skies:stripped_starlit_log"
+    "A" : "mcwmoddinglegacy:stripped_bsky_starlit_table",
+    "B" : "blue_skies:stripped_starlit_log"
   },
   "result" : {
     "count" : 1,

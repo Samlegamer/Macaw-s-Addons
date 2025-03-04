@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwstairs"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,7 +13,7 @@
   "group" : "loft_stairs",
   "pattern" : [ "W  ", " W ", "  W" ],
   "key" : {
-    "W": "blue_skies:stripped_frostbright_log"
+    "W" : "blue_skies:stripped_frostbright_log"
   },
   "result" : {
     "count" : 3,

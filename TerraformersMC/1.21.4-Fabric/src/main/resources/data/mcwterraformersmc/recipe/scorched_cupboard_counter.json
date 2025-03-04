@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "cupboard_counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "cinderscapes:scorched_slab",
+    "B" : "mcwterraformersmc:scorched_wardrobe"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:scorched_cupboard_counter"
+  }
+}

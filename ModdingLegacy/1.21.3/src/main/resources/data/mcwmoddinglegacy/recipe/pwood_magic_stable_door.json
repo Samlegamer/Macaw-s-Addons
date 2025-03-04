@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwdoors"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "stable",
   "pattern" : [ "BB", "AA", "AA" ],
   "key" : {
-    "A": "premium_wood:magic_planks",
-    "B": "minecraft:iron_bars"
+    "A" : "premium_wood:magic_planks",
+    "B" : "minecraft:iron_bars"
   },
   "result" : {
     "count" : 3,

@@ -1,16 +1,26 @@
 {
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "betterlands"
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-	  "mcwsajevius:modern_magenta_terracotta_bricks_wall",
-	  
-	  "mcwsajevius:railing_magenta_terracotta_bricks_wall",
-	  
+	  "mcwfences:modern_sandstone_wall",
+	  "mcwfences:modern_red_sandstone_wall",
+	  "mcwfences:railing_sandstone_wall",
+	  "mcwfences:railing_red_sandstone_wall",
 	  "mcwsajevius:magenta_terracotta_bricks_railing_gate",
-	  
+	  "mcwfences:red_sandstone_railing_gate",
 	  "mcwsajevius:magenta_terracotta_bricks_pillar_wall",
-	  
-	  
+	  "mcwfences:red_sandstone_pillar_wall",
+	  "mcwfences:red_sandstone_grass_topped_wall",
 	  "mcwsajevius:magenta_terracotta_bricks_grass_topped_wall"
     ]
   },
@@ -20,7 +30,7 @@
       "conditions": {
         "items": [
           {
-            "item": "betterlands:magenta_terracotta_bricks"
+            "item": "minecraft:sand"
           }
         ]
       }

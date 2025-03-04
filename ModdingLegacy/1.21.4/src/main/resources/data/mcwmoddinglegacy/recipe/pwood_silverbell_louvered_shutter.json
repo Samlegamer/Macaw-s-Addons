@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwwindows"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "premium_wood"
     }
   ],
@@ -13,7 +13,7 @@
   "group" : "shutters",
   "pattern" : [ "B", "B", "B" ],
   "key" : {
-    "B": "premium_wood:silverbell_slab"
+    "B" : "premium_wood:silverbell_slab"
   },
   "result" : {
     "count" : 3,

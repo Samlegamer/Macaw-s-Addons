@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwfences"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,9 +13,9 @@
   "group" : "picket",
   "pattern" : [ "CBC", "CAC" ],
   "key" : {
-    "A": "minecraft:stick",
-    "B": "blue_skies:maple_planks",
-    "C": "blue_skies:maple_log"
+    "A" : "minecraft:stick",
+    "B" : "blue_skies:maple_planks",
+    "C" : "blue_skies:maple_log"
   },
   "result" : {
     "count" : 3,

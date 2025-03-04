@@ -1,11 +1,11 @@
 {
-"conditions": [
+"neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mcwdoors"
     },
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "blue_skies"
     }
   ],
@@ -13,8 +13,8 @@
   "group" : "stable",
   "pattern" : [ "BB", "AA", "AA" ],
   "key" : {
-    "A": "blue_skies:dusk_planks",
-    "B": "minecraft:iron_bars"
+    "A" : "blue_skies:dusk_planks",
+    "B" : "minecraft:iron_bars"
   },
   "result" : {
     "count" : 3,

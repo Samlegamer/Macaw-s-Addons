@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows_four",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : "mcwwindows:window_centre_bar_base",
+    "B" : "terrestria:stripped_japanese_maple_log"
+  },
+  "result" : {
+    "count" : 8,
+    "id" : "mcwterraformersmc:stripped_japanese_maple_log_four_window"
+  }
+}
