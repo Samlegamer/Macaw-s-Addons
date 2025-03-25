@@ -21,6 +21,8 @@ import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 
+import javax.annotation.Nonnull;
+
 @Mod(McwQuark.MODID)
 @Mod.EventBusSubscriber(modid = McwQuark.MODID, bus = Bus.MOD)
 public class McwQuark
@@ -38,6 +40,7 @@ public class McwQuark
 
 	public static final ItemGroup MCWQUARK_TAB = new ItemGroup(MODID + ".tab") {
 	    @Override
+		@Nonnull
 	    public ItemStack makeIcon() {
 	    	NewIconRandom.NewProperties propIcon = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "limestone_bricks_roof"), Finder.findBlock(MODID, "orange_blossom_hedge"), Blocks.CRAFTING_TABLE,
 	    	Finder.findBlock(MODID, "marble_bricks_bridge"), Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE);
