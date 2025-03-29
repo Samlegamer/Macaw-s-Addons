@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "abundance"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "curved_gate",
+    
+    "pattern":
+    [
+		"B A",
+		"BAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "abundance:jacaranda_planks"
+        },    
+        
+        "B":
+        {
+            "item": "abundance:jacaranda_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwaurora:jacaranda_curved_gate",
+        "count": 4
+    }
+}
+
+

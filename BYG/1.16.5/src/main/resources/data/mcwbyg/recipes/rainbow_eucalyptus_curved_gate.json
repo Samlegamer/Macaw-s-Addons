@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "curved_gate",
+    
+    "pattern":
+    [
+		"B A",
+		"BAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:rainbow_eucalyptus_planks"
+        },    
+        
+        "B":
+        {
+            "item": "byg:rainbow_eucalyptus_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:rainbow_eucalyptus_curved_gate",
+        "count": 4
+    }
+}
+
+
