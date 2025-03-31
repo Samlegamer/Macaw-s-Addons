@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "curved_gate",
+    
+    "pattern":
+    [
+		"B A",
+		"BAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "terrestria:hemlock_planks"
+        },    
+        
+        "B":
+        {
+            "item": "terrestria:hemlock_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:hemlock_curved_gate",
+        "count": 4
+    }
+}
+
+
