@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "double_drawer_counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:lament_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwbyg:lament_double_drawer"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:lament_double_drawer_counter",
+        "count": 1
+    }
+}
+
+

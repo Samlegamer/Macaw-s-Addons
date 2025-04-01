@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "pyramid",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:cherry_log"
+        },
+		
+		"C":
+        {
+            "item": "byg:cherry_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:cherry_pyramid_gate",
+        "count": 1
+    }
+}
+
+

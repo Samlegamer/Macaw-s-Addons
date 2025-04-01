@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:pine_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "byg:pine_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:pine_desk",
+        "count": 2
+    }
+}
+
+

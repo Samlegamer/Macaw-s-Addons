@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stool_chair",
+    "pattern":
+    [
+		"A",
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:sythian_stem"
+        }, 	
+		
+        "B":
+        {
+            "item": "byg:sythian_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:sythian_stool_chair",
+        "count": 1
+    }
+}
+
+

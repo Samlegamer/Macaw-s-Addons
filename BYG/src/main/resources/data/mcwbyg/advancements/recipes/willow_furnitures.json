@@ -1,0 +1,101 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbyg:willow_wardrobe",
+	  "mcwbyg:willow_modern_wardrobe",
+	  "mcwbyg:willow_double_wardrobe",
+	  "mcwbyg:willow_bookshelf_cupboard",
+	  "mcwbyg:willow_bookshelf",
+	  "mcwbyg:willow_drawer",
+	  "mcwbyg:willow_double_drawer",
+	  "mcwbyg:willow_bookshelf_drawer",
+	  "mcwbyg:willow_lower_bookshelf_drawer",
+	  "mcwbyg:willow_large_drawer",
+	  "mcwbyg:willow_lower_triple_drawer",
+	  "mcwbyg:willow_triple_drawer",
+	  "mcwbyg:willow_desk",
+	  "mcwbyg:willow_covered_desk",
+	  "mcwbyg:willow_modern_desk",
+	  "mcwbyg:willow_table",
+	  "mcwbyg:willow_end_table",
+	  "mcwbyg:willow_coffee_table",
+	  "mcwbyg:willow_glass_table",
+	  "mcwbyg:willow_chair",
+	  "mcwbyg:willow_modern_chair",
+	  "mcwbyg:willow_striped_chair",
+	  "mcwbyg:willow_stool_chair",
+	  "mcwbyg:willow_counter",
+	  "mcwbyg:willow_drawer_counter",
+	  "mcwbyg:willow_double_drawer_counter",
+	  "mcwbyg:willow_cupboard_counter",
+	  
+	  "mcwbyg:stripped_willow_wardrobe",
+	  "mcwbyg:stripped_willow_modern_wardrobe",
+	  "mcwbyg:stripped_willow_double_wardrobe",
+	  "mcwbyg:stripped_willow_bookshelf_cupboard",
+	  "mcwbyg:stripped_willow_bookshelf",
+	  "mcwbyg:stripped_willow_drawer",
+	  "mcwbyg:stripped_willow_double_drawer",
+	  "mcwbyg:stripped_willow_bookshelf_drawer",
+	  "mcwbyg:stripped_willow_lower_bookshelf_drawer",
+	  "mcwbyg:stripped_willow_large_drawer",
+	  "mcwbyg:stripped_willow_lower_triple_drawer",
+	  "mcwbyg:stripped_willow_triple_drawer",
+	  "mcwbyg:stripped_willow_desk",
+	  "mcwbyg:stripped_willow_covered_desk",
+	  "mcwbyg:stripped_willow_modern_desk",
+	  "mcwbyg:stripped_willow_table",
+	  "mcwbyg:stripped_willow_end_table",
+	  "mcwbyg:stripped_willow_coffee_table",
+	  "mcwbyg:stripped_willow_glass_table",
+	  "mcwbyg:stripped_willow_chair",
+	  "mcwbyg:stripped_willow_modern_chair",
+	  "mcwbyg:stripped_willow_striped_chair",
+	  "mcwbyg:stripped_willow_stool_chair",
+	  "mcwbyg:stripped_willow_counter",
+	  "mcwbyg:stripped_willow_drawer_counter",
+	  "mcwbyg:stripped_willow_double_drawer_counter",
+	  "mcwbyg:stripped_willow_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:willow_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbyg:willow_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

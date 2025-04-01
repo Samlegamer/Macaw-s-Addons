@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "end_table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwbyg:fir_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "byg:fir_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:fir_end_table",
+        "count": 1
+    }
+}
+
+

@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shapeless",
+	"group": "recyclable_bridges",
+		
+    "ingredients": [
+        {
+            "item": "mcwbyg:soapstone_bricks_bridge_stair"
+        }
+    ],
+    "result": {
+        "item": "mcwbyg:soapstone_bricks_bridge",
+        "count": 1
+    }
+}

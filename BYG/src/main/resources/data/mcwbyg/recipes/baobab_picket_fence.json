@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "byg:baobab_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "byg:baobab_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:baobab_picket_fence",
+        "count": 3
+    }
+}
+
+

@@ -1,0 +1,64 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:cypress_tropical_door",
+	  "mcwbyg:cypress_bark_glass_door",
+	  "mcwbyg:cypress_barn_door",
+	  "mcwbyg:cypress_barn_glass_door",
+	  "mcwbyg:cypress_beach_door",
+	  "mcwbyg:cypress_classic_door",
+	  "mcwbyg:cypress_cottage_door",
+	  "mcwbyg:cypress_four_panel_door",
+	  "mcwbyg:cypress_glass_door",
+	  "mcwbyg:cypress_japanese_door",
+	  "mcwbyg:cypress_japanese2_door",
+	  "mcwbyg:cypress_modern_door",
+	  "mcwbyg:cypress_mystic_door",
+	  "mcwbyg:cypress_nether_door",
+	  "mcwbyg:cypress_paper_door",
+	  "mcwbyg:cypress_stable_door",
+	  "mcwbyg:cypress_stable_head_door",
+	  "mcwbyg:cypress_swamp_door",
+	  "mcwbyg:cypress_western_door",
+	  "mcwbyg:cypress_waffle_door",
+	  "mcwbyg:cypress_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:cypress_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "modern",
+    
+    "pattern":
+    [
+		"ABA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:polished_travertine"
+        },    
+        
+        "B":
+        {
+            "item": "byg:travertine"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:modern_travertine_wall",
+        "count": 6
+    }
+}
+
+

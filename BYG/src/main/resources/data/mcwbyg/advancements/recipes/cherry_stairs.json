@@ -1,0 +1,44 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:cherry_bulk_stairs",
+	  "mcwbyg:cherry_compact_stairs",
+	  "mcwbyg:cherry_loft_stairs",
+	  "mcwbyg:cherry_skyline_stairs",
+	  "mcwbyg:cherry_terrace_stairs",
+	  "mcwbyg:cherry_railing",
+	  "mcwbyg:cherry_balcony",
+	  "mcwbyg:cherry_platform"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:cherry_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

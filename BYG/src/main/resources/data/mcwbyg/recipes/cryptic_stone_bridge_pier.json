@@ -1,0 +1,37 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stone_piers",
+    
+    "pattern": [
+    "WFW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "byg:cryptic_stone_wall"
+        },
+        
+        "W":
+        {
+            "item": "byg:cryptic_stone"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:cryptic_stone_bridge_pier",
+        "count": 3
+    }
+}

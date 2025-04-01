@@ -1,0 +1,64 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:bulbis_tropical_door",
+	  "mcwbyg:bulbis_bark_glass_door",
+	  "mcwbyg:bulbis_barn_door",
+	  "mcwbyg:bulbis_barn_glass_door",
+	  "mcwbyg:bulbis_beach_door",
+	  "mcwbyg:bulbis_classic_door",
+	  "mcwbyg:bulbis_cottage_door",
+	  "mcwbyg:bulbis_four_panel_door",
+	  "mcwbyg:bulbis_glass_door",
+	  "mcwbyg:bulbis_japanese_door",
+	  "mcwbyg:bulbis_japanese2_door",
+	  "mcwbyg:bulbis_modern_door",
+	  "mcwbyg:bulbis_mystic_door",
+	  "mcwbyg:bulbis_nether_door",
+	  "mcwbyg:bulbis_paper_door",
+	  "mcwbyg:bulbis_stable_door",
+	  "mcwbyg:bulbis_stable_head_door",
+	  "mcwbyg:bulbis_swamp_door",
+	  "mcwbyg:bulbis_western_door",
+	  "mcwbyg:bulbis_waffle_door",
+	  "mcwbyg:bulbis_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:bulbis_stem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

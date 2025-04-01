@@ -1,0 +1,101 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbyg:nightshade_wardrobe",
+	  "mcwbyg:nightshade_modern_wardrobe",
+	  "mcwbyg:nightshade_double_wardrobe",
+	  "mcwbyg:nightshade_bookshelf_cupboard",
+	  "mcwbyg:nightshade_bookshelf",
+	  "mcwbyg:nightshade_drawer",
+	  "mcwbyg:nightshade_double_drawer",
+	  "mcwbyg:nightshade_bookshelf_drawer",
+	  "mcwbyg:nightshade_lower_bookshelf_drawer",
+	  "mcwbyg:nightshade_large_drawer",
+	  "mcwbyg:nightshade_lower_triple_drawer",
+	  "mcwbyg:nightshade_triple_drawer",
+	  "mcwbyg:nightshade_desk",
+	  "mcwbyg:nightshade_covered_desk",
+	  "mcwbyg:nightshade_modern_desk",
+	  "mcwbyg:nightshade_table",
+	  "mcwbyg:nightshade_end_table",
+	  "mcwbyg:nightshade_coffee_table",
+	  "mcwbyg:nightshade_glass_table",
+	  "mcwbyg:nightshade_chair",
+	  "mcwbyg:nightshade_modern_chair",
+	  "mcwbyg:nightshade_striped_chair",
+	  "mcwbyg:nightshade_stool_chair",
+	  "mcwbyg:nightshade_counter",
+	  "mcwbyg:nightshade_drawer_counter",
+	  "mcwbyg:nightshade_double_drawer_counter",
+	  "mcwbyg:nightshade_cupboard_counter",
+	  
+	  "mcwbyg:stripped_nightshade_wardrobe",
+	  "mcwbyg:stripped_nightshade_modern_wardrobe",
+	  "mcwbyg:stripped_nightshade_double_wardrobe",
+	  "mcwbyg:stripped_nightshade_bookshelf_cupboard",
+	  "mcwbyg:stripped_nightshade_bookshelf",
+	  "mcwbyg:stripped_nightshade_drawer",
+	  "mcwbyg:stripped_nightshade_double_drawer",
+	  "mcwbyg:stripped_nightshade_bookshelf_drawer",
+	  "mcwbyg:stripped_nightshade_lower_bookshelf_drawer",
+	  "mcwbyg:stripped_nightshade_large_drawer",
+	  "mcwbyg:stripped_nightshade_lower_triple_drawer",
+	  "mcwbyg:stripped_nightshade_triple_drawer",
+	  "mcwbyg:stripped_nightshade_desk",
+	  "mcwbyg:stripped_nightshade_covered_desk",
+	  "mcwbyg:stripped_nightshade_modern_desk",
+	  "mcwbyg:stripped_nightshade_table",
+	  "mcwbyg:stripped_nightshade_end_table",
+	  "mcwbyg:stripped_nightshade_coffee_table",
+	  "mcwbyg:stripped_nightshade_glass_table",
+	  "mcwbyg:stripped_nightshade_chair",
+	  "mcwbyg:stripped_nightshade_modern_chair",
+	  "mcwbyg:stripped_nightshade_striped_chair",
+	  "mcwbyg:stripped_nightshade_stool_chair",
+	  "mcwbyg:stripped_nightshade_counter",
+	  "mcwbyg:stripped_nightshade_drawer_counter",
+	  "mcwbyg:stripped_nightshade_double_drawer_counter",
+	  "mcwbyg:stripped_nightshade_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:nightshade_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbyg:nightshade_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

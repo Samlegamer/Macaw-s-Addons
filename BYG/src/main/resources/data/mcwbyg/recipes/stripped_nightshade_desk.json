@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:stripped_nightshade_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "byg:nightshade_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_nightshade_desk",
+        "count": 2
+    }
+}
+
+

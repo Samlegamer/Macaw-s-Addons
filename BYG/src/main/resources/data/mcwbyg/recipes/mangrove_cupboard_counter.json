@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "cupboard_counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:mangrove_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwbyg:mangrove_wardrobe"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:mangrove_cupboard_counter",
+        "count": 1
+    }
+}
+
+

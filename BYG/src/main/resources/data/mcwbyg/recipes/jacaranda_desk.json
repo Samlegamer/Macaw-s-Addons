@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:jacaranda_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "byg:jacaranda_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:jacaranda_desk",
+        "count": 2
+    }
+}
+
+

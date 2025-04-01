@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:redwood_log"
+        }, 
+		
+        "B":
+        {
+            "item": "byg:redwood_slab"
+        },
+		
+		"C":
+        {
+            "item": "byg:redwood_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:redwood_chair",
+        "count": 1
+    }
+}
+
+

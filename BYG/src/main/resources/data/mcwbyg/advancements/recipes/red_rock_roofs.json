@@ -1,0 +1,43 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:red_rock_roof",
+	  "mcwbyg:red_rock_attic_roof",
+	  "mcwbyg:red_rock_top_roof",
+	  "mcwbyg:red_rock_lower_roof",
+	  "mcwbyg:red_rock_steep_roof",
+	  "mcwbyg:red_rock_upper_lower_roof",
+	  "mcwbyg:red_rock_upper_steep_roof"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:red_rock"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

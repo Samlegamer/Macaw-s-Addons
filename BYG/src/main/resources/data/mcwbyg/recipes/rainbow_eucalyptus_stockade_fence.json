@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:rainbow_eucalyptus_log"
+        },    
+        
+        "B":
+        {
+            "item": "byg:rainbow_eucalyptus_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:rainbow_eucalyptus_stockade_fence",
+        "count": 3
+    }
+}
+
+

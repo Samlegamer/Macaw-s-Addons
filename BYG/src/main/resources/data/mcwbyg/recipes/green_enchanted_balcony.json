@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_balcony",
+  "pattern" : [ "WWW", "Z Z", "WWW" ],
+  "key" : {
+    "W" : {
+      "item" : "minecraft:stick"
+    },
+    "Z" : {
+      "item" : "byg:green_enchanted_fence"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:green_enchanted_balcony",
+    "count" : 6
+  }
+}

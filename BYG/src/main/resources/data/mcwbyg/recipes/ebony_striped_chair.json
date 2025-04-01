@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "striped_chair",
+    "pattern":
+    [
+        " A",
+        "BC",
+		"CC"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:ebony_log"
+        }, 
+		
+        "B":
+        {
+            "item": "byg:ebony_slab"
+        },
+		
+		"C":
+        {
+            "item": "byg:ebony_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:ebony_striped_chair",
+        "count": 1
+    }
+}
+
+

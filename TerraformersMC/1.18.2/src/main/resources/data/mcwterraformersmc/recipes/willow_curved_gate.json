@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "terrestria"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "curved_gate",
+    
+    "pattern":
+    [
+		"B A",
+		"BAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "terrestria:willow_planks"
+        },    
+        
+        "B":
+        {
+            "item": "terrestria:willow_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:willow_curved_gate",
+        "count": 4
+    }
+}
+
+

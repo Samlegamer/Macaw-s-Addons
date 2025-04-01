@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "drawer_counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:skyris_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwbyg:skyris_drawer"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:skyris_drawer_counter",
+        "count": 1
+    }
+}
+
+

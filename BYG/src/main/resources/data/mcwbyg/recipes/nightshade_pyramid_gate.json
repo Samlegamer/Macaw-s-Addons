@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "pyramid",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "byg:nightshade_log"
+        },
+		
+		"C":
+        {
+            "item": "byg:nightshade_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:nightshade_pyramid_gate",
+        "count": 1
+    }
+}
+
+

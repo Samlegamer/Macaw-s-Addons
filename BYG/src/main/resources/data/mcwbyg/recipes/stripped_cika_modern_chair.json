@@ -1,0 +1,45 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "modern_chair",
+    "pattern":
+    [
+        "BA",
+        "CC"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:stripped_cika_log"
+        }, 
+		
+        "B":
+        {
+            "item": "byg:cika_slab"
+        },
+		
+		"C":
+        {
+            "item": "byg:cika_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_cika_modern_chair",
+        "count": 1
+    }
+}
+
+

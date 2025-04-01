@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:blue_enchanted_log"
+        },    
+        
+        "B":
+        {
+            "item": "byg:blue_enchanted_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:blue_enchanted_stockade_fence",
+        "count": 3
+    }
+}
+
+

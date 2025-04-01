@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:sythian_stem"
+        },    
+        
+        "B":
+        {
+            "item": "byg:sythian_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:sythian_stockade_fence",
+        "count": 3
+    }
+}
+
+

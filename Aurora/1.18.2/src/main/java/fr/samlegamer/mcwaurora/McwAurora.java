@@ -8,7 +8,6 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -40,10 +39,8 @@ public class McwAurora
 	public static final String MODID = "mcwaurora";
     private static final Logger LOGGER = LogManager.getLogger();
     
-    public static final List<String> WOOD_BAYOU = Arrays.asList("cypress"); // bayou_blues
     public static final List<String> WOOD_ENHANCED_MUSH = Arrays.asList("brown_mushroom", "red_mushroom"); // enhanced_mushrooms
-    public static final List<String> WOOD_ABUNDANCE = Arrays.asList("jacaranda", "redbud"); // abundance
-    
+
     private static final DeferredRegister<Block> block = Registration.blocks(MODID);
     private static final DeferredRegister<Item> item = Registration.items(MODID);
     
@@ -80,48 +77,17 @@ public class McwAurora
     {
     	LOGGER.info("Macaw's Aurora Mod Loading...");
     	Registration.init(block, item);
-
     	final BlockBehaviour.Properties wood = BlockBehaviour.Properties.of(Material.WOOD).strength(0.5F, 2.5F).sound(SoundType.WOOD);
-    	final BlockBehaviour.Properties leaves = BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES);
 
-    	Bridges.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues", wood);
     	Bridges.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms", wood);
-    	Bridges.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance", wood);
-
-    	Roofs.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues", wood);
     	Roofs.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms", wood);
-    	Roofs.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance", wood);
-
-    	Fences.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues", wood);
     	Fences.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms", wood);
-    	Fences.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance", wood);
-
-    	Fences.setRegistrationHedgesModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues", leaves);
-    	Fences.setRegistrationHedgesModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance", leaves);
-
-    	Furnitures.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues");
     	Furnitures.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms");
-    	Furnitures.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance");
-
-    	Stairs.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues", wood);
     	Stairs.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms", wood);
-    	Stairs.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance", wood);
-
-		Paths.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues");
 		Paths.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms");
-		Paths.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance");
-
-		Trapdoors.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues");
 		Trapdoors.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms");
-		Trapdoors.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance");
-
-		Doors.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues");
 		Doors.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms");
-		Doors.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance");
-
-		Windows.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues");
 		Windows.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms");
-		Windows.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance");
 
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
         MinecraftForge.EVENT_BUS.register(MappingsFix.class);
@@ -130,77 +96,25 @@ public class McwAurora
     
     private void client(FMLClientSetupEvent e)
     {
-    	Bridges.clientWood(e, MODID, WOOD_BAYOU);
     	Bridges.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-    	Bridges.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-    	Roofs.clientWood(e, MODID, WOOD_BAYOU);
     	Roofs.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-    	Roofs.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-    	Fences.clientWood(e, MODID, WOOD_BAYOU);
     	Fences.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-    	Fences.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-    	Fences.clientHedge(e, MODID, WOOD_BAYOU);
-    	Fences.clientHedge(e, MODID, WOOD_ABUNDANCE);
-
-    	Furnitures.clientWood(e, MODID, WOOD_BAYOU);
     	Furnitures.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-    	Furnitures.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-    	Stairs.clientWood(e, MODID, WOOD_BAYOU);
     	Stairs.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-    	Stairs.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-		Paths.clientWood(e, MODID, WOOD_BAYOU);
 		Paths.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-		Paths.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-		Trapdoors.clientWood(e, MODID, WOOD_BAYOU);
 		Trapdoors.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-		Trapdoors.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-		Doors.clientWood(e, MODID, WOOD_BAYOU);
 		Doors.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-		Doors.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-		Windows.clientWood(e, MODID, WOOD_BAYOU);
 		Windows.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-		Windows.clientWood(e, MODID, WOOD_ABUNDANCE);
     }
     
 	private static String randomNaming()
 	{
 		Random rand = new Random();
 
-		if(ModList.get().isLoaded("bayou_blues") && ModList.get().isLoaded("enhanced_mushrooms") && ModList.get().isLoaded("abundance"))
+		if(ModList.get().isLoaded("enhanced_mushrooms"))
 		{
-			int i = rand.nextInt(3);
-
-            return switch (i) {
-                case 0 -> "cypress";
-                case 1 -> "brown_mushroom";
-                case 2 -> "jacaranda";
-                default -> "red_mushroom";
-            };
-		}
-		else
-		{
-			if(ModList.get().isLoaded("bayou_blues"))
-			{
-				return "cypress";
-			}
-
-			if(ModList.get().isLoaded("enhanced_mushrooms"))
-			{
-				return "brown_mushroom";
-			}
-			
-			if(ModList.get().isLoaded("abundance"))
-			{
-				return "jacaranda";
-			}
+			int i = rand.nextInt(2);
+			return i == 0 ? "brown_mushroom" : "red_mushroom";
 		}
 		return "brown_mushroom";
 	}

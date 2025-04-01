@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:stripped_rainbow_eucalyptus_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "byg:rainbow_eucalyptus_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_rainbow_eucalyptus_desk",
+        "count": 2
+    }
+}
+
+

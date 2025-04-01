@@ -16,7 +16,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-import java.util.Arrays;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -26,7 +25,6 @@ import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.stairs.Stairs;
-
 import javax.annotation.Nonnull;
 
 @Mod(McwAbnormals.MODID)
@@ -34,19 +32,19 @@ public class McwAbnormals
 {
 	public static final String MODID = "mcwabnormals";
     private static final Logger LOGGER = LogManager.getLogger();
-    public static final List<String> ROCK_BB = Arrays.asList("honeycomb_brick", "honeycomb_tile");
-    public static final List<String> WOOD_ATMO = Arrays.asList("aspen", "grimwood", "kousa", "morado", "rosewood", "yucca");
-    public static final List<String> ROCK_ATMO = Arrays.asList("arid_sandstone", "red_arid_sandstone");
-    public static final List<String> WOOD_AUTU = Arrays.asList("maple");
-    public static final List<String> ROCK_AUTU = Arrays.asList("snail_shell_bricks", "snail_shell_tiles");
-    public static final List<String> WOOD_ENVI = Arrays.asList("cherry", "wisteria", "willow");
-    public static final List<String> WOOD_UAQUA = Arrays.asList("driftwood", "river");
-    public static final List<String> WOOD_ENDER = Arrays.asList("poise");
+    public static final List<String> ROCK_BB = List.of("honeycomb_brick", "honeycomb_tile");
+    public static final List<String> WOOD_ATMO = List.of("aspen", "grimwood", "kousa", "morado", "rosewood", "yucca");
+    public static final List<String> ROCK_ATMO = List.of("arid_sandstone", "red_arid_sandstone");
+    public static final List<String> WOOD_AUTU = List.of("maple");
+    public static final List<String> ROCK_AUTU = List.of("snail_shell_bricks", "snail_shell_tiles");
+    public static final List<String> WOOD_ENVI = List.of("cherry", "wisteria", "willow");
+    public static final List<String> WOOD_UAQUA = List.of("driftwood", "river");
+    public static final List<String> WOOD_ENDER = List.of("poise");
     
-    public static final List<String> LEAVES_ATMO = Arrays.asList("aspen", "grimwood", "kousa", "morado", "rosewood", "yucca");
-    public static final List<String> LEAVES_AUTU = Arrays.asList("maple", "red_maple", "yellow_maple","orange_maple");
-    public static final List<String> LEAVES_ENVI = Arrays.asList("cherry", "blue_wisteria", "pink_wisteria", "white_wisteria", "purple_wisteria", "willow");
-    public static final List<String> LEAVES_UAQUA = Arrays.asList("river");
+    public static final List<String> LEAVES_ATMO = List.of("aspen", "grimwood", "kousa", "morado", "rosewood", "yucca");
+    public static final List<String> LEAVES_AUTU = List.of("maple", "red_maple", "yellow_maple","orange_maple");
+    public static final List<String> LEAVES_ENVI = List.of("cherry", "blue_wisteria", "pink_wisteria", "white_wisteria", "purple_wisteria", "willow");
+    public static final List<String> LEAVES_UAQUA = List.of("river");
     
     private static final DeferredRegister<Block> block = Registration.blocks(MODID);
     private static final DeferredRegister<Item> item = Registration.items(MODID);

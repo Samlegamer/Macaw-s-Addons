@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : {
+      "item" : "byg:stripped_sythian_stem"
+    },
+    "Z" : {
+      "item" : "byg:sythian_stem"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:sythian_terrace_stairs",
+    "count" : 5
+  }
+}

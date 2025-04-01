@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "byg:willow_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "byg:willow_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:willow_picket_fence",
+        "count": 3
+    }
+}
+
+

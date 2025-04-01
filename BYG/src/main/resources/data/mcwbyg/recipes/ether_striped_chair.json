@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "striped_chair",
+    "pattern":
+    [
+        " A",
+        "BC",
+		"CC"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:ether_log"
+        }, 
+		
+        "B":
+        {
+            "item": "byg:ether_slab"
+        },
+		
+		"C":
+        {
+            "item": "byg:ether_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:ether_striped_chair",
+        "count": 1
+    }
+}
+
+

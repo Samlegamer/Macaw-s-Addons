@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:redwood_log"
+        },    
+        
+        "B":
+        {
+            "item": "byg:redwood_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:redwood_stockade_fence",
+        "count": 3
+    }
+}
+
+

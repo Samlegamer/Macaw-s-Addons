@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "byg:scoria_stone"
+    },
+    "result": "mcwbyg:scoria_stone_upper_lower_roof",
+    "group": "roofs",
+    "count": 1
+}

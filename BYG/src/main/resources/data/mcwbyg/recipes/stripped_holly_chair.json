@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:stripped_holly_log"
+        }, 
+		
+        "B":
+        {
+            "item": "byg:holly_slab"
+        },
+		
+		"C":
+        {
+            "item": "byg:holly_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:stripped_holly_chair",
+        "count": 1
+    }
+}
+
+

@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stone_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "byg:polished_travertine_wall"
+        },
+        
+        "W":
+        {
+            "item": "byg:polished_travertine_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:polished_travertine_bridge",
+        "count": 4
+    }
+}

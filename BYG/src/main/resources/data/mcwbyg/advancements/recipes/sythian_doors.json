@@ -1,0 +1,64 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:sythian_tropical_door",
+	  "mcwbyg:sythian_bark_glass_door",
+	  "mcwbyg:sythian_barn_door",
+	  "mcwbyg:sythian_barn_glass_door",
+	  "mcwbyg:sythian_beach_door",
+	  "mcwbyg:sythian_classic_door",
+	  "mcwbyg:sythian_cottage_door",
+	  "mcwbyg:sythian_four_panel_door",
+	  "mcwbyg:sythian_glass_door",
+	  "mcwbyg:sythian_japanese_door",
+	  "mcwbyg:sythian_japanese2_door",
+	  "mcwbyg:sythian_modern_door",
+	  "mcwbyg:sythian_mystic_door",
+	  "mcwbyg:sythian_nether_door",
+	  "mcwbyg:sythian_paper_door",
+	  "mcwbyg:sythian_stable_door",
+	  "mcwbyg:sythian_stable_head_door",
+	  "mcwbyg:sythian_swamp_door",
+	  "mcwbyg:sythian_western_door",
+	  "mcwbyg:sythian_waffle_door",
+	  "mcwbyg:sythian_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:sythian_stem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

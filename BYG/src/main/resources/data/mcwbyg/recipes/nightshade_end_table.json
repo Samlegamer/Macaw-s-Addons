@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "end_table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwbyg:nightshade_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "byg:nightshade_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:nightshade_end_table",
+        "count": 1
+    }
+}
+
+
