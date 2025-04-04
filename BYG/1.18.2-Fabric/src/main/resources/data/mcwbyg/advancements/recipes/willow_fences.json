@@ -1,0 +1,40 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "byg"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:willow_picket_fence",
+	  "mcwbyg:willow_stockade_fence",
+	  "mcwbyg:willow_horse_fence",
+	  "mcwbyg:willow_wired_fence",
+	  "mcwbyg:willow_highley_gate",
+	  "mcwbyg:willow_pyramid_gate",
+	  "mcwbyg:willow_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:willow_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

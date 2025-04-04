@@ -1,0 +1,40 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "curved_gate",
+    
+    "pattern":
+    [
+		"B A",
+		"BAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "terrestria:sakura_planks"
+        },    
+        
+        "B":
+        {
+            "item": "terrestria:sakura_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:sakura_curved_gate",
+        "count": 4
+    }
+}
+
+

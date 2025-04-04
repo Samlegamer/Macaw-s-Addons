@@ -1,0 +1,40 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "byg"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:nightshade_picket_fence",
+	  "mcwbyg:nightshade_stockade_fence",
+	  "mcwbyg:nightshade_horse_fence",
+	  "mcwbyg:nightshade_wired_fence",
+	  "mcwbyg:nightshade_highley_gate",
+	  "mcwbyg:nightshade_pyramid_gate",
+	  "mcwbyg:nightshade_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "byg:nightshade_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}
