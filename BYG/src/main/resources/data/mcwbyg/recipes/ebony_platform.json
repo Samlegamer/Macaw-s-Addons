@@ -1,0 +1,26 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "byg"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " ZZ", " WW", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "byg:ebony_log"
+    },
+    "Z" : {
+      "item" : "byg:ebony_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:ebony_platform",
+    "count" : 12
+  }
+}

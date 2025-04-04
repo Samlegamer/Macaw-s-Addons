@@ -1,0 +1,100 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbyg:palm_wardrobe",
+	  "mcwbyg:palm_modern_wardrobe",
+	  "mcwbyg:palm_double_wardrobe",
+	  "mcwbyg:palm_bookshelf_cupboard",
+	  "mcwbyg:palm_bookshelf",
+	  "mcwbyg:palm_drawer",
+	  "mcwbyg:palm_double_drawer",
+	  "mcwbyg:palm_bookshelf_drawer",
+	  "mcwbyg:palm_lower_bookshelf_drawer",
+	  "mcwbyg:palm_large_drawer",
+	  "mcwbyg:palm_lower_triple_drawer",
+	  "mcwbyg:palm_triple_drawer",
+	  "mcwbyg:palm_desk",
+	  "mcwbyg:palm_covered_desk",
+	  "mcwbyg:palm_modern_desk",
+	  "mcwbyg:palm_table",
+	  "mcwbyg:palm_end_table",
+	  "mcwbyg:palm_coffee_table",
+	  "mcwbyg:palm_glass_table",
+	  "mcwbyg:palm_chair",
+	  "mcwbyg:palm_modern_chair",
+	  "mcwbyg:palm_striped_chair",
+	  "mcwbyg:palm_stool_chair",
+	  "mcwbyg:palm_counter",
+	  "mcwbyg:palm_drawer_counter",
+	  "mcwbyg:palm_double_drawer_counter",
+	  "mcwbyg:palm_cupboard_counter",
+	  
+	  "mcwbyg:stripped_palm_wardrobe",
+	  "mcwbyg:stripped_palm_modern_wardrobe",
+	  "mcwbyg:stripped_palm_double_wardrobe",
+	  "mcwbyg:stripped_palm_bookshelf_cupboard",
+	  "mcwbyg:stripped_palm_bookshelf",
+	  "mcwbyg:stripped_palm_drawer",
+	  "mcwbyg:stripped_palm_double_drawer",
+	  "mcwbyg:stripped_palm_bookshelf_drawer",
+	  "mcwbyg:stripped_palm_lower_bookshelf_drawer",
+	  "mcwbyg:stripped_palm_large_drawer",
+	  "mcwbyg:stripped_palm_lower_triple_drawer",
+	  "mcwbyg:stripped_palm_triple_drawer",
+	  "mcwbyg:stripped_palm_desk",
+	  "mcwbyg:stripped_palm_covered_desk",
+	  "mcwbyg:stripped_palm_modern_desk",
+	  "mcwbyg:stripped_palm_table",
+	  "mcwbyg:stripped_palm_end_table",
+	  "mcwbyg:stripped_palm_coffee_table",
+	  "mcwbyg:stripped_palm_glass_table",
+	  "mcwbyg:stripped_palm_chair",
+	  "mcwbyg:stripped_palm_modern_chair",
+	  "mcwbyg:stripped_palm_striped_chair",
+	  "mcwbyg:stripped_palm_stool_chair",
+	  "mcwbyg:stripped_palm_counter",
+	  "mcwbyg:stripped_palm_drawer_counter",
+	  "mcwbyg:stripped_palm_double_drawer_counter",
+	  "mcwbyg:stripped_palm_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:palm_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbyg:palm_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

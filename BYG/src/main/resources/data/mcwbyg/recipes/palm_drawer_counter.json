@@ -1,0 +1,39 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "drawer_counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:palm_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwbyg:palm_drawer"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:palm_drawer_counter",
+        "count": 1
+    }
+}
+
+

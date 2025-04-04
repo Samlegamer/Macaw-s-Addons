@@ -1,0 +1,45 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "striped_chair",
+    "pattern":
+    [
+        " A",
+        "BC",
+		"CC"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:blue_enchanted_log"
+        }, 
+		
+        "B":
+        {
+            "item": "byg:blue_enchanted_slab"
+        },
+		
+		"C":
+        {
+            "item": "byg:blue_enchanted_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:blue_enchanted_striped_chair",
+        "count": 1
+    }
+}
+
+

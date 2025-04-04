@@ -1,0 +1,100 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbyg:sythian_wardrobe",
+	  "mcwbyg:sythian_modern_wardrobe",
+	  "mcwbyg:sythian_double_wardrobe",
+	  "mcwbyg:sythian_bookshelf_cupboard",
+	  "mcwbyg:sythian_bookshelf",
+	  "mcwbyg:sythian_drawer",
+	  "mcwbyg:sythian_double_drawer",
+	  "mcwbyg:sythian_bookshelf_drawer",
+	  "mcwbyg:sythian_lower_bookshelf_drawer",
+	  "mcwbyg:sythian_large_drawer",
+	  "mcwbyg:sythian_lower_triple_drawer",
+	  "mcwbyg:sythian_triple_drawer",
+	  "mcwbyg:sythian_desk",
+	  "mcwbyg:sythian_covered_desk",
+	  "mcwbyg:sythian_modern_desk",
+	  "mcwbyg:sythian_table",
+	  "mcwbyg:sythian_end_table",
+	  "mcwbyg:sythian_coffee_table",
+	  "mcwbyg:sythian_glass_table",
+	  "mcwbyg:sythian_chair",
+	  "mcwbyg:sythian_modern_chair",
+	  "mcwbyg:sythian_striped_chair",
+	  "mcwbyg:sythian_stool_chair",
+	  "mcwbyg:sythian_counter",
+	  "mcwbyg:sythian_drawer_counter",
+	  "mcwbyg:sythian_double_drawer_counter",
+	  "mcwbyg:sythian_cupboard_counter",
+	  
+	  "mcwbyg:stripped_sythian_wardrobe",
+	  "mcwbyg:stripped_sythian_modern_wardrobe",
+	  "mcwbyg:stripped_sythian_double_wardrobe",
+	  "mcwbyg:stripped_sythian_bookshelf_cupboard",
+	  "mcwbyg:stripped_sythian_bookshelf",
+	  "mcwbyg:stripped_sythian_drawer",
+	  "mcwbyg:stripped_sythian_double_drawer",
+	  "mcwbyg:stripped_sythian_bookshelf_drawer",
+	  "mcwbyg:stripped_sythian_lower_bookshelf_drawer",
+	  "mcwbyg:stripped_sythian_large_drawer",
+	  "mcwbyg:stripped_sythian_lower_triple_drawer",
+	  "mcwbyg:stripped_sythian_triple_drawer",
+	  "mcwbyg:stripped_sythian_desk",
+	  "mcwbyg:stripped_sythian_covered_desk",
+	  "mcwbyg:stripped_sythian_modern_desk",
+	  "mcwbyg:stripped_sythian_table",
+	  "mcwbyg:stripped_sythian_end_table",
+	  "mcwbyg:stripped_sythian_coffee_table",
+	  "mcwbyg:stripped_sythian_glass_table",
+	  "mcwbyg:stripped_sythian_chair",
+	  "mcwbyg:stripped_sythian_modern_chair",
+	  "mcwbyg:stripped_sythian_striped_chair",
+	  "mcwbyg:stripped_sythian_stool_chair",
+	  "mcwbyg:stripped_sythian_counter",
+	  "mcwbyg:stripped_sythian_drawer_counter",
+	  "mcwbyg:stripped_sythian_double_drawer_counter",
+	  "mcwbyg:stripped_sythian_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:sythian_stem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbyg:sythian_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

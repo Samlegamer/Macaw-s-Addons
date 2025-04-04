@@ -1,0 +1,100 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbyg:cika_wardrobe",
+	  "mcwbyg:cika_modern_wardrobe",
+	  "mcwbyg:cika_double_wardrobe",
+	  "mcwbyg:cika_bookshelf_cupboard",
+	  "mcwbyg:cika_bookshelf",
+	  "mcwbyg:cika_drawer",
+	  "mcwbyg:cika_double_drawer",
+	  "mcwbyg:cika_bookshelf_drawer",
+	  "mcwbyg:cika_lower_bookshelf_drawer",
+	  "mcwbyg:cika_large_drawer",
+	  "mcwbyg:cika_lower_triple_drawer",
+	  "mcwbyg:cika_triple_drawer",
+	  "mcwbyg:cika_desk",
+	  "mcwbyg:cika_covered_desk",
+	  "mcwbyg:cika_modern_desk",
+	  "mcwbyg:cika_table",
+	  "mcwbyg:cika_end_table",
+	  "mcwbyg:cika_coffee_table",
+	  "mcwbyg:cika_glass_table",
+	  "mcwbyg:cika_chair",
+	  "mcwbyg:cika_modern_chair",
+	  "mcwbyg:cika_striped_chair",
+	  "mcwbyg:cika_stool_chair",
+	  "mcwbyg:cika_counter",
+	  "mcwbyg:cika_drawer_counter",
+	  "mcwbyg:cika_double_drawer_counter",
+	  "mcwbyg:cika_cupboard_counter",
+	  
+	  "mcwbyg:stripped_cika_wardrobe",
+	  "mcwbyg:stripped_cika_modern_wardrobe",
+	  "mcwbyg:stripped_cika_double_wardrobe",
+	  "mcwbyg:stripped_cika_bookshelf_cupboard",
+	  "mcwbyg:stripped_cika_bookshelf",
+	  "mcwbyg:stripped_cika_drawer",
+	  "mcwbyg:stripped_cika_double_drawer",
+	  "mcwbyg:stripped_cika_bookshelf_drawer",
+	  "mcwbyg:stripped_cika_lower_bookshelf_drawer",
+	  "mcwbyg:stripped_cika_large_drawer",
+	  "mcwbyg:stripped_cika_lower_triple_drawer",
+	  "mcwbyg:stripped_cika_triple_drawer",
+	  "mcwbyg:stripped_cika_desk",
+	  "mcwbyg:stripped_cika_covered_desk",
+	  "mcwbyg:stripped_cika_modern_desk",
+	  "mcwbyg:stripped_cika_table",
+	  "mcwbyg:stripped_cika_end_table",
+	  "mcwbyg:stripped_cika_coffee_table",
+	  "mcwbyg:stripped_cika_glass_table",
+	  "mcwbyg:stripped_cika_chair",
+	  "mcwbyg:stripped_cika_modern_chair",
+	  "mcwbyg:stripped_cika_striped_chair",
+	  "mcwbyg:stripped_cika_stool_chair",
+	  "mcwbyg:stripped_cika_counter",
+	  "mcwbyg:stripped_cika_drawer_counter",
+	  "mcwbyg:stripped_cika_double_drawer_counter",
+	  "mcwbyg:stripped_cika_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:cika_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbyg:cika_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

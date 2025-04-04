@@ -1,0 +1,100 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbyg:imparius_wardrobe",
+	  "mcwbyg:imparius_modern_wardrobe",
+	  "mcwbyg:imparius_double_wardrobe",
+	  "mcwbyg:imparius_bookshelf_cupboard",
+	  "mcwbyg:imparius_bookshelf",
+	  "mcwbyg:imparius_drawer",
+	  "mcwbyg:imparius_double_drawer",
+	  "mcwbyg:imparius_bookshelf_drawer",
+	  "mcwbyg:imparius_lower_bookshelf_drawer",
+	  "mcwbyg:imparius_large_drawer",
+	  "mcwbyg:imparius_lower_triple_drawer",
+	  "mcwbyg:imparius_triple_drawer",
+	  "mcwbyg:imparius_desk",
+	  "mcwbyg:imparius_covered_desk",
+	  "mcwbyg:imparius_modern_desk",
+	  "mcwbyg:imparius_table",
+	  "mcwbyg:imparius_end_table",
+	  "mcwbyg:imparius_coffee_table",
+	  "mcwbyg:imparius_glass_table",
+	  "mcwbyg:imparius_chair",
+	  "mcwbyg:imparius_modern_chair",
+	  "mcwbyg:imparius_striped_chair",
+	  "mcwbyg:imparius_stool_chair",
+	  "mcwbyg:imparius_counter",
+	  "mcwbyg:imparius_drawer_counter",
+	  "mcwbyg:imparius_double_drawer_counter",
+	  "mcwbyg:imparius_cupboard_counter",
+	  
+	  "mcwbyg:stripped_imparius_wardrobe",
+	  "mcwbyg:stripped_imparius_modern_wardrobe",
+	  "mcwbyg:stripped_imparius_double_wardrobe",
+	  "mcwbyg:stripped_imparius_bookshelf_cupboard",
+	  "mcwbyg:stripped_imparius_bookshelf",
+	  "mcwbyg:stripped_imparius_drawer",
+	  "mcwbyg:stripped_imparius_double_drawer",
+	  "mcwbyg:stripped_imparius_bookshelf_drawer",
+	  "mcwbyg:stripped_imparius_lower_bookshelf_drawer",
+	  "mcwbyg:stripped_imparius_large_drawer",
+	  "mcwbyg:stripped_imparius_lower_triple_drawer",
+	  "mcwbyg:stripped_imparius_triple_drawer",
+	  "mcwbyg:stripped_imparius_desk",
+	  "mcwbyg:stripped_imparius_covered_desk",
+	  "mcwbyg:stripped_imparius_modern_desk",
+	  "mcwbyg:stripped_imparius_table",
+	  "mcwbyg:stripped_imparius_end_table",
+	  "mcwbyg:stripped_imparius_coffee_table",
+	  "mcwbyg:stripped_imparius_glass_table",
+	  "mcwbyg:stripped_imparius_chair",
+	  "mcwbyg:stripped_imparius_modern_chair",
+	  "mcwbyg:stripped_imparius_striped_chair",
+	  "mcwbyg:stripped_imparius_stool_chair",
+	  "mcwbyg:stripped_imparius_counter",
+	  "mcwbyg:stripped_imparius_drawer_counter",
+	  "mcwbyg:stripped_imparius_double_drawer_counter",
+	  "mcwbyg:stripped_imparius_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:imparius_stem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbyg:imparius_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

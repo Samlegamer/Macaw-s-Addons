@@ -1,0 +1,34 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "shutters",
+	
+    "pattern":
+    [
+        "B",
+        "B",
+        "B"		
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "byg:ether_trapdoor"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:ether_shutter",
+        "count": 3
+    }
+}

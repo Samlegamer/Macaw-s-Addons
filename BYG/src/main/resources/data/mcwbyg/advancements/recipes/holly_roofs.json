@@ -1,0 +1,42 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "byg"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:holly_roof",
+	  "mcwbyg:holly_attic_roof",
+	  "mcwbyg:holly_top_roof",
+	  "mcwbyg:holly_lower_roof",
+	  "mcwbyg:holly_steep_roof",
+	  "mcwbyg:holly_upper_lower_roof",
+	  "mcwbyg:holly_upper_steep_roof"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:holly_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

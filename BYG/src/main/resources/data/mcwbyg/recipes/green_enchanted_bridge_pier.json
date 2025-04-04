@@ -1,0 +1,36 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "byg"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_piers",
+    
+    "pattern": [
+    "WFW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "byg:green_enchanted_fence"
+        },
+        
+        "W":
+        {
+            "item": "byg:green_enchanted_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:green_enchanted_bridge_pier",
+        "count": 3
+    }
+}

@@ -1,0 +1,45 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:nightshade_log"
+        }, 
+		
+        "B":
+        {
+            "item": "byg:nightshade_slab"
+        },
+		
+		"C":
+        {
+            "item": "byg:nightshade_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:nightshade_chair",
+        "count": 1
+    }
+}
+
+

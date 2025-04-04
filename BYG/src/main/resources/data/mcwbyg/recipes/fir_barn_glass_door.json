@@ -1,0 +1,41 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "byg"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "barn_glass",
+    
+    "pattern":
+    [
+        "BB",
+        "AA",
+        "AA"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:fir_planks"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:glass_pane"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:fir_barn_glass_door",
+        "count": 3
+    }
+}
+
+

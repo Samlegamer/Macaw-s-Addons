@@ -1,0 +1,39 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "windows_two",
+	
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "mcwwindows:window_half_bar_base"
+        },    
+        
+        "B":
+        {
+            "item": "byg:white_mangrove_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:white_mangrove_plank_window2",
+        "count": 8
+    }
+}

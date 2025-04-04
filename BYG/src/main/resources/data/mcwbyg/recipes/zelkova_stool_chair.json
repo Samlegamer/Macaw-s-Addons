@@ -1,0 +1,40 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stool_chair",
+    "pattern":
+    [
+		"A",
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "byg:zelkova_log"
+        }, 	
+		
+        "B":
+        {
+            "item": "byg:zelkova_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:zelkova_stool_chair",
+        "count": 1
+    }
+}
+
+

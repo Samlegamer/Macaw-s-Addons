@@ -1,0 +1,39 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "windows",
+	
+    "pattern":
+    [
+        " A ",
+        "ABA",
+        " A "                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "mcwwindows:window_base"
+        },    
+        
+        "B":
+        {
+            "item": "byg:maple_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:maple_plank_window",
+        "count": 4
+    }
+}

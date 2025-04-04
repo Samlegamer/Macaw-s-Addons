@@ -1,0 +1,41 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "byg"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "barn",
+    
+    "pattern":
+    [
+        "BB",
+	    "AA",
+        "AA"               
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:cypress_planks"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:cypress_barn_door",
+        "count": 2
+    }
+}
+
+

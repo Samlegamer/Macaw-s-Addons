@@ -1,0 +1,60 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwbyg:lament_window",
+	 "mcwbyg:lament_window2",
+	 "mcwbyg:lament_four_window",
+	 "mcwbyg:stripped_lament_log_window",
+	 "mcwbyg:stripped_lament_log_window2",
+	 "mcwbyg:stripped_lament_log_four_window",
+	 "mcwbyg:lament_plank_window",
+	 "mcwbyg:lament_plank_window2",
+	 "mcwbyg:lament_plank_four_window",
+	 "mcwbyg:lament_pane_window",
+	 "mcwbyg:stripped_lament_pane_window",
+	 "mcwbyg:lament_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:lament_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "byg"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "rail_bridges",
+    
+    "pattern": [
+    "F F",
+    "FWF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "byg:fir_fence"
+        },
+        
+        "W":
+        {
+            "item": "byg:fir_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:fir_rail_bridge",
+        "count": 4
+    }
+}

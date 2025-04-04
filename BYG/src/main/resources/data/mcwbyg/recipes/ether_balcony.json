@@ -1,0 +1,26 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "byg"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_balcony",
+  "pattern" : [ "WWW", "Z Z", "WWW" ],
+  "key" : {
+    "W" : {
+      "item" : "minecraft:stick"
+    },
+    "Z" : {
+      "item" : "byg:ether_fence"
+    }
+  },
+  "result" : {
+    "item" : "mcwbyg:ether_balcony",
+    "count" : 6
+  }
+}

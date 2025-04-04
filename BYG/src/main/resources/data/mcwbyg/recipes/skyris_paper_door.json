@@ -1,0 +1,41 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "byg"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "paper",
+	
+    "pattern":
+    [
+        "A",
+        "B",
+        "A"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "byg:skyris_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwdoors:print_birch"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbyg:skyris_paper_door",
+        "count": 1
+    }
+}
+
+

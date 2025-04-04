@@ -1,0 +1,21 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "byg:nightshade_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwbyg:nightshade_planks_path",
+    "count": 3
+  }
+}
