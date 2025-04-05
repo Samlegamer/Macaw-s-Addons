@@ -1,0 +1,43 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbiomesoplenty:hellbark_planks_roof",
+	  "mcwbiomesoplenty:hellbark_planks_attic_roof",
+	  "mcwbiomesoplenty:hellbark_planks_top_roof",
+	  "mcwbiomesoplenty:hellbark_planks_lower_roof",
+	  "mcwbiomesoplenty:hellbark_planks_steep_roof",
+	  "mcwbiomesoplenty:hellbark_planks_upper_lower_roof",
+	  "mcwbiomesoplenty:hellbark_planks_upper_steep_roof"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:hellbark_planks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

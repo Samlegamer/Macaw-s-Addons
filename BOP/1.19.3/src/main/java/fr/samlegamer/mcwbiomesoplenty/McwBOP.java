@@ -42,16 +42,16 @@ public class McwBOP
     {
     	LOGGER.info("Macaw's Biomes O' Plenty Loading...");
     	Registration.init(block, item);
-    	Bridges.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Fences.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Fences.setRegistrationHedges(LEAVES, block, item, MCWBOP_TAB);
-    	Furnitures.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Roofs.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Trapdoors.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Paths.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Doors.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Windows.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Stairs.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
+    	Bridges.setRegistrationWood(WOOD, block, item);
+    	Fences.setRegistrationWood(WOOD, block, item);
+    	Fences.setRegistrationHedges(LEAVES, block, item);
+    	Furnitures.setRegistrationWood(WOOD, block, item);
+    	Roofs.setRegistrationWood(WOOD, block, item);
+    	Trapdoors.setRegistrationWood(WOOD, block, item);
+    	Paths.setRegistrationWood(WOOD, block, item);
+    	Doors.setRegistrationWood(WOOD, block, item);
+    	Windows.setRegistrationWood(WOOD, block, item);
+    	Stairs.setRegistrationWood(WOOD, block, item);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::registerTab);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addTotab);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);

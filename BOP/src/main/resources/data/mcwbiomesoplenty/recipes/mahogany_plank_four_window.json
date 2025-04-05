@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "windows_four",
+	
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "mcwwindows:window_centre_bar_base"
+        },    
+
+		
+        "B":
+        {
+            "item": "biomesoplenty:mahogany_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:mahogany_plank_four_window",
+        "count": 8
+    }
+}

@@ -1,0 +1,45 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "modern_desk",
+    "pattern":
+    [
+        "AAA",
+        "BCB"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "biomesoplenty:willow_log"
+        }, 
+		
+        "B":
+        {
+            "item": "biomesoplenty:willow_fence"
+        },
+		
+		"C":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:willow_modern_desk",
+        "count": 2
+    }
+}
+
+

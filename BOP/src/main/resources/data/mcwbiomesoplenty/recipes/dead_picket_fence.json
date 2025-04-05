@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "biomesoplenty:dead_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "biomesoplenty:dead_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:dead_picket_fence",
+        "count": 3
+    }
+}
+
+

@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "western",
+    
+    "pattern":
+    [
+        "  A",
+        "ABA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "biomesoplenty:mahogany_planks"
+        },
+		
+		"B":
+        {
+            "item": "biomesoplenty:mahogany_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:mahogany_western_door",
+        "count": 3
+    }
+}
+
+

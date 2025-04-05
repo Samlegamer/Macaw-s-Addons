@@ -1,0 +1,101 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbiomesoplenty:cherry_wardrobe",
+	  "mcwbiomesoplenty:cherry_modern_wardrobe",
+	  "mcwbiomesoplenty:cherry_double_wardrobe",
+	  "mcwbiomesoplenty:cherry_bookshelf_cupboard",
+	  "mcwbiomesoplenty:cherry_bookshelf",
+	  "mcwbiomesoplenty:cherry_drawer",
+	  "mcwbiomesoplenty:cherry_double_drawer",
+	  "mcwbiomesoplenty:cherry_bookshelf_drawer",
+	  "mcwbiomesoplenty:cherry_lower_bookshelf_drawer",
+	  "mcwbiomesoplenty:cherry_large_drawer",
+	  "mcwbiomesoplenty:cherry_lower_triple_drawer",
+	  "mcwbiomesoplenty:cherry_triple_drawer",
+	  "mcwbiomesoplenty:cherry_desk",
+	  "mcwbiomesoplenty:cherry_covered_desk",
+	  "mcwbiomesoplenty:cherry_modern_desk",
+	  "mcwbiomesoplenty:cherry_table",
+	  "mcwbiomesoplenty:cherry_end_table",
+	  "mcwbiomesoplenty:cherry_coffee_table",
+	  "mcwbiomesoplenty:cherry_glass_table",
+	  "mcwbiomesoplenty:cherry_chair",
+	  "mcwbiomesoplenty:cherry_modern_chair",
+	  "mcwbiomesoplenty:cherry_striped_chair",
+	  "mcwbiomesoplenty:cherry_stool_chair",
+	  "mcwbiomesoplenty:cherry_counter",
+	  "mcwbiomesoplenty:cherry_drawer_counter",
+	  "mcwbiomesoplenty:cherry_double_drawer_counter",
+	  "mcwbiomesoplenty:cherry_cupboard_counter",
+	  
+	  "mcwbiomesoplenty:stripped_cherry_wardrobe",
+	  "mcwbiomesoplenty:stripped_cherry_modern_wardrobe",
+	  "mcwbiomesoplenty:stripped_cherry_double_wardrobe",
+	  "mcwbiomesoplenty:stripped_cherry_bookshelf_cupboard",
+	  "mcwbiomesoplenty:stripped_cherry_bookshelf",
+	  "mcwbiomesoplenty:stripped_cherry_drawer",
+	  "mcwbiomesoplenty:stripped_cherry_double_drawer",
+	  "mcwbiomesoplenty:stripped_cherry_bookshelf_drawer",
+	  "mcwbiomesoplenty:stripped_cherry_lower_bookshelf_drawer",
+	  "mcwbiomesoplenty:stripped_cherry_large_drawer",
+	  "mcwbiomesoplenty:stripped_cherry_lower_triple_drawer",
+	  "mcwbiomesoplenty:stripped_cherry_triple_drawer",
+	  "mcwbiomesoplenty:stripped_cherry_desk",
+	  "mcwbiomesoplenty:stripped_cherry_covered_desk",
+	  "mcwbiomesoplenty:stripped_cherry_modern_desk",
+	  "mcwbiomesoplenty:stripped_cherry_table",
+	  "mcwbiomesoplenty:stripped_cherry_end_table",
+	  "mcwbiomesoplenty:stripped_cherry_coffee_table",
+	  "mcwbiomesoplenty:stripped_cherry_glass_table",
+	  "mcwbiomesoplenty:stripped_cherry_chair",
+	  "mcwbiomesoplenty:stripped_cherry_modern_chair",
+	  "mcwbiomesoplenty:stripped_cherry_striped_chair",
+	  "mcwbiomesoplenty:stripped_cherry_stool_chair",
+	  "mcwbiomesoplenty:stripped_cherry_counter",
+	  "mcwbiomesoplenty:stripped_cherry_drawer_counter",
+	  "mcwbiomesoplenty:stripped_cherry_double_drawer_counter",
+	  "mcwbiomesoplenty:stripped_cherry_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:cherry_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbiomesoplenty:cherry_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

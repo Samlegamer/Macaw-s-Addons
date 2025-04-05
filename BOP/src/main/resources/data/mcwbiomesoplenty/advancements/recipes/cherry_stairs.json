@@ -1,0 +1,44 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbiomesoplenty:cherry_bulk_stairs",
+	  "mcwbiomesoplenty:cherry_compact_stairs",
+	  "mcwbiomesoplenty:cherry_loft_stairs",
+	  "mcwbiomesoplenty:cherry_skyline_stairs",
+	  "mcwbiomesoplenty:cherry_terrace_stairs",
+	  "mcwbiomesoplenty:cherry_railing",
+	  "mcwbiomesoplenty:cherry_balcony",
+	  "mcwbiomesoplenty:cherry_platform"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:cherry_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

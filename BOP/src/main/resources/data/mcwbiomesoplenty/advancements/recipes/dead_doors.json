@@ -1,0 +1,64 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbiomesoplenty:dead_tropical_door",
+	  "mcwbiomesoplenty:dead_bark_glass_door",
+	  "mcwbiomesoplenty:dead_barn_door",
+	  "mcwbiomesoplenty:dead_barn_glass_door",
+	  "mcwbiomesoplenty:dead_beach_door",
+	  "mcwbiomesoplenty:dead_classic_door",
+	  "mcwbiomesoplenty:dead_cottage_door",
+	  "mcwbiomesoplenty:dead_four_panel_door",
+	  "mcwbiomesoplenty:dead_glass_door",
+	  "mcwbiomesoplenty:dead_japanese_door",
+	  "mcwbiomesoplenty:dead_japanese2_door",
+	  "mcwbiomesoplenty:dead_modern_door",
+	  "mcwbiomesoplenty:dead_mystic_door",
+	  "mcwbiomesoplenty:dead_nether_door",
+	  "mcwbiomesoplenty:dead_paper_door",
+	  "mcwbiomesoplenty:dead_stable_door",
+	  "mcwbiomesoplenty:dead_stable_head_door",
+	  "mcwbiomesoplenty:dead_swamp_door",
+	  "mcwbiomesoplenty:dead_western_door",
+	  "mcwbiomesoplenty:dead_waffle_door",
+	  "mcwbiomesoplenty:dead_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:dead_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

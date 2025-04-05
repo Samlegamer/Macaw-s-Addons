@@ -1,0 +1,38 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "log_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "biomesoplenty:palm_fence"
+        },
+        
+        "W":
+        {
+            "item": "biomesoplenty:palm_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:palm_log_bridge_middle",
+        "count": 4
+    }
+}

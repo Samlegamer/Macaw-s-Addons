@@ -1,5 +1,14 @@
 {
-  "parent": "minecraft:recipes/root",
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],  "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
 	"mcwquark:lavender_blossom_hedge"

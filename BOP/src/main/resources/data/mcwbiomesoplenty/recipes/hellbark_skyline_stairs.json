@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "skyline_stairs",
+  "pattern" : [ "W  ", "ZW " ],
+  "key" : {
+    "W" : {
+      "item" : "biomesoplenty:stripped_hellbark_log"
+    },
+    "Z" : {
+      "item" : "biomesoplenty:hellbark_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwbiomesoplenty:hellbark_skyline_stairs",
+    "count" : 4
+  }
+}

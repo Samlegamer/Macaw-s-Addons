@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+    "type": "minecraft:crafting_shapeless",
+	"group": "recyclable_bridges",
+		
+    "ingredients": [
+        {
+            "item": "mcwbiomesoplenty:jacaranda_log_bridge_stair"
+        }
+    ],
+    "result": {
+        "item": "mcwbiomesoplenty:jacaranda_log_bridge_middle",
+        "count": 1
+    }
+}

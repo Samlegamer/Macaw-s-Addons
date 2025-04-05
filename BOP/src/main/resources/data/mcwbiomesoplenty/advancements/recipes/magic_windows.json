@@ -1,0 +1,61 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwbiomesoplenty:magic_window",
+	 "mcwbiomesoplenty:magic_window2",
+	 "mcwbiomesoplenty:magic_four_window",
+	 "mcwbiomesoplenty:stripped_magic_log_window",
+	 "mcwbiomesoplenty:stripped_magic_log_window2",
+	 "mcwbiomesoplenty:stripped_magic_log_four_window",
+	 "mcwbiomesoplenty:magic_plank_window",
+	 "mcwbiomesoplenty:magic_plank_window2",
+	 "mcwbiomesoplenty:magic_plank_four_window",
+	 "mcwbiomesoplenty:magic_pane_window",
+	 "mcwbiomesoplenty:stripped_magic_pane_window",
+	 "mcwbiomesoplenty:magic_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:magic_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+

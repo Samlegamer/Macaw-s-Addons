@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "windows",
+	
+    "pattern":
+    [
+        " A ",
+        "ABA",
+        " A "                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "mcwwindows:window_base"
+        },    
+        
+        "B":
+        {
+            "item": "biomesoplenty:willow_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwbiomesoplenty:willow_window",
+        "count": 4
+    }
+}

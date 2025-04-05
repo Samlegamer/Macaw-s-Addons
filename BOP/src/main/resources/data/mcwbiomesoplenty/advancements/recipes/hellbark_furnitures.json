@@ -1,0 +1,101 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbiomesoplenty:hellbark_wardrobe",
+	  "mcwbiomesoplenty:hellbark_modern_wardrobe",
+	  "mcwbiomesoplenty:hellbark_double_wardrobe",
+	  "mcwbiomesoplenty:hellbark_bookshelf_cupboard",
+	  "mcwbiomesoplenty:hellbark_bookshelf",
+	  "mcwbiomesoplenty:hellbark_drawer",
+	  "mcwbiomesoplenty:hellbark_double_drawer",
+	  "mcwbiomesoplenty:hellbark_bookshelf_drawer",
+	  "mcwbiomesoplenty:hellbark_lower_bookshelf_drawer",
+	  "mcwbiomesoplenty:hellbark_large_drawer",
+	  "mcwbiomesoplenty:hellbark_lower_triple_drawer",
+	  "mcwbiomesoplenty:hellbark_triple_drawer",
+	  "mcwbiomesoplenty:hellbark_desk",
+	  "mcwbiomesoplenty:hellbark_covered_desk",
+	  "mcwbiomesoplenty:hellbark_modern_desk",
+	  "mcwbiomesoplenty:hellbark_table",
+	  "mcwbiomesoplenty:hellbark_end_table",
+	  "mcwbiomesoplenty:hellbark_coffee_table",
+	  "mcwbiomesoplenty:hellbark_glass_table",
+	  "mcwbiomesoplenty:hellbark_chair",
+	  "mcwbiomesoplenty:hellbark_modern_chair",
+	  "mcwbiomesoplenty:hellbark_striped_chair",
+	  "mcwbiomesoplenty:hellbark_stool_chair",
+	  "mcwbiomesoplenty:hellbark_counter",
+	  "mcwbiomesoplenty:hellbark_drawer_counter",
+	  "mcwbiomesoplenty:hellbark_double_drawer_counter",
+	  "mcwbiomesoplenty:hellbark_cupboard_counter",
+	  
+	  "mcwbiomesoplenty:stripped_hellbark_wardrobe",
+	  "mcwbiomesoplenty:stripped_hellbark_modern_wardrobe",
+	  "mcwbiomesoplenty:stripped_hellbark_double_wardrobe",
+	  "mcwbiomesoplenty:stripped_hellbark_bookshelf_cupboard",
+	  "mcwbiomesoplenty:stripped_hellbark_bookshelf",
+	  "mcwbiomesoplenty:stripped_hellbark_drawer",
+	  "mcwbiomesoplenty:stripped_hellbark_double_drawer",
+	  "mcwbiomesoplenty:stripped_hellbark_bookshelf_drawer",
+	  "mcwbiomesoplenty:stripped_hellbark_lower_bookshelf_drawer",
+	  "mcwbiomesoplenty:stripped_hellbark_large_drawer",
+	  "mcwbiomesoplenty:stripped_hellbark_lower_triple_drawer",
+	  "mcwbiomesoplenty:stripped_hellbark_triple_drawer",
+	  "mcwbiomesoplenty:stripped_hellbark_desk",
+	  "mcwbiomesoplenty:stripped_hellbark_covered_desk",
+	  "mcwbiomesoplenty:stripped_hellbark_modern_desk",
+	  "mcwbiomesoplenty:stripped_hellbark_table",
+	  "mcwbiomesoplenty:stripped_hellbark_end_table",
+	  "mcwbiomesoplenty:stripped_hellbark_coffee_table",
+	  "mcwbiomesoplenty:stripped_hellbark_glass_table",
+	  "mcwbiomesoplenty:stripped_hellbark_chair",
+	  "mcwbiomesoplenty:stripped_hellbark_modern_chair",
+	  "mcwbiomesoplenty:stripped_hellbark_striped_chair",
+	  "mcwbiomesoplenty:stripped_hellbark_stool_chair",
+	  "mcwbiomesoplenty:stripped_hellbark_counter",
+	  "mcwbiomesoplenty:stripped_hellbark_drawer_counter",
+	  "mcwbiomesoplenty:stripped_hellbark_double_drawer_counter",
+	  "mcwbiomesoplenty:stripped_hellbark_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:hellbark_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbiomesoplenty:hellbark_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
