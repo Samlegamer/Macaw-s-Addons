@@ -1,25 +1,25 @@
 {
 	"schemaVersion": 1,
-	  "id": "mcwbyg",
-	  "version": "1.19.3-1.1",
-	  "name": "Macaw's - Oh the Biomes You'll Go",
-	  "description": "A multiple compability for Oh the Biomes You'll Go with Macaw's Mods like Bridges/Roofs/Fences or Furnitures.",
-	  "authors": [
-	    "Samlegamer"
-	  ],
-	  "contact": {
-	    "homepage": "https://www.curseforge.com/minecraft/mc-mods/macaws-byg-bwg",
-	    "sources": "https://github.com/Samlegamer/Macaw-s-Addons"
-	  },
-	"license": "CC0-1.0",
-  "icon": "logo.png",
+	"id": "${archives_base_name}",
+	"version": "${version}",
+	"name": "${mod_name}",
+	"description": "${mod_description}",
+	"authors": [
+		"${mod_authors}"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/macaws-byg-bwg",
+		"sources": "https://github.com/Samlegamer/Macaw-s-Addons"
+	},
+	"license": "${mod_license}",
+	"icon": "logo.png",
 	"environment": "*",
 	"entrypoints": {
-	    "main": [
-	      "fr.samlegamer.mcwbyg.McwByg"
-	    ],
-	    "client": [
-	      "fr.samlegamer.mcwbyg.client.Client"
+		"main": [
+			"${mod_init}"
+		],
+		"client": [
+			"${mod_init_client}"
 		]
 	},
 	"depends": {
@@ -27,16 +27,9 @@
 		"minecraft": "~1.19.3",
 		"java": ">=17",
 		"fabric-api": "*",
-		"addonslib": "*",
-	    "byg": "*"
+		"addonslib": ">=1.19.3-1.5",
+		"byg": "*"
 	},
-	"recommends": {
-	  	"mcwbridges":"*",
-	  	"mcwfences":"*",
-	  	"mcwfurnitures":"*",
-	  	"mcwroofs":"*",
-	  	"mcwstairs":"*"
-  	},
 	"suggests": {
 		"another-mod": "*"
 	}

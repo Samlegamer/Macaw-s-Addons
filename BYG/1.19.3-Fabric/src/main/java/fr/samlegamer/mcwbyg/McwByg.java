@@ -43,20 +43,20 @@ public class McwByg implements ModInitializer
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
     	Mapping.configDataFixerFiles();
 
-    	Bridges.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-    	Bridges.setRegistrationRock(MODID, bridges_rockable, MCWBYG_TAB);
-    	Roofs.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-    	Roofs.setRegistrationRock(MODID, fences_rockable, MCWBYG_TAB);
-    	Fences.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-    	Fences.setRegistrationHedges(MODID, LEAVES, MCWBYG_TAB);
-    	Fences.setRegistrationRock(MODID, fences_rockable, MCWBYG_TAB);
-    	Furnitures.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-    	Stairs.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
+    	Bridges.setRegistrationWood(MODID, WOOD);
+    	Bridges.setRegistrationRock(MODID, bridges_rockable);
+    	Roofs.setRegistrationWood(MODID, WOOD);
+    	Roofs.setRegistrationRock(MODID, fences_rockable);
+    	Fences.setRegistrationWood(MODID, WOOD);
+    	Fences.setRegistrationHedges(MODID, LEAVES);
+    	Fences.setRegistrationRock(MODID, fences_rockable);
+    	Furnitures.setRegistrationWood(MODID, WOOD);
+    	Stairs.setRegistrationWood(MODID, WOOD);
 		// 1.1 Update
-		Paths.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-		Doors.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-		Trapdoors.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-		Windows.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
+		Paths.setRegistrationWood(MODID, WOOD);
+		Doors.setRegistrationWood(MODID, WOOD);
+		Trapdoors.setRegistrationWood(MODID, WOOD);
+		Windows.setRegistrationWood(MODID, WOOD);
 
     	Bridges.addToTabWood(MODID, WOOD, MCWBYG_TAB);
     	Bridges.addToTabStone(MODID, bridges_rockable, MCWBYG_TAB);

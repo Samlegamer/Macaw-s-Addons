@@ -47,23 +47,23 @@ public class McwByg
     {
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
     	Registration.init(block, item);
-    	Bridges.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
-    	Bridges.setRegistrationRock(bridges_rockable, block, item, MCWBYG_TAB);
-    	Roofs.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
-    	Roofs.setRegistrationRock(fences_rockable, block, item, MCWBYG_TAB);
-    	Fences.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
-    	Fences.setRegistrationHedges(LEAVES, block, item, MCWBYG_TAB);
-    	Fences.setRegistrationRock(fences_rockable, block, item, MCWBYG_TAB);
-    	Furnitures.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
-    	Stairs.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
+    	Bridges.setRegistrationWood(WOOD, block, item);
+    	Bridges.setRegistrationRock(bridges_rockable, block, item);
+    	Roofs.setRegistrationWood(WOOD, block, item);
+    	Roofs.setRegistrationRock(fences_rockable, block, item);
+    	Fences.setRegistrationWood(WOOD, block, item);
+    	Fences.setRegistrationHedges(LEAVES, block, item);
+    	Fences.setRegistrationRock(fences_rockable, block, item);
+    	Furnitures.setRegistrationWood(WOOD, block, item);
+    	Stairs.setRegistrationWood(WOOD, block, item);
 		// 1.1 Update
-		Paths.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
-		Doors.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
-		Trapdoors.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
-		Windows.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
+		Paths.setRegistrationWood(WOOD, block, item);
+		Doors.setRegistrationWood(WOOD, block, item);
+		Trapdoors.setRegistrationWood(WOOD, block, item);
+		Windows.setRegistrationWood(WOOD, block, item);
 
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::registerTab);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addTotab);
+    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addToTab);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
     }
@@ -95,7 +95,7 @@ public class McwByg
        MCWBYG_TAB = Registration.tabs(event, MODID, "tab", icon);
     }
     
-    private void addTotab(CreativeModeTabEvent.BuildContents event)
+    private void addToTab(CreativeModeTabEvent.BuildContents event)
     {
     	Bridges.addToTab(event, MODID, WOOD, MCWBYG_TAB);
     	Bridges.addToTabStone(event, MODID, bridges_rockable, MCWBYG_TAB);
