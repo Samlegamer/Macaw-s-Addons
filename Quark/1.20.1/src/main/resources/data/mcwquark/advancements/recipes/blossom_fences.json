@@ -1,4 +1,14 @@
 {
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
@@ -7,7 +17,8 @@
 	  "mcwquark:blossom_horse_fence",
 	  "mcwquark:blossom_wired_fence",
 	  "mcwquark:blossom_highley_gate",
-	  "mcwquark:blossom_pyramid_gate"
+	  "mcwquark:blossom_pyramid_gate",
+	  "mcwquark:blossom_curved_gate"
     ]
   },
   "criteria": {

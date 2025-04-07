@@ -12,6 +12,9 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.common.Mod;
 import java.util.List;
@@ -45,26 +48,42 @@ public class McwQuark {
 	private static final DeferredRegister<CreativeModeTab> CT = Registration.creativeModeTab(MODID);
 
 	public static final RegistryObject<CreativeModeTab> MCWQUARK_TAB = CT.register("tab", () -> CreativeModeTab.builder()
-			.icon(() -> {
-				return getIcon();
-			}).title(Component.translatable(MODID + ".tab")).build());
+	.icon(McwQuark::getIcon).title(Component.translatable(MODID + ".tab")).build());
 
 	public McwQuark() {
+
+		List<String> rockClassic = List.of("soul_sandstone_bricks", "limestone_bricks", "jasper_bricks", "shale_bricks", "permafrost_bricks",
+				"red_sandstone_bricks", "sandstone_bricks", "cobblestone_bricks", "mossy_cobblestone_bricks", "blackstone_bricks", "diorite_bricks", "granite_bricks",
+				"andesite_bricks", "raw_iron_bricks", "raw_gold_bricks", "raw_copper_bricks");
+
+		BlockBehaviour.Properties propDrip = BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).sound(SoundType.DRIPSTONE_BLOCK);
+		BlockBehaviour.Properties propCalcite = BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).sound(SoundType.CALCITE);
+		BlockBehaviour.Properties propTuff = BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).sound(SoundType.TUFF);
+
 		LOGGER.info("Macaw's Quark Loading...");
 		Registration.init(BLOCKS, ITEMS, CT);
-		Bridges.setRegistrationWood(wood, BLOCKS, ITEMS, null);
-		Bridges.setRegistrationRock(stone, BLOCKS, ITEMS, null);
-		Roofs.setRegistrationWood(wood, BLOCKS, ITEMS, null);
-		Roofs.setRegistrationRock(stone, BLOCKS, ITEMS, null);
-		Fences.setRegistrationWood(wood, BLOCKS, ITEMS, null);
-		Fences.setRegistrationRock(stone, BLOCKS, ITEMS, null);
-		Fences.setRegistrationHedges(leaves, BLOCKS, ITEMS, null);
-		Furnitures.setRegistrationWood(wood, BLOCKS, ITEMS, null);
-		Stairs.setRegistrationWood(wood, BLOCKS, ITEMS, null);
-		Doors.setRegistrationWood(wood, BLOCKS, ITEMS, null);
-		Trapdoors.setRegistrationWood(wood, BLOCKS, ITEMS, null);
-		Paths.setRegistrationWood(wood, BLOCKS, ITEMS, null);
-		Windows.setRegistrationWood(wood, BLOCKS, ITEMS, null);
+		Bridges.setRegistrationWood(wood, BLOCKS, ITEMS);
+		Bridges.setRegistrationRock(rockClassic, BLOCKS, ITEMS);
+		Bridges.setRegistrationRockModLoaded(List.of("calcite_bricks"), BLOCKS, ITEMS, propCalcite);
+		Bridges.setRegistrationRockModLoaded(List.of("dripstone_bricks"), BLOCKS, ITEMS, propDrip);
+		Bridges.setRegistrationRockModLoaded(List.of("tuff_bricks"), BLOCKS, ITEMS, propTuff);
+		Roofs.setRegistrationWood(wood, BLOCKS, ITEMS);
+		Roofs.setRegistrationRock(rockClassic, BLOCKS, ITEMS);
+		Roofs.setRegistrationRockModLoaded(List.of("calcite_bricks"), BLOCKS, ITEMS, propCalcite);
+		Roofs.setRegistrationRockModLoaded(List.of("dripstone_bricks"), BLOCKS, ITEMS, propDrip);
+		Roofs.setRegistrationRockModLoaded(List.of("tuff_bricks"), BLOCKS, ITEMS, propTuff);
+		Fences.setRegistrationWood(wood, BLOCKS, ITEMS);
+		Fences.setRegistrationRock(rockClassic, BLOCKS, ITEMS);
+		Fences.setRegistrationRockModLoaded(List.of("calcite_bricks"), BLOCKS, ITEMS, propCalcite);
+		Fences.setRegistrationRockModLoaded(List.of("dripstone_bricks"), BLOCKS, ITEMS, propDrip);
+		Fences.setRegistrationRockModLoaded(List.of("tuff_bricks"), BLOCKS, ITEMS, propTuff);
+		Fences.setRegistrationHedges(leaves, BLOCKS, ITEMS);
+		Furnitures.setRegistrationWood(wood, BLOCKS, ITEMS);
+		Stairs.setRegistrationWood(wood, BLOCKS, ITEMS);
+		Doors.setRegistrationWood(wood, BLOCKS, ITEMS);
+		Trapdoors.setRegistrationWood(wood, BLOCKS, ITEMS);
+		Paths.setRegistrationWood(wood, BLOCKS, ITEMS);
+		Windows.setRegistrationWood(wood, BLOCKS, ITEMS);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addTotab);
 		LOGGER.info("Macaw's Quark Is Charged !");
 	}

@@ -9,18 +9,13 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import java.util.List;
-import java.util.Random;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
@@ -39,63 +34,29 @@ public class McwAurora
 	public static final String MODID = "mcwaurora";
     private static final Logger LOGGER = LogManager.getLogger();
     
-    public static final List<String> WOOD_BAYOU = List.of("cypress"); // bayou_blues
     public static final List<String> WOOD_ENHANCED_MUSH = List.of("mushroom"); // enhanced_mushrooms
-    public static final List<String> WOOD_ABUNDANCE = List.of("jacaranda", "redbud"); // abundance
-    
+
     private static final DeferredRegister<Block> block = Registration.blocks(MODID);
     private static final DeferredRegister<Item> item = Registration.items(MODID);
     public static final DeferredRegister<CreativeModeTab> ct = Registration.creativeModeTab(MODID);
 
 	public static final RegistryObject<CreativeModeTab> MCWAURORA_TAB = ct.register("tab", () -> CreativeModeTab.builder()
-	        .icon(() -> { return getIcon(); }).title(Component.translatable(MODID+".tab")).build());
+	        .icon(McwAurora::getIcon).title(Component.translatable(MODID+".tab")).build());
     
     public McwAurora()
     {
     	LOGGER.info("Macaw's Aurora Mod Loading...");
     	Registration.init(block, item, ct);
 
-    	final BlockBehaviour.Properties wood = BlockBehaviour.Properties.of().strength(0.5F, 2.5F).sound(SoundType.WOOD);
-    	final BlockBehaviour.Properties leaves = BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES);
-
-    	Bridges.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, null, "bayou_blues", wood);
-    	Bridges.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, null, "enhanced_mushrooms", wood);
-    	Bridges.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance", wood);
-
-    	Roofs.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, null, "bayou_blues", wood);
-    	Roofs.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, null, "enhanced_mushrooms", wood);
-    	Roofs.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance", wood);
-
-    	Fences.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, null, "bayou_blues", wood);
-    	Fences.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, null, "enhanced_mushrooms", wood);
-    	Fences.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance", wood);
-
-    	Fences.setRegistrationHedgesModLoaded(WOOD_BAYOU, block, item, null, "bayou_blues", leaves);
-    	Fences.setRegistrationHedgesModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance", leaves);
-
-    	Furnitures.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, null, "bayou_blues");
-    	Furnitures.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, null, "enhanced_mushrooms");
-    	Furnitures.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance");
-
-    	Stairs.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, null, "bayou_blues", wood);
-    	Stairs.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, null, "enhanced_mushrooms", wood);
-    	Stairs.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance", wood);
-
-		Paths.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, null, "bayou_blues");
-		Paths.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, null, "enhanced_mushrooms");
-		Paths.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance");
-
-		Trapdoors.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, null, "bayou_blues");
-		Trapdoors.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, null, "enhanced_mushrooms");
-		Trapdoors.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance");
-
-		Doors.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, null, "bayou_blues");
-		Doors.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, null, "enhanced_mushrooms");
-		Doors.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance");
-
-		Windows.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, null, "bayou_blues");
-		Windows.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, null, "enhanced_mushrooms");
-		Windows.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, null, "abundance");
+    	Bridges.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
+    	Roofs.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
+    	Fences.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
+		Furnitures.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
+    	Stairs.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
+		Paths.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
+		Trapdoors.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
+		Doors.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
+		Windows.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
 
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addTotab);
         MinecraftForge.EVENT_BUS.register(MappingsFix.class);
@@ -106,61 +67,30 @@ public class McwAurora
     {
     	if(MCWAURORA_TAB != null)
     	{
-			if(ModList.get().isLoaded("bayou_blues"))
-			{
-	        	Bridges.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
-	        	Roofs.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
-	        	Fences.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
-	        	Fences.addToTabHedge(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
-	        	Furnitures.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
-	        	Stairs.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
-				Paths.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
-				Trapdoors.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
-				Doors.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
-				Windows.addToTab(event, MODID, WOOD_BAYOU, MCWAURORA_TAB.get());
-			}
-
-			if(ModList.get().isLoaded("enhanced_mushrooms"))
-			{
-	        	Bridges.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-	        	Roofs.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-	        	Fences.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-	        	Furnitures.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-	        	Stairs.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-				Paths.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-				Trapdoors.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-				Doors.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-				Windows.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-			}
-			
-			if(ModList.get().isLoaded("abundance"))
-			{
-	        	Bridges.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
-	        	Roofs.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
-	        	Fences.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
-	        	Fences.addToTabHedge(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
-	        	Furnitures.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
-	        	Stairs.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
-				Paths.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
-				Trapdoors.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
-				Doors.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
-				Windows.addToTab(event, MODID, WOOD_ABUNDANCE, MCWAURORA_TAB.get());
-			}
+			Bridges.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
+			Roofs.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
+			Fences.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
+			Furnitures.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
+			Stairs.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
+			Paths.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
+			Trapdoors.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
+			Doors.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
+			Windows.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
     	}
     }
     
     private static ItemStack getIcon()
     {
 		NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
-				Finder.findBlock(MODID, randomNaming()+"_roof"),
-				Finder.findBlock(MODID, randomNaming()+"_picket_fence"),
-				Finder.findBlock(MODID, randomNaming()+"_wardrobe"),
-				Finder.findBlock(MODID, randomNaming()+"_log_bridge_middle"),
-				Finder.findBlock(MODID, randomNaming()+"_pane_window"),
-				Finder.findBlock(MODID, randomNaming()+"_modern_door"),
-				Finder.findBlock(MODID, randomNaming()+"_mystic_trapdoor"),
-				Finder.findBlock(MODID, randomNaming()+"_planks_path"),
-				Finder.findBlock(MODID, randomNaming()+"_skyline_stairs"));
+				Finder.findBlock(MODID, "mushroom_roof"),
+				Finder.findBlock(MODID, "mushroom_picket_fence"),
+				Finder.findBlock(MODID, "mushroom_wardrobe"),
+				Finder.findBlock(MODID, "mushroom_log_bridge_middle"),
+				Finder.findBlock(MODID, "mushroom_pane_window"),
+				Finder.findBlock(MODID, "mushroom_modern_door"),
+				Finder.findBlock(MODID, "mushroom_mystic_trapdoor"),
+				Finder.findBlock(MODID, "mushroom_planks_path"),
+				Finder.findBlock(MODID, "mushroom_skyline_stairs"));
 
 		prop.addType(BlockType.BRIDGES)
 				.addType(BlockType.ROOFS)
@@ -175,39 +105,4 @@ public class McwAurora
 				BlockType.PATHS, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS);
     	return new ItemStack(icon);
     }
-    
-	private static String randomNaming()
-	{
-		Random rand = new Random();
-
-		if(ModList.get().isLoaded("bayou_blues") && ModList.get().isLoaded("enhanced_mushrooms") && ModList.get().isLoaded("abundance"))
-		{
-			int i = rand.nextInt(3);
-
-			return switch (i) {
-				case 0 -> "cypress";
-				case 1 -> "mushroom";
-				case 2 -> "jacaranda";
-				default -> "mushroom";
-			};
-		}
-		else
-		{
-			if(ModList.get().isLoaded("bayou_blues"))
-			{
-				return "cypress";
-			}
-
-			if(ModList.get().isLoaded("enhanced_mushrooms"))
-			{
-				return "mushroom";
-			}
-			
-			if(ModList.get().isLoaded("abundance"))
-			{
-				return "jacaranda";
-			}
-		}
-		return "mushroom";
-	}
 }

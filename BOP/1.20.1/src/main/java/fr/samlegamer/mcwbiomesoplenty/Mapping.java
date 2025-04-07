@@ -17,7 +17,7 @@ public class Mapping
 	@SubscribeEvent
 	public static void missingnoWoodBlock(MissingMappingsEvent event)
 	{
-		fences.leavesAdding(McwBOP.LEAVES);
+		fences.leavesAdding(McwBOP.LEAVE);
 		bridges.missingnoWoodBlock(event);
 		furnitures.missingnoWoodBlock(event);
 		fences.missingnoWoodBlock(event);
@@ -27,7 +27,7 @@ public class Mapping
 	@SubscribeEvent
 	public static void missingnoWoodItem(MissingMappingsEvent event)
 	{
-		fences.leavesAdding(McwBOP.LEAVES);
+		fences.leavesAdding(McwBOP.LEAVE);
 		bridges.missingnoWoodItem(event);
 		furnitures.missingnoWoodItem(event);
 		fences.missingnoWoodItem(event);
