@@ -1,0 +1,41 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "terrestria"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "barrel_trapdoors",
+    
+    "pattern":
+    [
+        " A ",
+        "ABA",
+        " A "               
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "terrestria:redwood_planks"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:barrel"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:redwood_barrel_trapdoor",
+        "count": 4
+    }
+}
+
+

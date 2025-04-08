@@ -1,0 +1,21 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "terrestria:sakura_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwterraformersmc:sakura_planks_path",
+    "count": 3
+  }
+}

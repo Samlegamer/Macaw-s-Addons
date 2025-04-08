@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "loft_stairs",
+  "pattern" : [ "W  ", " W ", "  W" ],
+  "key" : {
+    "W" : {
+      "item" : "terrestria:stripped_rubber_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwterraformersmc:rubber_loft_stairs",
+    "count" : 3
+  }
+}

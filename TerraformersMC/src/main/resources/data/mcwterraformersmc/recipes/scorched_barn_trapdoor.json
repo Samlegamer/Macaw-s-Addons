@@ -1,0 +1,40 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "cinderscapes"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "barn_trapdoors",
+	
+    "pattern":
+    [
+        "A",
+        "B"               
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "cinderscapes:scorched_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwterraformersmc:scorched_glass_trapdoor"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:scorched_barn_trapdoor",
+        "count": 1
+    }
+}
+
+

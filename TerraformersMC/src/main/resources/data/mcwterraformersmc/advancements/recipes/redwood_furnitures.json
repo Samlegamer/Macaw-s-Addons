@@ -1,0 +1,100 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwterraformersmc:redwood_wardrobe",
+	  "mcwterraformersmc:redwood_modern_wardrobe",
+	  "mcwterraformersmc:redwood_double_wardrobe",
+	  "mcwterraformersmc:redwood_bookshelf_cupboard",
+	  "mcwterraformersmc:redwood_bookshelf",
+	  "mcwterraformersmc:redwood_drawer",
+	  "mcwterraformersmc:redwood_double_drawer",
+	  "mcwterraformersmc:redwood_bookshelf_drawer",
+	  "mcwterraformersmc:redwood_lower_bookshelf_drawer",
+	  "mcwterraformersmc:redwood_large_drawer",
+	  "mcwterraformersmc:redwood_lower_triple_drawer",
+	  "mcwterraformersmc:redwood_triple_drawer",
+	  "mcwterraformersmc:redwood_desk",
+	  "mcwterraformersmc:redwood_covered_desk",
+	  "mcwterraformersmc:redwood_modern_desk",
+	  "mcwterraformersmc:redwood_table",
+	  "mcwterraformersmc:redwood_end_table",
+	  "mcwterraformersmc:redwood_coffee_table",
+	  "mcwterraformersmc:redwood_glass_table",
+	  "mcwterraformersmc:redwood_chair",
+	  "mcwterraformersmc:redwood_modern_chair",
+	  "mcwterraformersmc:redwood_striped_chair",
+	  "mcwterraformersmc:redwood_stool_chair",
+	  "mcwterraformersmc:redwood_counter",
+	  "mcwterraformersmc:redwood_drawer_counter",
+	  "mcwterraformersmc:redwood_double_drawer_counter",
+	  "mcwterraformersmc:redwood_cupboard_counter",
+	  
+	  "mcwterraformersmc:stripped_redwood_wardrobe",
+	  "mcwterraformersmc:stripped_redwood_modern_wardrobe",
+	  "mcwterraformersmc:stripped_redwood_double_wardrobe",
+	  "mcwterraformersmc:stripped_redwood_bookshelf_cupboard",
+	  "mcwterraformersmc:stripped_redwood_bookshelf",
+	  "mcwterraformersmc:stripped_redwood_drawer",
+	  "mcwterraformersmc:stripped_redwood_double_drawer",
+	  "mcwterraformersmc:stripped_redwood_bookshelf_drawer",
+	  "mcwterraformersmc:stripped_redwood_lower_bookshelf_drawer",
+	  "mcwterraformersmc:stripped_redwood_large_drawer",
+	  "mcwterraformersmc:stripped_redwood_lower_triple_drawer",
+	  "mcwterraformersmc:stripped_redwood_triple_drawer",
+	  "mcwterraformersmc:stripped_redwood_desk",
+	  "mcwterraformersmc:stripped_redwood_covered_desk",
+	  "mcwterraformersmc:stripped_redwood_modern_desk",
+	  "mcwterraformersmc:stripped_redwood_table",
+	  "mcwterraformersmc:stripped_redwood_end_table",
+	  "mcwterraformersmc:stripped_redwood_coffee_table",
+	  "mcwterraformersmc:stripped_redwood_glass_table",
+	  "mcwterraformersmc:stripped_redwood_chair",
+	  "mcwterraformersmc:stripped_redwood_modern_chair",
+	  "mcwterraformersmc:stripped_redwood_striped_chair",
+	  "mcwterraformersmc:stripped_redwood_stool_chair",
+	  "mcwterraformersmc:stripped_redwood_counter",
+	  "mcwterraformersmc:stripped_redwood_drawer_counter",
+	  "mcwterraformersmc:stripped_redwood_double_drawer_counter",
+	  "mcwterraformersmc:stripped_redwood_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:redwood_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwterraformersmc:redwood_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

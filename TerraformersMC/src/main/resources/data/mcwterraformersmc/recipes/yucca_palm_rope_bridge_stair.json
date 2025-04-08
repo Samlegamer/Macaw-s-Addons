@@ -1,0 +1,33 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "rope_stairs",
+    
+    "pattern": [
+    "  F",
+    " FF",
+	"FFF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "mcwterraformersmc:rope_yucca_palm_bridge"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:yucca_palm_rope_bridge_stair",
+        "count": 6
+    }
+}

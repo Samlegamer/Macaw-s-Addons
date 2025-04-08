@@ -1,0 +1,41 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "cinderscapes"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "whispering_trapdoors",
+    
+    "pattern":
+    [
+        " A ",
+        "ABA",
+        " A "               
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "cinderscapes:scorched_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwtrpdoors:print_whispering"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:scorched_whispering_trapdoor",
+        "count": 4
+    }
+}
+
+

@@ -1,0 +1,36 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "hedge",
+
+    "pattern":
+    [
+		"AA",
+		"AA"
+    ],
+    
+    "key":
+    { 
+
+        "A":
+        {
+            "item": "terrestria:dark_japanese_maple_leaves"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:dark_japanese_maple_hedge",
+        "count": 4
+    }
+}
+
+

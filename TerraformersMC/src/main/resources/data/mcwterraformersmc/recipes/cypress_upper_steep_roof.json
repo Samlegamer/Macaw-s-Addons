@@ -1,0 +1,38 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "terrestria"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "upper_steep",
+    
+    "pattern":
+    [
+		" W",
+		" W",
+        "WS"
+    ],
+    
+    "key":
+    {
+        "W":
+        {
+            "item": "terrestria:cypress_log"
+        },
+		"S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "mcwterraformersmc:cypress_upper_steep_roof",
+        "count": 3
+    }
+}

@@ -1,25 +1,25 @@
 {
 	"schemaVersion": 1,
-	"id": "mcwbiomesoplenty",
-	"version": "1.20.1-1.1",
-	"name": "Macaw's Biomes O' Plenty",
-	"description": "A multiple compability for Biomes O' Plenty with Macaw's Mods like Bridges/Roofs/Fences or Furnitures.",
+	"id": "${archives_base_name}",
+	"version": "${version}",
+	"name": "${mod_name}",
+	"description": "${mod_description}",
 	"authors": [
-		"Samlegamer"
+		"${mod_authors}"
 	],
 	"contact": {
 		"homepage": "https://www.curseforge.com/minecraft/mc-mods/macaws-biomes-o-plenty",
 		"sources": "https://github.com/Samlegamer/Macaw-s-Addons/"
 	},
-	"license": "CC0-1.0",
+	"license": "${mod_license}",
 	"icon": "logo.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"fr.samlegamer.mcwbiomesoplenty.McwBOP"
+			"${mod_init}"
 		],
 		"client": [
-			"fr.samlegamer.mcwbiomesoplenty.client.Client"
+			"${mod_init_client}"
 		]
 	},
 	"depends": {
@@ -27,8 +27,8 @@
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*",
-		"biomesoplenty": "*",
-		"addonslib": "*"
+		"biomesoplenty": ">=19.0.0.94",
+		"addonslib": ">=1.20.1-1.5"
 	},
 	"suggests": {
 		"another-mod": "*"

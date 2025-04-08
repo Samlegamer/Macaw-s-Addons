@@ -1,0 +1,37 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stone_bridges",
+    
+    "pattern": [
+    "F F",
+    "WWW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "terrestria:mossy_basalt_brick_wall"
+        },
+        
+        "W":
+        {
+            "item": "terrestria:mossy_basalt_brick_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:mossy_basalt_bricks_bridge",
+        "count": 4
+    }
+}

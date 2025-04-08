@@ -1,0 +1,37 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "rail_bridges",
+    
+    "pattern": [
+    "F F",
+    "FWF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "terrestria:redwood_fence"
+        },
+        
+        "W":
+        {
+            "item": "terrestria:redwood_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:redwood_rail_bridge",
+        "count": 4
+    }
+}

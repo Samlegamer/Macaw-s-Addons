@@ -1,0 +1,41 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "cinderscapes"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "barrel_trapdoors",
+    
+    "pattern":
+    [
+        " A ",
+        "ABA",
+        " A "               
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "cinderscapes:scorched_planks"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:barrel"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:scorched_barrel_trapdoor",
+        "count": 4
+    }
+}
+
+

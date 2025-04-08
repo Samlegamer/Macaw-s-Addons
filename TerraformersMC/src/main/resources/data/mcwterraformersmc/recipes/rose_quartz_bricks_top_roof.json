@@ -1,0 +1,18 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "cinderscapes"
+      ]
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "cinderscapes:rose_quartz_bricks"
+    },
+    "result": "mcwterraformersmc:rose_quartz_bricks_top_roof",
+    "group": "roofs",
+    "count": 1
+}

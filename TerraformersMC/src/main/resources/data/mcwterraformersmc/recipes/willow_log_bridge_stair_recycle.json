@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shapeless",
+	"group": "recyclable_bridges",
+		
+    "ingredients": [
+        {
+            "item": "mcwterraformersmc:willow_log_bridge_stair"
+        }
+    ],
+    "result": {
+        "item": "mcwterraformersmc:willow_log_bridge_middle",
+        "count": 1
+    }
+}

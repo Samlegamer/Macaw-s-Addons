@@ -1,0 +1,39 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwterraformersmc:willow_picket_fence",
+	  "mcwterraformersmc:willow_stockade_fence",
+	  "mcwterraformersmc:willow_horse_fence",
+	  "mcwterraformersmc:willow_wired_fence",
+	  "mcwterraformersmc:willow_highley_gate",
+	  "mcwterraformersmc:willow_pyramid_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "terrestria:willow_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

@@ -1,0 +1,26 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "curtain_rods",
+  "pattern" : [ "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:stick"
+    },
+    "B" : {
+      "item" : "terrestria:yucca_palm_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwterraformersmc:yucca_palm_curtain_rod",
+    "count" : 5
+  }
+}

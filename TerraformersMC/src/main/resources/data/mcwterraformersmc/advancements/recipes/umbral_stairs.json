@@ -1,0 +1,43 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwterraformersmc:umbral_bulk_stairs",
+	  "mcwterraformersmc:umbral_compact_stairs",
+	  "mcwterraformersmc:umbral_loft_stairs",
+	  "mcwterraformersmc:umbral_skyline_stairs",
+	  "mcwterraformersmc:umbral_terrace_stairs",
+	  "mcwterraformersmc:umbral_railing",
+	  "mcwterraformersmc:umbral_balcony",
+	  "mcwterraformersmc:umbral_platform"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cinderscapes:umbral_stem"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

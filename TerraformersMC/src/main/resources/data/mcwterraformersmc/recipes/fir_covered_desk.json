@@ -1,0 +1,34 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "traverse"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "covered_desk",
+    "pattern":
+    [
+        "AAA",
+        "A A"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "traverse:fir_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:fir_covered_desk",
+        "count": 2
+    }
+}
+
+

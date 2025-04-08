@@ -1,0 +1,41 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "terrestria"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "stable",
+	
+    "pattern":
+    [
+        "BB",
+        "AA",
+		"AA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "terrestria:yucca_palm_planks"
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:iron_bars"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:yucca_palm_stable_door",
+        "count": 3
+    }
+}
+
+

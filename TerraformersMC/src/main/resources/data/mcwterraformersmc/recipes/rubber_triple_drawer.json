@@ -1,0 +1,41 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "triple_drawer",
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+		"BAB"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "terrestria:rubber_log"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwfurnitures:cabinet_drawer"
+        }
+		
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:rubber_triple_drawer",
+        "count": 4
+    }
+}
+
+

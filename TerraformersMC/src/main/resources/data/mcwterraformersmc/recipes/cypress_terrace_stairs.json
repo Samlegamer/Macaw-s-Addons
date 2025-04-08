@@ -1,0 +1,26 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : {
+      "item" : "terrestria:stripped_cypress_log"
+    },
+    "Z" : {
+      "item" : "terrestria:cypress_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwterraformersmc:cypress_terrace_stairs",
+    "count" : 5
+  }
+}

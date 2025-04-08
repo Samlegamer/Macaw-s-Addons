@@ -6,8 +6,11 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -46,8 +49,8 @@ public class McwBOP
 
     public McwBOP()
     {
-		BlockBehaviour.Properties prop_crimson = BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS);
-		BlockBehaviour.Properties prop_cherry = BlockBehaviour.Properties.copy(Blocks.CHERRY_PLANKS);
+		BlockBehaviour.Properties prop_crimson = BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_STEM).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.NETHER_WOOD);
+		BlockBehaviour.Properties prop_cherry = BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.CHERRY_WOOD).ignitedByLava();
 
 		List<String> woodClassic = List.of("dead", "fir", "mahogany", "palm", "redwood", "willow", "pine");
 		List<String> woodCrimson = List.of("hellbark", "umbran", "empyreal");
@@ -75,18 +78,18 @@ public class McwBOP
 		Roofs.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
 		Trapdoors.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
 		Paths.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
-		Doors.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson, BlockBehaviour.Properties.copy(Blocks.CRIMSON_DOOR));
+		Doors.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson, BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASS).strength(3.0F).noOcclusion().pushReaction(PushReaction.DESTROY));
 		Windows.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
 		Stairs.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
 
 		Bridges.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
 		Fences.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
-		Fences.setRegistrationHedgesModLoaded(leaveCherry, block, item, BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES));
+		Fences.setRegistrationHedgesModLoaded(leaveCherry, block, item, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).strength(0.2F).randomTicks().sound(SoundType.CHERRY_LEAVES).noOcclusion());
 		Furnitures.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
 		Roofs.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
 		Trapdoors.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
 		Paths.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
-		Doors.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry, BlockBehaviour.Properties.copy(Blocks.CHERRY_DOOR));
+		Doors.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry, BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASS).strength(3.0F).noOcclusion());
 		Windows.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
 		Stairs.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
 

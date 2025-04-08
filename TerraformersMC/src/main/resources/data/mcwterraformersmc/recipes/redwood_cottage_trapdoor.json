@@ -1,0 +1,41 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "terrestria"
+      ]
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "cottage_trapdoors",
+    
+    "pattern":
+    [
+        "A",
+        "B",
+        "A"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "terrestria:redwood_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwtrpdoors:print_cottage"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwterraformersmc:redwood_cottage_trapdoor",
+        "count": 1
+    }
+}
+
+

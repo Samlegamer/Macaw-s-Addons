@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_railing",
+  "pattern" : [ "W  ", "WW ", "WWW" ],
+  "key" : {
+    "W" : {
+      "item" : "mcwterraformersmc:yucca_palm_balcony"
+    }
+  },
+  "result" : {
+    "item" : "mcwterraformersmc:yucca_palm_railing",
+    "count" : 6
+  }
+}
