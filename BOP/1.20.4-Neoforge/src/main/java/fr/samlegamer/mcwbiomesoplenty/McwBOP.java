@@ -5,6 +5,11 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
@@ -53,16 +58,49 @@ public class McwBOP
     {
     	LOGGER.info("Macaw's Biomes O' Plenty Loading...");
      	Registration.init(bus, block, item, ct);
-    	Bridges.setRegistrationWood(WOOD, block, item, null);
-    	Fences.setRegistrationWood(WOOD, block, item, null);
-    	Fences.setRegistrationHedges(LEAVES, block, item, null);
-    	Furnitures.setRegistrationWood(WOOD, block, item, null);
-    	Roofs.setRegistrationWood(WOOD, block, item, null);
-    	Trapdoors.setRegistrationWood(WOOD, block, item, null);
-    	Paths.setRegistrationWood(WOOD, block, item, null);
-    	Doors.setRegistrationWood(WOOD, block, item, null);
-    	Windows.setRegistrationWood(WOOD, block, item, null);
-    	Stairs.setRegistrationWood(WOOD, block, item, null);
+
+		BlockBehaviour.Properties prop_crimson = BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_STEM).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.NETHER_WOOD);
+		BlockBehaviour.Properties prop_cherry = BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.CHERRY_WOOD).ignitedByLava();
+
+		List<String> woodClassic = List.of("dead", "fir", "mahogany", "palm", "redwood", "willow", "pine");
+		List<String> woodCrimson = List.of("hellbark", "umbran", "empyreal");
+		List<String> woodCherry = List.of("magic", "jacaranda", "maple");
+
+		List<String> leaveClassic = List.of("dead", "fir", "hellbark", "mahogany", "palm", "redwood", "umbran", "willow", "empyreal", "pine", "cypress", "flowering_oak", "rainbow_birch", "origin");
+		List<String> leaveCherry = List.of("snowblossom", "orange_maple", "red_maple", "yellow_maple", "jacaranda", "magic");
+
+		Bridges.setRegistrationWood(woodClassic, block, item);
+		Fences.setRegistrationWood(woodClassic, block, item);
+		Fences.setRegistrationHedges(leaveClassic, block, item);
+		Furnitures.setRegistrationWood(woodClassic, block, item);
+		Roofs.setRegistrationWood(woodClassic, block, item);
+		Trapdoors.setRegistrationWood(woodClassic, block, item);
+		Paths.setRegistrationWood(woodClassic, block, item);
+		Doors.setRegistrationWood(woodClassic, block, item);
+		Windows.setRegistrationWood(woodClassic, block, item);
+		Stairs.setRegistrationWood(woodClassic, block, item);
+
+		Bridges.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Fences.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Furnitures.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Roofs.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Trapdoors.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Paths.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Doors.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson, BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASS).strength(3.0F).noOcclusion().pushReaction(PushReaction.DESTROY));
+		Windows.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Stairs.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+
+		Bridges.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Fences.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Fences.setRegistrationHedgesModLoaded(leaveCherry, block, item, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).strength(0.2F).randomTicks().sound(SoundType.CHERRY_LEAVES).noOcclusion());
+		Furnitures.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Roofs.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Trapdoors.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Paths.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Doors.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry, BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASS).strength(3.0F).noOcclusion());
+		Windows.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Stairs.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+
 		McwBOP.LOGGER.info("Start convert blocks");
 		fences.leavesAdding(McwBOP.LEAVES);
 		bridges.missingnoWoodBlock(McwBOP.block);
