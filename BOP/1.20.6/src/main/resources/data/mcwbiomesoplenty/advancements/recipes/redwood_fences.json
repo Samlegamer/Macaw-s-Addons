@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbiomesoplenty:redwood_picket_fence",
+	  "mcwbiomesoplenty:redwood_stockade_fence",
+	  "mcwbiomesoplenty:redwood_horse_fence",
+	  "mcwbiomesoplenty:redwood_wired_fence",
+	  "mcwbiomesoplenty:redwood_highley_gate",
+	  "mcwbiomesoplenty:redwood_pyramid_gate",
+	  "mcwbiomesoplenty:redwood_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:redwood_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

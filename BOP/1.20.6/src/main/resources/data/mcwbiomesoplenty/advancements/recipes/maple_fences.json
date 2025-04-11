@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbiomesoplenty:maple_picket_fence",
+	  "mcwbiomesoplenty:maple_stockade_fence",
+	  "mcwbiomesoplenty:maple_horse_fence",
+	  "mcwbiomesoplenty:maple_wired_fence",
+	  "mcwbiomesoplenty:maple_highley_gate",
+	  "mcwbiomesoplenty:maple_pyramid_gate",
+	  "mcwbiomesoplenty:maple_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:maple_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

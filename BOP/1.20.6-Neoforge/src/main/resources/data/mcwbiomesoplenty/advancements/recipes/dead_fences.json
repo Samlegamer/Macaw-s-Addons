@@ -1,0 +1,41 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbiomesoplenty:dead_picket_fence",
+	  "mcwbiomesoplenty:dead_stockade_fence",
+	  "mcwbiomesoplenty:dead_horse_fence",
+	  "mcwbiomesoplenty:dead_wired_fence",
+	  "mcwbiomesoplenty:dead_highley_gate",
+	  "mcwbiomesoplenty:dead_pyramid_gate",
+	  "mcwbiomesoplenty:dead_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:dead_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

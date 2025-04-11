@@ -55,52 +55,53 @@ public class McwTerraformersMC implements ModInitializer
     {
         LOGGER.info("Macaw's TerraformersMC Loading...");
         final AbstractBlock.Settings wood = AbstractBlock.Settings.copy(Blocks.OAK_PLANKS);
+        final AbstractBlock.Settings woodCrimson = AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS);
         final AbstractBlock.Settings stone = AbstractBlock.Settings.copy(Blocks.COBBLESTONE);
         final AbstractBlock.Settings leave = AbstractBlock.Settings.copy(Blocks.OAK_LEAVES);
 
-        Bridges.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse", wood);
-        Bridges.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes", wood);
-        Bridges.setRegistrationRockModLoaded(MODID, ROCKS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes", stone);
-        Bridges.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria", wood);
-        Bridges.setRegistrationRockModLoaded(MODID, ROCKS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria", stone);
+        Bridges.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
+        Bridges.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, woodCrimson);
+        Bridges.setRegistrationRockModLoaded(MODID, ROCKS_CINDERSCAPES, stone);
+        Bridges.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
+        Bridges.setRegistrationRockModLoaded(MODID, ROCKS_TERRESTRIA, stone);
 
-        Roofs.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse", wood);
-        Roofs.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes", wood);
-        Roofs.setRegistrationRockModLoaded(MODID, ROCKS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes", stone);
-        Roofs.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria", wood);
-        Roofs.setRegistrationRockModLoaded(MODID, ROCKS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria", stone);
+        Roofs.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
+        Roofs.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, woodCrimson);
+        Roofs.setRegistrationRockModLoaded(MODID, ROCKS_CINDERSCAPES, stone);
+        Roofs.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
+        Roofs.setRegistrationRockModLoaded(MODID, ROCKS_TERRESTRIA, stone);
 
-        Fences.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse", wood);
-        Fences.setRegistrationHedgesModLoaded(MODID, LEAVES_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse", leave);
-        Fences.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes", wood);
-        Fences.setRegistrationRockModLoaded(MODID, ROCKS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes", stone);
-        Fences.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria", wood);
-        Fences.setRegistrationHedgesModLoaded(MODID, LEAVES_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria", leave);
-        Fences.setRegistrationRockModLoaded(MODID, ROCKS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria", stone);
+        Fences.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
+        Fences.setRegistrationHedgesModLoaded(MODID, LEAVES_TRAVERSE, leave);
+        Fences.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, woodCrimson);
+        Fences.setRegistrationRockModLoaded(MODID, ROCKS_CINDERSCAPES, stone);
+        Fences.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
+        Fences.setRegistrationHedgesModLoaded(MODID, LEAVES_TERRESTRIA, leave);
+        Fences.setRegistrationRockModLoaded(MODID, ROCKS_TERRESTRIA, stone);
 
-        Furnitures.setRegistrationWood(MODID, WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Furnitures.setRegistrationWood(MODID, WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Furnitures.setRegistrationWood(MODID, WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
+        Furnitures.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
+        Furnitures.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, woodCrimson);
+        Furnitures.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
 
-        Stairs.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse", wood);
-        Stairs.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes", wood);
-        Stairs.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria", wood);
+        Stairs.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
+        Stairs.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, woodCrimson);
+        Stairs.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
 
-        Paths.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Paths.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Paths.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
+        Paths.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
+        Paths.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, woodCrimson);
+        Paths.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
 
-        Doors.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Doors.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Doors.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
+        Doors.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, AbstractBlock.Settings.copy(Blocks.OAK_DOOR), AbstractBlock.Settings.copy(Blocks.OAK_DOOR));
+        Doors.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, AbstractBlock.Settings.copy(Blocks.CRIMSON_DOOR), AbstractBlock.Settings.copy(Blocks.CRIMSON_DOOR));
+        Doors.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, AbstractBlock.Settings.copy(Blocks.OAK_DOOR), AbstractBlock.Settings.copy(Blocks.OAK_DOOR));
 
-        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
+        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR));
+        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, AbstractBlock.Settings.copy(Blocks.CRIMSON_TRAPDOOR));
+        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR));
 
-        Windows.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Windows.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Windows.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
+        Windows.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
+        Windows.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, woodCrimson);
+        Windows.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
 
         Registry.register(Registries.ITEM_GROUP, TAB_ID, MCWTERRAFORMERSMC_TAB);
         RegistryKey<ItemGroup> group_key = RegistryKey.of(RegistryKeys.ITEM_GROUP, TAB_ID);

@@ -117,7 +117,6 @@ public class McwBOP
 		McwBOP.LOGGER.info("Finish convert items");
 
     	bus.addListener(this::addTotab);
-		//NeoForge.EVENT_BUS.register(Mapping.class); /* Not work ??? */
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
     
