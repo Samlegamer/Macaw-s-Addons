@@ -1,0 +1,65 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwterraformersmc:hemlock_bark_glass_door",
+	  "mcwterraformersmc:hemlock_barn_door",
+	  "mcwterraformersmc:hemlock_barn_glass_door",
+	  "mcwterraformersmc:hemlock_beach_door",
+	  "mcwterraformersmc:hemlock_classic_door",
+	  "mcwterraformersmc:hemlock_cottage_door",
+	  "mcwterraformersmc:hemlock_four_panel_door",
+	  "mcwterraformersmc:hemlock_glass_door",
+	  "mcwterraformersmc:hemlock_japanese_door",
+	  "mcwterraformersmc:hemlock_japanese2_door",
+	  "mcwterraformersmc:hemlock_modern_door",
+	  "mcwterraformersmc:hemlock_mystic_door",
+	  "mcwterraformersmc:hemlock_nether_door",
+	  "mcwterraformersmc:hemlock_paper_door",
+	  "mcwterraformersmc:hemlock_stable_door",
+	  "mcwterraformersmc:hemlock_stable_head_door",
+	  "mcwterraformersmc:hemlock_swamp_door",
+	  "mcwterraformersmc:hemlock_western_door",
+	  "mcwterraformersmc:hemlock_waffle_door",
+	  "mcwterraformersmc:hemlock_tropical_door",
+	  "mcwterraformersmc:hemlock_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:hemlock_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

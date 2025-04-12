@@ -1,0 +1,26 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stool_chair",
+  "pattern" : [ "A", "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "terrestria:cypress_log"
+    },
+    "B" : {
+      "item" : "terrestria:cypress_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:cypress_stool_chair"
+  }
+}

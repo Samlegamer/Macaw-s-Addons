@@ -1,0 +1,29 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "striped_chair",
+  "pattern" : [ " A", "BC", "CC" ],
+  "key" : {
+    "A" : {
+      "item" : "terrestria:redwood_log"
+    },
+    "B" : {
+      "item" : "terrestria:redwood_slab"
+    },
+    "C" : {
+      "item" : "terrestria:redwood_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:redwood_striped_chair"
+  }
+}

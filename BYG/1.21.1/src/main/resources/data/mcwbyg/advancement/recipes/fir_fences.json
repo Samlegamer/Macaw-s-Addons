@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:fir_picket_fence",
+	  "mcwbyg:fir_stockade_fence",
+	  "mcwbyg:fir_horse_fence",
+	  "mcwbyg:fir_wired_fence",
+	  "mcwbyg:fir_highley_gate",
+	  "mcwbyg:fir_pyramid_gate",
+	  "mcwbyg:fir_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomeswevegone:fir_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

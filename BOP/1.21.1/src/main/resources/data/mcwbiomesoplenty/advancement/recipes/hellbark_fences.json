@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbiomesoplenty:hellbark_picket_fence",
+	  "mcwbiomesoplenty:hellbark_stockade_fence",
+	  "mcwbiomesoplenty:hellbark_horse_fence",
+	  "mcwbiomesoplenty:hellbark_wired_fence",
+	  "mcwbiomesoplenty:hellbark_highley_gate",
+	  "mcwbiomesoplenty:hellbark_pyramid_gate",
+	  "mcwbiomesoplenty:hellbark_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:hellbark_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

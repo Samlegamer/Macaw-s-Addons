@@ -1,0 +1,65 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwterraformersmc:cypress_bark_glass_door",
+	  "mcwterraformersmc:cypress_barn_door",
+	  "mcwterraformersmc:cypress_barn_glass_door",
+	  "mcwterraformersmc:cypress_beach_door",
+	  "mcwterraformersmc:cypress_classic_door",
+	  "mcwterraformersmc:cypress_cottage_door",
+	  "mcwterraformersmc:cypress_four_panel_door",
+	  "mcwterraformersmc:cypress_glass_door",
+	  "mcwterraformersmc:cypress_japanese_door",
+	  "mcwterraformersmc:cypress_japanese2_door",
+	  "mcwterraformersmc:cypress_modern_door",
+	  "mcwterraformersmc:cypress_mystic_door",
+	  "mcwterraformersmc:cypress_nether_door",
+	  "mcwterraformersmc:cypress_paper_door",
+	  "mcwterraformersmc:cypress_stable_door",
+	  "mcwterraformersmc:cypress_stable_head_door",
+	  "mcwterraformersmc:cypress_swamp_door",
+	  "mcwterraformersmc:cypress_western_door",
+	  "mcwterraformersmc:cypress_waffle_door",
+	  "mcwterraformersmc:cypress_tropical_door",
+	  "mcwterraformersmc:cypress_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:cypress_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

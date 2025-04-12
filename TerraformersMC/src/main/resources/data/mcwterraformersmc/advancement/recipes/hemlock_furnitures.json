@@ -1,0 +1,100 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwterraformersmc:hemlock_wardrobe",
+	  "mcwterraformersmc:hemlock_modern_wardrobe",
+	  "mcwterraformersmc:hemlock_double_wardrobe",
+	  "mcwterraformersmc:hemlock_bookshelf_cupboard",
+	  "mcwterraformersmc:hemlock_bookshelf",
+	  "mcwterraformersmc:hemlock_drawer",
+	  "mcwterraformersmc:hemlock_double_drawer",
+	  "mcwterraformersmc:hemlock_bookshelf_drawer",
+	  "mcwterraformersmc:hemlock_lower_bookshelf_drawer",
+	  "mcwterraformersmc:hemlock_large_drawer",
+	  "mcwterraformersmc:hemlock_lower_triple_drawer",
+	  "mcwterraformersmc:hemlock_triple_drawer",
+	  "mcwterraformersmc:hemlock_desk",
+	  "mcwterraformersmc:hemlock_covered_desk",
+	  "mcwterraformersmc:hemlock_modern_desk",
+	  "mcwterraformersmc:hemlock_table",
+	  "mcwterraformersmc:hemlock_end_table",
+	  "mcwterraformersmc:hemlock_coffee_table",
+	  "mcwterraformersmc:hemlock_glass_table",
+	  "mcwterraformersmc:hemlock_chair",
+	  "mcwterraformersmc:hemlock_modern_chair",
+	  "mcwterraformersmc:hemlock_striped_chair",
+	  "mcwterraformersmc:hemlock_stool_chair",
+	  "mcwterraformersmc:hemlock_counter",
+	  "mcwterraformersmc:hemlock_drawer_counter",
+	  "mcwterraformersmc:hemlock_double_drawer_counter",
+	  "mcwterraformersmc:hemlock_cupboard_counter",
+	  
+	  "mcwterraformersmc:stripped_hemlock_wardrobe",
+	  "mcwterraformersmc:stripped_hemlock_modern_wardrobe",
+	  "mcwterraformersmc:stripped_hemlock_double_wardrobe",
+	  "mcwterraformersmc:stripped_hemlock_bookshelf_cupboard",
+	  "mcwterraformersmc:stripped_hemlock_bookshelf",
+	  "mcwterraformersmc:stripped_hemlock_drawer",
+	  "mcwterraformersmc:stripped_hemlock_double_drawer",
+	  "mcwterraformersmc:stripped_hemlock_bookshelf_drawer",
+	  "mcwterraformersmc:stripped_hemlock_lower_bookshelf_drawer",
+	  "mcwterraformersmc:stripped_hemlock_large_drawer",
+	  "mcwterraformersmc:stripped_hemlock_lower_triple_drawer",
+	  "mcwterraformersmc:stripped_hemlock_triple_drawer",
+	  "mcwterraformersmc:stripped_hemlock_desk",
+	  "mcwterraformersmc:stripped_hemlock_covered_desk",
+	  "mcwterraformersmc:stripped_hemlock_modern_desk",
+	  "mcwterraformersmc:stripped_hemlock_table",
+	  "mcwterraformersmc:stripped_hemlock_end_table",
+	  "mcwterraformersmc:stripped_hemlock_coffee_table",
+	  "mcwterraformersmc:stripped_hemlock_glass_table",
+	  "mcwterraformersmc:stripped_hemlock_chair",
+	  "mcwterraformersmc:stripped_hemlock_modern_chair",
+	  "mcwterraformersmc:stripped_hemlock_striped_chair",
+	  "mcwterraformersmc:stripped_hemlock_stool_chair",
+	  "mcwterraformersmc:stripped_hemlock_counter",
+	  "mcwterraformersmc:stripped_hemlock_drawer_counter",
+	  "mcwterraformersmc:stripped_hemlock_double_drawer_counter",
+	  "mcwterraformersmc:stripped_hemlock_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:hemlock_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwterraformersmc:hemlock_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

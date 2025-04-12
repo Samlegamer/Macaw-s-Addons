@@ -1,0 +1,26 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shoji_two",
+  "pattern" : [ "BB", "BB", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "cinderscapes:umbral_slab"
+    },
+    "B" : {
+      "item" : "minecraft:paper"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwterraformersmc:umbral_japanese2_door"
+  }
+}

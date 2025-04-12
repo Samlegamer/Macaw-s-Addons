@@ -1,0 +1,100 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwterraformersmc:scorched_wardrobe",
+	  "mcwterraformersmc:scorched_modern_wardrobe",
+	  "mcwterraformersmc:scorched_double_wardrobe",
+	  "mcwterraformersmc:scorched_bookshelf_cupboard",
+	  "mcwterraformersmc:scorched_bookshelf",
+	  "mcwterraformersmc:scorched_drawer",
+	  "mcwterraformersmc:scorched_double_drawer",
+	  "mcwterraformersmc:scorched_bookshelf_drawer",
+	  "mcwterraformersmc:scorched_lower_bookshelf_drawer",
+	  "mcwterraformersmc:scorched_large_drawer",
+	  "mcwterraformersmc:scorched_lower_triple_drawer",
+	  "mcwterraformersmc:scorched_triple_drawer",
+	  "mcwterraformersmc:scorched_desk",
+	  "mcwterraformersmc:scorched_covered_desk",
+	  "mcwterraformersmc:scorched_modern_desk",
+	  "mcwterraformersmc:scorched_table",
+	  "mcwterraformersmc:scorched_end_table",
+	  "mcwterraformersmc:scorched_coffee_table",
+	  "mcwterraformersmc:scorched_glass_table",
+	  "mcwterraformersmc:scorched_chair",
+	  "mcwterraformersmc:scorched_modern_chair",
+	  "mcwterraformersmc:scorched_striped_chair",
+	  "mcwterraformersmc:scorched_stool_chair",
+	  "mcwterraformersmc:scorched_counter",
+	  "mcwterraformersmc:scorched_drawer_counter",
+	  "mcwterraformersmc:scorched_double_drawer_counter",
+	  "mcwterraformersmc:scorched_cupboard_counter",
+	  
+	  "mcwterraformersmc:stripped_scorched_wardrobe",
+	  "mcwterraformersmc:stripped_scorched_modern_wardrobe",
+	  "mcwterraformersmc:stripped_scorched_double_wardrobe",
+	  "mcwterraformersmc:stripped_scorched_bookshelf_cupboard",
+	  "mcwterraformersmc:stripped_scorched_bookshelf",
+	  "mcwterraformersmc:stripped_scorched_drawer",
+	  "mcwterraformersmc:stripped_scorched_double_drawer",
+	  "mcwterraformersmc:stripped_scorched_bookshelf_drawer",
+	  "mcwterraformersmc:stripped_scorched_lower_bookshelf_drawer",
+	  "mcwterraformersmc:stripped_scorched_large_drawer",
+	  "mcwterraformersmc:stripped_scorched_lower_triple_drawer",
+	  "mcwterraformersmc:stripped_scorched_triple_drawer",
+	  "mcwterraformersmc:stripped_scorched_desk",
+	  "mcwterraformersmc:stripped_scorched_covered_desk",
+	  "mcwterraformersmc:stripped_scorched_modern_desk",
+	  "mcwterraformersmc:stripped_scorched_table",
+	  "mcwterraformersmc:stripped_scorched_end_table",
+	  "mcwterraformersmc:stripped_scorched_coffee_table",
+	  "mcwterraformersmc:stripped_scorched_glass_table",
+	  "mcwterraformersmc:stripped_scorched_chair",
+	  "mcwterraformersmc:stripped_scorched_modern_chair",
+	  "mcwterraformersmc:stripped_scorched_striped_chair",
+	  "mcwterraformersmc:stripped_scorched_stool_chair",
+	  "mcwterraformersmc:stripped_scorched_counter",
+	  "mcwterraformersmc:stripped_scorched_drawer_counter",
+	  "mcwterraformersmc:stripped_scorched_double_drawer_counter",
+	  "mcwterraformersmc:stripped_scorched_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cinderscapes:scorched_stem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwterraformersmc:scorched_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,65 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwterraformersmc:umbral_bark_glass_door",
+	  "mcwterraformersmc:umbral_barn_door",
+	  "mcwterraformersmc:umbral_barn_glass_door",
+	  "mcwterraformersmc:umbral_beach_door",
+	  "mcwterraformersmc:umbral_classic_door",
+	  "mcwterraformersmc:umbral_cottage_door",
+	  "mcwterraformersmc:umbral_four_panel_door",
+	  "mcwterraformersmc:umbral_glass_door",
+	  "mcwterraformersmc:umbral_japanese_door",
+	  "mcwterraformersmc:umbral_japanese2_door",
+	  "mcwterraformersmc:umbral_modern_door",
+	  "mcwterraformersmc:umbral_mystic_door",
+	  "mcwterraformersmc:umbral_nether_door",
+	  "mcwterraformersmc:umbral_paper_door",
+	  "mcwterraformersmc:umbral_stable_door",
+	  "mcwterraformersmc:umbral_stable_head_door",
+	  "mcwterraformersmc:umbral_swamp_door",
+	  "mcwterraformersmc:umbral_western_door",
+	  "mcwterraformersmc:umbral_waffle_door",
+	  "mcwterraformersmc:umbral_tropical_door",
+	  "mcwterraformersmc:umbral_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cinderscapes:umbral_stem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

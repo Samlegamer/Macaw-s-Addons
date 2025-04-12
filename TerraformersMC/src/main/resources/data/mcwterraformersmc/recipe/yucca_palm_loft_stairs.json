@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "loft_stairs",
+  "pattern" : [ "W  ", " W ", "  W" ],
+  "key" : {
+    "W" : {
+      "item" : "terrestria:stripped_yucca_palm_log"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwterraformersmc:yucca_palm_loft_stairs"
+  }
+}

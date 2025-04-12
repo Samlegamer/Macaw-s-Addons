@@ -7,7 +7,7 @@ version = project.mod_version
 group = project.maven_group
 
 base {
-	archivesName = project.archives_base_name
+	archivesName = project.archives_base_name + "-fabric"
 }
 
 repositories
@@ -39,7 +39,7 @@ dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation "curse.maven:addonslib-1090999:6239953"
+	modImplementation "curse.maven:addonslib-1090999:6415949"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
@@ -47,10 +47,8 @@ dependencies {
 }
 
 processResources {
-	inputs.property "version", project.version
-
 	filesMatching("fabric.mod.json") {
-		expand "version": project.version
+		expand project.properties
 	}
 }
 

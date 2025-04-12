@@ -1,0 +1,40 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:mahogany_picket_fence",
+	  "mcwbyg:mahogany_stockade_fence",
+	  "mcwbyg:mahogany_horse_fence",
+	  "mcwbyg:mahogany_wired_fence",
+	  "mcwbyg:mahogany_highley_gate",
+	  "mcwbyg:mahogany_pyramid_gate",
+	  "mcwbyg:mahogany_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomeswevegone:mahogany_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

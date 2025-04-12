@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stable_head",
+  "pattern" : [ "A" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwterraformersmc:hemlock_stable_door"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwterraformersmc:hemlock_stable_head_door"
+  }
+}

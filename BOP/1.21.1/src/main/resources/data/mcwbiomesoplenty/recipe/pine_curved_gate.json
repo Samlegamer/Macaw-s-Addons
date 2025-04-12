@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "curved_gate",
+  "pattern" : [ "B A", "BAA" ],
+  "key" : {
+    "A" : {
+      "item" : "biomesoplenty:pine_planks"
+    },
+    "B" : {
+      "item" : "biomesoplenty:pine_log"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:pine_curved_gate"
+  }
+}

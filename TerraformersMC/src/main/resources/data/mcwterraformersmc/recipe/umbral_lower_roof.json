@@ -1,0 +1,26 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "lower",
+  "pattern" : [ " WW", "WWS" ],
+  "key" : {
+    "W" : {
+      "item" : "cinderscapes:umbral_stem"
+    },
+    "S" : {
+      "item" : "minecraft:stick"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:umbral_lower_roof"
+  }
+}

@@ -1,0 +1,40 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:sakura_picket_fence",
+	  "mcwbyg:sakura_stockade_fence",
+	  "mcwbyg:sakura_horse_fence",
+	  "mcwbyg:sakura_wired_fence",
+	  "mcwbyg:sakura_highley_gate",
+	  "mcwbyg:sakura_pyramid_gate",
+	  "mcwbyg:sakura_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomeswevegone:sakura_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

@@ -1,18 +1,18 @@
 package fr.samlegamer.mcwbyg;
 
 import java.util.List;
-
 import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.furnitures.AddFurnituresStorage;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
+import net.minecraft.block.AbstractBlock;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.bridges.Bridges;
 import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
-import fr.samlegamer.addonslib.mappings.AddFurnituresStorage;
 import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
@@ -54,23 +54,29 @@ public class McwByg implements ModInitializer
 	@Override
 	public void onInitialize()
 	{
-    	LOGGER.info("Macaw's Oh The Biomes We've Gone Loading...");
-    	Mapping.configDataFixerFiles();
+		LOGGER.info("Macaw's Oh The Biomes We've Gone Loading...");
+		Mapping.configDataFixerFiles();
 
-    	Bridges.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-    	Bridges.setRegistrationRock(MODID, STONE, MCWBYG_TAB);
-    	Roofs.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-    	Roofs.setRegistrationRock(MODID, STONE, MCWBYG_TAB);
-    	Fences.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-    	Fences.setRegistrationHedges(MODID, LEAVES, MCWBYG_TAB);
-    	Fences.setRegistrationRock(MODID, STONE, MCWBYG_TAB);
-    	Furnitures.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-    	Stairs.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-		// 1.1 Update
-		Paths.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-		Doors.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-		Trapdoors.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-		Windows.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
+		List<String> leavesClassic = List.of("aspen","baobab","blue_enchanted","cika","cypress","ebony","fir","green_enchanted","holly","ironwood","jacaranda","mahogany","maple","palm","pine",
+				"rainbow_eucalyptus","redwood","skyris","white_mangrove","willow","witch_hazel","zelkova", "blue_spruce", "orange_spruce", "red_spruce", "yellow_spruce", "brown_birch", "orange_birch",
+				"red_birch", "yellow_birch", "brown_oak", "orange_oak", "red_oak", "red_maple", "araucaria", "blooming_witch_hazel", "flowering_indigo_jacaranda",
+				"flowering_ironwood", "flowering_jacaranda", "flowering_orchard", "flowering_palo_verde", "flowering_skyris", "flowering_yucca");
+		List<String> leavesCherry = List.of("white_sakura", "yellow_sakura");
+
+		Bridges.setRegistrationWood(MODID, WOOD);
+		Bridges.setRegistrationRock(MODID, STONE);
+		Roofs.setRegistrationWood(MODID, WOOD);
+		Roofs.setRegistrationRock(MODID, STONE);
+		Fences.setRegistrationWood(MODID, WOOD);
+		Fences.setRegistrationHedges(MODID, leavesClassic);
+		Fences.setRegistrationHedgesModLoaded(MODID, leavesCherry, AbstractBlock.Settings.copy(Blocks.CHERRY_LEAVES));
+		Fences.setRegistrationRock(MODID, STONE);
+		Furnitures.setRegistrationWood(MODID, WOOD);
+		Stairs.setRegistrationWood(MODID, WOOD);
+		Paths.setRegistrationWood(MODID, WOOD);
+		Doors.setRegistrationWood(MODID, WOOD);
+		Trapdoors.setRegistrationWood(MODID, WOOD);
+		Windows.setRegistrationWood(MODID, WOOD);
 
         Registry.register(Registries.ITEM_GROUP, TAB_ID, MCWBYG_TAB);
         RegistryKey<ItemGroup> group_key = RegistryKey.of(RegistryKeys.ITEM_GROUP, TAB_ID);

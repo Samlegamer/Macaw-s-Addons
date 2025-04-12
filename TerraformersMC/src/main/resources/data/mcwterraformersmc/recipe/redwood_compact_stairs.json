@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "compact_stairs",
+  "pattern" : [ "W  ", "WW ", "WWW" ],
+  "key" : {
+    "W" : {
+      "item" : "terrestria:stripped_redwood_log"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwterraformersmc:redwood_compact_stairs"
+  }
+}

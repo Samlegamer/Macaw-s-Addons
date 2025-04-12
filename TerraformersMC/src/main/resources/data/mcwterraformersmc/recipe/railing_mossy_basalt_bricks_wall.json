@@ -1,0 +1,26 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "railing_wall",
+  "pattern" : [ "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "terrestria:mossy_basalt_cobblestone"
+    },
+    "B" : {
+      "item" : "minecraft:iron_bars"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwterraformersmc:railing_mossy_basalt_bricks_wall"
+  }
+}

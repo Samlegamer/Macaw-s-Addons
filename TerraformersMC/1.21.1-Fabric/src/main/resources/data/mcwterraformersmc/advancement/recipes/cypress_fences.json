@@ -1,0 +1,40 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwterraformersmc:cypress_picket_fence",
+	  "mcwterraformersmc:cypress_stockade_fence",
+	  "mcwterraformersmc:cypress_horse_fence",
+	  "mcwterraformersmc:cypress_wired_fence",
+	  "mcwterraformersmc:cypress_highley_gate",
+	  "mcwterraformersmc:cypress_pyramid_gate",
+	  "mcwterraformersmc:cypress_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "terrestria:cypress_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

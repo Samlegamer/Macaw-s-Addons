@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "rope_stairs",
+  "pattern" : [ "  F", " FF", "FFF" ],
+  "key" : {
+    "F" : {
+      "item" : "mcwterraformersmc:rope_japanese_maple_bridge"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwterraformersmc:japanese_maple_rope_bridge_stair"
+  }
+}

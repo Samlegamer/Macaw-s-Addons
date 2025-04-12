@@ -1,0 +1,40 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:rainbow_eucalyptus_picket_fence",
+	  "mcwbyg:rainbow_eucalyptus_stockade_fence",
+	  "mcwbyg:rainbow_eucalyptus_horse_fence",
+	  "mcwbyg:rainbow_eucalyptus_wired_fence",
+	  "mcwbyg:rainbow_eucalyptus_highley_gate",
+	  "mcwbyg:rainbow_eucalyptus_pyramid_gate",
+	  "mcwbyg:rainbow_eucalyptus_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomeswevegone:rainbow_eucalyptus_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

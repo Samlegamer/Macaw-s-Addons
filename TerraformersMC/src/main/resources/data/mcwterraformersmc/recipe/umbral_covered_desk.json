@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "covered_desk",
+  "pattern" : [ "AAA", "A A" ],
+  "key" : {
+    "A" : {
+      "item" : "cinderscapes:umbral_stem"
+    }
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwterraformersmc:umbral_covered_desk"
+  }
+}
