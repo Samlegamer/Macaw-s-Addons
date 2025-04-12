@@ -2,30 +2,20 @@ package fr.samlegamer.mcwbiomesoplenty;
 
 import fr.samlegamer.addonslib.furnitures.AddFurnituresStorage;
 import fr.samlegamer.addonslib.mapping.MappingMissing;
-import net.minecraft.client.telemetry.events.WorldLoadEvent;
-import net.minecraft.core.Registry;
-import net.minecraft.core.WritableRegistry;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
-import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
-import net.neoforged.neoforge.event.ModMismatchEvent;
 import net.neoforged.neoforge.registries.*;
-
 import java.util.List;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
@@ -42,8 +32,6 @@ import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
 
-import javax.annotation.Nullable;
-
 @Mod(McwBOP.MODID)
 public class McwBOP
 {
@@ -51,20 +39,16 @@ public class McwBOP
 	public static final Logger LOGGER = LogManager.getLogger();
 	public static final List<String> WOOD = List.of("dead", "fir", "hellbark", "jacaranda", "magic", "mahogany", "palm", "redwood", "umbran", "willow", "empyreal", "maple", "pine");
 	public static final List<String> LEAVES = List.of("dead", "fir", "hellbark", "jacaranda", "magic", "mahogany", "palm", "redwood", "umbran", "willow", 
-	"empyreal",
-	"pine",
-	"orange_maple", "red_maple", "yellow_maple", "cypress", "snowblossom", "flowering_oak", "rainbow_birch", "origin");
+	"empyreal", "pine", "orange_maple", "red_maple", "yellow_maple", "cypress", "snowblossom", "flowering_oak", "rainbow_birch", "origin");
     protected static final DeferredRegister.Blocks block = Registration.blocks(MODID);
-	protected static final DeferredRegister.Items item = DeferredRegister.createItems(MODID); //CHANGE THIS IN THE NEXT ADDONSLIB UPDATE
+	protected static final DeferredRegister.Items item = Registration.items(MODID);
 	protected static final DeferredRegister<CreativeModeTab> ct = Registration.creativeModeTab(McwBOP.MODID);
 
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MCWBOP_TAB = ct.register("tab", () -> CreativeModeTab.builder()
-			.title(Component.translatable(McwBOP.MODID + "." + "tab")).icon(() -> { return new ItemStack(getIcon()); }).build());
+			.title(Component.translatable(McwBOP.MODID + "." + "tab")).icon(McwBOP::getIcon).build());
 
 	public McwBOP(IEventBus bus)
     {
-		//bus.addListener(MissingnoAlias::fix);
-
 		LOGGER.info("Macaw's Biomes O' Plenty Loading...");
 		Registration.init(bus, block, item, ct);
 
@@ -88,26 +72,50 @@ public class McwBOP
 		roofs.missingnoWoodItem(McwBOP.item);
 		McwBOP.LOGGER.info("Finish convert items");
 
-		Bridges.setRegistrationWood(WOOD, block, item, null);
-    	Fences.setRegistrationWood(WOOD, block, item, null);
-    	Fences.setRegistrationHedges(LEAVES, block, item, null);
-    	Furnitures.setRegistrationWood(WOOD, block, item, null);
-    	Roofs.setRegistrationWood(WOOD, block, item, null);
-    	Trapdoors.setRegistrationWood(WOOD, block, item, null);
-    	Paths.setRegistrationWood(WOOD, block, item, null);
-    	Doors.setRegistrationWood(WOOD, block, item, null);
-    	Windows.setRegistrationWood(WOOD, block, item, null);
-    	Stairs.setRegistrationWood(WOOD, block, item, null);
-		//block.addAlias(ResourceLocation.fromNamespaceAndPath("macawsroofsbop", "dead_roof"), ResourceLocation.fromNamespaceAndPath(MODID, "dead_roof"));
-		//bus.addListener(MissingnoAlias::fixAlias);
-		//NeoForge.EVENT_BUS.register(MissingnoAlias.class);
-		//bus.addListener(this::registerEvent);
+		BlockBehaviour.Properties prop_crimson = BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_STEM).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.NETHER_WOOD);
+		BlockBehaviour.Properties prop_cherry = BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.CHERRY_WOOD).ignitedByLava();
+
+		List<String> woodClassic = List.of("dead", "fir", "mahogany", "palm", "redwood", "willow", "pine");
+		List<String> woodCrimson = List.of("hellbark", "umbran", "empyreal");
+		List<String> woodCherry = List.of("magic", "jacaranda", "maple");
+
+		List<String> leaveClassic = List.of("dead", "fir", "hellbark", "mahogany", "palm", "redwood", "umbran", "willow", "empyreal", "pine", "cypress", "flowering_oak", "rainbow_birch", "origin");
+		List<String> leaveCherry = List.of("snowblossom", "orange_maple", "red_maple", "yellow_maple", "jacaranda", "magic");
+
+		Bridges.setRegistrationWood(woodClassic, block, item);
+		Fences.setRegistrationWood(woodClassic, block, item);
+		Fences.setRegistrationHedges(leaveClassic, block, item);
+		Furnitures.setRegistrationWood(woodClassic, block, item);
+		Roofs.setRegistrationWood(woodClassic, block, item);
+		Trapdoors.setRegistrationWood(woodClassic, block, item);
+		Paths.setRegistrationWood(woodClassic, block, item);
+		Doors.setRegistrationWood(woodClassic, block, item);
+		Windows.setRegistrationWood(woodClassic, block, item);
+		Stairs.setRegistrationWood(woodClassic, block, item);
+
+		Bridges.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Fences.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Furnitures.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Roofs.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Trapdoors.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Paths.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Doors.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson, BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASS).strength(3.0F).noOcclusion().pushReaction(PushReaction.DESTROY));
+		Windows.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Stairs.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+
+		Bridges.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Fences.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Fences.setRegistrationHedgesModLoaded(leaveCherry, block, item, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).strength(0.2F).randomTicks().sound(SoundType.CHERRY_LEAVES).noOcclusion());
+		Furnitures.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Roofs.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Trapdoors.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Paths.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Doors.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry, BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASS).strength(3.0F).noOcclusion());
+		Windows.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Stairs.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
 
 		bus.addListener(this::addFurnitures);
-		bus.addListener(this::addTotab);
-		bus.addListener(this::catchModVersionMismatch);
-		//IdMappingEvent
-		//MissingnoAlias.fixAlias();
+		bus.addListener(this::addToTab);
 		LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
 
@@ -116,12 +124,7 @@ public class McwBOP
 		AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD);
 	}
 
-	public void catchModVersionMismatch(ModMismatchEvent event) {
-		event.markResolved(MODID);
-	}
-
-
-	private static Block getIcon()
+	private static ItemStack getIcon()
     {
     	NewIconRandom.NewProperties woodProperties = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "redwood_roof"), Finder.findBlock(MODID, "redwood_picket_fence"), Finder.findBlock(MODID, "redwood_wardrobe"), 
     	        Finder.findBlock(MODID, "redwood_log_bridge_middle"), Finder.findBlock(MODID, "redwood_window"), Finder.findBlock(MODID, "redwood_japanese_door"), Finder.findBlock(MODID, "redwood_glass_trapdoor"), 
@@ -136,23 +139,20 @@ public class McwBOP
     	    	.addType(BlockType.TRAPDOORS)
     	    	.addType(BlockType.PATHS)
     	    	.addType(BlockType.STAIRS);
-    	return woodProperties.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.STAIRS);
+    	return new ItemStack(woodProperties.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.STAIRS));
     }
 
-    private void addTotab(BuildCreativeModeTabContentsEvent event)
+    private void addToTab(BuildCreativeModeTabContentsEvent event)
     {
-    	if(MCWBOP_TAB != null)
-    	{
-        	Bridges.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Roofs.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Fences.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Fences.addToTabHedge(event, MODID, LEAVES, MCWBOP_TAB.get());
-        	Furnitures.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Trapdoors.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Paths.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Doors.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Windows.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Stairs.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-    	}
+        Bridges.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
+        Roofs.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
+        Fences.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
+        Fences.addToTabHedge(event, MODID, LEAVES, MCWBOP_TAB.get());
+        Furnitures.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
+        Trapdoors.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
+        Paths.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
+        Doors.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
+        Windows.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
+        Stairs.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
     }
 }

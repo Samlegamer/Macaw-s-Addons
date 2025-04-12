@@ -8,8 +8,9 @@ import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.Block;
 import java.util.List;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
@@ -52,7 +53,7 @@ public class McwByg
     public static final DeferredRegister<CreativeModeTab> ct = Registration.creativeModeTab(MODID);
 
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MCWBYG_TAB = ct.register("tab", () -> CreativeModeTab.builder()
-	        .icon(() -> { return new ItemStack(getIcon()); }).title(Component.translatable(MODID+".tab")).build());
+	        .icon(McwByg::getIcon).title(Component.translatable(MODID+".tab")).build());
 
 	private static final MappingMissing.Bridges bridges = new MappingMissing.Bridges("macawsbridgesbyg", McwByg.MODID, McwByg.WOOD, McwByg.STONE);
 	private static final MappingMissing.Furnitures furnitures = new MappingMissing.Furnitures("mcwfurnituresbyg", McwByg.MODID, McwByg.WOOD);
@@ -61,22 +62,29 @@ public class McwByg
 
 	public McwByg(IEventBus bus)
     {
-    	LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
+		List<String> leavesClassic = List.of("aspen","baobab","blue_enchanted","cika","cypress","ebony","fir","green_enchanted","holly","ironwood","jacaranda","mahogany","maple","palm","pine",
+				"rainbow_eucalyptus","redwood","skyris","white_mangrove","willow","witch_hazel","zelkova", "blue_spruce", "orange_spruce", "red_spruce", "yellow_spruce", "brown_birch", "orange_birch",
+				"red_birch", "yellow_birch", "brown_oak", "orange_oak", "red_oak", "red_maple", "araucaria", "blooming_witch_hazel", "flowering_indigo_jacaranda",
+				"flowering_ironwood", "flowering_jacaranda", "flowering_orchard", "flowering_palo_verde", "flowering_skyris", "flowering_yucca");
+		List<String> leavesCherry = List.of("white_sakura", "yellow_sakura");
+
+		LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
      	Registration.init(bus, block, item, ct);
-    	Bridges.setRegistrationWood(WOOD, block, item, null);
-    	Bridges.setRegistrationRock(STONE, block, item, null);
-    	Roofs.setRegistrationWood(WOOD, block, item, null);
-    	Roofs.setRegistrationRock(STONE, block, item, null);
-    	Fences.setRegistrationWood(WOOD, block, item, null);
-    	Fences.setRegistrationHedges(LEAVES, block, item, null);
-    	Fences.setRegistrationRock(STONE, block, item, null);
-    	Furnitures.setRegistrationWood(WOOD, block, item, null);
-    	Stairs.setRegistrationWood(WOOD, block, item, null);
+		Bridges.setRegistrationWood(WOOD, block, item);
+		Bridges.setRegistrationRock(STONE, block, item);
+		Roofs.setRegistrationWood(WOOD, block, item);
+		Roofs.setRegistrationRock(STONE, block, item);
+		Fences.setRegistrationWood(WOOD, block, item);
+		Fences.setRegistrationHedges(leavesClassic, block, item);
+		Fences.setRegistrationHedgesModLoaded(leavesCherry, block, item, BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES));
+		Fences.setRegistrationRock(STONE, block, item);
+		Furnitures.setRegistrationWood(WOOD, block, item);
+		Stairs.setRegistrationWood(WOOD, block, item);
 		// 1.1 Update
-		Paths.setRegistrationWood(WOOD, block, item, null);
-		Doors.setRegistrationWood(WOOD, block, item, null);
-		Trapdoors.setRegistrationWood(WOOD, block, item, null);
-		Windows.setRegistrationWood(WOOD, block, item, null);
+		Paths.setRegistrationWood(WOOD, block, item);
+		Doors.setRegistrationWood(WOOD, block, item);
+		Trapdoors.setRegistrationWood(WOOD, block, item);
+		Windows.setRegistrationWood(WOOD, block, item);
 
 		LOGGER.info("Converting Loading...");
 		fences.leavesAdding(McwByg.LEAVES);
@@ -96,7 +104,7 @@ public class McwByg
 		roofs.missingnoWoodItem(item);
 		LOGGER.info("Converting Finish !");
 
-		bus.addListener(this::addTotab);
+		bus.addListener(this::addToTab);
 		bus.addListener(this::commonSetup);
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
     }
@@ -106,7 +114,7 @@ public class McwByg
     	AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD);
     }
 
-	private static Block getIcon()
+	private static ItemStack getIcon()
 	{
 		NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
 				Finder.findBlock(MODID, "aspen_roof"),
@@ -129,11 +137,11 @@ public class McwByg
 				.addType(BlockType.TRAPDOORS)
 				.addType(BlockType.PATHS)
 				.addType(BlockType.WINDOWS);
-		return prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.BRIDGES, BlockType.FURNITURES, BlockType.STAIRS,
-				BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.WINDOWS);
+		return new ItemStack(prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.BRIDGES, BlockType.FURNITURES, BlockType.STAIRS,
+				BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.WINDOWS));
 	}
 
-	private void addTotab(BuildCreativeModeTabContentsEvent event)
+	private void addToTab(BuildCreativeModeTabContentsEvent event)
     {
     	Bridges.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
     	Bridges.addToTabStone(event, MODID, STONE, MCWBYG_TAB.get());
@@ -144,7 +152,6 @@ public class McwByg
     	Fences.addToTabStone(event, MODID, STONE, MCWBYG_TAB.get());
     	Furnitures.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
     	Stairs.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-		// 1.1 Update
 		Paths.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
 		Doors.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
 		Trapdoors.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());

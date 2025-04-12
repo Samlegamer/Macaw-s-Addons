@@ -1,0 +1,41 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbiomesoplenty:willow_picket_fence",
+	  "mcwbiomesoplenty:willow_stockade_fence",
+	  "mcwbiomesoplenty:willow_horse_fence",
+	  "mcwbiomesoplenty:willow_wired_fence",
+	  "mcwbiomesoplenty:willow_highley_gate",
+	  "mcwbiomesoplenty:willow_pyramid_gate",
+	  "mcwbiomesoplenty:willow_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:willow_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "curved_gate",
+  "pattern" : [ "B A", "BAA" ],
+  "key" : {
+    "A" : {
+      "item" : "biomeswevegone:blue_enchanted_planks"
+    },
+    "B" : {
+      "item" : "biomeswevegone:blue_enchanted_log"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:blue_enchanted_curved_gate"
+  }
+}

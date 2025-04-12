@@ -1,0 +1,41 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:ironwood_picket_fence",
+	  "mcwbyg:ironwood_stockade_fence",
+	  "mcwbyg:ironwood_horse_fence",
+	  "mcwbyg:ironwood_wired_fence",
+	  "mcwbyg:ironwood_highley_gate",
+	  "mcwbyg:ironwood_pyramid_gate",
+	  "mcwbyg:ironwood_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomeswevegone:ironwood_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}
