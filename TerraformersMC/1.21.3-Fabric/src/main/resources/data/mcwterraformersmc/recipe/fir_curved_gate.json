@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "traverse"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "curved_gate",
+  "pattern" : [ "B A", "BAA" ],
+  "key" : {
+    "A" : "traverse:fir_planks",
+    "B" : "traverse:fir_log"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:fir_curved_gate"
+  }
+}

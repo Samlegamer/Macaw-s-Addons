@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "curved_gate",
+  "pattern" : [ "B A", "BAA" ],
+  "key" : {
+    "A" : "terrestria:japanese_maple_planks",
+    "B" : "terrestria:japanese_maple_log"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwterraformersmc:japanese_maple_curved_gate"
+  }
+}

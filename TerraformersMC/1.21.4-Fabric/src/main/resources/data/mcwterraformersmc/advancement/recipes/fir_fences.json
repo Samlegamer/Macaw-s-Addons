@@ -1,0 +1,40 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "traverse"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwterraformersmc:fir_picket_fence",
+	  "mcwterraformersmc:fir_stockade_fence",
+	  "mcwterraformersmc:fir_horse_fence",
+	  "mcwterraformersmc:fir_wired_fence",
+	  "mcwterraformersmc:fir_highley_gate",
+	  "mcwterraformersmc:fir_pyramid_gate",
+	  "mcwterraformersmc:fir_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "traverse:fir_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

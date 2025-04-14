@@ -1,6 +1,9 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
 import java.util.List;
+import fr.samlegamer.addonslib.furnitures.AddFurnituresStorage;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Blocks;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
@@ -8,7 +11,6 @@ import fr.samlegamer.addonslib.bridges.Bridges;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
-import fr.samlegamer.addonslib.mappings.AddFurnituresStorage;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.stairs.Stairs;
@@ -18,7 +20,6 @@ import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.block.Block;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -39,24 +40,55 @@ public class McwBOP implements ModInitializer
 	"orange_maple", "red_maple", "yellow_maple", "cypress", "snowblossom", "flowering_oak", "rainbow_birch", "origin");
 
     public static final ItemGroup MCWBOP_TAB = FabricItemGroup.builder()
-    .icon(() -> new ItemStack(getIcon())).displayName(Text.translatable("mcwbiomesoplenty.tab")).build();
+    .icon(McwBOP::getIcon).displayName(Text.translatable("mcwbiomesoplenty.tab")).build();
 
 	private static final Identifier TAB_ID = Identifier.of(MODID + ".tab");
 
 	@Override
 	public void onInitialize()
 	{
-    	LOGGER.info("Macaw's Biomes O' Plenty Loading...");
-    	Bridges.setRegistrationWood(MODID, WOOD, null);
-    	Fences.setRegistrationWood(MODID, WOOD, null);
-    	Fences.setRegistrationHedges(MODID, LEAVES, null);
-    	Furnitures.setRegistrationWood(MODID, WOOD, null);
-    	Roofs.setRegistrationWood(MODID, WOOD, null);
-    	Trapdoors.setRegistrationWood(MODID, WOOD, null);
-    	Paths.setRegistrationWood(MODID, WOOD, null);
-    	Doors.setRegistrationWood(MODID, WOOD, null);
-    	Windows.setRegistrationWood(MODID, WOOD, null);
-    	Stairs.setRegistrationWood(MODID, WOOD, null);
+		AbstractBlock.Settings prop_crimson = AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS);
+		AbstractBlock.Settings prop_cherry = AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS);
+
+		List<String> woodClassic = List.of("dead", "fir", "mahogany", "palm", "redwood", "willow", "pine");
+		List<String> woodCrimson = List.of("hellbark", "umbran", "empyreal");
+		List<String> woodCherry = List.of("magic", "jacaranda", "maple");
+
+		List<String> leaveClassic = List.of("dead", "fir", "hellbark", "mahogany", "palm", "redwood", "umbran", "willow", "empyreal", "pine", "cypress", "flowering_oak", "rainbow_birch", "origin");
+		List<String> leaveCherry = List.of("snowblossom", "orange_maple", "red_maple", "yellow_maple", "jacaranda", "magic");
+
+		LOGGER.info("Macaw's Biomes O' Plenty Loading...");
+		Bridges.setRegistrationWood(MODID, woodClassic);
+		Fences.setRegistrationWood(MODID, woodClassic);
+		Fences.setRegistrationHedges(MODID, leaveClassic);
+		Furnitures.setRegistrationWood(MODID, woodClassic);
+		Roofs.setRegistrationWood(MODID, woodClassic);
+		Trapdoors.setRegistrationWood(MODID, woodClassic);
+		Paths.setRegistrationWood(MODID, woodClassic);
+		Doors.setRegistrationWood(MODID, woodClassic);
+		Windows.setRegistrationWood(MODID, woodClassic);
+		Stairs.setRegistrationWood(MODID, woodClassic);
+
+		Bridges.setRegistrationWoodModLoaded(MODID, woodCrimson, prop_crimson);
+		Fences.setRegistrationWoodModLoaded(MODID, woodCrimson, prop_crimson);
+		Furnitures.setRegistrationWoodModLoaded(MODID, woodCrimson, prop_crimson);
+		Roofs.setRegistrationWoodModLoaded(MODID, woodCrimson, prop_crimson);
+		Trapdoors.setRegistrationWoodModLoaded(MODID, woodCrimson, AbstractBlock.Settings.copy(Blocks.CRIMSON_TRAPDOOR));
+		Paths.setRegistrationWoodModLoaded(MODID, woodCrimson, prop_crimson);
+		Doors.setRegistrationWoodModLoaded(MODID, woodCrimson, AbstractBlock.Settings.copy(Blocks.CRIMSON_DOOR), AbstractBlock.Settings.copy(Blocks.CRIMSON_DOOR));
+		Windows.setRegistrationWoodModLoaded(MODID, woodCrimson, prop_crimson);
+		Stairs.setRegistrationWoodModLoaded(MODID, woodCrimson, prop_crimson);
+
+		Bridges.setRegistrationWoodModLoaded(MODID, woodCherry, prop_cherry);
+		Fences.setRegistrationWoodModLoaded(MODID, woodCherry, prop_cherry);
+		Fences.setRegistrationHedgesModLoaded(MODID, leaveCherry, AbstractBlock.Settings.copy(Blocks.CHERRY_LEAVES));
+		Furnitures.setRegistrationWoodModLoaded(MODID, woodCherry, prop_cherry);
+		Roofs.setRegistrationWoodModLoaded(MODID, woodCherry, prop_cherry);
+		Trapdoors.setRegistrationWoodModLoaded(MODID, woodCherry, AbstractBlock.Settings.copy(Blocks.CHERRY_TRAPDOOR));
+		Paths.setRegistrationWoodModLoaded(MODID, woodCherry, prop_cherry);
+		Doors.setRegistrationWoodModLoaded(MODID, woodCherry, AbstractBlock.Settings.copy(Blocks.CHERRY_DOOR), AbstractBlock.Settings.copy(Blocks.CHERRY_DOOR));
+		Windows.setRegistrationWoodModLoaded(MODID, woodCherry, prop_cherry);
+		Stairs.setRegistrationWoodModLoaded(MODID, woodCherry, prop_cherry);
 
         Registry.register(Registries.ITEM_GROUP, TAB_ID, MCWBOP_TAB);
         RegistryKey<ItemGroup> group_key = RegistryKey.of(RegistryKeys.ITEM_GROUP, TAB_ID);
@@ -87,7 +119,7 @@ public class McwBOP implements ModInitializer
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
 	}
 
-	private static Block getIcon()
+	private static ItemStack getIcon()
 	{
     	NewIconRandom.NewProperties woodProperties = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "redwood_roof"), Finder.findBlock(MODID, "redwood_picket_fence"), Finder.findBlock(MODID, "redwood_wardrobe"), 
     	        Finder.findBlock(MODID, "redwood_log_bridge_middle"), Finder.findBlock(MODID, "redwood_window"), Finder.findBlock(MODID, "redwood_japanese_door"), Finder.findBlock(MODID, "redwood_glass_trapdoor"), 
@@ -102,6 +134,6 @@ public class McwBOP implements ModInitializer
     	    	.addType(BlockType.TRAPDOORS)
     	    	.addType(BlockType.PATHS)
     	    	.addType(BlockType.STAIRS);
-		return woodProperties.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.STAIRS);
+		return new ItemStack(woodProperties.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.STAIRS));
 	}
 }

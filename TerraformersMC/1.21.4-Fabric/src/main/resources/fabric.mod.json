@@ -1,28 +1,25 @@
 {
 	"schemaVersion": 1,
-	"id": "mcwterraformersmc",
-	"version": "1.21.4-1.0",
-
-	"name": "Macaw's TerraformersMC",
-	"description": "This mod is a multi-compatibility for the mods developed by the TerraformersMC Team.\nActual Support:\n-Traverse\n-Cinderscapes\n-Terrestria",
+	"id": "${archives_base_name}",
+	"version": "${version}",
+	"name": "${mod_name}",
+	"description": "${mod_description}",
 	"authors": [
-		"Samlegamer"
+		"${mod_authors}"
 	],
 	"contact": {
 		"homepage": "https://www.curseforge.com/minecraft/mc-mods/macaws-terraformersmc",
 		"sources": "https://github.com/Samlegamer/Macaw-s-Addons"
 	},
-
-	"license": "CC0-1.0",
+	"license": "${mod_license}",
 	"icon": "logo.png",
-
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"fr.samlegamer.mcwterraformersmc.McwTerraformersMC"
+			"${mod_init}"
 		],
 		"client": [
-			"fr.samlegamer.mcwterraformersmc.client.Client"
+			"${mod_init_client}"
 		]
 	},
 	"depends": {
@@ -30,7 +27,7 @@
 		"minecraft": "~1.21.4",
 		"java": ">=21",
 		"fabric-api": "*",
-		"addonslib": "*"
+		"addonslib": ">=1.21.4-1.2"
 	},
 	"suggests": {
 		"another-mod": "*"

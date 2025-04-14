@@ -1,14 +1,19 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
 import fr.samlegamer.addonslib.client.RendererMcw;
+import fr.samlegamer.addonslib.tab.NewIconRandom;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -16,9 +21,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
@@ -50,25 +53,58 @@ public class McwBOP
     public static final DeferredRegister<CreativeModeTab> ct = Registration.creativeModeTab(McwBOP.MODID);
 
 	public static final RegistryObject<CreativeModeTab> MCWBOP_TAB = ct.register("tab", () -> CreativeModeTab.builder()
-	        .icon(() -> { return new ItemStack(getIcon()); }).title(Component.translatable(McwBOP.MODID+".tab")).build());
+	        .icon(McwBOP::getIcon).title(Component.translatable(McwBOP.MODID+".tab")).build());
 
     public McwBOP(FMLJavaModLoadingContext context)
     {
     	LOGGER.info("Macaw's Biomes O' Plenty Loading...");
      	Registration.init(context, block, item, ct);
-    	Bridges.setRegistrationWood(WOOD, MODID, block, item, null);
-    	Fences.setRegistrationWood(WOOD, MODID, block, item, null);
-    	Fences.setRegistrationHedges(LEAVES, MODID, block, item, null);
-    	Furnitures.setRegistrationWood(WOOD, MODID, block, item, null);
-    	Roofs.setRegistrationWood(WOOD, MODID, block, item, null);
-    	Trapdoors.setRegistrationWood(WOOD, MODID, block, item, null);
-    	Paths.setRegistrationWood(WOOD, MODID, block, item, null);
-    	Doors.setRegistrationWood(WOOD, MODID, block, item, null);
-    	Windows.setRegistrationWood(WOOD, MODID, block, item, null);
-    	Stairs.setRegistrationWood(WOOD, MODID, block, item, null);
+
+		BlockBehaviour.Properties prop_crimson = BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_STEM).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.NETHER_WOOD);
+		BlockBehaviour.Properties prop_cherry = BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.CHERRY_WOOD).ignitedByLava();
+
+		List<String> woodClassic = List.of("dead", "fir", "mahogany", "palm", "redwood", "willow", "pine");
+		List<String> woodCrimson = List.of("hellbark", "umbran", "empyreal");
+		List<String> woodCherry = List.of("magic", "jacaranda", "maple");
+
+		List<String> leaveClassic = List.of("dead", "fir", "hellbark", "mahogany", "palm", "redwood", "umbran", "willow", "empyreal", "pine", "cypress", "flowering_oak", "rainbow_birch", "origin");
+		List<String> leaveCherry = List.of("snowblossom", "orange_maple", "red_maple", "yellow_maple", "jacaranda", "magic");
+
+		Bridges.setRegistrationWood(woodClassic, block, item);
+		Fences.setRegistrationWood(woodClassic, block, item);
+		Fences.setRegistrationHedges(leaveClassic, block, item);
+		Furnitures.setRegistrationWood(woodClassic, block, item);
+		Roofs.setRegistrationWood(woodClassic, block, item);
+		Trapdoors.setRegistrationWood(woodClassic, block, item);
+		Paths.setRegistrationWood(woodClassic, block, item);
+		Doors.setRegistrationWood(woodClassic, block, item);
+		Windows.setRegistrationWood(woodClassic, block, item);
+		Stairs.setRegistrationWood(woodClassic, block, item);
+
+		Bridges.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Fences.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Furnitures.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Roofs.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Trapdoors.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Paths.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Doors.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson, BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASS).strength(3.0F).noOcclusion().pushReaction(PushReaction.DESTROY));
+		Windows.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		Stairs.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+
+		Bridges.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Fences.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Fences.setRegistrationHedgesModLoaded(leaveCherry, block, item, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).strength(0.2F).randomTicks().sound(SoundType.CHERRY_LEAVES).noOcclusion());
+		Furnitures.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Roofs.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Trapdoors.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Paths.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Doors.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry, BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASS).strength(3.0F).noOcclusion());
+		Windows.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		Stairs.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+
     	context.getModEventBus().addListener(this::clientSetup);
 		context.getModEventBus().addListener(this::commonSetup);
-		context.getModEventBus().addListener(this::addTotab);
+		context.getModEventBus().addListener(this::addToTab);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
@@ -89,36 +125,37 @@ public class McwBOP
 
 	private void commonSetup(FMLCommonSetupEvent event)
 	{
-		if(ModList.get().isLoaded("mcwfurnitures"))
-		{
-			AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD);
-		}
+		AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD);
+	}
+
+	private static ItemStack getIcon()
+	{
+		NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
+				Finder.findBlock(MODID, "redwood_roof"),
+				Finder.findBlock(MODID, "redwood_picket_fence"),
+				Finder.findBlock(MODID, "redwood_wardrobe"),
+				Finder.findBlock(MODID, "redwood_log_bridge_middle"),
+				Finder.findBlock(MODID, "redwood_pane_window"),
+				Finder.findBlock(MODID, "redwood_modern_door"),
+				Finder.findBlock(MODID, "redwood_mystic_trapdoor"),
+				Finder.findBlock(MODID, "redwood_planks_path"),
+				Finder.findBlock(MODID, "redwood_skyline_stairs"));
+
+		prop.addType(NewIconRandom.BlockType.BRIDGES)
+				.addType(NewIconRandom.BlockType.ROOFS)
+				.addType(NewIconRandom.BlockType.FENCES)
+				.addType(NewIconRandom.BlockType.FURNITURES)
+				.addType(NewIconRandom.BlockType.STAIRS)
+				.addType(NewIconRandom.BlockType.PATHS)
+				.addType(NewIconRandom.BlockType.WINDOWS)
+				.addType(NewIconRandom.BlockType.DOORS)
+				.addType(NewIconRandom.BlockType.TRAPDOORS);
+		Block icon = prop.buildIcon(NewIconRandom.BlockType.BRIDGES, NewIconRandom.BlockType.ROOFS, NewIconRandom.BlockType.FENCES, NewIconRandom.BlockType.FURNITURES, NewIconRandom.BlockType.STAIRS,
+				NewIconRandom.BlockType.PATHS, NewIconRandom.BlockType.WINDOWS, NewIconRandom.BlockType.DOORS, NewIconRandom.BlockType.TRAPDOORS);
+		return new ItemStack(icon);
 	}
     
-    private static Block getIcon()
-    {
-    	List<String> listMod = List.of("mcwroofs", "mcwfences", "mcwbridges", "mcwfurnitures", "mcwwindows", "mcwdoors", "mcwtrpdoors", "mcwpaths", "mcwstairs");
-    	int nbDepedencies = 0;
-    	List<Block> blockBase = List.of(Finder.findBlock(McwBOP.MODID, "dead_roof"), Finder.findBlock(McwBOP.MODID, "dead_picket_fence"), Finder.findBlock(McwBOP.MODID, "dead_wardrobe"), 
-    	        Finder.findBlock(McwBOP.MODID, "dead_log_bridge_middle"), Finder.findBlock(McwBOP.MODID, "dead_window"), Finder.findBlock(McwBOP.MODID, "dead_japanese_door"), Finder.findBlock(McwBOP.MODID, "dead_glass_trapdoor"), 
-    	        Finder.findBlock(McwBOP.MODID, "dead_planks_path"), Finder.findBlock(McwBOP.MODID, "dead_loft_stairs"));
-    	List<Block> blockFinal = new ArrayList<Block>();
-
-    	for(int i = 0; i < listMod.size(); i++)
-    	{
-    		if(ModList.get().isLoaded(listMod.get(i)))
-    		{
-    			nbDepedencies=nbDepedencies+1;
-    			blockFinal.add(blockBase.get(i));
-    		}
-    	}
-    	
-		Random rnd = new Random();
-		int i = rnd.nextInt(blockFinal.size()-1);
-		return blockFinal.get(i);
-    }
-    
-    private void addTotab(BuildCreativeModeTabContentsEvent event)
+    private void addToTab(BuildCreativeModeTabContentsEvent event)
     {
     	if(MCWBOP_TAB != null)
     	{
