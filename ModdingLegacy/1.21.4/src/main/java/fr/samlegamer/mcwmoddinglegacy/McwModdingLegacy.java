@@ -11,7 +11,6 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -44,7 +43,7 @@ public class McwModdingLegacy
     private static final Logger LOGGER = LogManager.getLogger();
 
     private static final DeferredRegister.Blocks block = Registration.blocks(MODID);
-    private static final DeferredRegister.Items item = DeferredRegister.createItems(MODID);
+    private static final DeferredRegister.Items item = Registration.items(MODID);
 	public static final DeferredRegister<CreativeModeTab> ct = Registration.creativeModeTab(McwModdingLegacy.MODID);
 
     public static final List<String> wood_blue_skies = List.of("bsky_bluebright", "bsky_comet", "bsky_dusk", "bsky_frostbright", "bsky_lunar", "bsky_maple", "bsky_starlit");
@@ -52,7 +51,7 @@ public class McwModdingLegacy
     public static final List<String> wood_crystallized = List.of("bsky_crystallized");
 
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MCWMODDINGLEGACY_TAB = ct.register("tab", () -> CreativeModeTab.builder()
-			.icon(() -> { return new ItemStack(getIcon()); }).title(Component.translatable(McwModdingLegacy.MODID+".tab")).build());
+	.icon(McwModdingLegacy::getIcon).title(Component.translatable(McwModdingLegacy.MODID+".tab")).build());
 
 	private static final MappingMissing.Bridges bridges_Bsky = new MappingMissing.Bridges("mcwbridgesmoddinglegacy", McwModdingLegacy.MODID, McwModdingLegacy.wood_blue_skies);
 	private static final MappingMissing.Bridges bridges_pWood = new MappingMissing.Bridges("mcwbridgesmoddinglegacy", McwModdingLegacy.MODID, McwModdingLegacy.wood_premium_wood);
@@ -60,38 +59,38 @@ public class McwModdingLegacy
 
 	public McwModdingLegacy(IEventBus bus)
     {
-    	LOGGER.info("Macaw's Modding Legacy Mod Loading...");
-    	Registration.init(bus, block, item, ct);
+		LOGGER.info("Macaw's Modding Legacy Mod Loading...");
+		Registration.init(bus, block, item, ct);
 
-    	final BlockBehaviour.Properties wood = BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS);
-    	final BlockBehaviour.Properties leaves = BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES);
-    	final BlockBehaviour.Properties glass = BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).sound(SoundType.GLASS);
-    	
-    	Bridges.setRegistrationWoodModLoaded(wood_blue_skies, MODID, block, item, null, "blue_skies", wood);
-    	Roofs.setRegistrationWoodModLoaded(wood_blue_skies, MODID, block, item, null, "blue_skies", wood);
-    	Fences.setRegistrationWoodModLoaded(wood_blue_skies, MODID, block, item, null, "blue_skies", wood);
-		Fences.setRegistrationHedgesModLoaded(wood_blue_skies, MODID, block, item, null, "blue_skies", leaves);
-    	Furnitures.setRegistrationWoodModLoaded(wood_blue_skies, MODID, block, item, null, "blue_skies");
-    	Stairs.setRegistrationWoodModLoaded(wood_blue_skies, MODID, block, item, null, "blue_skies", wood);
-		Paths.setRegistrationWoodModLoaded(wood_blue_skies, MODID, block, item, null, "blue_skies");
-		Doors.setRegistrationWoodModLoaded(wood_blue_skies, MODID, block, item, null, "blue_skies");
-		Trapdoors.setRegistrationWoodModLoaded(wood_blue_skies, MODID, block, item, null, "blue_skies");
-		Windows.setRegistrationWoodModLoaded(wood_blue_skies, MODID, block, item, null, "blue_skies");
+		final BlockBehaviour.Properties wood = BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS);
+		final BlockBehaviour.Properties leaves = BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES);
+		final BlockBehaviour.Properties glass = BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).sound(SoundType.GLASS);
 
-		Bridges.setRegistrationWoodModLoaded(wood_crystallized, MODID, block, item, null, "blue_skies", glass);
-    	Roofs.setRegistrationWoodModLoaded(wood_crystallized, MODID, block, item, null, "blue_skies", glass);
-    	Fences.setRegistrationHedgesModLoaded(wood_crystallized, MODID, block, item, null, "blue_skies", leaves);
+		Bridges.setRegistrationWoodModLoaded(wood_blue_skies, block, item, wood);
+		Roofs.setRegistrationWoodModLoaded(wood_blue_skies, block, item, wood);
+		Fences.setRegistrationWoodModLoaded(wood_blue_skies, block, item, wood);
+		Fences.setRegistrationHedgesModLoaded(wood_blue_skies, block, item, leaves);
+		Furnitures.setRegistrationWoodModLoaded(wood_blue_skies, block, item, wood);
+		Stairs.setRegistrationWoodModLoaded(wood_blue_skies, block, item, wood);
+		Paths.setRegistrationWoodModLoaded(wood_blue_skies, block, item, wood);
+		Doors.setRegistrationWoodModLoaded(wood_blue_skies, block, item, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR), BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR));
+		Trapdoors.setRegistrationWoodModLoaded(wood_blue_skies, block, item, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR));
+		Windows.setRegistrationWoodModLoaded(wood_blue_skies, block, item, wood);
 
-    	Bridges.setRegistrationWoodModLoaded(wood_premium_wood, MODID, block, item, null, "premium_wood", wood);
-    	Roofs.setRegistrationWoodModLoaded(wood_premium_wood, MODID, block, item, null, "premium_wood", wood);
-    	Fences.setRegistrationWoodModLoaded(wood_premium_wood, MODID, block, item, null, "premium_wood", wood);
-		Fences.setRegistrationHedgesModLoaded(wood_premium_wood, MODID, block, item, null, "premium_wood", leaves);
-    	Furnitures.setRegistrationWoodModLoaded(wood_premium_wood, MODID, block, item, null, "premium_wood");
-    	Stairs.setRegistrationWoodModLoaded(wood_premium_wood, MODID, block, item, null, "premium_wood", wood);
-		Paths.setRegistrationWoodModLoaded(wood_premium_wood, MODID, block, item, null, "premium_wood");
-		Doors.setRegistrationWoodModLoaded(wood_premium_wood, MODID, block, item, null, "premium_wood");
-		Trapdoors.setRegistrationWoodModLoaded(wood_premium_wood, MODID, block, item, null, "premium_wood");
-		Windows.setRegistrationWoodModLoaded(wood_premium_wood, MODID, block, item, null, "premium_wood");
+		Bridges.setRegistrationWoodModLoaded(wood_crystallized, block, item, glass);
+		Roofs.setRegistrationWoodModLoaded(wood_crystallized, block, item, glass);
+		Fences.setRegistrationHedgesModLoaded(wood_crystallized, block, item, leaves);
+
+		Bridges.setRegistrationWoodModLoaded(wood_premium_wood, block, item, wood);
+		Roofs.setRegistrationWoodModLoaded(wood_premium_wood, block, item, wood);
+		Fences.setRegistrationWoodModLoaded(wood_premium_wood, block, item, wood);
+		Fences.setRegistrationHedgesModLoaded(wood_premium_wood, block, item, leaves);
+		Furnitures.setRegistrationWoodModLoaded(wood_premium_wood, block, item, wood);
+		Stairs.setRegistrationWoodModLoaded(wood_premium_wood, block, item, wood);
+		Paths.setRegistrationWoodModLoaded(wood_premium_wood, block, item, wood);
+		Doors.setRegistrationWoodModLoaded(wood_premium_wood, block, item, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR), BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR));
+		Trapdoors.setRegistrationWoodModLoaded(wood_premium_wood, block, item, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR));
+		Windows.setRegistrationWoodModLoaded(wood_premium_wood, block, item, wood);
 
 		bridges_Bsky.missingnoWoodBlock(block);
 		bridges_pWood.missingnoWoodBlock(block);
@@ -102,7 +101,7 @@ public class McwModdingLegacy
 
 		bus.addListener(this::client);
 		bus.addListener(this::common);
-		bus.addListener(this::addTotab);
+		bus.addListener(this::addToTab);
     	LOGGER.info("Macaw's Modding Legacy Mod Finish !");
     }
 
@@ -140,7 +139,7 @@ public class McwModdingLegacy
 		RendererMcw.Windows.clientWood(event, MODID, wood_premium_wood);
 	}
 
-	private static Block getIcon()
+	private static ItemStack getIcon()
 	{
 		NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
 				Finder.findBlock(MODID, randomNaming()+"_roof"),
@@ -162,11 +161,11 @@ public class McwModdingLegacy
 				.addType(BlockType.DOORS)
 				.addType(BlockType.TRAPDOORS)
 				.addType(BlockType.PATHS);
-		return prop.buildIcon(BlockType.BRIDGES, BlockType.FENCES, BlockType.FURNITURES, BlockType.ROOFS, BlockType.STAIRS
-				, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS);
+		return new ItemStack(prop.buildIcon(BlockType.BRIDGES, BlockType.FENCES, BlockType.FURNITURES, BlockType.ROOFS, BlockType.STAIRS
+				, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS));
 	}
 
-	private void addTotab(BuildCreativeModeTabContentsEvent event)
+	private void addToTab(BuildCreativeModeTabContentsEvent event)
 	{
 		if(ModList.get().isLoaded("blue_skies"))
 		{

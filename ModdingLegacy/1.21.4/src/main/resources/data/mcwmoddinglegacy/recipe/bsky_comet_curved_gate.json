@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "curved_gate",
+  "pattern" : [ "B A", "BAA" ],
+  "key" : {
+    "A" : "blue_skies:comet_planks",
+    "B" : "blue_skies:comet_log"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwmoddinglegacy:bsky_comet_curved_gate"
+  }
+}

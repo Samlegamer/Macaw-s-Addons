@@ -1,0 +1,41 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwmoddinglegacy:bsky_starlit_picket_fence",
+	  "mcwmoddinglegacy:bsky_starlit_stockade_fence",
+	  "mcwmoddinglegacy:bsky_starlit_horse_fence",
+	  "mcwmoddinglegacy:bsky_starlit_wired_fence",
+	  "mcwmoddinglegacy:bsky_starlit_highley_gate",
+	  "mcwmoddinglegacy:bsky_starlit_pyramid_gate",
+	  "mcwmoddinglegacy:bsky_starlit_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "blue_skies:starlit_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}
