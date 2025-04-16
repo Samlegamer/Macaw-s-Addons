@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "upper_steep",
+  "pattern" : [ " W", " W", "WS" ],
+  "key" : {
+    "W" : "biomeswevegone:florus_planks",
+    "S" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:florus_planks_upper_steep_roof"
+  }
+}

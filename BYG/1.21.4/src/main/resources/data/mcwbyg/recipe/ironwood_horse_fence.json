@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "horse",
+  "pattern" : [ "ABA", "BAB" ],
+  "key" : {
+    "B" : "minecraft:stick",
+    "A" : "biomeswevegone:ironwood_log"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:ironwood_horse_fence"
+  }
+}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern_desk",
+  "pattern" : [ "AAA", "BCB" ],
+  "key" : {
+    "A" : "biomeswevegone:skyris_log",
+    "B" : "biomeswevegone:skyris_fence",
+    "C" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwbyg:skyris_modern_desk"
+  }
+}

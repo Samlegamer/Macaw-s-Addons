@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : "biomeswevegone:stripped_aspen_log",
+    "Z" : "biomeswevegone:aspen_log"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwbyg:aspen_terrace_stairs"
+  }
+}

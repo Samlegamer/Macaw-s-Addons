@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stone_piers",
+  "pattern" : [ "WFW" ],
+  "key" : {
+    "F" : "biomeswevegone:blue_sandstone_wall",
+    "W" : "biomeswevegone:blue_sandstone"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:blue_sandstone_bridge_pier"
+  }
+}

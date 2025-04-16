@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern_chair",
+  "pattern" : [ "BA", "CC" ],
+  "key" : {
+    "A" : "biomeswevegone:jacaranda_log",
+    "B" : "biomeswevegone:jacaranda_slab",
+    "C" : "biomeswevegone:jacaranda_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:jacaranda_modern_chair"
+  }
+}

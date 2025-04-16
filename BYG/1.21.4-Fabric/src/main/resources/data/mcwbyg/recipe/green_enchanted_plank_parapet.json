@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "parapets",
+  "pattern" : [ "AAA", "ABA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "biomeswevegone:green_enchanted_planks"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwbyg:green_enchanted_plank_parapet"
+  }
+}

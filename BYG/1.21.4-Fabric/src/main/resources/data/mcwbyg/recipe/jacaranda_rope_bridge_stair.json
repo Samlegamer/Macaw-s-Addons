@@ -1,0 +1,21 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "rope_stairs",
+  "pattern" : [ "  F", " FF", "FFF" ],
+  "key" : {
+    "F" : "mcwbyg:rope_jacaranda_bridge"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:jacaranda_rope_bridge_stair"
+  }
+}

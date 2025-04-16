@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "coffee_table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "biomeswevegone:pine_log",
+    "B" : "biomeswevegone:pine_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:pine_coffee_table"
+  }
+}
+  ]
+}

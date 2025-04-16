@@ -1,0 +1,66 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwbyg:florus_bark_glass_door",
+	  "mcwbyg:florus_barn_door",
+	  "mcwbyg:florus_barn_glass_door",
+	  "mcwbyg:florus_beach_door",
+	  "mcwbyg:florus_classic_door",
+	  "mcwbyg:florus_cottage_door",
+	  "mcwbyg:florus_four_panel_door",
+	  "mcwbyg:florus_glass_door",
+	  "mcwbyg:florus_japanese_door",
+	  "mcwbyg:florus_japanese2_door",
+	  "mcwbyg:florus_modern_door",
+	  "mcwbyg:florus_mystic_door",
+	  "mcwbyg:florus_nether_door",
+	  "mcwbyg:florus_paper_door",
+	  "mcwbyg:florus_stable_door",
+	  "mcwbyg:florus_stable_head_door",
+	  "mcwbyg:florus_swamp_door",
+	  "mcwbyg:florus_western_door",
+	  "mcwbyg:florus_waffle_door",
+	  "mcwbyg:florus_tropical_door",
+	  "mcwbyg:florus_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomeswevegone:florus_stem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,29 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwstairs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "loft_stairs",
+  "pattern" : [ "W  ", " W ", "  W" ],
+  "key" : {
+    "W" : "biomeswevegone:stripped_white_mangrove_log"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:white_mangrove_loft_stairs"
+  }
+}
+  ]
+}

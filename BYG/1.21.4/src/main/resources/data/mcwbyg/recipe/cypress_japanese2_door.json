@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shoji_two",
+  "pattern" : [ "BB", "BB", "AA" ],
+  "key" : {
+    "A" : "biomeswevegone:cypress_slab",
+    "B" : "minecraft:paper"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:cypress_japanese2_door"
+  }
+}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bulk_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : "biomeswevegone:stripped_rainbow_eucalyptus_log",
+    "Z" : "biomeswevegone:rainbow_eucalyptus_log"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:rainbow_eucalyptus_bulk_stairs"
+  }
+}

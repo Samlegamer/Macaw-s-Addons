@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bookshelf_drawer",
+  "pattern" : [ "AAA", "ABA", "ACA" ],
+  "key" : {
+    "A" : "biomeswevegone:stripped_green_enchanted_log",
+    "B" : "mcwfurnitures:cabinet_drawer",
+    "C" : "minecraft:book"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:stripped_green_enchanted_bookshelf_drawer"
+  }
+}

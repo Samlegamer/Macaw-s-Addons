@@ -1,0 +1,52 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwtrpdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "mcwbyg:baobab_blossom_trapdoor"
+    ]
+  },
+  "criteria": {
+    "has_plankss": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": 
+			[ "biomeswevegone:baobab_planks"
+                      ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbyg:baobab_blossom_trapdoor"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_plankss",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+]
+}

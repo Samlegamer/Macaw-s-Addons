@@ -1,0 +1,34 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	"mcwbyg:flowering_palo_verde_hedge"
+    ]
+  },
+  "criteria": {
+    "has_birch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomeswevegone:flowering_palo_verde_leaves"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_birch"
+    ]
+  ]
+}

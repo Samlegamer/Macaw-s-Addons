@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "wooden_piers",
+  "pattern" : [ "WFW" ],
+  "key" : {
+    "F" : "biomeswevegone:fir_fence",
+    "W" : "biomeswevegone:fir_log"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:fir_bridge_pier"
+  }
+}

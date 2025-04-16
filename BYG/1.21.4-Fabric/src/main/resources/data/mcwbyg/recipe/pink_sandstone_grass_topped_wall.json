@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "grass_topped",
+  "pattern" : [ "BGB", "AAA" ],
+  "key" : {
+    "A" : "biomeswevegone:smooth_pink_sandstone",
+    "G" : "minecraft:dirt",
+    "B" : "biomeswevegone:pink_sandstone"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:pink_sandstone_grass_topped_wall"
+  }
+}

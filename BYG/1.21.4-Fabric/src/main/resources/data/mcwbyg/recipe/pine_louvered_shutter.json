@@ -1,0 +1,21 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shutters",
+  "pattern" : [ "B", "B", "B" ],
+  "key" : {
+    "B" : "biomeswevegone:pine_slab"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:pine_louvered_shutter"
+  }
+}

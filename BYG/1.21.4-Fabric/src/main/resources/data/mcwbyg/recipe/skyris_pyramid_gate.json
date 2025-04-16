@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "pyramid",
+  "pattern" : [ "ABA", "ACA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "biomeswevegone:skyris_log",
+    "C" : "biomeswevegone:skyris_planks"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:skyris_pyramid_gate"
+  }
+}

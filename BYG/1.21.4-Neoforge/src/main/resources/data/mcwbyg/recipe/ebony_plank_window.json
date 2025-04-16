@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows",
+  "pattern" : [ " A ", "ABA", " A " ],
+  "key" : {
+    "A" : "mcwwindows:window_base",
+    "B" : "biomeswevegone:ebony_planks"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:ebony_plank_window"
+  }
+}

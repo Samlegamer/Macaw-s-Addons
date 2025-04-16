@@ -1,0 +1,21 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shapeless",
+  "group" : "recyclable_bridges",
+  "ingredients" : [
+    "mcwbyg:white_mangrove_rope_bridge_stair"
+   ],
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:rope_white_mangrove_bridge"
+  }
+}

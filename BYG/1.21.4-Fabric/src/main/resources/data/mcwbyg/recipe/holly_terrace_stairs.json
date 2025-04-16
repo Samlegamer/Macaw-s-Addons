@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : "biomeswevegone:stripped_holly_log",
+    "Z" : "biomeswevegone:holly_log"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwbyg:holly_terrace_stairs"
+  }
+}

@@ -1,0 +1,28 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwbridges"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shapeless",
+  "group" : "recyclable_bridges",
+  "ingredients" : [
+    "mcwbyg:pine_rope_bridge_stair"
+   ],
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:rope_pine_bridge"
+  }
+}
+  ]
+}

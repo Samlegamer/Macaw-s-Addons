@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "triple_drawer",
+  "pattern" : [ "AAA", "ABA", "BAB" ],
+  "key" : {
+    "A" : "biomeswevegone:stripped_zelkova_log",
+    "B" : "mcwfurnitures:cabinet_drawer"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:stripped_zelkova_triple_drawer"
+  }
+}

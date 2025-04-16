@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "four_panel",
+  "pattern" : [ "A", "B", "A" ],
+  "key" : {
+    "A" : "biomeswevegone:cypress_planks",
+    "B" : "mcwdoors:print_dark_oak"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:cypress_four_panel_door"
+  }
+}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "railing_gate",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : "minecraft:iron_bars",
+    "B" : "biomeswevegone:red_rock_bricks"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:red_rock_bricks_railing_gate"
+  }
+}

@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bamboo",
+  "pattern" : [ "A", "B", "A" ],
+  "key" : {
+    "A" : "biomeswevegone:ironwood_planks",
+    "B" : "mcwdoors:print_bamboo"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:ironwood_bamboo_door"
+  }
+}

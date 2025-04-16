@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "highley",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "biomeswevegone:mahogany_log"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:mahogany_highley_gate"
+  }
+}
+  ]
+}

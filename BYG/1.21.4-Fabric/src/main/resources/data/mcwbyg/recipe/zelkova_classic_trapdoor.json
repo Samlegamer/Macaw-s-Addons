@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "classic_trapdoors",
+  "pattern" : [ "A", "B", "A" ],
+  "key" : {
+    "A" : "biomeswevegone:zelkova_planks",
+    "B" : "mcwtrpdoors:print_classic"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:zelkova_classic_trapdoor"
+  }
+}

@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "chair",
+  "pattern" : [ " A", "BA", "CC" ],
+  "key" : {
+    "A" : "biomeswevegone:zelkova_log",
+    "B" : "biomeswevegone:zelkova_slab",
+    "C" : "biomeswevegone:zelkova_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:zelkova_chair"
+  }
+}

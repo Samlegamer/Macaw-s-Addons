@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "striped_chair",
+  "pattern" : [ " A", "BC", "CC" ],
+  "key" : {
+    "A" : "biomeswevegone:cika_log",
+    "B" : "biomeswevegone:cika_slab",
+    "C" : "biomeswevegone:cika_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:cika_striped_chair"
+  }
+}

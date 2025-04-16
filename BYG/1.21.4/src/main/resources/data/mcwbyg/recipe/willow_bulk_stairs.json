@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwstairs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bulk_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : "biomeswevegone:stripped_willow_log",
+    "Z" : "biomeswevegone:willow_log"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:willow_bulk_stairs"
+  }
+}
+  ]
+}

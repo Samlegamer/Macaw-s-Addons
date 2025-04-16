@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "grass_topped",
+  "pattern" : [ "BGB", "AAA" ],
+  "key" : {
+    "A" : "biomeswevegone:smooth_white_sandstone",
+    "G" : "minecraft:dirt",
+    "B" : "biomeswevegone:white_sandstone"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:white_sandstone_grass_topped_wall"
+  }
+}

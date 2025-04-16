@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "picket",
+  "pattern" : [ "CBC", "CAC" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "biomeswevegone:cypress_planks",
+    "C" : "biomeswevegone:cypress_log"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:cypress_picket_fence"
+  }
+}

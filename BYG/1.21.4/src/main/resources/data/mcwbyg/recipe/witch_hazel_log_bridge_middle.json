@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwbridges"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "log_bridges",
+  "pattern" : [ "F F", "WWW" ],
+  "key" : {
+    "F" : "biomeswevegone:witch_hazel_fence",
+    "W" : "biomeswevegone:witch_hazel_slab"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:witch_hazel_log_bridge_middle"
+  }
+}
+  ]
+}

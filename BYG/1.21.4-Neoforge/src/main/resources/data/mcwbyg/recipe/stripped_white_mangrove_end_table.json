@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "end_table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "mcwbyg:stripped_white_mangrove_table",
+    "B" : "biomeswevegone:stripped_white_mangrove_log"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:stripped_white_mangrove_end_table"
+  }
+}

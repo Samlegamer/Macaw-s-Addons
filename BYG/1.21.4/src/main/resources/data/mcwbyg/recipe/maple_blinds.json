@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwwindows"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "blinds",
+  "pattern" : [ "AAA", "BBB", "BBB" ],
+  "key" : {
+    "B" : "minecraft:stick",
+    "A" : "biomeswevegone:maple_slab"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:maple_blinds"
+  }
+}
+  ]
+}

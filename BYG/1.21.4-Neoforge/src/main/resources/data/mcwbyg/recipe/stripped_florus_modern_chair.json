@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern_chair",
+  "pattern" : [ "BA", "CC" ],
+  "key" : {
+    "A" : "biomeswevegone:stripped_florus_stem",
+    "B" : "biomeswevegone:florus_slab",
+    "C" : "biomeswevegone:florus_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:stripped_florus_modern_chair"
+  }
+}

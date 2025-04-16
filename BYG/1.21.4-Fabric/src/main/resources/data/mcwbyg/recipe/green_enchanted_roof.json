@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "roof",
+  "pattern" : [ " W", "WS" ],
+  "key" : {
+    "W" : "biomeswevegone:green_enchanted_log",
+    "S" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwbyg:green_enchanted_roof"
+  }
+}

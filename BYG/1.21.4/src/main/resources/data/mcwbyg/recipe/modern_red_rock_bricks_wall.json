@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern",
+  "pattern" : [ "ABA", "AAA" ],
+  "key" : {
+    "A" : "biomeswevegone:red_rock_bricks",
+    "B" : "biomeswevegone:red_rock_bricks"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:modern_red_rock_bricks_wall"
+  }
+}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "lower_bookshelf_drawer",
+  "pattern" : [ "AAA", "ACA", "ABA" ],
+  "key" : {
+    "A" : "biomeswevegone:ironwood_log",
+    "B" : "mcwfurnitures:cabinet_drawer",
+    "C" : "minecraft:book"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:ironwood_lower_bookshelf_drawer"
+  }
+}

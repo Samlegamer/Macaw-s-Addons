@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "end_table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "mcwbyg:stripped_rainbow_eucalyptus_table",
+    "B" : "biomeswevegone:stripped_rainbow_eucalyptus_log"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:stripped_rainbow_eucalyptus_end_table"
+  }
+}
+  ]
+}

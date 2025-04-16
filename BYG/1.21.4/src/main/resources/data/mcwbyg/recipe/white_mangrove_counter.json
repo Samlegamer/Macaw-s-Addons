@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "biomeswevegone:white_mangrove_slab",
+    "B" : "biomeswevegone:white_mangrove_log"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:white_mangrove_counter"
+  }
+}
+  ]
+}

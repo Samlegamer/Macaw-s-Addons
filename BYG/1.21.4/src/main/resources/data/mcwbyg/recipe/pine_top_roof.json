@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwroofs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "top",
+  "pattern" : [ "WSW" ],
+  "key" : {
+    "W" : "biomeswevegone:pine_log",
+    "S" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwbyg:pine_top_roof"
+  }
+}
+  ]
+}

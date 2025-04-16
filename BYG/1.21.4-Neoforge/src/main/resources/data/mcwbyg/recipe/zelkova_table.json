@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "mcwbyg:zelkova_coffee_table",
+    "B" : "biomeswevegone:zelkova_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:zelkova_table"
+  }
+}

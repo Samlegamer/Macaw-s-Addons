@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "lower",
+  "pattern" : [ " WW", "WWS" ],
+  "key" : {
+    "W" : "biomeswevegone:cypress_log",
+    "S" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:cypress_lower_roof"
+  }
+}

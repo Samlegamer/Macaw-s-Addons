@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "coffee_table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "biomeswevegone:witch_hazel_log",
+    "B" : "biomeswevegone:witch_hazel_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:witch_hazel_coffee_table"
+  }
+}

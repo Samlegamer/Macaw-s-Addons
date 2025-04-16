@@ -1,0 +1,100 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbyg:maple_wardrobe",
+	  "mcwbyg:maple_modern_wardrobe",
+	  "mcwbyg:maple_double_wardrobe",
+	  "mcwbyg:maple_bookshelf_cupboard",
+	  "mcwbyg:maple_bookshelf",
+	  "mcwbyg:maple_drawer",
+	  "mcwbyg:maple_double_drawer",
+	  "mcwbyg:maple_bookshelf_drawer",
+	  "mcwbyg:maple_lower_bookshelf_drawer",
+	  "mcwbyg:maple_large_drawer",
+	  "mcwbyg:maple_lower_triple_drawer",
+	  "mcwbyg:maple_triple_drawer",
+	  "mcwbyg:maple_desk",
+	  "mcwbyg:maple_covered_desk",
+	  "mcwbyg:maple_modern_desk",
+	  "mcwbyg:maple_table",
+	  "mcwbyg:maple_end_table",
+	  "mcwbyg:maple_coffee_table",
+	  "mcwbyg:maple_glass_table",
+	  "mcwbyg:maple_chair",
+	  "mcwbyg:maple_modern_chair",
+	  "mcwbyg:maple_striped_chair",
+	  "mcwbyg:maple_stool_chair",
+	  "mcwbyg:maple_counter",
+	  "mcwbyg:maple_drawer_counter",
+	  "mcwbyg:maple_double_drawer_counter",
+	  "mcwbyg:maple_cupboard_counter",
+	  
+	  "mcwbyg:stripped_maple_wardrobe",
+	  "mcwbyg:stripped_maple_modern_wardrobe",
+	  "mcwbyg:stripped_maple_double_wardrobe",
+	  "mcwbyg:stripped_maple_bookshelf_cupboard",
+	  "mcwbyg:stripped_maple_bookshelf",
+	  "mcwbyg:stripped_maple_drawer",
+	  "mcwbyg:stripped_maple_double_drawer",
+	  "mcwbyg:stripped_maple_bookshelf_drawer",
+	  "mcwbyg:stripped_maple_lower_bookshelf_drawer",
+	  "mcwbyg:stripped_maple_large_drawer",
+	  "mcwbyg:stripped_maple_lower_triple_drawer",
+	  "mcwbyg:stripped_maple_triple_drawer",
+	  "mcwbyg:stripped_maple_desk",
+	  "mcwbyg:stripped_maple_covered_desk",
+	  "mcwbyg:stripped_maple_modern_desk",
+	  "mcwbyg:stripped_maple_table",
+	  "mcwbyg:stripped_maple_end_table",
+	  "mcwbyg:stripped_maple_coffee_table",
+	  "mcwbyg:stripped_maple_glass_table",
+	  "mcwbyg:stripped_maple_chair",
+	  "mcwbyg:stripped_maple_modern_chair",
+	  "mcwbyg:stripped_maple_striped_chair",
+	  "mcwbyg:stripped_maple_stool_chair",
+	  "mcwbyg:stripped_maple_counter",
+	  "mcwbyg:stripped_maple_drawer_counter",
+	  "mcwbyg:stripped_maple_double_drawer_counter",
+	  "mcwbyg:stripped_maple_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomeswevegone:maple_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbyg:maple_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

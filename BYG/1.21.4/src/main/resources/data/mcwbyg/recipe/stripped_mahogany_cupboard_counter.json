@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "cupboard_counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "biomeswevegone:mahogany_slab",
+    "B" : "mcwbyg:stripped_mahogany_wardrobe"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:stripped_mahogany_cupboard_counter"
+  }
+}
+  ]
+}

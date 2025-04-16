@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shoji",
+  "pattern" : [ "BB", "BB", "AA" ],
+  "key" : {
+    "A" : "biomeswevegone:ebony_planks",
+    "B" : "minecraft:paper"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:ebony_japanese_door"
+  }
+}

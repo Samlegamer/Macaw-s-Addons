@@ -1,0 +1,22 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "rope_stairs",
+  "pattern" : [ "  F", " FF", "FFF" ],
+  "key" : {
+    "F" : "mcwbyg:rope_palm_bridge"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:palm_rope_bridge_stair"
+  }
+}

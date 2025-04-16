@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "glass_trapdoors",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : "biomeswevegone:rainbow_eucalyptus_planks",
+    "B" : "minecraft:glass_pane"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwbyg:rainbow_eucalyptus_glass_trapdoor"
+  }
+}

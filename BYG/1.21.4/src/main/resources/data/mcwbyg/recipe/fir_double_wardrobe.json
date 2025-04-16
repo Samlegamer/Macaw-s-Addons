@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "double_wardrobe",
+  "pattern" : [ "AAA", "BAB", "AAA" ],
+  "key" : {
+    "A" : "biomeswevegone:fir_log",
+    "B" : "mcwfurnitures:cabinet_door"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:fir_double_wardrobe"
+  }
+}
+  ]
+}

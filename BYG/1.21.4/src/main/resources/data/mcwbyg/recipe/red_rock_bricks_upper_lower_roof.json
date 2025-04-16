@@ -1,0 +1,26 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwroofs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:stonecutting",
+  "ingredient" : "biomeswevegone:red_rock_bricks",
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:red_rock_bricks_upper_lower_roof"
+  },
+  "group" : "roofs"
+}
+  ]
+}

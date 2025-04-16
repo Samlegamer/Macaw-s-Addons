@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "top",
+  "pattern" : [ "WSW" ],
+  "key" : {
+    "W" : "biomeswevegone:palm_planks",
+    "S" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwbyg:palm_planks_top_roof"
+  }
+}

@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bulk_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : "biomeswevegone:stripped_ironwood_log",
+    "Z" : "biomeswevegone:ironwood_log"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:ironwood_bulk_stairs"
+  }
+}

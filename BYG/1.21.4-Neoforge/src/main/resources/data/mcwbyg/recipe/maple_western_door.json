@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "western",
+  "pattern" : [ "  A", "ABA", "AAA" ],
+  "key" : {
+    "A" : "biomeswevegone:maple_planks",
+    "B" : "biomeswevegone:maple_slab"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:maple_western_door"
+  }
+}

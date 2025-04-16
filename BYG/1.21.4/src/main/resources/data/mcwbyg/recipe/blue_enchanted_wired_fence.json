@@ -1,0 +1,31 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "wired",
+  "pattern" : [ "ACA", "ABA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "biomeswevegone:blue_enchanted_log",
+    "C" : "minecraft:iron_bars"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:blue_enchanted_wired_fence"
+  }
+}
+  ]
+}

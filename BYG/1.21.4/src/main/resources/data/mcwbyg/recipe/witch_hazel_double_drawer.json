@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "double_drawer",
+  "pattern" : [ "AAA", "ABA", "ABA" ],
+  "key" : {
+    "A" : "biomeswevegone:witch_hazel_log",
+    "B" : "mcwfurnitures:cabinet_drawer"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:witch_hazel_double_drawer"
+  }
+}
+  ]
+}

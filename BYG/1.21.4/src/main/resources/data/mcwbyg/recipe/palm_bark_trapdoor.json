@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwtrpdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bark_trapdoors",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : "biomeswevegone:palm_log",
+    "B" : "minecraft:glass_pane"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwbyg:palm_bark_trapdoor"
+  }
+}
+  ]
+}

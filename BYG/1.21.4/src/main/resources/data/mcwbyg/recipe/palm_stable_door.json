@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stable",
+  "pattern" : [ "BB", "AA", "AA" ],
+  "key" : {
+    "A" : "biomeswevegone:palm_planks",
+    "B" : "minecraft:iron_bars"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:palm_stable_door"
+  }
+}
+  ]
+}

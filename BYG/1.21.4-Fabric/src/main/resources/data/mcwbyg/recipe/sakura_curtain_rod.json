@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "curtain_rods",
+  "pattern" : [ "ABA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "biomeswevegone:sakura_log"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwbyg:sakura_curtain_rod"
+  }
+}

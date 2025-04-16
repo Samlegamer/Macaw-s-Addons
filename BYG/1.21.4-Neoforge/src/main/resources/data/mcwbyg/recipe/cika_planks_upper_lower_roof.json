@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "upper_lower",
+  "pattern" : [ "  W", "WWS" ],
+  "key" : {
+    "W" : "biomeswevegone:cika_planks",
+    "S" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:cika_planks_upper_lower_roof"
+  }
+}

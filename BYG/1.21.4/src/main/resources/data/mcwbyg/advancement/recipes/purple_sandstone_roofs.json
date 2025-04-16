@@ -1,0 +1,51 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwroofs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:purple_sandstone_roof",
+	  "mcwbyg:purple_sandstone_attic_roof",
+	  "mcwbyg:purple_sandstone_top_roof",
+	  "mcwbyg:purple_sandstone_lower_roof",
+	  "mcwbyg:purple_sandstone_steep_roof",
+	  "mcwbyg:purple_sandstone_upper_lower_roof",
+	  "mcwbyg:purple_sandstone_upper_steep_roof"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomeswevegone:purple_sandstone"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}
+
+]
+}

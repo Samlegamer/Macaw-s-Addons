@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "striped_chair",
+  "pattern" : [ " A", "BC", "CC" ],
+  "key" : {
+    "A" : "biomeswevegone:baobab_log",
+    "B" : "biomeswevegone:baobab_slab",
+    "C" : "biomeswevegone:baobab_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:baobab_striped_chair"
+  }
+}

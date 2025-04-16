@@ -1,0 +1,34 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	"mcwbyg:fir_hedge"
+    ]
+  },
+  "criteria": {
+    "has_birch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomeswevegone:fir_leaves"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_birch"
+    ]
+  ]
+}

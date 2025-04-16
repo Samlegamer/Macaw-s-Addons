@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "biomeswevegone:fir_slab",
+    "B" : "biomeswevegone:stripped_fir_log"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:stripped_fir_counter"
+  }
+}
+  ]
+}

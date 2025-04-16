@@ -1,0 +1,100 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbyg:aspen_wardrobe",
+	  "mcwbyg:aspen_modern_wardrobe",
+	  "mcwbyg:aspen_double_wardrobe",
+	  "mcwbyg:aspen_bookshelf_cupboard",
+	  "mcwbyg:aspen_bookshelf",
+	  "mcwbyg:aspen_drawer",
+	  "mcwbyg:aspen_double_drawer",
+	  "mcwbyg:aspen_bookshelf_drawer",
+	  "mcwbyg:aspen_lower_bookshelf_drawer",
+	  "mcwbyg:aspen_large_drawer",
+	  "mcwbyg:aspen_lower_triple_drawer",
+	  "mcwbyg:aspen_triple_drawer",
+	  "mcwbyg:aspen_desk",
+	  "mcwbyg:aspen_covered_desk",
+	  "mcwbyg:aspen_modern_desk",
+	  "mcwbyg:aspen_table",
+	  "mcwbyg:aspen_end_table",
+	  "mcwbyg:aspen_coffee_table",
+	  "mcwbyg:aspen_glass_table",
+	  "mcwbyg:aspen_chair",
+	  "mcwbyg:aspen_modern_chair",
+	  "mcwbyg:aspen_striped_chair",
+	  "mcwbyg:aspen_stool_chair",
+	  "mcwbyg:aspen_counter",
+	  "mcwbyg:aspen_drawer_counter",
+	  "mcwbyg:aspen_double_drawer_counter",
+	  "mcwbyg:aspen_cupboard_counter",
+	  
+	  "mcwbyg:stripped_aspen_wardrobe",
+	  "mcwbyg:stripped_aspen_modern_wardrobe",
+	  "mcwbyg:stripped_aspen_double_wardrobe",
+	  "mcwbyg:stripped_aspen_bookshelf_cupboard",
+	  "mcwbyg:stripped_aspen_bookshelf",
+	  "mcwbyg:stripped_aspen_drawer",
+	  "mcwbyg:stripped_aspen_double_drawer",
+	  "mcwbyg:stripped_aspen_bookshelf_drawer",
+	  "mcwbyg:stripped_aspen_lower_bookshelf_drawer",
+	  "mcwbyg:stripped_aspen_large_drawer",
+	  "mcwbyg:stripped_aspen_lower_triple_drawer",
+	  "mcwbyg:stripped_aspen_triple_drawer",
+	  "mcwbyg:stripped_aspen_desk",
+	  "mcwbyg:stripped_aspen_covered_desk",
+	  "mcwbyg:stripped_aspen_modern_desk",
+	  "mcwbyg:stripped_aspen_table",
+	  "mcwbyg:stripped_aspen_end_table",
+	  "mcwbyg:stripped_aspen_coffee_table",
+	  "mcwbyg:stripped_aspen_glass_table",
+	  "mcwbyg:stripped_aspen_chair",
+	  "mcwbyg:stripped_aspen_modern_chair",
+	  "mcwbyg:stripped_aspen_striped_chair",
+	  "mcwbyg:stripped_aspen_stool_chair",
+	  "mcwbyg:stripped_aspen_counter",
+	  "mcwbyg:stripped_aspen_drawer_counter",
+	  "mcwbyg:stripped_aspen_double_drawer_counter",
+	  "mcwbyg:stripped_aspen_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomeswevegone:aspen_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbyg:aspen_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

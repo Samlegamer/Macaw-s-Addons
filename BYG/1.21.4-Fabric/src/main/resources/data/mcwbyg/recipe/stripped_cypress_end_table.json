@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "end_table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "mcwbyg:stripped_cypress_table",
+    "B" : "biomeswevegone:stripped_cypress_log"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:stripped_cypress_end_table"
+  }
+}

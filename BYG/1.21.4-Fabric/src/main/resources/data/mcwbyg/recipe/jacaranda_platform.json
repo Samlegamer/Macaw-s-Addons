@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " ZZ", " WW", "   " ],
+  "key" : {
+    "W" : "biomeswevegone:jacaranda_log",
+    "Z" : "biomeswevegone:jacaranda_slab"
+  },
+  "result" : {
+    "count" : 12,
+    "id" : "mcwbyg:jacaranda_platform"
+  }
+}

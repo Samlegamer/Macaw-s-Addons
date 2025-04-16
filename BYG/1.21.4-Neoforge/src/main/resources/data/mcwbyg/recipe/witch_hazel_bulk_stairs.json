@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bulk_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : "biomeswevegone:stripped_witch_hazel_log",
+    "Z" : "biomeswevegone:witch_hazel_log"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:witch_hazel_bulk_stairs"
+  }
+}

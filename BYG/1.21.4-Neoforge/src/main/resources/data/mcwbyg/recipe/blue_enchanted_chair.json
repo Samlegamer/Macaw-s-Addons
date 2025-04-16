@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "chair",
+  "pattern" : [ " A", "BA", "CC" ],
+  "key" : {
+    "A" : "biomeswevegone:blue_enchanted_log",
+    "B" : "biomeswevegone:blue_enchanted_slab",
+    "C" : "biomeswevegone:blue_enchanted_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:blue_enchanted_chair"
+  }
+}

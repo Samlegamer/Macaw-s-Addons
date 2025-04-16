@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwroofs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "steep",
+  "pattern" : [ " W", "WW", "WS" ],
+  "key" : {
+    "W" : "biomeswevegone:maple_log",
+    "S" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:maple_steep_roof"
+  }
+}
+  ]
+}

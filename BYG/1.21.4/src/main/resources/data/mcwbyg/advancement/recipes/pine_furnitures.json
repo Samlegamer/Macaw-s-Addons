@@ -1,0 +1,109 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbyg:pine_wardrobe",
+	  "mcwbyg:pine_modern_wardrobe",
+	  "mcwbyg:pine_double_wardrobe",
+	  "mcwbyg:pine_bookshelf_cupboard",
+	  "mcwbyg:pine_bookshelf",
+	  "mcwbyg:pine_drawer",
+	  "mcwbyg:pine_double_drawer",
+	  "mcwbyg:pine_bookshelf_drawer",
+	  "mcwbyg:pine_lower_bookshelf_drawer",
+	  "mcwbyg:pine_large_drawer",
+	  "mcwbyg:pine_lower_triple_drawer",
+	  "mcwbyg:pine_triple_drawer",
+	  "mcwbyg:pine_desk",
+	  "mcwbyg:pine_covered_desk",
+	  "mcwbyg:pine_modern_desk",
+	  "mcwbyg:pine_table",
+	  "mcwbyg:pine_end_table",
+	  "mcwbyg:pine_coffee_table",
+	  "mcwbyg:pine_glass_table",
+	  "mcwbyg:pine_chair",
+	  "mcwbyg:pine_modern_chair",
+	  "mcwbyg:pine_striped_chair",
+	  "mcwbyg:pine_stool_chair",
+	  "mcwbyg:pine_counter",
+	  "mcwbyg:pine_drawer_counter",
+	  "mcwbyg:pine_double_drawer_counter",
+	  "mcwbyg:pine_cupboard_counter",
+	  
+	  "mcwbyg:stripped_pine_wardrobe",
+	  "mcwbyg:stripped_pine_modern_wardrobe",
+	  "mcwbyg:stripped_pine_double_wardrobe",
+	  "mcwbyg:stripped_pine_bookshelf_cupboard",
+	  "mcwbyg:stripped_pine_bookshelf",
+	  "mcwbyg:stripped_pine_drawer",
+	  "mcwbyg:stripped_pine_double_drawer",
+	  "mcwbyg:stripped_pine_bookshelf_drawer",
+	  "mcwbyg:stripped_pine_lower_bookshelf_drawer",
+	  "mcwbyg:stripped_pine_large_drawer",
+	  "mcwbyg:stripped_pine_lower_triple_drawer",
+	  "mcwbyg:stripped_pine_triple_drawer",
+	  "mcwbyg:stripped_pine_desk",
+	  "mcwbyg:stripped_pine_covered_desk",
+	  "mcwbyg:stripped_pine_modern_desk",
+	  "mcwbyg:stripped_pine_table",
+	  "mcwbyg:stripped_pine_end_table",
+	  "mcwbyg:stripped_pine_coffee_table",
+	  "mcwbyg:stripped_pine_glass_table",
+	  "mcwbyg:stripped_pine_chair",
+	  "mcwbyg:stripped_pine_modern_chair",
+	  "mcwbyg:stripped_pine_striped_chair",
+	  "mcwbyg:stripped_pine_stool_chair",
+	  "mcwbyg:stripped_pine_counter",
+	  "mcwbyg:stripped_pine_drawer_counter",
+	  "mcwbyg:stripped_pine_double_drawer_counter",
+	  "mcwbyg:stripped_pine_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomeswevegone:pine_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbyg:pine_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+]
+}

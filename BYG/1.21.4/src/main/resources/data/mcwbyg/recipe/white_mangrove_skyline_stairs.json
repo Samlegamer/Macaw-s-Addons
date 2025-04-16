@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwstairs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "skyline_stairs",
+  "pattern" : [ "W  ", "ZW " ],
+  "key" : {
+    "W" : "biomeswevegone:stripped_white_mangrove_log",
+    "Z" : "biomeswevegone:white_mangrove_log"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:white_mangrove_skyline_stairs"
+  }
+}
+  ]
+}

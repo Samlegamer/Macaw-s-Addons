@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "triple_drawer",
+  "pattern" : [ "AAA", "ABA", "BAB" ],
+  "key" : {
+    "A" : "biomeswevegone:stripped_florus_stem",
+    "B" : "mcwfurnitures:cabinet_drawer"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:stripped_florus_triple_drawer"
+  }
+}

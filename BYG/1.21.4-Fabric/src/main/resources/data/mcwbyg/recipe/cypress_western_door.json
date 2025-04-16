@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "western",
+  "pattern" : [ "  A", "ABA", "AAA" ],
+  "key" : {
+    "A" : "biomeswevegone:cypress_planks",
+    "B" : "biomeswevegone:cypress_slab"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:cypress_western_door"
+  }
+}

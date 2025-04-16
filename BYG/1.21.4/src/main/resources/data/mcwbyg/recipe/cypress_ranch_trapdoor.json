@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwtrpdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "ranch_trapdoors",
+  "pattern" : [ "ABA", "BBB", "ABA" ],
+  "key" : {
+    "A" : "biomeswevegone:cypress_log",
+    "B" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwbyg:cypress_ranch_trapdoor"
+  }
+}
+  ]
+}

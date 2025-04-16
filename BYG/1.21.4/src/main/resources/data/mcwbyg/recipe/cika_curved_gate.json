@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "curved_gate",
+  "pattern" : [ "B A", "BAA" ],
+  "key" : {
+    "A" : "biomeswevegone:cika_planks",
+    "B" : "biomeswevegone:cika_log"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:cika_curved_gate"
+  }
+}
+  ]
+}

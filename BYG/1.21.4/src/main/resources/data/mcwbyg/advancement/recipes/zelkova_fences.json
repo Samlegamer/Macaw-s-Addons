@@ -1,0 +1,49 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:zelkova_picket_fence",
+	  "mcwbyg:zelkova_stockade_fence",
+	  "mcwbyg:zelkova_horse_fence",
+	  "mcwbyg:zelkova_wired_fence",
+	  "mcwbyg:zelkova_highley_gate",
+	  "mcwbyg:zelkova_pyramid_gate",
+	  "mcwbyg:zelkova_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomeswevegone:zelkova_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}
+
+]
+}

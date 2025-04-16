@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "glassed",
+  "pattern" : [ "AB", "BB", "AB" ],
+  "key" : {
+    "A" : "biomeswevegone:cika_planks",
+    "B" : "minecraft:glass_pane"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:cika_glass_door"
+  }
+}
+  ]
+}

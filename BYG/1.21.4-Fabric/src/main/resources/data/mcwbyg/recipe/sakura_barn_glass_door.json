@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "barn_glass",
+  "pattern" : [ "BB", "AA", "AA" ],
+  "key" : {
+    "A" : "biomeswevegone:sakura_planks",
+    "B" : "minecraft:glass_pane"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:sakura_barn_glass_door"
+  }
+}

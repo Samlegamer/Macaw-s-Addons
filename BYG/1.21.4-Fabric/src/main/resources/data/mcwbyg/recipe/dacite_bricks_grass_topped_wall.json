@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "grass_topped",
+  "pattern" : [ "BGB", "AAA" ],
+  "key" : {
+    "A" : "biomeswevegone:dacite_bricks",
+    "G" : "minecraft:dirt",
+    "B" : "biomeswevegone:dacite_bricks"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:dacite_bricks_grass_topped_wall"
+  }
+}

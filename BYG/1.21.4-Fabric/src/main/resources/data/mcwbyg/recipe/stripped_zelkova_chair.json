@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "chair",
+  "pattern" : [ " A", "BA", "CC" ],
+  "key" : {
+    "A" : "biomeswevegone:stripped_zelkova_log",
+    "B" : "biomeswevegone:zelkova_slab",
+    "C" : "biomeswevegone:zelkova_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:stripped_zelkova_chair"
+  }
+}

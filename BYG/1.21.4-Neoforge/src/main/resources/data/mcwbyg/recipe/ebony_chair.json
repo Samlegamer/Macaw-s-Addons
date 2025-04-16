@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "chair",
+  "pattern" : [ " A", "BA", "CC" ],
+  "key" : {
+    "A" : "biomeswevegone:ebony_log",
+    "B" : "biomeswevegone:ebony_slab",
+    "C" : "biomeswevegone:ebony_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:ebony_chair"
+  }
+}

@@ -1,0 +1,21 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shapeless",
+  "group" : "recyclable_bridges",
+  "ingredients" : [
+    "mcwbyg:holly_log_bridge_stair"
+  ],
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:holly_log_bridge_middle"
+  }
+}

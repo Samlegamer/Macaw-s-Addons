@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "blinds",
+  "pattern" : [ "AAA", "BBB", "BBB" ],
+  "key" : {
+    "B" : "minecraft:stick",
+    "A" : "biomeswevegone:holly_slab"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:holly_blinds"
+  }
+}

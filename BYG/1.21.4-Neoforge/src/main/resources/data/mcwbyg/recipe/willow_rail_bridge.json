@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "rail_bridges",
+  "pattern" : [ "F F", "FWF" ],
+  "key" : {
+    "F" : "biomeswevegone:willow_fence",
+    "W" : "biomeswevegone:willow_slab"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:willow_rail_bridge"
+  }
+}

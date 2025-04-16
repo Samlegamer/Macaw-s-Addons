@@ -1,0 +1,31 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "pyramid",
+  "pattern" : [ "ABA", "ACA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "biomeswevegone:skyris_log",
+    "C" : "biomeswevegone:skyris_planks"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:skyris_pyramid_gate"
+  }
+}
+  ]
+}

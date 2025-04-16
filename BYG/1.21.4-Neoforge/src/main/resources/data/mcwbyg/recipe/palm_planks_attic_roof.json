@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "attic",
+  "pattern" : [ " W", "WG" ],
+  "key" : {
+    "W" : "biomeswevegone:palm_planks",
+    "G" : "minecraft:glass"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwbyg:palm_planks_attic_roof"
+  }
+}

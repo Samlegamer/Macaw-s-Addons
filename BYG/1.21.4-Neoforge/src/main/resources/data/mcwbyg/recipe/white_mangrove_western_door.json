@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "western",
+  "pattern" : [ "  A", "ABA", "AAA" ],
+  "key" : {
+    "A" : "biomeswevegone:white_mangrove_planks",
+    "B" : "biomeswevegone:white_mangrove_slab"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:white_mangrove_western_door"
+  }
+}

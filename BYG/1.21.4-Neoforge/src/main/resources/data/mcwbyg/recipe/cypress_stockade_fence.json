@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stockade",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : "biomeswevegone:cypress_log",
+    "B" : "biomeswevegone:cypress_planks"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:cypress_stockade_fence"
+  }
+}

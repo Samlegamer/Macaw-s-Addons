@@ -1,0 +1,43 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:holly_bulk_stairs",
+	  "mcwbyg:holly_compact_stairs",
+	  "mcwbyg:holly_loft_stairs",
+	  "mcwbyg:holly_skyline_stairs",
+	  "mcwbyg:holly_terrace_stairs",
+	  "mcwbyg:holly_railing",
+	  "mcwbyg:holly_balcony",
+	  "mcwbyg:holly_platform"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomeswevegone:holly_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

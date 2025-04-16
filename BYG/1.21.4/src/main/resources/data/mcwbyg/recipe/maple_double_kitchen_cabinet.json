@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "double_cabinet",
+  "pattern" : [ "AA", "CC", "AA" ],
+  "key" : {
+    "A" : "biomeswevegone:maple_log",
+    "C" : "mcwfurnitures:cabinet_door"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:maple_double_kitchen_cabinet"
+  }
+}
+  ]
+}

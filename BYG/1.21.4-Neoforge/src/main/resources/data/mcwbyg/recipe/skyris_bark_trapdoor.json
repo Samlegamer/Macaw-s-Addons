@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bark_trapdoors",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : "biomeswevegone:skyris_log",
+    "B" : "minecraft:glass_pane"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwbyg:skyris_bark_trapdoor"
+  }
+}

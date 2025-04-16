@@ -1,0 +1,29 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwstairs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "compact_stairs",
+  "pattern" : [ "W  ", "WW ", "WWW" ],
+  "key" : {
+    "W" : "biomeswevegone:stripped_palm_log"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:palm_compact_stairs"
+  }
+}
+  ]
+}

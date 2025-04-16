@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "railing_gate",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : "minecraft:iron_bars",
+    "B" : "biomeswevegone:windswept_sandstone"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:windswept_sandstone_railing_gate"
+  }
+}

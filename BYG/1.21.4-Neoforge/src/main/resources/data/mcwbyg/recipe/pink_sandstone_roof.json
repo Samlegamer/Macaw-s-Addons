@@ -1,0 +1,19 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:stonecutting",
+  "ingredient" : "biomeswevegone:pink_sandstone",
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:pink_sandstone_roof"
+  },
+  "group" : "roofs"
+}

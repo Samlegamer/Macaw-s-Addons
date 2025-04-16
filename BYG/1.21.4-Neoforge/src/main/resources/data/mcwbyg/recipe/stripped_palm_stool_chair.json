@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stool_chair",
+  "pattern" : [ "A", "A", "B" ],
+  "key" : {
+    "A" : "biomeswevegone:stripped_palm_log",
+    "B" : "biomeswevegone:palm_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:stripped_palm_stool_chair"
+  }
+}

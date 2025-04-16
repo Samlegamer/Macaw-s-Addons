@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwwindows"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows_two",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : "mcwwindows:window_half_bar_base",
+    "B" : "biomeswevegone:cika_log"
+  },
+  "result" : {
+    "count" : 8,
+    "id" : "mcwbyg:cika_window2"
+  }
+}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:stonecutting",
+  "ingredient" : "biomeswevegone:pink_sandstone",
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:pink_sandstone_attic_roof"
+  },
+  "group" : "roofs"
+}

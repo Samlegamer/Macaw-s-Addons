@@ -1,0 +1,43 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbyg:cypress_bulk_stairs",
+	  "mcwbyg:cypress_compact_stairs",
+	  "mcwbyg:cypress_loft_stairs",
+	  "mcwbyg:cypress_skyline_stairs",
+	  "mcwbyg:cypress_terrace_stairs",
+	  "mcwbyg:cypress_railing",
+	  "mcwbyg:cypress_balcony",
+	  "mcwbyg:cypress_platform"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomeswevegone:cypress_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

@@ -1,0 +1,101 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwbyg:ebony_wardrobe",
+	  "mcwbyg:ebony_modern_wardrobe",
+	  "mcwbyg:ebony_double_wardrobe",
+	  "mcwbyg:ebony_bookshelf_cupboard",
+	  "mcwbyg:ebony_bookshelf",
+	  "mcwbyg:ebony_drawer",
+	  "mcwbyg:ebony_double_drawer",
+	  "mcwbyg:ebony_bookshelf_drawer",
+	  "mcwbyg:ebony_lower_bookshelf_drawer",
+	  "mcwbyg:ebony_large_drawer",
+	  "mcwbyg:ebony_lower_triple_drawer",
+	  "mcwbyg:ebony_triple_drawer",
+	  "mcwbyg:ebony_desk",
+	  "mcwbyg:ebony_covered_desk",
+	  "mcwbyg:ebony_modern_desk",
+	  "mcwbyg:ebony_table",
+	  "mcwbyg:ebony_end_table",
+	  "mcwbyg:ebony_coffee_table",
+	  "mcwbyg:ebony_glass_table",
+	  "mcwbyg:ebony_chair",
+	  "mcwbyg:ebony_modern_chair",
+	  "mcwbyg:ebony_striped_chair",
+	  "mcwbyg:ebony_stool_chair",
+	  "mcwbyg:ebony_counter",
+	  "mcwbyg:ebony_drawer_counter",
+	  "mcwbyg:ebony_double_drawer_counter",
+	  "mcwbyg:ebony_cupboard_counter",
+	  
+	  "mcwbyg:stripped_ebony_wardrobe",
+	  "mcwbyg:stripped_ebony_modern_wardrobe",
+	  "mcwbyg:stripped_ebony_double_wardrobe",
+	  "mcwbyg:stripped_ebony_bookshelf_cupboard",
+	  "mcwbyg:stripped_ebony_bookshelf",
+	  "mcwbyg:stripped_ebony_drawer",
+	  "mcwbyg:stripped_ebony_double_drawer",
+	  "mcwbyg:stripped_ebony_bookshelf_drawer",
+	  "mcwbyg:stripped_ebony_lower_bookshelf_drawer",
+	  "mcwbyg:stripped_ebony_large_drawer",
+	  "mcwbyg:stripped_ebony_lower_triple_drawer",
+	  "mcwbyg:stripped_ebony_triple_drawer",
+	  "mcwbyg:stripped_ebony_desk",
+	  "mcwbyg:stripped_ebony_covered_desk",
+	  "mcwbyg:stripped_ebony_modern_desk",
+	  "mcwbyg:stripped_ebony_table",
+	  "mcwbyg:stripped_ebony_end_table",
+	  "mcwbyg:stripped_ebony_coffee_table",
+	  "mcwbyg:stripped_ebony_glass_table",
+	  "mcwbyg:stripped_ebony_chair",
+	  "mcwbyg:stripped_ebony_modern_chair",
+	  "mcwbyg:stripped_ebony_striped_chair",
+	  "mcwbyg:stripped_ebony_stool_chair",
+	  "mcwbyg:stripped_ebony_counter",
+	  "mcwbyg:stripped_ebony_drawer_counter",
+	  "mcwbyg:stripped_ebony_double_drawer_counter",
+	  "mcwbyg:stripped_ebony_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomeswevegone:ebony_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbyg:ebony_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

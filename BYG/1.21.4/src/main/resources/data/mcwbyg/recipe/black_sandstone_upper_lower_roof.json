@@ -1,0 +1,26 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwroofs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:stonecutting",
+  "ingredient" : "biomeswevegone:black_sandstone",
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:black_sandstone_upper_lower_roof"
+  },
+  "group" : "roofs"
+}
+  ]
+}

@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "western",
+  "pattern" : [ "  A", "ABA", "AAA" ],
+  "key" : {
+    "A" : "biomeswevegone:ebony_planks",
+    "B" : "biomeswevegone:ebony_slab"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:ebony_western_door"
+  }
+}
+  ]
+}

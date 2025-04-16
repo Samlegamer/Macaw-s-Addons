@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwbridges"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "balustrade_bridges",
+  "pattern" : [ "FFF", "WWW" ],
+  "key" : {
+    "F" : "biomeswevegone:red_rock_brick_wall",
+    "W" : "biomeswevegone:red_rock_brick_slab"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwbyg:balustrade_red_rock_bricks_bridge"
+  }
+}
+  ]
+}

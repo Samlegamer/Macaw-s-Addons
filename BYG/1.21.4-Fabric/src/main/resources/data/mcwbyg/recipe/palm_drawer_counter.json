@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "drawer_counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "biomeswevegone:palm_slab",
+    "B" : "mcwbyg:palm_drawer"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:palm_drawer_counter"
+  }
+}

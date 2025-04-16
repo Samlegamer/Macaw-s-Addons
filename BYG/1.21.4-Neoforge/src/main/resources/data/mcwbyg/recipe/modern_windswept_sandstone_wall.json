@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern",
+  "pattern" : [ "ABA", "AAA" ],
+  "key" : {
+    "A" : "biomeswevegone:smooth_windswept_sandstone",
+    "B" : "biomeswevegone:windswept_sandstone"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:modern_windswept_sandstone_wall"
+  }
+}

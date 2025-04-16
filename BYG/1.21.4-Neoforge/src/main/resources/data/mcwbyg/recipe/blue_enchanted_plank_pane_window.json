@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows_pane",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : "mcwwindows:window_base",
+    "B" : "biomeswevegone:blue_enchanted_planks"
+  },
+  "result" : {
+    "count" : 8,
+    "id" : "mcwbyg:blue_enchanted_plank_pane_window"
+  }
+}

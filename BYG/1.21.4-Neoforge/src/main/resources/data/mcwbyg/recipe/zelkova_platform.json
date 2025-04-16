@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " ZZ", " WW", "   " ],
+  "key" : {
+    "W" : "biomeswevegone:zelkova_log",
+    "Z" : "biomeswevegone:zelkova_slab"
+  },
+  "result" : {
+    "count" : 12,
+    "id" : "mcwbyg:zelkova_platform"
+  }
+}

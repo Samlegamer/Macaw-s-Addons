@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "double_wardrobe",
+  "pattern" : [ "AAA", "BAB", "AAA" ],
+  "key" : {
+    "A" : "biomeswevegone:jacaranda_log",
+    "B" : "mcwfurnitures:cabinet_door"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:jacaranda_double_wardrobe"
+  }
+}

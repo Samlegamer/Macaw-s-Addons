@@ -1,0 +1,22 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shutters",
+  "pattern" : [ "B", "B", "B" ],
+  "key" : {
+    "B" : "biomeswevegone:pine_slab"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:pine_louvered_shutter"
+  }
+}

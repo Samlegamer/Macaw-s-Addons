@@ -1,0 +1,20 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "group" : "wooden_paths",
+  "ingredients": [
+    "biomeswevegone:redwood_slab"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:redwood_planks_path"
+  }
+}

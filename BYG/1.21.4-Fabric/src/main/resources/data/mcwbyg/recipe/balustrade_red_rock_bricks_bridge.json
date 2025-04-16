@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "balustrade_bridges",
+  "pattern" : [ "FFF", "WWW" ],
+  "key" : {
+    "F" : "biomeswevegone:red_rock_brick_wall",
+    "W" : "biomeswevegone:red_rock_brick_slab"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwbyg:balustrade_red_rock_bricks_bridge"
+  }
+}

@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwstairs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : "biomeswevegone:stripped_florus_stem",
+    "Z" : "biomeswevegone:florus_stem"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwbyg:florus_terrace_stairs"
+  }
+}
+  ]
+}

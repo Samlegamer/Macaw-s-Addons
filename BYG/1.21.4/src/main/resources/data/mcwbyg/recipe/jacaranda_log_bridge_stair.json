@@ -1,0 +1,29 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwbridges"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "log_stairs",
+  "pattern" : [ "  F", " FF", "FFF" ],
+  "key" : {
+    "F" : "mcwbyg:jacaranda_log_bridge_middle"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbyg:jacaranda_log_bridge_stair"
+  }
+}
+  ]
+}

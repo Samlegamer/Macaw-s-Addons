@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwtrpdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "barrel_trapdoors",
+  "pattern" : [ " A ", "ABA", " A " ],
+  "key" : {
+    "A" : "biomeswevegone:cypress_planks",
+    "B" : "minecraft:barrel"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:cypress_barrel_trapdoor"
+  }
+}
+  ]
+}

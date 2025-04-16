@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "barn_trapdoors",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "biomeswevegone:green_enchanted_planks",
+    "B" : "mcwbyg:green_enchanted_glass_trapdoor"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:green_enchanted_barn_trapdoor"
+  }
+}

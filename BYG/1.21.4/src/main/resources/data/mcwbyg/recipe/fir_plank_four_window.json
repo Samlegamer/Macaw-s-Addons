@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwwindows"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows_four",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : "mcwwindows:window_centre_bar_base",
+    "B" : "biomeswevegone:fir_planks"
+  },
+  "result" : {
+    "count" : 8,
+    "id" : "mcwbyg:fir_plank_four_window"
+  }
+}
+  ]
+}

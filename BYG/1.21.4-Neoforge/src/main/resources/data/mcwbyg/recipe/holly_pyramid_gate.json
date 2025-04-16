@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "pyramid",
+  "pattern" : [ "ABA", "ACA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "biomeswevegone:holly_log",
+    "C" : "biomeswevegone:holly_planks"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbyg:holly_pyramid_gate"
+  }
+}

@@ -1,0 +1,29 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "covered_desk",
+  "pattern" : [ "AAA", "A A" ],
+  "key" : {
+    "A" : "biomeswevegone:stripped_florus_stem"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwbyg:stripped_florus_covered_desk"
+  }
+}
+  ]
+}

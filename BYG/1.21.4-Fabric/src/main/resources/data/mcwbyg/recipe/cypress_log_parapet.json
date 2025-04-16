@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "parapets",
+  "pattern" : [ "AAA", "ABA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "biomeswevegone:cypress_log"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwbyg:cypress_log_parapet"
+  }
+}

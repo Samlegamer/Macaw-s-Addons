@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "wooden_piers",
+  "pattern" : [ "WFW" ],
+  "key" : {
+    "F" : "biomeswevegone:ironwood_fence",
+    "W" : "biomeswevegone:ironwood_log"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbyg:ironwood_bridge_pier"
+  }
+}

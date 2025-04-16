@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "cabinet",
+  "pattern" : [ "AA", "AC", "AA" ],
+  "key" : {
+    "A" : "biomeswevegone:stripped_white_mangrove_log",
+    "C" : "mcwfurnitures:cabinet_door"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:stripped_white_mangrove_kitchen_cabinet"
+  }
+}
+  ]
+}

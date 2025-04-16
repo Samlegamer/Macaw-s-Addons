@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwbridges"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "rail_bridges",
+  "pattern" : [ "F F", "FWF" ],
+  "key" : {
+    "F" : "biomeswevegone:rainbow_eucalyptus_fence",
+    "W" : "biomeswevegone:rainbow_eucalyptus_slab"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:rainbow_eucalyptus_rail_bridge"
+  }
+}
+  ]
+}

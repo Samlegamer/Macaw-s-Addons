@@ -1,0 +1,34 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwbridges"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "rope_bridges",
+  "pattern" : [ "F F", "WWW" ],
+  "key" : {
+    "F" : {
+      "item" : "minecraft:string"
+    },
+    "W" : {
+      "item" : "biomeswevegone:blue_enchanted_slab"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbyg:rope_blue_enchanted_bridge"
+  }
+}
+  ]
+}
