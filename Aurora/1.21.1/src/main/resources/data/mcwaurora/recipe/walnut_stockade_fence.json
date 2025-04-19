@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stockade",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "nomansland:walnut_log"
+    },
+    "B" : {
+      "item" : "nomansland:walnut_planks"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwaurora:walnut_stockade_fence"
+  }
+}

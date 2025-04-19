@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "loft_stairs",
+  "pattern" : [ "W  ", " W ", "  W" ],
+  "key" : {
+    "W" : {
+      "item" : "nomansland:stripped_pine_log"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwaurora:pine_loft_stairs"
+  }
+}

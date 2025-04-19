@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows_four",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwwindows:window_centre_bar_base"
+    },
+    "B" : {
+      "item" : "nomansland:maple_log"
+    }
+  },
+  "result" : {
+    "count" : 8,
+    "id" : "mcwaurora:maple_four_window"
+  }
+}

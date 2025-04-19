@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwaurora:mushroom_coffee_table"
+    },
+    "B" : {
+      "item" : "enhanced_mushrooms:mushroom_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwaurora:mushroom_table"
+  }
+}

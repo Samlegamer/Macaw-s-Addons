@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "barn_trapdoors",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "nomansland:maple_planks"
+    },
+    "B" : {
+      "item" : "mcwaurora:maple_glass_trapdoor"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwaurora:maple_barn_trapdoor"
+  }
+}

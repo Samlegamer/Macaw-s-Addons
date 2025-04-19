@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " ZZ", " WW", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "minecraft:mushroom_stem"
+    },
+    "Z" : {
+      "item" : "enhanced_mushrooms:mushroom_slab"
+    }
+  },
+  "result" : {
+    "count" : 12,
+    "id" : "mcwaurora:mushroom_platform"
+  }
+}

@@ -1,0 +1,101 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwaurora:maple_wardrobe",
+	  "mcwaurora:maple_modern_wardrobe",
+	  "mcwaurora:maple_double_wardrobe",
+	  "mcwaurora:maple_bookshelf_cupboard",
+	  "mcwaurora:maple_bookshelf",
+	  "mcwaurora:maple_drawer",
+	  "mcwaurora:maple_double_drawer",
+	  "mcwaurora:maple_bookshelf_drawer",
+	  "mcwaurora:maple_lower_bookshelf_drawer",
+	  "mcwaurora:maple_large_drawer",
+	  "mcwaurora:maple_lower_triple_drawer",
+	  "mcwaurora:maple_triple_drawer",
+	  "mcwaurora:maple_desk",
+	  "mcwaurora:maple_covered_desk",
+	  "mcwaurora:maple_modern_desk",
+	  "mcwaurora:maple_table",
+	  "mcwaurora:maple_end_table",
+	  "mcwaurora:maple_coffee_table",
+	  "mcwaurora:maple_glass_table",
+	  "mcwaurora:maple_chair",
+	  "mcwaurora:maple_modern_chair",
+	  "mcwaurora:maple_striped_chair",
+	  "mcwaurora:maple_stool_chair",
+	  "mcwaurora:maple_counter",
+	  "mcwaurora:maple_drawer_counter",
+	  "mcwaurora:maple_double_drawer_counter",
+	  "mcwaurora:maple_cupboard_counter",
+	  
+	  "mcwaurora:stripped_maple_wardrobe",
+	  "mcwaurora:stripped_maple_modern_wardrobe",
+	  "mcwaurora:stripped_maple_double_wardrobe",
+	  "mcwaurora:stripped_maple_bookshelf_cupboard",
+	  "mcwaurora:stripped_maple_bookshelf",
+	  "mcwaurora:stripped_maple_drawer",
+	  "mcwaurora:stripped_maple_double_drawer",
+	  "mcwaurora:stripped_maple_bookshelf_drawer",
+	  "mcwaurora:stripped_maple_lower_bookshelf_drawer",
+	  "mcwaurora:stripped_maple_large_drawer",
+	  "mcwaurora:stripped_maple_lower_triple_drawer",
+	  "mcwaurora:stripped_maple_triple_drawer",
+	  "mcwaurora:stripped_maple_desk",
+	  "mcwaurora:stripped_maple_covered_desk",
+	  "mcwaurora:stripped_maple_modern_desk",
+	  "mcwaurora:stripped_maple_table",
+	  "mcwaurora:stripped_maple_end_table",
+	  "mcwaurora:stripped_maple_coffee_table",
+	  "mcwaurora:stripped_maple_glass_table",
+	  "mcwaurora:stripped_maple_chair",
+	  "mcwaurora:stripped_maple_modern_chair",
+	  "mcwaurora:stripped_maple_striped_chair",
+	  "mcwaurora:stripped_maple_stool_chair",
+	  "mcwaurora:stripped_maple_counter",
+	  "mcwaurora:stripped_maple_drawer_counter",
+	  "mcwaurora:stripped_maple_double_drawer_counter",
+	  "mcwaurora:stripped_maple_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nomansland:maple_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwaurora:maple_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

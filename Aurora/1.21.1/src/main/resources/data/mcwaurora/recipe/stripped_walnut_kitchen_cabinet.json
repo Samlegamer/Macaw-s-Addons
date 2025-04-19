@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "cabinet",
+  "pattern" : [ "AA", "AC", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "nomansland:stripped_walnut_log"
+    },
+    "C" : {
+      "item" : "mcwfurnitures:cabinet_door"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwaurora:stripped_walnut_kitchen_cabinet"
+  }
+}

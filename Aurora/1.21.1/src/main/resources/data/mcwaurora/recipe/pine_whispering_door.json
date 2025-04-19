@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "whispering",
+  "pattern" : [ "A", "B", "A" ],
+  "key" : {
+    "A" : {
+      "item" : "nomansland:pine_planks"
+    },
+    "B" : {
+      "item" : "mcwdoors:print_whispering"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwaurora:pine_whispering_door"
+  }
+}

@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "log_bridges",
+  "pattern" : [ "F F", "WWW" ],
+  "key" : {
+    "F" : {
+      "item" : "enhanced_mushrooms:mushroom_fence"
+    },
+    "W" : {
+      "item" : "enhanced_mushrooms:mushroom_slab"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwaurora:mushroom_log_bridge_middle"
+  }
+}

@@ -1,0 +1,66 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwaurora:pine_bark_glass_door",
+	  "mcwaurora:pine_barn_door",
+	  "mcwaurora:pine_barn_glass_door",
+	  "mcwaurora:pine_beach_door",
+	  "mcwaurora:pine_classic_door",
+	  "mcwaurora:pine_cottage_door",
+	  "mcwaurora:pine_four_panel_door",
+	  "mcwaurora:pine_glass_door",
+	  "mcwaurora:pine_japanese_door",
+	  "mcwaurora:pine_japanese2_door",
+	  "mcwaurora:pine_modern_door",
+	  "mcwaurora:pine_mystic_door",
+	  "mcwaurora:pine_nether_door",
+	  "mcwaurora:pine_paper_door",
+	  "mcwaurora:pine_stable_door",
+	  "mcwaurora:pine_stable_head_door",
+	  "mcwaurora:pine_swamp_door",
+	  "mcwaurora:pine_western_door",
+	  "mcwaurora:pine_waffle_door",
+	  "mcwaurora:pine_tropical_door",
+	  "mcwaurora:pine_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nomansland:pine_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

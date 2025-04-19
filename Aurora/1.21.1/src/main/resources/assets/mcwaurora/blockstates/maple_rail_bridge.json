@@ -1,0 +1,15 @@
+{
+    "variants": {                                                                        
+        "facing=north,powered=false":  { "model": "mcwaurora:block/bridge/rail/maple", "y": 90},
+		"facing=east,powered=false":  { "model": "mcwaurora:block/bridge/rail/maple"},
+		"facing=south,powered=false":  { "model": "mcwaurora:block/bridge/rail/maple", "y": 90},
+		"facing=west,powered=false":  { "model": "mcwaurora:block/bridge/rail/maple"},
+
+		"facing=north,powered=true":  { "model": "mcwaurora:block/bridge/rail/maple_powered", "y": 90},
+		"facing=east,powered=true":  { "model": "mcwaurora:block/bridge/rail/maple_powered"},
+		"facing=south,powered=true":  { "model": "mcwaurora:block/bridge/rail/maple_powered", "y": 90},
+		"facing=west,powered=true":  { "model": "mcwaurora:block/bridge/rail/maple_powered"}			
+    }
+}
+
+

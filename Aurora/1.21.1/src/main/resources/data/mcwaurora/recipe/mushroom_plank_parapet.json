@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "parapets",
+  "pattern" : [ "AAA", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:stick"
+    },
+    "B" : {
+      "item" : "enhanced_mushrooms:mushroom_planks"
+    }
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwaurora:mushroom_plank_parapet"
+  }
+}

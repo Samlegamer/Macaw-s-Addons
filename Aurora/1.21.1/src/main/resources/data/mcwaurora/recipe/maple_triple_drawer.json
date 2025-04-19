@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "triple_drawer",
+  "pattern" : [ "AAA", "ABA", "BAB" ],
+  "key" : {
+    "A" : {
+      "item" : "nomansland:maple_log"
+    },
+    "B" : {
+      "item" : "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwaurora:maple_triple_drawer"
+  }
+}

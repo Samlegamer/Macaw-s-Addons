@@ -1,0 +1,67 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwaurora:maple_window",
+	 "mcwaurora:maple_window2",
+	 "mcwaurora:maple_four_window",
+	 "mcwaurora:stripped_maple_log_window",
+	 "mcwaurora:stripped_maple_log_window2",
+	 "mcwaurora:stripped_maple_log_four_window",
+	 "mcwaurora:maple_plank_window",
+	 "mcwaurora:maple_plank_window2",
+	 "mcwaurora:maple_plank_four_window",
+	 "mcwaurora:maple_pane_window",
+	 "mcwaurora:stripped_maple_pane_window",
+	 "mcwaurora:maple_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nomansland:maple_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+

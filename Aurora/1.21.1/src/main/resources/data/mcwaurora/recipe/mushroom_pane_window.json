@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows_pane",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwwindows:window_base"
+    },
+    "B" : {
+      "item" : "minecraft:mushroom_stem"
+    }
+  },
+  "result" : {
+    "count" : 8,
+    "id" : "mcwaurora:mushroom_pane_window"
+  }
+}

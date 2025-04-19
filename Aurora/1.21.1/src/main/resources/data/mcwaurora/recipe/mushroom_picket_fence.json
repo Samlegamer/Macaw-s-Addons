@@ -1,0 +1,30 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "picket",
+  "pattern" : [ "CBC", "CAC" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:stick"
+    },
+    "B" : {
+      "item" : "enhanced_mushrooms:mushroom_planks"
+    },
+    "C" : {
+      "item" : "minecraft:mushroom_stem"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwaurora:mushroom_picket_fence"
+  }
+}

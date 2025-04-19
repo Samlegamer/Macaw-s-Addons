@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "barn",
+  "pattern" : [ "BB", "AA", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "enhanced_mushrooms:mushroom_planks"
+    },
+    "B" : {
+      "item" : "minecraft:stick"
+    }
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwaurora:mushroom_barn_door"
+  }
+}

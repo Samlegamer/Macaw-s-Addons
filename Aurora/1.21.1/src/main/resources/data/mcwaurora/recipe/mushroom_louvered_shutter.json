@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shutters",
+  "pattern" : [ "B", "B", "B" ],
+  "key" : {
+    "B" : {
+      "item" : "enhanced_mushrooms:mushroom_slab"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwaurora:mushroom_louvered_shutter"
+  }
+}

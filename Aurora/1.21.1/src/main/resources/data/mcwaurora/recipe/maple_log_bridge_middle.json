@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "log_bridges",
+  "pattern" : [ "F F", "WWW" ],
+  "key" : {
+    "F" : {
+      "item" : "nomansland:maple_fence"
+    },
+    "W" : {
+      "item" : "nomansland:maple_slab"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwaurora:maple_log_bridge_middle"
+  }
+}

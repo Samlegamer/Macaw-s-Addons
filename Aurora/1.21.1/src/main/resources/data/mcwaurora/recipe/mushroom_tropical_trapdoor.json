@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "tropical_trapdoors",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "enhanced_mushrooms:mushroom_planks"
+    },
+    "B" : {
+      "item" : "mcwtrpdoors:print_tropical"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwaurora:mushroom_tropical_trapdoor"
+  }
+}

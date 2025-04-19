@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "glassed",
+  "pattern" : [ "AB", "BB", "AB" ],
+  "key" : {
+    "A" : {
+      "item" : "nomansland:pine_planks"
+    },
+    "B" : {
+      "item" : "minecraft:glass_pane"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwaurora:pine_glass_door"
+  }
+}

@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "tropical_trapdoors",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "nomansland:maple_planks"
+    },
+    "B" : {
+      "item" : "mcwtrpdoors:print_tropical"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwaurora:maple_tropical_trapdoor"
+  }
+}

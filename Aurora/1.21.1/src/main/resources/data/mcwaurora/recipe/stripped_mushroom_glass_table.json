@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "glass_table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwaurora:stripped_mushroom_end_table"
+    },
+    "B" : {
+      "item" : "minecraft:glass"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwaurora:stripped_mushroom_glass_table"
+  }
+}

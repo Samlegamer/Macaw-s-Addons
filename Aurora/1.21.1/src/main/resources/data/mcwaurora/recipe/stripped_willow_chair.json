@@ -1,0 +1,30 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "chair",
+  "pattern" : [ " A", "BA", "CC" ],
+  "key" : {
+    "A" : {
+      "item" : "nomansland:stripped_willow_log"
+    },
+    "B" : {
+      "item" : "nomansland:willow_slab"
+    },
+    "C" : {
+      "item" : "nomansland:willow_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwaurora:stripped_willow_chair"
+  }
+}

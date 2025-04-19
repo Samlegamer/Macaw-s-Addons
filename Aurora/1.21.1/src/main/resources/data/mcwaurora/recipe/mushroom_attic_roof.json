@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "attic",
+  "pattern" : [ " W", "WG" ],
+  "key" : {
+    "W" : {
+      "item" : "minecraft:mushroom_stem"
+    },
+    "G" : {
+      "item" : "minecraft:glass"
+    }
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwaurora:mushroom_attic_roof"
+  }
+}

@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "ranch_trapdoors",
+  "pattern" : [ "ABA", "BBB", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "nomansland:walnut_log"
+    },
+    "B" : {
+      "item" : "minecraft:stick"
+    }
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwaurora:walnut_ranch_trapdoor"
+  }
+}

@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shoji",
+  "pattern" : [ "BB", "BB", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "nomansland:willow_planks"
+    },
+    "B" : {
+      "item" : "minecraft:paper"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwaurora:willow_japanese_door"
+  }
+}
