@@ -1,0 +1,66 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwabnormals:rosewood_bark_glass_door",
+	  "mcwabnormals:rosewood_barn_door",
+	  "mcwabnormals:rosewood_barn_glass_door",
+	  "mcwabnormals:rosewood_beach_door",
+	  "mcwabnormals:rosewood_classic_door",
+	  "mcwabnormals:rosewood_cottage_door",
+	  "mcwabnormals:rosewood_four_panel_door",
+	  "mcwabnormals:rosewood_glass_door",
+	  "mcwabnormals:rosewood_japanese_door",
+	  "mcwabnormals:rosewood_japanese2_door",
+	  "mcwabnormals:rosewood_modern_door",
+	  "mcwabnormals:rosewood_mystic_door",
+	  "mcwabnormals:rosewood_nether_door",
+	  "mcwabnormals:rosewood_paper_door",
+	  "mcwabnormals:rosewood_stable_door",
+	  "mcwabnormals:rosewood_stable_head_door",
+	  "mcwabnormals:rosewood_swamp_door",
+	  "mcwabnormals:rosewood_western_door",
+	  "mcwabnormals:rosewood_waffle_door",
+	  "mcwabnormals:rosewood_tropical_door",
+	  "mcwabnormals:rosewood_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "atmospheric:rosewood_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

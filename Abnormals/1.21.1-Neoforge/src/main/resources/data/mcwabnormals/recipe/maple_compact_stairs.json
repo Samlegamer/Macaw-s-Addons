@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "compact_stairs",
+  "pattern" : [ "W  ", "WW ", "WWW" ],
+  "key" : {
+    "W" : {
+      "item" : "autumnity:stripped_maple_log"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwabnormals:maple_compact_stairs"
+  }
+}

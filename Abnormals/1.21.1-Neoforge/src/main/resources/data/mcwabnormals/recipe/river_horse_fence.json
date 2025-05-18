@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "horse",
+  "pattern" : [ "ABA", "BAB" ],
+  "key" : {
+    "B" : {
+      "item" : "minecraft:stick"
+    },
+    "A" : {
+      "item" : "upgrade_aquatic:river_log"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwabnormals:river_horse_fence"
+  }
+}

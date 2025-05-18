@@ -1,0 +1,43 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "buzzier_bees"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:honeycomb_tile_roof",
+	  "mcwabnormals:honeycomb_tile_attic_roof",
+	  "mcwabnormals:honeycomb_tile_top_roof",
+	  "mcwabnormals:honeycomb_tile_lower_roof",
+	  "mcwabnormals:honeycomb_tile_steep_roof",
+	  "mcwabnormals:honeycomb_tile_upper_lower_roof",
+	  "mcwabnormals:honeycomb_tile_upper_steep_roof"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "buzzier_bees:honeycomb_tiles"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:baobab_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:baobab_planks_path",
+    "count": 3
+  }
+}

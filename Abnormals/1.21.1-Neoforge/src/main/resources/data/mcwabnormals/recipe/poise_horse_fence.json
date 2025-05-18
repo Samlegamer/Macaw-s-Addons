@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "horse",
+  "pattern" : [ "ABA", "BAB" ],
+  "key" : {
+    "B" : {
+      "item" : "minecraft:stick"
+    },
+    "A" : {
+      "item" : "endergetic:poise_stem"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwabnormals:poise_horse_fence"
+  }
+}

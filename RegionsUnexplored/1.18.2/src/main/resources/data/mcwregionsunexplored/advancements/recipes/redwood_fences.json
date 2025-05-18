@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwregionsunexplored:redwood_picket_fence",
+	  "mcwregionsunexplored:redwood_stockade_fence",
+	  "mcwregionsunexplored:redwood_horse_fence",
+	  "mcwregionsunexplored:redwood_wired_fence",
+	  "mcwregionsunexplored:redwood_highley_gate",
+	  "mcwregionsunexplored:redwood_pyramid_gate",
+	  "mcwregionsunexplored:redwood_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "regions_unexplored:redwood_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

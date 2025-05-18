@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "counter",
+    "pattern":
+    [
+        "A",
+        "B"	
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "regions_unexplored:baobab_slab"
+        }, 
+		
+        "B":
+        {
+            "item": "regions_unexplored:baobab_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:baobab_counter",
+        "count": 1
+    }
+}
+
+

@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "end_table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwabnormals:stripped_azalea_table"
+    },
+    "B" : {
+      "item" : "caverns_and_chasms:stripped_azalea_log"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:stripped_azalea_end_table"
+  }
+}

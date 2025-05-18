@@ -1,0 +1,21 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "type" : "minecraft:crafting_shapeless",
+  "group" : "recyclable_bridges",
+  "ingredients" : [ {
+    "item" : "mcwabnormals:azalea_rope_bridge_stair"
+  } ],
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:rope_azalea_bridge"
+  }
+}

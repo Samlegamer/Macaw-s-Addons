@@ -1,0 +1,61 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwregionsunexplored:sculkwood_window",
+	 "mcwregionsunexplored:sculkwood_window2",
+	 "mcwregionsunexplored:sculkwood_four_window",
+	 "mcwregionsunexplored:stripped_sculkwood_log_window",
+	 "mcwregionsunexplored:stripped_sculkwood_log_window2",
+	 "mcwregionsunexplored:stripped_sculkwood_log_four_window",
+	 "mcwregionsunexplored:sculkwood_plank_window",
+	 "mcwregionsunexplored:sculkwood_plank_window2",
+	 "mcwregionsunexplored:sculkwood_plank_four_window",
+	 "mcwregionsunexplored:sculkwood_pane_window",
+	 "mcwregionsunexplored:stripped_sculkwood_pane_window",
+	 "mcwregionsunexplored:sculkwood_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:sculkwood_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+

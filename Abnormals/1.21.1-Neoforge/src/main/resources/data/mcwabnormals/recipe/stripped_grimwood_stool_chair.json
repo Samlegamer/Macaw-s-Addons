@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stool_chair",
+  "pattern" : [ "A", "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "atmospheric:stripped_grimwood_log"
+    },
+    "B" : {
+      "item" : "atmospheric:grimwood_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:stripped_grimwood_stool_chair"
+  }
+}

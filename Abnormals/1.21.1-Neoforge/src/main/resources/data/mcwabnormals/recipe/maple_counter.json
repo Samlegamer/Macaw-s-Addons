@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "autumnity:maple_slab"
+    },
+    "B" : {
+      "item" : "autumnity:maple_log"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:maple_counter"
+  }
+}

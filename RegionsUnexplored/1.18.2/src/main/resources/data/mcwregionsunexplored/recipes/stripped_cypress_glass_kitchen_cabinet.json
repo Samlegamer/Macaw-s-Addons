@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "glass_cabinet",
+    "pattern":
+    [
+        "AA",
+        "BC",
+        "AA"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "regions_unexplored:stripped_cypress_log"
+        }, 
+		
+        "B":
+        {
+            "item": "minecraft:glass"
+        },
+		
+        "C":
+        {
+            "item": "mcwfurnitures:cabinet_door"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:stripped_cypress_glass_kitchen_cabinet",
+        "count": 4
+    }
+}
+
+

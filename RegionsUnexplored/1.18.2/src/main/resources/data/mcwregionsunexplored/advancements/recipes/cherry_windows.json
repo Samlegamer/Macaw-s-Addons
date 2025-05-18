@@ -1,0 +1,61 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwregionsunexplored:cherry_window",
+	 "mcwregionsunexplored:cherry_window2",
+	 "mcwregionsunexplored:cherry_four_window",
+	 "mcwregionsunexplored:stripped_cherry_log_window",
+	 "mcwregionsunexplored:stripped_cherry_log_window2",
+	 "mcwregionsunexplored:stripped_cherry_log_four_window",
+	 "mcwregionsunexplored:cherry_plank_window",
+	 "mcwregionsunexplored:cherry_plank_window2",
+	 "mcwregionsunexplored:cherry_plank_four_window",
+	 "mcwregionsunexplored:cherry_pane_window",
+	 "mcwregionsunexplored:stripped_cherry_pane_window",
+	 "mcwregionsunexplored:cherry_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:cherry_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+

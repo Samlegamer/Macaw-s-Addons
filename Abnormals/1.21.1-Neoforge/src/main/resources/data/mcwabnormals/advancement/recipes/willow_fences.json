@@ -1,0 +1,41 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:willow_picket_fence",
+	  "mcwabnormals:willow_stockade_fence",
+	  "mcwabnormals:willow_horse_fence",
+	  "mcwabnormals:willow_wired_fence",
+	  "mcwabnormals:willow_highley_gate",
+	  "mcwabnormals:willow_pyramid_gate",
+	  "mcwabnormals:willow_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "environmental:willow_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

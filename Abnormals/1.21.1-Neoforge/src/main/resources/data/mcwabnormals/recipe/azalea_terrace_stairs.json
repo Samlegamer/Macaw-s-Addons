@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : {
+      "item" : "caverns_and_chasms:stripped_azalea_log"
+    },
+    "Z" : {
+      "item" : "caverns_and_chasms:azalea_log"
+    }
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwabnormals:azalea_terrace_stairs"
+  }
+}

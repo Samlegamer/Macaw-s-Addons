@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "curved_gate",
+    
+    "pattern":
+    [
+		"B A",
+		"BAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "regions_unexplored:dead_planks"
+        },    
+        
+        "B":
+        {
+            "item": "regions_unexplored:dead_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:dead_curved_gate",
+        "count": 4
+    }
+}
+
+

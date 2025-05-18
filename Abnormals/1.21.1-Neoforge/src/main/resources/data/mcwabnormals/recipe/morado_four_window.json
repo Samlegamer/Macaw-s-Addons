@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows_four",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwwindows:window_centre_bar_base"
+    },
+    "B" : {
+      "item" : "atmospheric:morado_log"
+    }
+  },
+  "result" : {
+    "count" : 8,
+    "id" : "mcwabnormals:morado_four_window"
+  }
+}

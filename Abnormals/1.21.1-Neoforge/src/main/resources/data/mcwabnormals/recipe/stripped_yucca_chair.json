@@ -1,0 +1,30 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "chair",
+  "pattern" : [ " A", "BA", "CC" ],
+  "key" : {
+    "A" : {
+      "item" : "atmospheric:stripped_yucca_log"
+    },
+    "B" : {
+      "item" : "atmospheric:yucca_slab"
+    },
+    "C" : {
+      "item" : "atmospheric:yucca_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:stripped_yucca_chair"
+  }
+}

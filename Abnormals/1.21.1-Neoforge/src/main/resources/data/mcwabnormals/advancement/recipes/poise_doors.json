@@ -1,0 +1,66 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwabnormals:poise_bark_glass_door",
+	  "mcwabnormals:poise_barn_door",
+	  "mcwabnormals:poise_barn_glass_door",
+	  "mcwabnormals:poise_beach_door",
+	  "mcwabnormals:poise_classic_door",
+	  "mcwabnormals:poise_cottage_door",
+	  "mcwabnormals:poise_four_panel_door",
+	  "mcwabnormals:poise_glass_door",
+	  "mcwabnormals:poise_japanese_door",
+	  "mcwabnormals:poise_japanese2_door",
+	  "mcwabnormals:poise_modern_door",
+	  "mcwabnormals:poise_mystic_door",
+	  "mcwabnormals:poise_nether_door",
+	  "mcwabnormals:poise_paper_door",
+	  "mcwabnormals:poise_stable_door",
+	  "mcwabnormals:poise_stable_head_door",
+	  "mcwabnormals:poise_swamp_door",
+	  "mcwabnormals:poise_western_door",
+	  "mcwabnormals:poise_waffle_door",
+	  "mcwabnormals:poise_tropical_door",
+	  "mcwabnormals:poise_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endergetic:poise_stem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

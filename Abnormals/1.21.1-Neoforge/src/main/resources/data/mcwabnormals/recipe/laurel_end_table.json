@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "end_table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwabnormals:laurel_table"
+    },
+    "B" : {
+      "item" : "atmospheric:laurel_log"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:laurel_end_table"
+  }
+}

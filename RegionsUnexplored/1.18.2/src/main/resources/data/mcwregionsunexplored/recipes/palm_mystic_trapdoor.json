@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "mystic_trapdoors",
+    
+    "pattern":
+    [
+        "A",
+        "B",
+        "A"                
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "regions_unexplored:palm_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwtrpdoors:print_mystic"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:palm_mystic_trapdoor",
+        "count": 1
+    }
+}
+
+

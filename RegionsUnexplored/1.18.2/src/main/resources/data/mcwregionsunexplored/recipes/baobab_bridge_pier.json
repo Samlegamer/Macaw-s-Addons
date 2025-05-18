@@ -1,0 +1,37 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "wooden_piers",
+    
+    "pattern": [
+    "WFW"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "regions_unexplored:baobab_fence"
+        },
+        
+        "W":
+        {
+            "item": "regions_unexplored:baobab_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:baobab_bridge_pier",
+        "count": 3
+    }
+}

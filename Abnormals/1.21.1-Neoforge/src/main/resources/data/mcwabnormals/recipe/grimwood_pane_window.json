@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows_pane",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwwindows:window_base"
+    },
+    "B" : {
+      "item" : "atmospheric:grimwood_log"
+    }
+  },
+  "result" : {
+    "count" : 8,
+    "id" : "mcwabnormals:grimwood_pane_window"
+  }
+}

@@ -1,0 +1,44 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:maple_bulk_stairs",
+	  "mcwabnormals:maple_compact_stairs",
+	  "mcwabnormals:maple_loft_stairs",
+	  "mcwabnormals:maple_skyline_stairs",
+	  "mcwabnormals:maple_terrace_stairs",
+	  "mcwabnormals:maple_railing",
+	  "mcwabnormals:maple_balcony",
+	  "mcwabnormals:maple_platform"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "autumnity:maple_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

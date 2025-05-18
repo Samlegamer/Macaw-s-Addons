@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwregionsunexplored:maple_picket_fence",
+	  "mcwregionsunexplored:maple_stockade_fence",
+	  "mcwregionsunexplored:maple_horse_fence",
+	  "mcwregionsunexplored:maple_wired_fence",
+	  "mcwregionsunexplored:maple_highley_gate",
+	  "mcwregionsunexplored:maple_pyramid_gate",
+	  "mcwregionsunexplored:maple_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "regions_unexplored:maple_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

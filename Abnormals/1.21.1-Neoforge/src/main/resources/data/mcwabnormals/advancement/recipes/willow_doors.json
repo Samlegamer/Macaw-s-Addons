@@ -1,0 +1,66 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwabnormals:willow_bark_glass_door",
+	  "mcwabnormals:willow_barn_door",
+	  "mcwabnormals:willow_barn_glass_door",
+	  "mcwabnormals:willow_beach_door",
+	  "mcwabnormals:willow_classic_door",
+	  "mcwabnormals:willow_cottage_door",
+	  "mcwabnormals:willow_four_panel_door",
+	  "mcwabnormals:willow_glass_door",
+	  "mcwabnormals:willow_japanese_door",
+	  "mcwabnormals:willow_japanese2_door",
+	  "mcwabnormals:willow_modern_door",
+	  "mcwabnormals:willow_mystic_door",
+	  "mcwabnormals:willow_nether_door",
+	  "mcwabnormals:willow_paper_door",
+	  "mcwabnormals:willow_stable_door",
+	  "mcwabnormals:willow_stable_head_door",
+	  "mcwabnormals:willow_swamp_door",
+	  "mcwabnormals:willow_western_door",
+	  "mcwabnormals:willow_waffle_door",
+	  "mcwabnormals:willow_tropical_door",
+	  "mcwabnormals:willow_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "environmental:willow_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

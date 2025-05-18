@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "steep",
+  "pattern" : [ " W", "WW", "WS" ],
+  "key" : {
+    "W" : {
+      "item" : "environmental:plum_planks"
+    },
+    "S" : {
+      "item" : "minecraft:stick"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwabnormals:plum_planks_steep_roof"
+  }
+}

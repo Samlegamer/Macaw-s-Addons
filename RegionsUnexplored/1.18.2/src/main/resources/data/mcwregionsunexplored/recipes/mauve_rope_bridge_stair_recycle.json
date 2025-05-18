@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shapeless",
+	"group": "recyclable_bridges",
+		
+    "ingredients": [
+        {
+            "item": "mcwregionsunexplored:mauve_rope_bridge_stair"
+        }
+    ],
+    "result": {
+        "item": "mcwregionsunexplored:rope_mauve_bridge",
+        "count": 1
+    }
+}

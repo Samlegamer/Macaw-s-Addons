@@ -13,7 +13,6 @@ import java.util.Arrays;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.bridges.Bridges;
@@ -65,10 +64,10 @@ public class McwBOP
     	LOGGER.info("Macaw's Biomes O' Plenty Loading...");
     	Registration.init(block, item);
     	Bridges.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Furnitures.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Roofs.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Fences.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Fences.setRegistrationHedges(LEAVES, block, item, MCWBOP_TAB);
+		Furnitures.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Trapdoors.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Paths.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Doors.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);

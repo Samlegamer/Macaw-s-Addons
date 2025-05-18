@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "railing_gate",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:iron_bars"
+    },
+    "B" : {
+      "item" : "atmospheric:red_arid_sandstone"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:red_arid_sandstone_railing_gate"
+  }
+}

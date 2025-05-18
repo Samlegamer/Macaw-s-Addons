@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "log_bridges",
+  "pattern" : [ "F F", "WWW" ],
+  "key" : {
+    "F" : {
+      "item" : "environmental:pine_fence"
+    },
+    "W" : {
+      "item" : "environmental:pine_slab"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwabnormals:pine_log_bridge_middle"
+  }
+}

@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "pillarwall",
+  "pattern" : [ "AAA", "B B" ],
+  "key" : {
+    "A" : {
+      "item" : "autumnity:snail_shell_block"
+    },
+    "B" : {
+      "item" : "autumnity:snail_shell_bricks"
+    }
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwabnormals:snail_shell_bricks_pillar_wall"
+  }
+}

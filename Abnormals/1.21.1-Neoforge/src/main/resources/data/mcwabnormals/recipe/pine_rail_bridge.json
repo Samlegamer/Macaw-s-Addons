@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "rail_bridges",
+  "pattern" : [ "F F", "FWF" ],
+  "key" : {
+    "F" : {
+      "item" : "environmental:pine_fence"
+    },
+    "W" : {
+      "item" : "environmental:pine_slab"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwabnormals:pine_rail_bridge"
+  }
+}

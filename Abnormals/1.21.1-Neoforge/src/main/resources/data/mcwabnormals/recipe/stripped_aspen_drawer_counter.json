@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "drawer_counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "atmospheric:aspen_slab"
+    },
+    "B" : {
+      "item" : "mcwabnormals:stripped_aspen_drawer"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:stripped_aspen_drawer_counter"
+  }
+}

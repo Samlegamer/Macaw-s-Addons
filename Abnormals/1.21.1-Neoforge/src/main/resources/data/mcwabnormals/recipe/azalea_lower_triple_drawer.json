@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "lower_triple_drawer",
+  "pattern" : [ "AAA", "BAB", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "caverns_and_chasms:azalea_log"
+    },
+    "B" : {
+      "item" : "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwabnormals:azalea_lower_triple_drawer"
+  }
+}

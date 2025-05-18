@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " ZZ", " WW", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "atmospheric:yucca_log"
+    },
+    "Z" : {
+      "item" : "atmospheric:yucca_slab"
+    }
+  },
+  "result" : {
+    "count" : 12,
+    "id" : "mcwabnormals:yucca_platform"
+  }
+}

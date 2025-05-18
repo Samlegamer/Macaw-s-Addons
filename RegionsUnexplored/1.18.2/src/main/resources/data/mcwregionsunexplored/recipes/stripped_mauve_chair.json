@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "regions_unexplored:stripped_mauve_log"
+        }, 
+		
+        "B":
+        {
+            "item": "regions_unexplored:mauve_slab"
+        },
+		
+		"C":
+        {
+            "item": "regions_unexplored:mauve_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:stripped_mauve_chair",
+        "count": 1
+    }
+}
+
+

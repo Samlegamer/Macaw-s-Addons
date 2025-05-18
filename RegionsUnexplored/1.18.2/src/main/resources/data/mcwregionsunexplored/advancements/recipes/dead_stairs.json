@@ -1,0 +1,44 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwregionsunexplored:dead_bulk_stairs",
+	  "mcwregionsunexplored:dead_compact_stairs",
+	  "mcwregionsunexplored:dead_loft_stairs",
+	  "mcwregionsunexplored:dead_skyline_stairs",
+	  "mcwregionsunexplored:dead_terrace_stairs",
+	  "mcwregionsunexplored:dead_railing",
+	  "mcwregionsunexplored:dead_balcony",
+	  "mcwregionsunexplored:dead_platform"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:dead_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

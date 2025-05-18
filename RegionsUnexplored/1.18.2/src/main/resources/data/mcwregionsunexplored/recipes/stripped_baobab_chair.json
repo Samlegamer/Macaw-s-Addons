@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "chair",
+    "pattern":
+    [
+        " A",
+        "BA",
+        "CC"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "regions_unexplored:stripped_baobab_log"
+        }, 
+		
+        "B":
+        {
+            "item": "regions_unexplored:baobab_slab"
+        },
+		
+		"C":
+        {
+            "item": "regions_unexplored:baobab_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:stripped_baobab_chair",
+        "count": 1
+    }
+}
+
+

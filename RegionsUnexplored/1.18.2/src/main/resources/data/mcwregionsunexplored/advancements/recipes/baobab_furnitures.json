@@ -1,0 +1,101 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwregionsunexplored:baobab_wardrobe",
+	  "mcwregionsunexplored:baobab_modern_wardrobe",
+	  "mcwregionsunexplored:baobab_double_wardrobe",
+	  "mcwregionsunexplored:baobab_bookshelf_cupboard",
+	  "mcwregionsunexplored:baobab_bookshelf",
+	  "mcwregionsunexplored:baobab_drawer",
+	  "mcwregionsunexplored:baobab_double_drawer",
+	  "mcwregionsunexplored:baobab_bookshelf_drawer",
+	  "mcwregionsunexplored:baobab_lower_bookshelf_drawer",
+	  "mcwregionsunexplored:baobab_large_drawer",
+	  "mcwregionsunexplored:baobab_lower_triple_drawer",
+	  "mcwregionsunexplored:baobab_triple_drawer",
+	  "mcwregionsunexplored:baobab_desk",
+	  "mcwregionsunexplored:baobab_covered_desk",
+	  "mcwregionsunexplored:baobab_modern_desk",
+	  "mcwregionsunexplored:baobab_table",
+	  "mcwregionsunexplored:baobab_end_table",
+	  "mcwregionsunexplored:baobab_coffee_table",
+	  "mcwregionsunexplored:baobab_glass_table",
+	  "mcwregionsunexplored:baobab_chair",
+	  "mcwregionsunexplored:baobab_modern_chair",
+	  "mcwregionsunexplored:baobab_striped_chair",
+	  "mcwregionsunexplored:baobab_stool_chair",
+	  "mcwregionsunexplored:baobab_counter",
+	  "mcwregionsunexplored:baobab_drawer_counter",
+	  "mcwregionsunexplored:baobab_double_drawer_counter",
+	  "mcwregionsunexplored:baobab_cupboard_counter",
+	  
+	  "mcwregionsunexplored:stripped_baobab_wardrobe",
+	  "mcwregionsunexplored:stripped_baobab_modern_wardrobe",
+	  "mcwregionsunexplored:stripped_baobab_double_wardrobe",
+	  "mcwregionsunexplored:stripped_baobab_bookshelf_cupboard",
+	  "mcwregionsunexplored:stripped_baobab_bookshelf",
+	  "mcwregionsunexplored:stripped_baobab_drawer",
+	  "mcwregionsunexplored:stripped_baobab_double_drawer",
+	  "mcwregionsunexplored:stripped_baobab_bookshelf_drawer",
+	  "mcwregionsunexplored:stripped_baobab_lower_bookshelf_drawer",
+	  "mcwregionsunexplored:stripped_baobab_large_drawer",
+	  "mcwregionsunexplored:stripped_baobab_lower_triple_drawer",
+	  "mcwregionsunexplored:stripped_baobab_triple_drawer",
+	  "mcwregionsunexplored:stripped_baobab_desk",
+	  "mcwregionsunexplored:stripped_baobab_covered_desk",
+	  "mcwregionsunexplored:stripped_baobab_modern_desk",
+	  "mcwregionsunexplored:stripped_baobab_table",
+	  "mcwregionsunexplored:stripped_baobab_end_table",
+	  "mcwregionsunexplored:stripped_baobab_coffee_table",
+	  "mcwregionsunexplored:stripped_baobab_glass_table",
+	  "mcwregionsunexplored:stripped_baobab_chair",
+	  "mcwregionsunexplored:stripped_baobab_modern_chair",
+	  "mcwregionsunexplored:stripped_baobab_striped_chair",
+	  "mcwregionsunexplored:stripped_baobab_stool_chair",
+	  "mcwregionsunexplored:stripped_baobab_counter",
+	  "mcwregionsunexplored:stripped_baobab_drawer_counter",
+	  "mcwregionsunexplored:stripped_baobab_double_drawer_counter",
+	  "mcwregionsunexplored:stripped_baobab_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:baobab_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwregionsunexplored:baobab_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

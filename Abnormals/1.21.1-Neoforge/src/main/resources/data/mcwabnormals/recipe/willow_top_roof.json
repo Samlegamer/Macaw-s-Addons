@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "top",
+  "pattern" : [ "WSW" ],
+  "key" : {
+    "W" : {
+      "item" : "environmental:willow_log"
+    },
+    "S" : {
+      "item" : "minecraft:stick"
+    }
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwabnormals:willow_top_roof"
+  }
+}

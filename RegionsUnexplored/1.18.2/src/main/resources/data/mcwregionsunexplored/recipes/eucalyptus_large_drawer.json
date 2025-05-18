@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "large_drawer",
+    "pattern":
+    [
+        "ABA",
+        "AAA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "regions_unexplored:eucalyptus_log"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwfurnitures:cabinet_drawer"
+        }
+		
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:eucalyptus_large_drawer",
+        "count": 4
+    }
+}
+
+

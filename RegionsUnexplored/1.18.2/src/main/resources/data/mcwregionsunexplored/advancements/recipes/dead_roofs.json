@@ -1,0 +1,43 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwregionsunexplored:dead_roof",
+	  "mcwregionsunexplored:dead_attic_roof",
+	  "mcwregionsunexplored:dead_top_roof",
+	  "mcwregionsunexplored:dead_lower_roof",
+	  "mcwregionsunexplored:dead_steep_roof",
+	  "mcwregionsunexplored:dead_upper_lower_roof",
+	  "mcwregionsunexplored:dead_upper_steep_roof"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:dead_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

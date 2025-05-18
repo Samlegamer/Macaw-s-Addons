@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "lower_triple_drawer",
+  "pattern" : [ "AAA", "BAB", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "endergetic:poise_stem"
+    },
+    "B" : {
+      "item" : "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwabnormals:poise_lower_triple_drawer"
+  }
+}

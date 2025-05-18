@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "attic",
+  "pattern" : [ " W", "WG" ],
+  "key" : {
+    "W" : {
+      "item" : "environmental:wisteria_log"
+    },
+    "G" : {
+      "item" : "minecraft:glass"
+    }
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwabnormals:wisteria_attic_roof"
+  }
+}

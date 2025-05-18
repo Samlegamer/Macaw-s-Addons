@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "pyramid",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "regions_unexplored:cypress_log"
+        },
+		
+		"C":
+        {
+            "item": "regions_unexplored:cypress_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:cypress_pyramid_gate",
+        "count": 1
+    }
+}
+
+

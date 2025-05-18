@@ -1,0 +1,44 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwregionsunexplored:mauve_bulk_stairs",
+	  "mcwregionsunexplored:mauve_compact_stairs",
+	  "mcwregionsunexplored:mauve_loft_stairs",
+	  "mcwregionsunexplored:mauve_skyline_stairs",
+	  "mcwregionsunexplored:mauve_terrace_stairs",
+	  "mcwregionsunexplored:mauve_railing",
+	  "mcwregionsunexplored:mauve_balcony",
+	  "mcwregionsunexplored:mauve_platform"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:mauve_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

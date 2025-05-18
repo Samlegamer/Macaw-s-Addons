@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "buzzier_bees"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "railing_wall",
+  "pattern" : [ "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "buzzier_bees:honeycomb_bricks"
+    },
+    "B" : {
+      "item" : "minecraft:iron_bars"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwabnormals:railing_honeycomb_tile_wall"
+  }
+}

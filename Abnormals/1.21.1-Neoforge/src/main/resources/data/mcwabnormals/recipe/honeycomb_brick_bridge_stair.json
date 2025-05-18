@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "buzzier_bees"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stone_stairs",
+  "pattern" : [ "  F", " FF", "FFF" ],
+  "key" : {
+    "F" : {
+      "item" : "mcwabnormals:honeycomb_brick_bridge"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwabnormals:honeycomb_brick_bridge_stair"
+  }
+}

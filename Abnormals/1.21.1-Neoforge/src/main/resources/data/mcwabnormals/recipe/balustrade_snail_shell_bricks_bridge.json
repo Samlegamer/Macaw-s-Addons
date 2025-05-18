@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "balustrade_bridges",
+  "pattern" : [ "FFF", "WWW" ],
+  "key" : {
+    "F" : {
+      "item" : "autumnity:snail_shell_brick_wall"
+    },
+    "W" : {
+      "item" : "autumnity:snail_shell_brick_slab"
+    }
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwabnormals:balustrade_snail_shell_bricks_bridge"
+  }
+}

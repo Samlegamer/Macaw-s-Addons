@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "striped_chair",
+    "pattern":
+    [
+        " A",
+        "BC",
+		"CC"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "regions_unexplored:stripped_eucalyptus_log"
+        }, 
+		
+        "B":
+        {
+            "item": "regions_unexplored:eucalyptus_slab"
+        },
+		
+		"C":
+        {
+            "item": "regions_unexplored:eucalyptus_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:stripped_eucalyptus_striped_chair",
+        "count": 1
+    }
+}
+
+

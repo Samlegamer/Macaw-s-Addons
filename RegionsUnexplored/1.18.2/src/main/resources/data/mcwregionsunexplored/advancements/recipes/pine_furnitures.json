@@ -1,0 +1,101 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwregionsunexplored:pine_wardrobe",
+	  "mcwregionsunexplored:pine_modern_wardrobe",
+	  "mcwregionsunexplored:pine_double_wardrobe",
+	  "mcwregionsunexplored:pine_bookshelf_cupboard",
+	  "mcwregionsunexplored:pine_bookshelf",
+	  "mcwregionsunexplored:pine_drawer",
+	  "mcwregionsunexplored:pine_double_drawer",
+	  "mcwregionsunexplored:pine_bookshelf_drawer",
+	  "mcwregionsunexplored:pine_lower_bookshelf_drawer",
+	  "mcwregionsunexplored:pine_large_drawer",
+	  "mcwregionsunexplored:pine_lower_triple_drawer",
+	  "mcwregionsunexplored:pine_triple_drawer",
+	  "mcwregionsunexplored:pine_desk",
+	  "mcwregionsunexplored:pine_covered_desk",
+	  "mcwregionsunexplored:pine_modern_desk",
+	  "mcwregionsunexplored:pine_table",
+	  "mcwregionsunexplored:pine_end_table",
+	  "mcwregionsunexplored:pine_coffee_table",
+	  "mcwregionsunexplored:pine_glass_table",
+	  "mcwregionsunexplored:pine_chair",
+	  "mcwregionsunexplored:pine_modern_chair",
+	  "mcwregionsunexplored:pine_striped_chair",
+	  "mcwregionsunexplored:pine_stool_chair",
+	  "mcwregionsunexplored:pine_counter",
+	  "mcwregionsunexplored:pine_drawer_counter",
+	  "mcwregionsunexplored:pine_double_drawer_counter",
+	  "mcwregionsunexplored:pine_cupboard_counter",
+	  
+	  "mcwregionsunexplored:stripped_pine_wardrobe",
+	  "mcwregionsunexplored:stripped_pine_modern_wardrobe",
+	  "mcwregionsunexplored:stripped_pine_double_wardrobe",
+	  "mcwregionsunexplored:stripped_pine_bookshelf_cupboard",
+	  "mcwregionsunexplored:stripped_pine_bookshelf",
+	  "mcwregionsunexplored:stripped_pine_drawer",
+	  "mcwregionsunexplored:stripped_pine_double_drawer",
+	  "mcwregionsunexplored:stripped_pine_bookshelf_drawer",
+	  "mcwregionsunexplored:stripped_pine_lower_bookshelf_drawer",
+	  "mcwregionsunexplored:stripped_pine_large_drawer",
+	  "mcwregionsunexplored:stripped_pine_lower_triple_drawer",
+	  "mcwregionsunexplored:stripped_pine_triple_drawer",
+	  "mcwregionsunexplored:stripped_pine_desk",
+	  "mcwregionsunexplored:stripped_pine_covered_desk",
+	  "mcwregionsunexplored:stripped_pine_modern_desk",
+	  "mcwregionsunexplored:stripped_pine_table",
+	  "mcwregionsunexplored:stripped_pine_end_table",
+	  "mcwregionsunexplored:stripped_pine_coffee_table",
+	  "mcwregionsunexplored:stripped_pine_glass_table",
+	  "mcwregionsunexplored:stripped_pine_chair",
+	  "mcwregionsunexplored:stripped_pine_modern_chair",
+	  "mcwregionsunexplored:stripped_pine_striped_chair",
+	  "mcwregionsunexplored:stripped_pine_stool_chair",
+	  "mcwregionsunexplored:stripped_pine_counter",
+	  "mcwregionsunexplored:stripped_pine_drawer_counter",
+	  "mcwregionsunexplored:stripped_pine_double_drawer_counter",
+	  "mcwregionsunexplored:stripped_pine_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:pine_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwregionsunexplored:pine_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

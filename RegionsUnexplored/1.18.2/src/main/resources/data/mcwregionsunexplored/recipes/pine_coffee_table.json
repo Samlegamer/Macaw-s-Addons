@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "coffee_table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "regions_unexplored:pine_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "regions_unexplored:pine_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:pine_coffee_table",
+        "count": 1
+    }
+}
+
+

@@ -1,0 +1,66 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwabnormals:azalea_bark_glass_door",
+	  "mcwabnormals:azalea_barn_door",
+	  "mcwabnormals:azalea_barn_glass_door",
+	  "mcwabnormals:azalea_beach_door",
+	  "mcwabnormals:azalea_classic_door",
+	  "mcwabnormals:azalea_cottage_door",
+	  "mcwabnormals:azalea_four_panel_door",
+	  "mcwabnormals:azalea_glass_door",
+	  "mcwabnormals:azalea_japanese_door",
+	  "mcwabnormals:azalea_japanese2_door",
+	  "mcwabnormals:azalea_modern_door",
+	  "mcwabnormals:azalea_mystic_door",
+	  "mcwabnormals:azalea_nether_door",
+	  "mcwabnormals:azalea_paper_door",
+	  "mcwabnormals:azalea_stable_door",
+	  "mcwabnormals:azalea_stable_head_door",
+	  "mcwabnormals:azalea_swamp_door",
+	  "mcwabnormals:azalea_western_door",
+	  "mcwabnormals:azalea_waffle_door",
+	  "mcwabnormals:azalea_tropical_door",
+	  "mcwabnormals:azalea_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "caverns_and_chasms:azalea_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

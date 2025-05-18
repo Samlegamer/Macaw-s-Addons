@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "large_drawer",
+  "pattern" : [ "ABA", "AAA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "autumnity:stripped_maple_log"
+    },
+    "B" : {
+      "item" : "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwabnormals:stripped_maple_large_drawer"
+  }
+}

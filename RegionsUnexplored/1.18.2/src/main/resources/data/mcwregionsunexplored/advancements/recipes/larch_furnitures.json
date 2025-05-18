@@ -1,0 +1,101 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwregionsunexplored:larch_wardrobe",
+	  "mcwregionsunexplored:larch_modern_wardrobe",
+	  "mcwregionsunexplored:larch_double_wardrobe",
+	  "mcwregionsunexplored:larch_bookshelf_cupboard",
+	  "mcwregionsunexplored:larch_bookshelf",
+	  "mcwregionsunexplored:larch_drawer",
+	  "mcwregionsunexplored:larch_double_drawer",
+	  "mcwregionsunexplored:larch_bookshelf_drawer",
+	  "mcwregionsunexplored:larch_lower_bookshelf_drawer",
+	  "mcwregionsunexplored:larch_large_drawer",
+	  "mcwregionsunexplored:larch_lower_triple_drawer",
+	  "mcwregionsunexplored:larch_triple_drawer",
+	  "mcwregionsunexplored:larch_desk",
+	  "mcwregionsunexplored:larch_covered_desk",
+	  "mcwregionsunexplored:larch_modern_desk",
+	  "mcwregionsunexplored:larch_table",
+	  "mcwregionsunexplored:larch_end_table",
+	  "mcwregionsunexplored:larch_coffee_table",
+	  "mcwregionsunexplored:larch_glass_table",
+	  "mcwregionsunexplored:larch_chair",
+	  "mcwregionsunexplored:larch_modern_chair",
+	  "mcwregionsunexplored:larch_striped_chair",
+	  "mcwregionsunexplored:larch_stool_chair",
+	  "mcwregionsunexplored:larch_counter",
+	  "mcwregionsunexplored:larch_drawer_counter",
+	  "mcwregionsunexplored:larch_double_drawer_counter",
+	  "mcwregionsunexplored:larch_cupboard_counter",
+	  
+	  "mcwregionsunexplored:stripped_larch_wardrobe",
+	  "mcwregionsunexplored:stripped_larch_modern_wardrobe",
+	  "mcwregionsunexplored:stripped_larch_double_wardrobe",
+	  "mcwregionsunexplored:stripped_larch_bookshelf_cupboard",
+	  "mcwregionsunexplored:stripped_larch_bookshelf",
+	  "mcwregionsunexplored:stripped_larch_drawer",
+	  "mcwregionsunexplored:stripped_larch_double_drawer",
+	  "mcwregionsunexplored:stripped_larch_bookshelf_drawer",
+	  "mcwregionsunexplored:stripped_larch_lower_bookshelf_drawer",
+	  "mcwregionsunexplored:stripped_larch_large_drawer",
+	  "mcwregionsunexplored:stripped_larch_lower_triple_drawer",
+	  "mcwregionsunexplored:stripped_larch_triple_drawer",
+	  "mcwregionsunexplored:stripped_larch_desk",
+	  "mcwregionsunexplored:stripped_larch_covered_desk",
+	  "mcwregionsunexplored:stripped_larch_modern_desk",
+	  "mcwregionsunexplored:stripped_larch_table",
+	  "mcwregionsunexplored:stripped_larch_end_table",
+	  "mcwregionsunexplored:stripped_larch_coffee_table",
+	  "mcwregionsunexplored:stripped_larch_glass_table",
+	  "mcwregionsunexplored:stripped_larch_chair",
+	  "mcwregionsunexplored:stripped_larch_modern_chair",
+	  "mcwregionsunexplored:stripped_larch_striped_chair",
+	  "mcwregionsunexplored:stripped_larch_stool_chair",
+	  "mcwregionsunexplored:stripped_larch_counter",
+	  "mcwregionsunexplored:stripped_larch_drawer_counter",
+	  "mcwregionsunexplored:stripped_larch_double_drawer_counter",
+	  "mcwregionsunexplored:stripped_larch_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:larch_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwregionsunexplored:larch_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

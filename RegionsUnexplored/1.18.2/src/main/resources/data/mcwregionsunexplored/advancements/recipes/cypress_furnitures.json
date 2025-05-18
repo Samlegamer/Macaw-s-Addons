@@ -1,0 +1,101 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwregionsunexplored:cypress_wardrobe",
+	  "mcwregionsunexplored:cypress_modern_wardrobe",
+	  "mcwregionsunexplored:cypress_double_wardrobe",
+	  "mcwregionsunexplored:cypress_bookshelf_cupboard",
+	  "mcwregionsunexplored:cypress_bookshelf",
+	  "mcwregionsunexplored:cypress_drawer",
+	  "mcwregionsunexplored:cypress_double_drawer",
+	  "mcwregionsunexplored:cypress_bookshelf_drawer",
+	  "mcwregionsunexplored:cypress_lower_bookshelf_drawer",
+	  "mcwregionsunexplored:cypress_large_drawer",
+	  "mcwregionsunexplored:cypress_lower_triple_drawer",
+	  "mcwregionsunexplored:cypress_triple_drawer",
+	  "mcwregionsunexplored:cypress_desk",
+	  "mcwregionsunexplored:cypress_covered_desk",
+	  "mcwregionsunexplored:cypress_modern_desk",
+	  "mcwregionsunexplored:cypress_table",
+	  "mcwregionsunexplored:cypress_end_table",
+	  "mcwregionsunexplored:cypress_coffee_table",
+	  "mcwregionsunexplored:cypress_glass_table",
+	  "mcwregionsunexplored:cypress_chair",
+	  "mcwregionsunexplored:cypress_modern_chair",
+	  "mcwregionsunexplored:cypress_striped_chair",
+	  "mcwregionsunexplored:cypress_stool_chair",
+	  "mcwregionsunexplored:cypress_counter",
+	  "mcwregionsunexplored:cypress_drawer_counter",
+	  "mcwregionsunexplored:cypress_double_drawer_counter",
+	  "mcwregionsunexplored:cypress_cupboard_counter",
+	  
+	  "mcwregionsunexplored:stripped_cypress_wardrobe",
+	  "mcwregionsunexplored:stripped_cypress_modern_wardrobe",
+	  "mcwregionsunexplored:stripped_cypress_double_wardrobe",
+	  "mcwregionsunexplored:stripped_cypress_bookshelf_cupboard",
+	  "mcwregionsunexplored:stripped_cypress_bookshelf",
+	  "mcwregionsunexplored:stripped_cypress_drawer",
+	  "mcwregionsunexplored:stripped_cypress_double_drawer",
+	  "mcwregionsunexplored:stripped_cypress_bookshelf_drawer",
+	  "mcwregionsunexplored:stripped_cypress_lower_bookshelf_drawer",
+	  "mcwregionsunexplored:stripped_cypress_large_drawer",
+	  "mcwregionsunexplored:stripped_cypress_lower_triple_drawer",
+	  "mcwregionsunexplored:stripped_cypress_triple_drawer",
+	  "mcwregionsunexplored:stripped_cypress_desk",
+	  "mcwregionsunexplored:stripped_cypress_covered_desk",
+	  "mcwregionsunexplored:stripped_cypress_modern_desk",
+	  "mcwregionsunexplored:stripped_cypress_table",
+	  "mcwregionsunexplored:stripped_cypress_end_table",
+	  "mcwregionsunexplored:stripped_cypress_coffee_table",
+	  "mcwregionsunexplored:stripped_cypress_glass_table",
+	  "mcwregionsunexplored:stripped_cypress_chair",
+	  "mcwregionsunexplored:stripped_cypress_modern_chair",
+	  "mcwregionsunexplored:stripped_cypress_striped_chair",
+	  "mcwregionsunexplored:stripped_cypress_stool_chair",
+	  "mcwregionsunexplored:stripped_cypress_counter",
+	  "mcwregionsunexplored:stripped_cypress_drawer_counter",
+	  "mcwregionsunexplored:stripped_cypress_double_drawer_counter",
+	  "mcwregionsunexplored:stripped_cypress_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:cypress_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwregionsunexplored:cypress_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

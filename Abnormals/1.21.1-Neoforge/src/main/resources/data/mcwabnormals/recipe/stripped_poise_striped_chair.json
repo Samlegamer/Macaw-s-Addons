@@ -1,0 +1,30 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "striped_chair",
+  "pattern" : [ " A", "BC", "CC" ],
+  "key" : {
+    "A" : {
+      "item" : "endergetic:stripped_poise_stem"
+    },
+    "B" : {
+      "item" : "endergetic:poise_slab"
+    },
+    "C" : {
+      "item" : "endergetic:poise_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:stripped_poise_striped_chair"
+  }
+}

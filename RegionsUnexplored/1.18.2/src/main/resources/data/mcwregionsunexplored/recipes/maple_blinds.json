@@ -1,0 +1,40 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "blinds",
+	
+    "pattern":
+    [
+        "AAA",
+        "BBB",
+        "BBB"		
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "A":
+        {
+            "item": "regions_unexplored:maple_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:maple_blinds",
+        "count": 3
+    }
+}

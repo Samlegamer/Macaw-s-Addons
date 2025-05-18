@@ -1,0 +1,30 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "pyramid",
+  "pattern" : [ "ABA", "ACA" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:stick"
+    },
+    "B" : {
+      "item" : "environmental:pine_log"
+    },
+    "C" : {
+      "item" : "environmental:pine_planks"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:pine_pyramid_gate"
+  }
+}

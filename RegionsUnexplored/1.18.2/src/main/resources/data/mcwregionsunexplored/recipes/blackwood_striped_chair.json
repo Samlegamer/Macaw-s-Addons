@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "striped_chair",
+    "pattern":
+    [
+        " A",
+        "BC",
+		"CC"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "regions_unexplored:blackwood_log"
+        }, 
+		
+        "B":
+        {
+            "item": "regions_unexplored:blackwood_slab"
+        },
+		
+		"C":
+        {
+            "item": "regions_unexplored:blackwood_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:blackwood_striped_chair",
+        "count": 1
+    }
+}
+
+

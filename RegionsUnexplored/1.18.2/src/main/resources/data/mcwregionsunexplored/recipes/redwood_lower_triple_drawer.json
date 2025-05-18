@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "lower_triple_drawer",
+    "pattern":
+    [
+        "AAA",
+        "BAB",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "regions_unexplored:redwood_log"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwfurnitures:cabinet_drawer"
+        }
+		
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:redwood_lower_triple_drawer",
+        "count": 4
+    }
+}
+
+

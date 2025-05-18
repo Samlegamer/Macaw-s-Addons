@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "wooden_piers",
+  "pattern" : [ "WFW" ],
+  "key" : {
+    "F" : {
+      "item" : "atmospheric:yucca_fence"
+    },
+    "W" : {
+      "item" : "atmospheric:yucca_log"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwabnormals:yucca_bridge_pier"
+  }
+}

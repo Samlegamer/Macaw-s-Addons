@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bark_trapdoors",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "atmospheric:morado_log"
+    },
+    "B" : {
+      "item" : "minecraft:glass_pane"
+    }
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwabnormals:morado_bark_trapdoor"
+  }
+}

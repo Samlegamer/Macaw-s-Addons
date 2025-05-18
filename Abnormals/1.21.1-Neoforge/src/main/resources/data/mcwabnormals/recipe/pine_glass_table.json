@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "glass_table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwabnormals:pine_end_table"
+    },
+    "B" : {
+      "item" : "minecraft:glass"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:pine_glass_table"
+  }
+}

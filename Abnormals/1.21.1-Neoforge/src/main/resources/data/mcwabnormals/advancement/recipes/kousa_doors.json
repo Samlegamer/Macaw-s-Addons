@@ -1,0 +1,66 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwabnormals:kousa_bark_glass_door",
+	  "mcwabnormals:kousa_barn_door",
+	  "mcwabnormals:kousa_barn_glass_door",
+	  "mcwabnormals:kousa_beach_door",
+	  "mcwabnormals:kousa_classic_door",
+	  "mcwabnormals:kousa_cottage_door",
+	  "mcwabnormals:kousa_four_panel_door",
+	  "mcwabnormals:kousa_glass_door",
+	  "mcwabnormals:kousa_japanese_door",
+	  "mcwabnormals:kousa_japanese2_door",
+	  "mcwabnormals:kousa_modern_door",
+	  "mcwabnormals:kousa_mystic_door",
+	  "mcwabnormals:kousa_nether_door",
+	  "mcwabnormals:kousa_paper_door",
+	  "mcwabnormals:kousa_stable_door",
+	  "mcwabnormals:kousa_stable_head_door",
+	  "mcwabnormals:kousa_swamp_door",
+	  "mcwabnormals:kousa_western_door",
+	  "mcwabnormals:kousa_waffle_door",
+	  "mcwabnormals:kousa_tropical_door",
+	  "mcwabnormals:kousa_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "atmospheric:kousa_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

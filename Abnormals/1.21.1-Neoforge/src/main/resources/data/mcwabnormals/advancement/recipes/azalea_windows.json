@@ -1,0 +1,67 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwabnormals:azalea_window",
+	 "mcwabnormals:azalea_window2",
+	 "mcwabnormals:azalea_four_window",
+	 "mcwabnormals:stripped_azalea_log_window",
+	 "mcwabnormals:stripped_azalea_log_window2",
+	 "mcwabnormals:stripped_azalea_log_four_window",
+	 "mcwabnormals:azalea_plank_window",
+	 "mcwabnormals:azalea_plank_window2",
+	 "mcwabnormals:azalea_plank_four_window",
+	 "mcwabnormals:azalea_pane_window",
+	 "mcwabnormals:stripped_azalea_pane_window",
+	 "mcwabnormals:azalea_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "caverns_and_chasms:azalea_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+

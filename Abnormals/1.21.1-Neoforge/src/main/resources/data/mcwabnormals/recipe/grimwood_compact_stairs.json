@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "compact_stairs",
+  "pattern" : [ "W  ", "WW ", "WWW" ],
+  "key" : {
+    "W" : {
+      "item" : "atmospheric:stripped_grimwood_log"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwabnormals:grimwood_compact_stairs"
+  }
+}

@@ -1,0 +1,30 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bookshelf_cupboard",
+  "pattern" : [ "AAA", "BAC", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "upgrade_aquatic:stripped_driftwood_log"
+    },
+    "B" : {
+      "item" : "mcwfurnitures:cabinet_door"
+    },
+    "C" : {
+      "item" : "minecraft:book"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwabnormals:stripped_driftwood_bookshelf_cupboard"
+  }
+}

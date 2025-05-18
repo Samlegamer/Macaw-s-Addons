@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "end_table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwregionsunexplored:redwood_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "regions_unexplored:redwood_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:redwood_end_table",
+        "count": 1
+    }
+}
+
+

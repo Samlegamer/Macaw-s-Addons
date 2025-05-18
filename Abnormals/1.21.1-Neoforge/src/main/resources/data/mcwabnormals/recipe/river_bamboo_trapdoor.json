@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bamboo_trapdoors",
+  "pattern" : [ "A", "B", "A" ],
+  "key" : {
+    "A" : {
+      "item" : "upgrade_aquatic:river_planks"
+    },
+    "B" : {
+      "item" : "mcwtrpdoors:print_bamboo"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:river_bamboo_trapdoor"
+  }
+}

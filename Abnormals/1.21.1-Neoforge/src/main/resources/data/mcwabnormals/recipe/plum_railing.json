@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_railing",
+  "pattern" : [ "W  ", "WW ", "WWW" ],
+  "key" : {
+    "W" : {
+      "item" : "mcwabnormals:plum_balcony"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwabnormals:plum_railing"
+  }
+}

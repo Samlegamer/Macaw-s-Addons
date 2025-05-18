@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shutters",
+  "pattern" : [ "B", "B", "B" ],
+  "key" : {
+    "B" : {
+      "item" : "caverns_and_chasms:azalea_slab"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwabnormals:azalea_louvered_shutter"
+  }
+}

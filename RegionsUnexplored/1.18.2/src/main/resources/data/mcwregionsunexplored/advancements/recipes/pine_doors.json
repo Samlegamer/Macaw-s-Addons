@@ -1,0 +1,64 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwregionsunexplored:pine_tropical_door",
+	  "mcwregionsunexplored:pine_bark_glass_door",
+	  "mcwregionsunexplored:pine_barn_door",
+	  "mcwregionsunexplored:pine_barn_glass_door",
+	  "mcwregionsunexplored:pine_beach_door",
+	  "mcwregionsunexplored:pine_classic_door",
+	  "mcwregionsunexplored:pine_cottage_door",
+	  "mcwregionsunexplored:pine_four_panel_door",
+	  "mcwregionsunexplored:pine_glass_door",
+	  "mcwregionsunexplored:pine_japanese_door",
+	  "mcwregionsunexplored:pine_japanese2_door",
+	  "mcwregionsunexplored:pine_modern_door",
+	  "mcwregionsunexplored:pine_mystic_door",
+	  "mcwregionsunexplored:pine_nether_door",
+	  "mcwregionsunexplored:pine_paper_door",
+	  "mcwregionsunexplored:pine_stable_door",
+	  "mcwregionsunexplored:pine_stable_head_door",
+	  "mcwregionsunexplored:pine_swamp_door",
+	  "mcwregionsunexplored:pine_western_door",
+	  "mcwregionsunexplored:pine_waffle_door",
+	  "mcwregionsunexplored:pine_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:pine_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

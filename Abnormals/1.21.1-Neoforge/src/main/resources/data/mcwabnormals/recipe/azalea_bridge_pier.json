@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "wooden_piers",
+  "pattern" : [ "WFW" ],
+  "key" : {
+    "F" : {
+      "item" : "caverns_and_chasms:azalea_fence"
+    },
+    "W" : {
+      "item" : "caverns_and_chasms:azalea_log"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwabnormals:azalea_bridge_pier"
+  }
+}

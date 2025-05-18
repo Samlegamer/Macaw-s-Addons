@@ -1,0 +1,30 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "chair",
+  "pattern" : [ " A", "BA", "CC" ],
+  "key" : {
+    "A" : {
+      "item" : "autumnity:maple_log"
+    },
+    "B" : {
+      "item" : "autumnity:maple_slab"
+    },
+    "C" : {
+      "item" : "autumnity:maple_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:maple_chair"
+  }
+}

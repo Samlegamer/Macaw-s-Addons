@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "western",
+  "pattern" : [ "  A", "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "environmental:willow_planks"
+    },
+    "B" : {
+      "item" : "environmental:willow_slab"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwabnormals:willow_western_door"
+  }
+}

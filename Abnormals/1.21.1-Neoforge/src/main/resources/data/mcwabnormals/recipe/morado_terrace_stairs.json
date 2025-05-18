@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : {
+      "item" : "atmospheric:stripped_morado_log"
+    },
+    "Z" : {
+      "item" : "atmospheric:morado_log"
+    }
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwabnormals:morado_terrace_stairs"
+  }
+}

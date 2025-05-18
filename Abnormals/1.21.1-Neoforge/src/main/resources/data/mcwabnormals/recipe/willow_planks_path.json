@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_paths",
+  "ingredients": [
+    {
+      "item": "environmental:willow_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwabnormals:willow_planks_path"
+  }
+}

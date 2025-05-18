@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "horse",
+  "pattern" : [ "ABA", "BAB" ],
+  "key" : {
+    "B" : {
+      "item" : "minecraft:stick"
+    },
+    "A" : {
+      "item" : "caverns_and_chasms:azalea_log"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwabnormals:azalea_horse_fence"
+  }
+}

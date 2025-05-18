@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "barn_trapdoors",
+	
+    "pattern":
+    [
+        "A",
+        "B"               
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "regions_unexplored:palm_planks"
+        },    
+        
+        "B":
+        {
+            "item": "mcwregionsunexplored:palm_glass_trapdoor"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:palm_barn_trapdoor",
+        "count": 1
+    }
+}
+
+

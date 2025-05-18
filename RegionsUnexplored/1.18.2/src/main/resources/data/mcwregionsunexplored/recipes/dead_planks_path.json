@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:dead_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:dead_planks_path",
+    "count": 3
+  }
+}

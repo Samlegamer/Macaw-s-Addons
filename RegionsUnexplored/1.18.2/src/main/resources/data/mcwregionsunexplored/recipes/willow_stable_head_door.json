@@ -1,0 +1,35 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stable_head",
+    
+    "pattern":
+    [
+        "A"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "mcwregionsunexplored:willow_stable_door"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:willow_stable_head_door",
+        "count": 1
+    }
+}
+
+

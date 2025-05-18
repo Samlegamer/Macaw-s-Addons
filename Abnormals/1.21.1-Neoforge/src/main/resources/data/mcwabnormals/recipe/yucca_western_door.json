@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "western",
+  "pattern" : [ "  A", "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "atmospheric:yucca_planks"
+    },
+    "B" : {
+      "item" : "atmospheric:yucca_slab"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwabnormals:yucca_western_door"
+  }
+}

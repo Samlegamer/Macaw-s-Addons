@@ -1,0 +1,30 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern_chair",
+  "pattern" : [ "BA", "CC" ],
+  "key" : {
+    "A" : {
+      "item" : "environmental:plum_log"
+    },
+    "B" : {
+      "item" : "environmental:plum_slab"
+    },
+    "C" : {
+      "item" : "environmental:plum_fence"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:plum_modern_chair"
+  }
+}

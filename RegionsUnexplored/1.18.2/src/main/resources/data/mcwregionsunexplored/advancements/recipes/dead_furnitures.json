@@ -1,0 +1,101 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwregionsunexplored:dead_wardrobe",
+	  "mcwregionsunexplored:dead_modern_wardrobe",
+	  "mcwregionsunexplored:dead_double_wardrobe",
+	  "mcwregionsunexplored:dead_bookshelf_cupboard",
+	  "mcwregionsunexplored:dead_bookshelf",
+	  "mcwregionsunexplored:dead_drawer",
+	  "mcwregionsunexplored:dead_double_drawer",
+	  "mcwregionsunexplored:dead_bookshelf_drawer",
+	  "mcwregionsunexplored:dead_lower_bookshelf_drawer",
+	  "mcwregionsunexplored:dead_large_drawer",
+	  "mcwregionsunexplored:dead_lower_triple_drawer",
+	  "mcwregionsunexplored:dead_triple_drawer",
+	  "mcwregionsunexplored:dead_desk",
+	  "mcwregionsunexplored:dead_covered_desk",
+	  "mcwregionsunexplored:dead_modern_desk",
+	  "mcwregionsunexplored:dead_table",
+	  "mcwregionsunexplored:dead_end_table",
+	  "mcwregionsunexplored:dead_coffee_table",
+	  "mcwregionsunexplored:dead_glass_table",
+	  "mcwregionsunexplored:dead_chair",
+	  "mcwregionsunexplored:dead_modern_chair",
+	  "mcwregionsunexplored:dead_striped_chair",
+	  "mcwregionsunexplored:dead_stool_chair",
+	  "mcwregionsunexplored:dead_counter",
+	  "mcwregionsunexplored:dead_drawer_counter",
+	  "mcwregionsunexplored:dead_double_drawer_counter",
+	  "mcwregionsunexplored:dead_cupboard_counter",
+	  
+	  "mcwregionsunexplored:stripped_dead_wardrobe",
+	  "mcwregionsunexplored:stripped_dead_modern_wardrobe",
+	  "mcwregionsunexplored:stripped_dead_double_wardrobe",
+	  "mcwregionsunexplored:stripped_dead_bookshelf_cupboard",
+	  "mcwregionsunexplored:stripped_dead_bookshelf",
+	  "mcwregionsunexplored:stripped_dead_drawer",
+	  "mcwregionsunexplored:stripped_dead_double_drawer",
+	  "mcwregionsunexplored:stripped_dead_bookshelf_drawer",
+	  "mcwregionsunexplored:stripped_dead_lower_bookshelf_drawer",
+	  "mcwregionsunexplored:stripped_dead_large_drawer",
+	  "mcwregionsunexplored:stripped_dead_lower_triple_drawer",
+	  "mcwregionsunexplored:stripped_dead_triple_drawer",
+	  "mcwregionsunexplored:stripped_dead_desk",
+	  "mcwregionsunexplored:stripped_dead_covered_desk",
+	  "mcwregionsunexplored:stripped_dead_modern_desk",
+	  "mcwregionsunexplored:stripped_dead_table",
+	  "mcwregionsunexplored:stripped_dead_end_table",
+	  "mcwregionsunexplored:stripped_dead_coffee_table",
+	  "mcwregionsunexplored:stripped_dead_glass_table",
+	  "mcwregionsunexplored:stripped_dead_chair",
+	  "mcwregionsunexplored:stripped_dead_modern_chair",
+	  "mcwregionsunexplored:stripped_dead_striped_chair",
+	  "mcwregionsunexplored:stripped_dead_stool_chair",
+	  "mcwregionsunexplored:stripped_dead_counter",
+	  "mcwregionsunexplored:stripped_dead_drawer_counter",
+	  "mcwregionsunexplored:stripped_dead_double_drawer_counter",
+	  "mcwregionsunexplored:stripped_dead_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:dead_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwregionsunexplored:dead_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

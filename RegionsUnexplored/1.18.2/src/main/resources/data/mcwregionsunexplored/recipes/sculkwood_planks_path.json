@@ -1,0 +1,22 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwpaths"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:sculkwood_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:sculkwood_planks_path",
+    "count": 3
+  }
+}

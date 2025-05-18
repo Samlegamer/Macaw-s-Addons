@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bulk_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : {
+      "item" : "atmospheric:stripped_aspen_log"
+    },
+    "Z" : {
+      "item" : "atmospheric:aspen_log"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwabnormals:aspen_bulk_stairs"
+  }
+}

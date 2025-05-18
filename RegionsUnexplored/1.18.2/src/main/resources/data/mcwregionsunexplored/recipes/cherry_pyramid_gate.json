@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "pyramid",
+    
+    "pattern":
+    [
+		"ABA",
+		"ACA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "B":
+        {
+            "item": "regions_unexplored:cherry_log"
+        },
+		
+		"C":
+        {
+            "item": "regions_unexplored:cherry_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:cherry_pyramid_gate",
+        "count": 1
+    }
+}
+
+

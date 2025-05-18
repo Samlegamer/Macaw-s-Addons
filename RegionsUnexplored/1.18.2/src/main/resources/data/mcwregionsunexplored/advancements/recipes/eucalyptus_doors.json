@@ -1,0 +1,64 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwregionsunexplored:eucalyptus_tropical_door",
+	  "mcwregionsunexplored:eucalyptus_bark_glass_door",
+	  "mcwregionsunexplored:eucalyptus_barn_door",
+	  "mcwregionsunexplored:eucalyptus_barn_glass_door",
+	  "mcwregionsunexplored:eucalyptus_beach_door",
+	  "mcwregionsunexplored:eucalyptus_classic_door",
+	  "mcwregionsunexplored:eucalyptus_cottage_door",
+	  "mcwregionsunexplored:eucalyptus_four_panel_door",
+	  "mcwregionsunexplored:eucalyptus_glass_door",
+	  "mcwregionsunexplored:eucalyptus_japanese_door",
+	  "mcwregionsunexplored:eucalyptus_japanese2_door",
+	  "mcwregionsunexplored:eucalyptus_modern_door",
+	  "mcwregionsunexplored:eucalyptus_mystic_door",
+	  "mcwregionsunexplored:eucalyptus_nether_door",
+	  "mcwregionsunexplored:eucalyptus_paper_door",
+	  "mcwregionsunexplored:eucalyptus_stable_door",
+	  "mcwregionsunexplored:eucalyptus_stable_head_door",
+	  "mcwregionsunexplored:eucalyptus_swamp_door",
+	  "mcwregionsunexplored:eucalyptus_western_door",
+	  "mcwregionsunexplored:eucalyptus_waffle_door",
+	  "mcwregionsunexplored:eucalyptus_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:eucalyptus_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

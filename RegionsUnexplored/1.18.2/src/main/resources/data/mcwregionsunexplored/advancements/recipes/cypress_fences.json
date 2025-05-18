@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwregionsunexplored:cypress_picket_fence",
+	  "mcwregionsunexplored:cypress_stockade_fence",
+	  "mcwregionsunexplored:cypress_horse_fence",
+	  "mcwregionsunexplored:cypress_wired_fence",
+	  "mcwregionsunexplored:cypress_highley_gate",
+	  "mcwregionsunexplored:cypress_pyramid_gate",
+	  "mcwregionsunexplored:cypress_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "regions_unexplored:cypress_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

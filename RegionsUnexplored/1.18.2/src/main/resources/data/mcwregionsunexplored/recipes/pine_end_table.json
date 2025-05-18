@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "end_table",
+    "pattern":
+    [
+        "A",
+        "B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "mcwregionsunexplored:pine_table"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "regions_unexplored:pine_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:pine_end_table",
+        "count": 1
+    }
+}
+
+

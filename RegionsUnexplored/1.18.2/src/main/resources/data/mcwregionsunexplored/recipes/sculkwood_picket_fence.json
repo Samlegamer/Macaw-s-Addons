@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "picket",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "regions_unexplored:sculkwood_planks"
+        },   		
+        
+        "C":
+        {
+            "item": "regions_unexplored:sculkwood_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:sculkwood_picket_fence",
+        "count": 3
+    }
+}
+
+

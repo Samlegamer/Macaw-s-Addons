@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern_wardrobe",
+  "pattern" : [ "AAA", "AAB", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "atmospheric:morado_log"
+    },
+    "B" : {
+      "item" : "mcwfurnitures:cabinet_door"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwabnormals:morado_modern_wardrobe"
+  }
+}

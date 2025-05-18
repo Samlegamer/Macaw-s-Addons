@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "skyline_stairs",
+  "pattern" : [ "W  ", "ZW " ],
+  "key" : {
+    "W" : {
+      "item" : "regions_unexplored:stripped_maple_log"
+    },
+    "Z" : {
+      "item" : "regions_unexplored:maple_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwregionsunexplored:maple_skyline_stairs",
+    "count" : 4
+  }
+}

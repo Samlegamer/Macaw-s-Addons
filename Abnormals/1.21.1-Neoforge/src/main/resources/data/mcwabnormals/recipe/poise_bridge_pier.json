@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "wooden_piers",
+  "pattern" : [ "WFW" ],
+  "key" : {
+    "F" : {
+      "item" : "endergetic:poise_fence"
+    },
+    "W" : {
+      "item" : "endergetic:poise_stem"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwabnormals:poise_bridge_pier"
+  }
+}

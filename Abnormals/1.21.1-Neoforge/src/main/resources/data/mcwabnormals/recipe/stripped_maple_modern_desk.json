@@ -1,0 +1,30 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern_desk",
+  "pattern" : [ "AAA", "BCB" ],
+  "key" : {
+    "A" : {
+      "item" : "autumnity:stripped_maple_log"
+    },
+    "B" : {
+      "item" : "autumnity:maple_fence"
+    },
+    "C" : {
+      "item" : "minecraft:stick"
+    }
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwabnormals:stripped_maple_modern_desk"
+  }
+}

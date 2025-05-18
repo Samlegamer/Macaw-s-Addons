@@ -1,0 +1,42 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "wardrobe",
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "regions_unexplored:redwood_log"
+        }, 
+		
+        "B":
+        {
+            "item": "mcwfurnitures:cabinet_door"
+        }
+		
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:redwood_wardrobe",
+        "count": 4
+    }
+}
+
+

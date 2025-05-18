@@ -1,0 +1,61 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwregionsunexplored:willow_window",
+	 "mcwregionsunexplored:willow_window2",
+	 "mcwregionsunexplored:willow_four_window",
+	 "mcwregionsunexplored:stripped_willow_log_window",
+	 "mcwregionsunexplored:stripped_willow_log_window2",
+	 "mcwregionsunexplored:stripped_willow_log_four_window",
+	 "mcwregionsunexplored:willow_plank_window",
+	 "mcwregionsunexplored:willow_plank_window2",
+	 "mcwregionsunexplored:willow_plank_four_window",
+	 "mcwregionsunexplored:willow_pane_window",
+	 "mcwregionsunexplored:stripped_willow_pane_window",
+	 "mcwregionsunexplored:willow_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:willow_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+

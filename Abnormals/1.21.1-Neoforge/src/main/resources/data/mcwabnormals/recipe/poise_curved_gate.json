@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "curved_gate",
+  "pattern" : [ "B A", "BAA" ],
+  "key" : {
+    "A" : {
+      "item" : "endergetic:poise_planks"
+    },
+    "B" : {
+      "item" : "endergetic:poise_stem"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwabnormals:poise_curved_gate"
+  }
+}

@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "buzzier_bees"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stone_piers",
+  "pattern" : [ "WFW" ],
+  "key" : {
+    "F" : {
+      "item" : "buzzier_bees:honeycomb_brick_wall"
+    },
+    "W" : {
+      "item" : "buzzier_bees:honeycomb_bricks"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwabnormals:honeycomb_brick_bridge_pier"
+  }
+}

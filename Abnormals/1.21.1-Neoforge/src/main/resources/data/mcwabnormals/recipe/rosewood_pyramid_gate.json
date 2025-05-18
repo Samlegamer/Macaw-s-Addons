@@ -1,0 +1,30 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "pyramid",
+  "pattern" : [ "ABA", "ACA" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:stick"
+    },
+    "B" : {
+      "item" : "atmospheric:rosewood_log"
+    },
+    "C" : {
+      "item" : "atmospheric:rosewood_planks"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:rosewood_pyramid_gate"
+  }
+}

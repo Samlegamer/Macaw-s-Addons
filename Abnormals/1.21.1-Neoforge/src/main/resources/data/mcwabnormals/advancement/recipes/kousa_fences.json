@@ -1,0 +1,41 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:kousa_picket_fence",
+	  "mcwabnormals:kousa_stockade_fence",
+	  "mcwabnormals:kousa_horse_fence",
+	  "mcwabnormals:kousa_wired_fence",
+	  "mcwabnormals:kousa_highley_gate",
+	  "mcwabnormals:kousa_pyramid_gate",
+	  "mcwabnormals:kousa_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "atmospheric:kousa_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

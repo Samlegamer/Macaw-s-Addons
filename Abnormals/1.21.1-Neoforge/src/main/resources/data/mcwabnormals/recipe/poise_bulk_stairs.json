@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bulk_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : {
+      "item" : "endergetic:stripped_poise_stem"
+    },
+    "Z" : {
+      "item" : "endergetic:poise_stem"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwabnormals:poise_bulk_stairs"
+  }
+}

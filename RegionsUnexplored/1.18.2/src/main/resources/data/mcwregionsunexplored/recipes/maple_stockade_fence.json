@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stockade",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "regions_unexplored:maple_log"
+        },    
+        
+        "B":
+        {
+            "item": "regions_unexplored:maple_planks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:maple_stockade_fence",
+        "count": 3
+    }
+}
+
+

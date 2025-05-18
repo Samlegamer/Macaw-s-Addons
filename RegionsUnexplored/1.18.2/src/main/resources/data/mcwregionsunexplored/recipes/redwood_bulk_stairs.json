@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bulk_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : {
+      "item" : "regions_unexplored:stripped_redwood_log"
+    },
+    "Z" : {
+      "item" : "regions_unexplored:redwood_log"
+    }
+  },
+  "result" : {
+    "item" : "mcwregionsunexplored:redwood_bulk_stairs",
+    "count" : 6
+  }
+}

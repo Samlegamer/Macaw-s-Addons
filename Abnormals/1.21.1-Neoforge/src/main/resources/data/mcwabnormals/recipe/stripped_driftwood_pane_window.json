@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows_pane",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwwindows:window_base"
+    },
+    "B" : {
+      "item" : "upgrade_aquatic:stripped_driftwood_log"
+    }
+  },
+  "result" : {
+    "count" : 8,
+    "id" : "mcwabnormals:stripped_driftwood_pane_window"
+  }
+}

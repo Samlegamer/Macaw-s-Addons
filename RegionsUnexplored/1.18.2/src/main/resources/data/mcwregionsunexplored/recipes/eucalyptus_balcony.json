@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_balcony",
+  "pattern" : [ "WWW", "Z Z", "WWW" ],
+  "key" : {
+    "W" : {
+      "item" : "minecraft:stick"
+    },
+    "Z" : {
+      "item" : "regions_unexplored:eucalyptus_fence"
+    }
+  },
+  "result" : {
+    "item" : "mcwregionsunexplored:eucalyptus_balcony",
+    "count" : 6
+  }
+}

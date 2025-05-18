@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "double_drawer_counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : {
+      "item" : "atmospheric:laurel_slab"
+    },
+    "B" : {
+      "item" : "mcwabnormals:laurel_double_drawer"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:laurel_double_drawer_counter"
+  }
+}

@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "parapets",
+  "pattern" : [ "AAA", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:stick"
+    },
+    "B" : {
+      "item" : "environmental:pine_planks"
+    }
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwabnormals:pine_plank_parapet"
+  }
+}

@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "barn_glass",
+  "pattern" : [ "BB", "AA", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "upgrade_aquatic:river_planks"
+    },
+    "B" : {
+      "item" : "minecraft:glass_pane"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwabnormals:river_barn_glass_door"
+  }
+}

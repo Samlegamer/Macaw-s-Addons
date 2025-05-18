@@ -1,0 +1,67 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+     "mcwabnormals:poise_window",
+	 "mcwabnormals:poise_window2",
+	 "mcwabnormals:poise_four_window",
+	 "mcwabnormals:stripped_poise_log_window",
+	 "mcwabnormals:stripped_poise_log_window2",
+	 "mcwabnormals:stripped_poise_log_four_window",
+	 "mcwabnormals:poise_plank_window",
+	 "mcwabnormals:poise_plank_window2",
+	 "mcwabnormals:poise_plank_four_window",
+	 "mcwabnormals:poise_pane_window",
+	 "mcwabnormals:stripped_poise_pane_window",
+	 "mcwabnormals:poise_plank_pane_window"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endergetic:poise_stem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwwindows:window_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "stable_head",
+    
+    "pattern":
+    [
+        "A"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "mcwregionsunexplored:cherry_stable_door"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:cherry_stable_head_door",
+        "count": 1
+    }
+}
+
+

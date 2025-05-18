@@ -1,0 +1,101 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwregionsunexplored:eucalyptus_wardrobe",
+	  "mcwregionsunexplored:eucalyptus_modern_wardrobe",
+	  "mcwregionsunexplored:eucalyptus_double_wardrobe",
+	  "mcwregionsunexplored:eucalyptus_bookshelf_cupboard",
+	  "mcwregionsunexplored:eucalyptus_bookshelf",
+	  "mcwregionsunexplored:eucalyptus_drawer",
+	  "mcwregionsunexplored:eucalyptus_double_drawer",
+	  "mcwregionsunexplored:eucalyptus_bookshelf_drawer",
+	  "mcwregionsunexplored:eucalyptus_lower_bookshelf_drawer",
+	  "mcwregionsunexplored:eucalyptus_large_drawer",
+	  "mcwregionsunexplored:eucalyptus_lower_triple_drawer",
+	  "mcwregionsunexplored:eucalyptus_triple_drawer",
+	  "mcwregionsunexplored:eucalyptus_desk",
+	  "mcwregionsunexplored:eucalyptus_covered_desk",
+	  "mcwregionsunexplored:eucalyptus_modern_desk",
+	  "mcwregionsunexplored:eucalyptus_table",
+	  "mcwregionsunexplored:eucalyptus_end_table",
+	  "mcwregionsunexplored:eucalyptus_coffee_table",
+	  "mcwregionsunexplored:eucalyptus_glass_table",
+	  "mcwregionsunexplored:eucalyptus_chair",
+	  "mcwregionsunexplored:eucalyptus_modern_chair",
+	  "mcwregionsunexplored:eucalyptus_striped_chair",
+	  "mcwregionsunexplored:eucalyptus_stool_chair",
+	  "mcwregionsunexplored:eucalyptus_counter",
+	  "mcwregionsunexplored:eucalyptus_drawer_counter",
+	  "mcwregionsunexplored:eucalyptus_double_drawer_counter",
+	  "mcwregionsunexplored:eucalyptus_cupboard_counter",
+	  
+	  "mcwregionsunexplored:stripped_eucalyptus_wardrobe",
+	  "mcwregionsunexplored:stripped_eucalyptus_modern_wardrobe",
+	  "mcwregionsunexplored:stripped_eucalyptus_double_wardrobe",
+	  "mcwregionsunexplored:stripped_eucalyptus_bookshelf_cupboard",
+	  "mcwregionsunexplored:stripped_eucalyptus_bookshelf",
+	  "mcwregionsunexplored:stripped_eucalyptus_drawer",
+	  "mcwregionsunexplored:stripped_eucalyptus_double_drawer",
+	  "mcwregionsunexplored:stripped_eucalyptus_bookshelf_drawer",
+	  "mcwregionsunexplored:stripped_eucalyptus_lower_bookshelf_drawer",
+	  "mcwregionsunexplored:stripped_eucalyptus_large_drawer",
+	  "mcwregionsunexplored:stripped_eucalyptus_lower_triple_drawer",
+	  "mcwregionsunexplored:stripped_eucalyptus_triple_drawer",
+	  "mcwregionsunexplored:stripped_eucalyptus_desk",
+	  "mcwregionsunexplored:stripped_eucalyptus_covered_desk",
+	  "mcwregionsunexplored:stripped_eucalyptus_modern_desk",
+	  "mcwregionsunexplored:stripped_eucalyptus_table",
+	  "mcwregionsunexplored:stripped_eucalyptus_end_table",
+	  "mcwregionsunexplored:stripped_eucalyptus_coffee_table",
+	  "mcwregionsunexplored:stripped_eucalyptus_glass_table",
+	  "mcwregionsunexplored:stripped_eucalyptus_chair",
+	  "mcwregionsunexplored:stripped_eucalyptus_modern_chair",
+	  "mcwregionsunexplored:stripped_eucalyptus_striped_chair",
+	  "mcwregionsunexplored:stripped_eucalyptus_stool_chair",
+	  "mcwregionsunexplored:stripped_eucalyptus_counter",
+	  "mcwregionsunexplored:stripped_eucalyptus_drawer_counter",
+	  "mcwregionsunexplored:stripped_eucalyptus_double_drawer_counter",
+	  "mcwregionsunexplored:stripped_eucalyptus_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:eucalyptus_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwregionsunexplored:eucalyptus_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

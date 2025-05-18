@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "upper_lower",
+  "pattern" : [ "  W", "WWS" ],
+  "key" : {
+    "W" : {
+      "item" : "autumnity:maple_planks"
+    },
+    "S" : {
+      "item" : "minecraft:stick"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwabnormals:maple_planks_upper_lower_roof"
+  }
+}

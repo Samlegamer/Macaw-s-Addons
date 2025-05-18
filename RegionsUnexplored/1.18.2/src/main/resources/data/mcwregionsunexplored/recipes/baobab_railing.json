@@ -1,0 +1,24 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_railing",
+  "pattern" : [ "W  ", "WW ", "WWW" ],
+  "key" : {
+    "W" : {
+      "item" : "mcwregionsunexplored:baobab_balcony"
+    }
+  },
+  "result" : {
+    "item" : "mcwregionsunexplored:baobab_railing",
+    "count" : 6
+  }
+}

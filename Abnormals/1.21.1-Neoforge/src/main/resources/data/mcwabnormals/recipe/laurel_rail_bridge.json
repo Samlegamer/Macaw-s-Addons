@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "rail_bridges",
+  "pattern" : [ "F F", "FWF" ],
+  "key" : {
+    "F" : {
+      "item" : "atmospheric:laurel_fence"
+    },
+    "W" : {
+      "item" : "atmospheric:laurel_slab"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwabnormals:laurel_rail_bridge"
+  }
+}

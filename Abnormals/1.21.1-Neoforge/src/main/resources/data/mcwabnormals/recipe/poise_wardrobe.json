@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "wardrobe",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "endergetic:poise_stem"
+    },
+    "B" : {
+      "item" : "mcwfurnitures:cabinet_door"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwabnormals:poise_wardrobe"
+  }
+}

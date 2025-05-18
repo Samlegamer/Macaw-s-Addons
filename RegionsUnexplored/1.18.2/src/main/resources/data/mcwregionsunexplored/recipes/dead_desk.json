@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "desk",
+    "pattern":
+    [
+        "AAA",
+        "B B"                
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "regions_unexplored:dead_log"
+        }, 
+		
+		
+        "B":
+        {
+            "item": "regions_unexplored:dead_fence"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:dead_desk",
+        "count": 2
+    }
+}
+
+

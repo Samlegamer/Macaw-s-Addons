@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "hedge",
+  "pattern" : [ "AA", "AA" ],
+  "key" : {
+    "A" : {
+      "item" : "upgrade_aquatic:river_leaves"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwabnormals:river_hedge"
+  }
+}

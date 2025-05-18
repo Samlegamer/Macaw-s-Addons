@@ -1,0 +1,41 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:yucca_picket_fence",
+	  "mcwabnormals:yucca_stockade_fence",
+	  "mcwabnormals:yucca_horse_fence",
+	  "mcwabnormals:yucca_wired_fence",
+	  "mcwabnormals:yucca_highley_gate",
+	  "mcwabnormals:yucca_pyramid_gate",
+	  "mcwabnormals:yucca_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "atmospheric:yucca_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shapeless",
+  "group" : "recyclable_bridges",
+  "ingredients" : [ {
+    "item" : "mcwabnormals:laurel_rope_bridge_stair"
+  } ],
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:rope_laurel_bridge"
+  }
+}

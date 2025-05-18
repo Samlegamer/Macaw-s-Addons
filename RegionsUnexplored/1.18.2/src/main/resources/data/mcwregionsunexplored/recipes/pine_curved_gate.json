@@ -1,0 +1,41 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "curved_gate",
+    
+    "pattern":
+    [
+		"B A",
+		"BAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "regions_unexplored:pine_planks"
+        },    
+        
+        "B":
+        {
+            "item": "regions_unexplored:pine_log"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwregionsunexplored:pine_curved_gate",
+        "count": 4
+    }
+}
+
+

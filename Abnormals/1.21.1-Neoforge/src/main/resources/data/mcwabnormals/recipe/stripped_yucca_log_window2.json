@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows_two",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "mcwwindows:window_half_bar_base"
+    },
+    "B" : {
+      "item" : "atmospheric:stripped_yucca_log"
+    }
+  },
+  "result" : {
+    "count" : 8,
+    "id" : "mcwabnormals:stripped_yucca_log_window2"
+  }
+}

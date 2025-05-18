@@ -1,0 +1,30 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "pyramid",
+  "pattern" : [ "ABA", "ACA" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:stick"
+    },
+    "B" : {
+      "item" : "endergetic:poise_stem"
+    },
+    "C" : {
+      "item" : "endergetic:poise_planks"
+    }
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:poise_pyramid_gate"
+  }
+}

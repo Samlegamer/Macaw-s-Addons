@@ -1,5 +1,7 @@
 package fr.samlegamer.mcwquark;
 
+import fr.samlegamer.addonslib.Registration;
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
@@ -60,18 +62,16 @@ public class McwQuark
     
     private void client(final FMLClientSetupEvent event)
     {
-    	Bridges.clientStone(event, MODID, stone);
-    	Fences.clientStone(event, MODID, stone);
-    	Fences.clientHedge(event, MODID, leaves);
-    	Roofs.clientStone(event, MODID, stone);
+		APIRenderTypes.initAllLeave(event, MODID, leaves);
+		APIRenderTypes.initAllStone(event, MODID, stone, Registration.getAllModTypeStone());
     }
     
     @SubscribeEvent
     public static void registry(final RegistryEvent.Register<Block> e)
     {
-    	Bridges.registryStone(e, stone, MCWQUARK_TAB);
-    	Fences.registryStone(e, stone, MCWQUARK_TAB);
-    	Fences.registryHedges(e, leaves, MCWQUARK_TAB);
-    	Roofs.registryStone(e, stone, MCWQUARK_TAB);
+    	Bridges.registryStone(e, MODID, stone, MCWQUARK_TAB);
+    	Fences.registryStone(e, MODID, stone, MCWQUARK_TAB);
+    	Fences.registryHedges(e, MODID, leaves, MCWQUARK_TAB);
+    	Roofs.registryStone(e, MODID, stone, MCWQUARK_TAB);
     }
 }

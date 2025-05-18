@@ -1,0 +1,21 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "type" : "minecraft:stonecutting",
+  "ingredient" : {
+    "item" : "autumnity:snail_shell_tiles"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwabnormals:snail_shell_tiles_steep_roof"
+  },
+  "group" : "roofs"
+}

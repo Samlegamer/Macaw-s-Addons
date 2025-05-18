@@ -1,0 +1,30 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "wired",
+  "pattern" : [ "ACA", "ABA" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:stick"
+    },
+    "B" : {
+      "item" : "atmospheric:laurel_log"
+    },
+    "C" : {
+      "item" : "minecraft:iron_bars"
+    }
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwabnormals:laurel_wired_fence"
+  }
+}

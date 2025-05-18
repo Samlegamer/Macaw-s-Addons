@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows",
+  "pattern" : [ " A ", "ABA", " A " ],
+  "key" : {
+    "A" : {
+      "item" : "mcwwindows:window_base"
+    },
+    "B" : {
+      "item" : "atmospheric:stripped_grimwood_log"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwabnormals:stripped_grimwood_log_window"
+  }
+}

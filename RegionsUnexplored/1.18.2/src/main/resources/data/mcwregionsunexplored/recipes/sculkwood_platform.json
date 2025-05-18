@@ -1,0 +1,27 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " ZZ", " WW", "   " ],
+  "key" : {
+    "W" : {
+      "item" : "regions_unexplored:sculkwood_log"
+    },
+    "Z" : {
+      "item" : "regions_unexplored:sculkwood_slab"
+    }
+  },
+  "result" : {
+    "item" : "mcwregionsunexplored:sculkwood_platform",
+    "count" : 12
+  }
+}

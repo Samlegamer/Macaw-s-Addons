@@ -1,0 +1,43 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwregionsunexplored:pine_roof",
+	  "mcwregionsunexplored:pine_attic_roof",
+	  "mcwregionsunexplored:pine_top_roof",
+	  "mcwregionsunexplored:pine_lower_roof",
+	  "mcwregionsunexplored:pine_steep_roof",
+	  "mcwregionsunexplored:pine_upper_lower_roof",
+	  "mcwregionsunexplored:pine_upper_steep_roof"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:pine_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

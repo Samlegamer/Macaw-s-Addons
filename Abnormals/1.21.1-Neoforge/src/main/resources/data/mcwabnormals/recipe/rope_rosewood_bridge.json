@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "rope_bridges",
+  "pattern" : [ "F F", "WWW" ],
+  "key" : {
+    "F" : {
+      "item" : "minecraft:string"
+    },
+    "W" : {
+      "item" : "atmospheric:rosewood_slab"
+    }
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwabnormals:rope_rosewood_bridge"
+  }
+}

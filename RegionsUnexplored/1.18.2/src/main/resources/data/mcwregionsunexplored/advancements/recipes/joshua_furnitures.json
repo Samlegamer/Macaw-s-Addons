@@ -1,0 +1,101 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwregionsunexplored:joshua_wardrobe",
+	  "mcwregionsunexplored:joshua_modern_wardrobe",
+	  "mcwregionsunexplored:joshua_double_wardrobe",
+	  "mcwregionsunexplored:joshua_bookshelf_cupboard",
+	  "mcwregionsunexplored:joshua_bookshelf",
+	  "mcwregionsunexplored:joshua_drawer",
+	  "mcwregionsunexplored:joshua_double_drawer",
+	  "mcwregionsunexplored:joshua_bookshelf_drawer",
+	  "mcwregionsunexplored:joshua_lower_bookshelf_drawer",
+	  "mcwregionsunexplored:joshua_large_drawer",
+	  "mcwregionsunexplored:joshua_lower_triple_drawer",
+	  "mcwregionsunexplored:joshua_triple_drawer",
+	  "mcwregionsunexplored:joshua_desk",
+	  "mcwregionsunexplored:joshua_covered_desk",
+	  "mcwregionsunexplored:joshua_modern_desk",
+	  "mcwregionsunexplored:joshua_table",
+	  "mcwregionsunexplored:joshua_end_table",
+	  "mcwregionsunexplored:joshua_coffee_table",
+	  "mcwregionsunexplored:joshua_glass_table",
+	  "mcwregionsunexplored:joshua_chair",
+	  "mcwregionsunexplored:joshua_modern_chair",
+	  "mcwregionsunexplored:joshua_striped_chair",
+	  "mcwregionsunexplored:joshua_stool_chair",
+	  "mcwregionsunexplored:joshua_counter",
+	  "mcwregionsunexplored:joshua_drawer_counter",
+	  "mcwregionsunexplored:joshua_double_drawer_counter",
+	  "mcwregionsunexplored:joshua_cupboard_counter",
+	  
+	  "mcwregionsunexplored:stripped_joshua_wardrobe",
+	  "mcwregionsunexplored:stripped_joshua_modern_wardrobe",
+	  "mcwregionsunexplored:stripped_joshua_double_wardrobe",
+	  "mcwregionsunexplored:stripped_joshua_bookshelf_cupboard",
+	  "mcwregionsunexplored:stripped_joshua_bookshelf",
+	  "mcwregionsunexplored:stripped_joshua_drawer",
+	  "mcwregionsunexplored:stripped_joshua_double_drawer",
+	  "mcwregionsunexplored:stripped_joshua_bookshelf_drawer",
+	  "mcwregionsunexplored:stripped_joshua_lower_bookshelf_drawer",
+	  "mcwregionsunexplored:stripped_joshua_large_drawer",
+	  "mcwregionsunexplored:stripped_joshua_lower_triple_drawer",
+	  "mcwregionsunexplored:stripped_joshua_triple_drawer",
+	  "mcwregionsunexplored:stripped_joshua_desk",
+	  "mcwregionsunexplored:stripped_joshua_covered_desk",
+	  "mcwregionsunexplored:stripped_joshua_modern_desk",
+	  "mcwregionsunexplored:stripped_joshua_table",
+	  "mcwregionsunexplored:stripped_joshua_end_table",
+	  "mcwregionsunexplored:stripped_joshua_coffee_table",
+	  "mcwregionsunexplored:stripped_joshua_glass_table",
+	  "mcwregionsunexplored:stripped_joshua_chair",
+	  "mcwregionsunexplored:stripped_joshua_modern_chair",
+	  "mcwregionsunexplored:stripped_joshua_striped_chair",
+	  "mcwregionsunexplored:stripped_joshua_stool_chair",
+	  "mcwregionsunexplored:stripped_joshua_counter",
+	  "mcwregionsunexplored:stripped_joshua_drawer_counter",
+	  "mcwregionsunexplored:stripped_joshua_double_drawer_counter",
+	  "mcwregionsunexplored:stripped_joshua_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:joshua_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwregionsunexplored:joshua_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}
