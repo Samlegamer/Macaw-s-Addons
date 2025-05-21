@@ -1,7 +1,10 @@
 package fr.samlegamer.mcwbyg;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.data.ModType;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.network.chat.Component;
@@ -11,10 +14,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -59,7 +62,12 @@ public class McwByg
 	public static final RegistryObject<CreativeModeTab> MCWBYG_TAB = ct.register("tab", () -> CreativeModeTab.builder()
 	        .icon(McwByg::getIcon).title(Component.translatable(MODID+".tab")).build());
 
-    public McwByg(final FMLJavaModLoadingContext context)
+	private final ModType[] modTypesWood = new ModType[]{ModType.ROOFS, ModType.FENCES, ModType.BRIDGES, ModType.FURNITURES,
+			ModType.WINDOWS, ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.STAIRS};
+
+	private final ModType[] modTypesStone = new ModType[]{ModType.ROOFS, ModType.FENCES, ModType.BRIDGES};
+
+	public McwByg(final FMLJavaModLoadingContext context)
     {
 		IEventBus bus = context.getModEventBus();
 		List<String> leavesClassic = List.of("aspen","baobab","blue_enchanted","cika","cypress","ebony","fir","green_enchanted","holly","ironwood","jacaranda","mahogany","maple","palm","pine",
@@ -88,9 +96,16 @@ public class McwByg
 
 		bus.addListener(this::addToTab);
 		bus.addListener(this::commonSetup);
-		MinecraftForge.EVENT_BUS.register(Mapping.class);
+		bus.addListener(this::clientSetup);
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
     }
+
+	private void clientSetup(FMLClientSetupEvent event)
+	{
+		APIRenderTypes.initAllWood(event, MODID, WOOD, modTypesWood);
+		APIRenderTypes.initAllLeave(event, MODID, LEAVES);
+		APIRenderTypes.initAllStone(event, MODID, STONE, modTypesStone);
+	}
     
     private void commonSetup(FMLCommonSetupEvent event)
     {
@@ -126,19 +141,8 @@ public class McwByg
 
 	private void addToTab(BuildCreativeModeTabContentsEvent event)
     {
-    	Bridges.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-    	Bridges.addToTabStone(event, MODID, STONE, MCWBYG_TAB.get());
-    	Roofs.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-    	Roofs.addToTabStone(event, MODID, STONE, MCWBYG_TAB.get());
-    	Fences.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-    	Fences.addToTabHedge(event, MODID, LEAVES, MCWBYG_TAB.get());
-    	Fences.addToTabStone(event, MODID, STONE, MCWBYG_TAB.get());
-    	Furnitures.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-    	Stairs.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-		// 1.1 Update
-		Paths.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-		Doors.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-		Trapdoors.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-		Windows.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-    }
+		APICreativeTab.initAllWood(event, MODID, WOOD, MCWBYG_TAB.get(), modTypesWood);
+		APICreativeTab.initAllLeave(event, MODID, LEAVES, MCWBYG_TAB.get());
+		APICreativeTab.initAllStone(event, MODID, STONE, MCWBYG_TAB.get(), modTypesStone);
+	}
 }

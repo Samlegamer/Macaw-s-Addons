@@ -1,0 +1,22 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_railing",
+  "pattern" : [ "W  ", "WW ", "WWW" ],
+  "key" : {
+    "W" : "mcwbiomesoplenty:mahogany_balcony"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbiomesoplenty:mahogany_railing"
+  }
+}

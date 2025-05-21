@@ -1,8 +1,9 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
-import fr.samlegamer.addonslib.client.RendererMcw;
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.furnitures.AddFurnituresStorage;
 import fr.samlegamer.addonslib.mapping.MappingMissing;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -126,16 +127,8 @@ public class McwBOP
 
 	private void clientSetup(FMLClientSetupEvent event)
 	{
-		RendererMcw.Bridges.clientWood(event, MODID, WOOD);
-		RendererMcw.Roofs.clientWood(event, MODID, WOOD);
-		RendererMcw.Fences.clientWood(event, MODID, WOOD);
-		RendererMcw.Fences.clientHedge(event, MODID, LEAVES);
-		RendererMcw.Furnitures.clientWood(event, MODID, WOOD);
-		RendererMcw.Trapdoors.clientWood(event, MODID, WOOD);
-		RendererMcw.Paths.clientWood(event, MODID, WOOD);
-		RendererMcw.Stairs.clientWood(event, MODID, WOOD);
-		RendererMcw.Doors.clientWood(event, MODID, WOOD);
-		RendererMcw.Windows.clientWood(event, MODID, WOOD);
+		APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllLeave(event, MODID, LEAVES);
 	}
 
 	private void addFurnitures(BlockEntityTypeAddBlocksEvent event)
@@ -163,18 +156,7 @@ public class McwBOP
 
     private void addTotab(BuildCreativeModeTabContentsEvent event)
     {
-    	if(MCWBOP_TAB != null)
-    	{
-        	Bridges.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Roofs.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Fences.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Fences.addToTabHedge(event, MODID, LEAVES, MCWBOP_TAB.get());
-        	Furnitures.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Trapdoors.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Paths.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Doors.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Windows.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Stairs.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-    	}
-    }
+		APICreativeTab.initAllWood(event, MODID, WOOD, MCWBOP_TAB.get(), Registration.getAllModTypeWood());
+		APICreativeTab.initAllLeave(event, MODID, LEAVES, MCWBOP_TAB.get());
+	}
 }

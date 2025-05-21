@@ -1,8 +1,10 @@
 package fr.samlegamer.mcwbyg;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.mapping.MappingMissing;
 import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.network.chat.Component;
@@ -13,6 +15,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -108,6 +111,13 @@ public class McwByg
 		bus.addListener(this::commonSetup);
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
     }
+
+	private void clientSetup(FMLClientSetupEvent event)
+	{
+		APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllLeave(event, MODID, LEAVES);
+		APIRenderTypes.initAllStone(event, MODID, STONE, Registration.getAllModTypeStone());
+	}
     
     private void commonSetup(BlockEntityTypeAddBlocksEvent event)
     {
@@ -143,18 +153,8 @@ public class McwByg
 
 	private void addToTab(BuildCreativeModeTabContentsEvent event)
     {
-    	Bridges.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-    	Bridges.addToTabStone(event, MODID, STONE, MCWBYG_TAB.get());
-    	Roofs.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-    	Roofs.addToTabStone(event, MODID, STONE, MCWBYG_TAB.get());
-    	Fences.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-    	Fences.addToTabHedge(event, MODID, LEAVES, MCWBYG_TAB.get());
-    	Fences.addToTabStone(event, MODID, STONE, MCWBYG_TAB.get());
-    	Furnitures.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-    	Stairs.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-		Paths.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-		Doors.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-		Trapdoors.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
-		Windows.addToTab(event, MODID, WOOD, MCWBYG_TAB.get());
+		APICreativeTab.initAllWood(event, MODID, WOOD, MCWBYG_TAB.get(), Registration.getAllModTypeWood());
+		APICreativeTab.initAllLeave(event, MODID, LEAVES, MCWBYG_TAB.get());
+		APICreativeTab.initAllStone(event, MODID, STONE, MCWBYG_TAB.get(), Registration.getAllModTypeStone());
     }
 }

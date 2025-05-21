@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "drawer_counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "biomesoplenty:palm_slab",
+    "B" : "mcwbiomesoplenty:palm_drawer"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:palm_drawer_counter"
+  }
+}

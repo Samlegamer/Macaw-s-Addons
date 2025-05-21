@@ -1,6 +1,7 @@
 package fr.samlegamer.mcwterraformersmc.client;
 
-import fr.samlegamer.addonslib.client.APIRenderer;
+import fr.samlegamer.addonslib.Registration;
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.client.ColorRegistry;
 import fr.samlegamer.mcwterraformersmc.McwTerraformersMC;
 import net.fabricmc.api.ClientModInitializer;
@@ -19,48 +20,12 @@ public class Client implements ClientModInitializer
     {
         colorRegistry.colorsBlock();
 
-        APIRenderer.Bridges.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        APIRenderer.Bridges.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        APIRenderer.Bridges.clientStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES);
-        APIRenderer.Bridges.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-        APIRenderer.Bridges.clientStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA);
-
-        APIRenderer.Roofs.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        APIRenderer.Roofs.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        APIRenderer.Roofs.clientStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES);
-        APIRenderer.Roofs.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-        APIRenderer.Roofs.clientStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA);
-
-        APIRenderer.Fences.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        APIRenderer.Fences.clientHedge(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE);
-        APIRenderer.Fences.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        APIRenderer.Fences.clientStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES);
-        APIRenderer.Fences.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-        APIRenderer.Fences.clientHedge(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA);
-        APIRenderer.Fences.clientStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA);
-
-        APIRenderer.Furnitures.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        APIRenderer.Furnitures.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        APIRenderer.Furnitures.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-
-        APIRenderer.Stairs.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        APIRenderer.Stairs.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        APIRenderer.Stairs.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-
-        APIRenderer.Paths.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        APIRenderer.Paths.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        APIRenderer.Paths.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-
-        APIRenderer.Doors.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        APIRenderer.Doors.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        APIRenderer.Doors.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-
-        APIRenderer.Trapdoors.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        APIRenderer.Trapdoors.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        APIRenderer.Trapdoors.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-
-        APIRenderer.Windows.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        APIRenderer.Windows.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        APIRenderer.Windows.clientWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
+        APIRenderTypes.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE);
+        APIRenderTypes.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA);
+        APIRenderTypes.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, Registration.getAllModTypeStone());
+        APIRenderTypes.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA, Registration.getAllModTypeStone());
     }
 }

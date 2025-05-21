@@ -1,7 +1,11 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
 import java.util.List;
+
+import fr.samlegamer.addonslib.Registration;
+import fr.samlegamer.addonslib.fuel.APIFuels;
 import fr.samlegamer.addonslib.furnitures.AddFurnituresStorage;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Blocks;
 import org.apache.logging.log4j.LogManager;
@@ -90,27 +94,11 @@ public class McwBOP implements ModInitializer
         Registry.register(Registries.ITEM_GROUP, TAB_ID, MCWBOP_TAB);
         RegistryKey<ItemGroup> group_key = RegistryKey.of(RegistryKeys.ITEM_GROUP, TAB_ID);
 
-    	Bridges.addToTabWood(MODID, WOOD, group_key);
-    	Fences.addToTabWood(MODID, WOOD, group_key);
-    	Fences.addToTabLeave(MODID, LEAVES, group_key);
-    	Furnitures.addToTabWood(MODID, WOOD, group_key);
-    	Roofs.addToTabWood(MODID, WOOD, group_key);
-    	Trapdoors.addToTabWood(MODID, WOOD, group_key);
-    	Paths.addToTabWood(MODID, WOOD, group_key);
-    	Doors.addToTabWood(MODID, WOOD, group_key);
-    	Windows.addToTabWood(MODID, WOOD, group_key);
-    	Stairs.addToTabWood(MODID, WOOD, group_key);
+		APICreativeTab.initAllWood(MODID, WOOD, group_key, Registration.getAllModTypeWood());
+		APICreativeTab.initAllLeave(MODID, LEAVES, group_key);
 
-    	Bridges.fuelWood(MODID, WOOD);
-    	Fences.fuelWood(MODID, WOOD);
-    	Fences.fuelHedge(MODID, LEAVES);
-    	Furnitures.fuelWood(MODID, WOOD);
-    	Roofs.fuelWood(MODID, WOOD);
-    	Trapdoors.fuelWood(MODID, WOOD);
-    	Paths.fuelWood(MODID, WOOD);
-    	Doors.fuelWood(MODID, WOOD);
-    	Windows.fuelWood(MODID, WOOD);
-    	Stairs.fuelWood(MODID, WOOD);
+		APIFuels.initAllWood(MODID, WOOD, Registration.getAllModTypeWood());
+		APIFuels.initAllLeave(MODID, LEAVES);
     	
     	AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(MODID, WOOD);
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");

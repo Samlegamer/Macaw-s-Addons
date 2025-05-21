@@ -1,19 +1,14 @@
 {
-"forge:conditional": [
+"conditions": [
     {
-      "forge:condition": {
-        "type": "forge:and",
-        "values": [
-          {
-            "type": "forge:mod_loaded",
-            "modid": "mcwfences"
-          },
-          {
-            "type": "forge:mod_loaded",
-            "modid": "biomesoplenty"
-          }
-        ]
-      },  "parent": "minecraft:recipes/root",
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],  "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
 	"mcwbiomesoplenty:red_maple_hedge"
@@ -36,6 +31,4 @@
       "has_birch"
     ]
   ]
-}
-]
 }

@@ -1,6 +1,8 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
-import fr.samlegamer.addonslib.client.RendererMcw;
+import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.data.ModType;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -45,15 +47,16 @@ public class McwBOP
 	public static final Logger LOGGER = LogManager.getLogger();
 	public static final List<String> WOOD = List.of("dead", "fir", "hellbark", "jacaranda", "magic", "mahogany", "palm", "redwood", "umbran", "willow", "empyreal", "maple", "pine");
 	public static final List<String> LEAVES = List.of("dead", "fir", "hellbark", "jacaranda", "magic", "mahogany", "palm", "redwood", "umbran", "willow", 
-	"empyreal",
-	"pine",
-	"orange_maple", "red_maple", "yellow_maple", "cypress", "snowblossom", "flowering_oak", "rainbow_birch", "origin");
+	"empyreal", "pine", "orange_maple", "red_maple", "yellow_maple", "cypress", "snowblossom", "flowering_oak", "rainbow_birch", "origin");
     private static final DeferredRegister<Block> block = Registration.blocks(MODID);
     private static final DeferredRegister<Item> item = Registration.items(MODID);
     public static final DeferredRegister<CreativeModeTab> ct = Registration.creativeModeTab(McwBOP.MODID);
 
 	public static final RegistryObject<CreativeModeTab> MCWBOP_TAB = ct.register("tab", () -> CreativeModeTab.builder()
 	        .icon(McwBOP::getIcon).title(Component.translatable(McwBOP.MODID+".tab")).build());
+
+	private final ModType[] modTypes = new ModType[]{ModType.ROOFS, ModType.FENCES, ModType.BRIDGES, ModType.FURNITURES,
+			ModType.WINDOWS, ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.STAIRS};
 
     public McwBOP(FMLJavaModLoadingContext context)
     {
@@ -111,16 +114,8 @@ public class McwBOP
 
 	private void clientSetup(FMLClientSetupEvent event)
 	{
-		RendererMcw.Bridges.clientWood(event, MODID, WOOD);
-		RendererMcw.Roofs.clientWood(event, MODID, WOOD);
-		RendererMcw.Fences.clientWood(event, MODID, WOOD);
-		RendererMcw.Fences.clientHedge(event, MODID, LEAVES);
-		RendererMcw.Furnitures.clientWood(event, MODID, WOOD);
-		RendererMcw.Trapdoors.clientWood(event, MODID, WOOD);
-		RendererMcw.Paths.clientWood(event, MODID, WOOD);
-		RendererMcw.Stairs.clientWood(event, MODID, WOOD);
-		RendererMcw.Doors.clientWood(event, MODID, WOOD);
-		RendererMcw.Windows.clientWood(event, MODID, WOOD);
+		APIRenderTypes.initAllWood(event, MODID, WOOD, modTypes);
+		APIRenderTypes.initAllLeave(event, MODID, LEAVES);
 	}
 
 	private void commonSetup(FMLCommonSetupEvent event)
@@ -157,18 +152,7 @@ public class McwBOP
     
     private void addToTab(BuildCreativeModeTabContentsEvent event)
     {
-    	if(MCWBOP_TAB != null)
-    	{
-        	Bridges.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Roofs.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Fences.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Fences.addToTabHedge(event, MODID, LEAVES, MCWBOP_TAB.get());
-        	Furnitures.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Trapdoors.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Paths.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Doors.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Windows.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Stairs.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-    	}
+		APICreativeTab.initAllWood(event, MODID, WOOD, MCWBOP_TAB.get(), modTypes);
+		APICreativeTab.initAllLeave(event, MODID, LEAVES, MCWBOP_TAB.get());
     }
 }

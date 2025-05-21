@@ -1,9 +1,13 @@
 package fr.samlegamer.mcwbyg;
 
 import java.util.List;
+
+import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.fuel.APIFuels;
 import fr.samlegamer.addonslib.furnitures.AddFurnituresStorage;
 import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.block.AbstractBlock;
@@ -79,33 +83,13 @@ public class McwByg implements ModInitializer
 
         Registry.register(Registries.ITEM_GROUP, TAB_ID, MCWBYG_TAB);
         RegistryKey<ItemGroup> group_key = RegistryKey.of(RegistryKeys.ITEM_GROUP, TAB_ID);
-        
-        Bridges.addToTabWood(MODID, WOOD, group_key);
-    	Bridges.addToTabStone(MODID, STONE, group_key);
-    	Roofs.addToTabWood(MODID, WOOD, group_key);
-    	Roofs.addToTabStone(MODID, STONE, group_key);
-    	Fences.addToTabWood(MODID, WOOD, group_key);
-    	Fences.addToTabLeave(MODID, LEAVES, group_key);
-    	Fences.addToTabStone(MODID, STONE, group_key);
-    	Furnitures.addToTabWood(MODID, WOOD, group_key);
-    	Stairs.addToTabWood(MODID, WOOD, group_key);
-		// 1.1 Update
-		Paths.addToTabWood(MODID, WOOD, group_key);
-		Doors.addToTabWood(MODID, WOOD, group_key);
-		Trapdoors.addToTabWood(MODID, WOOD, group_key);
-		Windows.addToTabWood(MODID, WOOD, group_key);
 
-    	Bridges.fuelWood(MODID, WOOD);
-		Roofs.fuelWood(MODID, WOOD);
-    	Fences.fuelWood(MODID, WOOD);
-    	Fences.fuelHedge(MODID, LEAVES);
-    	Furnitures.fuelWood(MODID, WOOD);
-    	Stairs.fuelWood(MODID, WOOD);
-		// 1.1 Update
-		Paths.fuelWood(MODID, WOOD);
-		Doors.fuelWood(MODID, WOOD);
-		Trapdoors.fuelWood(MODID, WOOD);
-		Windows.fuelWood(MODID, WOOD);
+		APICreativeTab.initAllWood(MODID, WOOD, group_key, Registration.getAllModTypeWood());
+		APICreativeTab.initAllLeave(MODID, LEAVES, group_key);
+		APICreativeTab.initAllStone(MODID, STONE, group_key, Registration.getAllModTypeStone());
+
+		APIFuels.initAllWood(MODID, WOOD, Registration.getAllModTypeWood());
+		APIFuels.initAllLeave(MODID, LEAVES);
 
     	AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(MODID, WOOD);
     	LOGGER.info("Macaw's Oh The Biomes We've Gone Is Charged !");
