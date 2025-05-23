@@ -1,0 +1,21 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stable_head",
+  "pattern" : [ "A" ],
+  "key" : {
+    "A" : "mcwbiomesoplenty:magic_stable_door"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:magic_stable_head_door"
+  }
+}

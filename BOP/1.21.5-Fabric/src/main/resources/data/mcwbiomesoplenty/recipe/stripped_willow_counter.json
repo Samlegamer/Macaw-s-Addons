@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "biomesoplenty:willow_slab",
+    "B" : "biomesoplenty:stripped_willow_log"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:stripped_willow_counter"
+  }
+}

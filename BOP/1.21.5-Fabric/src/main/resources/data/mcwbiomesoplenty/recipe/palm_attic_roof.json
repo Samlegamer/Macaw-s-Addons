@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "attic",
+  "pattern" : [ " W", "WG" ],
+  "key" : {
+    "W" : "biomesoplenty:palm_log",
+    "G" : "minecraft:glass"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwbiomesoplenty:palm_attic_roof"
+  }
+}

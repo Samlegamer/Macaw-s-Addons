@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : "biomesoplenty:stripped_willow_log",
+    "Z" : "biomesoplenty:willow_log"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwbiomesoplenty:willow_terrace_stairs"
+  }
+}

@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "triple_drawer",
+  "pattern" : [ "AAA", "ABA", "BAB" ],
+  "key" : {
+    "A" : "biomesoplenty:redwood_log",
+    "B" : "mcwfurnitures:cabinet_drawer"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:redwood_triple_drawer"
+  }
+}

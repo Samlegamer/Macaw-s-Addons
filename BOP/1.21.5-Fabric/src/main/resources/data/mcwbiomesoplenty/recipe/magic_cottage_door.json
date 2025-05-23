@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "cottage",
+  "pattern" : [ "A", "B", "A" ],
+  "key" : {
+    "A" : "biomesoplenty:magic_planks",
+    "B" : "mcwdoors:print_spruce"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:magic_cottage_door"
+  }
+}

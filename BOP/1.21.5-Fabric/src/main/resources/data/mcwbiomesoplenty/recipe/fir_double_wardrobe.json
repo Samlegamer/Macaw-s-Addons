@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "double_wardrobe",
+  "pattern" : [ "AAA", "BAB", "AAA" ],
+  "key" : {
+    "A" : "biomesoplenty:fir_log",
+    "B" : "mcwfurnitures:cabinet_door"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:fir_double_wardrobe"
+  }
+}

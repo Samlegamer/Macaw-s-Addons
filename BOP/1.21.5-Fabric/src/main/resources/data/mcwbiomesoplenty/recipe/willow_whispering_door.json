@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "whispering",
+  "pattern" : [ "A", "B", "A" ],
+  "key" : {
+    "A" : "biomesoplenty:willow_planks",
+    "B" : "mcwdoors:print_whispering"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:willow_whispering_door"
+  }
+}

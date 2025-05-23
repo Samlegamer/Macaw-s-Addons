@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stool_chair",
+  "pattern" : [ "A", "A", "B" ],
+  "key" : {
+    "A" : "biomesoplenty:fir_log",
+    "B" : "biomesoplenty:fir_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:fir_stool_chair"
+  }
+}

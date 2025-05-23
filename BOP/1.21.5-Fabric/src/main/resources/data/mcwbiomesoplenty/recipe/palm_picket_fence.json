@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "picket",
+  "pattern" : [ "CBC", "CAC" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "biomesoplenty:palm_planks",
+    "C" : "biomesoplenty:palm_log"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:palm_picket_fence"
+  }
+}

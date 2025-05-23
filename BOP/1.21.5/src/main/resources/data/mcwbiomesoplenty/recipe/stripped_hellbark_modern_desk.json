@@ -1,0 +1,31 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern_desk",
+  "pattern" : [ "AAA", "BCB" ],
+  "key" : {
+    "A" : "biomesoplenty:stripped_hellbark_log",
+    "B" : "biomesoplenty:hellbark_fence",
+    "C" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwbiomesoplenty:stripped_hellbark_modern_desk"
+  }
+}
+  ]
+}

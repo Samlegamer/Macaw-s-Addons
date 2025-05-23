@@ -1,0 +1,65 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwbiomesoplenty:palm_bark_glass_door",
+	  "mcwbiomesoplenty:palm_barn_door",
+	  "mcwbiomesoplenty:palm_barn_glass_door",
+	  "mcwbiomesoplenty:palm_beach_door",
+	  "mcwbiomesoplenty:palm_classic_door",
+	  "mcwbiomesoplenty:palm_cottage_door",
+	  "mcwbiomesoplenty:palm_four_panel_door",
+	  "mcwbiomesoplenty:palm_glass_door",
+	  "mcwbiomesoplenty:palm_japanese_door",
+	  "mcwbiomesoplenty:palm_japanese2_door",
+	  "mcwbiomesoplenty:palm_modern_door",
+	  "mcwbiomesoplenty:palm_mystic_door",
+	  "mcwbiomesoplenty:palm_nether_door",
+	  "mcwbiomesoplenty:palm_paper_door",
+	  "mcwbiomesoplenty:palm_stable_door",
+	  "mcwbiomesoplenty:palm_stable_head_door",
+	  "mcwbiomesoplenty:palm_swamp_door",
+	  "mcwbiomesoplenty:palm_western_door",
+	  "mcwbiomesoplenty:palm_waffle_door",
+	  "mcwbiomesoplenty:palm_tropical_door",
+	  "mcwbiomesoplenty:palm_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:palm_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

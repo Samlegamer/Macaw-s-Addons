@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " ZZ", " WW", "   " ],
+  "key" : {
+    "W" : "biomesoplenty:hellbark_log",
+    "Z" : "biomesoplenty:hellbark_slab"
+  },
+  "result" : {
+    "count" : 12,
+    "id" : "mcwbiomesoplenty:hellbark_platform"
+  }
+}

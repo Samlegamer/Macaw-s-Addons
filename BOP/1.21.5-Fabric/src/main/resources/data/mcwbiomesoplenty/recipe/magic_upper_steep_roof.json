@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "upper_steep",
+  "pattern" : [ " W", " W", "WS" ],
+  "key" : {
+    "W" : "biomesoplenty:magic_log",
+    "S" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:magic_upper_steep_roof"
+  }
+}

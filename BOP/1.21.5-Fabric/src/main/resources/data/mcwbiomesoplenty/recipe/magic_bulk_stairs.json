@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bulk_stairs",
+  "pattern" : [ "W  ", "ZW ", "ZZW" ],
+  "key" : {
+    "W" : "biomesoplenty:stripped_magic_log",
+    "Z" : "biomesoplenty:magic_log"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwbiomesoplenty:magic_bulk_stairs"
+  }
+}

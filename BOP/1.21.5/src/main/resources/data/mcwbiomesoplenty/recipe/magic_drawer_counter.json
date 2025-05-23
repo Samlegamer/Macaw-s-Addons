@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "drawer_counter",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "biomesoplenty:magic_slab",
+    "B" : "mcwbiomesoplenty:magic_drawer"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:magic_drawer_counter"
+  }
+}
+  ]
+}

@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwstairs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : "biomesoplenty:stripped_palm_log",
+    "Z" : "biomesoplenty:palm_log"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwbiomesoplenty:palm_terrace_stairs"
+  }
+}
+  ]
+}

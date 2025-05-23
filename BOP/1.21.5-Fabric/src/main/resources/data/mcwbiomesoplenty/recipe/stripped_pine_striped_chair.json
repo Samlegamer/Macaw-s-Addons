@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "striped_chair",
+  "pattern" : [ " A", "BC", "CC" ],
+  "key" : {
+    "A" : "biomesoplenty:stripped_pine_log",
+    "B" : "biomesoplenty:pine_slab",
+    "C" : "biomesoplenty:pine_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:stripped_pine_striped_chair"
+  }
+}

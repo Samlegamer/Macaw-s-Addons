@@ -1,0 +1,31 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "glass_cabinet",
+  "pattern" : [ "AA", "BC", "AA" ],
+  "key" : {
+    "A" : "biomesoplenty:stripped_umbran_log",
+    "B" : "minecraft:glass",
+    "C" : "mcwfurnitures:cabinet_door"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:stripped_umbran_glass_kitchen_cabinet"
+  }
+}
+  ]
+}

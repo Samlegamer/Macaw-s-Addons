@@ -1,0 +1,31 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bookshelf_drawer",
+  "pattern" : [ "AAA", "ABA", "ACA" ],
+  "key" : {
+    "A" : "biomesoplenty:stripped_jacaranda_log",
+    "B" : "mcwfurnitures:cabinet_drawer",
+    "C" : "minecraft:book"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:stripped_jacaranda_bookshelf_drawer"
+  }
+}
+  ]
+}
