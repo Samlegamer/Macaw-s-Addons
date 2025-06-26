@@ -1,0 +1,26 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwbridges"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shapeless",
+  "group" : "recyclable_bridges",
+  "ingredients" : [ "mcwbiomesoplenty:umbran_log_bridge_stair" ],
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:umbran_log_bridge_middle"
+  }
+}
+  ]
+}

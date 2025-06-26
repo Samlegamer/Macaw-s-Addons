@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "lower_triple_drawer",
+  "pattern" : [ "AAA", "BAB", "ABA" ],
+  "key" : {
+    "A" : "biomesoplenty:maple_log",
+    "B" : "mcwfurnitures:cabinet_drawer"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:maple_lower_triple_drawer"
+  }
+}
+  ]
+}

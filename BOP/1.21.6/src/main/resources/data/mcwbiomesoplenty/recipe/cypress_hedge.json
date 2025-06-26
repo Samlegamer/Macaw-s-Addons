@@ -1,0 +1,29 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "hedge",
+  "pattern" : [ "AA", "AA" ],
+  "key" : {
+    "A" : "biomesoplenty:cypress_leaves"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:cypress_hedge"
+  }
+}
+  ]
+}

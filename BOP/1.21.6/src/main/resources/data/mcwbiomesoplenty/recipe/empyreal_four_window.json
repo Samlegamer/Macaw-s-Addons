@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwwindows"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows_four",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : "mcwwindows:window_centre_bar_base",
+    "B" : "biomesoplenty:empyreal_log"
+  },
+  "result" : {
+    "count" : 8,
+    "id" : "mcwbiomesoplenty:empyreal_four_window"
+  }
+}
+  ]
+}

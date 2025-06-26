@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwroofs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "upper_steep",
+  "pattern" : [ " W", " W", "WS" ],
+  "key" : {
+    "W" : "biomesoplenty:palm_log",
+    "S" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:palm_upper_steep_roof"
+  }
+}
+  ]
+}

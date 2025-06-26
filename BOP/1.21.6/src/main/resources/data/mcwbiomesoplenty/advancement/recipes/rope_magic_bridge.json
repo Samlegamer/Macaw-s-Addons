@@ -1,0 +1,47 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwbridges"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "mcwbiomesoplenty:rope_magic_bridge"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["biomesoplenty:magic_planks"
+      ]    }     ]     }   },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwbiomesoplenty:rope_magic_bridge"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks",
+      "has_the_recipe"
+    ]
+  ]
+}
+
+]
+}
