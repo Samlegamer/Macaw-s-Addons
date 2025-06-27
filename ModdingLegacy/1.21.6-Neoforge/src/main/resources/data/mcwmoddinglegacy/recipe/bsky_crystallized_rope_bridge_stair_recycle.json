@@ -1,0 +1,21 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shapeless",
+  "group" : "recyclable_bridges",
+  "ingredients" : [
+    "mcwmoddinglegacy:bsky_crystallized_rope_bridge_stair"
+   ],
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:rope_bsky_crystallized_bridge"
+  }
+}

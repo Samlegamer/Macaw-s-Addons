@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_balcony",
+  "pattern" : [ "WWW", "Z Z", "WWW" ],
+  "key" : {
+    "W" : "minecraft:stick",
+    "Z" : "blue_skies:starlit_fence"
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwmoddinglegacy:bsky_starlit_balcony"
+  }
+}

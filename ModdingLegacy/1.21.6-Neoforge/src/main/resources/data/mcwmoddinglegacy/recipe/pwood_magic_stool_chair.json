@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stool_chair",
+  "pattern" : [ "A", "A", "B" ],
+  "key" : {
+    "A" : "premium_wood:magic_log",
+    "B" : "premium_wood:magic_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:pwood_magic_stool_chair"
+  }
+}

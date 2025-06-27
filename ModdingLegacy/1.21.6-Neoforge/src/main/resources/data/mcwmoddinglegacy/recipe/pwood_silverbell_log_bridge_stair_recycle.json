@@ -1,0 +1,21 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shapeless",
+  "group" : "recyclable_bridges",
+  "ingredients" : [
+    "mcwmoddinglegacy:pwood_silverbell_log_bridge_stair"
+  ],
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:pwood_silverbell_log_bridge_middle"
+  }
+}

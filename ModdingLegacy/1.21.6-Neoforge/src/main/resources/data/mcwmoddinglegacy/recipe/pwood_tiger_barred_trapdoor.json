@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "barred_trapdoors",
+  "pattern" : [ "A", "B", "A" ],
+  "key" : {
+    "A" : "premium_wood:tiger_planks",
+    "B" : "mcwtrpdoors:print_barred"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:pwood_tiger_barred_trapdoor"
+  }
+}

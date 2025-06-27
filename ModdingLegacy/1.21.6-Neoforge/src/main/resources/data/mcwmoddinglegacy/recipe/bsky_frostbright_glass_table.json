@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "glass_table",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "mcwmoddinglegacy:bsky_frostbright_end_table",
+    "B" : "minecraft:glass"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:bsky_frostbright_glass_table"
+  }
+}

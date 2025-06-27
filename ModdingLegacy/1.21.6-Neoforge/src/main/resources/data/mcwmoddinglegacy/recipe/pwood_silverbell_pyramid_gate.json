@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "pyramid",
+  "pattern" : [ "ABA", "ACA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "premium_wood:silverbell_log",
+    "C" : "premium_wood:silverbell_planks"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:pwood_silverbell_pyramid_gate"
+  }
+}

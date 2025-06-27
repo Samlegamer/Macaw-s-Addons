@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "picket",
+  "pattern" : [ "CBC", "CAC" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "blue_skies:comet_planks",
+    "C" : "blue_skies:comet_log"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwmoddinglegacy:bsky_comet_picket_fence"
+  }
+}

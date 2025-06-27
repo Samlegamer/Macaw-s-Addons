@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "chair",
+  "pattern" : [ " A", "BA", "CC" ],
+  "key" : {
+    "A" : "blue_skies:stripped_comet_log",
+    "B" : "blue_skies:comet_slab",
+    "C" : "blue_skies:comet_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:stripped_bsky_comet_chair"
+  }
+}

@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "lower",
+  "pattern" : [ " WW", "WWS" ],
+  "key" : {
+    "W" : "blue_skies:bluebright_log",
+    "S" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwmoddinglegacy:bsky_bluebright_lower_roof"
+  }
+}

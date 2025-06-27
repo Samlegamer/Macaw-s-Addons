@@ -1,0 +1,66 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwmoddinglegacy:pwood_purple_heart_bark_glass_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_barn_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_barn_glass_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_beach_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_classic_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_cottage_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_four_panel_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_glass_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_japanese_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_japanese2_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_modern_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_mystic_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_nether_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_paper_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_stable_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_stable_head_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_swamp_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_western_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_waffle_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_tropical_door",
+	  "mcwmoddinglegacy:pwood_purple_heart_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "premium_wood:purple_heart_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "desk",
+  "pattern" : [ "AAA", "B B" ],
+  "key" : {
+    "A" : "premium_wood:tiger_log",
+    "B" : "premium_wood:tiger_fence"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwmoddinglegacy:pwood_tiger_desk"
+  }
+}

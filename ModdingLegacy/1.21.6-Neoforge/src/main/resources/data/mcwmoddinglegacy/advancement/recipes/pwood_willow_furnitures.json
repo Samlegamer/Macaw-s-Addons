@@ -1,0 +1,101 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwmoddinglegacy:pwood_willow_wardrobe",
+	  "mcwmoddinglegacy:pwood_willow_modern_wardrobe",
+	  "mcwmoddinglegacy:pwood_willow_double_wardrobe",
+	  "mcwmoddinglegacy:pwood_willow_bookshelf_cupboard",
+	  "mcwmoddinglegacy:pwood_willow_bookshelf",
+	  "mcwmoddinglegacy:pwood_willow_drawer",
+	  "mcwmoddinglegacy:pwood_willow_double_drawer",
+	  "mcwmoddinglegacy:pwood_willow_bookshelf_drawer",
+	  "mcwmoddinglegacy:pwood_willow_lower_bookshelf_drawer",
+	  "mcwmoddinglegacy:pwood_willow_large_drawer",
+	  "mcwmoddinglegacy:pwood_willow_lower_triple_drawer",
+	  "mcwmoddinglegacy:pwood_willow_triple_drawer",
+	  "mcwmoddinglegacy:pwood_willow_desk",
+	  "mcwmoddinglegacy:pwood_willow_covered_desk",
+	  "mcwmoddinglegacy:pwood_willow_modern_desk",
+	  "mcwmoddinglegacy:pwood_willow_table",
+	  "mcwmoddinglegacy:pwood_willow_end_table",
+	  "mcwmoddinglegacy:pwood_willow_coffee_table",
+	  "mcwmoddinglegacy:pwood_willow_glass_table",
+	  "mcwmoddinglegacy:pwood_willow_chair",
+	  "mcwmoddinglegacy:pwood_willow_modern_chair",
+	  "mcwmoddinglegacy:pwood_willow_striped_chair",
+	  "mcwmoddinglegacy:pwood_willow_stool_chair",
+	  "mcwmoddinglegacy:pwood_willow_counter",
+	  "mcwmoddinglegacy:pwood_willow_drawer_counter",
+	  "mcwmoddinglegacy:pwood_willow_double_drawer_counter",
+	  "mcwmoddinglegacy:pwood_willow_cupboard_counter",
+	  
+	  "mcwmoddinglegacy:stripped_pwood_willow_wardrobe",
+	  "mcwmoddinglegacy:stripped_pwood_willow_modern_wardrobe",
+	  "mcwmoddinglegacy:stripped_pwood_willow_double_wardrobe",
+	  "mcwmoddinglegacy:stripped_pwood_willow_bookshelf_cupboard",
+	  "mcwmoddinglegacy:stripped_pwood_willow_bookshelf",
+	  "mcwmoddinglegacy:stripped_pwood_willow_drawer",
+	  "mcwmoddinglegacy:stripped_pwood_willow_double_drawer",
+	  "mcwmoddinglegacy:stripped_pwood_willow_bookshelf_drawer",
+	  "mcwmoddinglegacy:stripped_pwood_willow_lower_bookshelf_drawer",
+	  "mcwmoddinglegacy:stripped_pwood_willow_large_drawer",
+	  "mcwmoddinglegacy:stripped_pwood_willow_lower_triple_drawer",
+	  "mcwmoddinglegacy:stripped_pwood_willow_triple_drawer",
+	  "mcwmoddinglegacy:stripped_pwood_willow_desk",
+	  "mcwmoddinglegacy:stripped_pwood_willow_covered_desk",
+	  "mcwmoddinglegacy:stripped_pwood_willow_modern_desk",
+	  "mcwmoddinglegacy:stripped_pwood_willow_table",
+	  "mcwmoddinglegacy:stripped_pwood_willow_end_table",
+	  "mcwmoddinglegacy:stripped_pwood_willow_coffee_table",
+	  "mcwmoddinglegacy:stripped_pwood_willow_glass_table",
+	  "mcwmoddinglegacy:stripped_pwood_willow_chair",
+	  "mcwmoddinglegacy:stripped_pwood_willow_modern_chair",
+	  "mcwmoddinglegacy:stripped_pwood_willow_striped_chair",
+	  "mcwmoddinglegacy:stripped_pwood_willow_stool_chair",
+	  "mcwmoddinglegacy:stripped_pwood_willow_counter",
+	  "mcwmoddinglegacy:stripped_pwood_willow_drawer_counter",
+	  "mcwmoddinglegacy:stripped_pwood_willow_double_drawer_counter",
+	  "mcwmoddinglegacy:stripped_pwood_willow_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "premium_wood:willow_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwmoddinglegacy:pwood_willow_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

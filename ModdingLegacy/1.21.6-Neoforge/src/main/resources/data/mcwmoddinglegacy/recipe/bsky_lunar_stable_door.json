@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stable",
+  "pattern" : [ "BB", "AA", "AA" ],
+  "key" : {
+    "A" : "blue_skies:lunar_planks",
+    "B" : "minecraft:iron_bars"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwmoddinglegacy:bsky_lunar_stable_door"
+  }
+}

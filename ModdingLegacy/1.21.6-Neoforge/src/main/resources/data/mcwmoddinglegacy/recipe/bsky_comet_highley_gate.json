@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "highley",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "blue_skies:comet_log"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:bsky_comet_highley_gate"
+  }
+}

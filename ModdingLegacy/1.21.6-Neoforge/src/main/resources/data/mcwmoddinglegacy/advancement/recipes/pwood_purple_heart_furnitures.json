@@ -1,0 +1,101 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwfurnitures:cabinet_door",
+	  "mcwfurnitures:cabinet_drawer",
+	
+      "mcwmoddinglegacy:pwood_purple_heart_wardrobe",
+	  "mcwmoddinglegacy:pwood_purple_heart_modern_wardrobe",
+	  "mcwmoddinglegacy:pwood_purple_heart_double_wardrobe",
+	  "mcwmoddinglegacy:pwood_purple_heart_bookshelf_cupboard",
+	  "mcwmoddinglegacy:pwood_purple_heart_bookshelf",
+	  "mcwmoddinglegacy:pwood_purple_heart_drawer",
+	  "mcwmoddinglegacy:pwood_purple_heart_double_drawer",
+	  "mcwmoddinglegacy:pwood_purple_heart_bookshelf_drawer",
+	  "mcwmoddinglegacy:pwood_purple_heart_lower_bookshelf_drawer",
+	  "mcwmoddinglegacy:pwood_purple_heart_large_drawer",
+	  "mcwmoddinglegacy:pwood_purple_heart_lower_triple_drawer",
+	  "mcwmoddinglegacy:pwood_purple_heart_triple_drawer",
+	  "mcwmoddinglegacy:pwood_purple_heart_desk",
+	  "mcwmoddinglegacy:pwood_purple_heart_covered_desk",
+	  "mcwmoddinglegacy:pwood_purple_heart_modern_desk",
+	  "mcwmoddinglegacy:pwood_purple_heart_table",
+	  "mcwmoddinglegacy:pwood_purple_heart_end_table",
+	  "mcwmoddinglegacy:pwood_purple_heart_coffee_table",
+	  "mcwmoddinglegacy:pwood_purple_heart_glass_table",
+	  "mcwmoddinglegacy:pwood_purple_heart_chair",
+	  "mcwmoddinglegacy:pwood_purple_heart_modern_chair",
+	  "mcwmoddinglegacy:pwood_purple_heart_striped_chair",
+	  "mcwmoddinglegacy:pwood_purple_heart_stool_chair",
+	  "mcwmoddinglegacy:pwood_purple_heart_counter",
+	  "mcwmoddinglegacy:pwood_purple_heart_drawer_counter",
+	  "mcwmoddinglegacy:pwood_purple_heart_double_drawer_counter",
+	  "mcwmoddinglegacy:pwood_purple_heart_cupboard_counter",
+	  
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_wardrobe",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_modern_wardrobe",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_double_wardrobe",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_bookshelf_cupboard",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_bookshelf",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_drawer",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_double_drawer",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_bookshelf_drawer",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_lower_bookshelf_drawer",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_large_drawer",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_lower_triple_drawer",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_triple_drawer",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_desk",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_covered_desk",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_modern_desk",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_table",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_end_table",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_coffee_table",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_glass_table",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_chair",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_modern_chair",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_striped_chair",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_stool_chair",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_counter",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_drawer_counter",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_double_drawer_counter",
+	  "mcwmoddinglegacy:stripped_pwood_purple_heart_cupboard_counter"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "premium_wood:purple_heart_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwmoddinglegacy:pwood_purple_heart_drawer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

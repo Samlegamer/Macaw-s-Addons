@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "swamp",
+  "pattern" : [ "A", "B", "A" ],
+  "key" : {
+    "A" : "premium_wood:magic_planks",
+    "B" : "mcwdoors:print_swamp"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:pwood_magic_swamp_door"
+  }
+}

@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "mcwstairs_platform",
+  "pattern" : [ " ZZ", " WW", "   " ],
+  "key" : {
+    "W" : "blue_skies:lunar_log",
+    "Z" : "blue_skies:lunar_slab"
+  },
+  "result" : {
+    "count" : 12,
+    "id" : "mcwmoddinglegacy:bsky_lunar_platform"
+  }
+}

@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "top",
+  "pattern" : [ "WSW" ],
+  "key" : {
+    "W" : "blue_skies:comet_log",
+    "S" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 2,
+    "id" : "mcwmoddinglegacy:bsky_comet_top_roof"
+  }
+}

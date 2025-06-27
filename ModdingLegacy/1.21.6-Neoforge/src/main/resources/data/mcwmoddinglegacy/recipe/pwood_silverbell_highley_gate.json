@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "highley",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "premium_wood:silverbell_log"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:pwood_silverbell_highley_gate"
+  }
+}

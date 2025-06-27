@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "parapets",
+  "pattern" : [ "AAA", "ABA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "blue_skies:dusk_planks"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwmoddinglegacy:bsky_dusk_plank_parapet"
+  }
+}

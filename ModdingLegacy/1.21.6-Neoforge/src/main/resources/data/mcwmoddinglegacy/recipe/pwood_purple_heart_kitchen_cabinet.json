@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "cabinet",
+  "pattern" : [ "AA", "AC", "AA" ],
+  "key" : {
+    "A" : "premium_wood:purple_heart_log",
+    "C" : "mcwfurnitures:cabinet_door"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwmoddinglegacy:pwood_purple_heart_kitchen_cabinet"
+  }
+}

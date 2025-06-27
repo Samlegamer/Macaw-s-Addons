@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "parapets",
+  "pattern" : [ "AAA", "ABA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "premium_wood:tiger_planks"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwmoddinglegacy:pwood_tiger_plank_parapet"
+  }
+}
