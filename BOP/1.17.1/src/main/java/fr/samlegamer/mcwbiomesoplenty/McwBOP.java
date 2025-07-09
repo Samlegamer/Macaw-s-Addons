@@ -1,5 +1,6 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -79,15 +80,7 @@ public class McwBOP
     
     private void client(FMLClientSetupEvent e)
     {
-    	Stairs.clientWood(e, MODID, WOOD);
-    	Fences.clientWood(e, MODID, WOOD);
-    	Fences.clientHedge(e, MODID, LEAVES);
-    	Furnitures.clientWood(e, MODID, WOOD);
-    	Roofs.clientWood(e, MODID, WOOD);
-    	Bridges.clientWood(e, MODID, WOOD);
-    	Trapdoors.clientWood(e, MODID, WOOD);
-    	Paths.clientWood(e, MODID, WOOD);
-    	Doors.clientWood(e, MODID, WOOD);
-    	Windows.clientWood(e, MODID, WOOD);
+		APIRenderTypes.initAllWood(e, MODID, WOOD, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllLeave(e, MODID, LEAVES);
     }
 }

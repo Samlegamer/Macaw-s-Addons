@@ -3,6 +3,7 @@ package fr.samlegamer.mcwterraformersmc;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.bridges.Bridges;
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
@@ -181,48 +182,14 @@ public class McwTerraformersMC
 
     private void client(FMLClientSetupEvent event)
     {
-        Bridges.clientWood(event, MODID, WOODS_TRAVERSE);
-        Bridges.clientWood(event, MODID, WOODS_CINDERSCAPES);
-        Bridges.clientStone(event, MODID, ROCKS_CINDERSCAPES);
-        Bridges.clientWood(event, MODID, WOODS_TERRESTRIA);
-        Bridges.clientStone(event, MODID, ROCKS_TERRESTRIA);
+        APIRenderTypes.initAllWood(event, MODID, WOODS_TRAVERSE, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllLeave(event, MODID, LEAVES_TRAVERSE);
 
-        Roofs.clientWood(event, MODID, WOODS_TRAVERSE);
-        Roofs.clientWood(event, MODID, WOODS_CINDERSCAPES);
-        Roofs.clientStone(event, MODID, ROCKS_CINDERSCAPES);
-        Roofs.clientWood(event, MODID, WOODS_TERRESTRIA);
-        Roofs.clientStone(event, MODID, ROCKS_TERRESTRIA);
+        APIRenderTypes.initAllWood(event, MODID, WOODS_CINDERSCAPES, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllStone(event, MODID, ROCKS_CINDERSCAPES, Registration.getAllModTypeStone());
 
-        Fences.clientWood(event, MODID, WOODS_TRAVERSE);
-        Fences.clientHedge(event, MODID, LEAVES_TRAVERSE);
-        Fences.clientWood(event, MODID, WOODS_CINDERSCAPES);
-        Fences.clientStone(event, MODID, ROCKS_CINDERSCAPES);
-        Fences.clientWood(event, MODID, WOODS_TERRESTRIA);
-        Fences.clientHedge(event, MODID, LEAVES_TERRESTRIA);
-        Fences.clientStone(event, MODID, ROCKS_TERRESTRIA);
-
-        Furnitures.clientWood(event, MODID, WOODS_TRAVERSE);
-        Furnitures.clientWood(event, MODID, WOODS_CINDERSCAPES);
-        Furnitures.clientWood(event, MODID, WOODS_TERRESTRIA);
-
-        Stairs.clientWood(event, MODID, WOODS_TRAVERSE);
-        Stairs.clientWood(event, MODID, WOODS_CINDERSCAPES);
-        Stairs.clientWood(event, MODID, WOODS_TERRESTRIA);
-
-        Paths.clientWood(event, MODID, WOODS_TRAVERSE);
-        Paths.clientWood(event, MODID, WOODS_CINDERSCAPES);
-        Paths.clientWood(event, MODID, WOODS_TERRESTRIA);
-
-        Doors.clientWood(event, MODID, WOODS_TRAVERSE);
-        Doors.clientWood(event, MODID, WOODS_CINDERSCAPES);
-        Doors.clientWood(event, MODID, WOODS_TERRESTRIA);
-
-        Trapdoors.clientWood(event, MODID, WOODS_TRAVERSE);
-        Trapdoors.clientWood(event, MODID, WOODS_CINDERSCAPES);
-        Trapdoors.clientWood(event, MODID, WOODS_TERRESTRIA);
-
-        Windows.clientWood(event, MODID, WOODS_TRAVERSE);
-        Windows.clientWood(event, MODID, WOODS_CINDERSCAPES);
-        Windows.clientWood(event, MODID, WOODS_TERRESTRIA);
+        APIRenderTypes.initAllWood(event, MODID, WOODS_TERRESTRIA, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllLeave(event, MODID, LEAVES_TERRESTRIA);
+        APIRenderTypes.initAllStone(event, MODID, ROCKS_TERRESTRIA, Registration.getAllModTypeStone());
     }
 }

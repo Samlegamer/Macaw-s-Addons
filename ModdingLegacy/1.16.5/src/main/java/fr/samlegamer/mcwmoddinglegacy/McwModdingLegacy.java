@@ -1,5 +1,7 @@
 package fr.samlegamer.mcwmoddinglegacy;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.data.ModType;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
@@ -120,30 +122,12 @@ public class McwModdingLegacy
     
     private void client(final FMLClientSetupEvent event)
     {
-    	Bridges.clientWood(event, MODID, wood_blue_skies);
-    	Bridges.clientWood(event, MODID, wood_crystallized, RenderType.translucent());
-    	Bridges.clientWood(event, MODID, wood_premium_wood);
-    	Roofs.clientWood(event, MODID, wood_crystallized, RenderType.translucent());
-    	Roofs.clientWood(event, MODID, wood_premium_wood);
-    	Roofs.clientWood(event, MODID, wood_blue_skies);
-    	Fences.clientWood(event, MODID, wood_crystallized);
-    	Fences.clientWood(event, MODID, wood_premium_wood);
-    	Fences.clientHedge(event, MODID, wood_blue_skies);
-    	Fences.clientHedge(event, MODID, wood_crystallized, RenderType.translucent());
-    	Fences.clientHedge(event, MODID, wood_premium_wood);
-    	Furnitures.clientWood(event, MODID, wood_blue_skies);
-    	Furnitures.clientWood(event, MODID, wood_premium_wood);
-    	Stairs.clientWood(event, MODID, wood_blue_skies);
-    	Stairs.clientWood(event, MODID, wood_premium_wood);
-
-		Paths.clientWood(event, MODID, wood_blue_skies);
-		Paths.clientWood(event, MODID, wood_premium_wood);
-		Doors.clientWood(event, MODID, wood_blue_skies);
-		Doors.clientWood(event, MODID, wood_premium_wood);
-		Trapdoors.clientWood(event, MODID, wood_blue_skies);
-		Trapdoors.clientWood(event, MODID, wood_premium_wood);
-		Windows.clientWood(event, MODID, wood_blue_skies);
-		Windows.clientWood(event, MODID, wood_premium_wood);
+		APIRenderTypes.initAllWood(event, MODID, wood_blue_skies, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(event, MODID, wood_crystallized, RenderType.translucent(), ModType.BRIDGES, ModType.ROOFS);
+		APIRenderTypes.initAllWood(event, MODID, wood_premium_wood, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllLeave(event, MODID, wood_blue_skies);
+		APIRenderTypes.initAllLeave(event, MODID, wood_crystallized, RenderType.translucent());
+		APIRenderTypes.initAllLeave(event, MODID, wood_premium_wood);
     }
     
     private static String randomNaming()

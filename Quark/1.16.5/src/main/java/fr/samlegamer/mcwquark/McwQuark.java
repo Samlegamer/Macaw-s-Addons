@@ -22,7 +22,6 @@ import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
-
 import javax.annotation.Nonnull;
 
 @Mod(McwQuark.MODID)

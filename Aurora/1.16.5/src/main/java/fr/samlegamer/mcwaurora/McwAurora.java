@@ -1,5 +1,6 @@
 package fr.samlegamer.mcwaurora;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
@@ -136,44 +137,12 @@ public class McwAurora
     
     private void client(FMLClientSetupEvent e)
     {
-    	Bridges.clientWood(e, MODID, WOOD_BAYOU);
-    	Bridges.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-    	Bridges.clientWood(e, MODID, WOOD_ABUNDANCE);
+		APIRenderTypes.initAllWood(e, MODID, WOOD_BAYOU, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(e, MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(e, MODID, WOOD_ABUNDANCE, Registration.getAllModTypeWood());
 
-    	Roofs.clientWood(e, MODID, WOOD_BAYOU);
-    	Roofs.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-    	Roofs.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-    	Fences.clientWood(e, MODID, WOOD_BAYOU);
-    	Fences.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-    	Fences.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-    	Fences.clientHedge(e, MODID, WOOD_BAYOU);
-    	Fences.clientHedge(e, MODID, WOOD_ABUNDANCE);
-
-    	Furnitures.clientWood(e, MODID, WOOD_BAYOU);
-    	Furnitures.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-    	Furnitures.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-    	Stairs.clientWood(e, MODID, WOOD_BAYOU);
-    	Stairs.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-    	Stairs.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-		Paths.clientWood(e, MODID, WOOD_BAYOU);
-		Paths.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-		Paths.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-		Trapdoors.clientWood(e, MODID, WOOD_BAYOU);
-		Trapdoors.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-		Trapdoors.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-		Doors.clientWood(e, MODID, WOOD_BAYOU);
-		Doors.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-		Doors.clientWood(e, MODID, WOOD_ABUNDANCE);
-
-		Windows.clientWood(e, MODID, WOOD_BAYOU);
-		Windows.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-		Windows.clientWood(e, MODID, WOOD_ABUNDANCE);
+		APIRenderTypes.initAllLeave(e, MODID, WOOD_BAYOU);
+		APIRenderTypes.initAllLeave(e, MODID, WOOD_ABUNDANCE);
     }
     
 	private static String randomNaming()

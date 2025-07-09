@@ -1,5 +1,6 @@
 package fr.samlegamer.mcwabnormals;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
@@ -144,72 +145,19 @@ public class McwAbnormals
     
     private void client(FMLClientSetupEvent e)
     {
-    	Bridges.clientStone(e, MODID, ROCK_BB);
-    	Bridges.clientWood(e, MODID, WOOD_ATMO);    	
-    	Bridges.clientStone(e, MODID, ROCK_ATMO);
-    	Bridges.clientWood(e, MODID, WOOD_AUTU);
-    	Bridges.clientStone(e, MODID, ROCK_AUTU);
-    	Bridges.clientWood(e, MODID, WOOD_ENVI);
-    	Bridges.clientWood(e, MODID, WOOD_UAQUA);
-    	Bridges.clientWood(e, MODID, WOOD_ENDER);
-    	
-    	Roofs.clientStone(e, MODID, ROCK_BB);
-    	Roofs.clientWood(e, MODID, WOOD_ATMO);    	
-    	Roofs.clientStone(e, MODID, ROCK_ATMO);
-    	Roofs.clientWood(e, MODID, WOOD_AUTU);
-    	Roofs.clientStone(e, MODID, ROCK_AUTU);
-    	Roofs.clientWood(e, MODID, WOOD_ENVI);
-    	Roofs.clientWood(e, MODID, WOOD_UAQUA);
-    	Roofs.clientWood(e, MODID, WOOD_ENDER);
+		APIRenderTypes.initAllWood(e, MODID, WOOD_ATMO, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(e, MODID, WOOD_AUTU, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(e, MODID, WOOD_ENVI, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(e, MODID, WOOD_UAQUA, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(e, MODID, WOOD_ENDER, Registration.getAllModTypeWood());
 
-    	Fences.clientStone(e, MODID, ROCK_BB);
-    	Fences.clientWood(e, MODID, WOOD_ATMO);    	
-    	Fences.clientStone(e, MODID, ROCK_ATMO);
-    	Fences.clientWood(e, MODID, WOOD_AUTU);
-    	Fences.clientStone(e, MODID, ROCK_AUTU);
-    	Fences.clientWood(e, MODID, WOOD_ENVI);
-    	Fences.clientWood(e, MODID, WOOD_UAQUA);
-    	Fences.clientWood(e, MODID, WOOD_ENDER);
-    	
-    	Fences.clientHedge(e, MODID, LEAVES_ATMO);    	
-    	Fences.clientHedge(e, MODID, LEAVES_AUTU);
-    	Fences.clientHedge(e, MODID, LEAVES_ENVI);
-    	Fences.clientHedge(e, MODID, LEAVES_UAQUA);
-    	
-    	Furnitures.clientWood(e, MODID, WOOD_ATMO);    	
-    	Furnitures.clientWood(e, MODID, WOOD_AUTU);
-    	Furnitures.clientWood(e, MODID, WOOD_ENVI);
-    	Furnitures.clientWood(e, MODID, WOOD_UAQUA);
-    	Furnitures.clientWood(e, MODID, WOOD_ENDER);
+		APIRenderTypes.initAllLeave(e, MODID, LEAVES_ATMO);
+		APIRenderTypes.initAllLeave(e, MODID, LEAVES_AUTU);
+		APIRenderTypes.initAllLeave(e, MODID, LEAVES_ENVI);
+		APIRenderTypes.initAllLeave(e, MODID, LEAVES_UAQUA);
 
-    	Stairs.clientWood(e, MODID, WOOD_ATMO);    	
-    	Stairs.clientWood(e, MODID, WOOD_AUTU);
-    	Stairs.clientWood(e, MODID, WOOD_ENVI);
-    	Stairs.clientWood(e, MODID, WOOD_UAQUA);
-    	Stairs.clientWood(e, MODID, WOOD_ENDER);
-
-		Paths.clientWood(e, MODID, WOOD_ATMO);
-		Paths.clientWood(e, MODID, WOOD_AUTU);
-		Paths.clientWood(e, MODID, WOOD_ENVI);
-		Paths.clientWood(e, MODID, WOOD_UAQUA);
-		Paths.clientWood(e, MODID, WOOD_ENDER);
-
-		Doors.clientWood(e, MODID, WOOD_ATMO);
-		Doors.clientWood(e, MODID, WOOD_AUTU);
-		Doors.clientWood(e, MODID, WOOD_ENVI);
-		Doors.clientWood(e, MODID, WOOD_UAQUA);
-		Doors.clientWood(e, MODID, WOOD_ENDER);
-
-		Trapdoors.clientWood(e, MODID, WOOD_ATMO);
-		Trapdoors.clientWood(e, MODID, WOOD_AUTU);
-		Trapdoors.clientWood(e, MODID, WOOD_ENVI);
-		Trapdoors.clientWood(e, MODID, WOOD_UAQUA);
-		Trapdoors.clientWood(e, MODID, WOOD_ENDER);
-
-		Windows.clientWood(e, MODID, WOOD_ATMO);
-		Windows.clientWood(e, MODID, WOOD_AUTU);
-		Windows.clientWood(e, MODID, WOOD_ENVI);
-		Windows.clientWood(e, MODID, WOOD_UAQUA);
-		Windows.clientWood(e, MODID, WOOD_ENDER);
+		APIRenderTypes.initAllStone(e, MODID, ROCK_BB, Registration.getAllModTypeStone());
+		APIRenderTypes.initAllStone(e, MODID, ROCK_ATMO, Registration.getAllModTypeStone());
+		APIRenderTypes.initAllStone(e, MODID, ROCK_AUTU, Registration.getAllModTypeStone());
     }
 }

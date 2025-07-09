@@ -1,5 +1,7 @@
 package fr.samlegamer.mcwsajevius;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.data.ModType;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -103,24 +105,9 @@ public class McwSajevius
     
     private void client(FMLClientSetupEvent e)
     {
-    	Bridges.clientWood(e, MODID, wood_shroomed);
-    	Bridges.clientWood(e, MODID, wood_betterlands);
-    	Bridges.clientStone(e, MODID, stone_betterlands);
-    	
-    	Roofs.clientWood(e, MODID, wood_shroomed);
-    	Roofs.clientWood(e, MODID, wood_betterlands);
-    	Roofs.clientStone(e, MODID, stone_betterlands);
-
-    	Fences.clientWood(e, MODID, wood_shroomed);
-    	Fences.clientWood(e, MODID, wood_betterlands);
-    	Fences.clientStone(e, MODID, stone_betterlands);
-    	Fences.clientHedge(e, MODID, wood_betterlands);
-    	
-    	Furnitures.clientWood(e, MODID, wood_shroomed);
-    	Furnitures.clientWood(e, MODID, wood_betterlands);
-
-    	Stairs.clientWood(e, MODID, wood_shroomed);
-    	Stairs.clientWood(e, MODID, wood_betterlands);
+		APIRenderTypes.initAllWood(e, MODID, wood_betterlands, ModType.BRIDGES, ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.STAIRS);
+		APIRenderTypes.initAllLeave(e, MODID, wood_betterlands);
+		APIRenderTypes.initAllStone(e, MODID, stone_betterlands, Registration.getAllModTypeStone());
     }
     
 	private static String randomNaming()

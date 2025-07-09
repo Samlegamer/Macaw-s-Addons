@@ -11,7 +11,6 @@ version="${mod_version}"
 displayName="${mod_name}"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/macaws-modding-legacy"
 logoFile="logo.png"
-#credits=""
 authors="${mod_authors}"
 description='''${mod_description}'''
 
@@ -32,7 +31,7 @@ description='''${mod_description}'''
 [[dependencies.${mod_id}]]
 modId="addonslib"
 mandatory=true
-versionRange="NONE"
+versionRange="[1.17.1-1.4,)"
 ordering="AFTER"
 
 [[dependencies.${mod_id}]]

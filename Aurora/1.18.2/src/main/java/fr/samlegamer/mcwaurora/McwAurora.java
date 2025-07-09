@@ -1,5 +1,6 @@
 package fr.samlegamer.mcwaurora;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
@@ -17,7 +18,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import org.apache.logging.log4j.LogManager;
@@ -39,7 +39,7 @@ public class McwAurora
 	public static final String MODID = "mcwaurora";
     private static final Logger LOGGER = LogManager.getLogger();
     
-    public static final List<String> WOOD_ENHANCED_MUSH = Arrays.asList("brown_mushroom", "red_mushroom"); // enhanced_mushrooms
+    public static final List<String> WOOD_ENHANCED_MUSH = List.of("brown_mushroom", "red_mushroom"); // enhanced_mushrooms
 
     private static final DeferredRegister<Block> block = Registration.blocks(MODID);
     private static final DeferredRegister<Item> item = Registration.items(MODID);
@@ -96,15 +96,7 @@ public class McwAurora
     
     private void client(FMLClientSetupEvent e)
     {
-    	Bridges.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-    	Roofs.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-    	Fences.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-    	Furnitures.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-    	Stairs.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-		Paths.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-		Trapdoors.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-		Doors.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
-		Windows.clientWood(e, MODID, WOOD_ENHANCED_MUSH);
+		APIRenderTypes.initAllWood(e, MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());
     }
     
 	private static String randomNaming()

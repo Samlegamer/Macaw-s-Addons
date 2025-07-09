@@ -121,13 +121,7 @@ dependencies {
     // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    //runtimeOnly fg.deobf("curse.maven:macaws-fences-and-walls-453925:5442205")
-    //runtimeOnly fg.deobf("curse.maven:macaws-bridges-351725:5465206")
-    //runtimeOnly fg.deobf("curse.maven:macaws-roofs-352039:5554945")
-    //runtimeOnly fg.deobf("curse.maven:macaws-furniture-359540:5589858")
-
-	implementation fg.deobf("curse.maven:addonslib-1090999:6182307")
-	implementation fg.deobf("curse.maven:biomes-o-plenty-220318:3913914")
+	implementation fg.deobf("curse.maven:addonslib-1090999:6740729")
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}") // Adds the full JEI mod as a runtime dependency
