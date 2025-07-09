@@ -1,6 +1,5 @@
 modLoader="javafml"
 loaderVersion="[40,)"
-
 license="${mod_license}"
 issueTrackerURL="https://github.com/Samlegamer/Macaw-s-Addons/issues"
 
@@ -10,7 +9,6 @@ version="${mod_version}"
 displayName="${mod_name}"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/macaws-modding-legacy"
 logoFile="logo.png"
-#credits=""
 authors="${mod_authors}"
 description='''${mod_description}'''
 
@@ -31,7 +29,7 @@ description='''${mod_description}'''
 [[dependencies.${mod_id}]]
     modId="addonslib"
     mandatory=true
-    versionRange="NONE"
+    versionRange="[1.18.2-1.5,)"
     ordering="AFTER"
 
 [[dependencies.${mod_id}]]

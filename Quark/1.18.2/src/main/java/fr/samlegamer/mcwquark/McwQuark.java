@@ -1,5 +1,7 @@
 package fr.samlegamer.mcwquark;
 
+import fr.samlegamer.addonslib.Registration;
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.path.Paths;
@@ -78,36 +80,26 @@ public class McwQuark
     
     private void client(final FMLClientSetupEvent event)
     {
-		Bridges.clientWood(event, MODID, wood);
-    	Bridges.clientStone(event, MODID, stone);
-		Roofs.clientWood(event, MODID, wood);
-		Roofs.clientStone(event, MODID, stone);
-		Fences.clientWood(event, MODID, wood);
-    	Fences.clientStone(event, MODID, stone);
-    	Fences.clientHedge(event, MODID, leaves);
-		Furnitures.clientWood(event, MODID, wood);
-		Stairs.clientWood(event, MODID, wood);
-		Doors.clientWood(event, MODID, wood);
-		Trapdoors.clientWood(event, MODID, wood);
-		Paths.clientWood(event, MODID, wood);
-		Windows.clientWood(event, MODID, wood);
+		APIRenderTypes.initAllWood(event, MODID, wood, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllStone(event, MODID, stone, Registration.getAllModTypeStone());
+		APIRenderTypes.initAllLeave(event, MODID, leaves);
     }
     
     @SubscribeEvent
     public static void registry(final RegistryEvent.Register<Block> e)
     {
-		Bridges.registryWood(e, wood, MCWQUARK_TAB);
-    	Bridges.registryStone(e, stone, MCWQUARK_TAB);
-		Roofs.registryWood(e, wood, MCWQUARK_TAB);
-		Roofs.registryStone(e, stone, MCWQUARK_TAB);
-		Fences.registryWood(e, wood, MCWQUARK_TAB);
-    	Fences.registryStone(e, stone, MCWQUARK_TAB);
-    	Fences.registryHedges(e, leaves, MCWQUARK_TAB);
-		Furnitures.registryWood(e, wood, MCWQUARK_TAB);
-		Stairs.registryWood(e, wood, MCWQUARK_TAB);
-		Doors.registryWood(e, wood, MCWQUARK_TAB);
-		Trapdoors.registryWood(e, wood, MCWQUARK_TAB);
-		Paths.registryWood(e, wood, MCWQUARK_TAB);
-		Windows.registryWood(e, wood, MCWQUARK_TAB);
+		Bridges.registryWood(e, MODID, wood, MCWQUARK_TAB);
+    	Bridges.registryStone(e, MODID, stone, MCWQUARK_TAB);
+		Roofs.registryWood(e, MODID, wood, MCWQUARK_TAB);
+		Roofs.registryStone(e, MODID, stone, MCWQUARK_TAB);
+		Fences.registryWood(e, MODID, wood, MCWQUARK_TAB);
+    	Fences.registryStone(e, MODID, stone, MCWQUARK_TAB);
+    	Fences.registryHedges(e, MODID, leaves, MCWQUARK_TAB);
+		Furnitures.registryWood(e, MODID, wood, MCWQUARK_TAB);
+		Stairs.registryWood(e, MODID, wood, MCWQUARK_TAB);
+		Doors.registryWood(e, MODID, wood, MCWQUARK_TAB);
+		Trapdoors.registryWood(e, MODID, wood, MCWQUARK_TAB);
+		Paths.registryWood(e, MODID, wood, MCWQUARK_TAB);
+		Windows.registryWood(e, MODID, wood, MCWQUARK_TAB);
     }
 }

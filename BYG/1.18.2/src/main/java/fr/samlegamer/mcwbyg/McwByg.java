@@ -1,5 +1,8 @@
 package fr.samlegamer.mcwbyg;
 
+import fr.samlegamer.addonslib.Registration;
+import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.data.ModType;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
@@ -84,38 +87,27 @@ public class McwByg
     
     private void client(FMLClientSetupEvent event)
     {
-    	Bridges.clientWood(event, MODID, WOOD);
-    	Bridges.clientStone(event, MODID, bridges_rockable);
-    	Fences.clientWood(event, MODID, WOOD);
-    	Fences.clientHedge(event, MODID, LEAVES);
-    	Fences.clientStone(event, MODID, fences_rockable);
-    	Roofs.clientWood(event, MODID, WOOD);
-    	Roofs.clientStone(event, MODID, fences_rockable);
-    	Furnitures.clientWood(event, MODID, WOOD);
-    	Stairs.clientWood(event, MODID, WOOD);
-		// 1.1 Update
-		Paths.clientWood(event, MODID, WOOD);
-		Doors.clientWood(event, MODID, WOOD);
-		Trapdoors.clientWood(event, MODID, WOOD);
-		Windows.clientWood(event, MODID, WOOD);
+		APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllLeave(event, MODID, LEAVES);
+		APIRenderTypes.initAllStone(event, MODID, bridges_rockable, ModType.BRIDGES);
+		APIRenderTypes.initAllStone(event, MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
     }
     
     @SubscribeEvent
     public static void registry(final RegistryEvent.Register<Block> event)
     {
-    	Bridges.registryWood(event, WOOD, MCWBYG_TAB);
-    	Bridges.registryStone(event, bridges_rockable, MCWBYG_TAB);
-    	Roofs.registryWood(event, WOOD, MCWBYG_TAB);
-    	Roofs.registryStone(event, fences_rockable, MCWBYG_TAB);
-    	Fences.registryWood(event, WOOD, MCWBYG_TAB);
-    	Fences.registryHedges(event, LEAVES, MCWBYG_TAB);
-    	Fences.registryStone(event, fences_rockable, MCWBYG_TAB);
-    	Furnitures.registryWood(event, WOOD, MCWBYG_TAB);
-    	Stairs.registryWood(event, WOOD, MCWBYG_TAB);
-		// 1.1 Update
-		Paths.registryWood(event, WOOD, MCWBYG_TAB);
-		Doors.registryWood(event, WOOD, MCWBYG_TAB);
-		Trapdoors.registryWood(event, WOOD, MCWBYG_TAB);
-		Windows.registryWood(event, WOOD, MCWBYG_TAB);
+    	Bridges.registryWood(event, MODID, WOOD, MCWBYG_TAB);
+    	Bridges.registryStone(event, MODID, bridges_rockable, MCWBYG_TAB);
+    	Roofs.registryWood(event, MODID, WOOD, MCWBYG_TAB);
+    	Roofs.registryStone(event, MODID, fences_rockable, MCWBYG_TAB);
+    	Fences.registryWood(event, MODID, WOOD, MCWBYG_TAB);
+    	Fences.registryHedges(event, MODID, LEAVES, MCWBYG_TAB);
+    	Fences.registryStone(event, MODID, fences_rockable, MCWBYG_TAB);
+    	Furnitures.registryWood(event, MODID, WOOD, MCWBYG_TAB);
+    	Stairs.registryWood(event, MODID, WOOD, MCWBYG_TAB);
+		Paths.registryWood(event, MODID, WOOD, MCWBYG_TAB);
+		Doors.registryWood(event, MODID, WOOD, MCWBYG_TAB);
+		Trapdoors.registryWood(event, MODID, WOOD, MCWBYG_TAB);
+		Windows.registryWood(event, MODID, WOOD, MCWBYG_TAB);
     }
 }
