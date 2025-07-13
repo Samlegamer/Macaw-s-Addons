@@ -1,11 +1,14 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
@@ -23,6 +26,7 @@ import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
+import org.jetbrains.annotations.NotNull;
 
 @Mod(McwBOP.MODID)
 public class McwBOP
@@ -37,7 +41,7 @@ public class McwBOP
 
 	public static final CreativeModeTab MCWBOP_TAB = new CreativeModeTab(MODID + ".tab") {
 	    @Override
-	    public ItemStack makeIcon() {
+	    public @NotNull ItemStack makeIcon() {
 	    	NewIconRandom.NewProperties woodProperties = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "cherry_roof"), Finder.findBlock(MODID, "cherry_picket_fence"), Finder.findBlock(MODID, "cherry_wardrobe"), 
 	        Finder.findBlock(MODID, "cherry_log_bridge_middle"), Finder.findBlock(MODID, "cherry_window"), Finder.findBlock(MODID, "cherry_japanese_door"), Finder.findBlock(MODID, "cherry_glass_trapdoor"), 
 	        Finder.findBlock(MODID, "cherry_planks_path"), Finder.findBlock(MODID, "cherry_loft_stairs"));
@@ -71,6 +75,13 @@ public class McwBOP
     	Windows.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Stairs.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
+
+	private void client(FMLClientSetupEvent event)
+	{
+		APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllLeave(event, MODID, LEAVES);
+	}
 }

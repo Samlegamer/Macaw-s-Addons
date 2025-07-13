@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
@@ -74,6 +75,7 @@ public class McwBOP
     	Windows.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Stairs.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
 

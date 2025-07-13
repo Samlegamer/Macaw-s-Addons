@@ -173,7 +173,6 @@ public class McwTerraformersMC
         return "fir";
     }
 
-
     private void client(FMLClientSetupEvent event)
     {
         APIRenderTypes.initAllWood(event, MODID, WOODS_TRAVERSE, Registration.getAllModTypeWood());

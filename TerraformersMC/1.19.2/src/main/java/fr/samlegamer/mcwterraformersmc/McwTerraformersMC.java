@@ -3,6 +3,7 @@ package fr.samlegamer.mcwterraformersmc;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.bridges.Bridges;
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
@@ -20,6 +21,8 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -131,7 +134,21 @@ public class McwTerraformersMC
         Windows.setRegistrationWoodModLoaded(WOODS_CINDERSCAPES, BLOCKS, ITEMS, MCWTERRAFORMERSMC_TAB, "cinderscapes");
         Windows.setRegistrationWoodModLoaded(WOODS_TERRESTRIA, BLOCKS, ITEMS, MCWTERRAFORMERSMC_TAB, "terrestria");
 
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
         LOGGER.info("Macaw's TerraformersMC Is Charged !");
+    }
+
+    private void client(FMLClientSetupEvent event)
+    {
+        APIRenderTypes.initAllWood(event, MODID, WOODS_TRAVERSE, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllLeave(event, MODID, LEAVES_TRAVERSE);
+
+        APIRenderTypes.initAllWood(event, MODID, WOODS_CINDERSCAPES, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllStone(event, MODID, ROCKS_CINDERSCAPES, Registration.getAllModTypeStone());
+
+        APIRenderTypes.initAllWood(event, MODID, WOODS_TERRESTRIA, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllLeave(event, MODID, LEAVES_TERRESTRIA);
+        APIRenderTypes.initAllStone(event, MODID, ROCKS_TERRESTRIA, Registration.getAllModTypeStone());
     }
 
     private static String randomNaming()

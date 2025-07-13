@@ -1,6 +1,7 @@
 package fr.samlegamer.mcwquark;
 
 import fr.samlegamer.addonslib.Registration;
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.path.Paths;
@@ -13,6 +14,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.fml.common.Mod;
 import java.util.List;
+
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -85,6 +89,14 @@ public class McwQuark
 		Trapdoors.setRegistrationWood(wood, BLOCKS, ITEMS, MCWQUARK_TAB);
 		Paths.setRegistrationWood(wood, BLOCKS, ITEMS, MCWQUARK_TAB);
 		Windows.setRegistrationWood(wood, BLOCKS, ITEMS, MCWQUARK_TAB);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
 		LOGGER.info("Macaw's Quark Is Charged !");
     }
+
+	private void client(final FMLClientSetupEvent event)
+	{
+		APIRenderTypes.initAllWood(event, MODID, wood, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllStone(event, MODID, stone, Registration.getAllModTypeStone());
+		APIRenderTypes.initAllLeave(event, MODID, leaves);
+	}
 }

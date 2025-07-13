@@ -1,5 +1,7 @@
 package fr.samlegamer.mcwbyg;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.data.ModType;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
@@ -10,6 +12,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
@@ -91,6 +95,15 @@ public class McwByg
 		Trapdoors.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
 		Windows.setRegistrationWood(WOOD, block, item, MCWBYG_TAB);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
     }
+
+	private void client(FMLClientSetupEvent event)
+	{
+		APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllLeave(event, MODID, LEAVES);
+		APIRenderTypes.initAllStone(event, MODID, bridges_rockable, ModType.BRIDGES);
+		APIRenderTypes.initAllStone(event, MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
+	}
 }
