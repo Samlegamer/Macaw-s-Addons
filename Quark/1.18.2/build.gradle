@@ -170,8 +170,10 @@ dependencies {
 }
 
 processResources {
+    inputs.property "version", project.version
     filesMatching("META-INF/mods.toml") {
         expand project.properties
+        expand "version": project.version
     }
     filesMatching("pack.mcmeta") {
         expand project.properties

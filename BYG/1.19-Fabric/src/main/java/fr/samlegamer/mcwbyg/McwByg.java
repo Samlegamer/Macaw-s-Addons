@@ -3,6 +3,7 @@ package fr.samlegamer.mcwbyg;
 import java.util.List;
 
 import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.fuel.APIFuels;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
@@ -59,19 +60,9 @@ public class McwByg implements ModInitializer
 		Windows.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
 
 		Mapping.missingnoWoodBlock();
-		
-    	Bridges.fuelWood(MODID, WOOD);
-		Roofs.fuelWood(MODID, WOOD);
-    	Fences.fuelWood(MODID, WOOD);
-    	Fences.fuelHedge(MODID, LEAVES);
-    	Furnitures.fuelWood(MODID, WOOD);
-    	Stairs.fuelWood(MODID, WOOD);
 
-		//1.1 Update
-		Paths.fuelWood(MODID, WOOD);
-		Doors.fuelWood(MODID, WOOD);
-		Trapdoors.fuelWood(MODID, WOOD);
-		Windows.fuelWood(MODID, WOOD);
+		APIFuels.initAllWood(MODID, WOOD);
+		APIFuels.initAllLeave(MODID, LEAVES);
 
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
 	}

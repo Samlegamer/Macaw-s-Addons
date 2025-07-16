@@ -1,11 +1,14 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import java.util.List;
@@ -54,6 +57,7 @@ public class McwBOP
     	Stairs.setRegistrationWood(WOOD, block, item);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::registerTab);
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addTotab);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
@@ -76,18 +80,16 @@ public class McwBOP
        final Block icon = woodProperties.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.STAIRS);
        MCWBOP_TAB = Registration.tabs(event, MODID, "tab", icon);
     }
+
+	private void client(FMLClientSetupEvent event)
+	{
+		APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllLeave(event, MODID, LEAVES);
+	}
     
     private void addTotab(CreativeModeTabEvent.BuildContents event)
     {
-    	Bridges.addToTab(event, MODID, WOOD, MCWBOP_TAB);
-    	Roofs.addToTab(event, MODID, WOOD, MCWBOP_TAB);
-    	Fences.addToTab(event, MODID, WOOD, MCWBOP_TAB);
-    	Fences.addToTabHedge(event, MODID, LEAVES, MCWBOP_TAB);
-    	Furnitures.addToTab(event, MODID, WOOD, MCWBOP_TAB);
-    	Trapdoors.addToTab(event, MODID, WOOD, MCWBOP_TAB);
-    	Paths.addToTab(event, MODID, WOOD, MCWBOP_TAB);
-    	Doors.addToTab(event, MODID, WOOD, MCWBOP_TAB);
-    	Windows.addToTab(event, MODID, WOOD, MCWBOP_TAB);
-    	Stairs.addToTab(event, MODID, WOOD, MCWBOP_TAB);
+		APICreativeTab.initAllWood(event, MODID, WOOD, MCWBOP_TAB, Registration.getAllModTypeWood());
+		APICreativeTab.initAllLeave(event, MODID, LEAVES, MCWBOP_TAB);
     }
 }

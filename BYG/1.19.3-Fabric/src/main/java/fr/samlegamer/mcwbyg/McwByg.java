@@ -1,8 +1,13 @@
 package fr.samlegamer.mcwbyg;
 
 import java.util.List;
+
+import fr.samlegamer.addonslib.Registration;
+import fr.samlegamer.addonslib.data.ModType;
 import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.fuel.APIFuels;
 import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
 import org.apache.logging.log4j.LogManager;
@@ -52,38 +57,19 @@ public class McwByg implements ModInitializer
     	Fences.setRegistrationRock(MODID, fences_rockable);
     	Furnitures.setRegistrationWood(MODID, WOOD);
     	Stairs.setRegistrationWood(MODID, WOOD);
-		// 1.1 Update
 		Paths.setRegistrationWood(MODID, WOOD);
 		Doors.setRegistrationWood(MODID, WOOD);
 		Trapdoors.setRegistrationWood(MODID, WOOD);
 		Windows.setRegistrationWood(MODID, WOOD);
 
-    	Bridges.addToTabWood(MODID, WOOD, MCWBYG_TAB);
-    	Bridges.addToTabStone(MODID, bridges_rockable, MCWBYG_TAB);
-    	Roofs.addToTabWood(MODID, WOOD, MCWBYG_TAB);
-    	Roofs.addToTabStone(MODID, fences_rockable, MCWBYG_TAB);
-    	Fences.addToTabWood(MODID, WOOD, MCWBYG_TAB);
-    	Fences.addToTabLeave(MODID, LEAVES, MCWBYG_TAB);
-    	Fences.addToTabStone(MODID, fences_rockable, MCWBYG_TAB);
-    	Furnitures.addToTabWood(MODID, WOOD, MCWBYG_TAB);
-    	Stairs.addToTabWood(MODID, WOOD, MCWBYG_TAB);
-		// 1.1 Update
-		Paths.addToTabWood(MODID, WOOD, MCWBYG_TAB);
-		Doors.addToTabWood(MODID, WOOD, MCWBYG_TAB);
-		Trapdoors.addToTabWood(MODID, WOOD, MCWBYG_TAB);
-		Windows.addToTabWood(MODID, WOOD, MCWBYG_TAB);
+		APICreativeTab.initAllWood(McwByg.MODID, McwByg.WOOD, MCWBYG_TAB, Registration.getAllModTypeWood());
+		APICreativeTab.initAllLeave(McwByg.MODID, McwByg.LEAVES, MCWBYG_TAB);
+		APICreativeTab.initAllStone(McwByg.MODID, McwByg.bridges_rockable, MCWBYG_TAB, ModType.BRIDGES);
+		APICreativeTab.initAllStone(McwByg.MODID, McwByg.fences_rockable, MCWBYG_TAB, ModType.ROOFS, ModType.FENCES);
 
-    	Bridges.fuelWood(MODID, WOOD);
-		Roofs.fuelWood(MODID, WOOD);
-    	Fences.fuelWood(MODID, WOOD);
-    	Fences.fuelHedge(MODID, LEAVES);
-    	Furnitures.fuelWood(MODID, WOOD);
-    	Stairs.fuelWood(MODID, WOOD);
-		// 1.1 Update
-		Paths.fuelWood(MODID, WOOD);
-		Doors.fuelWood(MODID, WOOD);
-		Trapdoors.fuelWood(MODID, WOOD);
-		Windows.fuelWood(MODID, WOOD);
+		APIFuels.initAllWood(MODID, WOOD);
+		APIFuels.initAllLeave(MODID, LEAVES);
+
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
 	}
 	

@@ -1,13 +1,16 @@
 package fr.samlegamer.mcwterraformersmc;
 
 import fr.samlegamer.addonslib.Finder;
+import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.bridges.Bridges;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.fences.Fences;
+import fr.samlegamer.addonslib.fuel.APIFuels;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.stairs.Stairs;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
@@ -89,99 +92,30 @@ public class McwTerraformersMC implements ModInitializer
         Doors.setRegistrationWood(MODID, WOODS_CINDERSCAPES);
         Doors.setRegistrationWood(MODID, WOODS_TERRESTRIA);
 
-        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
-        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, wood);
-        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
+        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR));
+        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR));
+        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR));
 
         Windows.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
         Windows.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, wood);
         Windows.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
 
 
+        APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse", Registration.getAllModTypeWood());
+        APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes", Registration.getAllModTypeStone());
+        APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes", Registration.getAllModTypeWood());
+        APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria", Registration.getAllModTypeWood());
+        APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria", Registration.getAllModTypeStone());
 
-        Bridges.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Bridges.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Bridges.addToTabStoneModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Bridges.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
-        Bridges.addToTabStoneModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
+        APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
+        APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
 
-        Roofs.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Roofs.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Roofs.addToTabStoneModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Roofs.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
-        Roofs.addToTabStoneModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
+        APIFuels.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, Registration.getAllModTypeWood());
+        APIFuels.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, Registration.getAllModTypeWood());
+        APIFuels.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, Registration.getAllModTypeWood());
 
-        Fences.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Fences.addToTabLeaveModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Fences.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Fences.addToTabStoneModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Fences.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
-        Fences.addToTabLeaveModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
-        Fences.addToTabStoneModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
-
-        Furnitures.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Furnitures.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Furnitures.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
-
-        Stairs.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Stairs.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Stairs.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
-
-        Paths.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Paths.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Paths.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
-
-        Doors.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Doors.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Doors.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
-
-        Trapdoors.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Trapdoors.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Trapdoors.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
-
-        Windows.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        Windows.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes");
-        Windows.addToTabWoodModLoaded(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
-
-
-
-        Bridges.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        Bridges.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        Bridges.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-
-        Roofs.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        Roofs.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        Roofs.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-
-        Fences.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        Fences.fuelHedge(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE);
-        Fences.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        Fences.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-        Fences.fuelHedge(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA);
-
-        Furnitures.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        Furnitures.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        Furnitures.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-
-        Stairs.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        Stairs.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        Stairs.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-
-        Paths.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        Paths.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        Paths.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-
-        Doors.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        Doors.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        Doors.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-
-        Trapdoors.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        Trapdoors.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        Trapdoors.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-
-        Windows.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        Windows.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        Windows.fuelWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
+        APIFuels.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE);
+        APIFuels.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA);
 
         LOGGER.info("Macaw's TerraformersMC Is Charged !");
     }

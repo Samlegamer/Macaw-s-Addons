@@ -1,9 +1,13 @@
 package fr.samlegamer.mcwmoddinglegacy;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.data.ModType;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -14,6 +18,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import org.apache.logging.log4j.LogManager;
@@ -62,7 +67,7 @@ public class McwModdingLegacy
     	Stairs.setRegistrationWoodModLoaded(wood_blue_skies, block, item, wood);
 		Paths.setRegistrationWoodModLoaded(wood_blue_skies, block, item, wood);
 		Doors.setRegistrationWood(wood_blue_skies, block, item);
-		Trapdoors.setRegistrationWoodModLoaded(wood_blue_skies, block, item, wood);
+		Trapdoors.setRegistrationWoodModLoaded(wood_blue_skies, block, item, BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR));
 		Windows.setRegistrationWoodModLoaded(wood_blue_skies, block, item, wood);
 
 		Bridges.setRegistrationWoodModLoaded(wood_crystallized, block, item, glass);
@@ -77,11 +82,12 @@ public class McwModdingLegacy
     	Stairs.setRegistrationWoodModLoaded(wood_premium_wood, block, item, wood);
 		Paths.setRegistrationWoodModLoaded(wood_premium_wood, block, item, wood);
 		Doors.setRegistrationWood(wood_premium_wood, block, item);
-		Trapdoors.setRegistrationWoodModLoaded(wood_premium_wood, block, item, wood);
+		Trapdoors.setRegistrationWoodModLoaded(wood_premium_wood, block, item, BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR));
 		Windows.setRegistrationWoodModLoaded(wood_premium_wood, block, item, wood);
 
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::registerTab);
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addTotab);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addToTab);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
 		MinecraftForge.EVENT_BUS.register(MappingsFix.class);
     	LOGGER.info("Macaw's Modding Legacy Mod Finish !");
     }
@@ -113,33 +119,24 @@ public class McwModdingLegacy
 		MCWMODDINGLEGACY_TAB = Registration.tabs(event, MODID, "tab", icon);
 	}
 
-	private void addTotab(CreativeModeTabEvent.BuildContents event)
+	private void client(final FMLClientSetupEvent event)
 	{
-		Bridges.addToTabModLoaded(event, MODID, wood_blue_skies, MCWMODDINGLEGACY_TAB, "blue_skies");
-		Roofs.addToTabModLoaded(event, MODID, wood_blue_skies, MCWMODDINGLEGACY_TAB, "blue_skies");
-		Fences.addToTabModLoaded(event, MODID, wood_blue_skies, MCWMODDINGLEGACY_TAB, "blue_skies");
-		Fences.addToTabHedgeModLoaded(event, MODID, wood_blue_skies, MCWMODDINGLEGACY_TAB, "blue_skies");
-		Furnitures.addToTabModLoaded(event, MODID, wood_blue_skies, MCWMODDINGLEGACY_TAB, "blue_skies");
-		Stairs.addToTabModLoaded(event, MODID, wood_blue_skies, MCWMODDINGLEGACY_TAB, "blue_skies");
-		Paths.addToTabModLoaded(event, MODID, wood_blue_skies, MCWMODDINGLEGACY_TAB, "blue_skies");
-		Doors.addToTabModLoaded(event, MODID, wood_blue_skies, MCWMODDINGLEGACY_TAB, "blue_skies");
-		Trapdoors.addToTabModLoaded(event, MODID, wood_blue_skies, MCWMODDINGLEGACY_TAB, "blue_skies");
-		Windows.addToTabModLoaded(event, MODID, wood_blue_skies, MCWMODDINGLEGACY_TAB, "blue_skies");
+		APIRenderTypes.initAllWood(event, MODID, wood_blue_skies, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(event, MODID, wood_crystallized, RenderType.translucent(), ModType.BRIDGES, ModType.ROOFS);
+		APIRenderTypes.initAllWood(event, MODID, wood_premium_wood, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllLeave(event, MODID, wood_blue_skies);
+		APIRenderTypes.initAllLeave(event, MODID, wood_crystallized, RenderType.translucent());
+		APIRenderTypes.initAllLeave(event, MODID, wood_premium_wood);
+	}
 
-		Bridges.addToTabModLoaded(event, MODID, wood_crystallized, MCWMODDINGLEGACY_TAB, "blue_skies");
-		Roofs.addToTabModLoaded(event, MODID, wood_crystallized, MCWMODDINGLEGACY_TAB, "blue_skies");
-		Fences.addToTabHedgeModLoaded(event, MODID, wood_crystallized, MCWMODDINGLEGACY_TAB, "blue_skies");
-
-		Bridges.addToTabModLoaded(event, MODID, wood_premium_wood, MCWMODDINGLEGACY_TAB, "premium_wood");
-		Roofs.addToTabModLoaded(event, MODID, wood_premium_wood, MCWMODDINGLEGACY_TAB, "premium_wood");
-		Fences.addToTabModLoaded(event, MODID, wood_premium_wood, MCWMODDINGLEGACY_TAB, "premium_wood");
-		Fences.addToTabHedgeModLoaded(event, MODID, wood_premium_wood, MCWMODDINGLEGACY_TAB, "premium_wood");
-		Furnitures.addToTabModLoaded(event, MODID, wood_premium_wood, MCWMODDINGLEGACY_TAB, "premium_wood");
-		Stairs.addToTabModLoaded(event, MODID, wood_premium_wood, MCWMODDINGLEGACY_TAB, "premium_wood");
-		Paths.addToTabModLoaded(event, MODID, wood_premium_wood, MCWMODDINGLEGACY_TAB, "premium_wood");
-		Doors.addToTabModLoaded(event, MODID, wood_premium_wood, MCWMODDINGLEGACY_TAB, "premium_wood");
-		Trapdoors.addToTabModLoaded(event, MODID, wood_premium_wood, MCWMODDINGLEGACY_TAB, "premium_wood");
-		Windows.addToTabModLoaded(event, MODID, wood_premium_wood, MCWMODDINGLEGACY_TAB, "premium_wood");
+	private void addToTab(CreativeModeTabEvent.BuildContents event)
+	{
+		APICreativeTab.initAllWood(event, MODID, wood_blue_skies, "blue_skies", MCWMODDINGLEGACY_TAB, Registration.getAllModTypeWood());
+		APICreativeTab.initAllWood(event, MODID, wood_crystallized, "blue_skies", MCWMODDINGLEGACY_TAB, ModType.BRIDGES, ModType.ROOFS);
+		APICreativeTab.initAllWood(event, MODID, wood_premium_wood, "premium_wood", MCWMODDINGLEGACY_TAB, Registration.getAllModTypeWood());
+		APICreativeTab.initAllLeave(event, MODID, wood_blue_skies, "blue_skies", MCWMODDINGLEGACY_TAB);
+		APICreativeTab.initAllLeave(event, MODID, wood_crystallized, "blue_skies", MCWMODDINGLEGACY_TAB);
+		APICreativeTab.initAllLeave(event, MODID, wood_premium_wood, "premium_wood", MCWMODDINGLEGACY_TAB);
 	}
 
 	private static String randomNaming()
