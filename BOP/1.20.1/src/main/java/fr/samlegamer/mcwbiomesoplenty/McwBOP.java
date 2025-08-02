@@ -1,5 +1,7 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -14,6 +16,7 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -94,9 +97,25 @@ public class McwBOP
 		Stairs.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
 
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addToTab);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
+
+	private void client(FMLClientSetupEvent event)
+	{
+		APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllLeave(event, MODID, LEAVE);
+	}
+
+	private void addToTab(BuildCreativeModeTabContentsEvent event)
+	{
+		if(MCWBOP_TAB != null)
+		{
+			APICreativeTab.initAllWood(event, MODID, WOOD, MCWBOP_TAB.get(), Registration.getAllModTypeWood());
+			APICreativeTab.initAllLeave(event, MODID, LEAVE, MCWBOP_TAB.get());
+		}
+	}
 
 	private static ItemStack getIcon()
     {
@@ -123,22 +142,5 @@ public class McwBOP
 		Block icon = prop.buildIcon(NewIconRandom.BlockType.BRIDGES, NewIconRandom.BlockType.ROOFS, NewIconRandom.BlockType.FENCES, NewIconRandom.BlockType.FURNITURES, NewIconRandom.BlockType.STAIRS,
 				NewIconRandom.BlockType.PATHS, NewIconRandom.BlockType.WINDOWS, NewIconRandom.BlockType.DOORS, NewIconRandom.BlockType.TRAPDOORS);
 		return new ItemStack(icon);
-    }
-    
-    private void addToTab(BuildCreativeModeTabContentsEvent event)
-    {
-    	if(MCWBOP_TAB != null)
-    	{
-        	Bridges.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Roofs.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Fences.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Fences.addToTabHedge(event, MODID, LEAVE, MCWBOP_TAB.get());
-        	Furnitures.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Trapdoors.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Paths.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Doors.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Windows.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Stairs.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-    	}
     }
 }

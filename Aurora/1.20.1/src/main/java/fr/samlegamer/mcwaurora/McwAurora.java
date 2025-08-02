@@ -1,7 +1,9 @@
 package fr.samlegamer.mcwaurora;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.network.chat.Component;
@@ -12,6 +14,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -59,23 +62,21 @@ public class McwAurora
 		Windows.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
 
     	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addTotab);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
         MinecraftForge.EVENT_BUS.register(MappingsFix.class);
     	LOGGER.info("Macaw's Aurora Mod Finish !");
     }
+
+	private void clientSetup(FMLClientSetupEvent event)
+	{
+		APIRenderTypes.initAllWood(event, MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());
+	}
     
     private void addTotab(BuildCreativeModeTabContentsEvent event)
     {
     	if(MCWAURORA_TAB != null)
     	{
-			Bridges.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
-			Roofs.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
-			Fences.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
-			Furnitures.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
-			Stairs.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
-			Paths.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
-			Trapdoors.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
-			Doors.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
-			Windows.addToTabModLoaded(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), "enhanced_mushrooms");
+			APICreativeTab.initAllWood(event, MODID, WOOD_ENHANCED_MUSH, "enhanced_mushrooms", MCWAURORA_TAB.get(), Registration.getAllModTypeWood());
     	}
     }
     

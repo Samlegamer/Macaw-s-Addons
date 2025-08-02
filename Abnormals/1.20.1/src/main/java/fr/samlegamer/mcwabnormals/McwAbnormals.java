@@ -1,7 +1,9 @@
 package fr.samlegamer.mcwabnormals;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.network.chat.Component;
@@ -14,6 +16,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -129,12 +132,12 @@ public class McwAbnormals
 		Doors.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, wood, BlockBehaviour.Properties.copy(Blocks.OAK_DOOR));
 		Doors.setRegistrationWoodModLoaded(WOOD_CAVERNSCHASMS, block, item, wood, BlockBehaviour.Properties.copy(Blocks.OAK_DOOR));
 
-		Trapdoors.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, wood);
-		Trapdoors.setRegistrationWoodModLoaded(WOOD_AUTU, block, item, wood);
-		Trapdoors.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, wood);
-		Trapdoors.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, wood);
-		Trapdoors.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, wood);
-		Trapdoors.setRegistrationWoodModLoaded(WOOD_CAVERNSCHASMS, block, item, wood);
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR));
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_AUTU, block, item, BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR));
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_ENVI, block, item, BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR));
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR));
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR));
+		Trapdoors.setRegistrationWoodModLoaded(WOOD_CAVERNSCHASMS, block, item, BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR));
 
 		Windows.setRegistrationWoodModLoaded(WOOD_ATMO, block, item, wood);
 		Windows.setRegistrationWoodModLoaded(WOOD_AUTU, block, item, wood);
@@ -143,88 +146,50 @@ public class McwAbnormals
 		Windows.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, wood);
 		Windows.setRegistrationWoodModLoaded(WOOD_CAVERNSCHASMS, block, item, wood);
 
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addTotab);
     	MinecraftForge.EVENT_BUS.register(MappingsFix.class);
     	LOGGER.info("Macaw's Abnormals Mod Finish !");
     }
+
+	private void client(FMLClientSetupEvent e)
+	{
+		APIRenderTypes.initAllWood(e, MODID, WOOD_ATMO, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(e, MODID, WOOD_AUTU, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(e, MODID, WOOD_ENVI, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(e, MODID, WOOD_UAQUA, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(e, MODID, WOOD_ENDER, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(e, MODID, WOOD_CAVERNSCHASMS, Registration.getAllModTypeWood());
+
+		APIRenderTypes.initAllLeave(e, MODID, LEAVES_ATMO);
+		APIRenderTypes.initAllLeave(e, MODID, LEAVES_AUTU);
+		APIRenderTypes.initAllLeave(e, MODID, LEAVES_ENVI);
+		APIRenderTypes.initAllLeave(e, MODID, LEAVES_UAQUA);
+
+		APIRenderTypes.initAllStone(e, MODID, ROCK_BB, Registration.getAllModTypeStone());
+		APIRenderTypes.initAllStone(e, MODID, ROCK_ATMO, Registration.getAllModTypeStone());
+		APIRenderTypes.initAllStone(e, MODID, ROCK_AUTU, Registration.getAllModTypeStone());
+	}
     
-    private void addTotab(BuildCreativeModeTabContentsEvent event)
+    private void addTotab(BuildCreativeModeTabContentsEvent e)
     {
     	if(MCWABNORMALS_TAB != null)
     	{
-			Bridges.addToTabStoneModLoaded(event, MODID, ROCK_BB, MCWABNORMALS_TAB.get(), "buzzier_bees");
-			Roofs.addToTabStoneModLoaded(event, MODID, ROCK_BB, MCWABNORMALS_TAB.get(), "buzzier_bees");
-			Fences.addToTabStoneModLoaded(event, MODID, ROCK_BB, MCWABNORMALS_TAB.get(), "buzzier_bees");
+			APICreativeTab.initAllWood(e, MODID, WOOD_ATMO, "atmospheric", MCWABNORMALS_TAB.get(), Registration.getAllModTypeWood());
+			APICreativeTab.initAllWood(e, MODID, WOOD_AUTU, "autumnity", MCWABNORMALS_TAB.get(), Registration.getAllModTypeWood());
+			APICreativeTab.initAllWood(e, MODID, WOOD_ENVI, "environmental", MCWABNORMALS_TAB.get(), Registration.getAllModTypeWood());
+			APICreativeTab.initAllWood(e, MODID, WOOD_UAQUA, "upgrade_aquatic", MCWABNORMALS_TAB.get(), Registration.getAllModTypeWood());
+			APICreativeTab.initAllWood(e, MODID, WOOD_ENDER, "endergetic", MCWABNORMALS_TAB.get(), Registration.getAllModTypeWood());
+			APICreativeTab.initAllWood(e, MODID, WOOD_CAVERNSCHASMS, "caverns_and_chasms", MCWABNORMALS_TAB.get(), Registration.getAllModTypeWood());
 
-			Bridges.addToTabModLoaded(event, MODID, WOOD_ATMO, MCWABNORMALS_TAB.get(), "atmospheric");
-			Bridges.addToTabStoneModLoaded(event, MODID, ROCK_ATMO, MCWABNORMALS_TAB.get(), "atmospheric");
-			Roofs.addToTabModLoaded(event, MODID, WOOD_ATMO, MCWABNORMALS_TAB.get(), "atmospheric");
-			Roofs.addToTabStoneModLoaded(event, MODID, ROCK_ATMO, MCWABNORMALS_TAB.get(), "atmospheric");
-			Fences.addToTabModLoaded(event, MODID, WOOD_ATMO, MCWABNORMALS_TAB.get(), "atmospheric");
-			Fences.addToTabStoneModLoaded(event, MODID, ROCK_ATMO, MCWABNORMALS_TAB.get(), "atmospheric");
-			Fences.addToTabHedgeModLoaded(event, MODID, LEAVES_ATMO, MCWABNORMALS_TAB.get(), "atmospheric");
-			Furnitures.addToTabModLoaded(event, MODID, WOOD_ATMO, MCWABNORMALS_TAB.get(), "atmospheric");
-			Stairs.addToTabModLoaded(event, MODID, WOOD_ATMO, MCWABNORMALS_TAB.get(), "atmospheric");
-			Paths.addToTabModLoaded(event, MODID, WOOD_ATMO, MCWABNORMALS_TAB.get(), "atmospheric");
-			Doors.addToTabModLoaded(event, MODID, WOOD_ATMO, MCWABNORMALS_TAB.get(), "atmospheric");
-			Trapdoors.addToTabModLoaded(event, MODID, WOOD_ATMO, MCWABNORMALS_TAB.get(), "atmospheric");
-			Windows.addToTabModLoaded(event, MODID, WOOD_ATMO, MCWABNORMALS_TAB.get(), "atmospheric");
+			APICreativeTab.initAllLeave(e, MODID, LEAVES_ATMO, "atmospheric", MCWABNORMALS_TAB.get());
+			APICreativeTab.initAllLeave(e, MODID, LEAVES_AUTU, "autumnity", MCWABNORMALS_TAB.get());
+			APICreativeTab.initAllLeave(e, MODID, LEAVES_ENVI, "environmental", MCWABNORMALS_TAB.get());
+			APICreativeTab.initAllLeave(e, MODID, LEAVES_UAQUA, "upgrade_aquatic", MCWABNORMALS_TAB.get());
 
-			Bridges.addToTabModLoaded(event, MODID, WOOD_AUTU, MCWABNORMALS_TAB.get(), "autumnity");
-			Bridges.addToTabStoneModLoaded(event, MODID, ROCK_AUTU, MCWABNORMALS_TAB.get(), "autumnity");
-			Roofs.addToTabModLoaded(event, MODID, WOOD_AUTU, MCWABNORMALS_TAB.get(), "autumnity");
-			Roofs.addToTabStoneModLoaded(event, MODID, ROCK_AUTU, MCWABNORMALS_TAB.get(), "autumnity");
-			Fences.addToTabModLoaded(event, MODID, WOOD_AUTU, MCWABNORMALS_TAB.get(), "autumnity");
-			Fences.addToTabStoneModLoaded(event, MODID, ROCK_AUTU, MCWABNORMALS_TAB.get(), "autumnity");
-			Fences.addToTabHedgeModLoaded(event, MODID, LEAVES_AUTU, MCWABNORMALS_TAB.get(), "autumnity");
-			Furnitures.addToTabModLoaded(event, MODID, WOOD_AUTU, MCWABNORMALS_TAB.get(), "autumnity");
-			Stairs.addToTabModLoaded(event, MODID, WOOD_AUTU, MCWABNORMALS_TAB.get(), "autumnity");
-			Paths.addToTabModLoaded(event, MODID, WOOD_AUTU, MCWABNORMALS_TAB.get(), "autumnity");
-			Doors.addToTabModLoaded(event, MODID, WOOD_AUTU, MCWABNORMALS_TAB.get(), "autumnity");
-			Trapdoors.addToTabModLoaded(event, MODID, WOOD_AUTU, MCWABNORMALS_TAB.get(), "autumnity");
-			Windows.addToTabModLoaded(event, MODID, WOOD_AUTU, MCWABNORMALS_TAB.get(), "autumnity");
-
-			Bridges.addToTabModLoaded(event, MODID, WOOD_ENVI, MCWABNORMALS_TAB.get(), "environmental");
-			Roofs.addToTabModLoaded(event, MODID, WOOD_ENVI, MCWABNORMALS_TAB.get(), "environmental");
-			Fences.addToTabModLoaded(event, MODID, WOOD_ENVI, MCWABNORMALS_TAB.get(), "environmental");
-			Fences.addToTabHedgeModLoaded(event, MODID, LEAVES_ENVI, MCWABNORMALS_TAB.get(), "environmental");
-			Furnitures.addToTabModLoaded(event, MODID, WOOD_ENVI, MCWABNORMALS_TAB.get(), "environmental");
-			Stairs.addToTabModLoaded(event, MODID, WOOD_ENVI, MCWABNORMALS_TAB.get(), "environmental");
-			Paths.addToTabModLoaded(event, MODID, WOOD_ENVI, MCWABNORMALS_TAB.get(), "environmental");
-			Doors.addToTabModLoaded(event, MODID, WOOD_ENVI, MCWABNORMALS_TAB.get(), "environmental");
-			Trapdoors.addToTabModLoaded(event, MODID, WOOD_ENVI, MCWABNORMALS_TAB.get(), "environmental");
-			Windows.addToTabModLoaded(event, MODID, WOOD_ENVI, MCWABNORMALS_TAB.get(), "environmental");
-
-			Bridges.addToTabModLoaded(event, MODID, WOOD_UAQUA, MCWABNORMALS_TAB.get(), "upgrade_aquatic");
-			Roofs.addToTabModLoaded(event, MODID, WOOD_UAQUA, MCWABNORMALS_TAB.get(), "upgrade_aquatic");
-			Fences.addToTabModLoaded(event, MODID, WOOD_UAQUA, MCWABNORMALS_TAB.get(), "upgrade_aquatic");
-			Fences.addToTabHedgeModLoaded(event, MODID, LEAVES_UAQUA, MCWABNORMALS_TAB.get(), "upgrade_aquatic");
-			Furnitures.addToTabModLoaded(event, MODID, WOOD_UAQUA, MCWABNORMALS_TAB.get(), "upgrade_aquatic");
-			Stairs.addToTabModLoaded(event, MODID, WOOD_UAQUA, MCWABNORMALS_TAB.get(), "upgrade_aquatic");
-			Paths.addToTabModLoaded(event, MODID, WOOD_UAQUA, MCWABNORMALS_TAB.get(), "upgrade_aquatic");
-			Doors.addToTabModLoaded(event, MODID, WOOD_UAQUA, MCWABNORMALS_TAB.get(), "upgrade_aquatic");
-			Trapdoors.addToTabModLoaded(event, MODID, WOOD_UAQUA, MCWABNORMALS_TAB.get(), "upgrade_aquatic");
-			Windows.addToTabModLoaded(event, MODID, WOOD_UAQUA, MCWABNORMALS_TAB.get(), "upgrade_aquatic");
-
-			Bridges.addToTabModLoaded(event, MODID, WOOD_ENDER, MCWABNORMALS_TAB.get(), "endergetic");
-			Roofs.addToTabModLoaded(event, MODID, WOOD_ENDER, MCWABNORMALS_TAB.get(), "endergetic");
-			Fences.addToTabModLoaded(event, MODID, WOOD_ENDER, MCWABNORMALS_TAB.get(), "endergetic");
-			Furnitures.addToTabModLoaded(event, MODID, WOOD_ENDER, MCWABNORMALS_TAB.get(), "endergetic");
-			Stairs.addToTabModLoaded(event, MODID, WOOD_ENDER, MCWABNORMALS_TAB.get(), "endergetic");
-			Paths.addToTabModLoaded(event, MODID, WOOD_ENDER, MCWABNORMALS_TAB.get(), "endergetic");
-			Doors.addToTabModLoaded(event, MODID, WOOD_ENDER, MCWABNORMALS_TAB.get(), "endergetic");
-			Trapdoors.addToTabModLoaded(event, MODID, WOOD_ENDER, MCWABNORMALS_TAB.get(), "endergetic");
-			Windows.addToTabModLoaded(event, MODID, WOOD_ENDER, MCWABNORMALS_TAB.get(), "endergetic");
-
-			Bridges.addToTabModLoaded(event, MODID, WOOD_CAVERNSCHASMS, MCWABNORMALS_TAB.get(), "caverns_and_chasms");
-			Roofs.addToTabModLoaded(event, MODID, WOOD_CAVERNSCHASMS, MCWABNORMALS_TAB.get(), "caverns_and_chasms");
-			Fences.addToTabModLoaded(event, MODID, WOOD_CAVERNSCHASMS, MCWABNORMALS_TAB.get(), "caverns_and_chasms");
-			Furnitures.addToTabModLoaded(event, MODID, WOOD_CAVERNSCHASMS, MCWABNORMALS_TAB.get(), "caverns_and_chasms");
-			Stairs.addToTabModLoaded(event, MODID, WOOD_CAVERNSCHASMS, MCWABNORMALS_TAB.get(), "caverns_and_chasms");
-			Paths.addToTabModLoaded(event, MODID, WOOD_CAVERNSCHASMS, MCWABNORMALS_TAB.get(), "caverns_and_chasms");
-			Doors.addToTabModLoaded(event, MODID, WOOD_CAVERNSCHASMS, MCWABNORMALS_TAB.get(), "caverns_and_chasms");
-			Trapdoors.addToTabModLoaded(event, MODID, WOOD_CAVERNSCHASMS, MCWABNORMALS_TAB.get(), "caverns_and_chasms");
-			Windows.addToTabModLoaded(event, MODID, WOOD_CAVERNSCHASMS, MCWABNORMALS_TAB.get(), "caverns_and_chasms");
+			APICreativeTab.initAllStone(e, MODID, ROCK_BB, "buzzier_bees", MCWABNORMALS_TAB.get(), Registration.getAllModTypeStone());
+			APICreativeTab.initAllStone(e, MODID, ROCK_ATMO, "atmospheric", MCWABNORMALS_TAB.get(), Registration.getAllModTypeStone());
+			APICreativeTab.initAllStone(e, MODID, ROCK_AUTU, "autumnity", MCWABNORMALS_TAB.get(), Registration.getAllModTypeStone());
     	}
     }
 }
