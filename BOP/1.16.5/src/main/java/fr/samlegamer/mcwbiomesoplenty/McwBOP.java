@@ -1,6 +1,11 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
 import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
+import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
+import fr.samlegamer.addonslib.generation.tags.McwItemTags;
+import fr.samlegamer.addonslib.util.McwMod;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -8,6 +13,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import java.util.Arrays;
@@ -29,7 +36,7 @@ import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
 
 @Mod(McwBOP.MODID)
-public class McwBOP
+public class McwBOP extends McwMod
 {
 	public static final String MODID = "mcwbiomesoplenty";
 	public static final Logger LOGGER = LogManager.getLogger();
@@ -40,7 +47,8 @@ public class McwBOP
     private static final DeferredRegister<Item> item = Registration.items(MODID);
 
 	public static final ItemGroup MCWBOP_TAB = new ItemGroup(MODID + ".tab") {
-	    @Override
+        @Override
+        @MethodsReturnNonnullByDefault
 	    public ItemStack makeIcon() {
 	    	NewIconRandom.NewProperties woodProperties = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "cherry_roof"), Finder.findBlock(MODID, "cherry_picket_fence"), Finder.findBlock(MODID, "cherry_wardrobe"), 
 	    	        Finder.findBlock(MODID, "cherry_log_bridge_middle"), Finder.findBlock(MODID, "cherry_window"), Finder.findBlock(MODID, "cherry_japanese_door"), Finder.findBlock(MODID, "cherry_glass_trapdoor"), 
@@ -74,14 +82,45 @@ public class McwBOP
     	Doors.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Windows.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Stairs.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
+    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::dataSetup);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
-    
-    private void client(FMLClientSetupEvent e)
-    {
-		APIRenderTypes.initAllWood(e, MODID, WOOD, Registration.getAllModTypeWood());
-		APIRenderTypes.initAllLeave(e, MODID, LEAVES);
+
+    @Override
+    public void clientSetup(FMLClientSetupEvent e) {
+        APIRenderTypes.initAllWood(e, MODID, WOOD, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllLeave(e, MODID, LEAVES);
+    }
+
+    @Override
+    public void commonSetup(FMLCommonSetupEvent e) {
+        e.enqueueWork(() -> {
+            McwLootTables.addBlockAllWood(MODID, WOOD);
+            McwLootTables.addBlockHedges(MODID, LEAVES);
+        });
+    }
+
+    @Override
+    public void dataSetup(GatherDataEvent e) {
+        if(e.includeServer())
+        {
+            McwBlockTags mcwBlockTags = new McwBlockTags(e.getGenerator(), MODID, e.getExistingFileHelper()) {
+                @Override
+                protected void addTags() {
+                    addAllMcwTags(MODID, WOOD, LEAVES);
+                }
+            };
+            e.getGenerator().addProvider(new Recipes(e.getGenerator()));
+            e.getGenerator().addProvider(mcwBlockTags);
+            e.getGenerator().addProvider(new McwItemTags(e.getGenerator(), mcwBlockTags, MODID, e.getExistingFileHelper()) {
+                @Override
+                protected void addTags() {
+                    addAllMcwTags(MODID, WOOD, LEAVES);
+                }
+            });
+        }
     }
 }

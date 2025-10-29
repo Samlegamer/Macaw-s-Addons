@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "barn_trapdoors",
+  "pattern" : [ "A", "B" ],
+  "key" : {
+    "A" : "biomesoplenty:willow_planks",
+    "B" : "mcwbiomesoplenty:willow_glass_trapdoor"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:willow_barn_trapdoor"
+  }
+}

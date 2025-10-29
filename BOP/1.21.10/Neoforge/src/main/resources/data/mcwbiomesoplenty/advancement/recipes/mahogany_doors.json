@@ -1,0 +1,66 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwbiomesoplenty:mahogany_bark_glass_door",
+	  "mcwbiomesoplenty:mahogany_barn_door",
+	  "mcwbiomesoplenty:mahogany_barn_glass_door",
+	  "mcwbiomesoplenty:mahogany_beach_door",
+	  "mcwbiomesoplenty:mahogany_classic_door",
+	  "mcwbiomesoplenty:mahogany_cottage_door",
+	  "mcwbiomesoplenty:mahogany_four_panel_door",
+	  "mcwbiomesoplenty:mahogany_glass_door",
+	  "mcwbiomesoplenty:mahogany_japanese_door",
+	  "mcwbiomesoplenty:mahogany_japanese2_door",
+	  "mcwbiomesoplenty:mahogany_modern_door",
+	  "mcwbiomesoplenty:mahogany_mystic_door",
+	  "mcwbiomesoplenty:mahogany_nether_door",
+	  "mcwbiomesoplenty:mahogany_paper_door",
+	  "mcwbiomesoplenty:mahogany_stable_door",
+	  "mcwbiomesoplenty:mahogany_stable_head_door",
+	  "mcwbiomesoplenty:mahogany_swamp_door",
+	  "mcwbiomesoplenty:mahogany_western_door",
+	  "mcwbiomesoplenty:mahogany_waffle_door",
+	  "mcwbiomesoplenty:mahogany_tropical_door",
+	  "mcwbiomesoplenty:mahogany_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:mahogany_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

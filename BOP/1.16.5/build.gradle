@@ -121,7 +121,20 @@ dependencies {
     // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-	implementation fg.deobf("curse.maven:addonslib-1090999:6740729")
+	implementation fg.deobf("curse.maven:addonslib-1090999:${addonslib_version}")
+    implementation fg.deobf("curse.maven:jei-238222:${jei_version}")
+
+    implementation fg.deobf("curse.maven:macaws-roofs-352039:${roofs_version}")
+    implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:${fences_version}")
+    implementation fg.deobf("curse.maven:macaws-doors-378646:${doors_version}")
+    implementation fg.deobf("curse.maven:macaws-bridges-351725:${bridges_version}")
+    implementation fg.deobf("curse.maven:macaws-windows-363569:${windows_version}")
+    implementation fg.deobf("curse.maven:macaws-paths-and-pavings-629153:${paths_version}")
+    implementation fg.deobf("curse.maven:macaws-trapdoors-400933:${trapdoors_version}")
+    implementation fg.deobf("curse.maven:macaws-stairs-1119394:${stairs_version}")
+    implementation fg.deobf("curse.maven:macaws-furniture-359540:${furniture_version}")
+
+    implementation fg.deobf("curse.maven:biomes-o-plenty-220318:${bop_version}")
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}") // Adds the full JEI mod as a runtime dependency

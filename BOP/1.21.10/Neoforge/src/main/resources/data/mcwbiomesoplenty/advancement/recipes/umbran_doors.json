@@ -1,0 +1,66 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwbiomesoplenty:umbran_bark_glass_door",
+	  "mcwbiomesoplenty:umbran_barn_door",
+	  "mcwbiomesoplenty:umbran_barn_glass_door",
+	  "mcwbiomesoplenty:umbran_beach_door",
+	  "mcwbiomesoplenty:umbran_classic_door",
+	  "mcwbiomesoplenty:umbran_cottage_door",
+	  "mcwbiomesoplenty:umbran_four_panel_door",
+	  "mcwbiomesoplenty:umbran_glass_door",
+	  "mcwbiomesoplenty:umbran_japanese_door",
+	  "mcwbiomesoplenty:umbran_japanese2_door",
+	  "mcwbiomesoplenty:umbran_modern_door",
+	  "mcwbiomesoplenty:umbran_mystic_door",
+	  "mcwbiomesoplenty:umbran_nether_door",
+	  "mcwbiomesoplenty:umbran_paper_door",
+	  "mcwbiomesoplenty:umbran_stable_door",
+	  "mcwbiomesoplenty:umbran_stable_head_door",
+	  "mcwbiomesoplenty:umbran_swamp_door",
+	  "mcwbiomesoplenty:umbran_western_door",
+	  "mcwbiomesoplenty:umbran_waffle_door",
+	  "mcwbiomesoplenty:umbran_tropical_door",
+	  "mcwbiomesoplenty:umbran_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:umbran_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

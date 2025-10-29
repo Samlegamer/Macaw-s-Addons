@@ -1,0 +1,23 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows_two",
+  "pattern" : [ "AAA", "ABA", "AAA" ],
+  "key" : {
+    "A" : "mcwwindows:window_half_bar_base",
+    "B" : "biomesoplenty:willow_log"
+  },
+  "result" : {
+    "count" : 8,
+    "id" : "mcwbiomesoplenty:willow_window2"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "curved_gate",
+        "pattern": [
+          "B A",
+          "BAA"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:palm_planks"
+          },
+          "B": {
+            "item": "biomesoplenty:palm_log"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:palm_curved_gate",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern_chair",
+  "pattern" : [ "BA", "CC" ],
+  "key" : {
+    "A" : "biomesoplenty:stripped_pine_log",
+    "B" : "biomesoplenty:pine_slab",
+    "C" : "biomesoplenty:pine_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:stripped_pine_modern_chair"
+  }
+}

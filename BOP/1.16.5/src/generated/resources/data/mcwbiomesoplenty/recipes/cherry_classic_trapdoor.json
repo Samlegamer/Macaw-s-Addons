@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "classic_trapdoors",
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:cherry_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_classic"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:cherry_classic_trapdoor"
+        }
+      }
+    }
+  ]
+}

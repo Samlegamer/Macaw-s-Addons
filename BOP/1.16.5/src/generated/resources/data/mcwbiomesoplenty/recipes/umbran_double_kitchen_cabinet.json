@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_kitchen_cabinet",
+        "pattern": [
+          "AA",
+          "BB",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:umbran_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:umbran_double_kitchen_cabinet",
+          "count": 4
+        }
+      }
+    }
+  ]
+}
