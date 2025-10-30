@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stockade",
+  "pattern" : [ "ABA", "ABA" ],
+  "key" : {
+    "A" : "biomesoplenty:magic_log",
+    "B" : "biomesoplenty:magic_planks"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:magic_stockade_fence"
+  }
+}
+  ]
+}

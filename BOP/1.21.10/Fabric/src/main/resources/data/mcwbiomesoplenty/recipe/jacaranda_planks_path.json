@@ -1,0 +1,20 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "group" : "wooden_paths",
+  "ingredients": [
+    "biomesoplenty:jacaranda_slab"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbiomesoplenty:jacaranda_planks_path"
+  }
+}

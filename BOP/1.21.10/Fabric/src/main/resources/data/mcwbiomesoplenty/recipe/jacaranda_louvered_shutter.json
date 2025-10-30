@@ -1,0 +1,21 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shutters",
+  "pattern" : [ "B", "B", "B" ],
+  "key" : {
+    "B" : "biomesoplenty:jacaranda_slab"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:jacaranda_louvered_shutter"
+  }
+}

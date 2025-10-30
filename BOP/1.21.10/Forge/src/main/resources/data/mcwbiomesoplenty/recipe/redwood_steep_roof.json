@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwroofs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "steep",
+  "pattern" : [ " W", "WW", "WS" ],
+  "key" : {
+    "W" : "biomesoplenty:redwood_log",
+    "S" : "minecraft:stick"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:redwood_steep_roof"
+  }
+}
+  ]
+}

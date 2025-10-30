@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bookshelf",
+  "pattern" : [ "AAA", "BBB", "AAA" ],
+  "key" : {
+    "A" : "biomesoplenty:stripped_umbran_log",
+    "B" : "minecraft:book"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:stripped_umbran_bookshelf"
+  }
+}
+  ]
+}

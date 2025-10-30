@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "bark",
+  "pattern" : [ "AB", "BB", "AB" ],
+  "key" : {
+    "A" : "biomesoplenty:maple_log",
+    "B" : "minecraft:glass"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:maple_bark_glass_door"
+  }
+}

@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "windows",
+  "pattern" : [ " A ", "ABA", " A " ],
+  "key" : {
+    "A" : "mcwwindows:window_base",
+    "B" : "biomesoplenty:stripped_palm_log"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:stripped_palm_log_window"
+  }
+}

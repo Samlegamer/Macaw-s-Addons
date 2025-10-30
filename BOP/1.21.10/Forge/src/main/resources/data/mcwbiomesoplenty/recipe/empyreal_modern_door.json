@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern",
+  "pattern" : [ "AB", "AA", "AB" ],
+  "key" : {
+    "A" : "biomesoplenty:empyreal_planks",
+    "B" : "minecraft:glass_pane"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:empyreal_modern_door"
+  }
+}
+  ]
+}

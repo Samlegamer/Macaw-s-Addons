@@ -83,7 +83,7 @@ public class McwBOP
 		List<String> woodCrimson = List.of("hellbark", "umbran", "empyreal");
 		List<String> woodCherry = List.of("magic", "jacaranda", "maple");
 
-		List<String> leaveClassic = List.of("dead", "fir", "hellbark", "mahogany", "palm", "redwood", "umbran", "willow", "empyreal", "pine", "cypress", "flowering_oak", "rainbow_birch", "origin");
+		List<String> leaveClassic = List.of("dead", "fir", "hellbark", "mahogany", "palm", "redwood", "umbran", "willow", "empyreal", "pine", "cypress", "flowering_oak", "origin");
 		List<String> leaveCherry = List.of("snowblossom", "orange_maple", "red_maple", "yellow_maple", "jacaranda", "magic");
 
 		Bridges.setRegistrationWood(woodClassic, block, item);

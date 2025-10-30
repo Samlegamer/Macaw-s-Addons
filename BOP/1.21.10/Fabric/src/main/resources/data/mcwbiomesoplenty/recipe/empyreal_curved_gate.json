@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "curved_gate",
+  "pattern" : [ "B A", "BAA" ],
+  "key" : {
+    "A" : "biomesoplenty:empyreal_planks",
+    "B" : "biomesoplenty:empyreal_log"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:empyreal_curved_gate"
+  }
+}

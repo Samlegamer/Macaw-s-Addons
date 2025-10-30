@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "cabinet",
+  "pattern" : [ "AA", "AC", "AA" ],
+  "key" : {
+    "A" : "biomesoplenty:stripped_mahogany_log",
+    "C" : "mcwfurnitures:cabinet_door"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:stripped_mahogany_kitchen_cabinet"
+  }
+}

@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "chair",
+  "pattern" : [ " A", "BA", "CC" ],
+  "key" : {
+    "A" : "biomesoplenty:dead_log",
+    "B" : "biomesoplenty:dead_slab",
+    "C" : "biomesoplenty:dead_fence"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:dead_chair"
+  }
+}

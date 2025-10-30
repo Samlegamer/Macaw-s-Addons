@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "swamp_trapdoors",
+  "pattern" : [ "A", "B", "A" ],
+  "key" : {
+    "A" : "biomesoplenty:empyreal_planks",
+    "B" : "mcwtrpdoors:print_swamp"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:empyreal_swamp_trapdoor"
+  }
+}

@@ -1,0 +1,23 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "pyramid",
+  "pattern" : [ "ABA", "ACA" ],
+  "key" : {
+    "A" : "minecraft:stick",
+    "B" : "biomesoplenty:dead_log",
+    "C" : "biomesoplenty:dead_planks"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwbiomesoplenty:dead_pyramid_gate"
+  }
+}

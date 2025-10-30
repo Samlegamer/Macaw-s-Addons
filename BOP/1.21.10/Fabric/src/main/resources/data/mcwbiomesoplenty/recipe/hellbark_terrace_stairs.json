@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "terrace_stairs",
+  "pattern" : [ "W  ", "ZW ", " ZW" ],
+  "key" : {
+    "W" : "biomesoplenty:stripped_hellbark_log",
+    "Z" : "biomesoplenty:hellbark_log"
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwbiomesoplenty:hellbark_terrace_stairs"
+  }
+}

@@ -1,0 +1,21 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "shutters",
+  "pattern" : [ "B", "B", "B" ],
+  "key" : {
+    "B" : "biomesoplenty:redwood_trapdoor"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:redwood_shutter"
+  }
+}

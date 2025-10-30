@@ -1,0 +1,52 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwstairs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbiomesoplenty:palm_bulk_stairs",
+	  "mcwbiomesoplenty:palm_compact_stairs",
+	  "mcwbiomesoplenty:palm_loft_stairs",
+	  "mcwbiomesoplenty:palm_skyline_stairs",
+	  "mcwbiomesoplenty:palm_terrace_stairs",
+	  "mcwbiomesoplenty:palm_railing",
+	  "mcwbiomesoplenty:palm_balcony",
+	  "mcwbiomesoplenty:palm_platform"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:palm_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}
+
+]
+}

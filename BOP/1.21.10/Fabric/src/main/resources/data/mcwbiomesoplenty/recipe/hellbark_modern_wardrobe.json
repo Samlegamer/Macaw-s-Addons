@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "modern_wardrobe",
+  "pattern" : [ "AAA", "AAB", "AAA" ],
+  "key" : {
+    "A" : "biomesoplenty:hellbark_log",
+    "B" : "mcwfurnitures:cabinet_door"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:hellbark_modern_wardrobe"
+  }
+}

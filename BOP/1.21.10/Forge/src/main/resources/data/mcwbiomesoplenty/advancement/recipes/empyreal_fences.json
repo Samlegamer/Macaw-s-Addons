@@ -1,0 +1,49 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbiomesoplenty:empyreal_picket_fence",
+	  "mcwbiomesoplenty:empyreal_stockade_fence",
+	  "mcwbiomesoplenty:empyreal_horse_fence",
+	  "mcwbiomesoplenty:empyreal_wired_fence",
+	  "mcwbiomesoplenty:empyreal_highley_gate",
+	  "mcwbiomesoplenty:empyreal_pyramid_gate",
+	  "mcwbiomesoplenty:empyreal_curved_gate"
+    ]
+  },
+  "criteria": {
+    "has_acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:empyreal_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia"
+    ]
+  ]
+}
+
+]
+}

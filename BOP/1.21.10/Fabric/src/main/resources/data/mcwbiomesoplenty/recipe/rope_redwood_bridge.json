@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "rope_bridges",
+  "pattern" : [ "F F", "WWW" ],
+  "key" : {
+    "F" : "minecraft:string",
+    "W" : "biomesoplenty:redwood_slab"
+  },
+  "result" : {
+    "count" : 4,
+    "id" : "mcwbiomesoplenty:rope_redwood_bridge"
+  }
+}

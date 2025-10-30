@@ -1,0 +1,65 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwdoors:print_acacia",
+	  
+	  "mcwbiomesoplenty:empyreal_bark_glass_door",
+	  "mcwbiomesoplenty:empyreal_barn_door",
+	  "mcwbiomesoplenty:empyreal_barn_glass_door",
+	  "mcwbiomesoplenty:empyreal_beach_door",
+	  "mcwbiomesoplenty:empyreal_classic_door",
+	  "mcwbiomesoplenty:empyreal_cottage_door",
+	  "mcwbiomesoplenty:empyreal_four_panel_door",
+	  "mcwbiomesoplenty:empyreal_glass_door",
+	  "mcwbiomesoplenty:empyreal_japanese_door",
+	  "mcwbiomesoplenty:empyreal_japanese2_door",
+	  "mcwbiomesoplenty:empyreal_modern_door",
+	  "mcwbiomesoplenty:empyreal_mystic_door",
+	  "mcwbiomesoplenty:empyreal_nether_door",
+	  "mcwbiomesoplenty:empyreal_paper_door",
+	  "mcwbiomesoplenty:empyreal_stable_door",
+	  "mcwbiomesoplenty:empyreal_stable_head_door",
+	  "mcwbiomesoplenty:empyreal_swamp_door",
+	  "mcwbiomesoplenty:empyreal_western_door",
+	  "mcwbiomesoplenty:empyreal_waffle_door",
+	  "mcwbiomesoplenty:empyreal_tropical_door",
+	  "mcwbiomesoplenty:empyreal_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:empyreal_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

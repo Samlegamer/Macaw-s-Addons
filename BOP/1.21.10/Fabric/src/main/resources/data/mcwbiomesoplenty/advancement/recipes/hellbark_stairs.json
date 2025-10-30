@@ -1,0 +1,43 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwbiomesoplenty:hellbark_bulk_stairs",
+	  "mcwbiomesoplenty:hellbark_compact_stairs",
+	  "mcwbiomesoplenty:hellbark_loft_stairs",
+	  "mcwbiomesoplenty:hellbark_skyline_stairs",
+	  "mcwbiomesoplenty:hellbark_terrace_stairs",
+	  "mcwbiomesoplenty:hellbark_railing",
+	  "mcwbiomesoplenty:hellbark_balcony",
+	  "mcwbiomesoplenty:hellbark_platform"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:hellbark_log"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

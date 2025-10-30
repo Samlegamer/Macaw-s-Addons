@@ -1,0 +1,22 @@
+{
+ "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "western",
+  "pattern" : [ "  A", "ABA", "AAA" ],
+  "key" : {
+    "A" : "biomesoplenty:hellbark_planks",
+    "B" : "biomesoplenty:hellbark_slab"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:hellbark_western_door"
+  }
+}

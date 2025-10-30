@@ -1,0 +1,30 @@
+{
+"forge:conditional": [
+    {
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+  "type" : "minecraft:crafting_shaped",
+  "group" : "western",
+  "pattern" : [ "  A", "ABA", "AAA" ],
+  "key" : {
+    "A" : "biomesoplenty:dead_planks",
+    "B" : "biomesoplenty:dead_slab"
+  },
+  "result" : {
+    "count" : 3,
+    "id" : "mcwbiomesoplenty:dead_western_door"
+  }
+}
+  ]
+}
