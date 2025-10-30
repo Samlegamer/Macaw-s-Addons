@@ -2,6 +2,7 @@ package fr.samlegamer.mcwabnormals;
 
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.furnitures.AddFurnituresStorage;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
@@ -16,6 +17,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -149,7 +151,18 @@ public class McwAbnormals
 
 		bus.addListener(this::addToTab);
 		bus.addListener(this::client);
+        bus.addListener(this::addToBlockEntity);
     	LOGGER.info("Macaw's Abnormals Mod Finish !");
+    }
+
+    private void addToBlockEntity(BlockEntityTypeAddBlocksEvent event)
+    {
+        AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD_ATMO);
+        AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD_AUTU);
+        AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD_ENVI);
+        AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD_UAQUA);
+        AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD_ENDER);
+        AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD_CAVERNSCHASMS);
     }
 
 	private void client(FMLClientSetupEvent event)

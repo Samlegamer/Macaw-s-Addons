@@ -130,7 +130,29 @@ dependencies {
     // compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
     // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it
     // localRuntime "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
-    implementation "curse.maven:addonslib-1090999:6544357"
+    implementation "curse.maven:addonslib-1090999:${addonslib_version}"
+
+    implementation "curse.maven:jei-238222:${jei_version}"
+
+    implementation "curse.maven:macaws-roofs-352039:${roofs_version}"
+    implementation "curse.maven:macaws-fences-and-walls-453925:${fences_version}"
+    implementation "curse.maven:macaws-doors-378646:${doors_version}"
+    implementation "curse.maven:macaws-bridges-351725:${bridges_version}"
+    implementation "curse.maven:macaws-windows-363569:${windows_version}"
+    implementation "curse.maven:macaws-paths-and-pavings-629153:${paths_version}"
+    implementation "curse.maven:macaws-trapdoors-400933:${trapdoors_version}"
+    implementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
+    implementation "curse.maven:macaws-furniture-359540:${furniture_version}"
+
+    implementation "curse.maven:buzzier-bees-355458:${bb_version}"
+    implementation "curse.maven:environmental-388992:${envi_version}"
+    implementation "curse.maven:upgrade-aquatic-326895:${ua_version}"
+    implementation "curse.maven:autumnity-365045:${aut_version}"
+    //implementation "curse.maven:endergetic-291509:${ender_version}"
+    implementation "curse.maven:atmospheric-362393:${atmo_version}"
+    //implementation "curse.maven:caverns-and-chasms-438005:${cavern_version}"
+    implementation "curse.maven:blueprint-382216:${blueprint_version}"
+
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
     // The group id is ignored when searching -- in this case, it is "blank"
