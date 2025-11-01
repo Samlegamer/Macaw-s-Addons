@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_platform",
+        "pattern": [
+          " BB",
+          " AA",
+          "   "
+        ],
+        "key": {
+          "A": {
+            "item": "byg:skyris_log"
+          },
+          "B": {
+            "item": "byg:skyris_slab"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:skyris_platform",
+          "count": 12
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bark_trapdoors",
+        "pattern": [
+          "ABA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:willow_log"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:willow_bark_trapdoor",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

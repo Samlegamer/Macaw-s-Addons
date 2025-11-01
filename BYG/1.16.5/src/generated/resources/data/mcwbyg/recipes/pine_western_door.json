@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "western",
+        "pattern": [
+          "  A",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:pine_planks"
+          },
+          "B": {
+            "item": "byg:pine_slab"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:pine_western_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

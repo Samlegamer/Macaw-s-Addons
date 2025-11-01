@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "coffee_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:redwood_log"
+          },
+          "B": {
+            "item": "byg:redwood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:redwood_coffee_table"
+        }
+      }
+    }
+  ]
+}

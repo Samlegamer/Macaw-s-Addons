@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwpaths",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks_paths",
+        "ingredients": [
+          {
+            "item": "byg:palm_slab"
+          }
+        ],
+        "result": {
+          "item": "mcwbyg:palm_planks_path",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

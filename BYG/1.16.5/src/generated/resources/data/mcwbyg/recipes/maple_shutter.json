@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "byg:maple_trapdoor"
+          },
+          {
+            "item": "byg:maple_trapdoor"
+          },
+          {
+            "item": "byg:maple_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwbyg:maple_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

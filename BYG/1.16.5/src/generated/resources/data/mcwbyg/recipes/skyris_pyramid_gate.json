@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "pyramid",
+        "pattern": [
+          "ABA",
+          "ACA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "byg:skyris_log"
+          },
+          "C": {
+            "item": "byg:skyris_planks"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:skyris_pyramid_gate"
+        }
+      }
+    }
+  ]
+}

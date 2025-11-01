@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "glassed",
+        "pattern": [
+          "AB",
+          "BB",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:pine_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:pine_glass_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

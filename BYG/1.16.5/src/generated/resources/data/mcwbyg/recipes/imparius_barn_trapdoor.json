@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "barn_trapdoors",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:imparius_planks"
+          },
+          "B": {
+            "item": "mcwbyg:imparius_glass_trapdoor"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:imparius_barn_trapdoor"
+        }
+      }
+    }
+  ]
+}

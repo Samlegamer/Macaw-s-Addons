@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "curved_gate",
+        "pattern": [
+          "B A",
+          "BAA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:nightshade_planks"
+          },
+          "B": {
+            "item": "byg:nightshade_log"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:nightshade_curved_gate",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

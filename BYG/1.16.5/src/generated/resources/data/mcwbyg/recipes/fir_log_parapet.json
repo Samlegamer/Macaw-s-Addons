@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "parapets",
+        "pattern": [
+          "AAA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "byg:fir_log"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:fir_log_parapet",
+          "count": 5
+        }
+      }
+    }
+  ]
+}

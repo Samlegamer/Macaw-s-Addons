@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bookshelf",
+        "pattern": [
+          "AAA",
+          "BBB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:rainbow_eucalyptus_log"
+          },
+          "B": {
+            "item": "minecraft:book"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:rainbow_eucalyptus_bookshelf",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

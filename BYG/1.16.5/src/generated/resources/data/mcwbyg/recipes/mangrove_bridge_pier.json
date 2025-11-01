@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:mangrove_log"
+          },
+          "B": {
+            "item": "byg:mangrove_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:mangrove_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "coffee_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:blue_enchanted_log"
+          },
+          "B": {
+            "item": "byg:blue_enchanted_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:blue_enchanted_coffee_table"
+        }
+      }
+    }
+  ]
+}

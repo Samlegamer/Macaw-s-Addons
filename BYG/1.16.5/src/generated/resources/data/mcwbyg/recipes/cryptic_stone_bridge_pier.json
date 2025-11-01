@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:cryptic_stone"
+          },
+          "B": {
+            "item": "byg:cryptic_stone_wall"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:cryptic_stone_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}
