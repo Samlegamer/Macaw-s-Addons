@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "rail_bridges",
+        "pattern": [
+          "B B",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:rosewood_slab"
+          },
+          "B": {
+            "item": "atmospheric:rosewood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:rosewood_rail_bridge",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

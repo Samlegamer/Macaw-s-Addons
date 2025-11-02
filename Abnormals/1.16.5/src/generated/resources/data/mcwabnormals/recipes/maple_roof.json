@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "autumnity",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "roof",
+        "pattern": [
+          " A",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "autumnity:maple_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:maple_roof",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

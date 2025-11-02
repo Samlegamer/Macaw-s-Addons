@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "skyline_stairs",
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:stripped_grimwood_log"
+          },
+          "B": {
+            "item": "atmospheric:grimwood_log"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:grimwood_skyline_stairs",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

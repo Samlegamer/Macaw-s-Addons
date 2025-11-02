@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "buzzier_bees",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "buzzier_bees:honeycomb_tiles"
+        },
+        "result": "mcwabnormals:honeycomb_tile_upper_steep_roof",
+        "count": 1
+      }
+    }
+  ]
+}

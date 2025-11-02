@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "environmental",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "oak",
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "key": {
+          "A": {
+            "item": "environmental:cherry_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_oak"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:cherry_classic_door"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "environmental",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "ranch_trapdoors",
+        "pattern": [
+          "ABA",
+          "BBB",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "environmental:willow_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:willow_ranch_trapdoor",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

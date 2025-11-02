@@ -17,7 +17,8 @@ public class Client
 	@SubscribeEvent
 	public static void colorsBlock(ColorHandlerEvent.Block event)
 	{
-		/*Copied parameter for match to original leaves
+		/*
+		 * Copied parameter for match to original leaves
 		 * See original here : https://github.com/teamauroramods/BayouBlues/blob/1.18.x/common/src/main/java/com/teamaurora/bayou_blues/core/BayouBlues.java#L26
 		 */
 		event.getBlockColors().register((state, view, pos, tintIndex) -> view != null && pos != null ? BiomeColors.getAverageFoliageColor(view, pos) : FoliageColors.getDefaultColor(), Finder.findBlock(McwAurora.MODID, "cypress_hedge"));

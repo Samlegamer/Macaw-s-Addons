@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "endergetic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "end_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwabnormals:stripped_poise_table"
+          },
+          "B": {
+            "item": "endergetic:stripped_poise_stem"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:stripped_poise_end_table"
+        }
+      }
+    }
+  ]
+}

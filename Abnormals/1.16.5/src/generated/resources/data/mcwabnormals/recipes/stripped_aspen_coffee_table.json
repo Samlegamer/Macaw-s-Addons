@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "coffee_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:stripped_aspen_log"
+          },
+          "B": {
+            "item": "atmospheric:aspen_fence"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:stripped_aspen_coffee_table"
+        }
+      }
+    }
+  ]
+}

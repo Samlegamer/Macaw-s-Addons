@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "autumnity",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "log_stairs",
+        "pattern": [
+          "  A"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwabnormals:snail_shell_tiles_bridge"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:snail_shell_tiles_bridge_stair",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

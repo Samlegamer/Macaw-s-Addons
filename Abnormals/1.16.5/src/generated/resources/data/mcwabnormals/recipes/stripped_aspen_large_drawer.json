@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "large_drawer",
+        "pattern": [
+          "ABA",
+          "AAA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:stripped_aspen_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:stripped_aspen_large_drawer",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

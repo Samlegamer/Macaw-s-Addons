@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "environmental",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "drawer_counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "environmental:willow_slab"
+          },
+          "B": {
+            "item": "mcwabnormals:willow_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:willow_drawer_counter"
+        }
+      }
+    }
+  ]
+}

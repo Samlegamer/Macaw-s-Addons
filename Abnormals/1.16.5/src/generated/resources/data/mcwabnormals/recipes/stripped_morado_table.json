@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwabnormals:stripped_morado_coffee_table"
+          },
+          "B": {
+            "item": "atmospheric:morado_fence"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:stripped_morado_table"
+        }
+      }
+    }
+  ]
+}

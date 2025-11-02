@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "environmental",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "western",
+        "pattern": [
+          "  A",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "environmental:wisteria_planks"
+          },
+          "B": {
+            "item": "environmental:wisteria_slab"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:wisteria_western_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

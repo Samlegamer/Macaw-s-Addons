@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "environmental",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "rope_stairs",
+        "pattern": [
+          "  A"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwabnormals:rope_cherry_bridge"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:cherry_rope_bridge_stair",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

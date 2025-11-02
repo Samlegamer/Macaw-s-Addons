@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "coffee_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:yucca_log"
+          },
+          "B": {
+            "item": "atmospheric:yucca_fence"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:yucca_coffee_table"
+        }
+      }
+    }
+  ]
+}

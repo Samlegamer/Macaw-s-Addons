@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bulk_stairs",
+        "pattern": [
+          "A  ",
+          "BA ",
+          "BBA"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:stripped_morado_log"
+          },
+          "B": {
+            "item": "atmospheric:morado_log"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:morado_bulk_stairs",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

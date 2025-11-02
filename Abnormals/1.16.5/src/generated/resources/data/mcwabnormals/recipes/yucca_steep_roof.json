@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "steep_roof",
+        "pattern": [
+          " A",
+          "AA",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:yucca_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:yucca_steep_roof",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

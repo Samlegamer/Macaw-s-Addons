@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_drawer",
+        "pattern": [
+          "AAA",
+          "ABA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:stripped_grimwood_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:stripped_grimwood_double_drawer",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

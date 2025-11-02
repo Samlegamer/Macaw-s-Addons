@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "log_stairs",
+        "pattern": [
+          "  A"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwabnormals:red_arid_sandstone_bridge"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:red_arid_sandstone_bridge_stair",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

@@ -26,7 +26,7 @@ public class Recipes extends RecipeProvider
         McwRecipes.registerAllMcwWood(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.WOOD, getWood());
         McwRecipes.registerMcwHedge(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.LEAVES, getLeaves());
         McwRecipes.onRegisterMcwStone(ModType.BRIDGES, consumer, McwByg.MODID, BYG.MOD_ID, McwByg.bridges_rockable, getStoneBridges());
-//        McwRecipes.onRegisterMcwStone(ModType.FENCES, consumer, McwByg.MODID, BYG.MOD_ID, McwByg.fences_rockable, getStoneFencesAndRoofs());
+        McwRecipes.onRegisterMcwStone(ModType.FENCES, consumer, McwByg.MODID, BYG.MOD_ID, McwByg.fences_rockable, getStoneFencesAndRoofs());
         McwRecipes.onRegisterMcwStone(ModType.ROOFS, consumer, McwByg.MODID, BYG.MOD_ID, McwByg.fences_rockable, getStoneFencesAndRoofs());
     }
 

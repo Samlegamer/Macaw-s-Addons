@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "grass_topped",
+        "pattern": [
+          "BCB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:scoria_stonebricks"
+          },
+          "B": {
+            "item": "byg:scoria_stone"
+          },
+          "C": {
+            "item": "minecraft:dirt"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:scoria_stone_grass_topped_wall",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

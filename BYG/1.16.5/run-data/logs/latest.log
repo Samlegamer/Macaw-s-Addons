@@ -1,56 +1,31 @@
-[01nov.2025 14:27:15.689] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--mod, mcwbyg, --all, --output, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BYG\1.16.5\src\generated\resources, --existing, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BYG\1.16.5\src\main\resources, --gameDir, ., --launchTarget, fmluserdevdata, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 36.2.42, --assetIndex, 1.16, --assetsDir, C:\Users\Samle\.gradle\caches\forge_gradle\assets]
-[01nov.2025 14:27:15.692] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.1.3+8.1.3+main-8.1.x.c94d18ec starting: java version 1.8.0_442 by Temurin
-[01nov.2025 14:27:16.078] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
-[01nov.2025 14:27:16.119] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/C:/Users/Samle/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.4/4ec7d77d9ab32596ca0b78bb123956734767e3a/mixin-0.8.4.jar Service=ModLauncher Env=CLIENT
-[01nov.2025 14:27:17.279] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevdata' with arguments [--gameDir, ., --assetsDir, C:\Users\Samle\.gradle\caches\forge_gradle\assets, --mod, mcwbyg, --all, --output, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BYG\1.16.5\src\generated\resources, --existing, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BYG\1.16.5\src\main\resources, --assetIndex, 1.16]
-[01nov.2025 14:27:17.437] [main/INFO] [mixin/]: Remapping refMap byg.refmap.json using C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BYG\1.16.5\build/createSrgToMcp/output.srg
-[01nov.2025 14:27:17.741] [main/INFO] [net.minecraftforge.fml.DatagenModLoader/]: Initializing Data Gatherer for mods [mcwbyg]
-[01nov.2025 14:27:24.278] [modloading-worker-11/INFO] [fr.samlegamer.mcwbyg.McwByg/]: Macaw's Oh the Biomes You'll Go Loading...
-[01nov.2025 14:27:24.303] [modloading-worker-12/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.42, for MC 1.16.5 with MCP 20210115.111550
-[01nov.2025 14:27:24.321] [modloading-worker-12/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.42 Initialized
-[01nov.2025 14:27:24.369] [modloading-worker-11/INFO] [fr.samlegamer.mcwbyg.McwByg/]: Macaw's Oh the Biomes You'll Go Is Charged !
-[01nov.2025 14:27:24.502] [modloading-worker-1/INFO] [fr.samlegamer.addonslib.AddonsLib/]: AddonsLib Forge !
-[01nov.2025 14:27:32.038] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Blocks registered!
-[01nov.2025 14:27:32.312] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Items registered!
-[01nov.2025 14:27:32.342] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Block Entities registered!
-[01nov.2025 14:27:32.347] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Entities registered!
-[01nov.2025 14:27:32.353] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Block Entities registered!
-[01nov.2025 14:27:32.379] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Sounds registered!
-[01nov.2025 14:27:33.070] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Biomes registered!
-[01nov.2025 14:27:33.071] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Registering block placer types!
-[01nov.2025 14:27:33.072] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Decorators registered!
-[01nov.2025 14:27:33.074] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Features registered!
-[01nov.2025 14:27:33.077] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Structures registered!
-[01nov.2025 14:27:33.077] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Surface builders Registered!
-[01nov.2025 14:27:34.066] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1052]: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:39)
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54)
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72)
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82)
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66)
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:94)
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: Caused by: java.lang.reflect.InvocationTargetException
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: 	at java.lang.reflect.Method.invoke(Method.java:498)
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: 	at net.minecraftforge.userdev.FMLUserdevDataLaunchProvider.lambda$launchService$0(FMLUserdevDataLaunchProvider.java:37)
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: 	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37)
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: 	... 5 more
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: Caused by: java.lang.IllegalStateException: Invalid ConditionalRecipe builder, Orphaned conditions
-[01nov.2025 14:27:39.588] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at net.minecraftforge.common.crafting.ConditionalRecipe$Builder.build(ConditionalRecipe.java:165)
-[01nov.2025 14:27:39.589] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at fr.samlegamer.addonslib.generation.recipes.McwRecipes.mkScW1Item(McwRecipes.java:108)
-[01nov.2025 14:27:39.589] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at fr.samlegamer.addonslib.generation.recipes.Roofs.stone_variants(Roofs.java:67)
-[01nov.2025 14:27:39.589] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at fr.samlegamer.addonslib.generation.recipes.Roofs.buildStone(Roofs.java:96)
-[01nov.2025 14:27:39.589] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at fr.samlegamer.addonslib.generation.recipes.McwRecipes.onRegisterMcwStone(McwRecipes.java:71)
-[01nov.2025 14:27:39.589] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at fr.samlegamer.mcwbyg.Recipes.buildShapelessRecipes(Recipes.java:30)
-[01nov.2025 14:27:39.589] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at net.minecraft.data.RecipeProvider.run(RecipeProvider.java:50)
-[01nov.2025 14:27:39.589] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at net.minecraft.data.DataGenerator.run(DataGenerator.java:44)
-[01nov.2025 14:27:39.589] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at net.minecraftforge.fml.event.lifecycle.GatherDataEvent$DataGeneratorConfig.lambda$runAll$0(GatherDataEvent.java:97)
-[01nov.2025 14:27:39.589] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at cpw.mods.modlauncher.api.LamdbaExceptionUtils.lambda$rethrowConsumer$0(LamdbaExceptionUtils.java:34)
-[01nov.2025 14:27:39.589] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at java.util.HashMap$Values.forEach(HashMap.java:982)
-[01nov.2025 14:27:39.589] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at net.minecraftforge.fml.event.lifecycle.GatherDataEvent$DataGeneratorConfig.runAll(GatherDataEvent.java:93)
-[01nov.2025 14:27:39.589] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at net.minecraftforge.fml.DatagenModLoader.begin(DatagenModLoader.java:53)
-[01nov.2025 14:27:39.589] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at net.minecraft.data.Main.main(Main.java:45)
-[01nov.2025 14:27:39.589] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	... 11 more
+[02nov.2025 19:26:27.761] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--mod, mcwbyg, --all, --output, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BYG\1.16.5\src\generated\resources, --existing, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BYG\1.16.5\src\main\resources, --gameDir, ., --launchTarget, fmluserdevdata, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 36.2.42, --assetIndex, 1.16, --assetsDir, C:\Users\Samle\.gradle\caches\forge_gradle\assets]
+[02nov.2025 19:26:27.765] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.1.3+8.1.3+main-8.1.x.c94d18ec starting: java version 1.8.0_442 by Temurin
+[02nov.2025 19:26:28.109] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[02nov.2025 19:26:28.148] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/C:/Users/Samle/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.4/4ec7d77d9ab32596ca0b78bb123956734767e3a/mixin-0.8.4.jar Service=ModLauncher Env=CLIENT
+[02nov.2025 19:26:29.182] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevdata' with arguments [--gameDir, ., --assetsDir, C:\Users\Samle\.gradle\caches\forge_gradle\assets, --mod, mcwbyg, --all, --output, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BYG\1.16.5\src\generated\resources, --existing, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BYG\1.16.5\src\main\resources, --assetIndex, 1.16]
+[02nov.2025 19:26:29.309] [main/INFO] [mixin/]: Remapping refMap byg.refmap.json using C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BYG\1.16.5\build/createSrgToMcp/output.srg
+[02nov.2025 19:26:29.562] [main/INFO] [net.minecraftforge.fml.DatagenModLoader/]: Initializing Data Gatherer for mods [mcwbyg]
+[02nov.2025 19:26:34.924] [modloading-worker-11/INFO] [fr.samlegamer.mcwbyg.McwByg/]: Macaw's Oh the Biomes You'll Go Loading...
+[02nov.2025 19:26:34.938] [modloading-worker-7/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.42, for MC 1.16.5 with MCP 20210115.111550
+[02nov.2025 19:26:34.992] [modloading-worker-7/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.42 Initialized
+[02nov.2025 19:26:35.024] [modloading-worker-11/INFO] [fr.samlegamer.mcwbyg.McwByg/]: Macaw's Oh the Biomes You'll Go Is Charged !
+[02nov.2025 19:26:35.231] [modloading-worker-1/INFO] [fr.samlegamer.addonslib.AddonsLib/]: AddonsLib Forge !
+[02nov.2025 19:26:41.361] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Blocks registered!
+[02nov.2025 19:26:41.620] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Items registered!
+[02nov.2025 19:26:41.651] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Block Entities registered!
+[02nov.2025 19:26:41.655] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Entities registered!
+[02nov.2025 19:26:41.660] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Block Entities registered!
+[02nov.2025 19:26:41.681] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Sounds registered!
+[02nov.2025 19:26:42.371] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Biomes registered!
+[02nov.2025 19:26:42.372] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Registering block placer types!
+[02nov.2025 19:26:42.373] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Decorators registered!
+[02nov.2025 19:26:42.374] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Features registered!
+[02nov.2025 19:26:42.376] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Structures registered!
+[02nov.2025 19:26:42.376] [main/INFO] [corgiaoc.byg.BYG/]: BYG: Surface builders Registered!
+[02nov.2025 19:26:43.289] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[02nov.2025 19:26:44.423] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 1133 ms
+[02nov.2025 19:26:44.423] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block Tags
+[02nov.2025 19:26:44.466] [main/INFO] [net.minecraft.data.DataGenerator/]: Block Tags finished after 42 ms
+[02nov.2025 19:26:44.466] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Tags
+[02nov.2025 19:26:44.471] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Tags finished after 4 ms
+[02nov.2025 19:26:44.471] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 1182 ms

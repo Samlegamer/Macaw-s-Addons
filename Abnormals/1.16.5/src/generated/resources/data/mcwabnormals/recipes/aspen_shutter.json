@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "atmospheric:aspen_trapdoor"
+          },
+          {
+            "item": "atmospheric:aspen_trapdoor"
+          },
+          {
+            "item": "atmospheric:aspen_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwabnormals:aspen_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "upgrade_aquatic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "skyline_stairs",
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:stripped_driftwood_log"
+          },
+          "B": {
+            "item": "upgrade_aquatic:driftwood_log"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:driftwood_skyline_stairs",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

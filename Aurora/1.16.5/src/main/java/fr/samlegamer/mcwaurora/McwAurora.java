@@ -2,22 +2,30 @@ package fr.samlegamer.mcwaurora;
 
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
+import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
+import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.util.McwMod;
 import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 
@@ -41,13 +49,13 @@ import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 import javax.annotation.Nonnull;
 
 @Mod(McwAurora.MODID)
-public class McwAurora
+public class McwAurora extends McwMod
 {
 	public static final String MODID = "mcwaurora";
     private static final Logger LOGGER = LogManager.getLogger();
-    
-    public static final List<String> WOOD_BAYOU = Arrays.asList("cypress"); // bayou_blues
+
     public static final List<String> WOOD_ENHANCED_MUSH = Arrays.asList("brown_mushroom", "red_mushroom"); // enhanced_mushrooms
+    public static final List<String> WOOD_BAYOU = Arrays.asList("cypress"); // bayou_blues
     public static final List<String> WOOD_ABUNDANCE = Arrays.asList("jacaranda", "redbud"); // abundance
     
     private static final DeferredRegister<Block> block = Registration.blocks(MODID);
@@ -130,12 +138,52 @@ public class McwAurora
 		Windows.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms");
 		Windows.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance");
 
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::dataSetup);
         MinecraftForge.EVENT_BUS.register(MappingsFix.class);
     	LOGGER.info("Macaw's Aurora Mod Finish !");
     }
-    
-    private void client(FMLClientSetupEvent e)
+
+    @Override
+    public void commonSetup(FMLCommonSetupEvent fmlCommonSetupEvent) {
+        fmlCommonSetupEvent.enqueueWork(() -> {
+            McwLootTables.addBlockAllWood(MODID, WOOD_ENHANCED_MUSH);
+            McwLootTables.addBlockAllWood(MODID, WOOD_BAYOU);
+            McwLootTables.addBlockAllWood(MODID, WOOD_ABUNDANCE);
+            McwLootTables.addBlockHedges(MODID, WOOD_BAYOU);
+            McwLootTables.addBlockHedges(MODID, WOOD_ABUNDANCE);
+        });
+    }
+
+    @Override
+    public void dataSetup(GatherDataEvent gatherDataEvent) {
+        DataGenerator generator = gatherDataEvent.getGenerator();
+        ExistingFileHelper existingFileHelper = gatherDataEvent.getExistingFileHelper();
+        if(gatherDataEvent.includeServer()) {
+            McwBlockTags mcwBlockTags = new McwBlockTags(generator, MODID, existingFileHelper) {
+                @Override
+                protected void addTags() {
+                    addAllMcwTags(MODID, WOOD_ENHANCED_MUSH);
+                    addAllMcwTags(MODID, WOOD_BAYOU, WOOD_BAYOU);
+                    addAllMcwTags(MODID, WOOD_ABUNDANCE, WOOD_ABUNDANCE);
+                }
+            };
+            generator.addProvider(mcwBlockTags);
+            generator.addProvider(new McwItemTags(generator, mcwBlockTags, MODID, existingFileHelper) {
+                @Override
+                protected void addTags() {
+                    addAllMcwTags(MODID, WOOD_ENHANCED_MUSH);
+                    addAllMcwTags(MODID, WOOD_BAYOU, WOOD_BAYOU);
+                    addAllMcwTags(MODID, WOOD_ABUNDANCE, WOOD_ABUNDANCE);
+                }
+            });
+            generator.addProvider(new Recipes(generator));
+        }
+    }
+
+    @Override
+    public void clientSetup(FMLClientSetupEvent e)
     {
 		APIRenderTypes.initAllWood(e, MODID, WOOD_BAYOU, Registration.getAllModTypeWood());
 		APIRenderTypes.initAllWood(e, MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());

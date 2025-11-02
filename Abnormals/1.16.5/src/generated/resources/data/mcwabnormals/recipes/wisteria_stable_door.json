@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "environmental",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stable",
+        "pattern": [
+          "BB",
+          "AA",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "environmental:wisteria_planks"
+          },
+          "B": {
+            "item": "minecraft:iron_bars"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:wisteria_stable_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "endergetic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_railing",
+        "pattern": [
+          "A  "
+        ],
+        "key": {
+          "A": {
+            "item": "mcwabnormals:poise_balcony"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:poise_railing",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

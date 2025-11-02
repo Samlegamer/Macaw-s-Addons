@@ -24,7 +24,8 @@ public class Client
 	public static void colorsBlock(ColorHandlerEvent.Block event)
 	{
 		COLOR.colorsBlock(event);
-		/*Copied parameter for match to original leaves
+		/*
+		 * Copied parameter for match to original leaves
 		 * See original here : https://github.com/team-abnormals/autumnity/blob/1.20.x/src/main/java/com/teamabnormals/autumnity/core/other/AutumnityClientCompat.java#L47
 		 */
 		event.getBlockColors().register((state, view, pos, tintIndex) -> view != null && pos != null ? BiomeColors.getAverageFoliageColor(view, pos) : FoliageColors.getDefaultColor(), Finder.findBlock(McwAbnormals.MODID, "maple_hedge"));

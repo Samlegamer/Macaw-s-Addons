@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "railing_wall",
+        "pattern": [
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:polished_soapstone"
+          },
+          "B": {
+            "item": "minecraft:iron_bars"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:railing_soapstone_wall",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

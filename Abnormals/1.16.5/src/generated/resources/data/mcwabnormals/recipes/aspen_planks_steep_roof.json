@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "planks_steep_roof",
+        "pattern": [
+          " A",
+          "AA",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:aspen_planks"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:aspen_planks_steep_roof",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

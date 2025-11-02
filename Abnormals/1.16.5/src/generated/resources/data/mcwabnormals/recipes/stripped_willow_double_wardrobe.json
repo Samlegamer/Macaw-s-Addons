@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "environmental",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_wardrobe",
+        "pattern": [
+          "AAA",
+          "BAB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "environmental:stripped_willow_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:stripped_willow_double_wardrobe",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

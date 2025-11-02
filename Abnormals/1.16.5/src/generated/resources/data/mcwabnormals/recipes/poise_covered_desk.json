@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "endergetic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "covered_desk",
+        "pattern": [
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "endergetic:poise_stem"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:poise_covered_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

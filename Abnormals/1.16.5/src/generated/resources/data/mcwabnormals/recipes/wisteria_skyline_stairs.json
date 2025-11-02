@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "environmental",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "skyline_stairs",
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "key": {
+          "A": {
+            "item": "environmental:stripped_wisteria_log"
+          },
+          "B": {
+            "item": "environmental:wisteria_log"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:wisteria_skyline_stairs",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "windows",
+        "pattern": [
+          " A ",
+          "ABA",
+          " A "
+        ],
+        "key": {
+          "A": {
+            "item": "mcwwindows:window_base"
+          },
+          "B": {
+            "item": "atmospheric:grimwood_log"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:grimwood_window",
+          "count": 4
+        }
+      }
+    }
+  ]
+}
