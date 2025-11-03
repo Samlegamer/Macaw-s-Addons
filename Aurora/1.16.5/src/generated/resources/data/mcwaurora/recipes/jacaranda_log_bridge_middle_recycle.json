@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "abundance",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "recyclable_bridges",
+        "ingredients": [
+          {
+            "item": "mcwaurora:jacaranda_log_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwaurora:jacaranda_log_bridge_middle"
+        }
+      }
+    }
+  ]
+}

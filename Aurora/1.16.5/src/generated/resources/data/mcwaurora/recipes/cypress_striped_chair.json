@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "bayou_blues",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "striped_chair",
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "bayou_blues:cypress_log"
+          },
+          "B": {
+            "item": "bayou_blues:cypress_slab"
+          },
+          "C": {
+            "item": "bayou_blues:cypress_fence"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:cypress_striped_chair"
+        }
+      }
+    }
+  ]
+}

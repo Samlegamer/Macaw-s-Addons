@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "bayou_blues",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern_desk",
+        "pattern": [
+          "AAA",
+          "BCB"
+        ],
+        "key": {
+          "A": {
+            "item": "bayou_blues:cypress_log"
+          },
+          "B": {
+            "item": "bayou_blues:cypress_fence"
+          },
+          "C": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:cypress_modern_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

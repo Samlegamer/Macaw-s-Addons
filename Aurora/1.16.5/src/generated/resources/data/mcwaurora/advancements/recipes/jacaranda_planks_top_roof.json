@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "abundance",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwaurora:jacaranda_planks_top_roof"
+          ]
+        },
+        "criteria": {
+          "has_item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "abundance:jacaranda_planks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwaurora:jacaranda_planks_top_roof"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_item",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

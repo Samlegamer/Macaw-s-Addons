@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "bayou_blues",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bulk_stairs",
+        "pattern": [
+          "A  ",
+          "BA ",
+          "BBA"
+        ],
+        "key": {
+          "A": {
+            "item": "bayou_blues:stripped_cypress_log"
+          },
+          "B": {
+            "item": "bayou_blues:cypress_log"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:cypress_bulk_stairs",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

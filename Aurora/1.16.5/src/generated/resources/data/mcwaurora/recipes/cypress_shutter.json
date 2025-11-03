@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "bayou_blues",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "bayou_blues:cypress_trapdoor"
+          },
+          {
+            "item": "bayou_blues:cypress_trapdoor"
+          },
+          {
+            "item": "bayou_blues:cypress_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwaurora:cypress_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

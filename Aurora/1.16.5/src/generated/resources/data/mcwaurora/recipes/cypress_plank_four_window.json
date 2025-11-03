@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "bayou_blues",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "windows_four",
+        "pattern": [
+          "AAA",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwwindows:window_centre_bar_base"
+          },
+          "B": {
+            "item": "bayou_blues:cypress_planks"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:cypress_plank_four_window",
+          "count": 8
+        }
+      }
+    }
+  ]
+}

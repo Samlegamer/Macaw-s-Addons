@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "bayou_blues",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "recyclable_bridges",
+        "ingredients": [
+          {
+            "item": "mcwaurora:cypress_rope_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwaurora:rope_cypress_bridge"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "enhanced_mushrooms",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern_chair",
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "enhanced_mushrooms:stripped_red_mushroom_stem"
+          },
+          "B": {
+            "item": "enhanced_mushrooms:red_mushroom_slab"
+          },
+          "C": {
+            "item": "enhanced_mushrooms:red_mushroom_fence"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:stripped_red_mushroom_modern_chair"
+        }
+      }
+    }
+  ]
+}

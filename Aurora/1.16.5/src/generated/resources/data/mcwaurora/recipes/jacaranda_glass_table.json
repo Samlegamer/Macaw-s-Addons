@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "abundance",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "glass_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwaurora:jacaranda_end_table"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:jacaranda_glass_table"
+        }
+      }
+    }
+  ]
+}

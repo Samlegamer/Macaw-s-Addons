@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "abundance",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stool_chair",
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "abundance:redbud_log"
+          },
+          "B": {
+            "item": "abundance:redbud_fence"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:redbud_stool_chair"
+        }
+      }
+    }
+  ]
+}

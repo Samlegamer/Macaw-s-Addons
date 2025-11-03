@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "abundance",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_platform",
+        "pattern": [
+          " BB",
+          " AA",
+          "   "
+        ],
+        "key": {
+          "A": {
+            "item": "abundance:jacaranda_log"
+          },
+          "B": {
+            "item": "abundance:jacaranda_slab"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:jacaranda_platform",
+          "count": 12
+        }
+      }
+    }
+  ]
+}

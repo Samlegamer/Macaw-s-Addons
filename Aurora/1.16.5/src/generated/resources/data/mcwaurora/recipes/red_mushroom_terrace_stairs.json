@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "enhanced_mushrooms",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "terrace_stairs",
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "key": {
+          "A": {
+            "item": "enhanced_mushrooms:stripped_red_mushroom_stem"
+          },
+          "B": {
+            "item": "enhanced_mushrooms:red_mushroom_stem"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:red_mushroom_terrace_stairs",
+          "count": 5
+        }
+      }
+    }
+  ]
+}

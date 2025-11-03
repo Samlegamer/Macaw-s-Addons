@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "enhanced_mushrooms",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "covered_desk",
+        "pattern": [
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "enhanced_mushrooms:stripped_red_mushroom_stem"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:stripped_red_mushroom_covered_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

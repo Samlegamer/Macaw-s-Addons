@@ -1,0 +1,58 @@
+[03nov.2025 20:40:47.811] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--mod, mcwmoddinglegacy, --all, --output, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\ModdingLegacy\1.16.5\src\generated\resources, --existing, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\ModdingLegacy\1.16.5\src\main\resources, --gameDir, ., --launchTarget, fmluserdevdata, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 36.2.42, --assetIndex, 1.16, --assetsDir, C:\Users\Samle\.gradle\caches\forge_gradle\assets]
+[03nov.2025 20:40:47.814] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.1.3+8.1.3+main-8.1.x.c94d18ec starting: java version 1.8.0_442 by Temurin
+[03nov.2025 20:40:48.164] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[03nov.2025 20:40:48.206] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/C:/Users/Samle/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.4/4ec7d77d9ab32596ca0b78bb123956734767e3a/mixin-0.8.4.jar Service=ModLauncher Env=CLIENT
+[03nov.2025 20:40:49.253] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevdata' with arguments [--gameDir, ., --assetsDir, C:\Users\Samle\.gradle\caches\forge_gradle\assets, --mod, mcwmoddinglegacy, --all, --output, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\ModdingLegacy\1.16.5\src\generated\resources, --existing, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\ModdingLegacy\1.16.5\src\main\resources, --assetIndex, 1.16]
+[03nov.2025 20:40:49.391] [main/INFO] [mixin/]: Remapping refMap blue_skies.refmap.json using C:\Users\Samle\Music\McwMods\Macaw-s-Addons\ModdingLegacy\1.16.5\build/createSrgToMcp/output.srg
+[03nov.2025 20:40:49.394] [main/INFO] [mixin/]: Remapping refMap structure_gel.refmap.json using C:\Users\Samle\Music\McwMods\Macaw-s-Addons\ModdingLegacy\1.16.5\build/createSrgToMcp/output.srg
+[03nov.2025 20:40:49.663] [main/INFO] [net.minecraftforge.fml.DatagenModLoader/]: Initializing Data Gatherer for mods [mcwmoddinglegacy]
+[03nov.2025 20:40:54.060] [modloading-worker-9/INFO] [fr.samlegamer.mcwmoddinglegacy.McwModdingLegacy/]: Macaw's Modding Legacy Mod Loading...
+[03nov.2025 20:40:54.062] [modloading-worker-12/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.42, for MC 1.16.5 with MCP 20210115.111550
+[03nov.2025 20:40:54.064] [modloading-worker-12/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.42 Initialized
+[03nov.2025 20:40:54.123] [modloading-worker-3/INFO] [fr.samlegamer.addonslib.AddonsLib/]: AddonsLib Forge !
+[03nov.2025 20:40:54.343] [modloading-worker-9/INFO] [fr.samlegamer.mcwmoddinglegacy.McwModdingLegacy/]: Macaw's Modding Legacy Mod Finish !
+[03nov.2025 20:40:54.531] [modloading-worker-2/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Failed to create mod instance. ModID: premium_wood, class com.legacy.premium_wood.PremiumWoodMod
+java.lang.NullPointerException: null
+	at com.legacy.premium_wood.client.resource_pack.PremiumResourcePackHandler.registerResourcePack(PremiumResourcePackHandler.java:23) ~[premium_wood:1.3.4]
+	at com.legacy.premium_wood.client.resource_pack.PremiumResourcePackHandler.init(PremiumResourcePackHandler.java:17) ~[premium_wood:1.3.4]
+	at com.legacy.premium_wood.PremiumWoodMod.lambda$null$0(PremiumWoodMod.java:43) ~[premium_wood:1.3.4]
+	at net.minecraftforge.fml.DistExecutor.unsafeRunWhenOn(DistExecutor.java:111) ~[forge:?]
+	at com.legacy.premium_wood.PremiumWoodMod.<init>(PremiumWoodMod.java:40) ~[premium_wood:1.3.4]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_442]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_442]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_442]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_442]
+	at java.lang.Class.newInstance(Class.java:442) ~[?:1.8.0_442]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:67) ~[forge:36.2]
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:106) ~[forge:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) [?:1.8.0_442]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1632) [?:1.8.0_442]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_442]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) [?:1.8.0_442]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) [?:1.8.0_442]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175) [?:1.8.0_442]
+[03nov.2025 20:40:54.708] [main/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event CONSTRUCT, 1 errors found
+[03nov.2025 20:40:54.708] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1052]: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+[03nov.2025 20:40:54.709] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:39)
+[03nov.2025 20:40:54.709] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54)
+[03nov.2025 20:40:54.709] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72)
+[03nov.2025 20:40:54.709] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82)
+[03nov.2025 20:40:54.709] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66)
+[03nov.2025 20:40:54.709] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:94)
+[03nov.2025 20:40:54.709] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: Caused by: java.lang.reflect.InvocationTargetException
+[03nov.2025 20:40:54.709] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[03nov.2025 20:40:54.709] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[03nov.2025 20:40:54.709] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[03nov.2025 20:40:54.709] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: 	at java.lang.reflect.Method.invoke(Method.java:498)
+[03nov.2025 20:40:54.709] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: 	at net.minecraftforge.userdev.FMLUserdevDataLaunchProvider.lambda$launchService$0(FMLUserdevDataLaunchProvider.java:37)
+[03nov.2025 20:40:54.709] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: 	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37)
+[03nov.2025 20:40:54.710] [main/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1061]: 	... 5 more
+[03nov.2025 20:40:54.710] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: Caused by: net.minecraftforge.fml.LoadingFailedException: Loading errors encountered: [
+	fml.modloading.failedtoloadmod
+]
+[03nov.2025 20:40:54.710] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:255)
+[03nov.2025 20:40:54.710] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:222)
+[03nov.2025 20:40:54.710] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:180)
+[03nov.2025 20:40:54.711] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at net.minecraftforge.fml.DatagenModLoader.begin(DatagenModLoader.java:46)
+[03nov.2025 20:40:54.711] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	at net.minecraft.data.Main.main(Main.java:45)
+[03nov.2025 20:40:54.711] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:644]: 	... 11 more

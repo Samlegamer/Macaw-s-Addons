@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "abundance",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "end_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwaurora:redbud_table"
+          },
+          "B": {
+            "item": "abundance:redbud_log"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:redbud_end_table"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "abundance",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "skyline_stairs",
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "key": {
+          "A": {
+            "item": "abundance:stripped_jacaranda_log"
+          },
+          "B": {
+            "item": "abundance:jacaranda_log"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:jacaranda_skyline_stairs",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

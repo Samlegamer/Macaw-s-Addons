@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "bayou_blues",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "blinds",
+        "pattern": [
+          "AAA",
+          "BBB",
+          "BBB"
+        ],
+        "key": {
+          "A": {
+            "item": "bayou_blues:cypress_slab"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:cypress_blinds",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "bayou_blues",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "upper_steep_roof",
+        "pattern": [
+          " A",
+          " A",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "bayou_blues:cypress_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:cypress_upper_steep_roof",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

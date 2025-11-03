@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "enhanced_mushrooms",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_railing",
+        "pattern": [
+          "A  "
+        ],
+        "key": {
+          "A": {
+            "item": "mcwaurora:red_mushroom_balcony"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:red_mushroom_railing",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

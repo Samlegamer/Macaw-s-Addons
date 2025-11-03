@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "abundance",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "coffee_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "abundance:stripped_redbud_log"
+          },
+          "B": {
+            "item": "abundance:redbud_fence"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:stripped_redbud_coffee_table"
+        }
+      }
+    }
+  ]
+}

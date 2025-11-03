@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "enhanced_mushrooms",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwaurora:red_mushroom_highley_gate"
+          ]
+        },
+        "criteria": {
+          "has_item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "enhanced_mushrooms:red_mushroom_planks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwaurora:red_mushroom_highley_gate"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_item",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

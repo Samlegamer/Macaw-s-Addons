@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "enhanced_mushrooms",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwaurora:brown_mushroom_coffee_table"
+          },
+          "B": {
+            "item": "enhanced_mushrooms:brown_mushroom_fence"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:brown_mushroom_table"
+        }
+      }
+    }
+  ]
+}

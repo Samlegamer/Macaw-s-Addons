@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "abundance",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "stable_head",
+        "ingredients": [
+          {
+            "item": "mcwaurora:redbud_stable_door"
+          }
+        ],
+        "result": {
+          "item": "mcwaurora:redbud_stable_head_door"
+        }
+      }
+    }
+  ]
+}

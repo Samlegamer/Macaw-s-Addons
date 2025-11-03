@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "enhanced_mushrooms",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "large_drawer",
+        "pattern": [
+          "ABA",
+          "AAA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "enhanced_mushrooms:stripped_red_mushroom_stem"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:stripped_red_mushroom_large_drawer",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

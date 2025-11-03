@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "bayou_blues",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "bayou_blues:cypress_log"
+          },
+          "B": {
+            "item": "bayou_blues:cypress_fence"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:cypress_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

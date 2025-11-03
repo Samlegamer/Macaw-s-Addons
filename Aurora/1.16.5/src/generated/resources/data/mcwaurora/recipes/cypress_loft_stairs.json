@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "bayou_blues",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "loft_stairs",
+        "pattern": [
+          "A  "
+        ],
+        "key": {
+          "A": {
+            "item": "bayou_blues:stripped_cypress_log"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:cypress_loft_stairs",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

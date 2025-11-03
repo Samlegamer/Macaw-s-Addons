@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "bayou_blues",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "log_stairs",
+        "pattern": [
+          "  A"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwaurora:cypress_log_bridge_middle"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:cypress_log_bridge_stair",
+          "count": 6
+        }
+      }
+    }
+  ]
+}
