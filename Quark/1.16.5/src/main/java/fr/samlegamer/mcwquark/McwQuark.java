@@ -99,7 +99,7 @@ public class McwQuark extends McwMod
                     addAllMcwTags(MODID, new ArrayList<>(), stone, leaves);
                 }
             });
-            generator.addProvider(new Recipes(generator));
+            //generator.addProvider(new Recipes(generator));
         }
     }
 

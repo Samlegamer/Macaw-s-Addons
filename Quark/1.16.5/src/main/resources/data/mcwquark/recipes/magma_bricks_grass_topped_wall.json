@@ -1,0 +1,46 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+	"group": "grass_topped",
+    
+    "pattern":
+    [
+		"BGB",
+		"AAA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:magma_block"
+        },    
+        
+		"G":
+        {
+            "item": "minecraft:dirt"
+        }, 
+        
+        "B":
+        {
+            "item": "quark:magma_bricks"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwquark:magma_bricks_grass_topped_wall",
+        "count": 6
+    }
+}
+
+

@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:basalt_bricks"
+    },
+    "result": "mcwquark:basalt_bricks_lower_roof",
+    "group": "roofs",
+    "count": 1
+}

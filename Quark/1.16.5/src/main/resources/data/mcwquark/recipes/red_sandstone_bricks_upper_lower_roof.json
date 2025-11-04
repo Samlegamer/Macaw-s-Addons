@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:red_sandstone_bricks"
+    },
+    "result": "mcwquark:red_sandstone_bricks_upper_lower_roof",
+    "group": "roofs",
+    "count": 1
+}

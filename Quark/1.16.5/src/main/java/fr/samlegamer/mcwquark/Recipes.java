@@ -9,6 +9,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
 import net.minecraft.data.RecipeProvider;
 import vazkii.quark.base.Quark;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
@@ -21,8 +22,8 @@ public class Recipes extends RecipeProvider
 
     @Override
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer) {
-        McwRecipes.registerAllMcwStone(consumer, McwQuark.MODID, Quark.MOD_ID, McwQuark.stone, getStone());
-        McwRecipes.registerMcwHedge(consumer, McwQuark.MODID, Quark.MOD_ID, McwQuark.leaves, getLeaves());
+        McwRecipes.registerAllMcwStone(consumer, McwQuark.MODID, "quark", McwQuark.stone, getStone());
+        McwRecipes.registerMcwHedge(consumer, McwQuark.MODID, "quark", McwQuark.leaves, getLeaves());
     }
 
     private List<Block> getLeaves()

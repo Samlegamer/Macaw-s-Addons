@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:elder_prismarine_bricks"
+    },
+    "result": "mcwquark:modern_elder_prismarine_bricks_wall",
+    "group": "fences",
+    "count": 1
+}

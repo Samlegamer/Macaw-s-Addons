@@ -1,22 +1,32 @@
 package fr.samlegamer.mcwsajevius;
 
 import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.data.McwBlocksIdBase;
 import fr.samlegamer.addonslib.data.ModType;
+import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
+import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
+import fr.samlegamer.addonslib.generation.tags.McwItemTags;
+import fr.samlegamer.addonslib.util.McwMod;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -33,7 +43,7 @@ import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 
 @Mod(McwSajevius.MODID)
-public class McwSajevius
+public class McwSajevius extends McwMod
 {    
 	public static final String MODID = "mcwsajevius";
 	private static final Logger LOGGER = LogManager.getLogger();
@@ -98,12 +108,68 @@ public class McwSajevius
     	Roofs.setRegistrationRockModLoaded(stone_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", stone);
     	Fences.setRegistrationRockModLoaded(stone_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", stone);
     	
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
+    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::dataSetup);
         MinecraftForge.EVENT_BUS.register(MappingsFix.class);
     	LOGGER.info("Macaw's Sajevius Mod Finish !");
     }
-    
-    private void client(FMLClientSetupEvent e)
+
+    @Override
+    public void commonSetup(FMLCommonSetupEvent fmlCommonSetupEvent) {
+        fmlCommonSetupEvent.enqueueWork(() -> {
+            McwLootTables.addBlockAllStone(MODID, stone_betterlands);
+            McwLootTables.addBlockHedges(MODID, wood_betterlands);
+            mkDrop(wood_betterlands);
+            mkDrop(wood_shroomed);
+        });
+    }
+
+    private void mkDrop(List<String> list) {
+        McwLootTables.addBlock(MODID, list, McwBlocksIdBase.BRIDGES_WOOD_BLOCKS);
+        McwLootTables.addBlock(MODID, list, McwBlocksIdBase.ROOFS_WOOD_BLOCKS);
+        McwLootTables.addBlock(MODID, list, McwBlocksIdBase.FENCES_WOOD_BLOCKS);
+        McwLootTables.addBlock(MODID, list, McwBlocksIdBase.FURNITURES_WOOD_BLOCKS);
+        McwLootTables.addBlock(MODID, list, McwBlocksIdBase.STAIRS_WOOD_BLOCKS);
+    }
+
+    @Override
+    public void dataSetup(GatherDataEvent gatherDataEvent) {
+        DataGenerator generator = gatherDataEvent.getGenerator();
+        ExistingFileHelper existingFileHelper = gatherDataEvent.getExistingFileHelper();
+
+        if(gatherDataEvent.includeServer())
+        {
+            McwBlockTags mcwBlockTags = new McwBlockTags(generator, MODID, existingFileHelper) {
+                @Override
+                protected void addTags() {
+                    mcwFencesTags(MODID, wood_betterlands, wood_betterlands, stone_betterlands);
+                    mcwFencesTags(MODID, wood_shroomed, new ArrayList<>(), new ArrayList<>());
+                    mcwBridgesTagsWood(MODID, wood_betterlands);
+                    mcwBridgesTagsWood(MODID, wood_shroomed);
+                    mcwBridgesTagsStone(MODID, stone_betterlands);
+                    mcwRoofsTags(MODID, wood_betterlands, stone_betterlands);
+                    mcwRoofsTags(MODID, wood_shroomed, new ArrayList<>());
+                    mcwFurnituresTags(MODID, wood_betterlands);
+                    mcwFurnituresTags(MODID, wood_shroomed);
+                    mcwStairsTags(MODID, wood_betterlands);
+                    mcwStairsTags(MODID, wood_shroomed);
+                }
+            };
+            generator.addProvider(mcwBlockTags);
+            generator.addProvider(new McwItemTags(generator, mcwBlockTags, MODID, existingFileHelper) {
+                @Override
+                protected void addTags() {
+                    mcwFencesTags(MODID, wood_betterlands, wood_betterlands, stone_betterlands);
+                    mcwFencesTags(MODID, wood_shroomed, new ArrayList<>(), new ArrayList<>());
+                }
+            });
+            //generator.addProvider(new Recipes(generator));
+        }
+    }
+
+    @Override
+    public void clientSetup(FMLClientSetupEvent e)
     {
 		APIRenderTypes.initAllWood(e, MODID, wood_betterlands, ModType.BRIDGES, ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.STAIRS);
 		APIRenderTypes.initAllLeave(e, MODID, wood_betterlands);

@@ -1,0 +1,19 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:marble_bricks"
+    },
+    "result": "mcwquark:marble_bricks_upper_steep_roof",
+    "group": "roofs",
+    "count": 1
+}

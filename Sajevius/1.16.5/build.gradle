@@ -73,6 +73,8 @@ minecraft {
             // You can set various levels here.
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             property 'forge.logging.console.level', 'debug'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile',"${buildDir}/createSrgToMcp/output.srg"
 
             mods {
                 "${mod_id}" {
@@ -121,7 +123,17 @@ dependencies {
     // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-	implementation fg.deobf("curse.maven:addonslib-1090999:6744248")
+    implementation fg.deobf("curse.maven:addonslib-1090999:${addonslib_version}")
+    implementation fg.deobf("curse.maven:jei-238222:${jei_version}")
+
+    implementation fg.deobf("curse.maven:macaws-roofs-352039:${roofs_version}")
+    implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:${fences_version}")
+    implementation fg.deobf("curse.maven:macaws-bridges-351725:${bridges_version}")
+    implementation fg.deobf("curse.maven:macaws-stairs-1119394:${stairs_version}")
+    implementation fg.deobf("curse.maven:macaws-furniture-359540:${furniture_version}")
+
+    runtimeOnly fg.deobf("curse.maven:betterlands-482870:3336248")
+    runtimeOnly fg.deobf("curse.maven:shroomed-493665:3365207")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency

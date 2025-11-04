@@ -3,7 +3,8 @@ plugins {
     id 'idea'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
-    }
+    id 'org.spongepowered.mixin' version '0.7.38'
+}
 
 version = mod_version
 group = mod_group_id
@@ -68,6 +69,8 @@ minecraft {
             // "REGISTRIES": For firing of registry events.
             // "REGISTRYDUMP": For getting the contents of all registries.
             property 'forge.logging.markers', 'REGISTRIES'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
 
             // Recommended logging level for the console
             // You can set various levels here.
@@ -112,6 +115,10 @@ repositories
                 name = "CurseMaven"
                 url = "https://www.cursemaven.com"
             }
+            maven {
+                name = 'Github'
+                url = "https://jitpack.io"
+            }
         }
 
 dependencies {
@@ -121,7 +128,31 @@ dependencies {
     // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    implementation fg.deobf("curse.maven:addonslib-1090999:6744248")
+    implementation fg.deobf("curse.maven:addonslib-1090999:${addonslib_version}")
+    implementation fg.deobf("curse.maven:jei-238222:${jei_version}")
+
+    implementation fg.deobf("curse.maven:macaws-roofs-352039:${roofs_version}")
+    implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:${fences_version}")
+    implementation fg.deobf("curse.maven:macaws-bridges-351725:${bridges_version}")
+    implementation fg.deobf("curse.maven:macaws-stairs-1119394:${stairs_version}")
+    implementation fg.deobf("curse.maven:macaws-furniture-359540:${furniture_version}")
+
+    //implementation ("com.github.Reforged-Mods:FabricBiomeApiReforged:1.0.5") //d7bc649383
+    //implementation ("com.github.Reforged-Mods.Terraform-Reforged:terraform:f9daefa796")
+
+    //annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
+    //implementation fg.deobf("org.spongepowered:mixin:0.8.5")
+    //runtimeOnly fg.deobf("curse.maven:terraformed-api-reforged-525254:3452425")
+    //runtimeOnly fg.deobf("curse.maven:fabrics-biome-api-reforged-522833:3462036")
+
+    //compileOnly fg.deobf("curse.maven:traverse-reforged-267769:3157857")
+    //compileOnly fg.deobf("curse.maven:cinderscapes-reforged-525270:3468208")
+    //compileOnly fg.deobf("curse.maven:terrestria-reforged-525277:3479466")
+
+    //runtimeOnly fg.deobf("curse.maven:traverse-reforged-267769:3157857")
+    //runtimeOnly fg.deobf("curse.maven:cinderscapes-reforged-525270:3468208")
+    //runtimeOnly fg.deobf("curse.maven:terrestria-reforged-525277:3479466")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
