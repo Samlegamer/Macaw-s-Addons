@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bark",
+        "pattern": [
+          "AB",
+          "BB",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:umbran_log"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:umbran_bark_glass_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

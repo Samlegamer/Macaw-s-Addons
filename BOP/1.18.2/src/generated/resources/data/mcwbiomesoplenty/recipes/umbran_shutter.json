@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "biomesoplenty:umbran_trapdoor"
+          },
+          {
+            "item": "biomesoplenty:umbran_trapdoor"
+          },
+          {
+            "item": "biomesoplenty:umbran_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:umbran_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

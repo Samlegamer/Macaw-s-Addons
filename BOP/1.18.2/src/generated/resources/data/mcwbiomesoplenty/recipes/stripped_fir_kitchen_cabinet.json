@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "kitchen_cabinet",
+        "pattern": [
+          "AA",
+          "AB",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:stripped_fir_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:stripped_fir_kitchen_cabinet",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

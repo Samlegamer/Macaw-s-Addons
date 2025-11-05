@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern",
+        "pattern": [
+          "AB",
+          "AA",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:magic_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:magic_modern_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

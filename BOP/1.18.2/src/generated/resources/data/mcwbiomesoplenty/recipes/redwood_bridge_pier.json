@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:redwood_log"
+          },
+          "B": {
+            "item": "biomesoplenty:redwood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:redwood_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

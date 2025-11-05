@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bulk_stairs",
+        "pattern": [
+          "A  ",
+          "BA ",
+          "BBA"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:stripped_palm_log"
+          },
+          "B": {
+            "item": "biomesoplenty:palm_log"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:palm_bulk_stairs",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "biomesoplenty:hellbark_trapdoor"
+          },
+          {
+            "item": "biomesoplenty:hellbark_trapdoor"
+          },
+          {
+            "item": "biomesoplenty:hellbark_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:hellbark_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

@@ -1,6 +1,10 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
 import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
+import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
+import fr.samlegamer.addonslib.generation.tags.McwItemTags;
+import fr.samlegamer.addonslib.util.McwMod;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -8,7 +12,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.registries.DeferredRegister;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
@@ -28,7 +34,7 @@ import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
 
 @Mod(McwBOP.MODID)
-public class McwBOP
+public class McwBOP extends McwMod
 {
 	public static final String MODID = "mcwbiomesoplenty";
 	public static final Logger LOGGER = LogManager.getLogger();
@@ -73,14 +79,46 @@ public class McwBOP
     	Doors.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Windows.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Stairs.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::dataSetup);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
-    
-    private void client(FMLClientSetupEvent e)
+
+    @Override
+    public void clientSetup(FMLClientSetupEvent e)
     {
 		APIRenderTypes.initAllWood(e, MODID, WOOD, Registration.getAllModTypeWood());
 		APIRenderTypes.initAllLeave(e, MODID, LEAVES);
+    }
+
+    @Override
+    public void commonSetup(FMLCommonSetupEvent e) {
+        e.enqueueWork(() -> {
+            McwLootTables.addBlockAllWood(MODID, WOOD);
+            McwLootTables.addBlockHedges(MODID, LEAVES);
+        });
+    }
+
+    @Override
+    public void dataSetup(GatherDataEvent e) {
+        if(e.includeServer())
+        {
+            McwBlockTags mcwBlockTags = new McwBlockTags(e.getGenerator(), MODID, e.getExistingFileHelper()) {
+                @Override
+                protected void addTags() {
+                    addAllMcwTags(MODID, WOOD, LEAVES);
+                }
+            };
+            e.getGenerator().addProvider(new Recipes(e.getGenerator()));
+            e.getGenerator().addProvider(mcwBlockTags);
+            e.getGenerator().addProvider(new McwItemTags(e.getGenerator(), mcwBlockTags, MODID, e.getExistingFileHelper()) {
+                @Override
+                protected void addTags() {
+                    addAllMcwTags(MODID, WOOD, LEAVES);
+                }
+            });
+        }
     }
 }

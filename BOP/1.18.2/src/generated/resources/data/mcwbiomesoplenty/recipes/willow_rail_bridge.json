@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "rail_bridges",
+        "pattern": [
+          "B B",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:willow_slab"
+          },
+          "B": {
+            "item": "biomesoplenty:willow_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:willow_rail_bridge",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

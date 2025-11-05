@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwpaths",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks_paths",
+        "ingredients": [
+          {
+            "item": "biomesoplenty:mahogany_slab"
+          }
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:mahogany_planks_path",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

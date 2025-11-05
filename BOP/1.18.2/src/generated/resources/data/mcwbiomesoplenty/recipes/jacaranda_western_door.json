@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "western",
+        "pattern": [
+          "  A",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:jacaranda_planks"
+          },
+          "B": {
+            "item": "biomesoplenty:jacaranda_slab"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:jacaranda_western_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

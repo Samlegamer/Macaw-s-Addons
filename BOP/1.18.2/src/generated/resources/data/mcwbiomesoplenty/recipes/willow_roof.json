@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "roof",
+        "pattern": [
+          " A",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:willow_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:willow_roof",
+          "count": 2
+        }
+      }
+    }
+  ]
+}
