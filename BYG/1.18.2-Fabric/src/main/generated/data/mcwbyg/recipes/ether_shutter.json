@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "byg:ether_trapdoor"
+    },
+    {
+      "item": "byg:ether_trapdoor"
+    },
+    {
+      "item": "byg:ether_trapdoor"
+    }
+  ],
+  "result": {
+    "item": "mcwbyg:ether_shutter",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ]
+}

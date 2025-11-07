@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stockade",
+        "pattern": [
+          "ABA",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:mangrove_log"
+          },
+          "B": {
+            "item": "byg:mangrove_planks"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:mangrove_stockade_fence",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

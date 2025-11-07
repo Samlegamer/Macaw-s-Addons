@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stockade",
+        "pattern": [
+          "ABA",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:umbran_log"
+          },
+          "B": {
+            "item": "biomesoplenty:umbran_planks"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:umbran_stockade_fence",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

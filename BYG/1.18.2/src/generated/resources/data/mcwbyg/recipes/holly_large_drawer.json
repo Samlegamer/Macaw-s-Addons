@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "large_drawer",
+        "pattern": [
+          "ABA",
+          "AAA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:holly_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:holly_large_drawer",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

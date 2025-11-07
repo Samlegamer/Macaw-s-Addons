@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "acacia",
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:imparius_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_acacia"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:imparius_tropical_door"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "byg"
+      ]
+    }
+  ]
+}

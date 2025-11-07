@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chair",
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:stripped_cherry_log"
+    },
+    "B": {
+      "item": "byg:cherry_slab"
+    },
+    "C": {
+      "item": "byg:cherry_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:stripped_cherry_chair"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ]
+}

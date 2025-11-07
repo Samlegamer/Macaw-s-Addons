@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mcwstairs_platform",
+  "pattern": [
+    " BB",
+    " AA",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "byg:fir_log"
+    },
+    "B": {
+      "item": "byg:fir_slab"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:fir_platform",
+    "count": 12
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "byg"
+      ]
+    }
+  ]
+}

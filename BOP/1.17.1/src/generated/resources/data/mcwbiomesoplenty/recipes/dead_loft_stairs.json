@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "loft_stairs",
+        "pattern": [
+          "A  "
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:stripped_dead_log"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:dead_loft_stairs",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

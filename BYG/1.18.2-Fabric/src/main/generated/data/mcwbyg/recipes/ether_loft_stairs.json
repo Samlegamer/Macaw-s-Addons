@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "loft_stairs",
+  "pattern": [
+    "A  "
+  ],
+  "key": {
+    "A": {
+      "item": "byg:stripped_ether_log"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:ether_loft_stairs",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "byg"
+      ]
+    }
+  ]
+}

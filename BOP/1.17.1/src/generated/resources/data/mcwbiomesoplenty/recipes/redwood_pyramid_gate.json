@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "pyramid",
+        "pattern": [
+          "ABA",
+          "ACA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "biomesoplenty:redwood_log"
+          },
+          "C": {
+            "item": "biomesoplenty:redwood_planks"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:redwood_pyramid_gate"
+        }
+      }
+    }
+  ]
+}

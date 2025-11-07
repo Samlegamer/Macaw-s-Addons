@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "recyclable_bridges",
+  "ingredients": [
+    {
+      "item": "mcwbyg:zelkova_log_bridge_stair"
+    }
+  ],
+  "result": {
+    "item": "mcwbyg:zelkova_log_bridge_middle"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "byg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "planks_steep_roof",
+  "pattern": [
+    " A",
+    "AA",
+    "AB"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:palm_planks"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:palm_planks_steep_roof",
+    "count": 4
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "byg"
+      ]
+    }
+  ]
+}

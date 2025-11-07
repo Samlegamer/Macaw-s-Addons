@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "steep_roof",
+        "pattern": [
+          " A",
+          "AA",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:bulbis_stem"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:bulbis_steep_roof",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

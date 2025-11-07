@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_drawer_counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:jacaranda_slab"
+          },
+          "B": {
+            "item": "mcwbiomesoplenty:jacaranda_double_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:jacaranda_double_drawer_counter"
+        }
+      }
+    }
+  ]
+}

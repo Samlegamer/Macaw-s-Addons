@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "modern_chair",
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:pine_log"
+    },
+    "B": {
+      "item": "byg:pine_slab"
+    },
+    "C": {
+      "item": "byg:pine_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:pine_modern_chair"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ]
+}

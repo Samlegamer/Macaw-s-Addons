@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "barred_trapdoors",
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:magic_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_barred"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:magic_barred_trapdoor"
+        }
+      }
+    }
+  ]
+}

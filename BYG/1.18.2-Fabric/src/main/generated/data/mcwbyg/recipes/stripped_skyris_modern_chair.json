@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "modern_chair",
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:stripped_skyris_log"
+    },
+    "B": {
+      "item": "byg:skyris_slab"
+    },
+    "C": {
+      "item": "byg:skyris_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:stripped_skyris_modern_chair"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ]
+}

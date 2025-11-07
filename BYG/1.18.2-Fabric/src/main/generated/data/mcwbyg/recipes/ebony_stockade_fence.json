@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stockade",
+  "pattern": [
+    "ABA",
+    "BAB"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:ebony_log"
+    },
+    "B": {
+      "item": "byg:ebony_planks"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:ebony_stockade_fence",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "byg"
+      ]
+    }
+  ]
+}

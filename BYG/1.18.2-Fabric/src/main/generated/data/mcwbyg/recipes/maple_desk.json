@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "desk",
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:maple_log"
+    },
+    "B": {
+      "item": "byg:maple_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:maple_desk",
+    "count": 2
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ]
+}

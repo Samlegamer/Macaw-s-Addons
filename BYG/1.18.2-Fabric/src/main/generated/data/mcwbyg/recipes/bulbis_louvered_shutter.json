@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "byg:bulbis_slab"
+    },
+    {
+      "item": "byg:bulbis_slab"
+    },
+    {
+      "item": "byg:bulbis_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwbyg:bulbis_louvered_shutter",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ]
+}

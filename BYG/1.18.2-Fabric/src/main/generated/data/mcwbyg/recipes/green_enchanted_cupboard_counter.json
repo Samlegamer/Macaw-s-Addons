@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cupboard_counter",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:green_enchanted_slab"
+    },
+    "B": {
+      "item": "mcwbyg:green_enchanted_wardrobe"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:green_enchanted_cupboard_counter"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ]
+}

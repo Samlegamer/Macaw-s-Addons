@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "grass_topped",
+  "pattern": [
+    "BCB",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:red_rock_bricks"
+    },
+    "B": {
+      "item": "byg:red_rock"
+    },
+    "C": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:red_rock_grass_topped_wall",
+    "count": 6
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "byg"
+      ]
+    }
+  ]
+}

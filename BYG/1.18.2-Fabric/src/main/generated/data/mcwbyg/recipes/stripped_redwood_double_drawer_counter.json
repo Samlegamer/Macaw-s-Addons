@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "double_drawer_counter",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:redwood_slab"
+    },
+    "B": {
+      "item": "mcwbyg:stripped_redwood_double_drawer"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:stripped_redwood_double_drawer_counter"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ]
+}

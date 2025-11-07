@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "byg:maple_slab"
+    },
+    {
+      "item": "byg:maple_slab"
+    },
+    {
+      "item": "byg:maple_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwbyg:maple_louvered_shutter",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ]
+}

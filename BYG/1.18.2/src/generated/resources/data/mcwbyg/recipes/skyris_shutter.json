@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "byg:skyris_trapdoor"
+          },
+          {
+            "item": "byg:skyris_trapdoor"
+          },
+          {
+            "item": "byg:skyris_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwbyg:skyris_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

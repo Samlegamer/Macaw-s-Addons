@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+	"schemaVersion": 1,
   "id": "${archives_base_name}",
   "version": "${version}",
 
@@ -23,17 +23,20 @@
     ],
     "client": [
       "${mod_init_client}"
+    ],
+    "fabric-datagen": [
+      "${mod_init_datagen}"
     ]
   },
-  "depends": {
-    "fabricloader": ">=0.14.6",
-    "fabric": "*",
-    "minecraft": "~1.18.2",
-    "java": ">=17",
-    "addonslib": ">=1.18.2-1.6",
-    "byg": "*"
-  },
-  "suggests": {
-    "another-mod": "*"
-  }
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.18.2",
+		"java": ">=17",
+		"fabric-api": "*",
+        "addonslib": ">=1.18.2-1.6",
+        "byg": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
 }

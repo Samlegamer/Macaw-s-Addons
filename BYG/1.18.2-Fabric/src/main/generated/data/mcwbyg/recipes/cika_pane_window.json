@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "windows_pane",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "mcwwindows:window_base"
+    },
+    "B": {
+      "item": "byg:cika_log"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:cika_pane_window",
+    "count": 8
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ]
+}

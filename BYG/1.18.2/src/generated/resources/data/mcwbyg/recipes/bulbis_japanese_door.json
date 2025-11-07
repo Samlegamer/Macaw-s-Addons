@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "shoji",
+        "pattern": [
+          "BB",
+          "BB",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:bulbis_planks"
+          },
+          "B": {
+            "item": "minecraft:paper"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:bulbis_japanese_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

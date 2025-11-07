@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stool_chair",
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:cika_log"
+    },
+    "B": {
+      "item": "byg:cika_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:cika_stool_chair"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ]
+}

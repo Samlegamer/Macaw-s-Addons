@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "end_table",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "mcwbyg:stripped_holly_table"
+    },
+    "B": {
+      "item": "byg:stripped_holly_log"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:stripped_holly_end_table"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ]
+}

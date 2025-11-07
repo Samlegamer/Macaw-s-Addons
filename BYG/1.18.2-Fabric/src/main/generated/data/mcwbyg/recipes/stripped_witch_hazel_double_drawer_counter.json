@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "double_drawer_counter",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:witch_hazel_slab"
+    },
+    "B": {
+      "item": "mcwbyg:stripped_witch_hazel_double_drawer"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:stripped_witch_hazel_double_drawer_counter"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ]
+}

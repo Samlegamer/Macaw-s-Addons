@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "windows_four",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "mcwwindows:window_centre_bar_base"
+    },
+    "B": {
+      "item": "byg:sythian_planks"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:sythian_plank_four_window",
+    "count": 8
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ]
+}

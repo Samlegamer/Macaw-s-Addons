@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "cupboard_counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:mahogany_slab"
+          },
+          "B": {
+            "item": "mcwbyg:mahogany_wardrobe"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:mahogany_cupboard_counter"
+        }
+      }
+    }
+  ]
+}

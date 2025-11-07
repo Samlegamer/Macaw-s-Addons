@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wired",
+  "pattern": [
+    "ACA",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "byg:witch_hazel_log"
+    },
+    "C": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:witch_hazel_wired_fence",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "byg"
+      ]
+    }
+  ]
+}

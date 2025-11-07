@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "desk",
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:maple_log"
+          },
+          "B": {
+            "item": "byg:maple_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:maple_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

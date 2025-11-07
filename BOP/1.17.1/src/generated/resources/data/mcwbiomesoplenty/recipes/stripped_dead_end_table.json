@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "end_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwbiomesoplenty:stripped_dead_table"
+          },
+          "B": {
+            "item": "biomesoplenty:stripped_dead_log"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:stripped_dead_end_table"
+        }
+      }
+    }
+  ]
+}

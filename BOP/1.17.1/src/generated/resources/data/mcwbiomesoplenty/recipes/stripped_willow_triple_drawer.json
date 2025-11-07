@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "triple_drawer",
+        "pattern": [
+          "AAA",
+          "ABA",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:stripped_willow_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:stripped_willow_triple_drawer",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

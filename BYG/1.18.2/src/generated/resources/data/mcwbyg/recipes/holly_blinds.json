@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "blinds",
+        "pattern": [
+          "AAA",
+          "BBB",
+          "BBB"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:holly_slab"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:holly_blinds",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

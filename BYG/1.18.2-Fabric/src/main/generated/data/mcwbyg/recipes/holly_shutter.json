@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "byg:holly_trapdoor"
+    },
+    {
+      "item": "byg:holly_trapdoor"
+    },
+    {
+      "item": "byg:holly_trapdoor"
+    }
+  ],
+  "result": {
+    "item": "mcwbyg:holly_shutter",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ]
+}

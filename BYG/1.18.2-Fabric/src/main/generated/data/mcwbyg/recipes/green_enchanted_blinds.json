@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "blinds",
+  "pattern": [
+    "AAA",
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:green_enchanted_slab"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:green_enchanted_blinds",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ]
+}

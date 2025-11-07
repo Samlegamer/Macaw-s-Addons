@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "biomesoplenty",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_platform",
+        "pattern": [
+          " BB",
+          " AA",
+          "   "
+        ],
+        "key": {
+          "A": {
+            "item": "biomesoplenty:umbran_log"
+          },
+          "B": {
+            "item": "biomesoplenty:umbran_slab"
+          }
+        },
+        "result": {
+          "item": "mcwbiomesoplenty:umbran_platform",
+          "count": 12
+        }
+      }
+    }
+  ]
+}

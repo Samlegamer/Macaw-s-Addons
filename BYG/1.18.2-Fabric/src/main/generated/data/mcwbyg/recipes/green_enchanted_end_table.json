@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "end_table",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "mcwbyg:green_enchanted_table"
+    },
+    "B": {
+      "item": "byg:green_enchanted_log"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:green_enchanted_end_table"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ]
+}

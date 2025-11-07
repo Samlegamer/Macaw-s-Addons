@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "parapets",
+  "pattern": [
+    "AAA",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "byg:palm_planks"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:palm_plank_parapet",
+    "count": 5
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ]
+}

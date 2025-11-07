@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "byg:jacaranda_slab"
+    },
+    {
+      "item": "byg:jacaranda_slab"
+    },
+    {
+      "item": "byg:jacaranda_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwbyg:jacaranda_louvered_shutter",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ]
+}

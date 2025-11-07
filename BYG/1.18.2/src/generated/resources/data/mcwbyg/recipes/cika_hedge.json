@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "hedge",
+        "pattern": [
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:cika_leaves"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:cika_hedge",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

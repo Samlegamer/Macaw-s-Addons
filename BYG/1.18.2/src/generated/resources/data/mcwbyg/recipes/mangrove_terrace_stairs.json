@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "terrace_stairs",
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:stripped_mangrove_log"
+          },
+          "B": {
+            "item": "byg:mangrove_log"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:mangrove_terrace_stairs",
+          "count": 5
+        }
+      }
+    }
+  ]
+}

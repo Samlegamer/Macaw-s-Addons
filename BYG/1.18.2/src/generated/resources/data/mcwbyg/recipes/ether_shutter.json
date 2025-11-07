@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "byg:ether_trapdoor"
+          },
+          {
+            "item": "byg:ether_trapdoor"
+          },
+          {
+            "item": "byg:ether_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwbyg:ether_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

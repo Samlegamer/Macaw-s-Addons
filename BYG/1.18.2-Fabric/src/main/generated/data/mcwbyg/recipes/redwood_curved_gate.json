@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "curved_gate",
+  "pattern": [
+    "B A",
+    "BAA"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:redwood_planks"
+    },
+    "B": {
+      "item": "byg:redwood_log"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:redwood_curved_gate",
+    "count": 4
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "byg"
+      ]
+    }
+  ]
+}

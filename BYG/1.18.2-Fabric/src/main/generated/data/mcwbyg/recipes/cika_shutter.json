@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "byg:cika_trapdoor"
+    },
+    {
+      "item": "byg:cika_trapdoor"
+    },
+    {
+      "item": "byg:cika_trapdoor"
+    }
+  ],
+  "result": {
+    "item": "mcwbyg:cika_shutter",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ]
+}

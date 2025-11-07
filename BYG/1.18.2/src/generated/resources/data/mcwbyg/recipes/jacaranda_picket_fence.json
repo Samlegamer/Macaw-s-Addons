@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "picket",
+        "pattern": [
+          "CBC",
+          "CAC"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "byg:jacaranda_planks"
+          },
+          "C": {
+            "item": "byg:jacaranda_log"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:jacaranda_picket_fence",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

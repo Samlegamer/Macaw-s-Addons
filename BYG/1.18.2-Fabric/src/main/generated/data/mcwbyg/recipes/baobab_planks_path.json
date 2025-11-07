@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks_paths",
+  "ingredients": [
+    {
+      "item": "byg:baobab_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwbyg:baobab_planks_path",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "byg"
+      ]
+    }
+  ]
+}

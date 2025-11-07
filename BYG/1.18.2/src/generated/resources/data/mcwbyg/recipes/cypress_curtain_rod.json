@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "curtain_rods",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "byg:cypress_log"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:cypress_curtain_rod",
+          "count": 5
+        }
+      }
+    }
+  ]
+}

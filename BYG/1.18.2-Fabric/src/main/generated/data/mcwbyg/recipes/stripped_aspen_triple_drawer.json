@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "triple_drawer",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "BAB"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:stripped_aspen_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:stripped_aspen_triple_drawer",
+    "count": 4
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ]
+}

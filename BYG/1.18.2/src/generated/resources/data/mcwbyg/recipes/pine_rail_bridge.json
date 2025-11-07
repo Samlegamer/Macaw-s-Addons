@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "rail_bridges",
+        "pattern": [
+          "B B",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:pine_slab"
+          },
+          "B": {
+            "item": "byg:pine_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:pine_rail_bridge",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

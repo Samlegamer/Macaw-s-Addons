@@ -51,7 +51,6 @@ public class McwByg implements ModInitializer
     	Fences.setRegistrationRock(MODID, fences_rockable, MCWBYG_TAB);
     	Furnitures.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
     	Stairs.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-		// 1.1 update
 		Doors.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
 		Trapdoors.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
 		Paths.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
@@ -62,7 +61,7 @@ public class McwByg implements ModInitializer
 		APIFuels.initAllWood(MODID, WOOD);
 		APIFuels.initAllLeave(MODID, LEAVES);
 
-    	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
+        LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
 	}
 	
 	private static Block icon()
@@ -78,9 +77,8 @@ public class McwByg implements ModInitializer
 				Finder.findBlock(MODID, "aspen_planks_path"),
 				Finder.findBlock(MODID, "aspen_bulk_stairs"));
 
-		prop
-				.addType(BlockType.ROOFS)
-				.addType(BlockType.FENCES)
+		    prop.addType(BlockType.ROOFS)
+                .addType(BlockType.FENCES)
 				.addType(BlockType.BRIDGES)
 				.addType(BlockType.FURNITURES)
 				.addType(BlockType.STAIRS)

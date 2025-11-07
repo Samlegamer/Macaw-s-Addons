@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "byg:skyris_slab"
+    },
+    {
+      "item": "byg:skyris_slab"
+    },
+    {
+      "item": "byg:skyris_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwbyg:skyris_louvered_shutter",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ]
+}

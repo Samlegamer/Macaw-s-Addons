@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:dacite_bricks"
+          },
+          "B": {
+            "item": "byg:dacite_brick_wall"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:dacite_bricks_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

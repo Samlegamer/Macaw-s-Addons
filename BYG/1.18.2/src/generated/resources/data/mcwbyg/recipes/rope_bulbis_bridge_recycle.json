@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "recyclable_bridges",
+        "ingredients": [
+          {
+            "item": "mcwbyg:bulbis_rope_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwbyg:rope_bulbis_bridge"
+        }
+      }
+    }
+  ]
+}

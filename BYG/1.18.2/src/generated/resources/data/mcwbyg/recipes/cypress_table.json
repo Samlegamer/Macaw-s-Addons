@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwbyg:cypress_coffee_table"
+          },
+          "B": {
+            "item": "byg:cypress_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:cypress_table"
+        }
+      }
+    }
+  ]
+}

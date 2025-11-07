@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "rail_bridges",
+  "pattern": [
+    "B B",
+    "BAB"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:green_enchanted_slab"
+    },
+    "B": {
+      "item": "byg:green_enchanted_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:green_enchanted_rail_bridge",
+    "count": 4
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "byg"
+      ]
+    }
+  ]
+}

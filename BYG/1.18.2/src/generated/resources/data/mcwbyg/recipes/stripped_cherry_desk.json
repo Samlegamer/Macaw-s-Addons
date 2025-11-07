@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "desk",
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:stripped_cherry_log"
+          },
+          "B": {
+            "item": "byg:cherry_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:stripped_cherry_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

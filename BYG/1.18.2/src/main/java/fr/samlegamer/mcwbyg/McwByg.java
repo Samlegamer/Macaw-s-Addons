@@ -2,10 +2,15 @@ package fr.samlegamer.mcwbyg;
 
 import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.data.McwBlocksIdBase;
 import fr.samlegamer.addonslib.data.ModType;
 import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
+import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
+import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.util.McwMod;
 import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -16,9 +21,14 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
@@ -33,7 +43,7 @@ import javax.annotation.Nonnull;
 
 @Mod(McwByg.MODID)
 @Mod.EventBusSubscriber(modid = McwByg.MODID, bus = Bus.MOD)
-public class McwByg
+public class McwByg extends McwMod
 {
 	public static final String MODID = "mcwbyg";
     private static final Logger LOGGER = LogManager.getLogger();
@@ -80,17 +90,55 @@ public class McwByg
     public McwByg()
     {
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::dataSetup);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
     }
-    
-    private void client(FMLClientSetupEvent event)
+
+    @Override
+    public void commonSetup(FMLCommonSetupEvent fmlCommonSetupEvent) {
+        fmlCommonSetupEvent.enqueueWork(() -> {
+            McwLootTables.addBlockAllWood(MODID, WOOD);
+            McwLootTables.addBlockHedges(MODID, LEAVES);
+            McwLootTables.addBlock(MODID, bridges_rockable, McwBlocksIdBase.BRIDGES_STONE_BLOCKS);
+            McwLootTables.addBlock(MODID, fences_rockable, McwBlocksIdBase.ROOFS_STONE_BLOCKS);
+            McwLootTables.addBlock(MODID, fences_rockable, McwBlocksIdBase.FENCES_STONE_BLOCKS);
+        });
+    }
+
+    @Override
+    public void dataSetup(GatherDataEvent gatherDataEvent) {
+        if(gatherDataEvent.includeServer()) {
+            McwBlockTags mcwBlockTags = new McwBlockTags(gatherDataEvent.getGenerator(), MODID, gatherDataEvent.getExistingFileHelper()) {
+                @Override
+                protected void addTags() {
+                    addAllMcwTags(MODID, WOOD, LEAVES);
+                    mcwBridgesTagsStone(MODID, bridges_rockable);
+                    mcwFencesTags(MODID, new ArrayList<>(), new ArrayList<>(), fences_rockable);
+                }
+            };
+
+            gatherDataEvent.getGenerator().addProvider(new Recipes(gatherDataEvent.getGenerator()));
+            gatherDataEvent.getGenerator().addProvider(mcwBlockTags);
+            gatherDataEvent.getGenerator().addProvider(new McwItemTags(gatherDataEvent.getGenerator(), mcwBlockTags, MODID, gatherDataEvent.getExistingFileHelper()) {
+                @Override
+                protected void addTags() {
+                    addAllMcwTags(MODID, WOOD, LEAVES);
+                    mcwFencesTags(MODID, new ArrayList<>(), new ArrayList<>(), fences_rockable);
+                }
+            });
+        }
+    }
+
+    @Override
+    public void clientSetup(FMLClientSetupEvent event)
     {
-		APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
-		APIRenderTypes.initAllLeave(event, MODID, LEAVES);
-		APIRenderTypes.initAllStone(event, MODID, bridges_rockable, ModType.BRIDGES);
-		APIRenderTypes.initAllStone(event, MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
+        APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllLeave(event, MODID, LEAVES);
+        APIRenderTypes.initAllStone(event, MODID, bridges_rockable, ModType.BRIDGES);
+        APIRenderTypes.initAllStone(event, MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
     }
     
     @SubscribeEvent

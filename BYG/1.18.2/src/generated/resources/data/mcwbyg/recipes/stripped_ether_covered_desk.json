@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "covered_desk",
+        "pattern": [
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:stripped_ether_log"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:stripped_ether_covered_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

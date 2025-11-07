@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mystic_trapdoors",
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:lament_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_mystic"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:lament_mystic_trapdoor"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "byg"
+      ]
+    }
+  ]
+}
