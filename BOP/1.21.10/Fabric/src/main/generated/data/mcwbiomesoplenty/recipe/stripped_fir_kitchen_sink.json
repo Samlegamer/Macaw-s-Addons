@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "kitchen_sink",
+  "key": {
+    "A": "biomesoplenty:stripped_fir_log",
+    "B": "minecraft:water_bucket",
+    "C": "biomesoplenty:fir_slab",
+    "D": "minecraft:cauldron"
+  },
+  "pattern": [
+    "CDC",
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbiomesoplenty:stripped_fir_kitchen_sink"
+  }
+}

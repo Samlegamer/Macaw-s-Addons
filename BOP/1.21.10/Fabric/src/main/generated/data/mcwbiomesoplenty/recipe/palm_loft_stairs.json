@@ -1,0 +1,24 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "loft_stairs",
+  "key": {
+    "A": "biomesoplenty:stripped_palm_log"
+  },
+  "pattern": [
+    "A  "
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbiomesoplenty:palm_loft_stairs"
+  }
+}

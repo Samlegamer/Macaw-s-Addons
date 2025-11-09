@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbiomesoplenty:willow_pane_window"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_willow_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomesoplenty:willow_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_willow_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbiomesoplenty:willow_pane_window"
+    ]
+  }
+}

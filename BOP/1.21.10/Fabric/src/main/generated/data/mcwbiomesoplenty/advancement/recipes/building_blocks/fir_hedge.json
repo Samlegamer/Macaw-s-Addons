@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fir_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomesoplenty:fir_leaves"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbiomesoplenty:fir_hedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_fir_leaves"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbiomesoplenty:fir_hedge"
+    ]
+  }
+}

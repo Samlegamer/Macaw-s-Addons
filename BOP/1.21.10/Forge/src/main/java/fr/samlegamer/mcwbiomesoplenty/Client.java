@@ -1,8 +1,5 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
-import java.util.Arrays;
-import java.util.List;
-
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.client.ColorRegistry;
 import net.minecraft.client.renderer.BiomeColors;
@@ -10,11 +7,12 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.eventbus.api.listener.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import java.util.List;
 
 @Mod.EventBusSubscriber(value = Dist.CLIENT)
 public class Client
 {
-	private static final List<String> LEAVES_NO_COLORED = Arrays.asList("pine", "mahogany", "willow", "palm", "flowering_oak");
+	private static final List<String> LEAVES_NO_COLORED = List.of("pine", "mahogany", "willow", "palm", "flowering_oak");
 	private static final ColorRegistry COLOR = new ColorRegistry(McwBOP.MODID, LEAVES_NO_COLORED);
 
 	@SubscribeEvent

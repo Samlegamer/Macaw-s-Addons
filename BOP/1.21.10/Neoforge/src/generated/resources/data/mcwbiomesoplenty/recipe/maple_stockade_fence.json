@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stockade",
+  "key": {
+    "A": "biomesoplenty:maple_log",
+    "B": "biomesoplenty:maple_planks"
+  },
+  "pattern": [
+    "ABA",
+    "BAB"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbiomesoplenty:maple_stockade_fence"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "curved_gate",
+  "key": {
+    "A": "biomesoplenty:fir_planks",
+    "B": "biomesoplenty:fir_log"
+  },
+  "pattern": [
+    "B A",
+    "BAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbiomesoplenty:fir_curved_gate"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "pyramid",
+  "key": {
+    "A": "minecraft:stick",
+    "B": "biomesoplenty:umbran_log",
+    "C": "biomesoplenty:umbran_planks"
+  },
+  "pattern": [
+    "ABA",
+    "ACA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbiomesoplenty:umbran_pyramid_gate"
+  }
+}

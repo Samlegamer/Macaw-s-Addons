@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "covered_desk",
+        "key": {
+          "A": "biomesoplenty:willow_log"
+        },
+        "pattern": [
+          "AAA"
+        ],
+        "result": {
+          "count": 2,
+          "id": "mcwbiomesoplenty:willow_covered_desk"
+        }
+      }
+    }
+  ]
+}

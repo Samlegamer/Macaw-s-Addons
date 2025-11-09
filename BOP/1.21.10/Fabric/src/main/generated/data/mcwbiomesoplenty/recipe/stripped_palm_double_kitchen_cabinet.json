@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_kitchen_cabinet",
+  "key": {
+    "A": "biomesoplenty:stripped_palm_log",
+    "B": "mcwfurnitures:cabinet_door"
+  },
+  "pattern": [
+    "AA",
+    "BB",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbiomesoplenty:stripped_palm_double_kitchen_cabinet"
+  }
+}

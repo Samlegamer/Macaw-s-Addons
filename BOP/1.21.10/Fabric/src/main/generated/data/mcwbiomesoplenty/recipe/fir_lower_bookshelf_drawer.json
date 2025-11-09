@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "lower_bookshelf_drawer",
+  "key": {
+    "A": "biomesoplenty:fir_log",
+    "B": "mcwfurnitures:cabinet_drawer",
+    "C": "minecraft:book"
+  },
+  "pattern": [
+    "AAA",
+    "ACA",
+    "ABA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbiomesoplenty:fir_lower_bookshelf_drawer"
+  }
+}

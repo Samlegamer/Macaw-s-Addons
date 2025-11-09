@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bookshelf_cupboard",
+  "key": {
+    "A": "biomesoplenty:stripped_pine_log",
+    "B": "mcwfurnitures:cabinet_door",
+    "C": "minecraft:book"
+  },
+  "pattern": [
+    "AAA",
+    "BAC",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbiomesoplenty:stripped_pine_bookshelf_cupboard"
+  }
+}
