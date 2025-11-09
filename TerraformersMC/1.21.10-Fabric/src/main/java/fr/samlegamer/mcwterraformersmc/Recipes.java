@@ -1,8 +1,15 @@
 package fr.samlegamer.mcwterraformersmc;
 
+import static com.terraformersmc.cinderscapes.init.CinderscapesBlocks.*;
+import static com.terraformersmc.terrestria.init.TerrestriaBlocks.*;
+
+import com.terraformersmc.cinderscapes.Cinderscapes;
+import com.terraformersmc.terrestria.Terrestria;
 import com.terraformersmc.traverse.Traverse;
 import static com.terraformersmc.traverse.block.TraverseBlocks.*;
+
 import fr.samlegamer.addonslib.generation.recipes.McwRecipes;
+import fr.samlegamer.addonslib.generation.recipes.mat.McwStoneMat;
 import fr.samlegamer.addonslib.generation.recipes.mat.McwWoodMat;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -20,33 +27,81 @@ public class Recipes extends FabricRecipeProvider
         super(output, registriesFuture);
     }
 
-//    public static final List<String> WOODS_CINDERSCAPES = List.of("scorched", "umbral");
-//    public static final List<String> WOODS_TERRESTRIA = List.of("redwood", "hemlock", "rubber", "cypress", "willow",
-//            "japanese_maple", "rainbow_eucalyptus", "sakura", "yucca_palm");
-//
-//    public static final List<String> ROCKS_CINDERSCAPES = List.of("sulfur_quartz_bricks", "rose_quartz_bricks", "smoky_quartz_bricks");
-//    public static final List<String> ROCKS_TERRESTRIA = List.of("basalt_bricks", "mossy_basalt_bricks");
-//
-//    public static final List<String> LEAVES_TRAVERSE = List.of("fir", "red_autumnal", "brown_autumnal", "orange_autumnal", "yellow_autumnal");
-//    public static final List<String> LEAVES_TERRESTRIA = List.of("redwood", "hemlock", "rubber", "cypress", "willow", "japanese_maple",
-//            "rainbow_eucalyptus", "sakura", "yucca_palm", "japanese_maple_shrub", "dark_japanese_maple", "jungle_palm");
-
     @Override
     protected RecipeGenerator getRecipeGenerator(RegistryWrapper.WrapperLookup wrapperLookup, RecipeExporter recipeExporter) {
         return new RecipeGenerator(wrapperLookup, recipeExporter) {
             @Override
             public void generate() {
-//                List<Block> leave = List.of(DEAD_LEAVES, FIR_LEAVES, HELLBARK_LEAVES, JACARANDA_LEAVES, MAGIC_LEAVES, MAHOGANY_LEAVES,
-//                        PALM_LEAVES, REDWOOD_LEAVES, UMBRAN_LEAVES, WILLOW_LEAVES, EMPYREAL_LEAVES, PINE_LEAVES, ORANGE_MAPLE_LEAVES,
-//                        RED_MAPLE_LEAVES, YELLOW_MAPLE_LEAVES, CYPRESS_LEAVES, SNOWBLOSSOM_LEAVES, FLOWERING_OAK_LEAVES, ORIGIN_OAK_LEAVES);
-
-//                List<McwWoodMat> woodMats = getWoodMats();
                 McwRecipes.registerAllMcwWood(this, recipeExporter, McwTerraformersMC.MODID, Traverse.MOD_ID, McwTerraformersMC.WOODS_TRAVERSE, getWoodMatsTraverse());
                 McwRecipes.registerMcwHedge(this, recipeExporter, McwTerraformersMC.MODID, Traverse.MOD_ID, McwTerraformersMC.LEAVES_TRAVERSE, getLeavesMatsTraverse());
 
+                McwRecipes.registerAllMcwWood(this, recipeExporter, McwTerraformersMC.MODID, Cinderscapes.MOD_ID, McwTerraformersMC.WOODS_CINDERSCAPES, getWoodMatsCinderscapes());
+                McwRecipes.registerAllMcwStone(this, recipeExporter, McwTerraformersMC.MODID, Cinderscapes.MOD_ID, McwTerraformersMC.ROCKS_CINDERSCAPES, getRockMatsCinderscapes());
+
+                McwRecipes.registerAllMcwWood(this, recipeExporter, McwTerraformersMC.MODID, Terrestria.MOD_ID, McwTerraformersMC.WOODS_TERRESTRIA, getWoodMatsTerrestria());
+                McwRecipes.registerAllMcwStone(this, recipeExporter, McwTerraformersMC.MODID, Terrestria.MOD_ID, McwTerraformersMC.ROCKS_TERRESTRIA, getRockMatsTerrestria());
+                McwRecipes.registerMcwHedge(this, recipeExporter, McwTerraformersMC.MODID, Terrestria.MOD_ID, McwTerraformersMC.LEAVES_TERRESTRIA, getLeavesMatsTerrestria());
 
             }
         };
+    }
+
+    private List<Block> getLeavesMatsTerrestria()
+    {
+        List<Block> woodMats = new ArrayList<>();
+        woodMats.add(REDWOOD.leaves);
+        woodMats.add(HEMLOCK.leaves);
+        woodMats.add(RUBBER.leaves);
+        woodMats.add(CYPRESS.leaves);
+        woodMats.add(WILLOW.leaves);
+        woodMats.add(JAPANESE_MAPLE.leaves);
+        woodMats.add(RAINBOW_EUCALYPTUS.leaves);
+        woodMats.add(SAKURA.leaves);
+        woodMats.add(YUCCA_PALM.leaves);
+        woodMats.add(JAPANESE_MAPLE_SHRUB_LEAVES);
+        woodMats.add(DARK_JAPANESE_MAPLE_LEAVES);
+        woodMats.add(JUNGLE_PALM_LEAVES);
+        return woodMats;
+    }
+
+    private List<McwStoneMat> getRockMatsTerrestria()
+    {
+        List<McwStoneMat> stoneMats = new ArrayList<>();
+        stoneMats.add(new McwStoneMat(VOLCANIC_ROCK.bricks.full, VOLCANIC_ROCK.bricks.wall, VOLCANIC_ROCK.bricks.slab, VOLCANIC_ROCK.cobblestone.full));
+        stoneMats.add(new McwStoneMat(VOLCANIC_ROCK.mossyBricks.full, VOLCANIC_ROCK.mossyBricks.wall, VOLCANIC_ROCK.mossyBricks.slab, VOLCANIC_ROCK.mossyCobblestone.full));
+        return stoneMats;
+    }
+
+    private List<McwWoodMat> getWoodMatsTerrestria()
+    {
+        List<McwWoodMat> woodMats = new ArrayList<>();
+        woodMats.add(new McwWoodMat(REDWOOD.log, REDWOOD.planks, REDWOOD.strippedLog, REDWOOD.slab, REDWOOD.fence, REDWOOD.trapdoor));
+        woodMats.add(new McwWoodMat(HEMLOCK.log, HEMLOCK.planks, HEMLOCK.strippedLog, HEMLOCK.slab, HEMLOCK.fence, HEMLOCK.trapdoor));
+        woodMats.add(new McwWoodMat(RUBBER.log, RUBBER.planks, RUBBER.strippedLog, RUBBER.slab, RUBBER.fence, RUBBER.trapdoor));
+        woodMats.add(new McwWoodMat(CYPRESS.log, CYPRESS.planks, CYPRESS.strippedLog, CYPRESS.slab, CYPRESS.fence, CYPRESS.trapdoor));
+        woodMats.add(new McwWoodMat(WILLOW.log, WILLOW.planks, WILLOW.strippedLog, WILLOW.slab, WILLOW.fence, WILLOW.trapdoor));
+        woodMats.add(new McwWoodMat(JAPANESE_MAPLE.log, JAPANESE_MAPLE.planks, JAPANESE_MAPLE.strippedLog, JAPANESE_MAPLE.slab, JAPANESE_MAPLE.fence, JAPANESE_MAPLE.trapdoor));
+        woodMats.add(new McwWoodMat(RAINBOW_EUCALYPTUS.log, RAINBOW_EUCALYPTUS.planks, RAINBOW_EUCALYPTUS.strippedLog, RAINBOW_EUCALYPTUS.slab, RAINBOW_EUCALYPTUS.fence, RAINBOW_EUCALYPTUS.trapdoor));
+        woodMats.add(new McwWoodMat(SAKURA.log, SAKURA.planks, SAKURA.strippedLog, SAKURA.slab, SAKURA.fence, SAKURA.trapdoor));
+        woodMats.add(new McwWoodMat(YUCCA_PALM.log, YUCCA_PALM.planks, YUCCA_PALM.strippedLog, YUCCA_PALM.slab, YUCCA_PALM.fence, YUCCA_PALM.trapdoor));
+        return woodMats;
+    }
+
+    private List<McwStoneMat> getRockMatsCinderscapes()
+    {
+        List<McwStoneMat> stoneMats = new ArrayList<>();
+        stoneMats.add(new McwStoneMat(SULFUR_QUARTZ_BRICKS, SULFUR_QUARTZ_PILLAR, SULFUR_QUARTZ_SLAB, SULFUR_QUARTZ_BLOCK));
+        stoneMats.add(new McwStoneMat(ROSE_QUARTZ_BRICKS, ROSE_QUARTZ_PILLAR, ROSE_QUARTZ_SLAB, ROSE_QUARTZ_BLOCK));
+        stoneMats.add(new McwStoneMat(SMOKY_QUARTZ_BRICKS, SMOKY_QUARTZ_PILLAR, SMOKY_QUARTZ_SLAB, SMOKY_QUARTZ_BLOCK));
+        return stoneMats;
+    }
+
+    private List<McwWoodMat> getWoodMatsCinderscapes()
+    {
+        List<McwWoodMat> woodMats = new ArrayList<>();
+        woodMats.add(new McwWoodMat(SCORCHED_STEM, SCORCHED_PLANKS, STRIPPED_SCORCHED_STEM, SCORCHED_SLAB, SCORCHED_FENCE, SCORCHED_TRAPDOOR));
+        woodMats.add(new McwWoodMat(UMBRAL_STEM, UMBRAL_PLANKS, STRIPPED_UMBRAL_STEM, UMBRAL_SLAB, UMBRAL_FENCE, UMBRAL_TRAPDOOR));
+        return woodMats;
     }
 
     private List<Block> getLeavesMatsTraverse()
@@ -60,31 +115,10 @@ public class Recipes extends FabricRecipeProvider
         return woodMats;
     }
 
-
     private List<McwWoodMat> getWoodMatsTraverse()
     {
         List<McwWoodMat> woodMats = new ArrayList<>();
         woodMats.add(new McwWoodMat(FIR_LOG, FIR_PLANKS, STRIPPED_FIR_LOG, FIR_SLAB, FIR_FENCE, FIR_TRAPDOOR));
-        return woodMats;
-    }
-
-
-    private List<McwWoodMat> getWoodMats()
-    {
-        List<McwWoodMat> woodMats = new ArrayList<>();
-//        woodMats.add(new McwWoodMat(DEAD_LOG, DEAD_PLANKS, STRIPPED_DEAD_LOG, DEAD_SLAB, DEAD_FENCE, DEAD_TRAPDOOR));
-//        woodMats.add(new McwWoodMat(FIR_LOG, FIR_PLANKS, STRIPPED_FIR_LOG, FIR_SLAB, FIR_FENCE, FIR_TRAPDOOR));
-//        woodMats.add(new McwWoodMat(HELLBARK_LOG, HELLBARK_PLANKS, STRIPPED_HELLBARK_LOG, HELLBARK_SLAB, HELLBARK_FENCE, HELLBARK_TRAPDOOR));
-//        woodMats.add(new McwWoodMat(JACARANDA_LOG, JACARANDA_PLANKS, STRIPPED_JACARANDA_LOG, JACARANDA_SLAB, JACARANDA_FENCE, JACARANDA_TRAPDOOR));
-//        woodMats.add(new McwWoodMat(MAGIC_LOG, MAGIC_PLANKS, STRIPPED_MAGIC_LOG, MAGIC_SLAB, MAGIC_FENCE, MAGIC_TRAPDOOR));
-//        woodMats.add(new McwWoodMat(MAHOGANY_LOG, MAHOGANY_PLANKS, STRIPPED_MAHOGANY_LOG, MAHOGANY_SLAB, MAHOGANY_FENCE, MAHOGANY_TRAPDOOR));
-//        woodMats.add(new McwWoodMat(PALM_LOG, PALM_PLANKS, STRIPPED_PALM_LOG, PALM_SLAB, PALM_FENCE, PALM_TRAPDOOR));
-//        woodMats.add(new McwWoodMat(REDWOOD_LOG, REDWOOD_PLANKS, STRIPPED_REDWOOD_LOG, REDWOOD_SLAB, REDWOOD_FENCE, REDWOOD_TRAPDOOR));
-//        woodMats.add(new McwWoodMat(UMBRAN_LOG, UMBRAN_PLANKS, STRIPPED_UMBRAN_LOG, UMBRAN_SLAB, UMBRAN_FENCE, UMBRAN_TRAPDOOR));
-//        woodMats.add(new McwWoodMat(WILLOW_LOG, WILLOW_PLANKS, STRIPPED_WILLOW_LOG, WILLOW_SLAB, WILLOW_FENCE, WILLOW_TRAPDOOR));
-//        woodMats.add(new McwWoodMat(EMPYREAL_LOG, EMPYREAL_PLANKS, STRIPPED_EMPYREAL_LOG, EMPYREAL_SLAB, EMPYREAL_FENCE, EMPYREAL_TRAPDOOR));
-//        woodMats.add(new McwWoodMat(MAPLE_LOG, MAPLE_PLANKS, STRIPPED_MAPLE_LOG, MAPLE_SLAB, MAPLE_FENCE, MAPLE_TRAPDOOR));
-//        woodMats.add(new McwWoodMat(PINE_LOG, PINE_PLANKS, STRIPPED_PINE_LOG, PINE_SLAB, PINE_FENCE, PINE_TRAPDOOR));
         return woodMats;
     }
 

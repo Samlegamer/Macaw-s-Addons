@@ -1,0 +1,21 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "recyclable_bridges",
+  "ingredients": [
+    "mcwterraformersmc:sakura_log_bridge_stair"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwterraformersmc:sakura_log_bridge_middle"
+  }
+}

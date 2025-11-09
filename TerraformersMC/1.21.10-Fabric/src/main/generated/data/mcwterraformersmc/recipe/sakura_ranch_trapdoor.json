@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "ranch_trapdoors",
+  "key": {
+    "A": "terrestria:sakura_log",
+    "B": "minecraft:stick"
+  },
+  "pattern": [
+    "ABA",
+    "BBB",
+    "ABA"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwterraformersmc:sakura_ranch_trapdoor"
+  }
+}

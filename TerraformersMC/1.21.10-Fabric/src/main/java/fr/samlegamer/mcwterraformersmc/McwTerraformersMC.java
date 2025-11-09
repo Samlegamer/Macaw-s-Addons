@@ -50,9 +50,8 @@ public class McwTerraformersMC implements ModInitializer
     public static final List<String> LEAVES_TERRESTRIA = List.of("redwood", "hemlock", "rubber", "cypress", "willow", "japanese_maple",
             "rainbow_eucalyptus", "sakura", "yucca_palm", "japanese_maple_shrub", "dark_japanese_maple", "jungle_palm");
 
-    public static final ItemGroup MCWTERRAFORMERSMC_TAB = FabricItemGroup.builder().icon(McwTerraformersMC::icon)
-            .displayName(Text.translatable("itemGroup.minecraft.mcwterraformersmc.tab")).build();
-    private static final Identifier TAB_ID = Identifier.of(MODID + ".tab");
+    private static final Identifier TAB_ID = Identifier.of(MODID, "tab");
+    private static final RegistryKey<ItemGroup> TAB_KEY = RegistryKey.of(RegistryKeys.ITEM_GROUP, TAB_ID);
 
     public void onInitialize()
     {
@@ -110,28 +109,29 @@ public class McwTerraformersMC implements ModInitializer
         AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(MODID, WOODS_CINDERSCAPES);
         AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(MODID, WOODS_TERRESTRIA);
 
-        Registry.register(Registries.ITEM_GROUP, TAB_ID, MCWTERRAFORMERSMC_TAB);
-        RegistryKey<ItemGroup> group_key = RegistryKey.of(RegistryKeys.ITEM_GROUP, TAB_ID);
+        Registry.register(Registries.ITEM_GROUP, TAB_KEY, FabricItemGroup.builder().icon(McwTerraformersMC::icon)
+                .displayName(Text.translatable("itemGroup.minecraft.mcwterraformersmc.tab"))
+                .build());
 
-        var loader = FabricLoader.getInstance();
+        String suffixMld = FabricLoader.getInstance().isDevelopmentEnvironment() ? "-common" : "";
 
-        if(loader.isModLoaded("traverse"))
+        if(FabricLoader.getInstance().isModLoaded("traverse"+suffixMld))
         {
-            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, group_key, Registration.getAllModTypeWood());
-            APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE, group_key);
+            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, TAB_KEY, Registration.getAllModTypeWood());
+            APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE, TAB_KEY);
         }
 
-        if(loader.isModLoaded("cinderscapes"))
+        if(FabricLoader.getInstance().isModLoaded("cinderscapes"+suffixMld))
         {
-            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, group_key, Registration.getAllModTypeWood());
-            APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, group_key, Registration.getAllModTypeStone());
+            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, TAB_KEY, Registration.getAllModTypeWood());
+            APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, TAB_KEY, Registration.getAllModTypeStone());
         }
 
-        if(loader.isModLoaded("terrestria"))
+        if(FabricLoader.getInstance().isModLoaded("terrestria"+suffixMld))
         {
-            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, group_key, Registration.getAllModTypeWood());
-            APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA, group_key);
-            APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA, group_key, Registration.getAllModTypeStone());
+            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, TAB_KEY, Registration.getAllModTypeWood());
+            APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA, TAB_KEY);
+            APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA, TAB_KEY, Registration.getAllModTypeStone());
         }
 
         APIFuels.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, Registration.getAllModTypeWood());

@@ -24,6 +24,7 @@ repositories {
         name = "TerraformersMC"
         url = uri("https://maven.terraformersmc.com/releases")
     }
+    maven { url 'https://jitpack.io' }
 }
 
 loom {
@@ -45,7 +46,6 @@ fabricApi {
 }
 
 dependencies {
-	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
@@ -63,18 +63,37 @@ dependencies {
     modImplementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
     modImplementation "curse.maven:macaws-furniture-359540:${furniture_version}"
 
-    runtimeOnly "curse.maven:traverse-308777:${traverse_version}"
-    runtimeOnly "curse.maven:terrestria-323974:${terrestria_version}"
-    runtimeOnly "curse.maven:cinderscapes-391429:${cinderscapes_version}"
+    modCompileOnly("com.terraformersmc:traverse-common:${traverse_version}")
 
-    modCompileOnly("com.terraformersmc:traverse-common:8.5.0")
-    modCompileOnly("com.terraformersmc:cinderscapes-common:5.5.0")
-    modCompileOnly("com.terraformersmc:terrestria-common:7.5.0")
+    modCompileOnly("com.terraformersmc:cinderscapes-common:${cinderscapes_version}")
 
-    runtimeOnly "curse.maven:cloth-config-348521:${cloth_config_version}"
+    modCompileOnly("com.terraformersmc:terrestria-common:${terrestria_version}")
+
+
+    modRuntimeOnly("com.terraformersmc.terraform-api:terraform-biome-remapper-api-v1:${terraform_api_version}")
+    modRuntimeOnly("com.terraformersmc.terraform-api:terraform-config-api-v1:${terraform_api_version}")
+    modRuntimeOnly("com.terraformersmc.terraform-api:terraform-dirt-api-v1:${terraform_api_version}")
+    modRuntimeOnly("com.terraformersmc.terraform-api:terraform-shapes-api-v1:${terraform_api_version}")
+    modRuntimeOnly("com.terraformersmc.terraform-api:terraform-surfaces-api-v1:${terraform_api_version}")
+    modRuntimeOnly("com.terraformersmc.terraform-api:terraform-tree-api-v1:${terraform_api_version}")
+    modRuntimeOnly("com.terraformersmc.terraform-api:terraform-wood-api-v1:${terraform_api_version}")
+
+    modRuntimeOnly("com.terraformersmc:traverse-common:${traverse_version}")
+    modRuntimeOnly("com.terraformersmc:traverse-client:${traverse_version}")
+
+    modRuntimeOnly("com.terraformersmc:cinderscapes-common:${cinderscapes_version}")
+    modRuntimeOnly("com.terraformersmc:cinderscapes-client:${cinderscapes_version}")
+
+    modRuntimeOnly("com.terraformersmc:terrestria-common:${terrestria_version}")
+    modRuntimeOnly("com.terraformersmc:terrestria-client:${terrestria_version}")
+
+    modRuntimeOnly("com.terraformersmc:biolith-fabric:${biolith_fabric_version}")
+    modRuntimeOnly "curse.maven:cloth-config-348521:${cloth_config_version}"
+    include(modApi("com.github.ramixin:mixson-fabric:${mixson_version}"))
+    compileOnly "net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5"
+    annotationProcessor "net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5"
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
 }
 
 processResources {

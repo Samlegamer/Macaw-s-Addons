@@ -1,0 +1,24 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "covered_desk",
+  "key": {
+    "A": "terrestria:stripped_hemlock_log"
+  },
+  "pattern": [
+    "AAA"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwterraformersmc:stripped_hemlock_covered_desk"
+  }
+}

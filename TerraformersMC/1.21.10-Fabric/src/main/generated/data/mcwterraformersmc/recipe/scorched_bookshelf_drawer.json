@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bookshelf_drawer",
+  "key": {
+    "A": "cinderscapes:scorched_stem",
+    "B": "mcwfurnitures:cabinet_drawer",
+    "C": "minecraft:book"
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "ACA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwterraformersmc:scorched_bookshelf_drawer"
+  }
+}

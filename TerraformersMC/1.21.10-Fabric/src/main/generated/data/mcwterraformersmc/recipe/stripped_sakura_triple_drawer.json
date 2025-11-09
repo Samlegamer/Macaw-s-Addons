@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "triple_drawer",
+  "key": {
+    "A": "terrestria:stripped_sakura_log",
+    "B": "mcwfurnitures:cabinet_drawer"
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "BAB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwterraformersmc:stripped_sakura_triple_drawer"
+  }
+}
