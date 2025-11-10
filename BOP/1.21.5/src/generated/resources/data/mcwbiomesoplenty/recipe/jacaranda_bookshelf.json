@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bookshelf",
+        "key": {
+          "A": "biomesoplenty:jacaranda_log",
+          "B": "minecraft:book"
+        },
+        "pattern": [
+          "AAA",
+          "BBB",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbiomesoplenty:jacaranda_bookshelf"
+        }
+      }
+    }
+  ]
+}
