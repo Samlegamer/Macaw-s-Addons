@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    "biomesoplenty:jacaranda_slab",
+    "biomesoplenty:jacaranda_slab",
+    "biomesoplenty:jacaranda_slab"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbiomesoplenty:jacaranda_louvered_shutter"
+  }
+}

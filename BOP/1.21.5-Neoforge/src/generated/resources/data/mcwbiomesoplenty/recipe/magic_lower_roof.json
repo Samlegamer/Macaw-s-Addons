@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "lower_roof",
+  "key": {
+    "A": "biomesoplenty:magic_log",
+    "B": "minecraft:stick"
+  },
+  "pattern": [
+    " AA",
+    "AAB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbiomesoplenty:magic_lower_roof"
+  }
+}
