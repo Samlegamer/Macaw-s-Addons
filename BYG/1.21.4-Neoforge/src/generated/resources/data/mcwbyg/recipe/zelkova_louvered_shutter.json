@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    "biomeswevegone:zelkova_slab",
+    "biomeswevegone:zelkova_slab",
+    "biomeswevegone:zelkova_slab"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:zelkova_louvered_shutter"
+  }
+}

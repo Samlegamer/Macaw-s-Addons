@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    "biomeswevegone:mahogany_slab",
+    "biomeswevegone:mahogany_slab",
+    "biomeswevegone:mahogany_slab"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:mahogany_louvered_shutter"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwmoddinglegacy:rope_pwood_tiger_bridge_recycle"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tiger_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "premium_wood:tiger_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tiger_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwmoddinglegacy:rope_pwood_tiger_bridge_recycle"
+    ]
+  }
+}

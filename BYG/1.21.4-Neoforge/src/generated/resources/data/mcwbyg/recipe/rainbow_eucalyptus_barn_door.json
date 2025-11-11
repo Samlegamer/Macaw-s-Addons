@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "barn",
+  "key": {
+    "A": "biomeswevegone:rainbow_eucalyptus_planks",
+    "B": "minecraft:stick"
+  },
+  "pattern": [
+    "BB",
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwbyg:rainbow_eucalyptus_barn_door"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "recyclable_bridges",
+  "ingredients": [
+    "mcwbyg:jacaranda_rope_bridge_stair"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:rope_jacaranda_bridge"
+  }
+}

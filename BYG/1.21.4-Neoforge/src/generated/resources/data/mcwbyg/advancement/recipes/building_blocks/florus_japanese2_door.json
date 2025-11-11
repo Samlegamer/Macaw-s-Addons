@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_florus_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:florus_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbyg:florus_japanese2_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_florus_slab"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbyg:florus_japanese2_door"
+    ]
+  }
+}

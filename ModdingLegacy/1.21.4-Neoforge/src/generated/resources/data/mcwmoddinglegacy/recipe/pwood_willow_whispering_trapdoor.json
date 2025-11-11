@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwtrpdoors:whispering_trapdoors",
+  "key": {
+    "A": "premium_wood:willow_planks",
+    "B": "mcwtrpdoors:print_whispering"
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwmoddinglegacy:pwood_willow_whispering_trapdoor"
+  }
+}

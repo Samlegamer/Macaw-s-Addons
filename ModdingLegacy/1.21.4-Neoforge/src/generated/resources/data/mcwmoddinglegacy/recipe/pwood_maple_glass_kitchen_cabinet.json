@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "glass_kitchen_cabinet",
+  "key": {
+    "A": "premium_wood:maple_log",
+    "B": "minecraft:glass",
+    "C": "mcwfurnitures:cabinet_door"
+  },
+  "pattern": [
+    "AA",
+    "BC",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwmoddinglegacy:pwood_maple_glass_kitchen_cabinet"
+  }
+}

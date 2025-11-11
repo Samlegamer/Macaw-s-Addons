@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bookshelf_drawer",
+  "key": {
+    "A": "biomeswevegone:stripped_mahogany_log",
+    "B": "mcwfurnitures:cabinet_drawer",
+    "C": "minecraft:book"
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "ACA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:stripped_mahogany_bookshelf_drawer"
+  }
+}

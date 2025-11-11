@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbyg:zelkova_planks_upper_lower_roof"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zelkova_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:zelkova_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zelkova_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbyg:zelkova_planks_upper_lower_roof"
+    ]
+  }
+}

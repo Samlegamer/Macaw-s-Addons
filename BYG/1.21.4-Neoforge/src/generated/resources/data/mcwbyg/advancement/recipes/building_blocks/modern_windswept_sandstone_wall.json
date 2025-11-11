@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbyg:modern_windswept_sandstone_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_windswept_sandstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:windswept_sandstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_windswept_sandstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbyg:modern_windswept_sandstone_wall"
+    ]
+  }
+}

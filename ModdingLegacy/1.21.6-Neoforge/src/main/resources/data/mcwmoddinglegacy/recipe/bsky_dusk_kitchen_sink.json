@@ -1,0 +1,25 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "kitchen_sink",
+  "pattern" : [ "CDC", "ABA", "ABA" ],
+  "key" : {
+    "A" : "blue_skies:dusk_log",
+    "B" : "minecraft:water_bucket",
+    "C" : "blue_skies:dusk_slab",
+    "D" : "minecraft:cauldron"
+  },
+  "result" : {
+    "count" : 1,
+    "id" : "mcwmoddinglegacy:bsky_dusk_kitchen_sink"
+  }
+}
