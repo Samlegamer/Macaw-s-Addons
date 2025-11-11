@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_drawer",
+  "key": {
+    "A": "biomeswevegone:stripped_willow_log",
+    "B": "mcwfurnitures:cabinet_drawer"
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:stripped_willow_double_drawer"
+  }
+}

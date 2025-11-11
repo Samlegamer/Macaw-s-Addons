@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "kitchen_sink",
+  "key": {
+    "A": "biomeswevegone:sakura_log",
+    "B": "minecraft:water_bucket",
+    "C": "biomeswevegone:sakura_slab",
+    "D": "minecraft:cauldron"
+  },
+  "pattern": [
+    "CDC",
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:sakura_kitchen_sink"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "steep_roof",
+  "key": {
+    "A": "biomeswevegone:palm_log",
+    "B": "minecraft:stick"
+  },
+  "pattern": [
+    " A",
+    "AA",
+    "AB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:palm_steep_roof"
+  }
+}

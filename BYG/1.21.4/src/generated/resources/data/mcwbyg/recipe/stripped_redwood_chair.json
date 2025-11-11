@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chair",
+        "key": {
+          "A": "biomeswevegone:stripped_redwood_log",
+          "B": "biomeswevegone:redwood_slab",
+          "C": "biomeswevegone:redwood_fence"
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:stripped_redwood_chair"
+        }
+      }
+    }
+  ]
+}

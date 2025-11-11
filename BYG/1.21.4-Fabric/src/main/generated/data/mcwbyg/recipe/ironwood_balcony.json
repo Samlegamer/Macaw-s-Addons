@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwstairs_balcony",
+  "key": {
+    "A": "minecraft:stick",
+    "B": "biomeswevegone:ironwood_fence"
+  },
+  "pattern": [
+    "AAA",
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwbyg:ironwood_balcony"
+  }
+}

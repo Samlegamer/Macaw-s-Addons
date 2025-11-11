@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_drawer_counter",
+  "key": {
+    "A": "biomeswevegone:maple_slab",
+    "B": "mcwbyg:stripped_maple_double_drawer"
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:stripped_maple_double_drawer_counter"
+  }
+}

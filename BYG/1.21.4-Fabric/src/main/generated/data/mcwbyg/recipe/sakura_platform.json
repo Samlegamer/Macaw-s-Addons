@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwstairs_platform",
+  "key": {
+    "A": "biomeswevegone:sakura_log",
+    "B": "biomeswevegone:sakura_slab"
+  },
+  "pattern": [
+    " BB",
+    " AA",
+    "   "
+  ],
+  "result": {
+    "count": 12,
+    "id": "mcwbyg:sakura_platform"
+  }
+}

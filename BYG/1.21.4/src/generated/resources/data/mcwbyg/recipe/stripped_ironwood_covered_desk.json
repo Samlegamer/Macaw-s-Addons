@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "covered_desk",
+        "key": {
+          "A": "biomeswevegone:stripped_ironwood_log"
+        },
+        "pattern": [
+          "AAA",
+          "A A"
+        ],
+        "result": {
+          "count": 2,
+          "id": "mcwbyg:stripped_ironwood_covered_desk"
+        }
+      }
+    }
+  ]
+}

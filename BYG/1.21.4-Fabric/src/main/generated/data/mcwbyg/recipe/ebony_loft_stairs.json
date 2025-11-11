@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "loft_stairs",
+  "key": {
+    "A": "biomeswevegone:stripped_ebony_log"
+  },
+  "pattern": [
+    "A  ",
+    " A ",
+    "  A"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:ebony_loft_stairs"
+  }
+}

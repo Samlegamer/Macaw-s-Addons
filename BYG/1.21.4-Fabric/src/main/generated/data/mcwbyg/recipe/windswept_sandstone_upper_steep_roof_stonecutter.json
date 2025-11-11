@@ -1,0 +1,17 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": "biomeswevegone:windswept_sandstone",
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:windswept_sandstone_upper_steep_roof"
+  }
+}

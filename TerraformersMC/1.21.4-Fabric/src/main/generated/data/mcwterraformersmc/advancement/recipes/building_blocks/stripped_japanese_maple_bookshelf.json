@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stripped_japanese_maple_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "terrestria:stripped_japanese_maple_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwterraformersmc:stripped_japanese_maple_bookshelf"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stripped_japanese_maple_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwterraformersmc:stripped_japanese_maple_bookshelf"
+    ]
+  }
+}

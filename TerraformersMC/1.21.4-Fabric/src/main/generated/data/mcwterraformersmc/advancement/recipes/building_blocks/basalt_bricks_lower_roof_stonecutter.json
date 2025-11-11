@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "terrestria"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwterraformersmc:basalt_bricks_lower_roof_stonecutter"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_volcanic_rock_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "terrestria:volcanic_rock_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_volcanic_rock_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwterraformersmc:basalt_bricks_lower_roof_stonecutter"
+    ]
+  }
+}

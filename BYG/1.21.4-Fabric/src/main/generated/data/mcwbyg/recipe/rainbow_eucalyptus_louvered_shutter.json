@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    "biomeswevegone:rainbow_eucalyptus_slab",
+    "biomeswevegone:rainbow_eucalyptus_slab",
+    "biomeswevegone:rainbow_eucalyptus_slab"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:rainbow_eucalyptus_louvered_shutter"
+  }
+}

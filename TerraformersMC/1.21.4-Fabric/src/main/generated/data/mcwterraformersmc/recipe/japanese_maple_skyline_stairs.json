@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "skyline_stairs",
+  "key": {
+    "A": "terrestria:stripped_japanese_maple_log",
+    "B": "terrestria:japanese_maple_log"
+  },
+  "pattern": [
+    "A  ",
+    "BA "
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwterraformersmc:japanese_maple_skyline_stairs"
+  }
+}

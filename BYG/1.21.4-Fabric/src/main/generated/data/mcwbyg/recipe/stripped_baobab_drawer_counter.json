@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "drawer_counter",
+  "key": {
+    "A": "biomeswevegone:baobab_slab",
+    "B": "mcwbyg:stripped_baobab_drawer"
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:stripped_baobab_drawer_counter"
+  }
+}

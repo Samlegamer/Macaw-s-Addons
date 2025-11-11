@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stable",
+  "key": {
+    "A": "biomeswevegone:skyris_planks",
+    "B": "minecraft:iron_bars"
+  },
+  "pattern": [
+    "BB",
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:skyris_stable_door"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwstairs_platform",
+  "key": {
+    "A": "biomeswevegone:maple_log",
+    "B": "biomeswevegone:maple_slab"
+  },
+  "pattern": [
+    " BB",
+    " AA",
+    "   "
+  ],
+  "result": {
+    "count": 12,
+    "id": "mcwbyg:maple_platform"
+  }
+}

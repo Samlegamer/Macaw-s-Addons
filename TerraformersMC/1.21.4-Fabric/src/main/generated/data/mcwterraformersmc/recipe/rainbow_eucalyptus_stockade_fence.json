@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stockade",
+  "key": {
+    "A": "terrestria:rainbow_eucalyptus_log",
+    "B": "terrestria:rainbow_eucalyptus_planks"
+  },
+  "pattern": [
+    "ABA",
+    "BAB"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwterraformersmc:rainbow_eucalyptus_stockade_fence"
+  }
+}

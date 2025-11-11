@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "striped_chair",
+        "key": {
+          "A": "biomeswevegone:florus_stem",
+          "B": "biomeswevegone:florus_slab",
+          "C": "biomeswevegone:florus_fence"
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:florus_striped_chair"
+        }
+      }
+    }
+  ]
+}

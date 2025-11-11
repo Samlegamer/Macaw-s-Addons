@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "rail_bridges",
+  "key": {
+    "A": "biomesoplenty:hellbark_slab",
+    "B": "biomesoplenty:hellbark_fence"
+  },
+  "pattern": [
+    "B B",
+    "BAB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbiomesoplenty:hellbark_rail_bridge"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    "biomeswevegone:witch_hazel_slab",
+    "biomeswevegone:witch_hazel_slab",
+    "biomeswevegone:witch_hazel_slab"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:witch_hazel_louvered_shutter"
+  }
+}

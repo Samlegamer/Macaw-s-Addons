@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern",
+  "key": {
+    "A": "biomeswevegone:smooth_pink_sandstone",
+    "B": "biomeswevegone:pink_sandstone"
+  },
+  "pattern": [
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwbyg:modern_pink_sandstone_wall"
+  }
+}

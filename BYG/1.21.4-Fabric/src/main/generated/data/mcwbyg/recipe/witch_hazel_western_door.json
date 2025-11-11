@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "western",
+  "key": {
+    "A": "biomeswevegone:witch_hazel_planks",
+    "B": "biomeswevegone:witch_hazel_slab"
+  },
+  "pattern": [
+    "  A",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:witch_hazel_western_door"
+  }
+}

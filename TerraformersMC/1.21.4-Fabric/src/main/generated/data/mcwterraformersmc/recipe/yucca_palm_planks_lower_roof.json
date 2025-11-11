@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "planks_lower_roof",
+  "key": {
+    "A": "terrestria:yucca_palm_planks",
+    "B": "minecraft:stick"
+  },
+  "pattern": [
+    " AA",
+    "AAB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwterraformersmc:yucca_palm_planks_lower_roof"
+  }
+}

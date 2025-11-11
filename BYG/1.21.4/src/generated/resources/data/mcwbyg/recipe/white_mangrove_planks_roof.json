@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwroofs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "planks_roof",
+        "key": {
+          "A": "biomeswevegone:white_mangrove_planks",
+          "B": "minecraft:stick"
+        },
+        "pattern": [
+          " A",
+          "AB"
+        ],
+        "result": {
+          "count": 2,
+          "id": "mcwbyg:white_mangrove_planks_roof"
+        }
+      }
+    }
+  ]
+}

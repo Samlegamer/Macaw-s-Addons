@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "triple_drawer",
+        "key": {
+          "A": "biomeswevegone:aspen_log",
+          "B": "mcwfurnitures:cabinet_drawer"
+        },
+        "pattern": [
+          "AAA",
+          "ABA",
+          "BAB"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbyg:aspen_triple_drawer"
+        }
+      }
+    }
+  ]
+}

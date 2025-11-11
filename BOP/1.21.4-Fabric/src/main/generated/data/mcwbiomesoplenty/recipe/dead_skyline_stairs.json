@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "skyline_stairs",
+  "key": {
+    "A": "biomesoplenty:stripped_dead_log",
+    "B": "biomesoplenty:dead_log"
+  },
+  "pattern": [
+    "A  ",
+    "BA "
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbiomesoplenty:dead_skyline_stairs"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mahogany_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:mahogany_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbyg:stripped_mahogany_pane_window"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mahogany_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbyg:stripped_mahogany_pane_window"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "rail_bridges",
+  "key": {
+    "A": "biomeswevegone:white_mangrove_slab",
+    "B": "biomeswevegone:white_mangrove_fence"
+  },
+  "pattern": [
+    "B B",
+    "BAB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:white_mangrove_rail_bridge"
+  }
+}

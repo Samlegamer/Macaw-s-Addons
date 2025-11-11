@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "end_table",
+  "key": {
+    "A": "mcwterraformersmc:scorched_table",
+    "B": "cinderscapes:scorched_stem"
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwterraformersmc:scorched_end_table"
+  }
+}

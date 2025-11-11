@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.10-SNAPSHOT'
+	id 'fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 }
 
@@ -10,23 +10,29 @@ base {
 	archivesName = project.archives_base_name + "-fabric"
 }
 
-repositories
-		{
-			maven {
-				name = "CurseForge"
-				url = "https://minecraft.curseforge.com/api/maven/"
-			}
-			maven {
-				name = "CurseMaven"
-				url = "https://www.cursemaven.com"
-			}
-		}
+repositories {
+    maven {
+        name = "CurseForge"
+        url = "https://minecraft.curseforge.com/api/maven/"
+    }
+    maven {
+        name = "CurseMaven"
+        url = "https://www.cursemaven.com"
+
+    }
+    maven {
+        name = "TerraformersMC"
+        url = uri("https://maven.terraformersmc.com/releases")
+    }
+    maven { url 'https://jitpack.io' }
+    maven { url "https://maven.shedaniel.me" }
+}
 
 loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"template-mod" {
+        "template-mod" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
@@ -34,12 +40,66 @@ loom {
 
 }
 
+fabricApi {
+	configureDataGeneration {
+		client = true
+	}
+}
+
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation "curse.maven:addonslib-1090999:6548348"
+
+    modImplementation "curse.maven:addonslib-1090999:${addonslib_version}"
+    modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:${rei_version}"
+
+    modImplementation "curse.maven:macaws-roofs-352039:${roofs_version}"
+    modImplementation "curse.maven:macaws-fences-and-walls-453925:${fences_version}"
+    modImplementation "curse.maven:macaws-doors-378646:${doors_version}"
+    modImplementation "curse.maven:macaws-bridges-351725:${bridges_version}"
+    modImplementation "curse.maven:macaws-windows-363569:${windows_version}"
+    modImplementation "curse.maven:macaws-paths-and-pavings-629153:${paths_version}"
+    modImplementation "curse.maven:macaws-trapdoors-400933:${trapdoors_version}"
+    modImplementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
+    modImplementation "curse.maven:macaws-furniture-359540:${furniture_version}"
+
+    modCompileOnly("com.terraformersmc:traverse-common:${traverse_version}")
+
+    modCompileOnly("com.terraformersmc:cinderscapes-common:${cinderscapes_version}")
+
+    modCompileOnly("com.terraformersmc:terrestria-common:${terrestria_version}")
+
+
+    modRuntimeOnly("com.terraformersmc.terraform-api:terraform-biome-remapper-api-v1:${terraform_api_version}")
+    modRuntimeOnly("com.terraformersmc.terraform-api:terraform-config-api-v1:${terraform_api_version}")
+    modRuntimeOnly("com.terraformersmc.terraform-api:terraform-dirt-api-v1:${terraform_api_version}")
+    modRuntimeOnly("com.terraformersmc.terraform-api:terraform-shapes-api-v1:${terraform_api_version}")
+    modRuntimeOnly("com.terraformersmc.terraform-api:terraform-surfaces-api-v1:${terraform_api_version}")
+    modRuntimeOnly("com.terraformersmc.terraform-api:terraform-tree-api-v1:${terraform_api_version}")
+    modRuntimeOnly("com.terraformersmc.terraform-api:terraform-wood-api-v1:${terraform_api_version}")
+
+    //modImplementation("com.terraformersmc:traverse-common:${traverse_version}")
+    //modImplementation("com.terraformersmc:traverse-client:${traverse_version}")
+
+    //modImplementation("com.terraformersmc:cinderscapes-common:${cinderscapes_version}")
+    //modImplementation("com.terraformersmc:cinderscapes-client:${cinderscapes_version}")
+
+    //modImplementation("com.terraformersmc:terrestria-common:${terrestria_version}")
+    //modImplementation("com.terraformersmc:terrestria-client:${terrestria_version}")
+
+    modRuntimeOnly("com.terraformersmc:traverse-common:${traverse_version}")
+
+    modRuntimeOnly("com.terraformersmc:cinderscapes-common:${cinderscapes_version}")
+
+    modRuntimeOnly("com.terraformersmc:terrestria-common:${terrestria_version}")
+
+    modImplementation("com.terraformersmc:biolith-fabric:${biolith_fabric_version}")
+    modImplementation "curse.maven:cloth-config-348521:${cloth_config_version}"
+    modRuntimeOnly("com.github.ramixin:mixson-fabric:${mixson_version}")
+    //compileOnly "net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5"
+    //annotationProcessor "net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
@@ -50,7 +110,7 @@ processResources {
 	inputs.property "version", project.version
 
 	filesMatching("fabric.mod.json") {
-		expand project.properties
+        expand project.properties
 		expand "version": inputs.properties.version
 	}
 }

@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    "biomeswevegone:palm_trapdoor",
+    "biomeswevegone:palm_trapdoor",
+    "biomeswevegone:palm_trapdoor"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:palm_shutter"
+  }
+}

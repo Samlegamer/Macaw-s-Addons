@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwstairs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "skyline_stairs",
+        "key": {
+          "A": "biomeswevegone:stripped_pine_log",
+          "B": "biomeswevegone:pine_log"
+        },
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbyg:pine_skyline_stairs"
+        }
+      }
+    }
+  ]
+}

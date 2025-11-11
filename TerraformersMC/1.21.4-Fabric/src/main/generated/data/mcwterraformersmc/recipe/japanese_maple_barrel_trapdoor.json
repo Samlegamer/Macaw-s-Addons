@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "barrel_trapdoors",
+  "key": {
+    "A": "terrestria:japanese_maple_planks",
+    "B": "minecraft:barrel"
+  },
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwterraformersmc:japanese_maple_barrel_trapdoor"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "curtain_rods",
+  "key": {
+    "A": "minecraft:stick",
+    "B": "biomeswevegone:cypress_log"
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 5,
+    "id": "mcwbyg:cypress_curtain_rod"
+  }
+}

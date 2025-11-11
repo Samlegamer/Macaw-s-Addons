@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern",
+  "key": {
+    "A": "cinderscapes:scorched_planks",
+    "B": "minecraft:glass_pane"
+  },
+  "pattern": [
+    "AB",
+    "AA",
+    "AB"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwterraformersmc:scorched_modern_door"
+  }
+}

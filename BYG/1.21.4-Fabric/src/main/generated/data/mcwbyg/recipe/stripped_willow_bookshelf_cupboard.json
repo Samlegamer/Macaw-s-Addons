@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bookshelf_cupboard",
+  "key": {
+    "A": "biomeswevegone:stripped_willow_log",
+    "B": "mcwfurnitures:cabinet_door",
+    "C": "minecraft:book"
+  },
+  "pattern": [
+    "AAA",
+    "BAC",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:stripped_willow_bookshelf_cupboard"
+  }
+}

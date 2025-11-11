@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "western",
+  "key": {
+    "A": "terrestria:rubber_planks",
+    "B": "terrestria:rubber_slab"
+  },
+  "pattern": [
+    "  A",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwterraformersmc:rubber_western_door"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwbridges"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "log_stairs",
+        "key": {
+          "A": "mcwbyg:purple_sandstone_bridge"
+        },
+        "pattern": [
+          "  A",
+          " AA",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "id": "mcwbyg:purple_sandstone_bridge_stair"
+        }
+      }
+    }
+  ]
+}

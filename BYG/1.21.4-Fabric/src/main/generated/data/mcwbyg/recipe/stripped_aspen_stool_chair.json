@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stool_chair",
+  "key": {
+    "A": "biomeswevegone:stripped_aspen_log",
+    "B": "biomeswevegone:aspen_fence"
+  },
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:stripped_aspen_stool_chair"
+  }
+}

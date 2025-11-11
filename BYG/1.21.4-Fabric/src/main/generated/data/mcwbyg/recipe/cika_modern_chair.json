@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_chair",
+  "key": {
+    "A": "biomeswevegone:cika_log",
+    "B": "biomeswevegone:cika_slab",
+    "C": "biomeswevegone:cika_fence"
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:cika_modern_chair"
+  }
+}

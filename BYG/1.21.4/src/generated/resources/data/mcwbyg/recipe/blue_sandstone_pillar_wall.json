@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "pillarwall",
+        "key": {
+          "A": "biomeswevegone:smooth_blue_sandstone",
+          "B": "biomeswevegone:blue_sandstone"
+        },
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "result": {
+          "count": 5,
+          "id": "mcwbyg:blue_sandstone_pillar_wall"
+        }
+      }
+    }
+  ]
+}

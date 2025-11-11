@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "curved_gate",
+  "key": {
+    "A": "biomesoplenty:jacaranda_planks",
+    "B": "biomesoplenty:jacaranda_log"
+  },
+  "pattern": [
+    "B A",
+    "BAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbiomesoplenty:jacaranda_curved_gate"
+  }
+}

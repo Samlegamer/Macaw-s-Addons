@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwroofs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "lower_roof",
+        "key": {
+          "A": "biomeswevegone:palm_log",
+          "B": "minecraft:stick"
+        },
+        "pattern": [
+          " AA",
+          "AAB"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbyg:palm_lower_roof"
+        }
+      }
+    }
+  ]
+}

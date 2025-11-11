@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chair",
+        "key": {
+          "A": "biomesoplenty:stripped_empyreal_log",
+          "B": "biomesoplenty:empyreal_slab",
+          "C": "biomesoplenty:empyreal_fence"
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbiomesoplenty:stripped_empyreal_chair"
+        }
+      }
+    }
+  ]
+}

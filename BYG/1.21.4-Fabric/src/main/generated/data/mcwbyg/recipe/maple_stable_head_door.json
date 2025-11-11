@@ -1,0 +1,21 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stable_head",
+  "ingredients": [
+    "mcwbyg:maple_stable_door"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:maple_stable_head_door"
+  }
+}

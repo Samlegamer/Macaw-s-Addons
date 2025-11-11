@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "grass_topped",
+  "key": {
+    "A": "biomeswevegone:red_rock_bricks",
+    "B": "biomeswevegone:red_rock_bricks",
+    "C": "minecraft:dirt"
+  },
+  "pattern": [
+    "BCB",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwbyg:red_rock_bricks_grass_topped_wall"
+  }
+}

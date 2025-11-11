@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "terrace_stairs",
+  "key": {
+    "A": "biomeswevegone:stripped_palm_log",
+    "B": "biomeswevegone:palm_log"
+  },
+  "pattern": [
+    "A  ",
+    "BA ",
+    " BA"
+  ],
+  "result": {
+    "count": 5,
+    "id": "mcwbyg:palm_terrace_stairs"
+  }
+}

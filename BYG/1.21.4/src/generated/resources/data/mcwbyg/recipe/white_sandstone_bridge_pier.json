@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwbridges"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "wooden_piers",
+        "key": {
+          "A": "biomeswevegone:white_sandstone",
+          "B": "biomeswevegone:white_sandstone_wall"
+        },
+        "pattern": [
+          "ABA"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwbyg:white_sandstone_bridge_pier"
+        }
+      }
+    }
+  ]
+}

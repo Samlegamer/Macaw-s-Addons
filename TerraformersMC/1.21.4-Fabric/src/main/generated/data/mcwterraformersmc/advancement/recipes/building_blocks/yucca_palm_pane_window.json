@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "terrestria"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwterraformersmc:yucca_palm_pane_window"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yucca_palm_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "terrestria:yucca_palm_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_yucca_palm_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwterraformersmc:yucca_palm_pane_window"
+    ]
+  }
+}

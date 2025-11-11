@@ -1,0 +1,49 @@
+{
+  "forge:conditional": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_stripped_green_enchanted_log": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomeswevegone:stripped_green_enchanted_log"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbyg:stripped_green_enchanted_kitchen_cabinet"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_stripped_green_enchanted_log"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbyg:stripped_green_enchanted_kitchen_cabinet"
+        ]
+      }
+    }
+  ]
+}

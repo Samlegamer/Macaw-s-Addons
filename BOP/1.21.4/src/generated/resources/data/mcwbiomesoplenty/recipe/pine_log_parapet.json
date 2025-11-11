@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwwindows"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "parapets",
+        "key": {
+          "A": "minecraft:stick",
+          "B": "biomesoplenty:pine_log"
+        },
+        "pattern": [
+          "AAA",
+          "ABA"
+        ],
+        "result": {
+          "count": 5,
+          "id": "mcwbiomesoplenty:pine_log_parapet"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "kitchen_cabinet",
+  "key": {
+    "A": "biomeswevegone:baobab_log",
+    "B": "mcwfurnitures:cabinet_door"
+  },
+  "pattern": [
+    "AA",
+    "AB",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:baobab_kitchen_cabinet"
+  }
+}

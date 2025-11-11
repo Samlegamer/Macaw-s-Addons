@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "western",
+  "key": {
+    "A": "biomeswevegone:jacaranda_planks",
+    "B": "biomeswevegone:jacaranda_slab"
+  },
+  "pattern": [
+    "  A",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:jacaranda_western_door"
+  }
+}

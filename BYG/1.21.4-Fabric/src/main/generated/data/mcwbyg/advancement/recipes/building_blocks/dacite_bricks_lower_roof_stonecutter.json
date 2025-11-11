@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dacite_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:dacite_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbyg:dacite_bricks_lower_roof_stonecutter"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dacite_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbyg:dacite_bricks_lower_roof_stonecutter"
+    ]
+  }
+}

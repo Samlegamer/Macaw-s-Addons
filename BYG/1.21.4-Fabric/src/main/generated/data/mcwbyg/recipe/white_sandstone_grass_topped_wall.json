@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "grass_topped",
+  "key": {
+    "A": "biomeswevegone:smooth_white_sandstone",
+    "B": "biomeswevegone:white_sandstone",
+    "C": "minecraft:dirt"
+  },
+  "pattern": [
+    "BCB",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwbyg:white_sandstone_grass_topped_wall"
+  }
+}

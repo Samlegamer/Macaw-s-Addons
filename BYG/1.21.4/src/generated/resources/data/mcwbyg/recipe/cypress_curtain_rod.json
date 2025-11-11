@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwwindows"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "curtain_rods",
+        "key": {
+          "A": "minecraft:stick",
+          "B": "biomeswevegone:cypress_log"
+        },
+        "pattern": [
+          "ABA"
+        ],
+        "result": {
+          "count": 5,
+          "id": "mcwbyg:cypress_curtain_rod"
+        }
+      }
+    }
+  ]
+}

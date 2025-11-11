@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bookshelf",
+        "key": {
+          "A": "biomesoplenty:stripped_redwood_log",
+          "B": "minecraft:book"
+        },
+        "pattern": [
+          "AAA",
+          "BBB",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbiomesoplenty:stripped_redwood_bookshelf"
+        }
+      }
+    }
+  ]
+}

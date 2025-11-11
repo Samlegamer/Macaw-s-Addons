@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "striped_chair",
+        "key": {
+          "A": "biomesoplenty:stripped_umbran_log",
+          "B": "biomesoplenty:umbran_slab",
+          "C": "biomesoplenty:umbran_fence"
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbiomesoplenty:stripped_umbran_striped_chair"
+        }
+      }
+    }
+  ]
+}

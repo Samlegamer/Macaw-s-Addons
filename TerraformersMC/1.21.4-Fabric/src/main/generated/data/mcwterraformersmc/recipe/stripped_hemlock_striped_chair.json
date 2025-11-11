@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "striped_chair",
+  "key": {
+    "A": "terrestria:stripped_hemlock_log",
+    "B": "terrestria:hemlock_slab",
+    "C": "terrestria:hemlock_fence"
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwterraformersmc:stripped_hemlock_striped_chair"
+  }
+}

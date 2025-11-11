@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "glass_trapdoors",
+  "key": {
+    "A": "biomesoplenty:mahogany_planks",
+    "B": "minecraft:glass_pane"
+  },
+  "pattern": [
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwbiomesoplenty:mahogany_glass_trapdoor"
+  }
+}

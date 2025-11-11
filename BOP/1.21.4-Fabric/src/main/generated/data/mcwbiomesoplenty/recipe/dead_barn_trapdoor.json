@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "barn_trapdoors",
+  "key": {
+    "A": "biomesoplenty:dead_planks",
+    "B": "mcwbiomesoplenty:dead_glass_trapdoor"
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbiomesoplenty:dead_barn_trapdoor"
+  }
+}

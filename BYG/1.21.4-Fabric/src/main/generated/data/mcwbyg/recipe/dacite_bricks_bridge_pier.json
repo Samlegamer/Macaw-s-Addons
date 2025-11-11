@@ -1,0 +1,25 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_piers",
+  "key": {
+    "A": "biomeswevegone:dacite_bricks",
+    "B": "biomeswevegone:dacite_brick_wall"
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:dacite_bricks_bridge_pier"
+  }
+}

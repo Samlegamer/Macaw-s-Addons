@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbiomesoplenty:stripped_umbran_log_window2"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_umbran_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomesoplenty:umbran_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_umbran_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbiomesoplenty:stripped_umbran_log_window2"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwroofs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "upper_steep_roof",
+        "key": {
+          "A": "biomesoplenty:magic_log",
+          "B": "minecraft:stick"
+        },
+        "pattern": [
+          " A",
+          " A",
+          "AB"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwbiomesoplenty:magic_upper_steep_roof"
+        }
+      }
+    }
+  ]
+}

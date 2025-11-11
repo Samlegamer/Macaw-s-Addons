@@ -1,0 +1,25 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_piers",
+  "key": {
+    "A": "biomeswevegone:holly_log",
+    "B": "biomeswevegone:holly_fence"
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:holly_bridge_pier"
+  }
+}

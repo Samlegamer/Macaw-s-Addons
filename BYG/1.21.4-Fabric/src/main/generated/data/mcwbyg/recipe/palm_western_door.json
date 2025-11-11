@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "western",
+  "key": {
+    "A": "biomeswevegone:palm_planks",
+    "B": "biomeswevegone:palm_slab"
+  },
+  "pattern": [
+    "  A",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:palm_western_door"
+  }
+}

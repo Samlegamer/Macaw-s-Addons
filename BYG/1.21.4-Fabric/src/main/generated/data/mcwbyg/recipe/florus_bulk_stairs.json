@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bulk_stairs",
+  "key": {
+    "A": "biomeswevegone:stripped_florus_stem",
+    "B": "biomeswevegone:florus_stem"
+  },
+  "pattern": [
+    "A  ",
+    "BA ",
+    "BBA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwbyg:florus_bulk_stairs"
+  }
+}

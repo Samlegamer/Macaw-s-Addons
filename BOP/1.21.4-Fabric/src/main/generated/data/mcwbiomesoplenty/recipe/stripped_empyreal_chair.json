@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chair",
+  "key": {
+    "A": "biomesoplenty:stripped_empyreal_log",
+    "B": "biomesoplenty:empyreal_slab",
+    "C": "biomesoplenty:empyreal_fence"
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbiomesoplenty:stripped_empyreal_chair"
+  }
+}

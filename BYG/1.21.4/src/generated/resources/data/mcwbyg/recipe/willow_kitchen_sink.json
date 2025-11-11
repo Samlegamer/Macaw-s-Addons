@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "kitchen_sink",
+        "key": {
+          "A": "biomeswevegone:willow_log",
+          "B": "minecraft:water_bucket",
+          "C": "biomeswevegone:willow_slab",
+          "D": "minecraft:cauldron"
+        },
+        "pattern": [
+          "CDC",
+          "ABA",
+          "ABA"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:willow_kitchen_sink"
+        }
+      }
+    }
+  ]
+}

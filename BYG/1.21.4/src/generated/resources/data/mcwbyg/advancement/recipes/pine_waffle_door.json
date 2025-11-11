@@ -1,0 +1,49 @@
+{
+  "forge:conditional": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_pine_planks": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomeswevegone:pine_planks"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbyg:pine_waffle_door"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_pine_planks"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbyg:pine_waffle_door"
+        ]
+      }
+    }
+  ]
+}

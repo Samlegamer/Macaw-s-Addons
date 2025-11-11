@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "western",
+        "key": {
+          "A": "biomeswevegone:witch_hazel_planks",
+          "B": "biomeswevegone:witch_hazel_slab"
+        },
+        "pattern": [
+          "  A",
+          "ABA",
+          "AAA"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwbyg:witch_hazel_western_door"
+        }
+      }
+    }
+  ]
+}

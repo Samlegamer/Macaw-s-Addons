@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "log_bridges",
+  "key": {
+    "A": "biomeswevegone:purple_sandstone_slab",
+    "B": "biomeswevegone:purple_sandstone_wall"
+  },
+  "pattern": [
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:purple_sandstone_bridge"
+  }
+}

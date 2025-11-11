@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "parapets",
+  "key": {
+    "A": "minecraft:stick",
+    "B": "terrestria:sakura_planks"
+  },
+  "pattern": [
+    "AAA",
+    "ABA"
+  ],
+  "result": {
+    "count": 5,
+    "id": "mcwterraformersmc:sakura_plank_parapet"
+  }
+}

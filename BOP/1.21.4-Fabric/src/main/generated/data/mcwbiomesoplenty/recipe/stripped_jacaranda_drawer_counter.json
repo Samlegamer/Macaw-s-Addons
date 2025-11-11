@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "drawer_counter",
+  "key": {
+    "A": "biomesoplenty:jacaranda_slab",
+    "B": "mcwbiomesoplenty:stripped_jacaranda_drawer"
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbiomesoplenty:stripped_jacaranda_drawer_counter"
+  }
+}

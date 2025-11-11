@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_baobab_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:baobab_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbyg:baobab_loft_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_baobab_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbyg:baobab_loft_stairs"
+    ]
+  }
+}

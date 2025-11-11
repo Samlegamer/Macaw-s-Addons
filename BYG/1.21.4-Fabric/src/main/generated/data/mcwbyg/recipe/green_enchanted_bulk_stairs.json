@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bulk_stairs",
+  "key": {
+    "A": "biomeswevegone:stripped_green_enchanted_log",
+    "B": "biomeswevegone:green_enchanted_log"
+  },
+  "pattern": [
+    "A  ",
+    "BA ",
+    "BBA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwbyg:green_enchanted_bulk_stairs"
+  }
+}

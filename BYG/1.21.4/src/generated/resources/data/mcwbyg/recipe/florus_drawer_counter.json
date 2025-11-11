@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "drawer_counter",
+        "key": {
+          "A": "biomeswevegone:florus_slab",
+          "B": "mcwbyg:florus_drawer"
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:florus_drawer_counter"
+        }
+      }
+    }
+  ]
+}

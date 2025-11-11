@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    "biomeswevegone:florus_slab",
+    "biomeswevegone:florus_slab",
+    "biomeswevegone:florus_slab"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:florus_louvered_shutter"
+  }
+}

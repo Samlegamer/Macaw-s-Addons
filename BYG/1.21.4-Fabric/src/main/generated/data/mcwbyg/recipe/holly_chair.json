@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chair",
+  "key": {
+    "A": "biomeswevegone:holly_log",
+    "B": "biomeswevegone:holly_slab",
+    "C": "biomeswevegone:holly_fence"
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:holly_chair"
+  }
+}

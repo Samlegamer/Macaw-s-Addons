@@ -204,8 +204,4 @@ public class McwBOP extends McwMod
     	    	.addType(BlockType.STAIRS);
     	return new ItemStack(woodProperties.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.STAIRS));
     }
-
-    private void addToTab(BuildCreativeModeTabContentsEvent event)
-    {
-    }
 }

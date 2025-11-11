@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "pyramid",
+  "key": {
+    "A": "minecraft:stick",
+    "B": "biomeswevegone:zelkova_log",
+    "C": "biomeswevegone:zelkova_planks"
+  },
+  "pattern": [
+    "ABA",
+    "ACA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:zelkova_pyramid_gate"
+  }
+}

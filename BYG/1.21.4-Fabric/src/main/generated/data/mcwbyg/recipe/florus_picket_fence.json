@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "picket",
+  "key": {
+    "A": "minecraft:stick",
+    "B": "biomeswevegone:florus_planks",
+    "C": "biomeswevegone:florus_stem"
+  },
+  "pattern": [
+    "CBC",
+    "CAC"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:florus_picket_fence"
+  }
+}

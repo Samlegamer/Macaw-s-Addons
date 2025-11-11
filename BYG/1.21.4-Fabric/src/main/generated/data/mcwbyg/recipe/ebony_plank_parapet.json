@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "parapets",
+  "key": {
+    "A": "minecraft:stick",
+    "B": "biomeswevegone:ebony_planks"
+  },
+  "pattern": [
+    "AAA",
+    "ABA"
+  ],
+  "result": {
+    "count": 5,
+    "id": "mcwbyg:ebony_plank_parapet"
+  }
+}

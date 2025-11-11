@@ -113,21 +113,21 @@ public class McwTerraformersMC implements ModInitializer
         Registry.register(Registries.ITEM_GROUP, TAB_ID, MCWTERRAFORMERSMC_TAB);
         RegistryKey<ItemGroup> group_key = RegistryKey.of(RegistryKeys.ITEM_GROUP, TAB_ID);
 
-        var loader = FabricLoader.getInstance();
+        String suffixMld = FabricLoader.getInstance().isDevelopmentEnvironment() ? "-common" : "";
 
-        if(loader.isModLoaded("traverse"))
+        if(FabricLoader.getInstance().isModLoaded("traverse"+suffixMld))
         {
             APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, group_key, Registration.getAllModTypeWood());
             APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE, group_key);
         }
 
-        if(loader.isModLoaded("cinderscapes"))
+        if(FabricLoader.getInstance().isModLoaded("cinderscapes"+suffixMld))
         {
             APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, group_key, Registration.getAllModTypeWood());
             APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, group_key, Registration.getAllModTypeStone());
         }
 
-        if(loader.isModLoaded("terrestria"))
+        if(FabricLoader.getInstance().isModLoaded("terrestria"+suffixMld))
         {
             APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, group_key, Registration.getAllModTypeWood());
             APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA, group_key);

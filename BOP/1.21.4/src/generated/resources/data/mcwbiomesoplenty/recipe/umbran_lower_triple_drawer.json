@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "lower_triple_drawer",
+        "key": {
+          "A": "biomesoplenty:umbran_log",
+          "B": "mcwfurnitures:cabinet_drawer"
+        },
+        "pattern": [
+          "AAA",
+          "BAB",
+          "ABA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbiomesoplenty:umbran_lower_triple_drawer"
+        }
+      }
+    }
+  ]
+}

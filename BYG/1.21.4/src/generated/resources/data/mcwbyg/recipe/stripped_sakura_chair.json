@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chair",
+        "key": {
+          "A": "biomeswevegone:stripped_sakura_log",
+          "B": "biomeswevegone:sakura_slab",
+          "C": "biomeswevegone:sakura_fence"
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:stripped_sakura_chair"
+        }
+      }
+    }
+  ]
+}

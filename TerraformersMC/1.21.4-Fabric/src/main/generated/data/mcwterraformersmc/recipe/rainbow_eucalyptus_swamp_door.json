@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwdoors:swamp",
+  "key": {
+    "A": "terrestria:rainbow_eucalyptus_planks",
+    "B": "mcwdoors:print_swamp"
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwterraformersmc:rainbow_eucalyptus_swamp_door"
+  }
+}

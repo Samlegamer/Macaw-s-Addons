@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "kitchen_sink",
+        "key": {
+          "A": "biomeswevegone:sakura_log",
+          "B": "minecraft:water_bucket",
+          "C": "biomeswevegone:sakura_slab",
+          "D": "minecraft:cauldron"
+        },
+        "pattern": [
+          "CDC",
+          "ABA",
+          "ABA"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:sakura_kitchen_sink"
+        }
+      }
+    }
+  ]
+}

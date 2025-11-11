@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    "terrestria:sakura_slab",
+    "terrestria:sakura_slab",
+    "terrestria:sakura_slab"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwterraformersmc:sakura_louvered_shutter"
+  }
+}

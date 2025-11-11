@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cupboard_counter",
+  "key": {
+    "A": "biomeswevegone:green_enchanted_slab",
+    "B": "mcwbyg:green_enchanted_wardrobe"
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:green_enchanted_cupboard_counter"
+  }
+}

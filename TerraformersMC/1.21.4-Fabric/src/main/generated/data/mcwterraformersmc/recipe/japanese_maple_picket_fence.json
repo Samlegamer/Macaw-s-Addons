@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "picket",
+  "key": {
+    "A": "minecraft:stick",
+    "B": "terrestria:japanese_maple_planks",
+    "C": "terrestria:japanese_maple_log"
+  },
+  "pattern": [
+    "CBC",
+    "CAC"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwterraformersmc:japanese_maple_picket_fence"
+  }
+}

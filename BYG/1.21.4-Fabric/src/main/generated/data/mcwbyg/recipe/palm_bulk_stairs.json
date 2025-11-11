@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bulk_stairs",
+  "key": {
+    "A": "biomeswevegone:stripped_palm_log",
+    "B": "biomeswevegone:palm_log"
+  },
+  "pattern": [
+    "A  ",
+    "BA ",
+    "BBA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwbyg:palm_bulk_stairs"
+  }
+}

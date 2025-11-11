@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "planks_attic_roof",
+  "key": {
+    "A": "biomeswevegone:palm_planks",
+    "B": "minecraft:glass"
+  },
+  "pattern": [
+    " A",
+    "AB"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwbyg:palm_planks_attic_roof"
+  }
+}

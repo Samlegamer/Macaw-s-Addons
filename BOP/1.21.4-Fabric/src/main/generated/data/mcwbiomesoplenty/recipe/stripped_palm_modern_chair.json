@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_chair",
+  "key": {
+    "A": "biomesoplenty:stripped_palm_log",
+    "B": "biomesoplenty:palm_slab",
+    "C": "biomesoplenty:palm_fence"
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbiomesoplenty:stripped_palm_modern_chair"
+  }
+}

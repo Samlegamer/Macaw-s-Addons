@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern",
+  "key": {
+    "A": "cinderscapes:sulfur_quartz_block",
+    "B": "cinderscapes:sulfur_quartz_bricks"
+  },
+  "pattern": [
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwterraformersmc:modern_sulfur_quartz_bricks_wall"
+  }
+}

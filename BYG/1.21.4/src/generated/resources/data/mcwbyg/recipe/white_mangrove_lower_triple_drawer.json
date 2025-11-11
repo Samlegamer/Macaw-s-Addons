@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "lower_triple_drawer",
+        "key": {
+          "A": "biomeswevegone:white_mangrove_log",
+          "B": "mcwfurnitures:cabinet_drawer"
+        },
+        "pattern": [
+          "AAA",
+          "BAB",
+          "ABA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbyg:white_mangrove_lower_triple_drawer"
+        }
+      }
+    }
+  ]
+}

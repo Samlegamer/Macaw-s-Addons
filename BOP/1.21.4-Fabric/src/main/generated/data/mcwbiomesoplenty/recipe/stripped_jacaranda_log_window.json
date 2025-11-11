@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "windows",
+  "key": {
+    "A": "mcwwindows:window_base",
+    "B": "biomesoplenty:stripped_jacaranda_log"
+  },
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbiomesoplenty:stripped_jacaranda_log_window"
+  }
+}

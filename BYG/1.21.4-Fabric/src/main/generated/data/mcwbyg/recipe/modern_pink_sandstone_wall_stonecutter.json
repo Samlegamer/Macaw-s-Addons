@@ -1,0 +1,17 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": "biomeswevegone:pink_sandstone",
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:modern_pink_sandstone_wall"
+  }
+}
