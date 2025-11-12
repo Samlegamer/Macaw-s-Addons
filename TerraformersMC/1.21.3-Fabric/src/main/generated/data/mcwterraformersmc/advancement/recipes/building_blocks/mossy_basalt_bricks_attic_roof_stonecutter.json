@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "terrestria"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mossy_basalt_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "terrestria:mossy_basalt_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwterraformersmc:mossy_basalt_bricks_attic_roof_stonecutter"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mossy_basalt_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwterraformersmc:mossy_basalt_bricks_attic_roof_stonecutter"
+    ]
+  }
+}

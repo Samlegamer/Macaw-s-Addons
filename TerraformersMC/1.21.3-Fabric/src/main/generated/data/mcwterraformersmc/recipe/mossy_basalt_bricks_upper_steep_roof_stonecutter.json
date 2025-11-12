@@ -1,0 +1,17 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": "terrestria:mossy_basalt_bricks",
+  "result": {
+    "count": 1,
+    "id": "mcwterraformersmc:mossy_basalt_bricks_upper_steep_roof"
+  }
+}

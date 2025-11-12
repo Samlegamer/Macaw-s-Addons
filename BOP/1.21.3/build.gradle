@@ -124,7 +124,21 @@ dependencies {
     // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    implementation "curse.maven:addonslib-1090999:6548341"
+    implementation "curse.maven:addonslib-1090999:${addonslib_version}"
+
+    implementation "curse.maven:macaws-roofs-352039:${roofs_version}"
+    implementation "curse.maven:macaws-fences-and-walls-453925:${fences_version}"
+    implementation "curse.maven:macaws-doors-378646:${doors_version}"
+    implementation "curse.maven:macaws-bridges-351725:${bridges_version}"
+    implementation "curse.maven:macaws-windows-363569:${windows_version}"
+    implementation "curse.maven:macaws-paths-and-pavings-629153:${paths_version}"
+    implementation "curse.maven:macaws-trapdoors-400933:${trapdoors_version}"
+    implementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
+    implementation "curse.maven:macaws-furniture-359540:${furniture_version}"
+
+    implementation "curse.maven:biomes-o-plenty-220318:${bop_version}"
+    implementation "curse.maven:glitchcore-955399:${glichcore_version}"
+    implementation "curse.maven:terrablender-563928:${terrablender_version}"
 
     // Example mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
