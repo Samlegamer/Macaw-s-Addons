@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "kitchen_sink",
+  "key": {
+    "A": "premium_wood:silverbell_log",
+    "B": "minecraft:water_bucket",
+    "C": "premium_wood:silverbell_slab",
+    "D": "minecraft:cauldron"
+  },
+  "pattern": [
+    "CDC",
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwmoddinglegacy:pwood_silverbell_kitchen_sink"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "curtain_rods",
+  "key": {
+    "A": "minecraft:stick",
+    "B": "premium_wood:purple_heart_log"
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 5,
+    "id": "mcwmoddinglegacy:pwood_purple_heart_curtain_rod"
+  }
+}

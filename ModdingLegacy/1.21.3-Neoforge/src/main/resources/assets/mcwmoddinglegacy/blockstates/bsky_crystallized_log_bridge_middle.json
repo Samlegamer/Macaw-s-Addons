@@ -1,7 +1,6 @@
 {
     "variants": {                     
 		"connection=base":  { "model": "mcwmoddinglegacy:block/bridge/bridge_wood/bsky_crystallized_base","uvlock": true},
-		"connection=base_toggled":  { "model": "mcwmoddinglegacy:block/bridge/bridge_wood/bsky_crystallized_base","uvlock": true},
 		
         "connection=middle_ns":  { "model": "mcwmoddinglegacy:block/bridge/bridge_wood/bsky_crystallized_middle", "y": 90,"uvlock": true},
 		"connection=middle_ew":  { "model": "mcwmoddinglegacy:block/bridge/bridge_wood/bsky_crystallized_middle","uvlock": true},
@@ -14,11 +13,6 @@
 		"connection=side_s":  { "model": "mcwmoddinglegacy:block/bridge/bridge_wood/bsky_crystallized_side","uvlock": true},
 		"connection=side_n":  { "model": "mcwmoddinglegacy:block/bridge/bridge_wood/bsky_crystallized_side", "y": 180,"uvlock": true},
 		"connection=side_w":  { "model": "mcwmoddinglegacy:block/bridge/bridge_wood/bsky_crystallized_side", "y": 90,"uvlock": true},
-		"connection=side_e":  { "model": "mcwmoddinglegacy:block/bridge/bridge_wood/bsky_crystallized_side", "y": 270,"uvlock": true},
-		
-		"connection=end_s_toggled":  { "model": "mcwmoddinglegacy:block/bridge/bridge_wood/bsky_crystallized_side", "y": 0,"uvlock": true},
-		"connection=end_n_toggled":  { "model": "mcwmoddinglegacy:block/bridge/bridge_wood/bsky_crystallized_side", "y": 180,"uvlock": true},
-		"connection=end_w_toggled":  { "model": "mcwmoddinglegacy:block/bridge/bridge_wood/bsky_crystallized_side", "y": 90,"uvlock": true},
-		"connection=end_e_toggled":  { "model": "mcwmoddinglegacy:block/bridge/bridge_wood/bsky_crystallized_side", "y": 270,"uvlock": true}
+		"connection=side_e":  { "model": "mcwmoddinglegacy:block/bridge/bridge_wood/bsky_crystallized_side", "y": 270,"uvlock": true}
     }
 }

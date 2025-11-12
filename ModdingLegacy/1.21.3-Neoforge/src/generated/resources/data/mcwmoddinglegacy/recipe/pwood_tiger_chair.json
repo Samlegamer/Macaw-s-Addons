@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chair",
+  "key": {
+    "A": "premium_wood:tiger_log",
+    "B": "premium_wood:tiger_slab",
+    "C": "premium_wood:tiger_fence"
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwmoddinglegacy:pwood_tiger_chair"
+  }
+}

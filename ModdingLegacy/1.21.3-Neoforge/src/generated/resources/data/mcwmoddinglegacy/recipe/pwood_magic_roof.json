@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "roof",
+  "key": {
+    "A": "premium_wood:magic_log",
+    "B": "minecraft:stick"
+  },
+  "pattern": [
+    " A",
+    "AB"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwmoddinglegacy:pwood_magic_roof"
+  }
+}

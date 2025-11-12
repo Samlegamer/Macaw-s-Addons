@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "windows_two",
+  "key": {
+    "A": "mcwwindows:window_half_bar_base",
+    "B": "biomesoplenty:fir_planks"
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 8,
+    "id": "mcwbiomesoplenty:fir_plank_window2"
+  }
+}

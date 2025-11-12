@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "attic_roof",
+  "key": {
+    "A": "premium_wood:tiger_log",
+    "B": "minecraft:glass"
+  },
+  "pattern": [
+    " A",
+    "AB"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwmoddinglegacy:pwood_tiger_attic_roof"
+  }
+}

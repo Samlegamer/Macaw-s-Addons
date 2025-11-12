@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_wardrobe",
+  "key": {
+    "A": "premium_wood:purple_heart_log",
+    "B": "mcwfurnitures:cabinet_door"
+  },
+  "pattern": [
+    "AAA",
+    "AAB",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwmoddinglegacy:pwood_purple_heart_modern_wardrobe"
+  }
+}
