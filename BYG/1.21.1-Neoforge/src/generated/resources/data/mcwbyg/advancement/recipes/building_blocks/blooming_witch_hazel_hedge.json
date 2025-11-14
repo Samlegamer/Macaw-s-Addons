@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blooming_witch_hazel_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:blooming_witch_hazel_leaves"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbyg:blooming_witch_hazel_hedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blooming_witch_hazel_leaves"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbyg:blooming_witch_hazel_hedge"
+    ]
+  }
+}

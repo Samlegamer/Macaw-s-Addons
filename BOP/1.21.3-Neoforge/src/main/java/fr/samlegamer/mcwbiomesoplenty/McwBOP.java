@@ -178,7 +178,6 @@ public class McwBOP extends McwMod
                 addAllMcwTags(MODID, WOOD, LEAVES);
             }
         });
-
     }
 
     @Override

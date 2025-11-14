@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "biomeswevegone:holly_trapdoor"
+    },
+    {
+      "item": "biomeswevegone:holly_trapdoor"
+    },
+    {
+      "item": "biomeswevegone:holly_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:holly_shutter"
+  }
+}

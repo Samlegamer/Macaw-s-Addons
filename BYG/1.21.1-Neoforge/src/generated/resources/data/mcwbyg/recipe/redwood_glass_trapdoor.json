@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "glass_trapdoors",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:redwood_planks"
+    },
+    "B": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwbyg:redwood_glass_trapdoor"
+  }
+}

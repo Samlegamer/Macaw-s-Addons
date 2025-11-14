@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "barrel_trapdoors",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:jacaranda_planks"
+    },
+    "B": {
+      "item": "minecraft:barrel"
+    }
+  },
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:jacaranda_barrel_trapdoor"
+  }
+}

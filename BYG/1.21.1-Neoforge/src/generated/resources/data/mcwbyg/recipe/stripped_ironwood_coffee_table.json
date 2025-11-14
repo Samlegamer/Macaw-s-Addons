@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "coffee_table",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:stripped_ironwood_log"
+    },
+    "B": {
+      "item": "biomeswevegone:ironwood_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:stripped_ironwood_coffee_table"
+  }
+}

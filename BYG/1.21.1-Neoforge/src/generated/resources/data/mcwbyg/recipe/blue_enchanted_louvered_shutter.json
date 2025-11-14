@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "biomeswevegone:blue_enchanted_slab"
+    },
+    {
+      "item": "biomeswevegone:blue_enchanted_slab"
+    },
+    {
+      "item": "biomeswevegone:blue_enchanted_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:blue_enchanted_louvered_shutter"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbyg:white_mangrove_whispering_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_mangrove_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:white_mangrove_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_white_mangrove_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbyg:white_mangrove_whispering_door"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "end_table",
+  "key": {
+    "A": {
+      "item": "mcwbyg:rainbow_eucalyptus_table"
+    },
+    "B": {
+      "item": "biomeswevegone:rainbow_eucalyptus_log"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:rainbow_eucalyptus_end_table"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "drawer_counter",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:green_enchanted_slab"
+    },
+    "B": {
+      "item": "mcwbyg:green_enchanted_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:green_enchanted_drawer_counter"
+  }
+}

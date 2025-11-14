@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_chair",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:pine_log"
+    },
+    "B": {
+      "item": "biomeswevegone:pine_slab"
+    },
+    "C": {
+      "item": "biomeswevegone:pine_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:pine_modern_chair"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "terrace_stairs",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:stripped_green_enchanted_log"
+    },
+    "B": {
+      "item": "biomeswevegone:green_enchanted_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA ",
+    " BA"
+  ],
+  "result": {
+    "count": 5,
+    "id": "mcwbyg:green_enchanted_terrace_stairs"
+  }
+}

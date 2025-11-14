@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "skyline_stairs",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:stripped_willow_log"
+    },
+    "B": {
+      "item": "biomeswevegone:willow_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA "
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:willow_skyline_stairs"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "pillarwall",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:smooth_windswept_sandstone"
+    },
+    "B": {
+      "item": "biomeswevegone:windswept_sandstone"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 5,
+    "id": "mcwbyg:windswept_sandstone_pillar_wall"
+  }
+}

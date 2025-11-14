@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pink_sandstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:pink_sandstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbyg:pink_sandstone_top_roof_stonecutter"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pink_sandstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbyg:pink_sandstone_top_roof_stonecutter"
+    ]
+  }
+}
