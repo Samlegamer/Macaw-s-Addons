@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wired",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "environmental:plum_log"
+    },
+    "C": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwabnormals:plum_wired_fence"
+  }
+}

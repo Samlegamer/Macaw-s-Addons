@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "lower_roof",
+  "key": {
+    "A": {
+      "item": "atmospheric:grimwood_log"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " AA",
+    "AAB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwabnormals:grimwood_lower_roof"
+  }
+}

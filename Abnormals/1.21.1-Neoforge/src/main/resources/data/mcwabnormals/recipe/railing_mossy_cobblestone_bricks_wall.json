@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "railing_wall",
+  "pattern" : [ "ABA", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "caverns_and_chasms:mossy_cobblestone_tiles"
+    },
+    "B" : {
+      "item" : "minecraft:iron_bars"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwabnormals:railing_mossy_cobblestone_bricks_wall"
+  }
+}

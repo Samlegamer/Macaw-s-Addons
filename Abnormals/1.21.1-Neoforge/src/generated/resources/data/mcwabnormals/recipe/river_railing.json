@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwstairs_railing",
+  "key": {
+    "A": {
+      "item": "mcwabnormals:river_balcony"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwabnormals:river_railing"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "buzzier_bees"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_honeycomb_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "buzzier_bees:honeycomb_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwabnormals:honeycomb_brick_upper_lower_roof_stonecutter"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_honeycomb_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwabnormals:honeycomb_brick_upper_lower_roof_stonecutter"
+    ]
+  }
+}

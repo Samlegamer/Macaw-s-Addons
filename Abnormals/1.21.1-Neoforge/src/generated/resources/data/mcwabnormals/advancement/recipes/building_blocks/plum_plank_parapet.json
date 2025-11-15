@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_plum_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "environmental:plum_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwabnormals:plum_plank_parapet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_plum_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwabnormals:plum_plank_parapet"
+    ]
+  }
+}

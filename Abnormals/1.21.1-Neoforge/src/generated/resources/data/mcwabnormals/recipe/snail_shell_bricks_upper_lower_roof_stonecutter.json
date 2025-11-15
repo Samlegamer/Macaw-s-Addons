@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "autumnity:snail_shell_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "mcwabnormals:snail_shell_bricks_upper_lower_roof"
+  }
+}

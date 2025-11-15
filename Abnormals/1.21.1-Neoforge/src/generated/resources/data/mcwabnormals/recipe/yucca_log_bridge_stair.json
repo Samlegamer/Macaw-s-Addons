@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "log_stairs",
+  "key": {
+    "A": {
+      "item": "mcwabnormals:yucca_log_bridge_middle"
+    }
+  },
+  "pattern": [
+    "  A",
+    " AA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwabnormals:yucca_log_bridge_stair"
+  }
+}

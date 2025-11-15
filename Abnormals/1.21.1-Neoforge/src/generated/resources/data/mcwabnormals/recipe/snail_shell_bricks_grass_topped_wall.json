@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "grass_topped",
+  "key": {
+    "A": {
+      "item": "autumnity:snail_shell_block"
+    },
+    "B": {
+      "item": "autumnity:snail_shell_bricks"
+    },
+    "C": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwabnormals:snail_shell_bricks_grass_topped_wall"
+  }
+}

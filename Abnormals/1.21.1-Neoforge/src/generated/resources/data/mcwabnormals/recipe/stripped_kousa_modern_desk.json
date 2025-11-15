@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_desk",
+  "key": {
+    "A": {
+      "item": "atmospheric:stripped_kousa_log"
+    },
+    "B": {
+      "item": "atmospheric:kousa_fence"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BCB"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwabnormals:stripped_kousa_modern_desk"
+  }
+}

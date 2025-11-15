@@ -1,0 +1,43 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwabnormals:flooded_dripstone_shingles_roof",
+	  "mcwabnormals:flooded_dripstone_shingles_attic_roof",
+	  "mcwabnormals:flooded_dripstone_shingles_top_roof",
+	  "mcwabnormals:flooded_dripstone_shingles_lower_roof",
+	  "mcwabnormals:flooded_dripstone_shingles_steep_roof",
+	  "mcwabnormals:flooded_dripstone_shingles_upper_lower_roof",
+	  "mcwabnormals:flooded_dripstone_shingles_upper_steep_roof"
+    ]
+  },
+  "criteria": {
+    "has_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "caverns_and_chasms:flooded_dripstone_shingles"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_planks"
+    ]
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "atmospheric:yucca_trapdoor"
+    },
+    {
+      "item": "atmospheric:yucca_trapdoor"
+    },
+    {
+      "item": "atmospheric:yucca_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwabnormals:yucca_shutter"
+  }
+}

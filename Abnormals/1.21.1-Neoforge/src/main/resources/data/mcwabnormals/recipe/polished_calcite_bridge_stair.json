@@ -1,0 +1,24 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "stone_stairs",
+  "pattern" : [ "  F", " FF", "FFF" ],
+  "key" : {
+    "F" : {
+      "item" : "mcwabnormals:polished_calcite_bridge"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwabnormals:polished_calcite_bridge_stair"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "picket",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "upgrade_aquatic:river_planks"
+    },
+    "C": {
+      "item": "upgrade_aquatic:river_log"
+    }
+  },
+  "pattern": [
+    "CBC",
+    "CAC"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwabnormals:river_picket_fence"
+  }
+}

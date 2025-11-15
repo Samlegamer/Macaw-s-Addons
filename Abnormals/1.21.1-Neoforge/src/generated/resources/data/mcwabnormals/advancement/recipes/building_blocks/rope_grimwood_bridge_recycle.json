@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_grimwood_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "atmospheric:grimwood_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwabnormals:rope_grimwood_bridge_recycle"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_grimwood_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwabnormals:rope_grimwood_bridge_recycle"
+    ]
+  }
+}

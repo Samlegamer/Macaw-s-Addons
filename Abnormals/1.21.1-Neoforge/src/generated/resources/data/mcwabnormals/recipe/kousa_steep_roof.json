@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "steep_roof",
+  "key": {
+    "A": {
+      "item": "atmospheric:kousa_log"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " A",
+    "AA",
+    "AB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwabnormals:kousa_steep_roof"
+  }
+}

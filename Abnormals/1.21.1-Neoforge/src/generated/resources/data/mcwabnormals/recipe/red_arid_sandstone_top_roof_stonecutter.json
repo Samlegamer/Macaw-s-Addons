@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "atmospheric:red_arid_sandstone"
+  },
+  "result": {
+    "count": 1,
+    "id": "mcwabnormals:red_arid_sandstone_top_roof"
+  }
+}

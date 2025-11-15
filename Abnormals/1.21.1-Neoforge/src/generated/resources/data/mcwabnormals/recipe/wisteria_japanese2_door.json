@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "shoji_two",
+  "key": {
+    "A": {
+      "item": "environmental:wisteria_slab"
+    },
+    "B": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    "BB",
+    "BB",
+    "AA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwabnormals:wisteria_japanese2_door"
+  }
+}

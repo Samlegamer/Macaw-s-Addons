@@ -1,0 +1,27 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "pillarwall",
+  "pattern" : [ "AAA", "B B" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:lapis_block"
+    },
+    "B" : {
+      "item" : "caverns_and_chasms:lapis_bricks"
+    }
+  },
+  "result" : {
+    "count" : 5,
+    "id" : "mcwabnormals:lapis_bricks_pillar_wall"
+  }
+}

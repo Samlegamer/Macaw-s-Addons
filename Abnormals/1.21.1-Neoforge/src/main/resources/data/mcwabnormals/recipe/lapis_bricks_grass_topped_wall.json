@@ -1,0 +1,30 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "type" : "minecraft:crafting_shaped",
+  "group" : "grass_topped",
+  "pattern" : [ "BGB", "AAA" ],
+  "key" : {
+    "A" : {
+      "item" : "minecraft:lapis_block"
+    },
+    "G" : {
+      "item" : "minecraft:dirt"
+    },
+    "B" : {
+      "item" : "caverns_and_chasms:lapis_bricks"
+    }
+  },
+  "result" : {
+    "count" : 6,
+    "id" : "mcwabnormals:lapis_bricks_grass_topped_wall"
+  }
+}

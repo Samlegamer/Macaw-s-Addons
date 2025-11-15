@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "buzzier_bees"
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "buzzier_bees:honeycomb_tiles"
+  },
+  "result": {
+    "count": 1,
+    "id": "mcwabnormals:honeycomb_tile_top_roof"
+  }
+}

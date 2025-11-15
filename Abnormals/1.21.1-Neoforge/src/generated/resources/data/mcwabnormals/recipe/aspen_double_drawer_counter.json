@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_drawer_counter",
+  "key": {
+    "A": {
+      "item": "atmospheric:aspen_slab"
+    },
+    "B": {
+      "item": "mcwabnormals:aspen_double_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwabnormals:aspen_double_drawer_counter"
+  }
+}

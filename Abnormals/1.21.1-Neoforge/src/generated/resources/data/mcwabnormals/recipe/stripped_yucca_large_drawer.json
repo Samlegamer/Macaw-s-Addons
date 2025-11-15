@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "large_drawer",
+  "key": {
+    "A": {
+      "item": "atmospheric:stripped_yucca_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwabnormals:stripped_yucca_large_drawer"
+  }
+}

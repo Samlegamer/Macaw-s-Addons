@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "grass_topped",
+  "key": {
+    "A": {
+      "item": "atmospheric:smooth_arid_sandstone"
+    },
+    "B": {
+      "item": "atmospheric:arid_sandstone"
+    },
+    "C": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwabnormals:arid_sandstone_grass_topped_wall"
+  }
+}

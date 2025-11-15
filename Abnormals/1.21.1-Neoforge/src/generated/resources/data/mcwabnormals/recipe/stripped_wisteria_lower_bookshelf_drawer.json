@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "lower_bookshelf_drawer",
+  "key": {
+    "A": {
+      "item": "environmental:stripped_wisteria_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    },
+    "C": {
+      "item": "minecraft:book"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ACA",
+    "ABA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwabnormals:stripped_wisteria_lower_bookshelf_drawer"
+  }
+}

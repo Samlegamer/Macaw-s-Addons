@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "end_table",
+  "key": {
+    "A": {
+      "item": "mcwabnormals:stripped_wisteria_table"
+    },
+    "B": {
+      "item": "environmental:stripped_wisteria_log"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwabnormals:stripped_wisteria_end_table"
+  }
+}

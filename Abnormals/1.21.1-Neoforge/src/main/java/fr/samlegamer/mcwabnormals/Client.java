@@ -13,7 +13,7 @@ import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 
 import java.util.List;
 
-@EventBusSubscriber(modid = McwAbnormals.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(modid = McwAbnormals.MODID, value = Dist.CLIENT)
 public class Client
 {
 	private static final List<String> LEAVES_NO_COLORED = List.of("river", "willow", "rosewood", "morado");
@@ -23,7 +23,8 @@ public class Client
 	public static void colorsBlock(RegisterColorHandlersEvent.Block event)
 	{
 		COLOR.colorsBlock(event);
-		/*Copied parameter for match to original leaves
+		/*
+		 * Copied parameter for match to original leaves
 		 * See original here : https://github.com/team-abnormals/autumnity/blob/1.20.x/src/main/java/com/teamabnormals/autumnity/core/other/AutumnityClientCompat.java#L47
 		 * See : https://github.com/team-abnormals/environmental/blob/1.20.x/src/main/java/com/teamabnormals/environmental/core/other/EnvironmentalClientCompat.java#L25
 		 */

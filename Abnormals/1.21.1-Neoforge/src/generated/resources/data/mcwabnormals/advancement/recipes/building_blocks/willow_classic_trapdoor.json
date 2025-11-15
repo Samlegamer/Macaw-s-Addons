@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwabnormals:willow_classic_trapdoor"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_willow_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "environmental:willow_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_willow_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwabnormals:willow_classic_trapdoor"
+    ]
+  }
+}

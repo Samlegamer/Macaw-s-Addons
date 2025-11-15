@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_laurel_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "atmospheric:laurel_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwabnormals:laurel_stable_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_laurel_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwabnormals:laurel_stable_door"
+    ]
+  }
+}

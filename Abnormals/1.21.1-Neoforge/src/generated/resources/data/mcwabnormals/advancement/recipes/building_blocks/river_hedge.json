@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_river_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": "upgrade_aquatic:river_leaves"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwabnormals:river_hedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_river_leaves"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwabnormals:river_hedge"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_chair",
+  "key": {
+    "A": {
+      "item": "autumnity:maple_log"
+    },
+    "B": {
+      "item": "autumnity:maple_slab"
+    },
+    "C": {
+      "item": "autumnity:maple_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwabnormals:maple_modern_chair"
+  }
+}

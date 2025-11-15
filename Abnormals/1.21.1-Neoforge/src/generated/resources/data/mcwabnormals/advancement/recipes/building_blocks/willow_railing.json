@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwabnormals:willow_railing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_willow_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "environmental:willow_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_willow_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwabnormals:willow_railing"
+    ]
+  }
+}

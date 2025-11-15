@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "barn_trapdoors",
+  "key": {
+    "A": {
+      "item": "atmospheric:kousa_planks"
+    },
+    "B": {
+      "item": "mcwabnormals:kousa_glass_trapdoor"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwabnormals:kousa_barn_trapdoor"
+  }
+}

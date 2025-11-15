@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_kitchen_cabinet",
+  "key": {
+    "A": {
+      "item": "environmental:plum_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AA",
+    "BB",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwabnormals:plum_double_kitchen_cabinet"
+  }
+}

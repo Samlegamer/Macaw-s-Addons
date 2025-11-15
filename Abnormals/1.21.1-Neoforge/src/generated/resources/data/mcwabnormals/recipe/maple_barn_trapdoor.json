@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "barn_trapdoors",
+  "key": {
+    "A": {
+      "item": "autumnity:maple_planks"
+    },
+    "B": {
+      "item": "mcwabnormals:maple_glass_trapdoor"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwabnormals:maple_barn_trapdoor"
+  }
+}

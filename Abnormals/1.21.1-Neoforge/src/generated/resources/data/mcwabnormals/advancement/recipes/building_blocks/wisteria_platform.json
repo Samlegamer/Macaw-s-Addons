@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "environmental"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwabnormals:wisteria_platform"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wisteria_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "environmental:wisteria_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_wisteria_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwabnormals:wisteria_platform"
+    ]
+  }
+}
