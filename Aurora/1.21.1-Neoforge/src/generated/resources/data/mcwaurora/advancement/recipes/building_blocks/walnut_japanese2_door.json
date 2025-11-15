@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwaurora:walnut_japanese2_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_walnut_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nomansland:walnut_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_walnut_slab"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwaurora:walnut_japanese2_door"
+    ]
+  }
+}

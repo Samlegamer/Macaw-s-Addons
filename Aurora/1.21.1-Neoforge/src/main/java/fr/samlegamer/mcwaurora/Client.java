@@ -6,7 +6,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 
-@EventBusSubscriber(modid = McwAurora.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(modid = McwAurora.MODID, value = Dist.CLIENT)
 public class Client
 {
 	private static final ColorRegistry colors = new ColorRegistry(McwAurora.MODID, McwAurora.WOOD_NOMANSLAND);

@@ -1,22 +1,36 @@
 package fr.samlegamer.mcwaurora;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.furnitures.AddFurnituresStorage;
+import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
+import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
+import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.util.McwMod;
 import fr.samlegamer.addonslib.windows.Windows;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.CompletableFuture;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -34,7 +48,7 @@ import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 
 @Mod(McwAurora.MODID)
-public class McwAurora
+public class McwAurora extends McwMod
 {
 	public static final String MODID = "mcwaurora";
     private static final Logger LOGGER = LogManager.getLogger();
@@ -52,7 +66,8 @@ public class McwAurora
     
     public McwAurora(IEventBus modBus)
     {
-    	LOGGER.info("Macaw's Aurora Mod Loading...");
+        super(modBus);
+        LOGGER.info("Macaw's Aurora Mod Loading...");
     	Registration.init(modBus, block, item, ct);
 
     	Bridges.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
@@ -83,41 +98,74 @@ public class McwAurora
 		Windows.setRegistrationWood(WOOD_NOMANSLAND, block, item);
 
 		modBus.addListener(this::addToFurnitureStorage);
-		modBus.addListener(this::addToTab);
+		modBus.addListener(this::clientSetup);
+        modBus.addListener(this::commonSetup);
+        modBus.addListener(this::dataSetup);
+        modBus.addListener(this::tabSetup);
     	LOGGER.info("Macaw's Aurora Mod Finish !");
     }
 
-	public void addToFurnitureStorage(BlockEntityTypeAddBlocksEvent event)
+    @Override
+    public void clientSetup(FMLClientSetupEvent event) {
+        APIRenderTypes.initAllWood(event, MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, WOOD_NOMANSLAND, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllLeave(event, MODID, LEAVE_NOMANSLAND);
+    }
+
+    @Override
+    public void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            McwLootTables.addBlockAllWood(MODID, WOOD_ENHANCED_MUSH);
+            McwLootTables.addBlockAllWood(MODID, WOOD_NOMANSLAND);
+            McwLootTables.addBlockHedges(MODID, LEAVE_NOMANSLAND);
+        });
+    }
+
+    @Override
+    public void dataSetup(GatherDataEvent gatherDataEvent) {
+        DataGenerator generator = gatherDataEvent.getGenerator();
+        PackOutput output = generator.getPackOutput();
+        CompletableFuture<HolderLookup.Provider> registries = gatherDataEvent.getLookupProvider();
+        ExistingFileHelper existingFileHelper = gatherDataEvent.getExistingFileHelper();
+
+        if(gatherDataEvent.includeServer()) {
+            McwBlockTags mcwBlockTags = new McwBlockTags(output, registries, MODID, existingFileHelper) {
+                @Override
+                protected void addTags(HolderLookup.Provider provider) {
+                    addAllMcwTags(MODID, WOOD_ENHANCED_MUSH);
+                    addAllMcwTags(MODID, WOOD_NOMANSLAND, LEAVE_NOMANSLAND);
+                }
+            };
+
+            generator.addProvider(true, new Recipes(output, registries));
+            generator.addProvider(true, mcwBlockTags);
+            generator.addProvider(true, new McwItemTags(output, registries, mcwBlockTags.contentsGetter(), MODID, existingFileHelper) {
+                @Override
+                protected void addTags(HolderLookup.Provider provider) {
+                    addAllMcwTags(MODID, WOOD_ENHANCED_MUSH);
+                    addAllMcwTags(MODID, WOOD_NOMANSLAND, LEAVE_NOMANSLAND);
+                }
+            });
+        }
+    }
+
+    @Override
+    public void tabSetup(BuildCreativeModeTabContentsEvent event) {
+        ModList modList = ModList.get();
+        if (modList.isLoaded("enhanced_mushrooms")) {
+            APICreativeTab.initAllWood(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get(), Registration.getAllModTypeWood());
+        }
+
+        if (modList.isLoaded("nomansland")) {
+            APICreativeTab.initAllWood(event, MODID, WOOD_NOMANSLAND, MCWAURORA_TAB.get(), Registration.getAllModTypeWood());
+            APICreativeTab.initAllLeave(event, MODID, LEAVE_NOMANSLAND, MCWAURORA_TAB.get());
+        }
+    }
+
+    public void addToFurnitureStorage(BlockEntityTypeAddBlocksEvent event)
 	{
 		AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD_ENHANCED_MUSH);
 		AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD_NOMANSLAND);
-	}
-    
-    private void addToTab(BuildCreativeModeTabContentsEvent event) {
-		if (ModList.get().isLoaded("enhanced_mushrooms")) {
-			Bridges.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-			Roofs.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-			Fences.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-			Furnitures.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-			Stairs.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-			Paths.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-			Trapdoors.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-			Doors.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-			Windows.addToTab(event, MODID, WOOD_ENHANCED_MUSH, MCWAURORA_TAB.get());
-		}
-
-		if (ModList.get().isLoaded("nomansland")) {
-			Bridges.addToTab(event, MODID, WOOD_NOMANSLAND, MCWAURORA_TAB.get());
-			Roofs.addToTab(event, MODID, WOOD_NOMANSLAND, MCWAURORA_TAB.get());
-			Fences.addToTab(event, MODID, WOOD_NOMANSLAND, MCWAURORA_TAB.get());
-			Fences.addToTabHedge(event, MODID, LEAVE_NOMANSLAND, MCWAURORA_TAB.get());
-			Furnitures.addToTab(event, MODID, WOOD_NOMANSLAND, MCWAURORA_TAB.get());
-			Stairs.addToTab(event, MODID, WOOD_NOMANSLAND, MCWAURORA_TAB.get());
-			Paths.addToTab(event, MODID, WOOD_NOMANSLAND, MCWAURORA_TAB.get());
-			Trapdoors.addToTab(event, MODID, WOOD_NOMANSLAND, MCWAURORA_TAB.get());
-			Doors.addToTab(event, MODID, WOOD_NOMANSLAND, MCWAURORA_TAB.get());
-			Windows.addToTab(event, MODID, WOOD_NOMANSLAND, MCWAURORA_TAB.get());
-		}
 	}
     
     private static ItemStack getIcon()

@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nomansland"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwaurora:walnut_blossom_trapdoor"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_walnut_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nomansland:walnut_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_walnut_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwaurora:walnut_blossom_trapdoor"
+    ]
+  }
+}
