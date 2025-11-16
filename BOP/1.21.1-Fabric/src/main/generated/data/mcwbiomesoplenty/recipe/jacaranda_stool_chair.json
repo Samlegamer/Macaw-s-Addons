@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stool_chair",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:jacaranda_log"
+    },
+    "B": {
+      "item": "biomesoplenty:jacaranda_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbiomesoplenty:jacaranda_stool_chair"
+  }
+}

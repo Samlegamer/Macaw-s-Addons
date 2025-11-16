@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbyg:windswept_sandstone_attic_roof_stonecutter"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_windswept_sandstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:windswept_sandstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_windswept_sandstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbyg:windswept_sandstone_attic_roof_stonecutter"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "large_drawer",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:maple_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "AAA",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbiomesoplenty:maple_large_drawer"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwstairs_platform",
+  "key": {
+    "A": {
+      "item": "terrestria:redwood_log"
+    },
+    "B": {
+      "item": "terrestria:redwood_slab"
+    }
+  },
+  "pattern": [
+    " BB",
+    " AA",
+    "   "
+  ],
+  "result": {
+    "count": 12,
+    "id": "mcwterraformersmc:redwood_platform"
+  }
+}

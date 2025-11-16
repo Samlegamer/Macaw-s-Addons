@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "kitchen_cabinet",
+  "key": {
+    "A": {
+      "item": "terrestria:hemlock_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AA",
+    "AB",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwterraformersmc:hemlock_kitchen_cabinet"
+  }
+}

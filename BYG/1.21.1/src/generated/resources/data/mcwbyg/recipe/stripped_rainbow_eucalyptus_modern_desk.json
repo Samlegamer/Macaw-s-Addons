@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_desk",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:stripped_rainbow_eucalyptus_log"
+          },
+          "B": {
+            "item": "biomeswevegone:rainbow_eucalyptus_fence"
+          },
+          "C": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BCB"
+        ],
+        "result": {
+          "count": 2,
+          "id": "mcwbyg:stripped_rainbow_eucalyptus_modern_desk"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_piers",
+  "key": {
+    "A": {
+      "item": "terrestria:sakura_log"
+    },
+    "B": {
+      "item": "terrestria:sakura_fence"
+    }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwterraformersmc:sakura_bridge_pier"
+  }
+}

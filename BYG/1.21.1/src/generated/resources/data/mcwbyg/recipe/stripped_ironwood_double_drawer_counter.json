@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "double_drawer_counter",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:ironwood_slab"
+          },
+          "B": {
+            "item": "mcwbyg:stripped_ironwood_double_drawer"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:stripped_ironwood_double_drawer_counter"
+        }
+      }
+    }
+  ]
+}

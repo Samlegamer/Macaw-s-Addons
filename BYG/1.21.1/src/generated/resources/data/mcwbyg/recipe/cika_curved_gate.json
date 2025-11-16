@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "curved_gate",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:cika_planks"
+          },
+          "B": {
+            "item": "biomeswevegone:cika_log"
+          }
+        },
+        "pattern": [
+          "B A",
+          "BAA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbyg:cika_curved_gate"
+        }
+      }
+    }
+  ]
+}

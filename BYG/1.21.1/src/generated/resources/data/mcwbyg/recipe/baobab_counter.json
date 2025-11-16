@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "counter",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:baobab_slab"
+          },
+          "B": {
+            "item": "biomeswevegone:baobab_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:baobab_counter"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwwindows"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "biomesoplenty:maple_slab"
+          },
+          {
+            "item": "biomesoplenty:maple_slab"
+          },
+          {
+            "item": "biomesoplenty:maple_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwbiomesoplenty:maple_louvered_shutter"
+        }
+      }
+    }
+  ]
+}

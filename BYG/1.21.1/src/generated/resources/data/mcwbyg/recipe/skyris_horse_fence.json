@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "horse",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:skyris_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "BAB"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwbyg:skyris_horse_fence"
+        }
+      }
+    }
+  ]
+}

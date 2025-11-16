@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "log_stairs",
+  "key": {
+    "A": {
+      "item": "mcwbyg:windswept_sandstone_bridge"
+    }
+  },
+  "pattern": [
+    "  A",
+    " AA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwbyg:windswept_sandstone_bridge_stair"
+  }
+}

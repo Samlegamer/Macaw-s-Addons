@@ -1,0 +1,49 @@
+{
+  "advancements": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_maple_log": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomeswevegone:maple_log"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbyg:maple_bookshelf"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_maple_log"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbyg:maple_bookshelf"
+        ]
+      }
+    }
+  ]
+}

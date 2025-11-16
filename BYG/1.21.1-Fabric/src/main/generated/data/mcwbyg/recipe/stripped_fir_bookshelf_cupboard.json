@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bookshelf_cupboard",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:stripped_fir_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    },
+    "C": {
+      "item": "minecraft:book"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BAC",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:stripped_fir_bookshelf_cupboard"
+  }
+}

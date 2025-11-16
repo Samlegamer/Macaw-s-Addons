@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwstairs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "terrace_stairs",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:stripped_aspen_log"
+          },
+          "B": {
+            "item": "biomeswevegone:aspen_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "result": {
+          "count": 5,
+          "id": "mcwbyg:aspen_terrace_stairs"
+        }
+      }
+    }
+  ]
+}

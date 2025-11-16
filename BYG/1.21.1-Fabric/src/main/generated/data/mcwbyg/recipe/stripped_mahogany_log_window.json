@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "windows",
+  "key": {
+    "A": {
+      "item": "mcwwindows:window_base"
+    },
+    "B": {
+      "item": "biomeswevegone:stripped_mahogany_log"
+    }
+  },
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:stripped_mahogany_log_window"
+  }
+}

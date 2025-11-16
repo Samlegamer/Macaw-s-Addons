@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rainbow_eucalyptus_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:rainbow_eucalyptus_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbyg:rainbow_eucalyptus_glass_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rainbow_eucalyptus_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbyg:rainbow_eucalyptus_glass_door"
+    ]
+  }
+}

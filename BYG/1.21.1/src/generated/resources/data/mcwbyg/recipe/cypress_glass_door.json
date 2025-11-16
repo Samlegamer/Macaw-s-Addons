@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "glassed",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:cypress_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "pattern": [
+          "AB",
+          "BB",
+          "AB"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwbyg:cypress_glass_door"
+        }
+      }
+    }
+  ]
+}

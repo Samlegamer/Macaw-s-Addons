@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "drawer_counter",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:witch_hazel_slab"
+    },
+    "B": {
+      "item": "mcwbyg:stripped_witch_hazel_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:stripped_witch_hazel_drawer_counter"
+  }
+}

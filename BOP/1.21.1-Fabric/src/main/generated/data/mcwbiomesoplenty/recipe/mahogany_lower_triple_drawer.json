@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "lower_triple_drawer",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:mahogany_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BAB",
+    "ABA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbiomesoplenty:mahogany_lower_triple_drawer"
+  }
+}

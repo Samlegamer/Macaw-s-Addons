@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "terrestria:hemlock_slab"
+    },
+    {
+      "item": "terrestria:hemlock_slab"
+    },
+    {
+      "item": "terrestria:hemlock_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwterraformersmc:hemlock_louvered_shutter"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_drawer",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:stripped_redwood_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbiomesoplenty:stripped_redwood_double_drawer"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "planks_steep_roof",
+  "key": {
+    "A": {
+      "item": "cinderscapes:scorched_planks"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " A",
+    "AA",
+    "AB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwterraformersmc:scorched_planks_steep_roof"
+  }
+}

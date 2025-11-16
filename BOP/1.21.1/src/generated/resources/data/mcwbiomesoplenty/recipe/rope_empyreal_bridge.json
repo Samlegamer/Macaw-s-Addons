@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwbridges"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "rope_bridges",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:empyreal_slab"
+          },
+          "B": {
+            "item": "minecraft:string"
+          }
+        },
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbiomesoplenty:rope_empyreal_bridge"
+        }
+      }
+    }
+  ]
+}

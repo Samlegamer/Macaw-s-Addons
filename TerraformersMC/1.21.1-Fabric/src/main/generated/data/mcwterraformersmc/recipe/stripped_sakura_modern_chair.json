@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_chair",
+  "key": {
+    "A": {
+      "item": "terrestria:stripped_sakura_log"
+    },
+    "B": {
+      "item": "terrestria:sakura_slab"
+    },
+    "C": {
+      "item": "terrestria:sakura_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwterraformersmc:stripped_sakura_modern_chair"
+  }
+}

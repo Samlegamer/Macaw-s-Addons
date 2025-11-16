@@ -1,0 +1,49 @@
+{
+  "advancements": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbyg:white_mangrove_bulk_stairs"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_white_mangrove_log": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomeswevegone:white_mangrove_log"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwstairs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_white_mangrove_log"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbyg:white_mangrove_bulk_stairs"
+        ]
+      }
+    }
+  ]
+}

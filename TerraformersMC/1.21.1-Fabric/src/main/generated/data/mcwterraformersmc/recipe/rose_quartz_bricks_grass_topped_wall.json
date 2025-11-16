@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "grass_topped",
+  "key": {
+    "A": {
+      "item": "cinderscapes:rose_quartz_block"
+    },
+    "B": {
+      "item": "cinderscapes:rose_quartz_bricks"
+    },
+    "C": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwterraformersmc:rose_quartz_bricks_grass_topped_wall"
+  }
+}

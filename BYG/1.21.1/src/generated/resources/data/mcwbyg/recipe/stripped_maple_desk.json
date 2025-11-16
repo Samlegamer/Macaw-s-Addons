@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "desk",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:stripped_maple_log"
+          },
+          "B": {
+            "item": "biomeswevegone:maple_fence"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "result": {
+          "count": 2,
+          "id": "mcwbyg:stripped_maple_desk"
+        }
+      }
+    }
+  ]
+}

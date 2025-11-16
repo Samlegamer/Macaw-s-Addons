@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "rail_bridges",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:fir_slab"
+    },
+    "B": {
+      "item": "biomesoplenty:fir_fence"
+    }
+  },
+  "pattern": [
+    "B B",
+    "BAB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbiomesoplenty:fir_rail_bridge"
+  }
+}

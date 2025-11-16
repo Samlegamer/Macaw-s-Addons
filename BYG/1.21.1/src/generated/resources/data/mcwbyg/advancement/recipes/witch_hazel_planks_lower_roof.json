@@ -1,0 +1,49 @@
+{
+  "advancements": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbyg:witch_hazel_planks_lower_roof"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_witch_hazel_planks": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomeswevegone:witch_hazel_planks"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwroofs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_witch_hazel_planks"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbyg:witch_hazel_planks_lower_roof"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_piers",
+  "key": {
+    "A": {
+      "item": "cinderscapes:smoky_quartz_bricks"
+    },
+    "B": {
+      "item": "cinderscapes:smoky_quartz_pillar"
+    }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwterraformersmc:smoky_quartz_bricks_bridge_pier"
+  }
+}

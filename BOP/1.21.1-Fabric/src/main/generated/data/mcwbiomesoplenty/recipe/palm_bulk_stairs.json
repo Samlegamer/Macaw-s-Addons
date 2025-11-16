@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bulk_stairs",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:stripped_palm_log"
+    },
+    "B": {
+      "item": "biomesoplenty:palm_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA ",
+    "BBA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwbiomesoplenty:palm_bulk_stairs"
+  }
+}

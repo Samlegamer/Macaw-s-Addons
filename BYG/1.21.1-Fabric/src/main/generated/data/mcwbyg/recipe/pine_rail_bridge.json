@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "rail_bridges",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:pine_slab"
+    },
+    "B": {
+      "item": "biomeswevegone:pine_fence"
+    }
+  },
+  "pattern": [
+    "B B",
+    "BAB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:pine_rail_bridge"
+  }
+}

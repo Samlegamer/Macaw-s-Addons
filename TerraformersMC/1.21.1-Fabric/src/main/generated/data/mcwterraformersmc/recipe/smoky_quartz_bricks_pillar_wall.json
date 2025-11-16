@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "pillarwall",
+  "key": {
+    "A": {
+      "item": "cinderscapes:smoky_quartz_block"
+    },
+    "B": {
+      "item": "cinderscapes:smoky_quartz_bricks"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 5,
+    "id": "mcwterraformersmc:smoky_quartz_bricks_pillar_wall"
+  }
+}

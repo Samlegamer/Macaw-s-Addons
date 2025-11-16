@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_drawer",
+  "key": {
+    "A": {
+      "item": "cinderscapes:stripped_umbral_stem"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwterraformersmc:stripped_umbral_double_drawer"
+  }
+}

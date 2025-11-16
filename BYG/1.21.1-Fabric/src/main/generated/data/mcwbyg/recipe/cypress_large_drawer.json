@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "large_drawer",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:cypress_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:cypress_large_drawer"
+  }
+}

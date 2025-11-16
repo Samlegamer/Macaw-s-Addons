@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "curved_gate",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:hellbark_planks"
+    },
+    "B": {
+      "item": "biomesoplenty:hellbark_log"
+    }
+  },
+  "pattern": [
+    "B A",
+    "BAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbiomesoplenty:hellbark_curved_gate"
+  }
+}

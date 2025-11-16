@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_chair",
+  "key": {
+    "A": {
+      "item": "cinderscapes:umbral_stem"
+    },
+    "B": {
+      "item": "cinderscapes:umbral_slab"
+    },
+    "C": {
+      "item": "cinderscapes:umbral_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwterraformersmc:umbral_modern_chair"
+  }
+}

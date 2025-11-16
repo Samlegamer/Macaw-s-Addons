@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "terrace_stairs",
+  "key": {
+    "A": {
+      "item": "terrestria:stripped_rubber_log"
+    },
+    "B": {
+      "item": "terrestria:rubber_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA ",
+    " BA"
+  ],
+  "result": {
+    "count": 5,
+    "id": "mcwterraformersmc:rubber_terrace_stairs"
+  }
+}

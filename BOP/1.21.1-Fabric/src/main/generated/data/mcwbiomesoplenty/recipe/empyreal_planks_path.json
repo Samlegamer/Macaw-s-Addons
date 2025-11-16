@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks_paths",
+  "ingredients": [
+    {
+      "item": "biomesoplenty:empyreal_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbiomesoplenty:empyreal_planks_path"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chair",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:stripped_florus_stem"
+          },
+          "B": {
+            "item": "biomeswevegone:florus_slab"
+          },
+          "C": {
+            "item": "biomeswevegone:florus_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:stripped_florus_modern_chair"
+        }
+      }
+    }
+  ]
+}

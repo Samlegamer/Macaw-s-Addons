@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwterraformersmc:stripped_umbral_log_four_window"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_umbral_stem": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cinderscapes:umbral_stem"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_umbral_stem"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwterraformersmc:stripped_umbral_log_four_window"
+    ]
+  }
+}

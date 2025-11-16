@@ -1,0 +1,49 @@
+{
+  "advancements": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_redwood_planks": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomesoplenty:redwood_planks"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbiomesoplenty:redwood_stockade_fence"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_redwood_planks"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbiomesoplenty:redwood_stockade_fence"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stripped_skyris_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:stripped_skyris_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbyg:stripped_skyris_bookshelf_cupboard"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stripped_skyris_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbyg:stripped_skyris_bookshelf_cupboard"
+    ]
+  }
+}

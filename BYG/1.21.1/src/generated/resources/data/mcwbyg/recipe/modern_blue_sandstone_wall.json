@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:smooth_blue_sandstone"
+          },
+          "B": {
+            "item": "biomeswevegone:blue_sandstone"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "id": "mcwbyg:modern_blue_sandstone_wall"
+        }
+      }
+    }
+  ]
+}

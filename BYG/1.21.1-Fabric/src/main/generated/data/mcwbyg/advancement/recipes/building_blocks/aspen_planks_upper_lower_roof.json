@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_aspen_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:aspen_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbyg:aspen_planks_upper_lower_roof"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_aspen_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbyg:aspen_planks_upper_lower_roof"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "curved_gate",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:rainbow_eucalyptus_planks"
+    },
+    "B": {
+      "item": "biomeswevegone:rainbow_eucalyptus_log"
+    }
+  },
+  "pattern": [
+    "B A",
+    "BAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:rainbow_eucalyptus_curved_gate"
+  }
+}

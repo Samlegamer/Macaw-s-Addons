@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "windows_four",
+  "key": {
+    "A": {
+      "item": "mcwwindows:window_centre_bar_base"
+    },
+    "B": {
+      "item": "biomeswevegone:stripped_blue_enchanted_log"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 8,
+    "id": "mcwbyg:stripped_blue_enchanted_log_four_window"
+  }
+}

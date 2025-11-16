@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "hedge",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:red_oak_leaves"
+          }
+        },
+        "pattern": [
+          "AA",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbyg:red_oak_hedge"
+        }
+      }
+    }
+  ]
+}

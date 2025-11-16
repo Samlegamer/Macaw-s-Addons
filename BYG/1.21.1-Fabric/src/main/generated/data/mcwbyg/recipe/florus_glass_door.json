@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "glassed",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:florus_planks"
+    },
+    "B": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "pattern": [
+    "AB",
+    "BB",
+    "AB"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:florus_glass_door"
+  }
+}

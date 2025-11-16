@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stool_chair",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:witch_hazel_log"
+          },
+          "B": {
+            "item": "biomeswevegone:witch_hazel_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:witch_hazel_stool_chair"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "biomeswevegone:pink_sandstone"
+        },
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:railing_pink_sandstone_wall"
+        }
+      }
+    }
+  ]
+}

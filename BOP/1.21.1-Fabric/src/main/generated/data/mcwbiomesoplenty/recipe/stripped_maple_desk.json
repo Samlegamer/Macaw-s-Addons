@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "desk",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:stripped_maple_log"
+    },
+    "B": {
+      "item": "biomesoplenty:maple_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwbiomesoplenty:stripped_maple_desk"
+  }
+}

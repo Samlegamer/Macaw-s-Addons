@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:smooth_windswept_sandstone"
+    },
+    "B": {
+      "item": "biomeswevegone:windswept_sandstone"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwbyg:modern_windswept_sandstone_wall"
+  }
+}

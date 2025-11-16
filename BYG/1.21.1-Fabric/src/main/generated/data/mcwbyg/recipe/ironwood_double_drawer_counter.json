@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_drawer_counter",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:ironwood_slab"
+    },
+    "B": {
+      "item": "mcwbyg:ironwood_double_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:ironwood_double_drawer_counter"
+  }
+}

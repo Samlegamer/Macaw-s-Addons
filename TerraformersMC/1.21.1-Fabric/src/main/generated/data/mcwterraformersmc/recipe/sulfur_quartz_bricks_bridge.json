@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "log_bridges",
+  "key": {
+    "A": {
+      "item": "cinderscapes:sulfur_quartz_slab"
+    },
+    "B": {
+      "item": "cinderscapes:sulfur_quartz_pillar"
+    }
+  },
+  "pattern": [
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwterraformersmc:sulfur_quartz_bricks_bridge"
+  }
+}

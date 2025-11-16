@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "traverse"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks_paths",
+  "ingredients": [
+    {
+      "item": "traverse:fir_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwterraformersmc:fir_planks_path"
+  }
+}

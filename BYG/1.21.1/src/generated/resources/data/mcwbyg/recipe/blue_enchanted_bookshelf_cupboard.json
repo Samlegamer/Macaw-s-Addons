@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bookshelf_cupboard",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:blue_enchanted_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          },
+          "C": {
+            "item": "minecraft:book"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BAC",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbyg:blue_enchanted_bookshelf_cupboard"
+        }
+      }
+    }
+  ]
+}

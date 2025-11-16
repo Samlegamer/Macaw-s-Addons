@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "grass_topped",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:smooth_windswept_sandstone"
+          },
+          "B": {
+            "item": "biomeswevegone:windswept_sandstone"
+          },
+          "C": {
+            "item": "minecraft:dirt"
+          }
+        },
+        "pattern": [
+          "BCB",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "id": "mcwbyg:windswept_sandstone_grass_topped_wall"
+        }
+      }
+    }
+  ]
+}

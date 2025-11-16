@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "barn_trapdoors",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:sakura_planks"
+    },
+    "B": {
+      "item": "mcwbyg:sakura_glass_trapdoor"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:sakura_barn_trapdoor"
+  }
+}

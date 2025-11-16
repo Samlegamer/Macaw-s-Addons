@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "glass_kitchen_cabinet",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:palm_log"
+    },
+    "B": {
+      "item": "minecraft:glass"
+    },
+    "C": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AA",
+    "BC",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbyg:palm_glass_kitchen_cabinet"
+  }
+}

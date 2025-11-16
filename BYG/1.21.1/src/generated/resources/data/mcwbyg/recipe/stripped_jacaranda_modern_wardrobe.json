@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_wardrobe",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:stripped_jacaranda_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "AAB",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbyg:stripped_jacaranda_modern_wardrobe"
+        }
+      }
+    }
+  ]
+}

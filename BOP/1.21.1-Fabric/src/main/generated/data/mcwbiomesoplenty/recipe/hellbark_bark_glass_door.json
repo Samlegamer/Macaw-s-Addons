@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bark",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:hellbark_log"
+    },
+    "B": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "AB",
+    "BB",
+    "AB"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbiomesoplenty:hellbark_bark_glass_door"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "triple_drawer",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:stripped_blue_enchanted_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ABA",
+          "BAB"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbyg:stripped_blue_enchanted_triple_drawer"
+        }
+      }
+    }
+  ]
+}

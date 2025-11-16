@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bulk_stairs",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:stripped_zelkova_log"
+    },
+    "B": {
+      "item": "biomeswevegone:zelkova_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA ",
+    "BBA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwbyg:zelkova_bulk_stairs"
+  }
+}

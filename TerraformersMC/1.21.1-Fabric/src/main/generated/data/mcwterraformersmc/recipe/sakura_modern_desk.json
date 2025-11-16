@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_desk",
+  "key": {
+    "A": {
+      "item": "terrestria:sakura_log"
+    },
+    "B": {
+      "item": "terrestria:sakura_fence"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BCB"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwterraformersmc:sakura_modern_desk"
+  }
+}

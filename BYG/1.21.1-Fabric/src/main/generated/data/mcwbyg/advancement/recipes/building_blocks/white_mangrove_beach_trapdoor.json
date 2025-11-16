@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbyg:white_mangrove_beach_trapdoor"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_mangrove_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:white_mangrove_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_white_mangrove_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbyg:white_mangrove_beach_trapdoor"
+    ]
+  }
+}

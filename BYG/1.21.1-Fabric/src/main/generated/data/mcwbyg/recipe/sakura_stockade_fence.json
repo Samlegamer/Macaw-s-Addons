@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stockade",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:sakura_log"
+    },
+    "B": {
+      "item": "biomeswevegone:sakura_planks"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BAB"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbyg:sakura_stockade_fence"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "advancements": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbiomesoplenty:umbran_glass_kitchen_cabinet"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_umbran_log": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomesoplenty:umbran_log"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_umbran_log"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbiomesoplenty:umbran_glass_kitchen_cabinet"
+        ]
+      }
+    }
+  ]
+}

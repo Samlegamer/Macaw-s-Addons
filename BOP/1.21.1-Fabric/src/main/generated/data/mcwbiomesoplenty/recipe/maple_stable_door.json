@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stable",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:maple_planks"
+    },
+    "B": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "pattern": [
+    "BB",
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbiomesoplenty:maple_stable_door"
+  }
+}

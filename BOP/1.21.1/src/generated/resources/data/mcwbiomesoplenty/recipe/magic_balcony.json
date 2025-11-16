@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwstairs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "mcwstairs_balcony",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "biomesoplenty:magic_fence"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "B B",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "id": "mcwbiomesoplenty:magic_balcony"
+        }
+      }
+    }
+  ]
+}

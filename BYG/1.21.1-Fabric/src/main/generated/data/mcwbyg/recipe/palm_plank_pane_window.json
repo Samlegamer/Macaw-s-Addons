@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "windows_pane",
+  "key": {
+    "A": {
+      "item": "mcwwindows:window_base"
+    },
+    "B": {
+      "item": "biomeswevegone:palm_planks"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 8,
+    "id": "mcwbyg:palm_plank_pane_window"
+  }
+}

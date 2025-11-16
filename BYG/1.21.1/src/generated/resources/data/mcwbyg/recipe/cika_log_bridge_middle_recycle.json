@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwbridges"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "recyclable_bridges",
+        "ingredients": [
+          {
+            "item": "mcwbyg:cika_log_bridge_stair"
+          }
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:cika_log_bridge_middle"
+        }
+      }
+    }
+  ]
+}

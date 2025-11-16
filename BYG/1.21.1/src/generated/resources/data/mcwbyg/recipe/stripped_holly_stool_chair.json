@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stool_chair",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:stripped_holly_log"
+          },
+          "B": {
+            "item": "biomeswevegone:holly_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:stripped_holly_stool_chair"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stockade",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:green_enchanted_log"
+          },
+          "B": {
+            "item": "biomeswevegone:green_enchanted_planks"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "BAB"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwbyg:green_enchanted_stockade_fence"
+        }
+      }
+    }
+  ]
+}

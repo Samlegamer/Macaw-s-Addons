@@ -1,0 +1,49 @@
+{
+  "advancements": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_hellbark_slab": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomesoplenty:hellbark_slab"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbiomesoplenty:hellbark_japanese2_door"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_hellbark_slab"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbiomesoplenty:hellbark_japanese2_door"
+        ]
+      }
+    }
+  ]
+}

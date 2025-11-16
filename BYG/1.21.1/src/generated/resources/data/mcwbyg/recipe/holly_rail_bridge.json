@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwbridges"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "rail_bridges",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:holly_slab"
+          },
+          "B": {
+            "item": "biomeswevegone:holly_fence"
+          }
+        },
+        "pattern": [
+          "B B",
+          "BAB"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbyg:holly_rail_bridge"
+        }
+      }
+    }
+  ]
+}

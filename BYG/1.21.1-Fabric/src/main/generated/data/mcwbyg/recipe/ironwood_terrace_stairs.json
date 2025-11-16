@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "terrace_stairs",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:stripped_ironwood_log"
+    },
+    "B": {
+      "item": "biomeswevegone:ironwood_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA ",
+    " BA"
+  ],
+  "result": {
+    "count": 5,
+    "id": "mcwbyg:ironwood_terrace_stairs"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "kitchen_cabinet",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:jacaranda_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AA",
+    "AB",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbiomesoplenty:jacaranda_kitchen_cabinet"
+  }
+}

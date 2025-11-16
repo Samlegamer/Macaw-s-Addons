@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "mcwdoors:spruce",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:ebony_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_spruce"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:ebony_cottage_door"
+        }
+      }
+    }
+  ]
+}
