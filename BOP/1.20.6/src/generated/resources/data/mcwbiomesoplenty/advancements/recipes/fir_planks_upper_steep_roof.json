@@ -1,0 +1,49 @@
+{
+  "advancements": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_fir_planks": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomesoplenty:fir_planks"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbiomesoplenty:fir_planks_upper_steep_roof"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwroofs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_fir_planks"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbiomesoplenty:fir_planks_upper_steep_roof"
+        ]
+      }
+    }
+  ]
+}

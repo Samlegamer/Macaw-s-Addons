@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "striped_chair",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:stripped_willow_log"
+          },
+          "B": {
+            "item": "biomesoplenty:willow_slab"
+          },
+          "C": {
+            "item": "biomesoplenty:willow_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbiomesoplenty:stripped_willow_striped_chair"
+        }
+      }
+    }
+  ]
+}

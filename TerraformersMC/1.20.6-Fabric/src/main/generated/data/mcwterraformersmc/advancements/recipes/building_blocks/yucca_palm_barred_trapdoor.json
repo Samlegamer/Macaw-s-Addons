@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwterraformersmc:yucca_palm_barred_trapdoor"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yucca_palm_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "terrestria:yucca_palm_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_yucca_palm_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwterraformersmc:yucca_palm_barred_trapdoor"
+    ]
+  }
+}

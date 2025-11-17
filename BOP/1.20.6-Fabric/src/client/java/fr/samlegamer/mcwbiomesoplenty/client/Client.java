@@ -2,7 +2,8 @@ package fr.samlegamer.mcwbiomesoplenty.client;
 
 import java.util.Arrays;
 import java.util.List;
-import fr.samlegamer.addonslib.client.APIRenderer;
+import fr.samlegamer.addonslib.Registration;
+import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.client.ColorRegistry;
 import fr.samlegamer.mcwbiomesoplenty.McwBOP;
 import net.fabricmc.api.ClientModInitializer;
@@ -20,15 +21,7 @@ public class Client implements ClientModInitializer
 	{
 		COLOR.colorsBlock();
 		COLOR.colorsItem();
-    	APIRenderer.Bridges.clientWood(McwBOP.MODID, McwBOP.WOOD);
-    	APIRenderer.Fences.clientWood(McwBOP.MODID, McwBOP.WOOD);
-    	APIRenderer.Fences.clientHedge(McwBOP.MODID, McwBOP.LEAVES);
-    	APIRenderer.Furnitures.clientWood(McwBOP.MODID, McwBOP.WOOD);
-    	APIRenderer.Roofs.clientWood(McwBOP.MODID, McwBOP.WOOD);
-    	APIRenderer.Trapdoors.clientWood(McwBOP.MODID, McwBOP.WOOD);
-    	APIRenderer.Paths.clientWood(McwBOP.MODID, McwBOP.WOOD);
-    	APIRenderer.Doors.clientWood(McwBOP.MODID, McwBOP.WOOD);
-    	APIRenderer.Windows.clientWood(McwBOP.MODID, McwBOP.WOOD);
-    	APIRenderer.Stairs.clientWood(McwBOP.MODID, McwBOP.WOOD);
+        APIRenderTypes.initAllWood(McwBOP.MODID, McwBOP.WOOD, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllLeave(McwBOP.MODID, McwBOP.LEAVES);
 	}
 }

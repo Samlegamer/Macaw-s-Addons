@@ -1,0 +1,49 @@
+{
+  "advancements": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_jacaranda_log": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomesoplenty:jacaranda_log"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbiomesoplenty:jacaranda_bookshelf_cupboard"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_jacaranda_log"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbiomesoplenty:jacaranda_bookshelf_cupboard"
+        ]
+      }
+    }
+  ]
+}

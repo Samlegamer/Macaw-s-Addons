@@ -1,0 +1,19 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cinderscapes:smoky_quartz_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "mcwterraformersmc:smoky_quartz_bricks_upper_steep_roof"
+  }
+}
