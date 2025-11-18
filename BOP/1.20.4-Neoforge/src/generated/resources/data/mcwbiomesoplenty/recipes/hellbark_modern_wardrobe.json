@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_wardrobe",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:hellbark_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AAB",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbiomesoplenty:hellbark_modern_wardrobe"
+  }
+}

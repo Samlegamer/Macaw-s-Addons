@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_empyreal_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:empyreal_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbiomesoplenty:empyreal_double_kitchen_cabinet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_empyreal_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbiomesoplenty:empyreal_double_kitchen_cabinet"
+    ]
+  }
+}

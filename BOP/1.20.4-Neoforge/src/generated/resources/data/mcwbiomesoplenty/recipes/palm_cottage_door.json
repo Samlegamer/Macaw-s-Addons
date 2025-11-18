@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwdoors:spruce",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:palm_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_spruce"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbiomesoplenty:palm_cottage_door"
+  }
+}

@@ -139,7 +139,7 @@ public class McwBOP extends McwMod
 
     @Override
     public void clientSetup(FMLClientSetupEvent event) {
-        APIRenderTypes.initAllWood(event, MODID, WOOD, ModType.ROOFS, ModType.FENCES, ModType.BRIDGES, ModType.FURNITURES, ModType.WINDOWS, ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.STAIRS);
+        APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
         APIRenderTypes.initAllLeave(event, MODID, LEAVES);
     }
 
@@ -177,7 +177,7 @@ public class McwBOP extends McwMod
 
     @Override
     public void tabSetup(BuildCreativeModeTabContentsEvent event) {
-        APICreativeTab.initAllWood(event, MODID, WOOD, MCWBOP_TAB.get(), ModType.ROOFS, ModType.FENCES, ModType.BRIDGES, ModType.FURNITURES, ModType.WINDOWS, ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.STAIRS);
+        APICreativeTab.initAllWood(event, MODID, WOOD, MCWBOP_TAB.get(), Registration.getAllModTypeWood());
         APICreativeTab.initAllLeave(event, MODID, LEAVES, MCWBOP_TAB.get());
     }
 

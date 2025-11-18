@@ -1,6 +1,15 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
+import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
+import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
+import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import fr.samlegamer.addonslib.mapping.MappingMissing;
+import fr.samlegamer.addonslib.tab.APICreativeTab;
+import fr.samlegamer.addonslib.util.McwMod;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -12,10 +21,16 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
@@ -31,17 +46,16 @@ import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
+import org.jetbrains.annotations.NotNull;
 
 @Mod(McwBOP.MODID)
-public class McwBOP
+public class McwBOP extends McwMod
 {
 	public static final String MODID = "mcwbiomesoplenty";
 	public static final Logger LOGGER = LogManager.getLogger();
 	public static final List<String> WOOD = List.of("dead", "fir", "hellbark", "jacaranda", "magic", "mahogany", "palm", "redwood", "umbran", "willow", "empyreal", "maple", "pine");
 	public static final List<String> LEAVES = List.of("dead", "fir", "hellbark", "jacaranda", "magic", "mahogany", "palm", "redwood", "umbran", "willow", 
-	"empyreal",
-	"pine",
-	"orange_maple", "red_maple", "yellow_maple", "cypress", "snowblossom", "flowering_oak", "rainbow_birch", "origin");
+	"empyreal", "pine", "orange_maple", "red_maple", "yellow_maple", "cypress", "snowblossom", "flowering_oak", "rainbow_birch", "origin");
     protected static final DeferredRegister.Blocks block = Registration.blocks(MODID);
 	protected static final DeferredRegister.Items item = DeferredRegister.createItems(MODID); //CHANGE THIS IN THE NEXT ADDONSLIB UPDATE
 	protected static final DeferredRegister<CreativeModeTab> ct = Registration.creativeModeTab(McwBOP.MODID);
@@ -56,7 +70,8 @@ public class McwBOP
 
 	public McwBOP(IEventBus bus)
     {
-    	LOGGER.info("Macaw's Biomes O' Plenty Loading...");
+        super(bus);
+        LOGGER.info("Macaw's Biomes O' Plenty Loading...");
      	Registration.init(bus, block, item, ct);
 
 		BlockBehaviour.Properties prop_crimson = BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_STEM).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.NETHER_WOOD);
@@ -116,10 +131,57 @@ public class McwBOP
 		roofs.missingnoWoodItem(McwBOP.item);
 		McwBOP.LOGGER.info("Finish convert items");
 
-    	bus.addListener(this::addTotab);
+        bus.addListener(this::clientSetup);
+        bus.addListener(this::commonSetup);
+        bus.addListener(this::dataSetup);
+        bus.addListener(this::tabSetup);
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
-    
+
+    @Override
+    public void clientSetup(FMLClientSetupEvent event) {
+        APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllLeave(event, MODID, LEAVES);
+    }
+
+    @Override
+    public void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            McwLootTables.addBlockAllWood(MODID, WOOD);
+            McwLootTables.addBlockHedges(MODID, LEAVES);
+        });
+    }
+
+    @Override
+    public void dataSetup(GatherDataEvent gatherDataEvent) {
+        DataGenerator generator = gatherDataEvent.getGenerator();
+        PackOutput output = generator.getPackOutput();
+        CompletableFuture<HolderLookup.Provider> registries = gatherDataEvent.getLookupProvider();
+        ExistingFileHelper existingFileHelper = gatherDataEvent.getExistingFileHelper();
+
+        McwBlockTags mcwBlockTags = new McwBlockTags(output, registries, MODID, existingFileHelper) {
+            @Override
+            protected void addTags(HolderLookup.@NotNull Provider provider) {
+                addAllMcwTags(MODID, WOOD, LEAVES);
+            }
+        };
+
+        generator.addProvider(true, new Recipes(output));
+        generator.addProvider(true, mcwBlockTags);
+        generator.addProvider(true, new McwItemTags(output, registries, mcwBlockTags.contentsGetter(), MODID, existingFileHelper) {
+            @Override
+            protected void addTags(HolderLookup.@NotNull Provider provider) {
+                addAllMcwTags(MODID, WOOD, LEAVES);
+            }
+        });
+    }
+
+    @Override
+    public void tabSetup(BuildCreativeModeTabContentsEvent event) {
+        APICreativeTab.initAllWood(event, MODID, WOOD, MCWBOP_TAB.get(), Registration.getAllModTypeWood());
+        APICreativeTab.initAllLeave(event, MODID, LEAVES, MCWBOP_TAB.get());
+    }
+
     private static Block getIcon()
     {
     	NewIconRandom.NewProperties woodProperties = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "redwood_roof"), Finder.findBlock(MODID, "redwood_picket_fence"), Finder.findBlock(MODID, "redwood_wardrobe"), 
@@ -136,22 +198,5 @@ public class McwBOP
     	    	.addType(BlockType.PATHS)
     	    	.addType(BlockType.STAIRS);
     	return woodProperties.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.STAIRS);
-    }
-    
-    private void addTotab(BuildCreativeModeTabContentsEvent event)
-    {
-    	if(MCWBOP_TAB != null)
-    	{
-        	Bridges.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Roofs.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Fences.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Fences.addToTabHedge(event, MODID, LEAVES, MCWBOP_TAB.get());
-        	Furnitures.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Trapdoors.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Paths.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Doors.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Windows.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-        	Stairs.addToTab(event, MODID, WOOD, MCWBOP_TAB.get());
-    	}
     }
 }

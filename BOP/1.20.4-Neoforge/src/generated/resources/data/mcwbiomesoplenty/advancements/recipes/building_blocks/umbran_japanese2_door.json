@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbiomesoplenty:umbran_japanese2_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_umbran_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:umbran_slab"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_umbran_slab"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbiomesoplenty:umbran_japanese2_door"
+    ]
+  }
+}

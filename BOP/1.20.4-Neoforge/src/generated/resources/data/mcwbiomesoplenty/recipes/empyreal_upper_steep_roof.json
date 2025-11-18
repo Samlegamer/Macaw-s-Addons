@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "upper_steep_roof",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:empyreal_log"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " A",
+    " A",
+    "AB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbiomesoplenty:empyreal_upper_steep_roof"
+  }
+}

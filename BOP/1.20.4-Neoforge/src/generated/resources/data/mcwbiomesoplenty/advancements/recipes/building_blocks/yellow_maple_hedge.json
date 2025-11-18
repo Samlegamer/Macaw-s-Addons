@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfences"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbiomesoplenty:yellow_maple_hedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yellow_maple_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:yellow_maple_leaves"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_yellow_maple_leaves"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbiomesoplenty:yellow_maple_hedge"
+    ]
+  }
+}
