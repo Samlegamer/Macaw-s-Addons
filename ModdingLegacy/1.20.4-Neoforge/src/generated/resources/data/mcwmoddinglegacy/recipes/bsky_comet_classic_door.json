@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwdoors:oak",
+  "key": {
+    "A": {
+      "item": "blue_skies:comet_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_oak"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwmoddinglegacy:bsky_comet_classic_door"
+  }
+}

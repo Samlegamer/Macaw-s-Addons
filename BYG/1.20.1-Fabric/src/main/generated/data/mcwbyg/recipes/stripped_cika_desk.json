@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "desk",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:stripped_cika_log"
+    },
+    "B": {
+      "item": "biomeswevegone:cika_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbyg:stripped_cika_desk"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "log_bridges",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:white_mangrove_slab"
+    },
+    "B": {
+      "item": "biomeswevegone:white_mangrove_fence"
+    }
+  },
+  "pattern": [
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbyg:white_mangrove_log_bridge_middle"
+  },
+  "show_notification": true
+}

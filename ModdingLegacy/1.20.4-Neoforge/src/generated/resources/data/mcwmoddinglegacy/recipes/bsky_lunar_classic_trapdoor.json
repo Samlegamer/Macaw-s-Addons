@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwtrpdoors:classic_trapdoors",
+  "key": {
+    "A": {
+      "item": "blue_skies:lunar_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_classic"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwmoddinglegacy:bsky_lunar_classic_trapdoor"
+  }
+}

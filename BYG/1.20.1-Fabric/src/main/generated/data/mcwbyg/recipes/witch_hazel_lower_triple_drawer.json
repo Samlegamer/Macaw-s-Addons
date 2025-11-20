@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "lower_triple_drawer",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:witch_hazel_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BAB",
+    "ABA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbyg:witch_hazel_lower_triple_drawer"
+  },
+  "show_notification": true
+}

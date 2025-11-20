@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "desk",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:dead_log"
+    },
+    "B": {
+      "item": "biomesoplenty:dead_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbiomesoplenty:dead_desk"
+  },
+  "show_notification": true
+}

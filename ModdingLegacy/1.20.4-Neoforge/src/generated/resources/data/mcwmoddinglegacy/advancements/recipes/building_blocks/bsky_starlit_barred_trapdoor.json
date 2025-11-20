@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_starlit_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:starlit_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwmoddinglegacy:bsky_starlit_barred_trapdoor"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_starlit_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwmoddinglegacy:bsky_starlit_barred_trapdoor"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "barred_trapdoors",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:dead_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_barred"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbiomesoplenty:dead_barred_trapdoor"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,17 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "terrestria:mossy_basalt_bricks"
+  },
+  "result": "mcwterraformersmc:railing_mossy_basalt_bricks_wall"
+}

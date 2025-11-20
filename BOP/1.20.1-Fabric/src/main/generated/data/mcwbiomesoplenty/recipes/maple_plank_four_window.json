@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "windows_four",
+  "key": {
+    "A": {
+      "item": "mcwwindows:window_centre_bar_base"
+    },
+    "B": {
+      "item": "biomesoplenty:maple_planks"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 8,
+    "item": "mcwbiomesoplenty:maple_plank_four_window"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "beach_trapdoors",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:palm_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_beach"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbiomesoplenty:palm_beach_trapdoor"
+  },
+  "show_notification": true
+}

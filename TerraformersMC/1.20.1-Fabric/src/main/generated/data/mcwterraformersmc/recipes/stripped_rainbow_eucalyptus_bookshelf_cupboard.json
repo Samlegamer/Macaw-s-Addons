@@ -1,0 +1,35 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bookshelf_cupboard",
+  "key": {
+    "A": {
+      "item": "terrestria:stripped_rainbow_eucalyptus_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    },
+    "C": {
+      "item": "minecraft:book"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BAC",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:stripped_rainbow_eucalyptus_bookshelf_cupboard"
+  },
+  "show_notification": true
+}

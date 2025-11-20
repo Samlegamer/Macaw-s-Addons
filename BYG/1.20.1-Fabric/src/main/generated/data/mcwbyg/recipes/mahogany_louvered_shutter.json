@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "biomeswevegone:mahogany_slab"
+    },
+    {
+      "item": "biomeswevegone:mahogany_slab"
+    },
+    {
+      "item": "biomeswevegone:mahogany_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:mahogany_louvered_shutter"
+  }
+}

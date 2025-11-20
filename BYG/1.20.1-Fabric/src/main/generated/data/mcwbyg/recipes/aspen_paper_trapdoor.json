@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "paper_trapdoors",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:aspen_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_paper"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:aspen_paper_trapdoor"
+  },
+  "show_notification": true
+}

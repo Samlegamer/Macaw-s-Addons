@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "jungle",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:zelkova_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_jungle"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:zelkova_beach_door"
+  },
+  "show_notification": true
+}

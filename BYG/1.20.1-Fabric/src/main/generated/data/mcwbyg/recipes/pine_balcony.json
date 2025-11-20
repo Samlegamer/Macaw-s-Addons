@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwstairs_balcony",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "biomeswevegone:pine_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwbyg:pine_balcony"
+  },
+  "show_notification": true
+}

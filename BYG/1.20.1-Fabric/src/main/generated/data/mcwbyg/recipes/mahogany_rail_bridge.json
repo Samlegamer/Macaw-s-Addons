@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "rail_bridges",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:mahogany_slab"
+    },
+    "B": {
+      "item": "biomeswevegone:mahogany_fence"
+    }
+  },
+  "pattern": [
+    "B B",
+    "BAB"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbyg:mahogany_rail_bridge"
+  },
+  "show_notification": true
+}

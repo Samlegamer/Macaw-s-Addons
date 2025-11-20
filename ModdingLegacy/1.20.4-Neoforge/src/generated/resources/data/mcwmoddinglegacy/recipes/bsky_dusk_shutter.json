@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "blue_skies:dusk_trapdoor"
+    },
+    {
+      "item": "blue_skies:dusk_trapdoor"
+    },
+    {
+      "item": "blue_skies:dusk_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwmoddinglegacy:bsky_dusk_shutter"
+  }
+}

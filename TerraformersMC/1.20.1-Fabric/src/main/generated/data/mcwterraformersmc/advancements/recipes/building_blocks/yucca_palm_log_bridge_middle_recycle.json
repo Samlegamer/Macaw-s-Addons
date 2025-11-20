@@ -1,0 +1,44 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:yucca_palm_log_bridge_middle_recycle"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yucca_palm_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:yucca_palm_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_yucca_palm_log",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:yucca_palm_log_bridge_middle_recycle"
+    ]
+  },
+  "sends_telemetry_event": false
+}

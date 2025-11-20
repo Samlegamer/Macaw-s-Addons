@@ -1,0 +1,51 @@
+{
+"neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "kitchen_sink",
+    "pattern":
+    [
+        "CDC",
+        "ABA",
+        "ABA"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "premium_wood:purple_heart_log"
+        }, 
+		
+		"B":
+        {
+            "item": "minecraft:water_bucket"
+        },
+		
+        "C":
+        {
+            "item": "premium_wood:purple_heart_slab"
+        },
+		
+		"D":
+        {
+            "item": "minecraft:cauldron"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwmoddinglegacy:pwood_purple_heart_kitchen_sink",
+        "count": 1
+    }
+}
+
+

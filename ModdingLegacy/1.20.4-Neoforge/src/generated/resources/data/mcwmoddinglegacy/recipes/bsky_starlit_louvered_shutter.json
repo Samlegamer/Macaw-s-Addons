@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwwindows"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "blue_skies:starlit_slab"
+    },
+    {
+      "item": "blue_skies:starlit_slab"
+    },
+    {
+      "item": "blue_skies:starlit_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwmoddinglegacy:bsky_starlit_louvered_shutter"
+  }
+}

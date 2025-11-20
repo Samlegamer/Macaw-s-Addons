@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "triple_drawer",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:stripped_redwood_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "BAB"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbyg:stripped_redwood_triple_drawer"
+  },
+  "show_notification": true
+}

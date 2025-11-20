@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "covered_desk",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:stripped_pine_log"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "A A"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbiomesoplenty:stripped_pine_covered_desk"
+  },
+  "show_notification": true
+}

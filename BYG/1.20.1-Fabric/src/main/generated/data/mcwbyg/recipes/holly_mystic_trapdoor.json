@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mystic_trapdoors",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:holly_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_mystic"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:holly_mystic_trapdoor"
+  },
+  "show_notification": true
+}

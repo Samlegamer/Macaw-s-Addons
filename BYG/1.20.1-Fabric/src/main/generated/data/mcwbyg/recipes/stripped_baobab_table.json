@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "table",
+  "key": {
+    "A": {
+      "item": "mcwbyg:stripped_baobab_coffee_table"
+    },
+    "B": {
+      "item": "biomeswevegone:baobab_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbyg:stripped_baobab_table"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "drawer_counter",
+  "key": {
+    "A": {
+      "item": "terrestria:rainbow_eucalyptus_slab"
+    },
+    "B": {
+      "item": "mcwterraformersmc:rainbow_eucalyptus_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:rainbow_eucalyptus_drawer_counter"
+  },
+  "show_notification": true
+}

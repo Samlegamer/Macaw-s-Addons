@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cupboard_counter",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:empyreal_slab"
+    },
+    "B": {
+      "item": "mcwbiomesoplenty:empyreal_wardrobe"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbiomesoplenty:empyreal_cupboard_counter"
+  },
+  "show_notification": true
+}

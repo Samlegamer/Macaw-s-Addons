@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "pillarwall",
+  "key": {
+    "A": {
+      "item": "terrestria:basalt_cobblestone"
+    },
+    "B": {
+      "item": "terrestria:basalt_bricks"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 5,
+    "item": "mcwterraformersmc:basalt_bricks_pillar_wall"
+  },
+  "show_notification": true
+}

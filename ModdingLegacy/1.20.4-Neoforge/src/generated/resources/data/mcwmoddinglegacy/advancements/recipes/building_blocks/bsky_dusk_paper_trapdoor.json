@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dusk_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:dusk_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwmoddinglegacy:bsky_dusk_paper_trapdoor"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dusk_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwmoddinglegacy:bsky_dusk_paper_trapdoor"
+    ]
+  }
+}

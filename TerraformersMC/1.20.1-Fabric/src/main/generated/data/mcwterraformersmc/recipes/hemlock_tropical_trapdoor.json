@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "tropical_trapdoors",
+  "key": {
+    "A": {
+      "item": "terrestria:hemlock_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_tropical"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:hemlock_tropical_trapdoor"
+  },
+  "show_notification": true
+}

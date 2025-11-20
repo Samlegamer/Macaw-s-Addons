@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bamboo_trapdoors",
+  "key": {
+    "A": {
+      "item": "cinderscapes:scorched_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_bamboo"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:scorched_bamboo_trapdoor"
+  },
+  "show_notification": true
+}

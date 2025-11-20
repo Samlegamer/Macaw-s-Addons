@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks_paths",
+  "ingredients": [
+    {
+      "item": "terrestria:rubber_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:rubber_planks_path"
+  }
+}

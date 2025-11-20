@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "blinds",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:willow_slab"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BBB",
+    "BBB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbiomesoplenty:willow_blinds"
+  },
+  "show_notification": true
+}

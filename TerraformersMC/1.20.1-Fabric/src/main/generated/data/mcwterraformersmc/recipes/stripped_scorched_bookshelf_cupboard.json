@@ -1,0 +1,35 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bookshelf_cupboard",
+  "key": {
+    "A": {
+      "item": "cinderscapes:stripped_scorched_stem"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    },
+    "C": {
+      "item": "minecraft:book"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BAC",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:stripped_scorched_bookshelf_cupboard"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "oak",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:white_mangrove_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_oak"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:white_mangrove_classic_door"
+  },
+  "show_notification": true
+}

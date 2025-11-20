@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "skyline_stairs",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:stripped_sakura_log"
+    },
+    "B": {
+      "item": "biomeswevegone:sakura_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA "
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbyg:sakura_skyline_stairs"
+  },
+  "show_notification": true
+}

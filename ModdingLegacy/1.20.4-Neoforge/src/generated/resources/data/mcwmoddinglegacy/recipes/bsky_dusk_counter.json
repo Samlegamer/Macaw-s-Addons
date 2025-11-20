@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "counter",
+  "key": {
+    "A": {
+      "item": "blue_skies:dusk_slab"
+    },
+    "B": {
+      "item": "blue_skies:dusk_log"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwmoddinglegacy:bsky_dusk_counter"
+  }
+}

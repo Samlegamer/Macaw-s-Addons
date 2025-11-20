@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chair",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:ironwood_log"
+    },
+    "B": {
+      "item": "biomeswevegone:ironwood_slab"
+    },
+    "C": {
+      "item": "biomeswevegone:ironwood_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwbyg:ironwood_chair"
+  },
+  "show_notification": true
+}

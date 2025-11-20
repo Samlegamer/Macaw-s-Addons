@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "recyclable_bridges",
+  "ingredients": [
+    {
+      "item": "mcwbiomesoplenty:empyreal_log_bridge_stair"
+    }
+  ],
+  "result": {
+    "item": "mcwbiomesoplenty:empyreal_log_bridge_middle"
+  }
+}

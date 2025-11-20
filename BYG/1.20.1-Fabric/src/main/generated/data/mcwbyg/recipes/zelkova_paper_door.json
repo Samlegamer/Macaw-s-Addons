@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "birch",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:zelkova_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_birch"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:zelkova_paper_door"
+  },
+  "show_notification": true
+}

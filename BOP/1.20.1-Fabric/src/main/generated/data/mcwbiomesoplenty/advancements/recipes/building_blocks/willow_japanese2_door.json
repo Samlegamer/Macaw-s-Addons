@@ -1,0 +1,44 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbiomesoplenty:willow_japanese2_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_willow_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:willow_slab"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_willow_slab",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbiomesoplenty:willow_japanese2_door"
+    ]
+  },
+  "sends_telemetry_event": false
+}

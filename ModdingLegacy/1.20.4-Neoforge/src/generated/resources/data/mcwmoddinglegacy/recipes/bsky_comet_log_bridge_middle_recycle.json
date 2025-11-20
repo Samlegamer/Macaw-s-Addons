@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwbridges"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "recyclable_bridges",
+  "ingredients": [
+    {
+      "item": "mcwmoddinglegacy:bsky_comet_log_bridge_stair"
+    }
+  ],
+  "result": {
+    "item": "mcwmoddinglegacy:bsky_comet_log_bridge_middle"
+  }
+}

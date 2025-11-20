@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "planks_lower_roof",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:aspen_planks"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " AA",
+    "AAB"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbyg:aspen_planks_lower_roof"
+  },
+  "show_notification": true
+}

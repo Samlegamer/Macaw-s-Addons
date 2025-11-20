@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern",
+  "key": {
+    "A": {
+      "item": "terrestria:mossy_basalt_cobblestone"
+    },
+    "B": {
+      "item": "terrestria:mossy_basalt_bricks"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwterraformersmc:modern_mossy_basalt_bricks_wall"
+  },
+  "show_notification": true
+}

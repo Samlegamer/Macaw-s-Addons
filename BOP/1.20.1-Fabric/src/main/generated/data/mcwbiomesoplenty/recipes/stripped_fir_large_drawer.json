@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "large_drawer",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:stripped_fir_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbiomesoplenty:stripped_fir_large_drawer"
+  },
+  "show_notification": true
+}

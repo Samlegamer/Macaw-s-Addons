@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "end_table",
+  "key": {
+    "A": {
+      "item": "mcwbyg:stripped_witch_hazel_table"
+    },
+    "B": {
+      "item": "biomeswevegone:stripped_witch_hazel_log"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbyg:stripped_witch_hazel_end_table"
+  },
+  "show_notification": true
+}

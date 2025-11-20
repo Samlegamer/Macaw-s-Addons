@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_drawer_counter",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:jacaranda_slab"
+    },
+    "B": {
+      "item": "mcwbyg:stripped_jacaranda_double_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbyg:stripped_jacaranda_double_drawer_counter"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_desk",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:stripped_mahogany_log"
+    },
+    "B": {
+      "item": "biomesoplenty:mahogany_fence"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BCB"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbiomesoplenty:stripped_mahogany_modern_desk"
+  },
+  "show_notification": true
+}

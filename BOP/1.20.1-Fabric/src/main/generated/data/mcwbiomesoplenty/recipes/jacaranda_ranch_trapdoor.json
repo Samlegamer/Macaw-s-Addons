@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "ranch_trapdoors",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:jacaranda_log"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BBB",
+    "ABA"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbiomesoplenty:jacaranda_ranch_trapdoor"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,35 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "lower_bookshelf_drawer",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:stripped_jacaranda_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    },
+    "C": {
+      "item": "minecraft:book"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ACA",
+    "ABA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbyg:stripped_jacaranda_lower_bookshelf_drawer"
+  },
+  "show_notification": true
+}

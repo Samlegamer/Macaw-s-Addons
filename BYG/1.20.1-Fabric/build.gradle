@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.9-SNAPSHOT'
+	id 'fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 }
 
@@ -10,28 +10,46 @@ base {
 	archivesName = project.archives_base_name + "-fabric"
 }
 
-repositories
-		{
-			maven {
-				name = "CurseForge"
-				url = "https://minecraft.curseforge.com/api/maven/"
-			}
-			maven {
-				name = "CurseMaven"
-				url = "https://www.cursemaven.com"
-			}
-		}
+repositories {
+    maven {
+        name "Curse Maven"
+        url "https://cursemaven.com"
+    }
+    maven {
+        name "jTDev MavenReleases"
+        url "https://maven.jt-dev.tech/releases"
+    }
+    maven {
+        name "jTDev MavenSnapshots"
+        url "https://maven.jt-dev.tech/snapshots"
+    }
+    maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content {
+            includeGroupByRegex("software\\.bernie.*")
+            includeGroup("com.eliotlash.mclib")
+        }
+    }
+    maven { url = 'https://maven.minecraftforge.net/' }
+}
+
 
 loom {
-	splitEnvironmentSourceSets()
+    splitEnvironmentSourceSets()
 
 	mods {
-		"template-mod" {
+        "template-mod" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
 	}
+}
 
+fabricApi {
+	configureDataGeneration {
+		client = true
+    }
 }
 
 dependencies {
@@ -39,20 +57,51 @@ dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation "curse.maven:addonslib-1090999:6400713"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
+    modImplementation("net.potionstudios:Oh-The-Biomes-Weve-Gone-Fabric:1.7.1") { transitive = false }
+    modRuntimeOnly 'com.github.glitchfiend:TerraBlender-fabric:1.20.1-3.0.1.7'
+    modRuntimeOnly("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:4.8.2")
+    modRuntimeOnly("com.eliotlash.mclib:mclib:20")
+    modRuntimeOnly "corgitaco.corgilib:Corgilib-Fabric:1.20.1-4.0.3.3"
+    modRuntimeOnly "dev.corgitaco:Oh-The-Trees-Youll-Grow-fabric:1.20.1-1.4.2"
+
+    modImplementation "curse.maven:addonslib-1090999:${addonslib_version}"
+    modImplementation "curse.maven:jei-238222:${jei_version}"
+
+    modImplementation "curse.maven:macaws-roofs-352039:${roofs_version}"
+    modImplementation "curse.maven:macaws-fences-and-walls-453925:${fences_version}"
+    modImplementation "curse.maven:macaws-doors-378646:${doors_version}"
+    modImplementation "curse.maven:macaws-bridges-351725:${bridges_version}"
+    modImplementation "curse.maven:macaws-windows-363569:${windows_version}"
+    modImplementation "curse.maven:macaws-paths-and-pavings-629153:${paths_version}"
+    modImplementation "curse.maven:macaws-trapdoors-400933:${trapdoors_version}"
+    modImplementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
+    modImplementation "curse.maven:macaws-furniture-359540:${furniture_version}"
+
+    //modCompileOnly "curse.maven:oh-the-biomes-weve-gone-1070751:${bwg_version}"
+    //modImplementation "curse.maven:geckolib-388172:${geckolib_version}"
+    //modImplementation "curse.maven:corgilib-693313:${corgilib_version}"
+    //modImplementation "curse.maven:oh-the-trees-youll-grow-962544:${ohtree_version}"
+    //modImplementation "curse.maven:terrablender-fabric-565956:${terrablender_version}"
+    //include implementation("com.electronwill.night-config:toml:${nightconfig_version}")
+    //include implementation("com.electronwill.night-config:core:${nightconfig_version}")
+
+    // Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	
 }
 
-processResources {
-	inputs.property "version", project.version
 
-	filesMatching("fabric.mod.json") {
-		expand project.properties
-		expand "version": inputs.properties.version
-	}
+
+tasks {
+    processResources {
+        inputs.property "version", project.version
+
+        filesMatching("fabric.mod.json") {
+            expand project.properties
+            expand "version": inputs.properties.version
+        }
+    }
 }
 
 tasks.withType(JavaCompile).configureEach {
@@ -70,8 +119,10 @@ java {
 }
 
 jar {
+	inputs.property "archivesName", project.base.archivesName
+
 	from("LICENSE") {
-		rename { "${it}_${project.base.archivesName.get()}"}
+		rename { "${it}_${inputs.properties.archivesName}"}
 	}
 }
 

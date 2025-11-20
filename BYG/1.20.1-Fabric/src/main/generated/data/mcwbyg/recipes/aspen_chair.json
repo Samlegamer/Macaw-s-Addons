@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chair",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:aspen_log"
+    },
+    "B": {
+      "item": "biomeswevegone:aspen_slab"
+    },
+    "C": {
+      "item": "biomeswevegone:aspen_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwbyg:aspen_chair"
+  },
+  "show_notification": true
+}

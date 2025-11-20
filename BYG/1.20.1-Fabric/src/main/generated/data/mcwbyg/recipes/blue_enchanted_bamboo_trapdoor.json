@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bamboo_trapdoors",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:blue_enchanted_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_bamboo"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:blue_enchanted_bamboo_trapdoor"
+  },
+  "show_notification": true
+}

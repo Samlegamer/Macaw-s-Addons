@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:smooth_purple_sandstone"
+    },
+    "B": {
+      "item": "biomeswevegone:purple_sandstone"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwbyg:modern_purple_sandstone_wall"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwtrpdoors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwtrpdoors:whispering_trapdoors",
+  "key": {
+    "A": {
+      "item": "blue_skies:frostbright_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_whispering"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwmoddinglegacy:bsky_frostbright_whispering_trapdoor"
+  }
+}

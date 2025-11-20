@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "spruce",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:aspen_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_spruce"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:aspen_cottage_door"
+  },
+  "show_notification": true
+}

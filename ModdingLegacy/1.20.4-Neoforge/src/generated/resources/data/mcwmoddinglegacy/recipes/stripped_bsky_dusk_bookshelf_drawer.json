@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bookshelf_drawer",
+  "key": {
+    "A": {
+      "item": "blue_skies:stripped_dusk_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    },
+    "C": {
+      "item": "minecraft:book"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "ACA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwmoddinglegacy:stripped_bsky_dusk_bookshelf_drawer"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwroofs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_frostbright_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:frostbright_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwmoddinglegacy:bsky_frostbright_lower_roof"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_frostbright_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwmoddinglegacy:bsky_frostbright_lower_roof"
+    ]
+  }
+}

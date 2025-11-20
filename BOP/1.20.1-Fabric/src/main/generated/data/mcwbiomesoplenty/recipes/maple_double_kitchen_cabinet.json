@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_kitchen_cabinet",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:maple_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AA",
+    "BB",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbiomesoplenty:maple_double_kitchen_cabinet"
+  },
+  "show_notification": true
+}

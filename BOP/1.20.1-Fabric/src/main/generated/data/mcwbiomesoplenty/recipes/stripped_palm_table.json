@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "table",
+  "key": {
+    "A": {
+      "item": "mcwbiomesoplenty:stripped_palm_coffee_table"
+    },
+    "B": {
+      "item": "biomesoplenty:palm_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbiomesoplenty:stripped_palm_table"
+  },
+  "show_notification": true
+}

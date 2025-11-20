@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chair",
+  "key": {
+    "A": {
+      "item": "blue_skies:lunar_log"
+    },
+    "B": {
+      "item": "blue_skies:lunar_slab"
+    },
+    "C": {
+      "item": "blue_skies:lunar_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwmoddinglegacy:bsky_lunar_chair"
+  }
+}

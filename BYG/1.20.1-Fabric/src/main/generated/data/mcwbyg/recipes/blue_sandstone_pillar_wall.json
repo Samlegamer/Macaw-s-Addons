@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "pillarwall",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:smooth_blue_sandstone"
+    },
+    "B": {
+      "item": "biomeswevegone:blue_sandstone"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 5,
+    "item": "mcwbyg:blue_sandstone_pillar_wall"
+  },
+  "show_notification": true
+}

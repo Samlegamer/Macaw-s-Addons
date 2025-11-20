@@ -1,0 +1,44 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbiomesoplenty:umbran_planks_upper_steep_roof"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_umbran_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:umbran_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_umbran_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbiomesoplenty:umbran_planks_upper_steep_roof"
+    ]
+  },
+  "sends_telemetry_event": false
+}

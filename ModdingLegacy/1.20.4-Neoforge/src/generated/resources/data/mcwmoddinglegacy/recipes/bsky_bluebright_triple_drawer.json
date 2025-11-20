@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "triple_drawer",
+  "key": {
+    "A": {
+      "item": "blue_skies:bluebright_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "BAB"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwmoddinglegacy:bsky_bluebright_triple_drawer"
+  }
+}

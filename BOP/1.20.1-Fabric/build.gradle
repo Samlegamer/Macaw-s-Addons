@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.9-SNAPSHOT'
+	id 'fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 }
 
@@ -10,23 +10,22 @@ base {
 	archivesName = project.archives_base_name + "-fabric"
 }
 
-repositories
-		{
-			maven {
-				name = "CurseForge"
-				url = "https://minecraft.curseforge.com/api/maven/"
-			}
-			maven {
-				name = "CurseMaven"
-				url = "https://www.cursemaven.com"
-			}
-		}
+repositories {
+    maven {
+        name = "CurseForge"
+        url = "https://minecraft.curseforge.com/api/maven/"
+    }
+    maven {
+        name = "CurseMaven"
+        url = "https://www.cursemaven.com"
+    }
+}
 
 loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"template-mod" {
+        "template-mod" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
@@ -34,14 +33,39 @@ loom {
 
 }
 
+fabricApi {
+	configureDataGeneration {
+		client = true
+	}
+}
+
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation "curse.maven:addonslib-1090999:6400713"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
+    modImplementation "curse.maven:addonslib-1090999:${addonslib_version}"
+    modImplementation "curse.maven:jei-238222:${jei_version}"
+
+    modImplementation "curse.maven:macaws-roofs-352039:${roofs_version}"
+    modImplementation "curse.maven:macaws-fences-and-walls-453925:${fences_version}"
+    modImplementation "curse.maven:macaws-doors-378646:${doors_version}"
+    modImplementation "curse.maven:macaws-bridges-351725:${bridges_version}"
+    modImplementation "curse.maven:macaws-windows-363569:${windows_version}"
+    modImplementation "curse.maven:macaws-paths-and-pavings-629153:${paths_version}"
+    modImplementation "curse.maven:macaws-trapdoors-400933:${trapdoors_version}"
+    modImplementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
+    modImplementation "curse.maven:macaws-furniture-359540:${furniture_version}"
+
+    modImplementation "curse.maven:biomes-o-plenty-220318:${bop_version}"
+    modImplementation "curse.maven:glitchcore-955399:${glitch_core_version}"
+    modImplementation "curse.maven:terrablender-fabric-565956:${terrablender_version}"
+    include implementation("com.electronwill.night-config:toml:${nightconfig_version}")
+    include implementation("com.electronwill.night-config:core:${nightconfig_version}")
+    include implementation("net.jodah:typetools:0.6.3")
+
+    // Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	
 }
@@ -50,7 +74,7 @@ processResources {
 	inputs.property "version", project.version
 
 	filesMatching("fabric.mod.json") {
-		expand project.properties
+        expand project.properties
 		expand "version": inputs.properties.version
 	}
 }
@@ -70,8 +94,10 @@ java {
 }
 
 jar {
+	inputs.property "archivesName", project.base.archivesName
+
 	from("LICENSE") {
-		rename { "${it}_${project.base.archivesName.get()}"}
+		rename { "${it}_${inputs.properties.archivesName}"}
 	}
 }
 

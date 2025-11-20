@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_chair",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:holly_log"
+    },
+    "B": {
+      "item": "biomeswevegone:holly_slab"
+    },
+    "C": {
+      "item": "biomeswevegone:holly_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwbyg:holly_modern_chair"
+  },
+  "show_notification": true
+}

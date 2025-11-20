@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "acacia",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:umbran_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_acacia"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbiomesoplenty:umbran_tropical_door"
+  },
+  "show_notification": true
+}

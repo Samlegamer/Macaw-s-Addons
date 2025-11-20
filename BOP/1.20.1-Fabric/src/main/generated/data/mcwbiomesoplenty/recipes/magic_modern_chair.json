@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "biomesoplenty"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_chair",
+  "key": {
+    "A": {
+      "item": "biomesoplenty:magic_log"
+    },
+    "B": {
+      "item": "biomesoplenty:magic_slab"
+    },
+    "C": {
+      "item": "biomesoplenty:magic_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwbiomesoplenty:magic_modern_chair"
+  },
+  "show_notification": true
+}

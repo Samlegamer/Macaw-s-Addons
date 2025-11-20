@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "loft_stairs",
+  "key": {
+    "A": {
+      "item": "blue_skies:stripped_comet_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    " A ",
+    "  A"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwmoddinglegacy:bsky_comet_loft_stairs"
+  }
+}

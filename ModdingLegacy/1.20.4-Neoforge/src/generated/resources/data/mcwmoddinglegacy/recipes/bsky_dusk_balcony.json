@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mcwstairs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwstairs_balcony",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "blue_skies:dusk_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwmoddinglegacy:bsky_dusk_balcony"
+  }
+}
