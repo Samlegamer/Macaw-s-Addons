@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "enhanced_mushrooms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "desk",
+        "key": {
+          "A": {
+            "item": "enhanced_mushrooms:stripped_mushroom_stem"
+          },
+          "B": {
+            "item": "enhanced_mushrooms:mushroom_fence"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwaurora:stripped_mushroom_desk"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

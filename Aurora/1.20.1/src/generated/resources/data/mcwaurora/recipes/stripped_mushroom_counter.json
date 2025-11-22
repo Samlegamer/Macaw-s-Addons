@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "enhanced_mushrooms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "counter",
+        "key": {
+          "A": {
+            "item": "enhanced_mushrooms:mushroom_slab"
+          },
+          "B": {
+            "item": "enhanced_mushrooms:stripped_mushroom_stem"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwaurora:stripped_mushroom_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwstairs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "enhanced_mushrooms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "mcwstairs_balcony",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "enhanced_mushrooms:mushroom_fence"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "B B",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwaurora:mushroom_balcony"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

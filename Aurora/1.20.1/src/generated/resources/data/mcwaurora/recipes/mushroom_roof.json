@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwroofs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "enhanced_mushrooms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "roof",
+        "key": {
+          "A": {
+            "item": "minecraft:mushroom_stem"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " A",
+          "AB"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwaurora:mushroom_roof"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

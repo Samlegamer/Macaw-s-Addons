@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwtrpdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "enhanced_mushrooms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "barn_trapdoors",
+        "key": {
+          "A": {
+            "item": "enhanced_mushrooms:mushroom_planks"
+          },
+          "B": {
+            "item": "mcwaurora:mushroom_glass_trapdoor"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwaurora:mushroom_barn_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

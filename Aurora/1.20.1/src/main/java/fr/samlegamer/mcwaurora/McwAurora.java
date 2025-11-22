@@ -2,23 +2,35 @@ package fr.samlegamer.mcwaurora;
 
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
+import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
+import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.util.McwMod;
 import fr.samlegamer.addonslib.windows.Windows;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
@@ -32,7 +44,7 @@ import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 
 @Mod(McwAurora.MODID)
-public class McwAurora
+public class McwAurora extends McwMod
 {
 	public static final String MODID = "mcwaurora";
     private static final Logger LOGGER = LogManager.getLogger();
@@ -46,10 +58,11 @@ public class McwAurora
 	public static final RegistryObject<CreativeModeTab> MCWAURORA_TAB = ct.register("tab", () -> CreativeModeTab.builder()
 	        .icon(McwAurora::getIcon).title(Component.translatable(MODID+".tab")).build());
     
-    public McwAurora()
+    public McwAurora(FMLJavaModLoadingContext javaModLoadingContext)
     {
-    	LOGGER.info("Macaw's Aurora Mod Loading...");
-    	Registration.init(block, item, ct);
+        super(javaModLoadingContext);
+        LOGGER.info("Macaw's Aurora Mod Loading...");
+    	Registration.init(javaModLoadingContext, block, item, ct);
 
     	Bridges.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
     	Roofs.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
@@ -61,23 +74,55 @@ public class McwAurora
 		Doors.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
 		Windows.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
 
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addTotab);
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
+        javaModLoadingContext.getModEventBus().addListener(this::clientSetup);
+        javaModLoadingContext.getModEventBus().addListener(this::commonSetup);
+        javaModLoadingContext.getModEventBus().addListener(this::dataSetup);
+        javaModLoadingContext.getModEventBus().addListener(this::tabSetup);
         MinecraftForge.EVENT_BUS.register(MappingsFix.class);
     	LOGGER.info("Macaw's Aurora Mod Finish !");
     }
 
-	private void clientSetup(FMLClientSetupEvent event)
+    @Override
+    public void clientSetup(FMLClientSetupEvent event)
 	{
 		APIRenderTypes.initAllWood(event, MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());
 	}
-    
-    private void addTotab(BuildCreativeModeTabContentsEvent event)
-    {
-    	if(MCWAURORA_TAB != null)
-    	{
-			APICreativeTab.initAllWood(event, MODID, WOOD_ENHANCED_MUSH, "enhanced_mushrooms", MCWAURORA_TAB.get(), Registration.getAllModTypeWood());
-    	}
+
+    @Override
+    public void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            McwLootTables.addBlockAllWood(MODID, WOOD_ENHANCED_MUSH);
+        });
+    }
+
+    @Override
+    public void dataSetup(GatherDataEvent gatherDataEvent) {
+        DataGenerator generator = gatherDataEvent.getGenerator();
+        ExistingFileHelper existingFileHelper = gatherDataEvent.getExistingFileHelper();
+        PackOutput output = generator.getPackOutput();
+        CompletableFuture<HolderLookup.Provider> lookupProvider = gatherDataEvent.getLookupProvider();
+        if(gatherDataEvent.includeServer()) {
+            McwBlockTags mcwBlockTags = new McwBlockTags(output, lookupProvider, MODID, existingFileHelper) {
+                @Override
+                protected void addTags(HolderLookup.Provider provider) {
+                    addAllMcwTags(MODID, WOOD_ENHANCED_MUSH);
+                }
+            };
+            generator.addProvider(true, mcwBlockTags);
+            generator.addProvider(true, new McwItemTags(output, lookupProvider, mcwBlockTags.contentsGetter(), MODID, existingFileHelper) {
+                @Override
+                protected void addTags(HolderLookup.Provider provider) {
+                    addAllMcwTags(MODID, WOOD_ENHANCED_MUSH);
+                }
+            });
+            generator.addProvider(true, new Recipes(output));
+        }
+
+    }
+
+    @Override
+    public void tabSetup(BuildCreativeModeTabContentsEvent event) {
+        APICreativeTab.initAllWood(event, MODID, WOOD_ENHANCED_MUSH, "enhanced_mushrooms", MCWAURORA_TAB.get(), Registration.getAllModTypeWood());
     }
     
     private static ItemStack getIcon()

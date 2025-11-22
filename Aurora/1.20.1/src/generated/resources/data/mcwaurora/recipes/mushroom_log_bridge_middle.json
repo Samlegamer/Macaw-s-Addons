@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "enhanced_mushrooms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "log_bridges",
+        "key": {
+          "A": {
+            "item": "enhanced_mushrooms:mushroom_slab"
+          },
+          "B": {
+            "item": "enhanced_mushrooms:mushroom_fence"
+          }
+        },
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwaurora:mushroom_log_bridge_middle"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

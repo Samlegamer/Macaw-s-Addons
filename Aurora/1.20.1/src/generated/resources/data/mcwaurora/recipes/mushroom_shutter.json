@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwwindows"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "enhanced_mushrooms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "enhanced_mushrooms:mushroom_trapdoor"
+          },
+          {
+            "item": "enhanced_mushrooms:mushroom_trapdoor"
+          },
+          {
+            "item": "enhanced_mushrooms:mushroom_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwaurora:mushroom_shutter"
+        }
+      }
+    }
+  ]
+}

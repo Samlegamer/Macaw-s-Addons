@@ -1,9 +1,18 @@
-plugins {
-    id 'eclipse'
-    id 'idea'
-    id 'maven-publish'
-    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+buildscript {
+    repositories {
+        maven { url = "https://files.minecraftforge.net/maven" }
+        maven { url = "https://repo.spongepowered.org/repository/maven-public/" }
+    }
+    dependencies {
+        classpath group: "net.minecraftforge.gradle", name: "ForgeGradle", version: "[6.0,6.2)", changing: true
+        classpath group: "org.spongepowered", name: "mixingradle", version: "0.7+"
+    }
 }
+
+apply plugin: "net.minecraftforge.gradle"
+apply plugin: "eclipse"
+apply plugin: "maven-publish"
+apply plugin: "org.spongepowered.mixin"
 
 version = mod_version
 group = mod_group_id
@@ -101,6 +110,10 @@ minecraft {
         data {
             // example of overriding the workingDirectory set in configureEach above
             workingDirectory project.file('run-data')
+            property "forge.logging.console.level", "debug"
+            property "mixin.env.remapRefMap", "true"
+            property "mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg"
+            property "blueprint.indev", "true"
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
@@ -121,6 +134,10 @@ repositories
         name = "CurseMaven"
         url = "https://www.cursemaven.com"
     }
+    maven {
+        name = "SpongePowered"
+        url = "https://repo.spongepowered.org/repository/maven-public/"
+    }
 }
 
 dependencies {
@@ -130,8 +147,31 @@ dependencies {
     // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-	implementation fg.deobf("curse.maven:addonslib-1090999:6777889")
 
+    implementation fg.deobf("curse.maven:addonslib-1090999:${addonslib_version}")
+    implementation fg.deobf("curse.maven:jei-238222:${jei_version}")
+
+    implementation fg.deobf("curse.maven:macaws-roofs-352039:${roofs_version}")
+    implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:${fences_version}")
+    implementation fg.deobf("curse.maven:macaws-doors-378646:${doors_version}")
+    implementation fg.deobf("curse.maven:macaws-bridges-351725:${bridges_version}")
+    implementation fg.deobf("curse.maven:macaws-windows-363569:${windows_version}")
+    implementation fg.deobf("curse.maven:macaws-paths-and-pavings-629153:${paths_version}")
+    implementation fg.deobf("curse.maven:macaws-trapdoors-400933:${trapdoors_version}")
+    implementation fg.deobf("curse.maven:macaws-stairs-1119394:${stairs_version}")
+    implementation fg.deobf("curse.maven:macaws-furniture-359540:${furniture_version}")
+
+    compileOnly fg.deobf("curse.maven:blueprint-382216:${blueprint_version}")
+    compileOnly fg.deobf("curse.maven:enhanced-mushrooms-383725:${enhmush_version}")
+
+    runtimeOnly fg.deobf("curse.maven:blueprint-382216:${blueprint_version}")
+    runtimeOnly fg.deobf("curse.maven:enhanced-mushrooms-383725:${enhmush_version}")
+
+    runtimeOnly fg.deobf("curse.maven:farmers-delight-398521:${fd_version}")
+    runtimeOnly fg.deobf("curse.maven:boatload-337396:${bl_version}")
+    runtimeOnly fg.deobf("curse.maven:woodworks-543610:${ww_version}")
+
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")

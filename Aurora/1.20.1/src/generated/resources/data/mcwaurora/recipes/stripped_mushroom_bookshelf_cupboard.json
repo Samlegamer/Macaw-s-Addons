@@ -1,0 +1,48 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "enhanced_mushrooms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bookshelf_cupboard",
+        "key": {
+          "A": {
+            "item": "enhanced_mushrooms:stripped_mushroom_stem"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          },
+          "C": {
+            "item": "minecraft:book"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BAC",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwaurora:stripped_mushroom_bookshelf_cupboard"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}
