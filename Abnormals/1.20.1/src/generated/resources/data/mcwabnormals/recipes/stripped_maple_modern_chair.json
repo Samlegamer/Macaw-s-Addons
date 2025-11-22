@@ -1,0 +1,46 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "autumnity"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chair",
+        "key": {
+          "A": {
+            "item": "autumnity:stripped_maple_log"
+          },
+          "B": {
+            "item": "autumnity:maple_slab"
+          },
+          "C": {
+            "item": "autumnity:maple_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwabnormals:stripped_maple_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

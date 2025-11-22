@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "caverns_and_chasms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern",
+        "key": {
+          "A": {
+            "item": "minecraft:lapis_block"
+          },
+          "B": {
+            "item": "caverns_and_chasms:lapis_bricks"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwabnormals:modern_lapis_bricks_wall"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

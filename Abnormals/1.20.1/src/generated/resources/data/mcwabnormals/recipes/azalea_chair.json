@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "caverns_and_chasms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chair",
+        "key": {
+          "A": {
+            "item": "caverns_and_chasms:azalea_log"
+          },
+          "B": {
+            "item": "caverns_and_chasms:azalea_slab"
+          },
+          "C": {
+            "item": "caverns_and_chasms:azalea_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwabnormals:azalea_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

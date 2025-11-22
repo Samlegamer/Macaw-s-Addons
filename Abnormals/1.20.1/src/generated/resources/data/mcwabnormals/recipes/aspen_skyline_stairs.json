@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwstairs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "skyline_stairs",
+        "key": {
+          "A": {
+            "item": "atmospheric:stripped_aspen_log"
+          },
+          "B": {
+            "item": "atmospheric:aspen_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:aspen_skyline_stairs"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

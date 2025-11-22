@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "caverns_and_chasms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "log_stairs",
+        "key": {
+          "A": {
+            "item": "mcwabnormals:cobblestone_bricks_bridge"
+          }
+        },
+        "pattern": [
+          "  A",
+          " AA",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwabnormals:cobblestone_bricks_bridge_stair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

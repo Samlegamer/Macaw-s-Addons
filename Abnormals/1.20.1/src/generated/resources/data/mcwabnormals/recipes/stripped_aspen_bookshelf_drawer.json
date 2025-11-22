@@ -1,0 +1,48 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bookshelf_drawer",
+        "key": {
+          "A": {
+            "item": "atmospheric:stripped_aspen_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          },
+          "C": {
+            "item": "minecraft:book"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ABA",
+          "ACA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:stripped_aspen_bookshelf_drawer"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "advancements": [
+    {
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_the_recipe": {
+            "conditions": {
+              "recipe": "mcwabnormals:yucca_table"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+          },
+          "has_yucca_log": {
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "atmospheric:yucca_log"
+                  ]
+                }
+              ]
+            },
+            "trigger": "minecraft:inventory_changed"
+          }
+        },
+        "requirements": [
+          [
+            "has_yucca_log",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:yucca_table"
+          ]
+        },
+        "sends_telemetry_event": false
+      },
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chair",
+        "key": {
+          "A": {
+            "item": "environmental:wisteria_log"
+          },
+          "B": {
+            "item": "environmental:wisteria_slab"
+          },
+          "C": {
+            "item": "environmental:wisteria_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwabnormals:wisteria_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

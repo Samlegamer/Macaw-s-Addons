@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwstairs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "caverns_and_chasms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "skyline_stairs",
+        "key": {
+          "A": {
+            "item": "caverns_and_chasms:stripped_azalea_log"
+          },
+          "B": {
+            "item": "caverns_and_chasms:azalea_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:azalea_skyline_stairs"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

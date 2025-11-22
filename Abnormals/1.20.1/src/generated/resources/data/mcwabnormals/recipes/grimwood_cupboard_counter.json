@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "cupboard_counter",
+        "key": {
+          "A": {
+            "item": "atmospheric:grimwood_slab"
+          },
+          "B": {
+            "item": "mcwabnormals:grimwood_wardrobe"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwabnormals:grimwood_cupboard_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

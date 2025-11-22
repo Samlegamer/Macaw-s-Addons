@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwstairs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "upgrade_aquatic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "terrace_stairs",
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:stripped_river_log"
+          },
+          "B": {
+            "item": "upgrade_aquatic:river_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwabnormals:river_terrace_stairs"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

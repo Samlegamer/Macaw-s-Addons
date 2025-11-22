@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bookshelf",
+        "key": {
+          "A": {
+            "item": "atmospheric:grimwood_log"
+          },
+          "B": {
+            "item": "minecraft:book"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BBB",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:grimwood_bookshelf"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "autumnity"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "western",
+        "key": {
+          "A": {
+            "item": "autumnity:maple_planks"
+          },
+          "B": {
+            "item": "autumnity:maple_slab"
+          }
+        },
+        "pattern": [
+          "  A",
+          "ABA",
+          "AAA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:maple_western_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwstairs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "endergetic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "mcwstairs_platform",
+        "key": {
+          "A": {
+            "item": "endergetic:poise_stem"
+          },
+          "B": {
+            "item": "endergetic:poise_slab"
+          }
+        },
+        "pattern": [
+          " BB",
+          " AA",
+          "   "
+        ],
+        "result": {
+          "count": 12,
+          "item": "mcwabnormals:poise_platform"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

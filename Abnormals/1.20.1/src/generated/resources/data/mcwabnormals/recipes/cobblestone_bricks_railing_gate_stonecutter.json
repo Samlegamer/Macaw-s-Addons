@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "caverns_and_chasms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "count": 1,
+        "ingredient": {
+          "item": "caverns_and_chasms:cobblestone_bricks"
+        },
+        "result": "mcwabnormals:cobblestone_bricks_railing_gate"
+      }
+    }
+  ]
+}

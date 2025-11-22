@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_desk",
+        "key": {
+          "A": {
+            "item": "environmental:stripped_willow_log"
+          },
+          "B": {
+            "item": "environmental:willow_fence"
+          },
+          "C": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BCB"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwabnormals:stripped_willow_modern_desk"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

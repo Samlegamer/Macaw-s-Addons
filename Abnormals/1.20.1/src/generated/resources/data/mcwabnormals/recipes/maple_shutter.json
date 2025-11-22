@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwwindows"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "autumnity"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "autumnity:maple_trapdoor"
+          },
+          {
+            "item": "autumnity:maple_trapdoor"
+          },
+          {
+            "item": "autumnity:maple_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:maple_shutter"
+        }
+      }
+    }
+  ]
+}

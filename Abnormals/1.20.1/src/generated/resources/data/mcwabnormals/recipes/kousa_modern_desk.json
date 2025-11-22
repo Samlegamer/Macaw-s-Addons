@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_desk",
+        "key": {
+          "A": {
+            "item": "atmospheric:kousa_log"
+          },
+          "B": {
+            "item": "atmospheric:kousa_fence"
+          },
+          "C": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BCB"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwabnormals:kousa_modern_desk"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

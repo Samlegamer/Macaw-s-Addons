@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwwindows"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "atmospheric:rosewood_slab"
+          },
+          {
+            "item": "atmospheric:rosewood_slab"
+          },
+          {
+            "item": "atmospheric:rosewood_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:rosewood_louvered_shutter"
+        }
+      }
+    }
+  ]
+}

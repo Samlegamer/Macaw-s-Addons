@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwroofs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "endergetic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "lower_roof",
+        "key": {
+          "A": {
+            "item": "endergetic:poise_stem"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " AA",
+          "AAB"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:poise_lower_roof"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

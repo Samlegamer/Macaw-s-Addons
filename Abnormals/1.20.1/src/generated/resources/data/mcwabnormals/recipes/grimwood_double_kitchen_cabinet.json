@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "double_kitchen_cabinet",
+        "key": {
+          "A": {
+            "item": "atmospheric:grimwood_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AA",
+          "BB",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:grimwood_double_kitchen_cabinet"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

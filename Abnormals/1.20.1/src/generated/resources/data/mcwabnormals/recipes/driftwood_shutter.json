@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwwindows"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "upgrade_aquatic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "upgrade_aquatic:driftwood_trapdoor"
+          },
+          {
+            "item": "upgrade_aquatic:driftwood_trapdoor"
+          },
+          {
+            "item": "upgrade_aquatic:driftwood_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:driftwood_shutter"
+        }
+      }
+    }
+  ]
+}

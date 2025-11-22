@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "log_stairs",
+        "key": {
+          "A": {
+            "item": "mcwabnormals:yucca_log_bridge_middle"
+          }
+        },
+        "pattern": [
+          "  A",
+          " AA",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwabnormals:yucca_log_bridge_stair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

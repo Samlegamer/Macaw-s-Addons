@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "buzzier_bees"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "log_bridges",
+        "key": {
+          "A": {
+            "item": "buzzier_bees:honeycomb_tile_slab"
+          },
+          "B": {
+            "item": "buzzier_bees:honeycomb_tile_wall"
+          }
+        },
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:honeycomb_tile_bridge"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

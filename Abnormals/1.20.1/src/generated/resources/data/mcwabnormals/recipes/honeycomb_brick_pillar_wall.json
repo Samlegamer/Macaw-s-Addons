@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "buzzier_bees"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "pillarwall",
+        "key": {
+          "A": {
+            "item": "minecraft:honeycomb_block"
+          },
+          "B": {
+            "item": "buzzier_bees:honeycomb_bricks"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwabnormals:honeycomb_brick_pillar_wall"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "advancements": [
+    {
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_the_recipe": {
+            "conditions": {
+              "recipe": "mcwabnormals:stripped_wisteria_log_window"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+          },
+          "has_wisteria_log": {
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "environmental:wisteria_log"
+                  ]
+                }
+              ]
+            },
+            "trigger": "minecraft:inventory_changed"
+          }
+        },
+        "requirements": [
+          [
+            "has_wisteria_log",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:stripped_wisteria_log_window"
+          ]
+        },
+        "sends_telemetry_event": false
+      },
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwwindows"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

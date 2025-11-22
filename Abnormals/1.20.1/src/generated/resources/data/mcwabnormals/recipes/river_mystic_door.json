@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "upgrade_aquatic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "mystic",
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:river_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_mystic"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwabnormals:river_mystic_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

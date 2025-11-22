@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "striped_chair",
+        "key": {
+          "A": {
+            "item": "environmental:pine_log"
+          },
+          "B": {
+            "item": "environmental:pine_slab"
+          },
+          "C": {
+            "item": "environmental:pine_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwabnormals:pine_striped_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

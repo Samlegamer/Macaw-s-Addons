@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "endergetic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "striped_chair",
+        "key": {
+          "A": {
+            "item": "endergetic:stripped_poise_stem"
+          },
+          "B": {
+            "item": "endergetic:poise_slab"
+          },
+          "C": {
+            "item": "endergetic:poise_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwabnormals:stripped_poise_striped_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

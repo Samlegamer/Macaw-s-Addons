@@ -1,0 +1,50 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "kitchen_sink",
+        "key": {
+          "A": {
+            "item": "atmospheric:stripped_morado_log"
+          },
+          "B": {
+            "item": "minecraft:water_bucket"
+          },
+          "C": {
+            "item": "atmospheric:morado_slab"
+          },
+          "D": {
+            "item": "minecraft:cauldron"
+          }
+        },
+        "pattern": [
+          "CDC",
+          "ABA",
+          "ABA"
+        ],
+        "result": {
+          "item": "mcwabnormals:stripped_morado_kitchen_sink"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

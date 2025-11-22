@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwstairs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bulk_stairs",
+        "key": {
+          "A": {
+            "item": "environmental:stripped_wisteria_log"
+          },
+          "B": {
+            "item": "environmental:wisteria_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          "BBA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwabnormals:wisteria_bulk_stairs"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

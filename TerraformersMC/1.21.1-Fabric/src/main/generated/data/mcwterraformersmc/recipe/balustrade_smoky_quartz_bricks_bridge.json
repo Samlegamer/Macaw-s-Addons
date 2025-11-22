@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "balustrade_bridges",
+  "key": {
+    "A": {
+      "item": "cinderscapes:smoky_quartz_slab"
+    },
+    "B": {
+      "item": "cinderscapes:smoky_quartz_pillar"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "AAA"
+  ],
+  "result": {
+    "count": 5,
+    "id": "mcwterraformersmc:balustrade_smoky_quartz_bricks_bridge"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "drawer",
+        "key": {
+          "A": {
+            "item": "atmospheric:morado_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ABA",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:morado_drawer"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

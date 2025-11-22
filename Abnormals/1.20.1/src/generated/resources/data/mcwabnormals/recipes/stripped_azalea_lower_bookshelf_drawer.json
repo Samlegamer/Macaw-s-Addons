@@ -1,0 +1,48 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "caverns_and_chasms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "lower_bookshelf_drawer",
+        "key": {
+          "A": {
+            "item": "caverns_and_chasms:stripped_azalea_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          },
+          "C": {
+            "item": "minecraft:book"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ACA",
+          "ABA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:stripped_azalea_lower_bookshelf_drawer"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

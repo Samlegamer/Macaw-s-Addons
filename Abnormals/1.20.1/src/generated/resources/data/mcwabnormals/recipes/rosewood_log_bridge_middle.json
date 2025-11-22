@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "log_bridges",
+        "key": {
+          "A": {
+            "item": "atmospheric:rosewood_slab"
+          },
+          "B": {
+            "item": "atmospheric:rosewood_fence"
+          }
+        },
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:rosewood_log_bridge_middle"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

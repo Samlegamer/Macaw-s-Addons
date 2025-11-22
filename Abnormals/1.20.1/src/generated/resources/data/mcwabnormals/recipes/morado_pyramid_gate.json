@@ -1,0 +1,46 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "pyramid",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "atmospheric:morado_log"
+          },
+          "C": {
+            "item": "atmospheric:morado_planks"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "ACA"
+        ],
+        "result": {
+          "item": "mcwabnormals:morado_pyramid_gate"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

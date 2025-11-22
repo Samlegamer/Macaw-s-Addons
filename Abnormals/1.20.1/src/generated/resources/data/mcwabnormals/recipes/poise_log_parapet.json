@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwwindows"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "endergetic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "parapets",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "endergetic:poise_stem"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ABA"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwabnormals:poise_log_parapet"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

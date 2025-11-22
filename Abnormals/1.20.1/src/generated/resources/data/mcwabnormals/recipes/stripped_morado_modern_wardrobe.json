@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_wardrobe",
+        "key": {
+          "A": {
+            "item": "atmospheric:stripped_morado_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "AAB",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:stripped_morado_modern_wardrobe"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

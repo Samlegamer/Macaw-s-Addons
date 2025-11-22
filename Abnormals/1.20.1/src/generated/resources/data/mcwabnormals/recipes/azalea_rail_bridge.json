@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "caverns_and_chasms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "rail_bridges",
+        "key": {
+          "A": {
+            "item": "caverns_and_chasms:azalea_slab"
+          },
+          "B": {
+            "item": "caverns_and_chasms:azalea_fence"
+          }
+        },
+        "pattern": [
+          "B B",
+          "BAB"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:azalea_rail_bridge"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

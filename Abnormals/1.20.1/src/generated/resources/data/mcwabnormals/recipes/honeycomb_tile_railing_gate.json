@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "buzzier_bees"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "railing_gate",
+        "key": {
+          "A": {
+            "item": "minecraft:iron_bars"
+          },
+          "B": {
+            "item": "buzzier_bees:honeycomb_tiles"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "ABA"
+        ],
+        "result": {
+          "item": "mcwabnormals:honeycomb_tile_railing_gate"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

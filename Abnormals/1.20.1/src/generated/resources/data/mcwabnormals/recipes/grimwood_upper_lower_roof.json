@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwroofs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "upper_lower_roof",
+        "key": {
+          "A": {
+            "item": "atmospheric:grimwood_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "  A",
+          "AAB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:grimwood_upper_lower_roof"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

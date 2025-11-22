@@ -1,0 +1,48 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "glass_kitchen_cabinet",
+        "key": {
+          "A": {
+            "item": "environmental:stripped_plum_log"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          },
+          "C": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AA",
+          "BC",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:stripped_plum_glass_kitchen_cabinet"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

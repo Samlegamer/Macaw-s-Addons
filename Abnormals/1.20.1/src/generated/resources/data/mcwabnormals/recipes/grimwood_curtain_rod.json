@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwwindows"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "curtain_rods",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "atmospheric:grimwood_log"
+          }
+        },
+        "pattern": [
+          "ABA"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwabnormals:grimwood_curtain_rod"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "biomeswevegone"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "balustrade_bridges",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:dacite_brick_slab"
+    },
+    "B": {
+      "item": "biomeswevegone:dacite_brick_wall"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "AAA"
+  ],
+  "result": {
+    "count": 5,
+    "id": "mcwbyg:balustrade_dacite_bricks_bridge"
+  }
+}

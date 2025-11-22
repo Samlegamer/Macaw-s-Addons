@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "picket",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "environmental:pine_planks"
+          },
+          "C": {
+            "item": "environmental:pine_log"
+          }
+        },
+        "pattern": [
+          "CBC",
+          "CAC"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:pine_picket_fence"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

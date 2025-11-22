@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "caverns_and_chasms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "spruce",
+        "key": {
+          "A": {
+            "item": "caverns_and_chasms:azalea_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_spruce"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwabnormals:azalea_cottage_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

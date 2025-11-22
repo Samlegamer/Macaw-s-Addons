@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "upgrade_aquatic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "wired",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "upgrade_aquatic:river_log"
+          },
+          "C": {
+            "item": "minecraft:iron_bars"
+          }
+        },
+        "pattern": [
+          "ACA",
+          "ABA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:river_wired_fence"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

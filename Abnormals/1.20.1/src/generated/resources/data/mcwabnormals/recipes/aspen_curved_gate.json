@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "curved_gate",
+        "key": {
+          "A": {
+            "item": "atmospheric:aspen_planks"
+          },
+          "B": {
+            "item": "atmospheric:aspen_log"
+          }
+        },
+        "pattern": [
+          "B A",
+          "BAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:aspen_curved_gate"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

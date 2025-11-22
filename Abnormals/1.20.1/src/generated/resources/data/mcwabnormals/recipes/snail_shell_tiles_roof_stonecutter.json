@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwroofs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "autumnity"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "count": 1,
+        "ingredient": {
+          "item": "autumnity:snail_shell_tiles"
+        },
+        "result": "mcwabnormals:snail_shell_tiles_roof"
+      }
+    }
+  ]
+}

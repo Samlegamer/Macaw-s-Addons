@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "caverns_and_chasms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "pillarwall",
+        "key": {
+          "A": {
+            "item": "minecraft:dripstone_block"
+          },
+          "B": {
+            "item": "caverns_and_chasms:flooded_dripstone_shingles"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwabnormals:flooded_dripstone_shingles_pillar_wall"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

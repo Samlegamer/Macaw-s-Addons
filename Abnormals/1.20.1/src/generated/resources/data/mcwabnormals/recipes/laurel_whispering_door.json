@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "whispering",
+        "key": {
+          "A": {
+            "item": "atmospheric:laurel_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_whispering"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwabnormals:laurel_whispering_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

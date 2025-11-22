@@ -1,0 +1,50 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "autumnity"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "kitchen_sink",
+        "key": {
+          "A": {
+            "item": "autumnity:stripped_maple_log"
+          },
+          "B": {
+            "item": "minecraft:water_bucket"
+          },
+          "C": {
+            "item": "autumnity:maple_slab"
+          },
+          "D": {
+            "item": "minecraft:cauldron"
+          }
+        },
+        "pattern": [
+          "CDC",
+          "ABA",
+          "ABA"
+        ],
+        "result": {
+          "item": "mcwabnormals:stripped_maple_kitchen_sink"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

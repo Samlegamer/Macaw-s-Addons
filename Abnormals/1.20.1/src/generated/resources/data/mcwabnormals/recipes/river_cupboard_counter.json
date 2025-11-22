@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "upgrade_aquatic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "cupboard_counter",
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:river_slab"
+          },
+          "B": {
+            "item": "mcwabnormals:river_wardrobe"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwabnormals:river_cupboard_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

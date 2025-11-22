@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "table",
+        "key": {
+          "A": {
+            "item": "mcwabnormals:kousa_coffee_table"
+          },
+          "B": {
+            "item": "atmospheric:kousa_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwabnormals:kousa_table"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

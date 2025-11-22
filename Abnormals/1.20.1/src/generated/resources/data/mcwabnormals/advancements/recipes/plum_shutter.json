@@ -1,0 +1,56 @@
+{
+  "advancements": [
+    {
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_plum_log": {
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "environmental:plum_log"
+                  ]
+                }
+              ]
+            },
+            "trigger": "minecraft:inventory_changed"
+          },
+          "has_the_recipe": {
+            "conditions": {
+              "recipe": "mcwabnormals:plum_shutter"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+          }
+        },
+        "requirements": [
+          [
+            "has_plum_log",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:plum_shutter"
+          ]
+        },
+        "sends_telemetry_event": false
+      },
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwwindows"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

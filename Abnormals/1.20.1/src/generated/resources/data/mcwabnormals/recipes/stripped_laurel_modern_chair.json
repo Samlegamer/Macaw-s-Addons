@@ -1,0 +1,46 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chair",
+        "key": {
+          "A": {
+            "item": "atmospheric:stripped_laurel_log"
+          },
+          "B": {
+            "item": "atmospheric:laurel_slab"
+          },
+          "C": {
+            "item": "atmospheric:laurel_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwabnormals:stripped_laurel_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

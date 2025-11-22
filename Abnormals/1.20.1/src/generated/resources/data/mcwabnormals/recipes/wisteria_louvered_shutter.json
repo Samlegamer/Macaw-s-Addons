@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwwindows"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "environmental:wisteria_slab"
+          },
+          {
+            "item": "environmental:wisteria_slab"
+          },
+          {
+            "item": "environmental:wisteria_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:wisteria_louvered_shutter"
+        }
+      }
+    }
+  ]
+}

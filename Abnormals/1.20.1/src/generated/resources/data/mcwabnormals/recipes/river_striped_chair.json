@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "upgrade_aquatic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "striped_chair",
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:river_log"
+          },
+          "B": {
+            "item": "upgrade_aquatic:river_slab"
+          },
+          "C": {
+            "item": "upgrade_aquatic:river_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwabnormals:river_striped_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

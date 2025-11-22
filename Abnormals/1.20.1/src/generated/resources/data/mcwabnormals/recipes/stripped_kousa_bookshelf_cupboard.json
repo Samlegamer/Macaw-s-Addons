@@ -1,0 +1,48 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bookshelf_cupboard",
+        "key": {
+          "A": {
+            "item": "atmospheric:stripped_kousa_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          },
+          "C": {
+            "item": "minecraft:book"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BAC",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:stripped_kousa_bookshelf_cupboard"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

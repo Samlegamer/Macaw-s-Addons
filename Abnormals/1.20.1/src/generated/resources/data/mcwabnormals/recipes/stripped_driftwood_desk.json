@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "upgrade_aquatic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "desk",
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:stripped_driftwood_log"
+          },
+          "B": {
+            "item": "upgrade_aquatic:driftwood_fence"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwabnormals:stripped_driftwood_desk"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

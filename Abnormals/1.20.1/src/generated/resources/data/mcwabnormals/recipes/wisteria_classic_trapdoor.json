@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwtrpdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "classic_trapdoors",
+        "key": {
+          "A": {
+            "item": "environmental:wisteria_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_classic"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwabnormals:wisteria_classic_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "endergetic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "table",
+        "key": {
+          "A": {
+            "item": "mcwabnormals:poise_coffee_table"
+          },
+          "B": {
+            "item": "endergetic:poise_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwabnormals:poise_table"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

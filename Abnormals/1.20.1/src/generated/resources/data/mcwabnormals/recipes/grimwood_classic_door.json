@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "oak",
+        "key": {
+          "A": {
+            "item": "atmospheric:grimwood_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_oak"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwabnormals:grimwood_classic_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

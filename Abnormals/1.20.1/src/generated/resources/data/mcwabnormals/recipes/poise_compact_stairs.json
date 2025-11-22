@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwstairs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "endergetic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "compact_stairs",
+        "key": {
+          "A": {
+            "item": "endergetic:stripped_poise_stem"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "AA ",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwabnormals:poise_compact_stairs"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

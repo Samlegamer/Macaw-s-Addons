@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwtrpdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "autumnity"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "mystic_trapdoors",
+        "key": {
+          "A": {
+            "item": "autumnity:maple_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_mystic"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwabnormals:maple_mystic_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

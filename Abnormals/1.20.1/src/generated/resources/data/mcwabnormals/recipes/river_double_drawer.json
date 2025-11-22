@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "upgrade_aquatic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "double_drawer",
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:river_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ABA",
+          "ABA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:river_double_drawer"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

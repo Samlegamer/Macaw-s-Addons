@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwwindows"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "atmospheric:yucca_slab"
+          },
+          {
+            "item": "atmospheric:yucca_slab"
+          },
+          {
+            "item": "atmospheric:yucca_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:yucca_louvered_shutter"
+        }
+      }
+    }
+  ]
+}

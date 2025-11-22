@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "upgrade_aquatic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "recyclable_bridges",
+        "ingredients": [
+          {
+            "item": "mcwabnormals:driftwood_log_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwabnormals:driftwood_log_bridge_middle"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "caverns_and_chasms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "grass_topped",
+        "key": {
+          "A": {
+            "item": "minecraft:calcite"
+          },
+          "B": {
+            "item": "caverns_and_chasms:polished_calcite"
+          },
+          "C": {
+            "item": "minecraft:dirt"
+          }
+        },
+        "pattern": [
+          "BCB",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwabnormals:polished_calcite_grass_topped_wall"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

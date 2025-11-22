@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "upgrade_aquatic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "curved_gate",
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:driftwood_planks"
+          },
+          "B": {
+            "item": "upgrade_aquatic:driftwood_log"
+          }
+        },
+        "pattern": [
+          "B A",
+          "BAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:driftwood_curved_gate"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

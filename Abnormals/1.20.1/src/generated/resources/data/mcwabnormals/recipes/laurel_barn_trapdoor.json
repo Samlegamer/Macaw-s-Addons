@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwtrpdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "barn_trapdoors",
+        "key": {
+          "A": {
+            "item": "atmospheric:laurel_planks"
+          },
+          "B": {
+            "item": "mcwabnormals:laurel_glass_trapdoor"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwabnormals:laurel_barn_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "autumnity"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "rope_bridges",
+        "key": {
+          "A": {
+            "item": "autumnity:maple_slab"
+          },
+          "B": {
+            "item": "minecraft:string"
+          }
+        },
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:rope_maple_bridge"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

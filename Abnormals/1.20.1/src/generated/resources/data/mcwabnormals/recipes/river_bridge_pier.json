@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "upgrade_aquatic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "wooden_piers",
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:river_log"
+          },
+          "B": {
+            "item": "upgrade_aquatic:river_fence"
+          }
+        },
+        "pattern": [
+          "ABA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:river_bridge_pier"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

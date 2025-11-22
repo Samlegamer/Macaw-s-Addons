@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwtrpdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "barrel_trapdoors",
+        "key": {
+          "A": {
+            "item": "environmental:willow_planks"
+          },
+          "B": {
+            "item": "minecraft:barrel"
+          }
+        },
+        "pattern": [
+          " A ",
+          "ABA",
+          " A "
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:willow_barrel_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "autumnity"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bookshelf",
+        "key": {
+          "A": {
+            "item": "autumnity:stripped_maple_log"
+          },
+          "B": {
+            "item": "minecraft:book"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BBB",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:stripped_maple_bookshelf"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

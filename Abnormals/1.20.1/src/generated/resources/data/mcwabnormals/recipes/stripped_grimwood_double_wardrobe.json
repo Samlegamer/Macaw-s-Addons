@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "double_wardrobe",
+        "key": {
+          "A": {
+            "item": "atmospheric:stripped_grimwood_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BAB",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:stripped_grimwood_double_wardrobe"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

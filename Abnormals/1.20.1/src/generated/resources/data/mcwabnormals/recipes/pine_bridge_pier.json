@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "wooden_piers",
+        "key": {
+          "A": {
+            "item": "environmental:pine_log"
+          },
+          "B": {
+            "item": "environmental:pine_fence"
+          }
+        },
+        "pattern": [
+          "ABA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:pine_bridge_pier"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "highley",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "atmospheric:laurel_log"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "ABA"
+        ],
+        "result": {
+          "item": "mcwabnormals:laurel_highley_gate"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

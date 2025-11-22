@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwtrpdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "upgrade_aquatic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "ranch_trapdoors",
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:driftwood_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "BBB",
+          "ABA"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwabnormals:driftwood_ranch_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

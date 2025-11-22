@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "shoji_two",
+        "key": {
+          "A": {
+            "item": "atmospheric:grimwood_slab"
+          },
+          "B": {
+            "item": "minecraft:paper"
+          }
+        },
+        "pattern": [
+          "BB",
+          "BB",
+          "AA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:grimwood_japanese2_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

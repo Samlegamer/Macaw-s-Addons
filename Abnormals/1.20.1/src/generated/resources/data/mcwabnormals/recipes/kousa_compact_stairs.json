@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwstairs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "compact_stairs",
+        "key": {
+          "A": {
+            "item": "atmospheric:stripped_kousa_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "AA ",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwabnormals:kousa_compact_stairs"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

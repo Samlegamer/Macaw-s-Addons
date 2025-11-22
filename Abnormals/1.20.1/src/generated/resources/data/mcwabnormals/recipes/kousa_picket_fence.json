@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "picket",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "atmospheric:kousa_planks"
+          },
+          "C": {
+            "item": "atmospheric:kousa_log"
+          }
+        },
+        "pattern": [
+          "CBC",
+          "CAC"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:kousa_picket_fence"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

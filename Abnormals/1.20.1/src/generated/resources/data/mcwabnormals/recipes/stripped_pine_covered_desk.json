@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "covered_desk",
+        "key": {
+          "A": {
+            "item": "environmental:stripped_pine_log"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "A A"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwabnormals:stripped_pine_covered_desk"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

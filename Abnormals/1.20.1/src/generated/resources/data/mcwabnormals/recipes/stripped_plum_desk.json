@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "desk",
+        "key": {
+          "A": {
+            "item": "environmental:stripped_plum_log"
+          },
+          "B": {
+            "item": "environmental:plum_fence"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwabnormals:stripped_plum_desk"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

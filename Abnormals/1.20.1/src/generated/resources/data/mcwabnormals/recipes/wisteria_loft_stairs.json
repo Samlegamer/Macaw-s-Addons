@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwstairs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "loft_stairs",
+        "key": {
+          "A": {
+            "item": "environmental:stripped_wisteria_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          " A ",
+          "  A"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:wisteria_loft_stairs"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

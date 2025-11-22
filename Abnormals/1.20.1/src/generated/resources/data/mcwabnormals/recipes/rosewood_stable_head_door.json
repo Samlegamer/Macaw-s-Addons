@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "stable_head",
+        "ingredients": [
+          {
+            "item": "mcwabnormals:rosewood_stable_door"
+          }
+        ],
+        "result": {
+          "item": "mcwabnormals:rosewood_stable_head_door"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "railing_gate",
+        "key": {
+          "A": {
+            "item": "minecraft:iron_bars"
+          },
+          "B": {
+            "item": "atmospheric:red_arid_sandstone"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "ABA"
+        ],
+        "result": {
+          "item": "mcwabnormals:red_arid_sandstone_railing_gate"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stool_chair",
+        "key": {
+          "A": {
+            "item": "environmental:stripped_pine_log"
+          },
+          "B": {
+            "item": "environmental:pine_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwabnormals:stripped_pine_stool_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

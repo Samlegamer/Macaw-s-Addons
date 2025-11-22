@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwtrpdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "caverns_and_chasms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "barrel_trapdoors",
+        "key": {
+          "A": {
+            "item": "caverns_and_chasms:azalea_planks"
+          },
+          "B": {
+            "item": "minecraft:barrel"
+          }
+        },
+        "pattern": [
+          " A ",
+          "ABA",
+          " A "
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:azalea_barrel_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

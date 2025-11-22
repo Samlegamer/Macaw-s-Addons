@@ -1,0 +1,56 @@
+{
+  "advancements": [
+    {
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_the_recipe": {
+            "conditions": {
+              "recipe": "mcwabnormals:willow_four_panel_trapdoor"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+          },
+          "has_willow_planks": {
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "environmental:willow_planks"
+                  ]
+                }
+              ]
+            },
+            "trigger": "minecraft:inventory_changed"
+          }
+        },
+        "requirements": [
+          [
+            "has_willow_planks",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:willow_four_panel_trapdoor"
+          ]
+        },
+        "sends_telemetry_event": false
+      },
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwtrpdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

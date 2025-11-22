@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stockade",
+        "key": {
+          "A": {
+            "item": "environmental:plum_log"
+          },
+          "B": {
+            "item": "environmental:plum_planks"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "BAB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:plum_stockade_fence"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

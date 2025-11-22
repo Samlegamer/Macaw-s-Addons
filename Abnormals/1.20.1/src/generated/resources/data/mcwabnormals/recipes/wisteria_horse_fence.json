@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "horse",
+        "key": {
+          "A": {
+            "item": "environmental:wisteria_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "BAB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:wisteria_horse_fence"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

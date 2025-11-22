@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "rope_stairs",
+        "key": {
+          "A": {
+            "item": "mcwabnormals:rope_pine_bridge"
+          }
+        },
+        "pattern": [
+          "  A",
+          " AA",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwabnormals:pine_rope_bridge_stair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

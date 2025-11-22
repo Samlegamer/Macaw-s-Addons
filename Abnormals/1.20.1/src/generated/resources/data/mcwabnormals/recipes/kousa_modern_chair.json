@@ -1,0 +1,46 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chair",
+        "key": {
+          "A": {
+            "item": "atmospheric:kousa_log"
+          },
+          "B": {
+            "item": "atmospheric:kousa_slab"
+          },
+          "C": {
+            "item": "atmospheric:kousa_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwabnormals:kousa_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

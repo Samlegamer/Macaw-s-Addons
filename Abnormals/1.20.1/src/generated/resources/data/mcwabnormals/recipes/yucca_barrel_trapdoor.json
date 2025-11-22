@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwtrpdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "barrel_trapdoors",
+        "key": {
+          "A": {
+            "item": "atmospheric:yucca_planks"
+          },
+          "B": {
+            "item": "minecraft:barrel"
+          }
+        },
+        "pattern": [
+          " A ",
+          "ABA",
+          " A "
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:yucca_barrel_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

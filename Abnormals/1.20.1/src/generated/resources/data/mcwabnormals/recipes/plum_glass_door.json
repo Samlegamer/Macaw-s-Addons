@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "glassed",
+        "key": {
+          "A": {
+            "item": "environmental:plum_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "pattern": [
+          "AB",
+          "BB",
+          "AB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:plum_glass_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

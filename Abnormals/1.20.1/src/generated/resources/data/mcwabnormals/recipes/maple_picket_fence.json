@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "autumnity"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "picket",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "autumnity:maple_planks"
+          },
+          "C": {
+            "item": "autumnity:maple_log"
+          }
+        },
+        "pattern": [
+          "CBC",
+          "CAC"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:maple_picket_fence"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

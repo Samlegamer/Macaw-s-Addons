@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "desk",
+        "key": {
+          "A": {
+            "item": "atmospheric:grimwood_log"
+          },
+          "B": {
+            "item": "atmospheric:grimwood_fence"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwabnormals:grimwood_desk"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "rail_bridges",
+        "key": {
+          "A": {
+            "item": "environmental:wisteria_slab"
+          },
+          "B": {
+            "item": "environmental:wisteria_fence"
+          }
+        },
+        "pattern": [
+          "B B",
+          "BAB"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:wisteria_rail_bridge"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

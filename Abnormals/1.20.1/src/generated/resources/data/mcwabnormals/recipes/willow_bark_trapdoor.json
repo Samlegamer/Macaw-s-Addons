@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwtrpdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bark_trapdoors",
+        "key": {
+          "A": {
+            "item": "environmental:willow_log"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "ABA"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwabnormals:willow_bark_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

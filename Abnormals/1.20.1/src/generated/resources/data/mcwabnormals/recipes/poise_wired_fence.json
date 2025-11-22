@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "endergetic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "wired",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "endergetic:poise_stem"
+          },
+          "C": {
+            "item": "minecraft:iron_bars"
+          }
+        },
+        "pattern": [
+          "ACA",
+          "ABA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:poise_wired_fence"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

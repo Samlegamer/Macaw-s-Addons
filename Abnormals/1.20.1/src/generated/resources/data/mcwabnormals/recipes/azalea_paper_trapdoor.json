@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwtrpdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "caverns_and_chasms"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "paper_trapdoors",
+        "key": {
+          "A": {
+            "item": "caverns_and_chasms:azalea_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_paper"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwabnormals:azalea_paper_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

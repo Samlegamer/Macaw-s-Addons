@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "striped_chair",
+        "key": {
+          "A": {
+            "item": "atmospheric:stripped_grimwood_log"
+          },
+          "B": {
+            "item": "atmospheric:grimwood_slab"
+          },
+          "C": {
+            "item": "atmospheric:grimwood_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwabnormals:stripped_grimwood_striped_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

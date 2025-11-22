@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwwindows"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "autumnity"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "blinds",
+        "key": {
+          "A": {
+            "item": "autumnity:maple_slab"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BBB",
+          "BBB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:maple_blinds"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "striped_chair",
+        "key": {
+          "A": {
+            "item": "environmental:stripped_plum_log"
+          },
+          "B": {
+            "item": "environmental:plum_slab"
+          },
+          "C": {
+            "item": "environmental:plum_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwabnormals:stripped_plum_striped_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

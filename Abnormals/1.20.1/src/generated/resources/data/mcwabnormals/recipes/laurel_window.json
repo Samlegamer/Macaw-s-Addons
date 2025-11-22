@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwwindows"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "windows",
+        "key": {
+          "A": {
+            "item": "mcwwindows:window_base"
+          },
+          "B": {
+            "item": "atmospheric:laurel_log"
+          }
+        },
+        "pattern": [
+          " A ",
+          "ABA",
+          " A "
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:laurel_window"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

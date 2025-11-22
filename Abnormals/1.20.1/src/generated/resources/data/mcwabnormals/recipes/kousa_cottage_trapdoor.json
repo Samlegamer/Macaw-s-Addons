@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwtrpdoors"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "cottage_trapdoors",
+        "key": {
+          "A": {
+            "item": "atmospheric:kousa_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_cottage"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwabnormals:kousa_cottage_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

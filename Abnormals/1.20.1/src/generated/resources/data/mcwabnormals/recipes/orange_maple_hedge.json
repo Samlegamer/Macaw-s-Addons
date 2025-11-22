@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "autumnity"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "hedge",
+        "key": {
+          "A": {
+            "item": "autumnity:orange_maple_leaves"
+          }
+        },
+        "pattern": [
+          "AA",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:orange_maple_hedge"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "wooden_piers",
+        "key": {
+          "A": {
+            "item": "atmospheric:laurel_log"
+          },
+          "B": {
+            "item": "atmospheric:laurel_fence"
+          }
+        },
+        "pattern": [
+          "ABA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:laurel_bridge_pier"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

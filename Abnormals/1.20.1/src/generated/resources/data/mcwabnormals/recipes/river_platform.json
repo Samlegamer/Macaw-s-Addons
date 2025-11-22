@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwstairs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "upgrade_aquatic"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "mcwstairs_platform",
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:river_log"
+          },
+          "B": {
+            "item": "upgrade_aquatic:river_slab"
+          }
+        },
+        "pattern": [
+          " BB",
+          " AA",
+          "   "
+        ],
+        "result": {
+          "count": 12,
+          "item": "mcwabnormals:river_platform"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

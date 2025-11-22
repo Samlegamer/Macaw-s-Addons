@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwwindows"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "atmospheric:morado_slab"
+          },
+          {
+            "item": "atmospheric:morado_slab"
+          },
+          {
+            "item": "atmospheric:morado_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:morado_louvered_shutter"
+        }
+      }
+    }
+  ]
+}

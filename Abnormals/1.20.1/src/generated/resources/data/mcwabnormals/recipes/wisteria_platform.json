@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwstairs"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "mcwstairs_platform",
+        "key": {
+          "A": {
+            "item": "environmental:wisteria_log"
+          },
+          "B": {
+            "item": "environmental:wisteria_slab"
+          }
+        },
+        "pattern": [
+          " BB",
+          " AA",
+          "   "
+        ],
+        "result": {
+          "count": 12,
+          "item": "mcwabnormals:wisteria_platform"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "environmental"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "rope_bridges",
+        "key": {
+          "A": {
+            "item": "environmental:plum_slab"
+          },
+          "B": {
+            "item": "minecraft:string"
+          }
+        },
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:rope_plum_bridge"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

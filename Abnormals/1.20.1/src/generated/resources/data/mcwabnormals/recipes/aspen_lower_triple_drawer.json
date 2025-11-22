@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfurnitures"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "atmospheric"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "lower_triple_drawer",
+        "key": {
+          "A": {
+            "item": "atmospheric:aspen_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BAB",
+          "ABA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:aspen_lower_triple_drawer"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

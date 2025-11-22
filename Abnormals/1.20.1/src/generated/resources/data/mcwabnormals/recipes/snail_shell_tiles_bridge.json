@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "autumnity"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "log_bridges",
+        "key": {
+          "A": {
+            "item": "autumnity:snail_shell_tile_slab"
+          },
+          "B": {
+            "item": "autumnity:snail_shell_tile_wall"
+          }
+        },
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:snail_shell_tiles_bridge"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}
