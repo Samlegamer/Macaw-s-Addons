@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "end_table",
+      "key": {
+        "A": {
+          "item": "mcwbiomesoplenty:maple_table"
+        },
+        "B": {
+          "item": "biomesoplenty:maple_log"
+        }
+      },
+      "pattern": [
+        "A",
+        "B"
+      ],
+      "result": {
+        "item": "mcwbiomesoplenty:maple_end_table"
+      }
+    }
+  ]
+}

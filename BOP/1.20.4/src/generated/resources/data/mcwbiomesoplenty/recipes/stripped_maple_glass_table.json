@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "glass_table",
+      "key": {
+        "A": {
+          "item": "mcwbiomesoplenty:stripped_maple_end_table"
+        },
+        "B": {
+          "item": "minecraft:glass"
+        }
+      },
+      "pattern": [
+        "A",
+        "B"
+      ],
+      "result": {
+        "item": "mcwbiomesoplenty:stripped_maple_glass_table"
+      }
+    }
+  ]
+}

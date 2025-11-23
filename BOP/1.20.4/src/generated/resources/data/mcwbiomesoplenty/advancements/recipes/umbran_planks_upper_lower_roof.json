@@ -1,0 +1,51 @@
+{
+  "advancements": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbiomesoplenty:umbran_planks_upper_lower_roof"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_umbran_planks": {
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "biomesoplenty:umbran_planks"
+                ]
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwroofs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_umbran_planks"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbiomesoplenty:umbran_planks_upper_lower_roof"
+        ]
+      }
+    }
+  ]
+}

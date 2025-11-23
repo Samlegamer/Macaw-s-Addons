@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "double_wardrobe",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:palm_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BAB",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbyg:palm_double_wardrobe"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

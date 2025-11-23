@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "compact_stairs",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:stripped_umbran_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "AA ",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwbiomesoplenty:umbran_compact_stairs"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

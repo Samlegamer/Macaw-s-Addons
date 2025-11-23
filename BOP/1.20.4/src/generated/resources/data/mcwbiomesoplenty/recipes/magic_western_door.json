@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "western",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:magic_planks"
+        },
+        "B": {
+          "item": "biomesoplenty:magic_slab"
+        }
+      },
+      "pattern": [
+        "  A",
+        "ABA",
+        "AAA"
+      ],
+      "result": {
+        "count": 3,
+        "item": "mcwbiomesoplenty:magic_western_door"
+      }
+    }
+  ]
+}

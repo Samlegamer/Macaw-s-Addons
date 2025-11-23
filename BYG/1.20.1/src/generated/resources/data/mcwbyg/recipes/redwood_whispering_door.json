@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "whispering",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:redwood_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_whispering"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbyg:redwood_whispering_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

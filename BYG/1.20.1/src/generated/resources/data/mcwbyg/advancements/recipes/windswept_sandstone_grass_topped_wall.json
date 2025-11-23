@@ -1,0 +1,51 @@
+{
+  "advancements": [
+    {
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_the_recipe": {
+            "conditions": {
+              "recipe": "mcwbyg:windswept_sandstone_grass_topped_wall"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+          },
+          "has_windswept_sandstone": {
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "biomeswevegone:windswept_sandstone"
+                  ]
+                }
+              ]
+            },
+            "trigger": "minecraft:inventory_changed"
+          }
+        },
+        "requirements": [
+          [
+            "has_windswept_sandstone",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "mcwbyg:windswept_sandstone_grass_topped_wall"
+          ]
+        },
+        "sends_telemetry_event": false
+      },
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ]
+    }
+  ]
+}

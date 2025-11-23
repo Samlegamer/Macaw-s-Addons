@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "end_table",
+        "key": {
+          "A": {
+            "item": "mcwmoddinglegacy:stripped_bsky_frostbright_table"
+          },
+          "B": {
+            "item": "blue_skies:stripped_frostbright_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_bsky_frostbright_end_table"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

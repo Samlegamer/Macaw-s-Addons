@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "balustrade_bridges",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:blue_sandstone_slab"
+          },
+          "B": {
+            "item": "biomeswevegone:blue_sandstone_wall"
+          }
+        },
+        "pattern": [
+          "BBB",
+          "AAA"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwbyg:balustrade_blue_sandstone_bridge"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

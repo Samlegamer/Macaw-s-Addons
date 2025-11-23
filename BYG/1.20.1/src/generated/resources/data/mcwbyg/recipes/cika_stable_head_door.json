@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "stable_head",
+        "ingredients": [
+          {
+            "item": "mcwbyg:cika_stable_door"
+          }
+        ],
+        "result": {
+          "item": "mcwbyg:cika_stable_head_door"
+        }
+      }
+    }
+  ]
+}

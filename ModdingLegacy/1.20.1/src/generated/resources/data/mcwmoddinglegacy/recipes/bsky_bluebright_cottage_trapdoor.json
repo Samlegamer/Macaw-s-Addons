@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "cottage_trapdoors",
+        "key": {
+          "A": {
+            "item": "blue_skies:bluebright_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_cottage"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:bsky_bluebright_cottage_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

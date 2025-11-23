@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "glass_kitchen_cabinet",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:willow_log"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          },
+          "C": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AA",
+          "BC",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbiomesoplenty:willow_glass_kitchen_cabinet"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "steep_roof",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:pine_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " A",
+          "AA",
+          "AB"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbyg:pine_steep_roof"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

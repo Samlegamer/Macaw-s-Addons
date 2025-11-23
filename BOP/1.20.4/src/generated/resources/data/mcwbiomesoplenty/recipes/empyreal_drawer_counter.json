@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "drawer_counter",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:empyreal_slab"
+        },
+        "B": {
+          "item": "mcwbiomesoplenty:empyreal_drawer"
+        }
+      },
+      "pattern": [
+        "A",
+        "B"
+      ],
+      "result": {
+        "item": "mcwbiomesoplenty:empyreal_drawer_counter"
+      }
+    }
+  ]
+}

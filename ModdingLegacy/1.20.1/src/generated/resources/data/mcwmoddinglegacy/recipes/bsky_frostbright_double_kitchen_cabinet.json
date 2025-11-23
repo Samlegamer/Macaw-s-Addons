@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "double_kitchen_cabinet",
+        "key": {
+          "A": {
+            "item": "blue_skies:frostbright_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AA",
+          "BB",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwmoddinglegacy:bsky_frostbright_double_kitchen_cabinet"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chair",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:rainbow_eucalyptus_log"
+          },
+          "B": {
+            "item": "biomeswevegone:rainbow_eucalyptus_slab"
+          },
+          "C": {
+            "item": "biomeswevegone:rainbow_eucalyptus_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbyg:rainbow_eucalyptus_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

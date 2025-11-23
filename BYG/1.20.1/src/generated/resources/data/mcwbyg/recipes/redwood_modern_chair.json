@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chair",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:redwood_log"
+          },
+          "B": {
+            "item": "biomeswevegone:redwood_slab"
+          },
+          "C": {
+            "item": "biomeswevegone:redwood_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbyg:redwood_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

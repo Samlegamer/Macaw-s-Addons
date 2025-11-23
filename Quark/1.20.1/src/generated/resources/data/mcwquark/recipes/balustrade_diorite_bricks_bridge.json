@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "quark"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "balustrade_bridges",
+        "key": {
+          "A": {
+            "item": "quark:diorite_bricks_slab"
+          },
+          "B": {
+            "item": "quark:diorite_bricks_wall"
+          }
+        },
+        "pattern": [
+          "BBB",
+          "AAA"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwquark:balustrade_diorite_bricks_bridge"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

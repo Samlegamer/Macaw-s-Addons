@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "birch",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:skyris_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_birch"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbyg:skyris_paper_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

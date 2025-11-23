@@ -1,0 +1,51 @@
+{
+  "advancements": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbiomesoplenty:willow_double_wardrobe"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_willow_log": {
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "biomesoplenty:willow_log"
+                ]
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_willow_log"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbiomesoplenty:willow_double_wardrobe"
+        ]
+      }
+    }
+  ]
+}

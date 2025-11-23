@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chair",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:white_mangrove_log"
+          },
+          "B": {
+            "item": "biomeswevegone:white_mangrove_slab"
+          },
+          "C": {
+            "item": "biomeswevegone:white_mangrove_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbyg:white_mangrove_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

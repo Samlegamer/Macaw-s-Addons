@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "shoji_two",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:mahogany_slab"
+        },
+        "B": {
+          "item": "minecraft:paper"
+        }
+      },
+      "pattern": [
+        "BB",
+        "BB",
+        "AA"
+      ],
+      "result": {
+        "count": 3,
+        "item": "mcwbiomesoplenty:mahogany_japanese2_door"
+      }
+    }
+  ]
+}

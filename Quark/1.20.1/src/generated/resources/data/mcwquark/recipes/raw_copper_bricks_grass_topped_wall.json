@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwfences"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "quark"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "grass_topped",
+        "key": {
+          "A": {
+            "item": "minecraft:raw_copper_block"
+          },
+          "B": {
+            "item": "quark:raw_copper_bricks"
+          },
+          "C": {
+            "item": "minecraft:dirt"
+          }
+        },
+        "pattern": [
+          "BCB",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwquark:raw_copper_bricks_grass_topped_wall"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

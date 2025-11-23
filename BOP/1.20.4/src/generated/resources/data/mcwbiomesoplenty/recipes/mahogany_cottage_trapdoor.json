@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwtrpdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "cottage_trapdoors",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:mahogany_planks"
+        },
+        "B": {
+          "item": "mcwtrpdoors:print_cottage"
+        }
+      },
+      "pattern": [
+        "A",
+        "B",
+        "A"
+      ],
+      "result": {
+        "item": "mcwbiomesoplenty:mahogany_cottage_trapdoor"
+      }
+    }
+  ]
+}

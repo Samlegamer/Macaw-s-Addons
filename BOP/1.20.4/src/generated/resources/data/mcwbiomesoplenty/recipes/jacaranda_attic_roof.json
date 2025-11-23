@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwroofs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "attic_roof",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:jacaranda_log"
+        },
+        "B": {
+          "item": "minecraft:glass"
+        }
+      },
+      "pattern": [
+        " A",
+        "AB"
+      ],
+      "result": {
+        "count": 2,
+        "item": "mcwbiomesoplenty:jacaranda_attic_roof"
+      }
+    }
+  ]
+}

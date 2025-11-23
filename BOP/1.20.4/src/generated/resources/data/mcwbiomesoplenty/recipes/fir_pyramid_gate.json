@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "pyramid",
+      "key": {
+        "A": {
+          "item": "minecraft:stick"
+        },
+        "B": {
+          "item": "biomesoplenty:fir_log"
+        },
+        "C": {
+          "item": "biomesoplenty:fir_planks"
+        }
+      },
+      "pattern": [
+        "ABA",
+        "ACA"
+      ],
+      "result": {
+        "item": "mcwbiomesoplenty:fir_pyramid_gate"
+      }
+    }
+  ]
+}

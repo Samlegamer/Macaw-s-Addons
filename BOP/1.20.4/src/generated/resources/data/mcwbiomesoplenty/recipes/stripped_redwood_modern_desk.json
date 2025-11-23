@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "modern_desk",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:stripped_redwood_log"
+        },
+        "B": {
+          "item": "biomesoplenty:redwood_fence"
+        },
+        "C": {
+          "item": "minecraft:stick"
+        }
+      },
+      "pattern": [
+        "AAA",
+        "BCB"
+      ],
+      "result": {
+        "count": 2,
+        "item": "mcwbiomesoplenty:stripped_redwood_modern_desk"
+      }
+    }
+  ]
+}

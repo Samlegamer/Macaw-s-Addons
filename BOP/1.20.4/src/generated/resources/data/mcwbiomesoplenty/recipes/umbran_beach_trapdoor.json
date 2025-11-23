@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwtrpdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "beach_trapdoors",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:umbran_planks"
+        },
+        "B": {
+          "item": "mcwtrpdoors:print_beach"
+        }
+      },
+      "pattern": [
+        "A",
+        "B",
+        "A"
+      ],
+      "result": {
+        "item": "mcwbiomesoplenty:umbran_beach_trapdoor"
+      }
+    }
+  ]
+}

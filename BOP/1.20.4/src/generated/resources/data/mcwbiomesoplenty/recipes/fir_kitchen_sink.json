@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "kitchen_sink",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:fir_log"
+        },
+        "B": {
+          "item": "minecraft:water_bucket"
+        },
+        "C": {
+          "item": "biomesoplenty:fir_slab"
+        },
+        "D": {
+          "item": "minecraft:cauldron"
+        }
+      },
+      "pattern": [
+        "CDC",
+        "ABA",
+        "ABA"
+      ],
+      "result": {
+        "item": "mcwbiomesoplenty:fir_kitchen_sink"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "swamp",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:empyreal_planks"
+        },
+        "B": {
+          "item": "mcwdoors:print_swamp"
+        }
+      },
+      "pattern": [
+        "A",
+        "B",
+        "A"
+      ],
+      "result": {
+        "item": "mcwbiomesoplenty:empyreal_swamp_door"
+      }
+    }
+  ]
+}

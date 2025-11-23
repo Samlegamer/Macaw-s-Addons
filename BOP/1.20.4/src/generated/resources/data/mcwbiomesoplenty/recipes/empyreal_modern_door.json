@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "modern",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:empyreal_planks"
+        },
+        "B": {
+          "item": "minecraft:glass_pane"
+        }
+      },
+      "pattern": [
+        "AB",
+        "AA",
+        "AB"
+      ],
+      "result": {
+        "count": 3,
+        "item": "mcwbiomesoplenty:empyreal_modern_door"
+      }
+    }
+  ]
+}

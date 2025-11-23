@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "counter",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:dead_slab"
+        },
+        "B": {
+          "item": "biomesoplenty:stripped_dead_log"
+        }
+      },
+      "pattern": [
+        "A",
+        "B"
+      ],
+      "result": {
+        "item": "mcwbiomesoplenty:stripped_dead_counter"
+      }
+    }
+  ]
+}

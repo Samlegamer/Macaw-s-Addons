@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "double_drawer_counter",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:magic_slab"
+          },
+          "B": {
+            "item": "mcwbiomesoplenty:stripped_magic_double_drawer"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:stripped_magic_double_drawer_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

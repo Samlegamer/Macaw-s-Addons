@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chair",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:stripped_maple_log"
+          },
+          "B": {
+            "item": "biomeswevegone:maple_slab"
+          },
+          "C": {
+            "item": "biomeswevegone:maple_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbyg:stripped_maple_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

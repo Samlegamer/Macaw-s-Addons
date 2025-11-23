@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "striped_chair",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:stripped_white_mangrove_log"
+          },
+          "B": {
+            "item": "biomeswevegone:white_mangrove_slab"
+          },
+          "C": {
+            "item": "biomeswevegone:white_mangrove_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbyg:stripped_white_mangrove_striped_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

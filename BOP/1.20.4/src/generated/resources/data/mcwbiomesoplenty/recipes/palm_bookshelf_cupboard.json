@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "bookshelf_cupboard",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:palm_log"
+        },
+        "B": {
+          "item": "mcwfurnitures:cabinet_door"
+        },
+        "C": {
+          "item": "minecraft:book"
+        }
+      },
+      "pattern": [
+        "AAA",
+        "BAC",
+        "AAA"
+      ],
+      "result": {
+        "count": 4,
+        "item": "mcwbiomesoplenty:palm_bookshelf_cupboard"
+      }
+    }
+  ]
+}

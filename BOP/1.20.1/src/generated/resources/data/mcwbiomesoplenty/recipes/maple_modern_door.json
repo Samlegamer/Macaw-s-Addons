@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:maple_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "pattern": [
+          "AB",
+          "AA",
+          "AB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbiomesoplenty:maple_modern_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

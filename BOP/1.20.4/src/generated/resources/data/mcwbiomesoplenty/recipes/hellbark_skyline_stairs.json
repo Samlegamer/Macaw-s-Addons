@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwstairs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "skyline_stairs",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:stripped_hellbark_log"
+        },
+        "B": {
+          "item": "biomesoplenty:hellbark_log"
+        }
+      },
+      "pattern": [
+        "A  ",
+        "BA "
+      ],
+      "result": {
+        "count": 4,
+        "item": "mcwbiomesoplenty:hellbark_skyline_stairs"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "nether",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:maple_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_nether"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:maple_nether_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

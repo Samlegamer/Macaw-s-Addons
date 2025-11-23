@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "classic_trapdoors",
+        "key": {
+          "A": {
+            "item": "blue_skies:starlit_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_classic"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:bsky_starlit_classic_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

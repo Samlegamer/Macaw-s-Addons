@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "stable_head",
+        "ingredients": [
+          {
+            "item": "mcwbiomesoplenty:hellbark_stable_door"
+          }
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:hellbark_stable_head_door"
+        }
+      }
+    }
+  ]
+}

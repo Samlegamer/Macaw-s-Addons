@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "rope_bridges",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:aspen_slab"
+          },
+          "B": {
+            "item": "minecraft:string"
+          }
+        },
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbyg:rope_aspen_bridge"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

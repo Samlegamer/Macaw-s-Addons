@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "mcwbridges"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "quark"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "balustrade_bridges",
+        "key": {
+          "A": {
+            "item": "quark:sandstone_bricks_slab"
+          },
+          "B": {
+            "item": "quark:sandstone_bricks_wall"
+          }
+        },
+        "pattern": [
+          "BBB",
+          "AAA"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwquark:balustrade_sandstone_bricks_bridge"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

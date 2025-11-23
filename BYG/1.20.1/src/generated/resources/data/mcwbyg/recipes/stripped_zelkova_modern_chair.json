@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chair",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:stripped_zelkova_log"
+          },
+          "B": {
+            "item": "biomeswevegone:zelkova_slab"
+          },
+          "C": {
+            "item": "biomeswevegone:zelkova_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbyg:stripped_zelkova_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

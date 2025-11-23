@@ -1,0 +1,51 @@
+{
+  "advancements": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbiomesoplenty:willow_glass_trapdoor"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_willow_planks": {
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "biomesoplenty:willow_planks"
+                ]
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwtrpdoors"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_willow_planks"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbiomesoplenty:willow_glass_trapdoor"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "acacia",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:ebony_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_acacia"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbyg:ebony_tropical_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "stockade",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:empyreal_log"
+        },
+        "B": {
+          "item": "biomesoplenty:empyreal_planks"
+        }
+      },
+      "pattern": [
+        "ABA",
+        "BAB"
+      ],
+      "result": {
+        "count": 3,
+        "item": "mcwbiomesoplenty:empyreal_stockade_fence"
+      }
+    }
+  ]
+}

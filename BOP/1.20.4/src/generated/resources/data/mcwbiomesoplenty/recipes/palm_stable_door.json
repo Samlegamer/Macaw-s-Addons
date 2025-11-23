@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "stable",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:palm_planks"
+        },
+        "B": {
+          "item": "minecraft:iron_bars"
+        }
+      },
+      "pattern": [
+        "BB",
+        "AA",
+        "AA"
+      ],
+      "result": {
+        "count": 3,
+        "item": "mcwbiomesoplenty:palm_stable_door"
+      }
+    }
+  ]
+}

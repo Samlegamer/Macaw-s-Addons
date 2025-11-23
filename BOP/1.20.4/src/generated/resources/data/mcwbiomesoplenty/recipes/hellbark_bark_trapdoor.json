@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwtrpdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "bark_trapdoors",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:hellbark_log"
+        },
+        "B": {
+          "item": "minecraft:glass_pane"
+        }
+      },
+      "pattern": [
+        "ABA",
+        "ABA"
+      ],
+      "result": {
+        "count": 2,
+        "item": "mcwbiomesoplenty:hellbark_bark_trapdoor"
+      }
+    }
+  ]
+}

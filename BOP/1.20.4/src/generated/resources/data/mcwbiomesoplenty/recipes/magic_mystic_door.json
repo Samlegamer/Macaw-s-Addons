@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "mystic",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:magic_planks"
+        },
+        "B": {
+          "item": "mcwdoors:print_mystic"
+        }
+      },
+      "pattern": [
+        "A",
+        "B",
+        "A"
+      ],
+      "result": {
+        "item": "mcwbiomesoplenty:magic_mystic_door"
+      }
+    }
+  ]
+}

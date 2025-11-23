@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "chair",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:maple_log"
+        },
+        "B": {
+          "item": "biomesoplenty:maple_slab"
+        },
+        "C": {
+          "item": "biomesoplenty:maple_fence"
+        }
+      },
+      "pattern": [
+        " A",
+        "BA",
+        "CC"
+      ],
+      "result": {
+        "item": "mcwbiomesoplenty:maple_chair"
+      }
+    }
+  ]
+}

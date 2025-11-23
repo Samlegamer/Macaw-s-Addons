@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "lower_bookshelf_drawer",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:stripped_rainbow_eucalyptus_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          },
+          "C": {
+            "item": "minecraft:book"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ACA",
+          "ABA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbyg:stripped_rainbow_eucalyptus_lower_bookshelf_drawer"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwbridges"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "recyclable_bridges",
+      "ingredients": [
+        {
+          "item": "mcwbiomesoplenty:empyreal_rope_bridge_stair"
+        }
+      ],
+      "result": {
+        "item": "mcwbiomesoplenty:rope_empyreal_bridge"
+      }
+    }
+  ]
+}

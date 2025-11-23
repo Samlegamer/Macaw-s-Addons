@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "modern_chair",
+      "key": {
+        "A": {
+          "item": "biomesoplenty:willow_log"
+        },
+        "B": {
+          "item": "biomesoplenty:willow_slab"
+        },
+        "C": {
+          "item": "biomesoplenty:willow_fence"
+        }
+      },
+      "pattern": [
+        "BA",
+        "CC"
+      ],
+      "result": {
+        "item": "mcwbiomesoplenty:willow_modern_chair"
+      }
+    }
+  ]
+}

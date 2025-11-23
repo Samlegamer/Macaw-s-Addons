@@ -47,7 +47,7 @@ public class MappingsFix
 	}
 
 	protected static void addMissingBlock(MissingMappingsEvent event, String oldModid, String newModid, String nameMissing, String nameNew) {
-		Block remapped = (Block) ForgeRegistries.BLOCKS.getValue(new ResourceLocation(newModid, nameNew));
+		Block remapped = (Block) ForgeRegistries.BLOCKS.getValue(ResourceLocation.fromNamespaceAndPath(newModid, nameNew));
 		if (remapped != null) {
 			for (MissingMappingsEvent.Mapping<Block> entry : event.getAllMappings(Registries.BLOCK)) {
 				if (entry.getKey().toString().equals(oldModid + ":" + nameMissing)) {
@@ -58,7 +58,7 @@ public class MappingsFix
 	}
 
 	protected static void addMissingItem(MissingMappingsEvent event, String oldModid, String newModid, String nameMissing, String nameNew) {
-		Item remapped = (Item)ForgeRegistries.ITEMS.getValue(new ResourceLocation(newModid, nameNew));
+		Item remapped = (Item)ForgeRegistries.ITEMS.getValue(ResourceLocation.fromNamespaceAndPath(newModid, nameNew));
 		if (remapped != null) {
 			for(MissingMappingsEvent.Mapping<Item> entry : event.getAllMappings(Registries.ITEM)) {
 				if (entry.getKey().toString().equals(oldModid + ":" + nameMissing)) {

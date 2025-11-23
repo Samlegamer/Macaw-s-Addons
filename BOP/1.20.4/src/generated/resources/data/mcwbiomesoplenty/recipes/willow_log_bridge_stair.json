@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwbridges"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "log_stairs",
+      "key": {
+        "A": {
+          "item": "mcwbiomesoplenty:willow_log_bridge_middle"
+        }
+      },
+      "pattern": [
+        "  A",
+        " AA",
+        "AAA"
+      ],
+      "result": {
+        "count": 6,
+        "item": "mcwbiomesoplenty:willow_log_bridge_stair"
+      }
+    }
+  ]
+}

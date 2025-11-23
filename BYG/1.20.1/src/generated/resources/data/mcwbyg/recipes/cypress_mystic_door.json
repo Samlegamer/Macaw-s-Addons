@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "mystic",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:cypress_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_mystic"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbyg:cypress_mystic_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "planks_steep_roof",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:redwood_planks"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " A",
+          "AA",
+          "AB"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbiomesoplenty:redwood_planks_steep_roof"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "end_table",
+        "key": {
+          "A": {
+            "item": "mcwbiomesoplenty:umbran_table"
+          },
+          "B": {
+            "item": "biomesoplenty:umbran_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:umbran_end_table"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

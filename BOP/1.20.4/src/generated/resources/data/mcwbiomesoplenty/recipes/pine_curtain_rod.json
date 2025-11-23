@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwwindows"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "group": "curtain_rods",
+      "key": {
+        "A": {
+          "item": "minecraft:stick"
+        },
+        "B": {
+          "item": "biomesoplenty:pine_log"
+        }
+      },
+      "pattern": [
+        "ABA"
+      ],
+      "result": {
+        "count": 5,
+        "item": "mcwbiomesoplenty:pine_curtain_rod"
+      }
+    }
+  ]
+}
