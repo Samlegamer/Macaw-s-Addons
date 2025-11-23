@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "tropical_trapdoors",
+        "key": {
+          "A": {
+            "item": "byg:zelkova_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_tropical"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbyg:zelkova_tropical_trapdoor"
+        }
+      }
+    }
+  ]
+}

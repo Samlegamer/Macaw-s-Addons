@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bamboo_trapdoors",
+        "key": {
+          "A": {
+            "item": "byg:sythian_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_bamboo"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbyg:sythian_bamboo_trapdoor"
+        }
+      }
+    }
+  ]
+}

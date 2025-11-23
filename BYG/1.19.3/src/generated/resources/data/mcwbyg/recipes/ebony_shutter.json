@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "byg:ebony_trapdoor"
+          },
+          {
+            "item": "byg:ebony_trapdoor"
+          },
+          {
+            "item": "byg:ebony_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbyg:ebony_shutter"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chair",
+        "key": {
+          "A": {
+            "item": "byg:stripped_witch_hazel_log"
+          },
+          "B": {
+            "item": "byg:witch_hazel_slab"
+          },
+          "C": {
+            "item": "byg:witch_hazel_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbyg:stripped_witch_hazel_modern_chair"
+        }
+      }
+    }
+  ]
+}

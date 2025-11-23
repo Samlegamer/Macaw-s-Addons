@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "four_panel_trapdoors",
+        "key": {
+          "A": {
+            "item": "byg:ebony_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_four_panel"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbyg:ebony_four_panel_trapdoor"
+        }
+      }
+    }
+  ]
+}

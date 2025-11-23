@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bamboo_trapdoors",
+        "key": {
+          "A": {
+            "item": "byg:palm_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_bamboo"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbyg:palm_bamboo_trapdoor"
+        }
+      }
+    }
+  ]
+}

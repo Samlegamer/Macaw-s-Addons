@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "recyclable_bridges",
+        "ingredients": [
+          {
+            "item": "mcwbyg:white_mangrove_rope_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwbyg:rope_white_mangrove_bridge"
+        }
+      }
+    }
+  ]
+}

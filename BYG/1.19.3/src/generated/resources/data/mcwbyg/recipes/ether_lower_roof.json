@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "lower_roof",
+        "key": {
+          "A": {
+            "item": "byg:ether_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " AA",
+          "AAB"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbyg:ether_lower_roof"
+        }
+      }
+    }
+  ]
+}

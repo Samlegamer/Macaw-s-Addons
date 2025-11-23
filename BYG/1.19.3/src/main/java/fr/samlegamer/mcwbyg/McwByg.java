@@ -1,22 +1,37 @@
 package fr.samlegamer.mcwbyg;
 
 import fr.samlegamer.addonslib.client.APIRenderTypes;
+import fr.samlegamer.addonslib.data.McwBlocksIdBase;
 import fr.samlegamer.addonslib.data.ModType;
 import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
+import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
+import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.util.McwMod;
 import fr.samlegamer.addonslib.windows.Windows;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
+
+import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
@@ -28,9 +43,10 @@ import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
+import org.jetbrains.annotations.NotNull;
 
 @Mod(McwByg.MODID)
-public class McwByg
+public class McwByg extends McwMod
 {
 	public static final String MODID = "mcwbyg";
     private static final Logger LOGGER = LogManager.getLogger();
@@ -65,53 +81,97 @@ public class McwByg
 		Trapdoors.setRegistrationWood(WOOD, block, item);
 		Windows.setRegistrationWood(WOOD, block, item);
 
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::registerTab);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::addToTab);
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::dataSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::tabRegistry);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::tabSetup);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
     }
-    
-    private void registerTab(CreativeModeTabEvent.Register event)
-    {
-		NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
-				Finder.findBlock(MODID, "aspen_roof"),
-				Finder.findBlock(MODID, "aspen_picket_fence"),
-				Finder.findBlock(MODID, "aspen_wardrobe"),
-				Finder.findBlock(MODID, "aspen_log_bridge_middle"),
-				Finder.findBlock(MODID, "aspen_plank_window2"),
-				Finder.findBlock(MODID, "aspen_paper_door"),
-				Finder.findBlock(MODID, "aspen_blossom_trapdoor"),
-				Finder.findBlock(MODID, "aspen_planks_path"),
-				Finder.findBlock(MODID, "aspen_bulk_stairs"));
 
-		prop
-				.addType(BlockType.ROOFS)
-				.addType(BlockType.FENCES)
-				.addType(BlockType.BRIDGES)
-				.addType(BlockType.FURNITURES)
-				.addType(BlockType.STAIRS)
-				.addType(BlockType.DOORS)
-				.addType(BlockType.TRAPDOORS)
-				.addType(BlockType.PATHS)
-				.addType(BlockType.WINDOWS);
-       final Block icon = prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.STAIRS);
-       MCWBYG_TAB = Registration.tabs(event, MODID, "tab", icon);
+    @Override
+    public void clientSetup(FMLClientSetupEvent event) {
+        APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllLeave(event, MODID, LEAVES);
+        APIRenderTypes.initAllStone(event, MODID, bridges_rockable, ModType.BRIDGES);
+        APIRenderTypes.initAllStone(event, MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
     }
 
-	private void client(FMLClientSetupEvent event)
-	{
-		APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
-		APIRenderTypes.initAllLeave(event, MODID, LEAVES);
-		APIRenderTypes.initAllStone(event, MODID, bridges_rockable, ModType.BRIDGES);
-		APIRenderTypes.initAllStone(event, MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
-	}
+    @Override
+    public void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            McwLootTables.addBlockAllWood(MODID, WOOD);
+            McwLootTables.addBlockHedges(MODID, LEAVES);
+            McwLootTables.addBlock(MODID, bridges_rockable, McwBlocksIdBase.BRIDGES_STONE_BLOCKS);
+            McwLootTables.addBlock(MODID, fences_rockable, McwBlocksIdBase.ROOFS_STONE_BLOCKS);
+            McwLootTables.addBlock(MODID, fences_rockable, McwBlocksIdBase.FENCES_STONE_BLOCKS);
+        });
+    }
 
-    private void addToTab(CreativeModeTabEvent.BuildContents event)
+    @Override
+    public void dataSetup(GatherDataEvent gatherDataEvent)
     {
-		APICreativeTab.initAllWood(event, MODID, WOOD, MCWBYG_TAB, Registration.getAllModTypeWood());
-		APICreativeTab.initAllLeave(event, MODID, LEAVES, MCWBYG_TAB);
-		APICreativeTab.initAllStone(event, MODID, bridges_rockable, MCWBYG_TAB, ModType.BRIDGES);
-		APICreativeTab.initAllStone(event, MODID, fences_rockable, MCWBYG_TAB, ModType.FENCES, ModType.ROOFS);
+        DataGenerator generator = gatherDataEvent.getGenerator();
+        PackOutput output = generator.getPackOutput();
+        ExistingFileHelper existingFileHelper = gatherDataEvent.getExistingFileHelper();
+        CompletableFuture<HolderLookup.Provider> lookupProvider = gatherDataEvent.getLookupProvider();
+
+        if(gatherDataEvent.includeServer()) {
+            McwBlockTags mcwBlockTags = new McwBlockTags(output, lookupProvider, MODID, existingFileHelper) {
+                @Override
+                protected void addTags(HolderLookup.@NotNull Provider p_256380_) {
+                    addAllMcwTags(MODID, WOOD, LEAVES);
+                    mcwBridgesTagsStone(MODID, bridges_rockable);
+                    mcwFencesTags(MODID, new ArrayList<>(), new ArrayList<>(), fences_rockable);
+                }
+            };
+
+            generator.addProvider(true, new Recipes(output));
+            generator.addProvider(true, mcwBlockTags);
+            generator.addProvider(true, new McwItemTags(output, lookupProvider, mcwBlockTags, MODID, existingFileHelper) {
+                @Override
+                protected void addTags(HolderLookup.@NotNull Provider p_256380_) {
+                    addAllMcwTags(MODID, WOOD, LEAVES);
+                    mcwFencesTags(MODID, new ArrayList<>(), new ArrayList<>(), fences_rockable);
+                }
+            });
+        }
+
+    }
+
+    @Override
+    public void tabRegistry(CreativeModeTabEvent.Register event) {
+        NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
+                Finder.findBlock(MODID, "aspen_roof"),
+                Finder.findBlock(MODID, "aspen_picket_fence"),
+                Finder.findBlock(MODID, "aspen_wardrobe"),
+                Finder.findBlock(MODID, "aspen_log_bridge_middle"),
+                Finder.findBlock(MODID, "aspen_plank_window2"),
+                Finder.findBlock(MODID, "aspen_paper_door"),
+                Finder.findBlock(MODID, "aspen_blossom_trapdoor"),
+                Finder.findBlock(MODID, "aspen_planks_path"),
+                Finder.findBlock(MODID, "aspen_bulk_stairs"));
+
+        prop
+                .addType(BlockType.ROOFS)
+                .addType(BlockType.FENCES)
+                .addType(BlockType.BRIDGES)
+                .addType(BlockType.FURNITURES)
+                .addType(BlockType.STAIRS)
+                .addType(BlockType.DOORS)
+                .addType(BlockType.TRAPDOORS)
+                .addType(BlockType.PATHS)
+                .addType(BlockType.WINDOWS);
+        final Block icon = prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.STAIRS);
+        MCWBYG_TAB = Registration.tabs(event, MODID, "tab", icon);
+    }
+
+    @Override
+    public void tabSetup(CreativeModeTabEvent.BuildContents event) {
+        APICreativeTab.initAllWood(event, MODID, WOOD, MCWBYG_TAB, Registration.getAllModTypeWood());
+        APICreativeTab.initAllLeave(event, MODID, LEAVES, MCWBYG_TAB);
+        APICreativeTab.initAllStone(event, MODID, bridges_rockable, MCWBYG_TAB, ModType.BRIDGES);
+        APICreativeTab.initAllStone(event, MODID, fences_rockable, MCWBYG_TAB, ModType.FENCES, ModType.ROOFS);
     }
 }

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "beach_trapdoors",
+        "key": {
+          "A": {
+            "item": "byg:blue_enchanted_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_beach"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbyg:blue_enchanted_beach_trapdoor"
+        }
+      }
+    }
+  ]
+}

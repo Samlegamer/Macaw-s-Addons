@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "barred_trapdoors",
+        "key": {
+          "A": {
+            "item": "byg:green_enchanted_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_barred"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbyg:green_enchanted_barred_trapdoor"
+        }
+      }
+    }
+  ]
+}

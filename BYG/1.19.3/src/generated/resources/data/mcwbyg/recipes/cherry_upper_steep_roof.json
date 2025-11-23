@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "upper_steep_roof",
+        "key": {
+          "A": {
+            "item": "byg:cherry_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " A",
+          " A",
+          "AB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbyg:cherry_upper_steep_roof"
+        }
+      }
+    }
+  ]
+}
