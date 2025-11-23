@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "upper_lower_roof",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:redwood_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "  A",
+          "AAB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbiomesoplenty:redwood_upper_lower_roof"
+        }
+      }
+    }
+  ]
+}

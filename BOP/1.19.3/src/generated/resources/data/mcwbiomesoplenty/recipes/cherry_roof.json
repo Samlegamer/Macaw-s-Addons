@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "roof",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:cherry_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " A",
+          "AB"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwbiomesoplenty:cherry_roof"
+        }
+      }
+    }
+  ]
+}

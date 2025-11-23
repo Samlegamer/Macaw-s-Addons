@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "barn_trapdoors",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:redwood_planks"
+          },
+          "B": {
+            "item": "mcwbiomesoplenty:redwood_glass_trapdoor"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:redwood_barn_trapdoor"
+        }
+      }
+    }
+  ]
+}

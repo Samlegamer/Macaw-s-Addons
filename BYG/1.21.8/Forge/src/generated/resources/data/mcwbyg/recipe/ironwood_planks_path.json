@@ -1,0 +1,32 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwpaths"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "planks_paths",
+        "ingredients": [
+          "biomeswevegone:ironwood_slab"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwbyg:ironwood_planks_path"
+        }
+      }
+    }
+  ]
+}

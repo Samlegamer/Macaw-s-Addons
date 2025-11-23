@@ -1,0 +1,32 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwbridges"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "recyclable_bridges",
+        "ingredients": [
+          "mcwbyg:dacite_bricks_bridge_stair"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:dacite_bricks_bridge"
+        }
+      }
+    }
+  ]
+}

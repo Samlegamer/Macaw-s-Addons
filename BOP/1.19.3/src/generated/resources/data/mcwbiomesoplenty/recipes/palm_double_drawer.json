@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "double_drawer",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:palm_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ABA",
+          "ABA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbiomesoplenty:palm_double_drawer"
+        }
+      }
+    }
+  ]
+}

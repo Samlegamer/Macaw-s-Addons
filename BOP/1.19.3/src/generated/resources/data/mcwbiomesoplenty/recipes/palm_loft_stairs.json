@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "loft_stairs",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:stripped_palm_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          " A ",
+          "  A"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbiomesoplenty:palm_loft_stairs"
+        }
+      }
+    }
+  ]
+}

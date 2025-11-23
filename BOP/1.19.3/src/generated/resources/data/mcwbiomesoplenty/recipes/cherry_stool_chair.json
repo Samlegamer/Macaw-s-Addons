@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stool_chair",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:cherry_log"
+          },
+          "B": {
+            "item": "biomesoplenty:cherry_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:cherry_stool_chair"
+        }
+      }
+    }
+  ]
+}

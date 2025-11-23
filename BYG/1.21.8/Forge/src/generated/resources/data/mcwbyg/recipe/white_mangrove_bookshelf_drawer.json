@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bookshelf_drawer",
+        "key": {
+          "A": "biomeswevegone:white_mangrove_log",
+          "B": "mcwfurnitures:cabinet_drawer",
+          "C": "minecraft:book"
+        },
+        "pattern": [
+          "AAA",
+          "ABA",
+          "ACA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbyg:white_mangrove_bookshelf_drawer"
+        }
+      }
+    }
+  ]
+}

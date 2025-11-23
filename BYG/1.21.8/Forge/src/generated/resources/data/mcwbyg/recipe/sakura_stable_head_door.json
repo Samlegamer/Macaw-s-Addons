@@ -1,0 +1,32 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "stable_head",
+        "ingredients": [
+          "mcwbyg:sakura_stable_door"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:sakura_stable_head_door"
+        }
+      }
+    }
+  ]
+}

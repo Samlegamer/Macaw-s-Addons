@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "hedge",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:fir_leaves"
+          }
+        },
+        "pattern": [
+          "AA",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbiomesoplenty:fir_hedge"
+        }
+      }
+    }
+  ]
+}

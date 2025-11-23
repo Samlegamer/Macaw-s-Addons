@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_desk",
+        "key": {
+          "A": "biomeswevegone:witch_hazel_log",
+          "B": "biomeswevegone:witch_hazel_fence",
+          "C": "minecraft:stick"
+        },
+        "pattern": [
+          "AAA",
+          "BCB"
+        ],
+        "result": {
+          "count": 2,
+          "id": "mcwbyg:witch_hazel_modern_desk"
+        }
+      }
+    }
+  ]
+}

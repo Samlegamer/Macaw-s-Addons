@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chair",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:dead_log"
+          },
+          "B": {
+            "item": "biomesoplenty:dead_slab"
+          },
+          "C": {
+            "item": "biomesoplenty:dead_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:dead_chair"
+        }
+      }
+    }
+  ]
+}

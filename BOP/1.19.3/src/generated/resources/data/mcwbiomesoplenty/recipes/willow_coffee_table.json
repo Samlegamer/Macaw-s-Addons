@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "coffee_table",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:willow_log"
+          },
+          "B": {
+            "item": "biomesoplenty:willow_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:willow_coffee_table"
+        }
+      }
+    }
+  ]
+}

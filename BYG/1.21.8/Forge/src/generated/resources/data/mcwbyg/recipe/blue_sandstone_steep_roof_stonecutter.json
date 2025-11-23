@@ -1,0 +1,28 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwroofs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": "biomeswevegone:blue_sandstone",
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:blue_sandstone_steep_roof"
+        }
+      }
+    }
+  ]
+}

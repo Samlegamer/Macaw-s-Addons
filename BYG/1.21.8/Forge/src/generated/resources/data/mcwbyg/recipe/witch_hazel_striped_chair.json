@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "striped_chair",
+        "key": {
+          "A": "biomeswevegone:witch_hazel_log",
+          "B": "biomeswevegone:witch_hazel_slab",
+          "C": "biomeswevegone:witch_hazel_fence"
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:witch_hazel_striped_chair"
+        }
+      }
+    }
+  ]
+}

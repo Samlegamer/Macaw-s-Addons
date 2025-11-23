@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "large_drawer",
+        "key": {
+          "A": "biomeswevegone:stripped_green_enchanted_log",
+          "B": "mcwfurnitures:cabinet_drawer"
+        },
+        "pattern": [
+          "ABA",
+          "AAA",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbyg:stripped_green_enchanted_large_drawer"
+        }
+      }
+    }
+  ]
+}

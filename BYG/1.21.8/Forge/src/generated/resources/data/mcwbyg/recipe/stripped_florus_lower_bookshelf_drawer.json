@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "lower_bookshelf_drawer",
+        "key": {
+          "A": "biomeswevegone:stripped_florus_stem",
+          "B": "mcwfurnitures:cabinet_drawer",
+          "C": "minecraft:book"
+        },
+        "pattern": [
+          "AAA",
+          "ACA",
+          "ABA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbyg:stripped_florus_lower_bookshelf_drawer"
+        }
+      }
+    }
+  ]
+}

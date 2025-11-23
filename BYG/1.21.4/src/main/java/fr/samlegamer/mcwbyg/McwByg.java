@@ -44,6 +44,7 @@ import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
+import org.jetbrains.annotations.NotNull;
 
 @Mod(McwByg.MODID)
 public class McwByg extends McwMod
@@ -80,7 +81,7 @@ public class McwByg extends McwMod
 				"flowering_ironwood", "flowering_jacaranda", "flowering_orchard", "flowering_palo_verde", "flowering_skyris", "flowering_yucca");
 		List<String> leavesCherry = List.of("white_sakura", "yellow_sakura");
 
-		LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
+		LOGGER.info("Macaw's Oh The Biomes We've Gone Loading...");
 		Registration.init(context, block, item, ct);
 		Bridges.setRegistrationWood(WOOD, block, item);
 		Bridges.setRegistrationRock(STONE, block, item);
@@ -101,7 +102,7 @@ public class McwByg extends McwMod
 		bus.addListener(this::commonSetup);
 		bus.addListener(this::clientSetup);
         bus.addListener(this::dataSetup);
-    	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
+    	LOGGER.info("Macaw's Oh The Biomes We've Gone Is Charged !");
     }
 
     @Override
@@ -134,7 +135,7 @@ public class McwByg extends McwMod
         {
             McwBlockTags mcwBlockTags = new McwBlockTags(packOutput, registries, MODID, existingFileHelper) {
                 @Override
-                protected void addTags(HolderLookup.Provider p_256380_) {
+                protected void addTags(HolderLookup.@NotNull Provider p_256380_) {
                     addAllMcwTags(MODID, WOOD, STONE, LEAVES);
                 }
             };
@@ -142,7 +143,7 @@ public class McwByg extends McwMod
             generator.addProvider(true, mcwBlockTags);
             generator.addProvider(true, new McwItemTags(packOutput, registries, mcwBlockTags.contentsGetter(), MODID, existingFileHelper) {
                 @Override
-                protected void addTags(HolderLookup.Provider p_256380_) {
+                protected void addTags(HolderLookup.@NotNull Provider p_256380_) {
                     addAllMcwTags(MODID, WOOD, STONE, LEAVES);
                 }
             });

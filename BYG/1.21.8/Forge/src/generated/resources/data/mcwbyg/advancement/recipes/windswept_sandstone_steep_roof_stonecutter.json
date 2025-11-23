@@ -1,0 +1,49 @@
+{
+  "forge:conditional": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbyg:windswept_sandstone_steep_roof"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_windswept_sandstone": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomeswevegone:windswept_sandstone"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwroofs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_windswept_sandstone"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbyg:windswept_sandstone_steep_roof"
+        ]
+      }
+    }
+  ]
+}

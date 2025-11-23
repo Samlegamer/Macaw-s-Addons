@@ -1,0 +1,28 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwroofs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": "biomeswevegone:windswept_sandstone",
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:windswept_sandstone_roof"
+        }
+      }
+    }
+  ]
+}

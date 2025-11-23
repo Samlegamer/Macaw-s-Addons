@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "covered_desk",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:stripped_umbran_log"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "A A"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwbiomesoplenty:stripped_umbran_covered_desk"
+        }
+      }
+    }
+  ]
+}

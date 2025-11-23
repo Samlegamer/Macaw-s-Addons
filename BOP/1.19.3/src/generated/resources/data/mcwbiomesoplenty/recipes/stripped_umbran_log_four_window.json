@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "windows_four",
+        "key": {
+          "A": {
+            "item": "mcwwindows:window_centre_bar_base"
+          },
+          "B": {
+            "item": "biomesoplenty:stripped_umbran_log"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ABA",
+          "AAA"
+        ],
+        "result": {
+          "count": 8,
+          "item": "mcwbiomesoplenty:stripped_umbran_log_four_window"
+        }
+      }
+    }
+  ]
+}

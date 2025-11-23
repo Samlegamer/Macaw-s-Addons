@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "swamp",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:jacaranda_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_swamp"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:jacaranda_swamp_door"
+        }
+      }
+    }
+  ]
+}

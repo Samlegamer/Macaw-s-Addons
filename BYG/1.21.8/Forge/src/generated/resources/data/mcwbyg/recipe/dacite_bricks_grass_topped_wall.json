@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "grass_topped",
+        "key": {
+          "A": "biomeswevegone:dacite_bricks",
+          "B": "biomeswevegone:dacite_bricks",
+          "C": "minecraft:dirt"
+        },
+        "pattern": [
+          "BCB",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "id": "mcwbyg:dacite_bricks_grass_topped_wall"
+        }
+      }
+    }
+  ]
+}

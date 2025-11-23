@@ -1,0 +1,49 @@
+{
+  "forge:conditional": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_purple_sandstone": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomeswevegone:purple_sandstone"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbyg:purple_sandstone_steep_roof"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwroofs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_purple_sandstone"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbyg:purple_sandstone_steep_roof"
+        ]
+      }
+    }
+  ]
+}

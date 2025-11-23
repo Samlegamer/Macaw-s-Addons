@@ -1,0 +1,49 @@
+{
+  "forge:conditional": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbyg:zelkova_horse_fence"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_zelkova_planks": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomeswevegone:zelkova_planks"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_zelkova_planks"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbyg:zelkova_horse_fence"
+        ]
+      }
+    }
+  ]
+}

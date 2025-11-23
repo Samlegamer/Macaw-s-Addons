@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwstairs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bulk_stairs",
+        "key": {
+          "A": "biomeswevegone:stripped_white_mangrove_log",
+          "B": "biomeswevegone:white_mangrove_log"
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          "BBA"
+        ],
+        "result": {
+          "count": 6,
+          "id": "mcwbyg:white_mangrove_bulk_stairs"
+        }
+      }
+    }
+  ]
+}

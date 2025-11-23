@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "glass_kitchen_cabinet",
+        "key": {
+          "A": "biomeswevegone:holly_log",
+          "B": "minecraft:glass",
+          "C": "mcwfurnitures:cabinet_door"
+        },
+        "pattern": [
+          "AA",
+          "BC",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbyg:holly_glass_kitchen_cabinet"
+        }
+      }
+    }
+  ]
+}

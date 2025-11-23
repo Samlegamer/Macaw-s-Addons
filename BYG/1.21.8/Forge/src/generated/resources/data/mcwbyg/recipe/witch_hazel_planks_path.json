@@ -1,0 +1,32 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwpaths"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "planks_paths",
+        "ingredients": [
+          "biomeswevegone:witch_hazel_slab"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwbyg:witch_hazel_planks_path"
+        }
+      }
+    }
+  ]
+}

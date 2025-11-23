@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "birch",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:redwood_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_birch"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:redwood_paper_door"
+        }
+      }
+    }
+  ]
+}
