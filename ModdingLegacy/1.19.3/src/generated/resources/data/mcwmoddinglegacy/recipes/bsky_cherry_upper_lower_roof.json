@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "upper_lower_roof",
+        "key": {
+          "A": {
+            "item": "blue_skies:cherry_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "  A",
+          "AAB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwmoddinglegacy:bsky_cherry_upper_lower_roof"
+        }
+      }
+    }
+  ]
+}

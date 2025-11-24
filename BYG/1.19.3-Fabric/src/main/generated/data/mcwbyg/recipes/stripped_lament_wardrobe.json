@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wardrobe",
+  "key": {
+    "A": {
+      "item": "byg:stripped_lament_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbyg:stripped_lament_wardrobe"
+  }
+}

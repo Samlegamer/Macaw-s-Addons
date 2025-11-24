@@ -10,6 +10,10 @@ import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.windows.Windows;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
@@ -22,16 +26,12 @@ import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.block.Block;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.Identifier;
 
 public class McwByg implements ModInitializer 
 {
 	public static final String MODID = "mcwbyg";
 	public static final Logger LOGGER = LogManager.getLogger();
-    public static final ItemGroup MCWBYG_TAB = FabricItemGroup.builder(new Identifier(MODID + ".tab")).icon(() -> new ItemStack(icon())).build();
+    public static final CreativeModeTab MCWBYG_TAB = FabricItemGroup.builder(new ResourceLocation(MODID + ".tab")).icon(() -> new ItemStack(icon())).build();
     
 	public static final List<String> WOOD = List.of("aspen","baobab", "blue_enchanted","cherry","cika","cypress","ebony","ether","fir","green_enchanted","holly","jacaranda",
     	    "lament","mahogany","white_mangrove","maple","nightshade","palm","pine","rainbow_eucalyptus","redwood","skyris", "willow", "witch_hazel", "zelkova", "bulbis", "imparius", "sythian");

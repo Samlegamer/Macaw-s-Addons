@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "kitchen_cabinet",
+  "key": {
+    "A": {
+      "item": "byg:maple_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AA",
+    "AB",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbyg:maple_kitchen_cabinet"
+  }
+}

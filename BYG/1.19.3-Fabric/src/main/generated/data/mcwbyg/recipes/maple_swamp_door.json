@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "swamp",
+  "key": {
+    "A": {
+      "item": "byg:maple_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_swamp"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:maple_swamp_door"
+  }
+}

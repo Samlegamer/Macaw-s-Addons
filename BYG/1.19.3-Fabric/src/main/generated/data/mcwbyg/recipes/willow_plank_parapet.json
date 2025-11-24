@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "parapets",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "byg:willow_planks"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA"
+  ],
+  "result": {
+    "count": 5,
+    "item": "mcwbyg:willow_plank_parapet"
+  }
+}

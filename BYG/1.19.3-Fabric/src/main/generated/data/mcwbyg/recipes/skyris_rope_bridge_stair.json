@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "rope_stairs",
+  "key": {
+    "A": {
+      "item": "mcwbyg:rope_skyris_bridge"
+    }
+  },
+  "pattern": [
+    "  A",
+    " AA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwbyg:skyris_rope_bridge_stair"
+  }
+}

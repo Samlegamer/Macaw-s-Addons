@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks_paths",
+  "ingredients": [
+    {
+      "item": "byg:palm_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:palm_planks_path"
+  }
+}

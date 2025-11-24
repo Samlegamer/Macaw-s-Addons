@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "byg:redwood_trapdoor"
+    },
+    {
+      "item": "byg:redwood_trapdoor"
+    },
+    {
+      "item": "byg:redwood_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:redwood_shutter"
+  }
+}

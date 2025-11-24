@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "log_bridges",
+        "key": {
+          "A": {
+            "item": "blue_skies:dusk_slab"
+          },
+          "B": {
+            "item": "blue_skies:dusk_fence"
+          }
+        },
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwmoddinglegacy:bsky_dusk_log_bridge_middle"
+        }
+      }
+    }
+  ]
+}

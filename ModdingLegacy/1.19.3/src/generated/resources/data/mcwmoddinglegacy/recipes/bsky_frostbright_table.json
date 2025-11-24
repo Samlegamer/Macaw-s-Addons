@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "table",
+        "key": {
+          "A": {
+            "item": "mcwmoddinglegacy:bsky_frostbright_coffee_table"
+          },
+          "B": {
+            "item": "blue_skies:frostbright_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:bsky_frostbright_table"
+        }
+      }
+    }
+  ]
+}

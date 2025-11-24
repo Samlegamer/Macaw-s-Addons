@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "attic_roof",
+  "key": {
+    "A": {
+      "item": "byg:lament_log"
+    },
+    "B": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    " A",
+    "AB"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbyg:lament_attic_roof"
+  }
+}

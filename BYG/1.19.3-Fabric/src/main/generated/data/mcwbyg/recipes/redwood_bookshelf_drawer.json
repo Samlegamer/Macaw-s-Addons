@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bookshelf_drawer",
+  "key": {
+    "A": {
+      "item": "byg:redwood_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    },
+    "C": {
+      "item": "minecraft:book"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "ACA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbyg:redwood_bookshelf_drawer"
+  }
+}

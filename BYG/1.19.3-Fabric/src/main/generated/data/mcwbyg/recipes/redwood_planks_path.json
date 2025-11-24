@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks_paths",
+  "ingredients": [
+    {
+      "item": "byg:redwood_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:redwood_planks_path"
+  }
+}

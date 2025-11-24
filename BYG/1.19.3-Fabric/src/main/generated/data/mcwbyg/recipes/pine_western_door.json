@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "western",
+  "key": {
+    "A": {
+      "item": "byg:pine_planks"
+    },
+    "B": {
+      "item": "byg:pine_slab"
+    }
+  },
+  "pattern": [
+    "  A",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:pine_western_door"
+  }
+}

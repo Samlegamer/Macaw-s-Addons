@@ -1,0 +1,65 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+	  "mcwmoddinglegacy:pwood_maple_tropical_door",
+	  "mcwmoddinglegacy:pwood_maple_bark_glass_door",
+	  "mcwmoddinglegacy:pwood_maple_barn_door",
+	  "mcwmoddinglegacy:pwood_maple_barn_glass_door",
+	  "mcwmoddinglegacy:pwood_maple_beach_door",
+	  "mcwmoddinglegacy:pwood_maple_classic_door",
+	  "mcwmoddinglegacy:pwood_maple_cottage_door",
+	  "mcwmoddinglegacy:pwood_maple_four_panel_door",
+	  "mcwmoddinglegacy:pwood_maple_glass_door",
+	  "mcwmoddinglegacy:pwood_maple_japanese_door",
+	  "mcwmoddinglegacy:pwood_maple_japanese2_door",
+	  "mcwmoddinglegacy:pwood_maple_modern_door",
+	  "mcwmoddinglegacy:pwood_maple_mystic_door",
+	  "mcwmoddinglegacy:pwood_maple_nether_door",
+	  "mcwmoddinglegacy:pwood_maple_paper_door",
+	  "mcwmoddinglegacy:pwood_maple_stable_door",
+	  "mcwmoddinglegacy:pwood_maple_stable_head_door",
+	  "mcwmoddinglegacy:pwood_maple_swamp_door",
+	  "mcwmoddinglegacy:pwood_maple_western_door",
+	  "mcwmoddinglegacy:pwood_maple_waffle_door",
+	  "mcwmoddinglegacy:pwood_maple_whispering_door",
+	  "mcwmoddinglegacy:pwood_maple_bamboo_door"
+    ]
+  },
+  "criteria": {
+    "has_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "premium_wood:maple_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwdoors:print_acacia"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wood",
+      "has_the_recipe"
+    ]
+  ]
+}

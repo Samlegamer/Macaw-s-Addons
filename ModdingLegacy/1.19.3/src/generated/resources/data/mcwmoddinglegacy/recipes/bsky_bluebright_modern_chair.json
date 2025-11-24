@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chair",
+        "key": {
+          "A": {
+            "item": "blue_skies:bluebright_log"
+          },
+          "B": {
+            "item": "blue_skies:bluebright_slab"
+          },
+          "C": {
+            "item": "blue_skies:bluebright_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:bsky_bluebright_modern_chair"
+        }
+      }
+    }
+  ]
+}

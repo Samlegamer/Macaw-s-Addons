@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stool_chair",
+  "key": {
+    "A": {
+      "item": "byg:stripped_redwood_log"
+    },
+    "B": {
+      "item": "byg:redwood_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbyg:stripped_redwood_stool_chair"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern",
+  "key": {
+    "A": {
+      "item": "byg:red_rock_bricks"
+    },
+    "B": {
+      "item": "byg:red_rock"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwbyg:modern_red_rock_wall"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "waffle",
+  "key": {
+    "A": {
+      "item": "byg:palm_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_waffle"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:palm_waffle_door"
+  }
+}

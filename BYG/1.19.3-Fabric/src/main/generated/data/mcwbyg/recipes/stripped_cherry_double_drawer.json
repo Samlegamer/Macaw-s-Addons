@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_drawer",
+  "key": {
+    "A": {
+      "item": "byg:stripped_cherry_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbyg:stripped_cherry_double_drawer"
+  }
+}

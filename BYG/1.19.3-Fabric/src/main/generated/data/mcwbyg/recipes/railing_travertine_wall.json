@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "railing_wall",
+  "key": {
+    "A": {
+      "item": "byg:polished_travertine"
+    },
+    "B": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwbyg:railing_travertine_wall"
+  }
+}

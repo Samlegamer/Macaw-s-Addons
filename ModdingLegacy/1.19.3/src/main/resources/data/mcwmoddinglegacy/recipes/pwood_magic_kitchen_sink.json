@@ -1,0 +1,51 @@
+{
+"conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwfurnitures"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ],
+    "type": "minecraft:crafting_shaped",
+    "group": "kitchen_sink",
+    "pattern":
+    [
+        "CDC",
+        "ABA",
+        "ABA"		
+    ],
+    
+    "key":
+    { 
+	    "A":
+        {
+            "item": "premium_wood:magic_log"
+        }, 
+		
+		"B":
+        {
+            "item": "minecraft:water_bucket"
+        },
+		
+        "C":
+        {
+            "item": "premium_wood:magic_slab"
+        },
+		
+		"D":
+        {
+            "item": "minecraft:cauldron"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwmoddinglegacy:pwood_magic_kitchen_sink",
+        "count": 1
+    }
+}
+
+

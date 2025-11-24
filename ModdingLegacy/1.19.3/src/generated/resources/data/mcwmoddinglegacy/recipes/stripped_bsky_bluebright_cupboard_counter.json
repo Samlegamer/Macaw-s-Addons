@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "cupboard_counter",
+        "key": {
+          "A": {
+            "item": "blue_skies:bluebright_slab"
+          },
+          "B": {
+            "item": "mcwmoddinglegacy:stripped_bsky_bluebright_wardrobe"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_bsky_bluebright_cupboard_counter"
+        }
+      }
+    }
+  ]
+}

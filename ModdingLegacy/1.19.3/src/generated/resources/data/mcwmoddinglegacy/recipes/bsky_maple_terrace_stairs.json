@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "terrace_stairs",
+        "key": {
+          "A": {
+            "item": "blue_skies:stripped_maple_log"
+          },
+          "B": {
+            "item": "blue_skies:maple_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwmoddinglegacy:bsky_maple_terrace_stairs"
+        }
+      }
+    }
+  ]
+}

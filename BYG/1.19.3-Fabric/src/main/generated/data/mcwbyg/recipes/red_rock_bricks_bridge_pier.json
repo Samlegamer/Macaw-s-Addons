@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_piers",
+  "key": {
+    "A": {
+      "item": "byg:red_rock_bricks"
+    },
+    "B": {
+      "item": "byg:red_rock_brick_wall"
+    }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:red_rock_bricks_bridge_pier"
+  }
+}

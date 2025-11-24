@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "rail_bridges",
+  "key": {
+    "A": {
+      "item": "byg:nightshade_slab"
+    },
+    "B": {
+      "item": "byg:nightshade_fence"
+    }
+  },
+  "pattern": [
+    "B B",
+    "BAB"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbyg:nightshade_rail_bridge"
+  }
+}

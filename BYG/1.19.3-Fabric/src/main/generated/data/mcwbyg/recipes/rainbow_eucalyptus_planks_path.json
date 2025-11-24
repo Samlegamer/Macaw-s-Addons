@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks_paths",
+  "ingredients": [
+    {
+      "item": "byg:rainbow_eucalyptus_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:rainbow_eucalyptus_planks_path"
+  }
+}

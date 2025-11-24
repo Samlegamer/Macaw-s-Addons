@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "drawer_counter",
+        "key": {
+          "A": {
+            "item": "blue_skies:cherry_slab"
+          },
+          "B": {
+            "item": "mcwmoddinglegacy:bsky_cherry_drawer"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:bsky_cherry_drawer_counter"
+        }
+      }
+    }
+  ]
+}

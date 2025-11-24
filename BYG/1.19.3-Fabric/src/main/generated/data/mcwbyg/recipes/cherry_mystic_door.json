@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mystic",
+  "key": {
+    "A": {
+      "item": "byg:cherry_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_mystic"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:cherry_mystic_door"
+  }
+}

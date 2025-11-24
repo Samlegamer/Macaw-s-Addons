@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "counter",
+  "key": {
+    "A": {
+      "item": "byg:imparius_slab"
+    },
+    "B": {
+      "item": "byg:fungal_imparius_stem"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbyg:stripped_imparius_counter"
+  }
+}

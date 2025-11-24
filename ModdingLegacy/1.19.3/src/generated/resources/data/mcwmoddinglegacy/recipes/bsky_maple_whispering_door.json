@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "whispering",
+        "key": {
+          "A": {
+            "item": "blue_skies:maple_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_whispering"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:bsky_maple_whispering_door"
+        }
+      }
+    }
+  ]
+}

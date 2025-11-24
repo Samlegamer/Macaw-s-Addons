@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "recyclable_bridges",
+        "ingredients": [
+          {
+            "item": "mcwmoddinglegacy:bsky_maple_rope_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:rope_bsky_maple_bridge"
+        }
+      }
+    }
+  ]
+}

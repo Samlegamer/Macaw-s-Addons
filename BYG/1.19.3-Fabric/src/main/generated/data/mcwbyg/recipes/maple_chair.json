@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chair",
+  "key": {
+    "A": {
+      "item": "byg:maple_log"
+    },
+    "B": {
+      "item": "byg:maple_slab"
+    },
+    "C": {
+      "item": "byg:maple_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwbyg:maple_chair"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "planks_attic_roof",
+  "key": {
+    "A": {
+      "item": "byg:green_enchanted_planks"
+    },
+    "B": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    " A",
+    "AB"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbyg:green_enchanted_planks_attic_roof"
+  }
+}

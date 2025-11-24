@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "skyline_stairs",
+  "key": {
+    "A": {
+      "item": "byg:stripped_cypress_log"
+    },
+    "B": {
+      "item": "byg:cypress_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA "
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbyg:cypress_skyline_stairs"
+  }
+}

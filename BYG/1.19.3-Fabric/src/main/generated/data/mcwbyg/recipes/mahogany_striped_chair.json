@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "striped_chair",
+  "key": {
+    "A": {
+      "item": "byg:mahogany_log"
+    },
+    "B": {
+      "item": "byg:mahogany_slab"
+    },
+    "C": {
+      "item": "byg:mahogany_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwbyg:mahogany_striped_chair"
+  }
+}

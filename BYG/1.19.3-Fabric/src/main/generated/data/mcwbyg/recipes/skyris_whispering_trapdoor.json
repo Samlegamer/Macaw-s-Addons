@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "whispering_trapdoors",
+  "key": {
+    "A": {
+      "item": "byg:skyris_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_whispering"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:skyris_whispering_trapdoor"
+  }
+}

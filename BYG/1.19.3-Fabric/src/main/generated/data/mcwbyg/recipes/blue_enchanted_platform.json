@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwstairs_platform",
+  "key": {
+    "A": {
+      "item": "byg:blue_enchanted_log"
+    },
+    "B": {
+      "item": "byg:blue_enchanted_slab"
+    }
+  },
+  "pattern": [
+    " BB",
+    " AA",
+    "   "
+  ],
+  "result": {
+    "count": 12,
+    "item": "mcwbyg:blue_enchanted_platform"
+  }
+}

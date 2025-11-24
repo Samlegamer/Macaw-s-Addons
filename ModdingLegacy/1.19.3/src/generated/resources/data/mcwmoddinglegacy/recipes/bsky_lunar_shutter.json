@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "blue_skies:lunar_trapdoor"
+          },
+          {
+            "item": "blue_skies:lunar_trapdoor"
+          },
+          {
+            "item": "blue_skies:lunar_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwmoddinglegacy:bsky_lunar_shutter"
+        }
+      }
+    }
+  ]
+}

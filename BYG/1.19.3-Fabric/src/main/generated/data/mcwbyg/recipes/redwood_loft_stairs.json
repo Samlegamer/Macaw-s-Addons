@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "loft_stairs",
+  "key": {
+    "A": {
+      "item": "byg:stripped_redwood_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    " A ",
+    "  A"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:redwood_loft_stairs"
+  }
+}

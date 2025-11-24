@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stable",
+  "key": {
+    "A": {
+      "item": "byg:witch_hazel_planks"
+    },
+    "B": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "pattern": [
+    "BB",
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:witch_hazel_stable_door"
+  }
+}

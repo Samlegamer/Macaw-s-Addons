@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_piers",
+  "key": {
+    "A": {
+      "item": "byg:polished_travertine"
+    },
+    "B": {
+      "item": "byg:polished_travertine_wall"
+    }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:polished_travertine_bridge_pier"
+  }
+}

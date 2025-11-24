@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "blossom_trapdoors",
+  "key": {
+    "A": {
+      "item": "byg:green_enchanted_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_blossom"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:green_enchanted_blossom_trapdoor"
+  }
+}

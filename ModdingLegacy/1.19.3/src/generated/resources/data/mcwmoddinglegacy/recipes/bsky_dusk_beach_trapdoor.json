@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "beach_trapdoors",
+        "key": {
+          "A": {
+            "item": "blue_skies:dusk_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_beach"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:bsky_dusk_beach_trapdoor"
+        }
+      }
+    }
+  ]
+}

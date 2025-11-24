@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwstairs_platform",
+  "key": {
+    "A": {
+      "item": "byg:pine_log"
+    },
+    "B": {
+      "item": "byg:pine_slab"
+    }
+  },
+  "pattern": [
+    " BB",
+    " AA",
+    "   "
+  ],
+  "result": {
+    "count": 12,
+    "item": "mcwbyg:pine_platform"
+  }
+}

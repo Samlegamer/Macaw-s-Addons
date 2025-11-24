@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "pillarwall",
+  "key": {
+    "A": {
+      "item": "byg:polished_soapstone"
+    },
+    "B": {
+      "item": "byg:soapstone"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 5,
+    "item": "mcwbyg:soapstone_pillar_wall"
+  }
+}

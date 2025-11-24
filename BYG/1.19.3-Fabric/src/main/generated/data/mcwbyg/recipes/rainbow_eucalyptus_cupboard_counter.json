@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cupboard_counter",
+  "key": {
+    "A": {
+      "item": "byg:rainbow_eucalyptus_slab"
+    },
+    "B": {
+      "item": "mcwbyg:rainbow_eucalyptus_wardrobe"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbyg:rainbow_eucalyptus_cupboard_counter"
+  }
+}

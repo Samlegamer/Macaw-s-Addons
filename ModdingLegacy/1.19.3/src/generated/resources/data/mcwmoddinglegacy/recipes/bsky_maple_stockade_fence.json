@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stockade",
+        "key": {
+          "A": {
+            "item": "blue_skies:maple_log"
+          },
+          "B": {
+            "item": "blue_skies:maple_planks"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "BAB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwmoddinglegacy:bsky_maple_stockade_fence"
+        }
+      }
+    }
+  ]
+}

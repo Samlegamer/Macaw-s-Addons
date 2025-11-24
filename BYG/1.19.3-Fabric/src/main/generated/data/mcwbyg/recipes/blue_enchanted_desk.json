@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "desk",
+  "key": {
+    "A": {
+      "item": "byg:blue_enchanted_log"
+    },
+    "B": {
+      "item": "byg:blue_enchanted_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbyg:blue_enchanted_desk"
+  }
+}

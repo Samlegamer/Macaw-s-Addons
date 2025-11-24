@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "byg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "terrace_stairs",
+  "key": {
+    "A": {
+      "item": "byg:stripped_redwood_log"
+    },
+    "B": {
+      "item": "byg:redwood_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA ",
+    " BA"
+  ],
+  "result": {
+    "count": 5,
+    "item": "mcwbyg:redwood_terrace_stairs"
+  }
+}
