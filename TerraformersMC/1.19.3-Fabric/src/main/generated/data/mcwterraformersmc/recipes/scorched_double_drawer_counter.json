@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_drawer_counter",
+  "key": {
+    "A": {
+      "item": "cinderscapes:scorched_slab"
+    },
+    "B": {
+      "item": "mcwterraformersmc:scorched_double_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:scorched_double_drawer_counter"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "lower_triple_drawer",
+  "key": {
+    "A": {
+      "item": "cinderscapes:stripped_umbral_stem"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BAB",
+    "ABA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:stripped_umbral_lower_triple_drawer"
+  },
+  "show_notification": true
+}

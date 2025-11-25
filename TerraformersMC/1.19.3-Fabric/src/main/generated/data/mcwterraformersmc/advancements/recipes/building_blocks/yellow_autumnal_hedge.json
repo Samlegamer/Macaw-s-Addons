@@ -1,0 +1,43 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "traverse"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwterraformersmc:yellow_autumnal_hedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yellow_autumnal_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "traverse:yellow_autumnal_leaves"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_yellow_autumnal_leaves",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwterraformersmc:yellow_autumnal_hedge"
+    ]
+  }
+}

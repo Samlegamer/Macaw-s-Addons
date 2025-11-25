@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "recyclable_bridges",
+  "ingredients": [
+    {
+      "item": "mcwterraformersmc:basalt_bricks_bridge_stair"
+    }
+  ],
+  "result": {
+    "item": "mcwterraformersmc:basalt_bricks_bridge"
+  }
+}

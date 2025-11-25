@@ -1,0 +1,43 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwterraformersmc:willow_stockade_fence"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_willow_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:willow_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_willow_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwterraformersmc:willow_stockade_fence"
+    ]
+  }
+}

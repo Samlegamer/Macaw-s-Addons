@@ -100,16 +100,26 @@ public class McwTerraformersMC implements ModInitializer
         Windows.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, wood);
         Windows.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
 
+        boolean isDev = FabricLoader.getInstance().isDevelopmentEnvironment();
 
-        APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse", Registration.getAllModTypeWood());
-        APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes", Registration.getAllModTypeStone());
-        APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, "cinderscapes", Registration.getAllModTypeWood());
-        APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria", Registration.getAllModTypeWood());
-        APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria", Registration.getAllModTypeStone());
+        if(FabricLoader.getInstance().isModLoaded("traverse") || isDev)
+        {
+            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeWood());
+            APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE, MCWTERRAFORMERSMC_TAB);
+        }
 
-        APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE, MCWTERRAFORMERSMC_TAB, "traverse");
-        APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA, MCWTERRAFORMERSMC_TAB, "terrestria");
+        if(FabricLoader.getInstance().isModLoaded("cinderscapes") || isDev)
+        {
+            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeWood());
+            APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeStone());
+        }
 
+        if(FabricLoader.getInstance().isModLoaded("terrestria") || isDev)
+        {
+            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeWood());
+            APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeStone());
+            APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA, MCWTERRAFORMERSMC_TAB);
+        }
 
         APIFuels.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, Registration.getAllModTypeWood());
         APIFuels.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, Registration.getAllModTypeWood());

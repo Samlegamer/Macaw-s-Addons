@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_chair",
+  "key": {
+    "A": {
+      "item": "terrestria:stripped_hemlock_log"
+    },
+    "B": {
+      "item": "terrestria:hemlock_slab"
+    },
+    "C": {
+      "item": "terrestria:hemlock_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:stripped_hemlock_modern_chair"
+  },
+  "show_notification": true
+}

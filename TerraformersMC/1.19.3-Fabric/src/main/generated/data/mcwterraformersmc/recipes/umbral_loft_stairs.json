@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "loft_stairs",
+  "key": {
+    "A": {
+      "item": "cinderscapes:stripped_umbral_stem"
+    }
+  },
+  "pattern": [
+    "A  ",
+    " A ",
+    "  A"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:umbral_loft_stairs"
+  },
+  "show_notification": true
+}

@@ -2,20 +2,17 @@
 	"schemaVersion": 1,
   "id": "${archives_base_name}",
   "version": "${version}",
-
   "name": "${mod_name}",
   "description": "${mod_description}",
   "authors": [
     "${mod_authors}"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/macaws-terraformersmc",
+    "sources": "https://github.com/Samlegamer/Macaw-s-Addons"
   },
-
   "license": "${mod_license}",
   "icon": "logo.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -32,7 +29,8 @@
 		"fabricloader": ">=0.18.1",
 		"minecraft": "~1.19.3",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+        "addonslib": ">=1.19.3-1.7"
 	},
 	"suggests": {
 		"another-mod": "*"

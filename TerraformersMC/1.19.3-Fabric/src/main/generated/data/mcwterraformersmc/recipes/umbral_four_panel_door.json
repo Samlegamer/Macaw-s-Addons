@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "dark_oak",
+  "key": {
+    "A": {
+      "item": "cinderscapes:umbral_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_dark_oak"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:umbral_four_panel_door"
+  },
+  "show_notification": true
+}

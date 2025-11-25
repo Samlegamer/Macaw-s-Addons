@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "terrestria"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "upper_lower_roof",
+  "key": {
+    "A": {
+      "item": "terrestria:rubber_log"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  A",
+    "AAB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:rubber_upper_lower_roof"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "curved_gate",
+  "key": {
+    "A": {
+      "item": "cinderscapes:scorched_planks"
+    },
+    "B": {
+      "item": "cinderscapes:scorched_stem"
+    }
+  },
+  "pattern": [
+    "B A",
+    "BAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:scorched_curved_gate"
+  },
+  "show_notification": true
+}

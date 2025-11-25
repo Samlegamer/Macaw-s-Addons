@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "cinderscapes:umbral_trapdoor"
+    },
+    {
+      "item": "cinderscapes:umbral_trapdoor"
+    },
+    {
+      "item": "cinderscapes:umbral_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:umbral_shutter"
+  }
+}
