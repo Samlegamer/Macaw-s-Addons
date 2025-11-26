@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "parapets",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "biomesoplenty:mahogany_planks"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ABA"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwbiomesoplenty:mahogany_plank_parapet"
+        }
+      }
+    }
+  ]
+}

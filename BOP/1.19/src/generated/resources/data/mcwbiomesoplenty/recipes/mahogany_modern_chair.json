@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern_chair",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:mahogany_log"
+          },
+          "B": {
+            "item": "biomesoplenty:mahogany_slab"
+          },
+          "C": {
+            "item": "biomesoplenty:mahogany_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:mahogany_modern_chair"
+        }
+      }
+    }
+  ]
+}

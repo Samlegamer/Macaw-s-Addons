@@ -1,0 +1,18 @@
+{
+    "variants": {                     
+		"connection=base":  { "model": "mcwabnormals:block/bridge/bridge_stone/cut_amethyst_bricks_base","uvlock": true},
+		
+        "connection=middle_ns":  { "model": "mcwabnormals:block/bridge/bridge_stone/cut_amethyst_bricks_middle", "y": 90,"uvlock": true},
+		"connection=middle_ew":  { "model": "mcwabnormals:block/bridge/bridge_stone/cut_amethyst_bricks_middle","uvlock": true},
+
+		"connection=corner_nw":  { "model": "mcwabnormals:block/bridge/bridge_stone/cut_amethyst_bricks_corner", "y": 180,"uvlock": true},
+		"connection=corner_ne":  { "model": "mcwabnormals:block/bridge/bridge_stone/cut_amethyst_bricks_corner", "y": 270,"uvlock": true},
+		"connection=corner_se":  { "model": "mcwabnormals:block/bridge/bridge_stone/cut_amethyst_bricks_corner","uvlock": true},
+		"connection=corner_sw":  { "model": "mcwabnormals:block/bridge/bridge_stone/cut_amethyst_bricks_corner", "y": 90,"uvlock": true},	
+		
+		"connection=side_s":  { "model": "mcwabnormals:block/bridge/bridge_stone/cut_amethyst_bricks_side","uvlock": true},
+		"connection=side_n":  { "model": "mcwabnormals:block/bridge/bridge_stone/cut_amethyst_bricks_side", "y": 180,"uvlock": true},
+		"connection=side_w":  { "model": "mcwabnormals:block/bridge/bridge_stone/cut_amethyst_bricks_side", "y": 90,"uvlock": true},
+		"connection=side_e":  { "model": "mcwabnormals:block/bridge/bridge_stone/cut_amethyst_bricks_side", "y": 270,"uvlock": true}
+    }
+}

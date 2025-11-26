@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "atmospheric"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern",
+        "key": {
+          "A": {
+            "item": "atmospheric:kousa_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "pattern": [
+          "AB",
+          "AA",
+          "AB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:kousa_modern_door"
+        }
+      }
+    }
+  ]
+}

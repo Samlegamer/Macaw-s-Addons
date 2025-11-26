@@ -1,0 +1,985 @@
+[26nov.2025 21:24:11.200] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 1.19, --assetsDir, C:\Users\Samle\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 43.5.1, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853, --mod, mcwabnormals, --all, --output, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\src\generated\resources, --existing, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\src\main\resources]
+[26nov.2025 21:24:11.207] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.1 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[26nov.2025 21:24:11.238] [main/DEBUG] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Found launch services [fmlclientdev,forgeclient,minecraft,forgegametestserverdev,fmlserveruserdev,fmlclient,fmldatauserdev,forgeserverdev,forgeserveruserdev,forgeclientdev,forgeclientuserdev,forgeserver,forgedatadev,fmlserver,fmlclientuserdev,fmlserverdev,forgedatauserdev,testharness,forgegametestserveruserdev]
+[26nov.2025 21:24:11.252] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Found naming services : [srgtomcp]
+[26nov.2025 21:24:11.265] [main/DEBUG] [cpw.mods.modlauncher.LaunchPluginHandler/MODLAUNCHER]: Found launch plugins: [mixin,eventbus,slf4jfixer,object_holder_definalize,runtime_enum_extender,capability_token_subclass,accesstransformer,runtimedistcleaner]
+[26nov.2025 21:24:11.274] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Discovering transformation services
+[26nov.2025 21:24:11.281] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found additional transformation services from discovery services: 
+[26nov.2025 21:24:11.291] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found transformer services : [mixin,fml]
+[26nov.2025 21:24:11.292] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading
+[26nov.2025 21:24:11.293] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service mixin
+[26nov.2025 21:24:11.293] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service mixin
+[26nov.2025 21:24:11.293] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service fml
+[26nov.2025 21:24:11.297] [main/DEBUG] [net.minecraftforge.fml.loading.LauncherVersion/CORE]: Found FMLLauncher version 1.0
+[26nov.2025 21:24:11.297] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML 1.0 loading
+[26nov.2025 21:24:11.297] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found ModLauncher version : 10.0.9+10.0.9+main.dcd20f30
+[26nov.2025 21:24:11.297] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Requesting CoreMods to not apply the fix for ASMAPI.findFirstInstructionBefore by default
+[26nov.2025 21:24:11.298] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found AccessTransformer version : 8.0.4+66+master.c09db6d7
+[26nov.2025 21:24:11.298] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found EventBus version : 6.0.3+6.0.3+master.039e4ea9
+[26nov.2025 21:24:11.298] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found Runtime Dist Cleaner
+[26nov.2025 21:24:11.300] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/]: CoreMods will preserve legacy behavior of ASMAPI.findFirstInstructionBefore for backwards-compatibility
+[26nov.2025 21:24:11.300] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found CoreMod version : 5.2.4
+[26nov.2025 21:24:11.301] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found ForgeSPI package implementation version 6.0.0+6.0.0+master.42474703
+[26nov.2025 21:24:11.301] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found ForgeSPI package specification 5
+[26nov.2025 21:24:11.305] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service fml
+[26nov.2025 21:24:11.306] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Configuring option handling for services
+[26nov.2025 21:24:11.309] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services initializing
+[26nov.2025 21:24:11.310] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service mixin
+[26nov.2025 21:24:11.319] [main/DEBUG] [mixin/]: MixinService [ModLauncher] was successfully booted in cpw.mods.cl.ModuleClassLoader@2805c96b
+[26nov.2025 21:24:11.337] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Samle/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23131!/ Service=ModLauncher Env=CLIENT
+[26nov.2025 21:24:11.339] [main/DEBUG] [mixin/]: Initialising Mixin Platform Manager
+[26nov.2025 21:24:11.339] [main/DEBUG] [mixin/]: Adding mixin platform agents for container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[26nov.2025 21:24:11.339] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[26nov.2025 21:24:11.340] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[26nov.2025 21:24:11.340] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[26nov.2025 21:24:11.340] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[26nov.2025 21:24:11.342] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service mixin
+[26nov.2025 21:24:11.342] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service fml
+[26nov.2025 21:24:11.342] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Setting up basic FML game directories
+[26nov.2025 21:24:11.343] [main/DEBUG] [net.minecraftforge.fml.loading.FileUtils/CORE]: Found existing GAMEDIR directory : C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\run-data
+[26nov.2025 21:24:11.343] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path GAMEDIR is C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\run-data
+[26nov.2025 21:24:11.344] [main/DEBUG] [net.minecraftforge.fml.loading.FileUtils/CORE]: Found existing MODSDIR directory : C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\run-data\mods
+[26nov.2025 21:24:11.344] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path MODSDIR is C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\run-data\mods
+[26nov.2025 21:24:11.344] [main/DEBUG] [net.minecraftforge.fml.loading.FileUtils/CORE]: Found existing CONFIGDIR directory : C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\run-data\config
+[26nov.2025 21:24:11.344] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path CONFIGDIR is C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\run-data\config
+[26nov.2025 21:24:11.345] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path FMLCONFIG is C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\run-data\config\fml.toml
+[26nov.2025 21:24:11.345] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Loading configuration
+[26nov.2025 21:24:11.371] [main/DEBUG] [net.minecraftforge.fml.loading.FileUtils/CORE]: Found existing default config directory directory : C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\run-data\defaultconfigs
+[26nov.2025 21:24:11.371] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Preparing ModFile
+[26nov.2025 21:24:11.373] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Preparing launch handler
+[26nov.2025 21:24:11.373] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Using forgedatauserdev as launch service
+[26nov.2025 21:24:11.383] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Received command line version data  : VersionInfo[forgeVersion=43.5.1, mcVersion=1.19.2, mcpVersion=20220805.130853, forgeGroup=net.minecraftforge]
+[26nov.2025 21:24:11.384] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service fml
+[26nov.2025 21:24:11.384] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Current naming domain is 'mcp'
+[26nov.2025 21:24:11.386] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Identified name mapping providers {srg=srgtomcp:1234}
+[26nov.2025 21:24:11.386] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services begin scanning
+[26nov.2025 21:24:11.386] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service mixin
+[26nov.2025 21:24:11.386] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service mixin
+[26nov.2025 21:24:11.386] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service fml
+[26nov.2025 21:24:11.387] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Initiating mod scan
+[26nov.2025 21:24:11.395] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModListHandler/CORE]: Found mod coordinates from lists: []
+[26nov.2025 21:24:11.398] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Mod Locators : (mods folder:null),(maven libs:null),(exploded directory:null),(minecraft:null),(userdev classpath:null)
+[26nov.2025 21:24:11.398] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Dependency Locators : (JarInJar:null)
+[26nov.2025 21:24:11.404] [main/DEBUG] [net.minecraftforge.fml.loading.targets.CommonLaunchHandler/CORE]: Got mod coordinates mcwabnormals%%C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\resources\main;mcwabnormals%%C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\classes\java\main from env
+[26nov.2025 21:24:11.406] [main/DEBUG] [net.minecraftforge.fml.loading.targets.CommonLaunchHandler/CORE]: Found supplied mod coordinates [{mcwabnormals=[C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\resources\main, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\classes\java\main]}]
+[26nov.2025 21:24:11.585] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file forge-1.19.2-43.5.1_mapped_official_1.19.2.jar with {minecraft} mods - versions {1.19.2}
+[26nov.2025 21:24:11.592] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.19.2-43.5.1\93c8df608ed06f73fd06c575c3a316b8d055ed2d\javafmllanguage-1.19.2-43.5.1.jar
+[26nov.2025 21:24:11.592] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Samle\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.19.2-43.5.1\93c8df608ed06f73fd06c575c3a316b8d055ed2d\javafmllanguage-1.19.2-43.5.1.jar is missing mods.toml file
+[26nov.2025 21:24:11.600] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.19.2-43.5.1\6d50820c854ee60088839434c1ba9b8b7a25d9e\lowcodelanguage-1.19.2-43.5.1.jar
+[26nov.2025 21:24:11.600] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Samle\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.19.2-43.5.1\6d50820c854ee60088839434c1ba9b8b7a25d9e\lowcodelanguage-1.19.2-43.5.1.jar is missing mods.toml file
+[26nov.2025 21:24:11.606] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.19.2-43.5.1\5938ffbe849e435b44fc1bd5420ae63dfe9dde6e\mclanguage-1.19.2-43.5.1.jar
+[26nov.2025 21:24:11.606] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Samle\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.19.2-43.5.1\5938ffbe849e435b44fc1bd5420ae63dfe9dde6e\mclanguage-1.19.2-43.5.1.jar is missing mods.toml file
+[26nov.2025 21:24:11.612] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.19.2-43.5.1\4bd0a00b83d22444bbaf4a0f00da5237b3aeb74a\fmlcore-1.19.2-43.5.1.jar
+[26nov.2025 21:24:11.612] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Samle\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.19.2-43.5.1\4bd0a00b83d22444bbaf4a0f00da5237b3aeb74a\fmlcore-1.19.2-43.5.1.jar is missing mods.toml file
+[26nov.2025 21:24:11.615] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\resources\main
+[26nov.2025 21:24:11.622] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file main with {mcwabnormals} mods - versions {1.19.2-1.4}
+[26nov.2025 21:24:11.624] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate /
+[26nov.2025 21:24:11.624] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file  with {forge} mods - versions {43.5.1}
+[26nov.2025 21:24:11.652] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\addonslib-1090999\7265194_mapped_official_1.19.2\addonslib-1090999-7265194_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.653] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file addonslib-1090999-7265194_mapped_official_1.19.2.jar with {addonslib} mods - versions {1.19-1.6}
+[26nov.2025 21:24:11.659] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\jei-238222\5846858_mapped_official_1.19.2\jei-238222-5846858_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.661] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file jei-238222-5846858_mapped_official_1.19.2.jar with {jei} mods - versions {11.8.1.1034}
+[26nov.2025 21:24:11.668] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-roofs-352039\6494462_mapped_official_1.19.2\macaws-roofs-352039-6494462_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.669] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-roofs-352039-6494462_mapped_official_1.19.2.jar with {mcwroofs} mods - versions {2.3.2}
+[26nov.2025 21:24:11.677] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-fences-and-walls-453925\6363149_mapped_official_1.19.2\macaws-fences-and-walls-453925-6363149_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.677] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-fences-and-walls-453925-6363149_mapped_official_1.19.2.jar with {mcwfences} mods - versions {1.2.0}
+[26nov.2025 21:24:11.684] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-doors-378646\6146372_mapped_official_1.19.2\macaws-doors-378646-6146372_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.684] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-doors-378646-6146372_mapped_official_1.19.2.jar with {mcwdoors} mods - versions {1.1.2}
+[26nov.2025 21:24:11.691] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-bridges-351725\6528745_mapped_official_1.19.2\macaws-bridges-351725-6528745_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.692] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-bridges-351725-6528745_mapped_official_1.19.2.jar with {mcwbridges} mods - versions {3.1.0}
+[26nov.2025 21:24:11.700] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-windows-363569\7025431_mapped_official_1.19.2\macaws-windows-363569-7025431_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.701] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-windows-363569-7025431_mapped_official_1.19.2.jar with {mcwwindows} mods - versions {2.4.1}
+[26nov.2025 21:24:11.710] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-paths-and-pavings-629153\7029536_mapped_official_1.19.2\macaws-paths-and-pavings-629153-7029536_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.711] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-paths-and-pavings-629153-7029536_mapped_official_1.19.2.jar with {mcwpaths} mods - versions {1.1.1}
+[26nov.2025 21:24:11.718] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-trapdoors-400933\7256181_mapped_official_1.19.2\macaws-trapdoors-400933-7256181_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.718] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-trapdoors-400933-7256181_mapped_official_1.19.2.jar with {mcwtrpdoors} mods - versions {1.1.5}
+[26nov.2025 21:24:11.725] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-stairs-1119394\6155176_mapped_official_1.19.2\macaws-stairs-1119394-6155176_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.725] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-stairs-1119394-6155176_mapped_official_1.19.2.jar with {mcwstairs} mods - versions {1.0.1}
+[26nov.2025 21:24:11.732] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-furniture-359540\7255611_mapped_official_1.19.2\macaws-furniture-359540-7255611_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.733] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-furniture-359540-7255611_mapped_official_1.19.2.jar with {mcwfurnitures} mods - versions {3.4.1}
+[26nov.2025 21:24:11.739] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\buzzier-bees-355458\4776328_mapped_official_1.19.2\buzzier-bees-355458-4776328_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.741] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file buzzier-bees-355458-4776328_mapped_official_1.19.2.jar with {buzzier_bees} mods - versions {5.0.1}
+[26nov.2025 21:24:11.748] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\environmental-388992\5292368_mapped_official_1.19.2\environmental-388992-5292368_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.748] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file environmental-388992-5292368_mapped_official_1.19.2.jar with {environmental} mods - versions {3.1.1}
+[26nov.2025 21:24:11.756] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\upgrade-aquatic-326895\4777515_mapped_official_1.19.2\upgrade-aquatic-326895-4777515_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.757] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file upgrade-aquatic-326895-4777515_mapped_official_1.19.2.jar with {upgrade_aquatic} mods - versions {5.1.0}
+[26nov.2025 21:24:11.763] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\autumnity-365045\4776187_mapped_official_1.19.2\autumnity-365045-4776187_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.764] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file autumnity-365045-4776187_mapped_official_1.19.2.jar with {autumnity} mods - versions {4.0.1}
+[26nov.2025 21:24:11.770] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\endergetic-291509\5146370_mapped_official_1.19.2\endergetic-291509-5146370_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.770] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file endergetic-291509-5146370_mapped_official_1.19.2.jar with {endergetic} mods - versions {4.0.0}
+[26nov.2025 21:24:11.777] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\atmospheric-362393\5239546_mapped_official_1.19.2\atmospheric-362393-5239546_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.777] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file atmospheric-362393-5239546_mapped_official_1.19.2.jar with {atmospheric} mods - versions {5.1.2}
+[26nov.2025 21:24:11.790] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\caverns-and-chasms-438005\5222972_mapped_official_1.19.2\caverns-and-chasms-438005-5222972_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.791] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file caverns-and-chasms-438005-5222972_mapped_official_1.19.2.jar with {caverns_and_chasms} mods - versions {1.0.2}
+[26nov.2025 21:24:11.805] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\blueprint-382216\4749000_mapped_official_1.19.2\blueprint-382216-4749000_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.806] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file blueprint-382216-4749000_mapped_official_1.19.2.jar with {blueprint} mods - versions {6.2.0}
+[26nov.2025 21:24:11.815] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\woodworks-543610\4776123_mapped_official_1.19.2\woodworks-543610-4776123_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.816] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file woodworks-543610-4776123_mapped_official_1.19.2.jar with {woodworks} mods - versions {2.2.2}
+[26nov.2025 21:24:11.822] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\addonslib-1090999\7265194_mapped_official_1.19.2\addonslib-1090999-7265194_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.822] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file addonslib-1090999-7265194_mapped_official_1.19.2.jar with {addonslib} mods - versions {1.19-1.6}
+[26nov.2025 21:24:11.828] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\jei-238222\5846858_mapped_official_1.19.2\jei-238222-5846858_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.829] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file jei-238222-5846858_mapped_official_1.19.2.jar with {jei} mods - versions {11.8.1.1034}
+[26nov.2025 21:24:11.835] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-roofs-352039\6494462_mapped_official_1.19.2\macaws-roofs-352039-6494462_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.835] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-roofs-352039-6494462_mapped_official_1.19.2.jar with {mcwroofs} mods - versions {2.3.2}
+[26nov.2025 21:24:11.842] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-fences-and-walls-453925\6363149_mapped_official_1.19.2\macaws-fences-and-walls-453925-6363149_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.843] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-fences-and-walls-453925-6363149_mapped_official_1.19.2.jar with {mcwfences} mods - versions {1.2.0}
+[26nov.2025 21:24:11.849] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-doors-378646\6146372_mapped_official_1.19.2\macaws-doors-378646-6146372_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.849] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-doors-378646-6146372_mapped_official_1.19.2.jar with {mcwdoors} mods - versions {1.1.2}
+[26nov.2025 21:24:11.854] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-bridges-351725\6528745_mapped_official_1.19.2\macaws-bridges-351725-6528745_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.855] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-bridges-351725-6528745_mapped_official_1.19.2.jar with {mcwbridges} mods - versions {3.1.0}
+[26nov.2025 21:24:11.861] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-windows-363569\7025431_mapped_official_1.19.2\macaws-windows-363569-7025431_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.862] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-windows-363569-7025431_mapped_official_1.19.2.jar with {mcwwindows} mods - versions {2.4.1}
+[26nov.2025 21:24:11.868] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-paths-and-pavings-629153\7029536_mapped_official_1.19.2\macaws-paths-and-pavings-629153-7029536_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.868] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-paths-and-pavings-629153-7029536_mapped_official_1.19.2.jar with {mcwpaths} mods - versions {1.1.1}
+[26nov.2025 21:24:11.873] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-trapdoors-400933\7256181_mapped_official_1.19.2\macaws-trapdoors-400933-7256181_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.873] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-trapdoors-400933-7256181_mapped_official_1.19.2.jar with {mcwtrpdoors} mods - versions {1.1.5}
+[26nov.2025 21:24:11.879] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-stairs-1119394\6155176_mapped_official_1.19.2\macaws-stairs-1119394-6155176_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.880] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-stairs-1119394-6155176_mapped_official_1.19.2.jar with {mcwstairs} mods - versions {1.0.1}
+[26nov.2025 21:24:11.886] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-furniture-359540\7255611_mapped_official_1.19.2\macaws-furniture-359540-7255611_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.886] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-furniture-359540-7255611_mapped_official_1.19.2.jar with {mcwfurnitures} mods - versions {3.4.1}
+[26nov.2025 21:24:11.892] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\buzzier-bees-355458\4776328_mapped_official_1.19.2\buzzier-bees-355458-4776328_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.892] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file buzzier-bees-355458-4776328_mapped_official_1.19.2.jar with {buzzier_bees} mods - versions {5.0.1}
+[26nov.2025 21:24:11.899] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\environmental-388992\5292368_mapped_official_1.19.2\environmental-388992-5292368_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.900] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file environmental-388992-5292368_mapped_official_1.19.2.jar with {environmental} mods - versions {3.1.1}
+[26nov.2025 21:24:11.907] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\upgrade-aquatic-326895\4777515_mapped_official_1.19.2\upgrade-aquatic-326895-4777515_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.907] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file upgrade-aquatic-326895-4777515_mapped_official_1.19.2.jar with {upgrade_aquatic} mods - versions {5.1.0}
+[26nov.2025 21:24:11.913] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\autumnity-365045\4776187_mapped_official_1.19.2\autumnity-365045-4776187_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.913] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file autumnity-365045-4776187_mapped_official_1.19.2.jar with {autumnity} mods - versions {4.0.1}
+[26nov.2025 21:24:11.919] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\endergetic-291509\5146370_mapped_official_1.19.2\endergetic-291509-5146370_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.920] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file endergetic-291509-5146370_mapped_official_1.19.2.jar with {endergetic} mods - versions {4.0.0}
+[26nov.2025 21:24:11.926] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\atmospheric-362393\5239546_mapped_official_1.19.2\atmospheric-362393-5239546_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.926] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file atmospheric-362393-5239546_mapped_official_1.19.2.jar with {atmospheric} mods - versions {5.1.2}
+[26nov.2025 21:24:11.933] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\caverns-and-chasms-438005\5222972_mapped_official_1.19.2\caverns-and-chasms-438005-5222972_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.934] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file caverns-and-chasms-438005-5222972_mapped_official_1.19.2.jar with {caverns_and_chasms} mods - versions {1.0.2}
+[26nov.2025 21:24:11.940] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\blueprint-382216\4749000_mapped_official_1.19.2\blueprint-382216-4749000_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.940] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file blueprint-382216-4749000_mapped_official_1.19.2.jar with {blueprint} mods - versions {6.2.0}
+[26nov.2025 21:24:11.946] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\woodworks-543610\4776123_mapped_official_1.19.2\woodworks-543610-4776123_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.946] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file woodworks-543610-4776123_mapped_official_1.19.2.jar with {woodworks} mods - versions {2.2.2}
+[26nov.2025 21:24:11.950] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid mcwbridges, selecting most recent based on version data
+[26nov.2025 21:24:11.950] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file macaws-bridges-351725-6528745_mapped_official_1.19.2.jar for modid mcwbridges with version 3.1.0
+[26nov.2025 21:24:11.952] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid mcwstairs, selecting most recent based on version data
+[26nov.2025 21:24:11.952] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file macaws-stairs-1119394-6155176_mapped_official_1.19.2.jar for modid mcwstairs with version 1.0.1
+[26nov.2025 21:24:11.952] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid environmental, selecting most recent based on version data
+[26nov.2025 21:24:11.952] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file environmental-388992-5292368_mapped_official_1.19.2.jar for modid environmental with version 3.1.1
+[26nov.2025 21:24:11.952] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid endergetic, selecting most recent based on version data
+[26nov.2025 21:24:11.952] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file endergetic-291509-5146370_mapped_official_1.19.2.jar for modid endergetic with version 4.0.0
+[26nov.2025 21:24:11.952] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid buzzier_bees, selecting most recent based on version data
+[26nov.2025 21:24:11.952] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file buzzier-bees-355458-4776328_mapped_official_1.19.2.jar for modid buzzier_bees with version 5.0.1
+[26nov.2025 21:24:11.952] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid mcwroofs, selecting most recent based on version data
+[26nov.2025 21:24:11.952] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file macaws-roofs-352039-6494462_mapped_official_1.19.2.jar for modid mcwroofs with version 2.3.2
+[26nov.2025 21:24:11.952] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid mcwdoors, selecting most recent based on version data
+[26nov.2025 21:24:11.952] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file macaws-doors-378646-6146372_mapped_official_1.19.2.jar for modid mcwdoors with version 1.1.2
+[26nov.2025 21:24:11.952] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid mcwfurnitures, selecting most recent based on version data
+[26nov.2025 21:24:11.952] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file macaws-furniture-359540-7255611_mapped_official_1.19.2.jar for modid mcwfurnitures with version 3.4.1
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid mcwtrpdoors, selecting most recent based on version data
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file macaws-trapdoors-400933-7256181_mapped_official_1.19.2.jar for modid mcwtrpdoors with version 1.1.5
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid mcwfences, selecting most recent based on version data
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file macaws-fences-and-walls-453925-6363149_mapped_official_1.19.2.jar for modid mcwfences with version 1.2.0
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid jei, selecting most recent based on version data
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file jei-238222-5846858_mapped_official_1.19.2.jar for modid jei with version 11.8.1.1034
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid blueprint, selecting most recent based on version data
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file blueprint-382216-4749000_mapped_official_1.19.2.jar for modid blueprint with version 6.2.0
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid addonslib, selecting most recent based on version data
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file addonslib-1090999-7265194_mapped_official_1.19.2.jar for modid addonslib with version 1.19-1.6
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid caverns_and_chasms, selecting most recent based on version data
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file caverns-and-chasms-438005-5222972_mapped_official_1.19.2.jar for modid caverns_and_chasms with version 1.0.2
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid atmospheric, selecting most recent based on version data
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file atmospheric-362393-5239546_mapped_official_1.19.2.jar for modid atmospheric with version 5.1.2
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid mcwwindows, selecting most recent based on version data
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file macaws-windows-363569-7025431_mapped_official_1.19.2.jar for modid mcwwindows with version 2.4.1
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid upgrade_aquatic, selecting most recent based on version data
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file upgrade-aquatic-326895-4777515_mapped_official_1.19.2.jar for modid upgrade_aquatic with version 5.1.0
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid mcwpaths, selecting most recent based on version data
+[26nov.2025 21:24:11.953] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file macaws-paths-and-pavings-629153-7029536_mapped_official_1.19.2.jar for modid mcwpaths with version 1.1.1
+[26nov.2025 21:24:11.954] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid autumnity, selecting most recent based on version data
+[26nov.2025 21:24:11.954] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file autumnity-365045-4776187_mapped_official_1.19.2.jar for modid autumnity with version 4.0.1
+[26nov.2025 21:24:11.954] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid woodworks, selecting most recent based on version data
+[26nov.2025 21:24:11.954] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file woodworks-543610-4776123_mapped_official_1.19.2.jar for modid woodworks with version 2.2.2
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from macaws-bridges-351725-6528745_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from main, it does not contain dependency information.
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from forge-1.19.2-43.5.1_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from macaws-stairs-1119394-6155176_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from environmental-388992-5292368_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from endergetic-291509-5146370_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from buzzier-bees-355458-4776328_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from macaws-roofs-352039-6494462_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from macaws-doors-378646-6146372_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from macaws-furniture-359540-7255611_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from macaws-trapdoors-400933-7256181_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from macaws-fences-and-walls-453925-6363149_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from jei-238222-5846858_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from blueprint-382216-4749000_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.958] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from addonslib-1090999-7265194_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.959] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from caverns-and-chasms-438005-5222972_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.959] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from atmospheric-362393-5239546_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.959] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from macaws-windows-363569-7025431_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.959] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from upgrade-aquatic-326895-4777515_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.959] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from , it does not contain dependency information.
+[26nov.2025 21:24:11.959] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from macaws-paths-and-pavings-629153-7029536_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.959] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from autumnity-365045-4776187_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.959] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from woodworks-543610-4776123_mapped_official_1.19.2.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.959] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from mclanguage-1.19.2-43.5.1.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.959] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from javafmllanguage-1.19.2-43.5.1.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.959] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from fmlcore-1.19.2-43.5.1.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.959] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from lowcodelanguage-1.19.2-43.5.1.jar, it does not contain dependency information.
+[26nov.2025 21:24:11.976] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[26nov.2025 21:24:11.978] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file forge-1.19.2-43.5.1_mapped_official_1.19.2.jar with {minecraft} mods - versions {1.19.2}
+[26nov.2025 21:24:11.979] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19.2-43.5.1_mapped_official_1.19.2\forge-1.19.2-43.5.1_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=minecraft, acceptedVersions=1]]
+[26nov.2025 21:24:11.981] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\resources\main
+[26nov.2025 21:24:11.982] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file main with {mcwabnormals} mods - versions {1.19.2-1.4}
+[26nov.2025 21:24:11.982] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\resources\main with languages [LanguageSpec[languageName=javafml, acceptedVersions=[43,)]]
+[26nov.2025 21:24:11.982] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-bridges-351725\6528745_mapped_official_1.19.2\macaws-bridges-351725-6528745_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.983] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-bridges-351725-6528745_mapped_official_1.19.2.jar with {mcwbridges} mods - versions {3.1.0}
+[26nov.2025 21:24:11.983] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-bridges-351725\6528745_mapped_official_1.19.2\macaws-bridges-351725-6528745_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[26nov.2025 21:24:11.983] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-stairs-1119394\6155176_mapped_official_1.19.2\macaws-stairs-1119394-6155176_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.983] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-stairs-1119394-6155176_mapped_official_1.19.2.jar with {mcwstairs} mods - versions {1.0.1}
+[26nov.2025 21:24:11.983] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-stairs-1119394\6155176_mapped_official_1.19.2\macaws-stairs-1119394-6155176_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[26nov.2025 21:24:11.983] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\environmental-388992\5292368_mapped_official_1.19.2\environmental-388992-5292368_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.984] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file environmental-388992-5292368_mapped_official_1.19.2.jar with {environmental} mods - versions {3.1.1}
+[26nov.2025 21:24:11.984] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\environmental-388992\5292368_mapped_official_1.19.2\environmental-388992-5292368_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[32,)]]
+[26nov.2025 21:24:11.984] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\endergetic-291509\5146370_mapped_official_1.19.2\endergetic-291509-5146370_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.984] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file endergetic-291509-5146370_mapped_official_1.19.2.jar with {endergetic} mods - versions {4.0.0}
+[26nov.2025 21:24:11.984] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\endergetic-291509\5146370_mapped_official_1.19.2\endergetic-291509-5146370_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[32,)]]
+[26nov.2025 21:24:11.984] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\buzzier-bees-355458\4776328_mapped_official_1.19.2\buzzier-bees-355458-4776328_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.985] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file buzzier-bees-355458-4776328_mapped_official_1.19.2.jar with {buzzier_bees} mods - versions {5.0.1}
+[26nov.2025 21:24:11.985] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\buzzier-bees-355458\4776328_mapped_official_1.19.2\buzzier-bees-355458-4776328_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[32,)]]
+[26nov.2025 21:24:11.985] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-roofs-352039\6494462_mapped_official_1.19.2\macaws-roofs-352039-6494462_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.985] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-roofs-352039-6494462_mapped_official_1.19.2.jar with {mcwroofs} mods - versions {2.3.2}
+[26nov.2025 21:24:11.985] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-roofs-352039\6494462_mapped_official_1.19.2\macaws-roofs-352039-6494462_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[26nov.2025 21:24:11.985] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-doors-378646\6146372_mapped_official_1.19.2\macaws-doors-378646-6146372_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.985] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-doors-378646-6146372_mapped_official_1.19.2.jar with {mcwdoors} mods - versions {1.1.2}
+[26nov.2025 21:24:11.986] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-doors-378646\6146372_mapped_official_1.19.2\macaws-doors-378646-6146372_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[26nov.2025 21:24:11.986] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-fences-and-walls-453925\6363149_mapped_official_1.19.2\macaws-fences-and-walls-453925-6363149_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.986] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-fences-and-walls-453925-6363149_mapped_official_1.19.2.jar with {mcwfences} mods - versions {1.2.0}
+[26nov.2025 21:24:11.986] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-fences-and-walls-453925\6363149_mapped_official_1.19.2\macaws-fences-and-walls-453925-6363149_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[26nov.2025 21:24:11.986] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-trapdoors-400933\7256181_mapped_official_1.19.2\macaws-trapdoors-400933-7256181_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.987] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-trapdoors-400933-7256181_mapped_official_1.19.2.jar with {mcwtrpdoors} mods - versions {1.1.5}
+[26nov.2025 21:24:11.987] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-trapdoors-400933\7256181_mapped_official_1.19.2\macaws-trapdoors-400933-7256181_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[26nov.2025 21:24:11.987] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-furniture-359540\7255611_mapped_official_1.19.2\macaws-furniture-359540-7255611_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.987] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-furniture-359540-7255611_mapped_official_1.19.2.jar with {mcwfurnitures} mods - versions {3.4.1}
+[26nov.2025 21:24:11.987] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-furniture-359540\7255611_mapped_official_1.19.2\macaws-furniture-359540-7255611_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[26nov.2025 21:24:11.987] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\jei-238222\5846858_mapped_official_1.19.2\jei-238222-5846858_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.988] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file jei-238222-5846858_mapped_official_1.19.2.jar with {jei} mods - versions {11.8.1.1034}
+[26nov.2025 21:24:11.988] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\jei-238222\5846858_mapped_official_1.19.2\jei-238222-5846858_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[41,)]]
+[26nov.2025 21:24:11.988] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\blueprint-382216\4749000_mapped_official_1.19.2\blueprint-382216-4749000_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.988] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file blueprint-382216-4749000_mapped_official_1.19.2.jar with {blueprint} mods - versions {6.2.0}
+[26nov.2025 21:24:11.988] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\blueprint-382216\4749000_mapped_official_1.19.2\blueprint-382216-4749000_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[32,)]]
+[26nov.2025 21:24:11.988] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\addonslib-1090999\7265194_mapped_official_1.19.2\addonslib-1090999-7265194_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.988] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file addonslib-1090999-7265194_mapped_official_1.19.2.jar with {addonslib} mods - versions {1.19-1.6}
+[26nov.2025 21:24:11.988] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\addonslib-1090999\7265194_mapped_official_1.19.2\addonslib-1090999-7265194_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[41,)]]
+[26nov.2025 21:24:11.988] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\caverns-and-chasms-438005\5222972_mapped_official_1.19.2\caverns-and-chasms-438005-5222972_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.989] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file caverns-and-chasms-438005-5222972_mapped_official_1.19.2.jar with {caverns_and_chasms} mods - versions {1.0.2}
+[26nov.2025 21:24:11.989] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\caverns-and-chasms-438005\5222972_mapped_official_1.19.2\caverns-and-chasms-438005-5222972_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[32,)]]
+[26nov.2025 21:24:11.989] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\atmospheric-362393\5239546_mapped_official_1.19.2\atmospheric-362393-5239546_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.989] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file atmospheric-362393-5239546_mapped_official_1.19.2.jar with {atmospheric} mods - versions {5.1.2}
+[26nov.2025 21:24:11.989] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\atmospheric-362393\5239546_mapped_official_1.19.2\atmospheric-362393-5239546_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[32,)]]
+[26nov.2025 21:24:11.989] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-windows-363569\7025431_mapped_official_1.19.2\macaws-windows-363569-7025431_mapped_official_1.19.2.jar
+[26nov.2025 21:24:11.989] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-windows-363569-7025431_mapped_official_1.19.2.jar with {mcwwindows} mods - versions {2.4.1}
+[26nov.2025 21:24:11.989] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-windows-363569\7025431_mapped_official_1.19.2\macaws-windows-363569-7025431_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[26nov.2025 21:24:11.989] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate /
+[26nov.2025 21:24:11.990] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file  with {forge} mods - versions {43.5.1}
+[26nov.2025 21:24:11.990] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file / with languages [LanguageSpec[languageName=javafml, acceptedVersions=[24,]]]
+[26nov.2025 21:24:12.014] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod field_to_method with Javascript path coremods/field_to_method.js
+[26nov.2025 21:24:12.014] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod field_to_instanceof with Javascript path coremods/field_to_instanceof.js
+[26nov.2025 21:24:12.014] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod add_bouncer_method with Javascript path coremods/add_bouncer_method.js
+[26nov.2025 21:24:12.014] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/field_to_method.js
+[26nov.2025 21:24:12.014] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/field_to_instanceof.js
+[26nov.2025 21:24:12.014] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/add_bouncer_method.js
+[26nov.2025 21:24:12.014] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\upgrade-aquatic-326895\4777515_mapped_official_1.19.2\upgrade-aquatic-326895-4777515_mapped_official_1.19.2.jar
+[26nov.2025 21:24:12.014] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file upgrade-aquatic-326895-4777515_mapped_official_1.19.2.jar with {upgrade_aquatic} mods - versions {5.1.0}
+[26nov.2025 21:24:12.015] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\upgrade-aquatic-326895\4777515_mapped_official_1.19.2\upgrade-aquatic-326895-4777515_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[32,)]]
+[26nov.2025 21:24:12.015] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-paths-and-pavings-629153\7029536_mapped_official_1.19.2\macaws-paths-and-pavings-629153-7029536_mapped_official_1.19.2.jar
+[26nov.2025 21:24:12.015] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-paths-and-pavings-629153-7029536_mapped_official_1.19.2.jar with {mcwpaths} mods - versions {1.1.1}
+[26nov.2025 21:24:12.015] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\macaws-paths-and-pavings-629153\7029536_mapped_official_1.19.2\macaws-paths-and-pavings-629153-7029536_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[26nov.2025 21:24:12.015] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\autumnity-365045\4776187_mapped_official_1.19.2\autumnity-365045-4776187_mapped_official_1.19.2.jar
+[26nov.2025 21:24:12.015] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file autumnity-365045-4776187_mapped_official_1.19.2.jar with {autumnity} mods - versions {4.0.1}
+[26nov.2025 21:24:12.015] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\autumnity-365045\4776187_mapped_official_1.19.2\autumnity-365045-4776187_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[32,)]]
+[26nov.2025 21:24:12.015] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\woodworks-543610\4776123_mapped_official_1.19.2\woodworks-543610-4776123_mapped_official_1.19.2.jar
+[26nov.2025 21:24:12.016] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file woodworks-543610-4776123_mapped_official_1.19.2.jar with {woodworks} mods - versions {2.2.2}
+[26nov.2025 21:24:12.016] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\woodworks-543610\4776123_mapped_official_1.19.2\woodworks-543610-4776123_mapped_official_1.19.2.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[32,)]]
+[26nov.2025 21:24:12.017] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service fml
+[26nov.2025 21:24:12.025] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found 3 language providers
+[26nov.2025 21:24:12.026] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider minecraft, version 1.0
+[26nov.2025 21:24:12.026] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider lowcodefml, version 43
+[26nov.2025 21:24:12.026] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider javafml, version 43
+[26nov.2025 21:24:12.029] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Configured system mods: [minecraft, forge]
+[26nov.2025 21:24:12.030] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Found system mod: minecraft
+[26nov.2025 21:24:12.030] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Found system mod: forge
+[26nov.2025 21:24:12.031] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Found 34 mod requirements (33 mandatory, 1 optional)
+[26nov.2025 21:24:12.032] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Found 0 mod requirements missing (0 mandatory, 0 optional)
+[26nov.2025 21:24:12.315] [main/DEBUG] [net.minecraftforge.fml.loading.MCPNamingService/CORE]: Loaded 30289 method mappings from methods.csv
+[26nov.2025 21:24:12.338] [main/DEBUG] [net.minecraftforge.fml.loading.MCPNamingService/CORE]: Loaded 28897 field mappings from fields.csv
+[26nov.2025 21:24:12.389] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading transformers
+[26nov.2025 21:24:12.389] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service mixin
+[26nov.2025 21:24:12.390] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service mixin
+[26nov.2025 21:24:12.390] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service fml
+[26nov.2025 21:24:12.390] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Loading coremod transformers
+[26nov.2025 21:24:12.390] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/field_to_method.js
+[26nov.2025 21:24:12.615] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[26nov.2025 21:24:12.615] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/field_to_instanceof.js
+[26nov.2025 21:24:12.692] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[26nov.2025 21:24:12.692] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/add_bouncer_method.js
+[26nov.2025 21:24:12.728] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[26nov.2025 21:24:12.737] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@3b5c665c to Target : CLASS {Lnet/minecraft/world/level/biome/Biome;} {} {V}
+[26nov.2025 21:24:12.739] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@367f0121 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/Structure;} {} {V}
+[26nov.2025 21:24:12.739] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@7da39774 to Target : CLASS {Lnet/minecraft/world/effect/MobEffectInstance;} {} {V}
+[26nov.2025 21:24:12.739] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@441b8382 to Target : CLASS {Lnet/minecraft/world/level/block/LiquidBlock;} {} {V}
+[26nov.2025 21:24:12.739] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@1df1ced0 to Target : CLASS {Lnet/minecraft/world/item/BucketItem;} {} {V}
+[26nov.2025 21:24:12.739] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5349b246 to Target : CLASS {Lnet/minecraft/world/level/block/StairBlock;} {} {V}
+[26nov.2025 21:24:12.740] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@32b0876c to Target : CLASS {Lnet/minecraft/world/level/block/FlowerPotBlock;} {} {V}
+[26nov.2025 21:24:12.740] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2aaf152b to Target : CLASS {Lnet/minecraft/world/item/ItemStack;} {} {V}
+[26nov.2025 21:24:12.740] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@39bbd9e0 to Target : CLASS {Lnet/minecraft/network/play/client/CClientSettingsPacket;} {} {V}
+[26nov.2025 21:24:12.740] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service fml
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: Processing launch tasks for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(minecraft)
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(minecraft)
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(minecraft)
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(minecraft)
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(minecraft)
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwabnormals)
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwabnormals)
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwabnormals)
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwabnormals)
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwabnormals)
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwabnormals)]
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwbridges)
+[26nov.2025 21:24:17.248] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwbridges)
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwbridges)
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwbridges)
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwbridges)
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwbridges)]
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwstairs)
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwstairs)
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwstairs)
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwstairs)
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwstairs)
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwstairs)]
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(environmental)
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(environmental)
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(environmental)
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(environmental)
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(environmental)
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(environmental)]
+[26nov.2025 21:24:17.249] [main/DEBUG] [mixin/]: Registering mixin config: environmental.mixins.json
+[26nov.2025 21:24:17.262] [main/DEBUG] [mixin/]: Compatibility level JAVA_17 specified by environmental.mixins.json is higher than the maximum level supported by this version of mixin (JAVA_13).
+[26nov.2025 21:24:17.265] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[26nov.2025 21:24:17.266] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(endergetic)
+[26nov.2025 21:24:17.266] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(endergetic)
+[26nov.2025 21:24:17.266] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(endergetic)
+[26nov.2025 21:24:17.266] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(endergetic)
+[26nov.2025 21:24:17.266] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(endergetic)
+[26nov.2025 21:24:17.266] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(endergetic)]
+[26nov.2025 21:24:17.266] [main/DEBUG] [mixin/]: Registering mixin config: endergetic.mixins.json
+[26nov.2025 21:24:17.267] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(buzzier_bees)
+[26nov.2025 21:24:17.267] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(buzzier_bees)
+[26nov.2025 21:24:17.267] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(buzzier_bees)
+[26nov.2025 21:24:17.267] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(buzzier_bees)
+[26nov.2025 21:24:17.267] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(buzzier_bees)
+[26nov.2025 21:24:17.267] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(buzzier_bees)]
+[26nov.2025 21:24:17.267] [main/DEBUG] [mixin/]: Registering mixin config: buzzier_bees.mixins.json
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwroofs)
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwroofs)
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwroofs)
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwroofs)
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwroofs)
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwroofs)]
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwdoors)
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwdoors)
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwdoors)
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwdoors)
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwdoors)
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwdoors)]
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwfences)
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwfences)
+[26nov.2025 21:24:17.268] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwfences)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwfences)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwfences)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwfences)]
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwtrpdoors)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwtrpdoors)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwtrpdoors)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwtrpdoors)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwtrpdoors)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwtrpdoors)]
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwfurnitures)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwfurnitures)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwfurnitures)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwfurnitures)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwfurnitures)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwfurnitures)]
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(jei)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(jei)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(jei)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(jei)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(jei)
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(jei)]
+[26nov.2025 21:24:17.269] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(blueprint)
+[26nov.2025 21:24:17.270] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(blueprint)
+[26nov.2025 21:24:17.270] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(blueprint)
+[26nov.2025 21:24:17.270] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(blueprint)
+[26nov.2025 21:24:17.270] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(blueprint)
+[26nov.2025 21:24:17.270] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(blueprint)]
+[26nov.2025 21:24:17.270] [main/DEBUG] [mixin/]: Registering mixin config: blueprint.mixins.json
+[26nov.2025 21:24:17.272] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(addonslib)
+[26nov.2025 21:24:17.272] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(addonslib)
+[26nov.2025 21:24:17.272] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(addonslib)
+[26nov.2025 21:24:17.272] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(addonslib)
+[26nov.2025 21:24:17.273] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(addonslib)
+[26nov.2025 21:24:17.273] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(addonslib)]
+[26nov.2025 21:24:17.273] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(caverns_and_chasms)
+[26nov.2025 21:24:17.273] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(caverns_and_chasms)
+[26nov.2025 21:24:17.273] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(caverns_and_chasms)
+[26nov.2025 21:24:17.273] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(caverns_and_chasms)
+[26nov.2025 21:24:17.273] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(caverns_and_chasms)
+[26nov.2025 21:24:17.273] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(caverns_and_chasms)]
+[26nov.2025 21:24:17.273] [main/DEBUG] [mixin/]: Registering mixin config: caverns_and_chasms.mixins.json
+[26nov.2025 21:24:17.274] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(atmospheric)
+[26nov.2025 21:24:17.274] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(atmospheric)
+[26nov.2025 21:24:17.274] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(atmospheric)
+[26nov.2025 21:24:17.274] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(atmospheric)
+[26nov.2025 21:24:17.274] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(atmospheric)
+[26nov.2025 21:24:17.274] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(atmospheric)]
+[26nov.2025 21:24:17.274] [main/DEBUG] [mixin/]: Registering mixin config: atmospheric.mixins.json
+[26nov.2025 21:24:17.275] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwwindows)
+[26nov.2025 21:24:17.275] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwwindows)
+[26nov.2025 21:24:17.275] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwwindows)
+[26nov.2025 21:24:17.275] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwwindows)
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwwindows)
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwwindows)]
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(forge)
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(forge)
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(forge)
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(forge)
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(forge)
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(forge)]
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(upgrade_aquatic)
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(upgrade_aquatic)
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(upgrade_aquatic)
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(upgrade_aquatic)
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(upgrade_aquatic)
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(upgrade_aquatic)]
+[26nov.2025 21:24:17.276] [main/DEBUG] [mixin/]: Registering mixin config: upgrade_aquatic.mixins.json
+[26nov.2025 21:24:17.277] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwpaths)
+[26nov.2025 21:24:17.277] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwpaths)
+[26nov.2025 21:24:17.277] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwpaths)
+[26nov.2025 21:24:17.277] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwpaths)
+[26nov.2025 21:24:17.277] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwpaths)
+[26nov.2025 21:24:17.277] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwpaths)]
+[26nov.2025 21:24:17.278] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(autumnity)
+[26nov.2025 21:24:17.278] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(autumnity)
+[26nov.2025 21:24:17.278] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(autumnity)
+[26nov.2025 21:24:17.278] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(autumnity)
+[26nov.2025 21:24:17.278] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(autumnity)
+[26nov.2025 21:24:17.278] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(autumnity)]
+[26nov.2025 21:24:17.278] [main/DEBUG] [mixin/]: Registering mixin config: autumnity.mixins.json
+[26nov.2025 21:24:17.278] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(woodworks)
+[26nov.2025 21:24:17.278] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(woodworks)
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(woodworks)
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(woodworks)
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(woodworks)
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(woodworks)]
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: inject() running with 24 agents
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwabnormals)]
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwbridges)]
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwstairs)]
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(environmental)]
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(endergetic)]
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(buzzier_bees)]
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwroofs)]
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwdoors)]
+[26nov.2025 21:24:17.279] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwfences)]
+[26nov.2025 21:24:17.280] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwtrpdoors)]
+[26nov.2025 21:24:17.280] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwfurnitures)]
+[26nov.2025 21:24:17.280] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(jei)]
+[26nov.2025 21:24:17.280] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(blueprint)]
+[26nov.2025 21:24:17.280] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(addonslib)]
+[26nov.2025 21:24:17.280] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(caverns_and_chasms)]
+[26nov.2025 21:24:17.280] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(atmospheric)]
+[26nov.2025 21:24:17.280] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwwindows)]
+[26nov.2025 21:24:17.280] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(forge)]
+[26nov.2025 21:24:17.280] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(upgrade_aquatic)]
+[26nov.2025 21:24:17.280] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwpaths)]
+[26nov.2025 21:24:17.280] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(autumnity)]
+[26nov.2025 21:24:17.280] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(woodworks)]
+[26nov.2025 21:24:17.281] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Samle\.gradle\caches\forge_gradle\assets, --assetIndex, 1.19, --mod, mcwabnormals, --all, --output, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\src\generated\resources, --existing, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\src\main\resources]
+[26nov.2025 21:24:17.359] [main/DEBUG] [mixin/]: Error cleaning class output directory: .mixin.out
+[26nov.2025 21:24:17.360] [main/DEBUG] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
+[26nov.2025 21:24:17.361] [main/DEBUG] [mixin/]: Selecting config environmental.mixins.json
+[26nov.2025 21:24:17.500] [main/INFO] [mixin/]: Remapping refMap environmental.refmap.json using C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\createSrgToMcp\output.srg
+[26nov.2025 21:24:17.501] [main/DEBUG] [mixin/]: Selecting config endergetic.mixins.json
+[26nov.2025 21:24:17.503] [main/INFO] [mixin/]: Remapping refMap endergetic.refmap.json using C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\createSrgToMcp\output.srg
+[26nov.2025 21:24:17.503] [main/DEBUG] [mixin/]: Selecting config buzzier_bees.mixins.json
+[26nov.2025 21:24:17.503] [main/INFO] [mixin/]: Remapping refMap buzzier_bees.refmap.json using C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\createSrgToMcp\output.srg
+[26nov.2025 21:24:17.504] [main/DEBUG] [mixin/]: Selecting config blueprint.mixins.json
+[26nov.2025 21:24:17.504] [main/INFO] [mixin/]: Remapping refMap blueprint.refmap.json using C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\createSrgToMcp\output.srg
+[26nov.2025 21:24:17.504] [main/DEBUG] [mixin/]: Selecting config caverns_and_chasms.mixins.json
+[26nov.2025 21:24:17.505] [main/INFO] [mixin/]: Remapping refMap caverns_and_chasms.refmap.json using C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\createSrgToMcp\output.srg
+[26nov.2025 21:24:17.505] [main/DEBUG] [mixin/]: Selecting config atmospheric.mixins.json
+[26nov.2025 21:24:17.505] [main/INFO] [mixin/]: Remapping refMap atmospheric.refmap.json using C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\createSrgToMcp\output.srg
+[26nov.2025 21:24:17.507] [main/DEBUG] [mixin/]: Selecting config upgrade_aquatic.mixins.json
+[26nov.2025 21:24:17.507] [main/INFO] [mixin/]: Remapping refMap upgrade_aquatic.refmap.json using C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\createSrgToMcp\output.srg
+[26nov.2025 21:24:17.507] [main/DEBUG] [mixin/]: Selecting config autumnity.mixins.json
+[26nov.2025 21:24:17.508] [main/INFO] [mixin/]: Remapping refMap autumnity.refmap.json using C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Abnormals\1.19.2\build\createSrgToMcp\output.srg
+[26nov.2025 21:24:17.508] [main/DEBUG] [mixin/]: Preparing environmental.mixins.json (16)
+[26nov.2025 21:24:17.575] [main/DEBUG] [mixin/]: Preparing endergetic.mixins.json (22)
+[26nov.2025 21:24:17.629] [main/DEBUG] [mixin/]: Preparing buzzier_bees.mixins.json (3)
+[26nov.2025 21:24:17.634] [main/DEBUG] [mixin/]: Preparing blueprint.mixins.json (31)
+[26nov.2025 21:24:17.671] [main/DEBUG] [mixin/]: @Mixin target net/minecraft/world/level/levelgen/SurfaceRules$Context is public in blueprint.mixins.json:SurfaceRulesContextMixin and should be specified in value
+[26nov.2025 21:24:17.688] [main/DEBUG] [mixin/]: Preparing caverns_and_chasms.mixins.json (28)
+[26nov.2025 21:24:17.715] [main/DEBUG] [mixin/]: Preparing atmospheric.mixins.json (11)
+[26nov.2025 21:24:17.743] [main/DEBUG] [mixin/]: @Mixin target net/minecraft/world/item/SwordItem is public in atmospheric.mixins.json:SwordItemMixin and should be specified in value
+[26nov.2025 21:24:17.744] [main/DEBUG] [mixin/]: @Mixin target net/minecraft/world/item/ShearsItem is public in atmospheric.mixins.json:SwordItemMixin and should be specified in value
+[26nov.2025 21:24:17.744] [main/DEBUG] [mixin/]: Preparing upgrade_aquatic.mixins.json (8)
+[26nov.2025 21:24:17.748] [main/DEBUG] [mixin/]: Preparing autumnity.mixins.json (3)
+[26nov.2025 21:24:17.768] [main/DEBUG] [mixin/]: Registering new injector for @Inject with org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo
+[26nov.2025 21:24:17.769] [main/DEBUG] [mixin/]: Registering new injector for @ModifyArg with org.spongepowered.asm.mixin.injection.struct.ModifyArgInjectionInfo
+[26nov.2025 21:24:17.770] [main/DEBUG] [mixin/]: Registering new injector for @ModifyArgs with org.spongepowered.asm.mixin.injection.struct.ModifyArgsInjectionInfo
+[26nov.2025 21:24:17.772] [main/DEBUG] [mixin/]: Registering new injector for @Redirect with org.spongepowered.asm.mixin.injection.struct.RedirectInjectionInfo
+[26nov.2025 21:24:17.774] [main/DEBUG] [mixin/]: Registering new injector for @ModifyVariable with org.spongepowered.asm.mixin.injection.struct.ModifyVariableInjectionInfo
+[26nov.2025 21:24:17.775] [main/DEBUG] [mixin/]: Registering new injector for @ModifyConstant with org.spongepowered.asm.mixin.injection.struct.ModifyConstantInjectionInfo
+[26nov.2025 21:24:17.814] [main/DEBUG] [mixin/]: Prepared 120 mixins in 0,453 sec (3,8ms avg) (0ms load, 0ms transform, 0ms plugin)
+[26nov.2025 21:24:17.826] [main/DEBUG] [io.netty.util.internal.logging.InternalLoggerFactory/]: Using SLF4J as the default logging framework
+[26nov.2025 21:24:17.830] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.level: simple
+[26nov.2025 21:24:17.830] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.targetRecords: 4
+[26nov.2025 21:24:17.906] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [mcwabnormals]
+[26nov.2025 21:24:17.961] [main/DEBUG] [mixin/]: Mixing BlockMixin from caverns_and_chasms.mixins.json into net.minecraft.world.level.block.Block
+[26nov.2025 21:24:17.970] [main/DEBUG] [mixin/]: Mixing BlockMixin from atmospheric.mixins.json into net.minecraft.world.level.block.Block
+[26nov.2025 21:24:17.984] [main/DEBUG] [mixin/]: Mixing BlockMixin from autumnity.mixins.json into net.minecraft.world.level.block.Block
+[26nov.2025 21:24:18.068] [main/DEBUG] [mixin/]: Mixing BlockBehaviourMixin from environmental.mixins.json into net.minecraft.world.level.block.state.BlockBehaviour
+[26nov.2025 21:24:18.079] [main/DEBUG] [mixin/]: Mixing BlockBehaviourMixin from caverns_and_chasms.mixins.json into net.minecraft.world.level.block.state.BlockBehaviour
+[26nov.2025 21:24:18.135] [main/DEBUG] [mixin/]: Mixing EntityMixin from endergetic.mixins.json into net.minecraft.world.entity.Entity
+[26nov.2025 21:24:18.147] [main/DEBUG] [mixin/]: Mixing EntityMixin from blueprint.mixins.json into net.minecraft.world.entity.Entity
+[26nov.2025 21:24:18.150] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$read$1(Lnet/minecraft/nbt/Tag;)V to md16e1b1$lambda$read$1$0 in blueprint.mixins.json:EntityMixin
+[26nov.2025 21:24:18.150] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$writeTrackedData$0(Lnet/minecraft/nbt/ListTag;Lcom/teamabnormals/blueprint/common/world/storage/tracking/TrackedData;Lcom/teamabnormals/blueprint/common/world/storage/tracking/IDataManager$DataEntry;)V to md16e1b1$lambda$writeTrackedData$0$1 in blueprint.mixins.json:EntityMixin
+[26nov.2025 21:24:18.175] [main/DEBUG] [mixin/]: Mixing EntityMixin from atmospheric.mixins.json into net.minecraft.world.entity.Entity
+[26nov.2025 21:24:18.180] [main/DEBUG] [mixin/]: Mixing EntityMixin from upgrade_aquatic.mixins.json into net.minecraft.world.entity.Entity
+[26nov.2025 21:24:18.307] [main/DEBUG] [mixin/]: Mixing LivingEntityMixin from environmental.mixins.json into net.minecraft.world.entity.LivingEntity
+[26nov.2025 21:24:18.309] [main/DEBUG] [mixin/]: Mixing LivingEntityMixin from endergetic.mixins.json into net.minecraft.world.entity.LivingEntity
+[26nov.2025 21:24:18.313] [main/DEBUG] [mixin/]: Mixing LivingEntityMixin from upgrade_aquatic.mixins.json into net.minecraft.world.entity.LivingEntity
+[26nov.2025 21:24:18.384] [main/DEBUG] [mixin/]: Mixing ServerLevelMixin from endergetic.mixins.json into net.minecraft.server.level.ServerLevel
+[26nov.2025 21:24:18.403] [main/DEBUG] [mixin/]: Mixing ServerLevelMixin from blueprint.mixins.json into net.minecraft.server.level.ServerLevel
+[26nov.2025 21:24:18.403] [main/DEBUG] [mixin/]: Mixing ServerLevelMixin from caverns_and_chasms.mixins.json into net.minecraft.server.level.ServerLevel
+[26nov.2025 21:24:18.404] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$findLightningRod$2(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/BlockPos; to md16e1b1$lambda$findLightningRod$2$0 in caverns_and_chasms.mixins.json:ServerLevelMixin
+[26nov.2025 21:24:18.404] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$findLightningRod$1(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)Z to md16e1b1$lambda$findLightningRod$1$1 in caverns_and_chasms.mixins.json:ServerLevelMixin
+[26nov.2025 21:24:18.404] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$findLightningRod$0(Lnet/minecraft/core/Holder;)Z to md16e1b1$lambda$findLightningRod$0$2 in caverns_and_chasms.mixins.json:ServerLevelMixin
+[26nov.2025 21:24:18.407] [main/DEBUG] [mixin/]: Mixing ServerLevelMixin from atmospheric.mixins.json into net.minecraft.server.level.ServerLevel
+[26nov.2025 21:24:18.409] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/biome/Biome
+[26nov.2025 21:24:18.479] [main/DEBUG] [mixin/]: Mixing PlayerMixin from environmental.mixins.json into net.minecraft.world.entity.player.Player
+[26nov.2025 21:24:18.484] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/ItemStack
+[26nov.2025 21:24:18.492] [main/DEBUG] [mixin/]: Mixing PlayerMixin from endergetic.mixins.json into net.minecraft.world.entity.player.Player
+[26nov.2025 21:24:18.495] [main/DEBUG] [mixin/]: Mixing PlayerMixin from caverns_and_chasms.mixins.json into net.minecraft.world.entity.player.Player
+[26nov.2025 21:24:18.547] [main/DEBUG] [mixin/]: Mixing FluidInvokerMixin from blueprint.mixins.json into net.minecraft.world.level.material.Fluid
+[26nov.2025 21:24:18.561] [main/DEBUG] [mixin/]: Mixing ItemInvokerMixin from blueprint.mixins.json into net.minecraft.world.item.Item
+[26nov.2025 21:24:18.567] [main/DEBUG] [mixin/]: Mixing ItemMixin from caverns_and_chasms.mixins.json into net.minecraft.world.item.Item
+[26nov.2025 21:24:18.640] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/Structure
+[26nov.2025 21:24:18.741] [main/DEBUG] [mixin/]: Mixing GrassBlockMixin from environmental.mixins.json into net.minecraft.world.level.block.GrassBlock
+[26nov.2025 21:24:18.743] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$getFlowerFeatures$0(Lnet/minecraft/world/level/levelgen/feature/ConfiguredFeature;)Z to md16e1b1$lambda$getFlowerFeatures$0$0 in environmental.mixins.json:GrassBlockMixin
+[26nov.2025 21:24:18.768] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/LiquidBlock
+[26nov.2025 21:24:18.781] [main/DEBUG] [mixin/]: Mixing PistonBaseBlockMixin from atmospheric.mixins.json into net.minecraft.world.level.block.piston.PistonBaseBlock
+[26nov.2025 21:24:18.803] [main/DEBUG] [mixin/]: Mixing BaseFireBlockMixin from endergetic.mixins.json into net.minecraft.world.level.block.BaseFireBlock
+[26nov.2025 21:24:18.804] [main/DEBUG] [mixin/]: Mixing BaseFireBlockMixin from caverns_and_chasms.mixins.json into net.minecraft.world.level.block.BaseFireBlock
+[26nov.2025 21:24:18.817] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/StairBlock
+[26nov.2025 21:24:18.839] [main/DEBUG] [mixin/]: Mixing CarvedPumpkinBlockMixin from environmental.mixins.json into net.minecraft.world.level.block.CarvedPumpkinBlock
+[26nov.2025 21:24:18.844] [main/DEBUG] [mixin/]: Mixing CarvedPumpkinBlockMixin from caverns_and_chasms.mixins.json into net.minecraft.world.level.block.CarvedPumpkinBlock
+[26nov.2025 21:24:18.890] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/FlowerPotBlock
+[26nov.2025 21:24:18.907] [main/DEBUG] [mixin/]: Mixing chorus.ChorusPlantBlockMixin from endergetic.mixins.json into net.minecraft.world.level.block.ChorusPlantBlock
+[26nov.2025 21:24:18.926] [main/DEBUG] [mixin/]: Mixing chorus.ChorusFlowerBlockMixin from endergetic.mixins.json into net.minecraft.world.level.block.ChorusFlowerBlock
+[26nov.2025 21:24:18.958] [main/DEBUG] [mixin/]: Mixing BambooBlockMixin from atmospheric.mixins.json into net.minecraft.world.level.block.BambooBlock
+[26nov.2025 21:24:18.966] [main/DEBUG] [mixin/]: Mixing BubbleColumnBlockMixin from upgrade_aquatic.mixins.json into net.minecraft.world.level.block.BubbleColumnBlock
+[26nov.2025 21:24:18.966] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$tick$1(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;Ljava/util/function/Supplier;Ljava/util/function/Supplier;)V to md16e1b1$lambda$tick$1$0 in upgrade_aquatic.mixins.json:BubbleColumnBlockMixin
+[26nov.2025 21:24:18.966] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$tick$0(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;Ljava/util/function/Supplier;Ljava/util/function/Supplier;)V to md16e1b1$lambda$tick$0$1 in upgrade_aquatic.mixins.json:BubbleColumnBlockMixin
+[26nov.2025 21:24:18.981] [main/DEBUG] [mixin/]: Mixing LanternBlockMixin from blueprint.mixins.json into net.minecraft.world.level.block.LanternBlock
+[26nov.2025 21:24:18.992] [main/DEBUG] [mixin/]: Mixing BeehiveBlockMixin from buzzier_bees.mixins.json into net.minecraft.world.level.block.BeehiveBlock
+[26nov.2025 21:24:19.002] [main/DEBUG] [mixin/]: Mixing LightningRodBlockMixin from caverns_and_chasms.mixins.json into net.minecraft.world.level.block.LightningRodBlock
+[26nov.2025 21:24:19.333] [main/DEBUG] [mixin/]: Mixing AbstractFurnaceBlockEntityMixin from caverns_and_chasms.mixins.json into net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity
+[26nov.2025 21:24:19.382] [main/DEBUG] [mixin/]: Mixing MobMixin from environmental.mixins.json into net.minecraft.world.entity.Mob
+[26nov.2025 21:24:19.386] [main/DEBUG] [mixin/]: Mixing MobMixin from endergetic.mixins.json into net.minecraft.world.entity.Mob
+[26nov.2025 21:24:19.386] [main/DEBUG] [mixin/]: Mixing MobEntityMixin from buzzier_bees.mixins.json into net.minecraft.world.entity.Mob
+[26nov.2025 21:24:19.387] [main/DEBUG] [mixin/]: Mixing MobMixin from caverns_and_chasms.mixins.json into net.minecraft.world.entity.Mob
+[26nov.2025 21:24:19.389] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/Structure
+[26nov.2025 21:24:19.391] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/effect/MobEffectInstance
+[26nov.2025 21:24:19.413] [main/DEBUG] [mixin/]: Mixing IronGolemMixin from caverns_and_chasms.mixins.json into net.minecraft.world.entity.animal.IronGolem
+[26nov.2025 21:24:19.471] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/ItemStack
+[26nov.2025 21:24:19.575] [main/DEBUG] [mixin/]: Mixing TheEndGatewayBlockEntityMixin from endergetic.mixins.json into net.minecraft.world.level.block.entity.TheEndGatewayBlockEntity
+[26nov.2025 21:24:19.598] [main/DEBUG] [mixin/]: Mixing FallingBlockEntityMixin from blueprint.mixins.json into net.minecraft.world.entity.item.FallingBlockEntity
+[26nov.2025 21:24:19.786] [main/DEBUG] [mixin/]: Mixing LightningBoltMixin from caverns_and_chasms.mixins.json into net.minecraft.world.entity.LightningBolt
+[26nov.2025 21:24:19.786] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$randomStepCleaningCopper$0(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V to md16e1b1$lambda$randomStepCleaningCopper$0$0 in caverns_and_chasms.mixins.json:LightningBoltMixin
+[26nov.2025 21:24:19.816] [main/DEBUG] [mixin/]: Mixing AzaleaTreeGrowerMixin from caverns_and_chasms.mixins.json into net.minecraft.world.level.block.grower.AzaleaTreeGrower
+[26nov.2025 21:24:19.879] [main/DEBUG] [mixin/]: Mixing ConfiguredWorldCarverAccessorMixin from blueprint.mixins.json into net.minecraft.world.level.levelgen.carver.ConfiguredWorldCarver
+[26nov.2025 21:24:19.899] [main/DEBUG] [mixin/]: Mixing chorus.ChorusPlantFeatureMixin from endergetic.mixins.json into net.minecraft.world.level.levelgen.feature.ChorusPlantFeature
+[26nov.2025 21:24:19.908] [main/DEBUG] [mixin/]: Mixing SnowAndFreezeFeatureMixin from atmospheric.mixins.json into net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature
+[26nov.2025 21:24:19.919] [main/DEBUG] [mixin/]: Mixing BlockColumnFeatureMixin from environmental.mixins.json into net.minecraft.world.level.levelgen.feature.BlockColumnFeature
+[26nov.2025 21:24:19.932] [main/DEBUG] [mixin/]: Mixing LakeFeatureMixin from autumnity.mixins.json into net.minecraft.world.level.levelgen.feature.LakeFeature
+[26nov.2025 21:24:19.938] [main/DEBUG] [mixin/]: Mixing SpikeFeatureMixin from endergetic.mixins.json into net.minecraft.world.level.levelgen.feature.SpikeFeature
+[26nov.2025 21:24:19.973] [main/DEBUG] [mixin/]: Mixing StructureProcessorAccessor from atmospheric.mixins.json into net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessor
+[26nov.2025 21:24:20.042] [main/DEBUG] [mixin/]: Mixing MoveControlMixin from environmental.mixins.json into net.minecraft.world.entity.ai.control.MoveControl
+[26nov.2025 21:24:20.363] [main/INFO] [net.minecraft.util.datafix.DataFixers/]: Building unoptimized datafixer
+[26nov.2025 21:24:20.386] [main/DEBUG] [mixin/]: Mixing BeeEntityMixin from buzzier_bees.mixins.json into net.minecraft.world.entity.animal.Bee
+[26nov.2025 21:24:20.405] [main/DEBUG] [mixin/]: Mixing BoatMixin from endergetic.mixins.json into net.minecraft.world.entity.vehicle.Boat
+[26nov.2025 21:24:20.437] [main/DEBUG] [mixin/]: Mixing CreeperMixin from caverns_and_chasms.mixins.json into net.minecraft.world.entity.monster.Creeper
+[26nov.2025 21:24:20.496] [main/DEBUG] [mixin/]: Mixing SquidMixin from upgrade_aquatic.mixins.json into net.minecraft.world.entity.animal.Squid
+[26nov.2025 21:24:20.521] [main/DEBUG] [mixin/]: Mixing AbstractMinecartMixin from caverns_and_chasms.mixins.json into net.minecraft.world.entity.vehicle.AbstractMinecart
+[26nov.2025 21:24:20.552] [main/DEBUG] [mixin/]: Mixing PigMixin from environmental.mixins.json into net.minecraft.world.entity.animal.Pig
+[26nov.2025 21:24:20.566] [main/DEBUG] [mixin/]: Mixing RabbitMixin from environmental.mixins.json into net.minecraft.world.entity.animal.Rabbit
+[26nov.2025 21:24:20.567] [main/DEBUG] [mixin/]: Mixing RabbitMixin from atmospheric.mixins.json into net.minecraft.world.entity.animal.Rabbit
+[26nov.2025 21:24:20.588] [main/DEBUG] [mixin/]: Mixing AbstractSkeletonMixin from environmental.mixins.json into net.minecraft.world.entity.monster.AbstractSkeleton
+[26nov.2025 21:24:20.616] [main/DEBUG] [mixin/]: Mixing ServerPlayerMixin from endergetic.mixins.json into net.minecraft.server.level.ServerPlayer
+[26nov.2025 21:24:20.638] [main/DEBUG] [mixin/]: Mixing ThrownPotionMixin from caverns_and_chasms.mixins.json into net.minecraft.world.entity.projectile.ThrownPotion
+[26nov.2025 21:24:20.662] [main/DEBUG] [mixin/]: Mixing WitherSkeletonEntityMixin from environmental.mixins.json into net.minecraft.world.entity.monster.WitherSkeleton
+[26nov.2025 21:24:20.662] [main/DEBUG] [mixin/]: Mixing WitherSkeletonMixin from caverns_and_chasms.mixins.json into net.minecraft.world.entity.monster.WitherSkeleton
+[26nov.2025 21:24:20.814] [main/DEBUG] [mixin/]: Mixing StructurePieceMixin from blueprint.mixins.json into net.minecraft.world.level.levelgen.structure.StructurePiece
+[26nov.2025 21:24:20.862] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/biome/Biome
+[26nov.2025 21:24:20.868] [main/DEBUG] [mixin/]: Mixing BiomeSpecialEffectsInvokerMixin from blueprint.mixins.json into net.minecraft.world.level.biome.BiomeSpecialEffects
+[26nov.2025 21:24:20.869] [main/DEBUG] [mixin/]: Renaming @Invoker method init(IIIILjava/util/Optional;Ljava/util/Optional;Lnet/minecraft/world/level/biome/BiomeSpecialEffects$GrassColorModifier;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;)Lnet/minecraft/world/level/biome/BiomeSpecialEffects; to init_$md$16e1b1$0 in blueprint.mixins.json:BiomeSpecialEffectsInvokerMixin
+[26nov.2025 21:24:20.954] [main/DEBUG] [mixin/]: Mixing NoiseBasedChunkGeneratorMixin from blueprint.mixins.json into net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator
+[26nov.2025 21:24:21.127] [main/DEBUG] [mixin/]: Mixing BlockItemMixin from caverns_and_chasms.mixins.json into net.minecraft.world.item.BlockItem
+[26nov.2025 21:24:21.139] [main/DEBUG] [mixin/]: Mixing SwordItemMixin from endergetic.mixins.json into net.minecraft.world.item.SwordItem
+[26nov.2025 21:24:21.139] [main/DEBUG] [mixin/]: Mixing SwordItemMixin from atmospheric.mixins.json into net.minecraft.world.item.SwordItem
+[26nov.2025 21:24:21.150] [main/DEBUG] [mixin/]: Mixing AxeItemMixin from caverns_and_chasms.mixins.json into net.minecraft.world.item.AxeItem
+[26nov.2025 21:24:21.157] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/BucketItem
+[26nov.2025 21:24:21.162] [main/DEBUG] [mixin/]: Mixing SolidBucketItemMixin from caverns_and_chasms.mixins.json into net.minecraft.world.item.SolidBucketItem
+[26nov.2025 21:24:21.164] [main/DEBUG] [mixin/]: Mixing BundleItemMixin from caverns_and_chasms.mixins.json into net.minecraft.world.item.BundleItem
+[26nov.2025 21:24:21.173] [main/DEBUG] [mixin/]: Mixing ShearsItemMixin from environmental.mixins.json into net.minecraft.world.item.ShearsItem
+[26nov.2025 21:24:21.173] [main/DEBUG] [mixin/]: Mixing ShearsItemMixin from atmospheric.mixins.json into net.minecraft.world.item.ShearsItem
+[26nov.2025 21:24:21.174] [main/DEBUG] [mixin/]: Mixing SwordItemMixin from atmospheric.mixins.json into net.minecraft.world.item.ShearsItem
+[26nov.2025 21:24:21.190] [main/DEBUG] [mixin/]: Mixing SpawnEggItemMixin from blueprint.mixins.json into net.minecraft.world.item.SpawnEggItem
+[26nov.2025 21:24:21.195] [main/DEBUG] [mixin/]: Mixing EndCrystalItemMixin from endergetic.mixins.json into net.minecraft.world.item.EndCrystalItem
+[26nov.2025 21:24:21.201] [main/DEBUG] [mixin/]: Mixing TridentItemMixin from upgrade_aquatic.mixins.json into net.minecraft.world.item.TridentItem
+[26nov.2025 21:24:21.205] [main/DEBUG] [mixin/]: Mixing HoneycombItemMixin from caverns_and_chasms.mixins.json into net.minecraft.world.item.HoneycombItem
+[26nov.2025 21:24:21.235] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/effect/MobEffectInstance
+[26nov.2025 21:24:21.306] [main/DEBUG] [mixin/]: Mixing FurnaceFuelSlotMixin from caverns_and_chasms.mixins.json into net.minecraft.world.inventory.FurnaceFuelSlot
+[26nov.2025 21:24:21.454] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: -Dio.netty.noUnsafe: false
+[26nov.2025 21:24:21.454] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: Java version: 17
+[26nov.2025 21:24:21.454] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.theUnsafe: available
+[26nov.2025 21:24:21.454] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.copyMemory: available
+[26nov.2025 21:24:21.454] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.storeFence: available
+[26nov.2025 21:24:21.455] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Buffer.address: available
+[26nov.2025 21:24:21.455] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:287) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:281) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.ConstantPool.<init>(ConstantPool.java:34) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.AttributeKey$1.<init>(AttributeKey.java:27) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.AttributeKey.<clinit>(AttributeKey.java:27) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at net.minecraftforge.network.NetworkConstants.<clinit>(NetworkConstants.java:34) ~[forge-1.19.2-43.5.1_mapped_official_1.19.2.jar:?]
+	at net.minecraftforge.network.NetworkHooks.init(NetworkHooks.java:51) ~[forge-1.19.2-43.5.1_mapped_official_1.19.2.jar:?]
+	at net.minecraft.server.Bootstrap.bootStrap(Bootstrap.java:61) ~[forge-1.19.2-43.5.1_mapped_official_1.19.2.jar:?]
+	at net.minecraftforge.data.loading.DatagenModLoader.begin(DatagenModLoader.java:35) ~[forge-1.19.2-43.5.1_mapped_official_1.19.2.jar:?]
+	at net.minecraft.data.Main.main(Main.java:76) ~[forge-1.19.2-43.5.1_mapped_official_1.19.2.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.ForgeDataUserdevLaunchHandler.lambda$launchService$0(ForgeDataUserdevLaunchHandler.java:28) ~[fmlloader-1.19.2-43.5.1.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+[26nov.2025 21:24:21.472] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Bits.unaligned: available, true
+[26nov.2025 21:24:21.473] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 (in module io.netty.common) cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to module io.netty.common
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:560) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0$7.run(PlatformDependent0.java:409) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:400) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.ConstantPool.<init>(ConstantPool.java:34) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.AttributeKey$1.<init>(AttributeKey.java:27) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.AttributeKey.<clinit>(AttributeKey.java:27) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at net.minecraftforge.network.NetworkConstants.<clinit>(NetworkConstants.java:34) ~[forge-1.19.2-43.5.1_mapped_official_1.19.2.jar:?]
+	at net.minecraftforge.network.NetworkHooks.init(NetworkHooks.java:51) ~[forge-1.19.2-43.5.1_mapped_official_1.19.2.jar:?]
+	at net.minecraft.server.Bootstrap.bootStrap(Bootstrap.java:61) ~[forge-1.19.2-43.5.1_mapped_official_1.19.2.jar:?]
+	at net.minecraftforge.data.loading.DatagenModLoader.begin(DatagenModLoader.java:35) ~[forge-1.19.2-43.5.1_mapped_official_1.19.2.jar:?]
+	at net.minecraft.data.Main.main(Main.java:76) ~[forge-1.19.2-43.5.1_mapped_official_1.19.2.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.ForgeDataUserdevLaunchHandler.lambda$launchService$0(ForgeDataUserdevLaunchHandler.java:28) ~[fmlloader-1.19.2-43.5.1.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+[26nov.2025 21:24:21.474] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[26nov.2025 21:24:21.474] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: sun.misc.Unsafe: available
+[26nov.2025 21:24:21.475] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: maxDirectMemory: 4273995776 bytes (maybe)
+[26nov.2025 21:24:21.475] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.tmpdir: C:\Users\Samle\AppData\Local\Temp (java.io.tmpdir)
+[26nov.2025 21:24:21.475] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[26nov.2025 21:24:21.475] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: Platform: Windows
+[26nov.2025 21:24:21.475] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.maxDirectMemory: -1 bytes
+[26nov.2025 21:24:21.475] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[26nov.2025 21:24:21.476] [main/DEBUG] [io.netty.util.internal.CleanerJava9/]: java.nio.ByteBuffer.cleaner(): available
+[26nov.2025 21:24:21.476] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.noPreferDirect: false
+[26nov.2025 21:24:21.505] [main/DEBUG] [net.minecraftforge.network.NetworkHooks/]: Loading Network data for FML net version: FML3
+[26nov.2025 21:24:21.516] [main/DEBUG] [net.minecraftforge.fml.ModWorkManager/LOADING]: Using 16 threads for parallel mod-loading
+[26nov.2025 21:24:21.519] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.521] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwbridges.kikoz.MacawsBridges
+[26nov.2025 21:24:21.522] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.522] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwstairs.kikoz.MacawsStairs
+[26nov.2025 21:24:21.522] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.522] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwroofs.kikoz.MacawsRoofs
+[26nov.2025 21:24:21.522] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.523] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwdoors.kikoz.MacawsDoors
+[26nov.2025 21:24:21.523] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.523] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwfurnitures.kikoz.MacawsFurnitures
+[26nov.2025 21:24:21.523] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.523] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwtrpdoors.kikoz.MacawsTrapdoors
+[26nov.2025 21:24:21.524] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.524] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwfences.kikoz.MacawsFences
+[26nov.2025 21:24:21.524] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.524] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for mezz.jei.forge.JustEnoughItems
+[26nov.2025 21:24:21.524] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.525] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.teamabnormals.blueprint.core.Blueprint
+[26nov.2025 21:24:21.525] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.525] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.teamabnormals.environmental.core.Environmental
+[26nov.2025 21:24:21.526] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.526] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.teamabnormals.buzzier_bees.core.BuzzierBees
+[26nov.2025 21:24:21.526] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.527] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for fr.samlegamer.addonslib.AddonsLib
+[26nov.2025 21:24:21.527] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.527] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for fr.samlegamer.mcwabnormals.McwAbnormals
+[26nov.2025 21:24:21.529] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.529] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.teamabnormals.atmospheric.core.Atmospheric
+[26nov.2025 21:24:21.529] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.529] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwwindows.kikoz.MacawsWindows
+[26nov.2025 21:24:21.530] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.530] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.teamabnormals.upgrade_aquatic.core.UpgradeAquatic
+[26nov.2025 21:24:21.532] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.532] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.minecraftforge.common.ForgeMod
+[26nov.2025 21:24:21.534] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.534] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.teamabnormals.endergetic.core.EndergeticExpansion
+[26nov.2025 21:24:21.535] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.535] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.teamabnormals.caverns_and_chasms.core.CavernsAndChasms
+[26nov.2025 21:24:21.537] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.537] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwpaths.kikoz.MacawsPaths
+[26nov.2025 21:24:21.537] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.537] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.teamabnormals.autumnity.core.Autumnity
+[26nov.2025 21:24:21.538] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@423c5404 - got cpw.mods.cl.ModuleClassLoader@27f1bbe0
+[26nov.2025 21:24:21.538] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.teamabnormals.woodworks.core.Woodworks
+[26nov.2025 21:24:21.565] [modloading-worker-0/INFO] [fr.samlegamer.mcwabnormals.McwAbnormals/]: Macaw's Abnormals Mod Loading...
+[26nov.2025 21:24:21.597] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file addonslib-common.toml for addonslib tracking
+[26nov.2025 21:24:21.597] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file jei-server.toml for jei tracking
+[26nov.2025 21:24:21.597] [modloading-worker-0/INFO] [fr.samlegamer.addonslib.AddonsLib/]: AddonsLib Forge !
+[26nov.2025 21:24:21.613] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for addonslib
+[26nov.2025 21:24:21.613] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file buzzier_bees-common.toml for buzzier_bees tracking
+[26nov.2025 21:24:21.614] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for buzzier_bees
+[26nov.2025 21:24:21.620] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.buzzier_bees.core.registry.BBParticleTypes to MOD
+[26nov.2025 21:24:21.620] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for jei
+[26nov.2025 21:24:21.635] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.buzzier_bees.core.registry.BBMobEffects to MOD
+[26nov.2025 21:24:21.635] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.buzzier_bees.core.registry.BBItems to MOD
+[26nov.2025 21:24:21.649] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Forge Version package package net.minecraftforge.versions.forge, Forge, version 43.5 from cpw.mods.modlauncher.TransformingClassLoader@423c5404
+[26nov.2025 21:24:21.649] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge version 43.5.1
+[26nov.2025 21:24:21.649] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge spec 43.5
+[26nov.2025 21:24:21.649] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge group net.minecraftforge
+[26nov.2025 21:24:21.650] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: MCP Version package package net.minecraftforge.versions.mcp, Minecraft, version 1.19.2 from cpw.mods.modlauncher.TransformingClassLoader@423c5404
+[26nov.2025 21:24:21.650] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: Found MC version information 1.19.2
+[26nov.2025 21:24:21.650] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: Found MCP version information 20220805.130853
+[26nov.2025 21:24:21.650] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 43.5.1, for MC 1.19.2 with MCP 20220805.130853
+[26nov.2025 21:24:21.650] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v43.5.1 Initialized
+[26nov.2025 21:24:21.658] [modloading-worker-0/DEBUG] [mixin/]: Mixing ReloadableServerResourcesMixin from blueprint.mixins.json into net.minecraft.server.ReloadableServerResources
+[26nov.2025 21:24:21.674] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.buzzier_bees.core.registry.BBEntityTypes to MOD
+[26nov.2025 21:24:21.675] [modloading-worker-0/INFO] [fr.samlegamer.mcwabnormals.McwAbnormals/]: Macaw's Abnormals Mod Finish !
+[26nov.2025 21:24:21.675] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwabnormals
+[26nov.2025 21:24:21.675] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing fr.samlegamer.mcwabnormals.Client to MOD
+[26nov.2025 21:24:21.675] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file upgrade_aquatic-common.toml for upgrade_aquatic tracking
+[26nov.2025 21:24:21.675] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file upgrade_aquatic-client.toml for upgrade_aquatic tracking
+[26nov.2025 21:24:21.675] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for upgrade_aquatic
+[26nov.2025 21:24:21.675] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.upgrade_aquatic.core.registry.UASoundEvents to MOD
+[26nov.2025 21:24:21.676] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.buzzier_bees.core.registry.BBBlocks to MOD
+[26nov.2025 21:24:21.681] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.upgrade_aquatic.core.registry.UAPlayableEndimations to MOD
+[26nov.2025 21:24:21.687] [modloading-worker-0/DEBUG] [mixin/]: Mixing SimpleJsonResourceReloadListenerMixin from blueprint.mixins.json into net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener
+[26nov.2025 21:24:21.689] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.upgrade_aquatic.core.registry.UAParticleTypes to MOD
+[26nov.2025 21:24:21.702] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.upgrade_aquatic.core.registry.UAItems to MOD
+[26nov.2025 21:24:21.704] [modloading-worker-0/DEBUG] [mixin/]: Mixing client.LocalPlayerMixin from endergetic.mixins.json into net.minecraft.client.player.LocalPlayer
+[26nov.2025 21:24:21.704] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.buzzier_bees.core.registry.BBBannerPatterns to MOD
+[26nov.2025 21:24:21.713] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.buzzier_bees.core.other.BBTrades to FORGE
+[26nov.2025 21:24:21.718] [modloading-worker-0/DEBUG] [mixin/]: Mixing client.LocalPlayerMixin from upgrade_aquatic.mixins.json into net.minecraft.client.player.LocalPlayer
+[26nov.2025 21:24:21.737] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing fr.samlegamer.mcwabnormals.MappingsFix to FORGE
+[26nov.2025 21:24:21.738] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.buzzier_bees.core.other.BBEvents to FORGE
+[26nov.2025 21:24:21.749] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.buzzier_bees.core.other.BBCriteriaTriggers to FORGE
+[26nov.2025 21:24:21.755] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file atmospheric-common.toml for atmospheric tracking
+[26nov.2025 21:24:21.755] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for atmospheric
+[26nov.2025 21:24:21.755] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.registry.AtmosphericSoundEvents to MOD
+[26nov.2025 21:24:21.756] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.registry.AtmosphericParticleTypes to MOD
+[26nov.2025 21:24:21.757] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.registry.AtmosphericMobEffects to MOD
+[26nov.2025 21:24:21.757] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.registry.AtmosphericItems to MOD
+[26nov.2025 21:24:21.777] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwfences
+[26nov.2025 21:24:21.777] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwtrpdoors
+[26nov.2025 21:24:21.777] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwbridges
+[26nov.2025 21:24:21.777] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.mcwfences.kikoz.MacawsFences to MOD
+[26nov.2025 21:24:21.777] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.mcwtrpdoors.kikoz.util.ClientEventBusSubscriber to MOD
+[26nov.2025 21:24:21.778] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.mcwbridges.kikoz.MacawsBridges to MOD
+[26nov.2025 21:24:21.780] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.mcwtrpdoors.kikoz.MacawsTrapdoors to MOD
+[26nov.2025 21:24:21.801] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file woodworks-common.toml for woodworks tracking
+[26nov.2025 21:24:21.801] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwstairs
+[26nov.2025 21:24:21.801] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-client.toml for forge tracking
+[26nov.2025 21:24:21.801] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for woodworks
+[26nov.2025 21:24:21.801] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.mcwstairs.kikoz.MacawsStairs to MOD
+[26nov.2025 21:24:21.801] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-server.toml for forge tracking
+[26nov.2025 21:24:21.801] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.woodworks.core.registry.WoodworksBlocks to MOD
+[26nov.2025 21:24:21.801] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-common.toml for forge tracking
+[26nov.2025 21:24:21.804] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file environmental-common.toml for environmental tracking
+[26nov.2025 21:24:21.804] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for environmental
+[26nov.2025 21:24:21.804] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.registry.EnvironmentalVillagers to MOD
+[26nov.2025 21:24:21.805] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.registry.EnvironmentalSoundEvents to MOD
+[26nov.2025 21:24:21.807] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.registry.EnvironmentalParticleTypes to MOD
+[26nov.2025 21:24:21.807] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.registry.EnvironmentalMobEffects to MOD
+[26nov.2025 21:24:21.807] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.registry.EnvironmentalItems to MOD
+[26nov.2025 21:24:21.830] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file autumnity-common.toml for autumnity tracking
+[26nov.2025 21:24:21.830] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for autumnity
+[26nov.2025 21:24:21.830] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.autumnity.core.registry.AutumnitySoundEvents to MOD
+[26nov.2025 21:24:21.831] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file blueprint-client.toml for blueprint tracking
+[26nov.2025 21:24:21.831] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file blueprint-common.toml for blueprint tracking
+[26nov.2025 21:24:21.831] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for blueprint
+[26nov.2025 21:24:21.831] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.blueprint.core.registry.BlueprintEntityTypes to MOD
+[26nov.2025 21:24:21.831] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.autumnity.core.registry.AutumnityPotions to MOD
+[26nov.2025 21:24:21.832] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.autumnity.core.registry.AutumnityParticleTypes to MOD
+[26nov.2025 21:24:21.832] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.autumnity.core.registry.AutumnityPaintings to MOD
+[26nov.2025 21:24:21.832] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.autumnity.core.registry.AutumnityMobEffects to MOD
+[26nov.2025 21:24:21.832] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.autumnity.core.registry.AutumnityItems to MOD
+[26nov.2025 21:24:21.846] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for forge
+[26nov.2025 21:24:21.847] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.common.ForgeSpawnEggItem$CommonHandler to MOD
+[26nov.2025 21:24:21.849] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.common.ForgeSpawnEggItem$ColorRegisterHandler to MOD
+[26nov.2025 21:24:21.851] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.model.data.ModelDataManager to FORGE
+[26nov.2025 21:24:21.852] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.blueprint.core.registry.BlueprintBlockEntityTypes to MOD
+[26nov.2025 21:24:21.855] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file endergetic-common.toml for endergetic tracking
+[26nov.2025 21:24:21.855] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for endergetic
+[26nov.2025 21:24:21.855] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.endergetic.core.registry.other.EEPlayableEndimations to MOD
+[26nov.2025 21:24:21.856] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.ForgeHooksClient$ClientEvents to MOD
+[26nov.2025 21:24:21.859] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.endergetic.core.registry.other.EEEvents to FORGE
+[26nov.2025 21:24:21.863] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwdoors
+[26nov.2025 21:24:21.863] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.mcwdoors.kikoz.MacawsDoors to MOD
+[26nov.2025 21:24:21.865] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.blueprint.core.registry.BlueprintBiomes to MOD
+[26nov.2025 21:24:21.870] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.blueprint.core.other.BlueprintEvents to FORGE
+[26nov.2025 21:24:21.871] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.buzzier_bees.core.BBConfig to FORGE
+[26nov.2025 21:24:21.875] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.blueprint.core.Blueprint to MOD
+[26nov.2025 21:24:21.876] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.blueprint.common.world.modification.structure.StructureRepalleterManager to FORGE
+[26nov.2025 21:24:21.883] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.ClientForgeMod to MOD
+[26nov.2025 21:24:21.894] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.blueprint.common.world.modification.ModdedBiomeSlicesManager to FORGE
+[26nov.2025 21:24:21.897] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwroofs
+[26nov.2025 21:24:21.897] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.mcwroofs.kikoz.MacawsRoofs to MOD
+[26nov.2025 21:24:21.897] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.blueprint.common.world.modification.chunk.ChunkGeneratorModificationManager to FORGE
+[26nov.2025 21:24:21.902] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.blueprint.common.loot.modification.LootModificationManager to FORGE
+[26nov.2025 21:24:21.908] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwwindows
+[26nov.2025 21:24:21.908] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.mcwwindows.kikoz.MacawsWindows to MOD
+[26nov.2025 21:24:21.925] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file caverns_and_chasms-common.toml for caverns_and_chasms tracking
+[26nov.2025 21:24:21.925] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file caverns_and_chasms-client.toml for caverns_and_chasms tracking
+[26nov.2025 21:24:21.926] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for caverns_and_chasms
+[26nov.2025 21:24:21.926] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.caverns_and_chasms.core.registry.CCSoundEvents to MOD
+[26nov.2025 21:24:21.928] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.caverns_and_chasms.core.registry.CCParticleTypes to MOD
+[26nov.2025 21:24:21.928] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.caverns_and_chasms.core.registry.CCParticleTypes$RegisterParticles to MOD
+[26nov.2025 21:24:21.929] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.caverns_and_chasms.core.registry.CCMobEffects to MOD
+[26nov.2025 21:24:21.929] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.caverns_and_chasms.core.registry.CCItems to MOD
+[26nov.2025 21:24:21.934] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.autumnity.core.registry.AutumnityFeatures to MOD
+[26nov.2025 21:24:21.934] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.autumnity.core.registry.AutumnityEntityTypes to MOD
+[26nov.2025 21:24:21.934] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.autumnity.core.registry.AutumnityBlocks to MOD
+[26nov.2025 21:24:21.934] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.autumnity.core.registry.AutumnityBiomes to MOD
+[26nov.2025 21:24:21.936] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.blueprint.common.advancement.modification.AdvancementModificationManager to FORGE
+[26nov.2025 21:24:21.937] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.autumnity.core.other.AutumnityEvents to FORGE
+[26nov.2025 21:24:21.940] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.blueprint.client.screen.shaking.ScreenShakeHandler to FORGE
+[26nov.2025 21:24:21.944] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.endergetic.core.registry.EESoundEvents to MOD
+[26nov.2025 21:24:21.945] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.endergetic.core.registry.EEParticleTypes$RegisterParticleFactories to MOD
+[26nov.2025 21:24:21.947] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.endergetic.core.registry.EEItems to MOD
+[26nov.2025 21:24:21.953] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.autumnity.core.other.AutumnityCriteriaTriggers to FORGE
+[26nov.2025 21:24:21.963] [modloading-worker-0/DEBUG] [mixin/]: Mixing client.CameraInvokerMixin from blueprint.mixins.json into net.minecraft.client.Camera
+[26nov.2025 21:24:21.970] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.blueprint.client.RewardHandler to FORGE
+[26nov.2025 21:24:21.974] [modloading-worker-0/DEBUG] [mixin/]: Mixing client.PlayerRendererMixin from blueprint.mixins.json into net.minecraft.client.renderer.entity.player.PlayerRenderer
+[26nov.2025 21:24:21.999] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.blueprint.client.ChestManager to MOD
+[26nov.2025 21:24:22.034] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.registry.AtmosphericFeatures to MOD
+[26nov.2025 21:24:22.035] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.registry.AtmosphericEntityTypes to MOD
+[26nov.2025 21:24:22.037] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.registry.AtmosphericBlocks to MOD
+[26nov.2025 21:24:22.037] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.registry.AtmosphericBiomes to MOD
+[26nov.2025 21:24:22.047] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.other.AtmosphericTrades to FORGE
+[26nov.2025 21:24:22.049] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.other.AtmosphericRabbitTypes to FORGE
+[26nov.2025 21:24:22.053] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.other.AtmosphericMappingEvents to FORGE
+[26nov.2025 21:24:22.054] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.other.AtmosphericGeneration to FORGE
+[26nov.2025 21:24:22.056] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.other.AtmosphericEvents to FORGE
+[26nov.2025 21:24:22.058] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwpaths
+[26nov.2025 21:24:22.058] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.mcwpaths.kikoz.MacawsPaths to MOD
+[26nov.2025 21:24:22.066] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.other.AtmosphericCriteriaTriggers to FORGE
+[26nov.2025 21:24:22.067] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.other.AtmosphericClientEvents to FORGE
+[26nov.2025 21:24:22.070] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.other.AtmosphericClientCompat to FORGE
+[26nov.2025 21:24:22.073] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.atmospheric.core.Atmospheric to MOD
+[26nov.2025 21:24:22.074] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.caverns_and_chasms.core.registry.CCFeatures to MOD
+[26nov.2025 21:24:22.074] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.caverns_and_chasms.core.registry.CCEntityTypes to MOD
+[26nov.2025 21:24:22.077] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.caverns_and_chasms.core.registry.CCBlocks to MOD
+[26nov.2025 21:24:22.077] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.caverns_and_chasms.core.registry.CCBlockEntityTypes to MOD
+[26nov.2025 21:24:22.082] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.caverns_and_chasms.core.registry.CCBiomeModifierTypes to MOD
+[26nov.2025 21:24:22.082] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.caverns_and_chasms.core.other.CCEvents to FORGE
+[26nov.2025 21:24:22.105] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.caverns_and_chasms.core.other.CCCriteriaTriggers to FORGE
+[26nov.2025 21:24:22.106] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.caverns_and_chasms.core.other.CCClientEvents to FORGE
+[26nov.2025 21:24:22.108] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.caverns_and_chasms.core.other.CCClientCompat to FORGE
+[26nov.2025 21:24:22.117] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwfurnitures
+[26nov.2025 21:24:22.118] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.mcwfurnitures.kikoz.init.EntityInit to MOD
+[26nov.2025 21:24:22.119] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.mcwfurnitures.kikoz.MacawsFurnitures to MOD
+[26nov.2025 21:24:22.128] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.registry.EnvironmentalFeatures to MOD
+[26nov.2025 21:24:22.128] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.registry.EnvironmentalEntityTypes to MOD
+[26nov.2025 21:24:22.129] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.registry.EnvironmentalClientRegistry to MOD
+[26nov.2025 21:24:22.131] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.upgrade_aquatic.core.registry.UAFeatures to FORGE
+[26nov.2025 21:24:22.131] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.upgrade_aquatic.core.registry.UAEntityTypes to MOD
+[26nov.2025 21:24:22.132] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.upgrade_aquatic.core.registry.UABlocks to MOD
+[26nov.2025 21:24:22.132] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.upgrade_aquatic.core.registry.UABlockEntityTypes to MOD
+[26nov.2025 21:24:22.135] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.upgrade_aquatic.core.registry.UABiomeModifierTypes to MOD
+[26nov.2025 21:24:22.135] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.upgrade_aquatic.core.other.UAEvents to FORGE
+[26nov.2025 21:24:22.138] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.registry.EnvironmentalBlocks to MOD
+[26nov.2025 21:24:22.138] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.registry.EnvironmentalBiomes to MOD
+[26nov.2025 21:24:22.140] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.registry.EnvironmentalBiomeModifierTypes to MOD
+[26nov.2025 21:24:22.141] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.other.EnvironmentalTrades to FORGE
+[26nov.2025 21:24:22.142] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.other.EnvironmentalRabbitTypes to FORGE
+[26nov.2025 21:24:22.143] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.other.EnvironmentalEvents to FORGE
+[26nov.2025 21:24:22.144] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.upgrade_aquatic.core.other.UACriteriaTriggers to FORGE
+[26nov.2025 21:24:22.144] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.upgrade_aquatic.core.other.UAClientEvents to FORGE
+[26nov.2025 21:24:22.149] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.upgrade_aquatic.client.renderer.RenderOverlays to FORGE
+[26nov.2025 21:24:22.153] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.other.EnvironmentalCriteriaTriggers to FORGE
+[26nov.2025 21:24:22.154] [modloading-worker-0/DEBUG] [mixin/]: Mixing client.MinecraftMixin from blueprint.mixins.json into net.minecraft.client.Minecraft
+[26nov.2025 21:24:22.170] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.other.EnvironmentalClientEvents to FORGE
+[26nov.2025 21:24:22.172] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.EnvironmentalConfig to FORGE
+[26nov.2025 21:24:22.172] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.core.Environmental to FORGE
+[26nov.2025 21:24:22.172] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.common.item.YakPantsItem to FORGE
+[26nov.2025 21:24:22.178] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.common.item.explorer.WandererBootsItem to FORGE
+[26nov.2025 21:24:22.197] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.common.item.explorer.ThiefHoodItem to FORGE
+[26nov.2025 21:24:22.200] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.common.item.explorer.HealerPouchItem to FORGE
+[26nov.2025 21:24:22.200] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.environmental.common.item.explorer.ArchitectBeltItem to FORGE
+[26nov.2025 21:24:22.217] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.endergetic.core.registry.EEEntityTypes to MOD
+[26nov.2025 21:24:22.219] [modloading-worker-0/DEBUG] [mixin/]: Mixing client.ClientLevelMixin from endergetic.mixins.json into net.minecraft.client.multiplayer.ClientLevel
+[26nov.2025 21:24:22.220] [modloading-worker-0/DEBUG] [mixin/]: Mixing client.ClientLevelMixin from blueprint.mixins.json into net.minecraft.client.multiplayer.ClientLevel
+[26nov.2025 21:24:22.281] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.endergetic.core.registry.EEBlocks to MOD
+[26nov.2025 21:24:22.283] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.endergetic.core.registry.EEBlockEntityTypes to MOD
+[26nov.2025 21:24:22.292] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.endergetic.core.registry.EEBiomes to MOD
+[26nov.2025 21:24:22.293] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.endergetic.core.keybinds.KeybindHandler to FORGE
+[26nov.2025 21:24:22.308] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.endergetic.common.advancement.EECriteriaTriggers to FORGE
+[26nov.2025 21:24:22.308] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.teamabnormals.endergetic.client.events.OverlayEvents to FORGE
+[26nov.2025 21:24:22.352] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/energy/IEnergyStorage;
+[26nov.2025 21:24:22.354] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/fluids/capability/IFluidHandler;
+[26nov.2025 21:24:22.354] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/fluids/capability/IFluidHandlerItem;
+[26nov.2025 21:24:22.354] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/items/IItemHandler;
+[26nov.2025 21:24:24.546] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/Samle/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.5.1_mapped_official_1.19.2/forge-1.19.2-43.5.1_mapped_official_1.19.2.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[26nov.2025 21:24:24.546] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/Samle/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.5.1_mapped_official_1.19.2/forge-1.19.2-43.5.1_mapped_official_1.19.2.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[26nov.2025 21:24:26.543] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[26nov.2025 21:24:26.546] [main/DEBUG] [mixin/]: Mixing AdvancementBuilderMixin from blueprint.mixins.json into net.minecraft.advancements.Advancement$Builder
+[26nov.2025 21:24:28.041] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 1497 ms
+[26nov.2025 21:24:28.041] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block
+[26nov.2025 21:24:28.091] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block finished after 50 ms
+[26nov.2025 21:24:28.091] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item
+[26nov.2025 21:24:28.094] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item finished after 2 ms
+[26nov.2025 21:24:28.094] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 1551 ms
+[26nov.2025 21:24:28.584] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 5067, old count: 3183, new count: 5068, removed stale: 0, written: 1929

@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "oak",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:dead_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_oak"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:dead_classic_door"
+        }
+      }
+    }
+  ]
+}

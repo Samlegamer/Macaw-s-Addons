@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "biomesoplenty:redwood_trapdoor"
+          },
+          {
+            "item": "biomesoplenty:redwood_trapdoor"
+          },
+          {
+            "item": "biomesoplenty:redwood_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbiomesoplenty:redwood_shutter"
+        }
+      }
+    }
+  ]
+}

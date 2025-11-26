@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "atmospheric"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "grass_topped",
+        "key": {
+          "A": {
+            "item": "atmospheric:smooth_red_arid_sandstone"
+          },
+          "B": {
+            "item": "atmospheric:red_arid_sandstone"
+          },
+          "C": {
+            "item": "minecraft:dirt"
+          }
+        },
+        "pattern": [
+          "BCB",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwabnormals:red_arid_sandstone_grass_topped_wall"
+        }
+      }
+    }
+  ]
+}

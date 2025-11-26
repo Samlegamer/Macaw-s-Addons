@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "recyclable_bridges",
+        "ingredients": [
+          {
+            "item": "mcwbiomesoplenty:cherry_log_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwbiomesoplenty:cherry_log_bridge_middle"
+        }
+      }
+    }
+  ]
+}

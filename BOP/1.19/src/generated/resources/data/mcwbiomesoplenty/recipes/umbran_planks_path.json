@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwpaths"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks_paths",
+        "ingredients": [
+          {
+            "item": "biomesoplenty:umbran_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbiomesoplenty:umbran_planks_path"
+        }
+      }
+    }
+  ]
+}

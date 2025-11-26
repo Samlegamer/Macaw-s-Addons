@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_the_recipe": {
+            "conditions": {
+              "recipe": "mcwbiomesoplenty:umbran_hedge"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+          },
+          "has_umbran_leaves": {
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "biomesoplenty:umbran_leaves"
+                  ]
+                }
+              ]
+            },
+            "trigger": "minecraft:inventory_changed"
+          }
+        },
+        "requirements": [
+          [
+            "has_umbran_leaves",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "mcwbiomesoplenty:umbran_hedge"
+          ]
+        }
+      },
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ]
+    }
+  ]
+}

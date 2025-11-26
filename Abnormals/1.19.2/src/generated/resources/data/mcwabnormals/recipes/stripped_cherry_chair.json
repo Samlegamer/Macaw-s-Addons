@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "environmental"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "chair",
+        "key": {
+          "A": {
+            "item": "environmental:stripped_cherry_log"
+          },
+          "B": {
+            "item": "environmental:cherry_slab"
+          },
+          "C": {
+            "item": "environmental:cherry_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwabnormals:stripped_cherry_chair"
+        }
+      }
+    }
+  ]
+}

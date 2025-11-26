@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "upgrade_aquatic"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "upgrade_aquatic:driftwood_slab"
+          },
+          {
+            "item": "upgrade_aquatic:driftwood_slab"
+          },
+          {
+            "item": "upgrade_aquatic:driftwood_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:driftwood_louvered_shutter"
+        }
+      }
+    }
+  ]
+}

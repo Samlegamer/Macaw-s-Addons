@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "environmental"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "steep_roof",
+        "key": {
+          "A": {
+            "item": "environmental:willow_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " A",
+          "AA",
+          "AB"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:willow_steep_roof"
+        }
+      }
+    }
+  ]
+}

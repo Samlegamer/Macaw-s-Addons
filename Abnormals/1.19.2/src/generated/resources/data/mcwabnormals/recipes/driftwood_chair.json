@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "upgrade_aquatic"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "chair",
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:driftwood_log"
+          },
+          "B": {
+            "item": "upgrade_aquatic:driftwood_slab"
+          },
+          "C": {
+            "item": "upgrade_aquatic:driftwood_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwabnormals:driftwood_chair"
+        }
+      }
+    }
+  ]
+}

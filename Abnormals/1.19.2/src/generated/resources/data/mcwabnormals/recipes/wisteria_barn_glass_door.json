@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "environmental"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "barn_glass",
+        "key": {
+          "A": {
+            "item": "environmental:wisteria_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "pattern": [
+          "BB",
+          "AA",
+          "AA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:wisteria_barn_glass_door"
+        }
+      }
+    }
+  ]
+}

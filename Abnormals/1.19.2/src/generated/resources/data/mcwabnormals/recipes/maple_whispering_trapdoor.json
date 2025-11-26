@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "autumnity"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "whispering_trapdoors",
+        "key": {
+          "A": {
+            "item": "autumnity:maple_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_whispering"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwabnormals:maple_whispering_trapdoor"
+        }
+      }
+    }
+  ]
+}

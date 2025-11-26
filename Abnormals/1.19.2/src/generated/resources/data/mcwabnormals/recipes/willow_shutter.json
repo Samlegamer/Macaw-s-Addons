@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "environmental"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "environmental:willow_trapdoor"
+          },
+          {
+            "item": "environmental:willow_trapdoor"
+          },
+          {
+            "item": "environmental:willow_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:willow_shutter"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "caverns_and_chasms"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "recyclable_bridges",
+        "ingredients": [
+          {
+            "item": "mcwabnormals:flooded_dripstone_shingles_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwabnormals:flooded_dripstone_shingles_bridge"
+        }
+      }
+    }
+  ]
+}

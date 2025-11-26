@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "environmental"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "environmental:cherry_trapdoor"
+          },
+          {
+            "item": "environmental:cherry_trapdoor"
+          },
+          {
+            "item": "environmental:cherry_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwabnormals:cherry_shutter"
+        }
+      }
+    }
+  ]
+}

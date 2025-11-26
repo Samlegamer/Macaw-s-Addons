@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "endergetic"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "lower_triple_drawer",
+        "key": {
+          "A": {
+            "item": "endergetic:poise_stem"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BAB",
+          "ABA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwabnormals:poise_lower_triple_drawer"
+        }
+      }
+    }
+  ]
+}
