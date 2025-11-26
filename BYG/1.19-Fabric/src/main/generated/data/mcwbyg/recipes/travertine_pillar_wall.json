@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "byg"
+      ]
+    }
+  ],
+  "group": "pillarwall",
+  "key": {
+    "A": {
+      "item": "byg:polished_travertine"
+    },
+    "B": {
+      "item": "byg:travertine"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 5,
+    "item": "mcwbyg:travertine_pillar_wall"
+  }
+}

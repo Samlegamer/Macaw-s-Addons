@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "byg"
+      ]
+    }
+  ],
+  "group": "pillarwall",
+  "key": {
+    "A": {
+      "item": "byg:dacite_bricks"
+    },
+    "B": {
+      "item": "byg:dacite"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 5,
+    "item": "mcwbyg:dacite_pillar_wall"
+  }
+}

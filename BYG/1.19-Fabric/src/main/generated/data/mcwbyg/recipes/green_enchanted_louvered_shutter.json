@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ],
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "byg:green_enchanted_slab"
+    },
+    {
+      "item": "byg:green_enchanted_slab"
+    },
+    {
+      "item": "byg:green_enchanted_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:green_enchanted_louvered_shutter"
+  }
+}

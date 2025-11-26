@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "group": "modern_chair",
+  "key": {
+    "A": {
+      "item": "byg:bulbis_stem"
+    },
+    "B": {
+      "item": "byg:bulbis_slab"
+    },
+    "C": {
+      "item": "byg:bulbis_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwbyg:bulbis_modern_chair"
+  }
+}

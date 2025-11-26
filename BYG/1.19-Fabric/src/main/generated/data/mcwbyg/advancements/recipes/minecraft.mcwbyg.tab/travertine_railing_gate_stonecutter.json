@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:travertine_railing_gate_stonecutter"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_travertine": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:travertine"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "byg"
+      ]
+    }
+  ],
+  "requirements": [
+    [
+      "has_travertine",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:travertine_railing_gate_stonecutter"
+    ]
+  }
+}

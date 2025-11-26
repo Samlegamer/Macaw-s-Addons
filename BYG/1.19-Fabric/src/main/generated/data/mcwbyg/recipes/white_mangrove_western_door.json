@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "byg"
+      ]
+    }
+  ],
+  "group": "western",
+  "key": {
+    "A": {
+      "item": "byg:white_mangrove_planks"
+    },
+    "B": {
+      "item": "byg:white_mangrove_slab"
+    }
+  },
+  "pattern": [
+    "  A",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:white_mangrove_western_door"
+  }
+}

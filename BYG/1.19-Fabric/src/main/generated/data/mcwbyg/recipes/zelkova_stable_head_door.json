@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "byg"
+      ]
+    }
+  ],
+  "group": "stable_head",
+  "ingredients": [
+    {
+      "item": "mcwbyg:zelkova_stable_door"
+    }
+  ],
+  "result": {
+    "item": "mcwbyg:zelkova_stable_head_door"
+  }
+}

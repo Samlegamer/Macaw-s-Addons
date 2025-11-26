@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwroofs",
+        "byg"
+      ]
+    }
+  ],
+  "ingredient": {
+    "item": "byg:red_rock"
+  },
+  "result": "mcwbyg:red_rock_top_roof"
+}

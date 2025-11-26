@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "group": "coffee_table",
+  "key": {
+    "A": {
+      "item": "byg:stripped_maple_log"
+    },
+    "B": {
+      "item": "byg:maple_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbyg:stripped_maple_coffee_table"
+  }
+}

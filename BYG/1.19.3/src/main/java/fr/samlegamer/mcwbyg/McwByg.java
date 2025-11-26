@@ -123,6 +123,7 @@ public class McwByg extends McwMod
                 protected void addTags(HolderLookup.@NotNull Provider p_256380_) {
                     addAllMcwTags(MODID, WOOD, LEAVES);
                     mcwBridgesTagsStone(MODID, bridges_rockable);
+                    mcwRoofsTags(McwByg.MODID, new ArrayList<>(), McwByg.fences_rockable);
                     mcwFencesTags(MODID, new ArrayList<>(), new ArrayList<>(), fences_rockable);
                 }
             };

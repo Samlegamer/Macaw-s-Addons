@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "byg"
+      ]
+    }
+  ],
+  "group": "stockade",
+  "key": {
+    "A": {
+      "item": "byg:willow_log"
+    },
+    "B": {
+      "item": "byg:willow_planks"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BAB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:willow_stockade_fence"
+  }
+}

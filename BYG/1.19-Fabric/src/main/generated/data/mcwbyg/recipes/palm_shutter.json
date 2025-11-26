@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "byg"
+      ]
+    }
+  ],
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "byg:palm_trapdoor"
+    },
+    {
+      "item": "byg:palm_trapdoor"
+    },
+    {
+      "item": "byg:palm_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:palm_shutter"
+  }
+}

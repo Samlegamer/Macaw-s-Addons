@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "byg"
+      ]
+    }
+  ],
+  "group": "mystic",
+  "key": {
+    "A": {
+      "item": "byg:blue_enchanted_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_mystic"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:blue_enchanted_mystic_door"
+  }
+}

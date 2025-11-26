@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "group": "modern_chair",
+  "key": {
+    "A": {
+      "item": "byg:baobab_log"
+    },
+    "B": {
+      "item": "byg:baobab_slab"
+    },
+    "C": {
+      "item": "byg:baobab_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwbyg:baobab_modern_chair"
+  }
+}

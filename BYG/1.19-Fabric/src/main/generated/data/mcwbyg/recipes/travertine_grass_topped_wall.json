@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "byg"
+      ]
+    }
+  ],
+  "group": "grass_topped",
+  "key": {
+    "A": {
+      "item": "byg:polished_travertine"
+    },
+    "B": {
+      "item": "byg:travertine"
+    },
+    "C": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwbyg:travertine_grass_topped_wall"
+  }
+}

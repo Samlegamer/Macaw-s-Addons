@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "group": "striped_chair",
+  "key": {
+    "A": {
+      "item": "byg:white_mangrove_log"
+    },
+    "B": {
+      "item": "byg:white_mangrove_slab"
+    },
+    "C": {
+      "item": "byg:white_mangrove_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwbyg:white_mangrove_striped_chair"
+  }
+}

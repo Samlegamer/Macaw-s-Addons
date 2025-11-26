@@ -20,6 +20,7 @@ public class Tags
         protected void addTags(HolderLookup.Provider arg) {
             addAllMcwTags(McwByg.MODID, McwByg.WOOD, McwByg.LEAVES);
             mcwBridgesTagsStone(McwByg.MODID, McwByg.bridges_rockable);
+            mcwRoofsTags(McwByg.MODID, new ArrayList<>(), McwByg.fences_rockable);
             mcwFencesTags(McwByg.MODID, new ArrayList<>(), new ArrayList<>(), McwByg.fences_rockable);
         }
     }

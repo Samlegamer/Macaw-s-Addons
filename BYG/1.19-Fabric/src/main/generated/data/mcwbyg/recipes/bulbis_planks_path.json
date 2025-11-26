@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwpaths",
+        "byg"
+      ]
+    }
+  ],
+  "group": "planks_paths",
+  "ingredients": [
+    {
+      "item": "byg:bulbis_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbyg:bulbis_planks_path"
+  }
+}

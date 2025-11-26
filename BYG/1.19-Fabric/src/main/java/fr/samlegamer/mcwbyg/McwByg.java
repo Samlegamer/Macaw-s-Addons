@@ -1,7 +1,6 @@
 package fr.samlegamer.mcwbyg;
 
 import java.util.List;
-
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.fuel.APIFuels;
 import fr.samlegamer.addonslib.path.Paths;
@@ -52,8 +51,6 @@ public class McwByg implements ModInitializer
     	Fences.setRegistrationRock(MODID, fences_rockable, MCWBYG_TAB);
     	Furnitures.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
     	Stairs.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-
-		//1.1 Update
 		Paths.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
 		Doors.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
 		Trapdoors.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);

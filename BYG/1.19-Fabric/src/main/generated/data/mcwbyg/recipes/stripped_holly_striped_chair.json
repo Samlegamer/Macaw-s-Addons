@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "group": "striped_chair",
+  "key": {
+    "A": {
+      "item": "byg:stripped_holly_log"
+    },
+    "B": {
+      "item": "byg:holly_slab"
+    },
+    "C": {
+      "item": "byg:holly_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwbyg:stripped_holly_striped_chair"
+  }
+}

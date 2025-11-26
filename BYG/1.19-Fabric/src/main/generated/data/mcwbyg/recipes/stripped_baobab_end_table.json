@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "group": "end_table",
+  "key": {
+    "A": {
+      "item": "mcwbyg:stripped_baobab_table"
+    },
+    "B": {
+      "item": "byg:stripped_baobab_log"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbyg:stripped_baobab_end_table"
+  }
+}

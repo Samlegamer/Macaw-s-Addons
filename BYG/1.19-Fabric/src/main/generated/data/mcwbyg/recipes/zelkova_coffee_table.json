@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ],
+  "group": "coffee_table",
+  "key": {
+    "A": {
+      "item": "byg:zelkova_log"
+    },
+    "B": {
+      "item": "byg:zelkova_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbyg:zelkova_coffee_table"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "byg"
+      ]
+    }
+  ],
+  "group": "barn_trapdoors",
+  "key": {
+    "A": {
+      "item": "byg:redwood_planks"
+    },
+    "B": {
+      "item": "mcwbyg:redwood_glass_trapdoor"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbyg:redwood_barn_trapdoor"
+  }
+}

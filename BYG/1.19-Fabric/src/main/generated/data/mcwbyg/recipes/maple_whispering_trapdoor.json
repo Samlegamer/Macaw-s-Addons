@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "byg"
+      ]
+    }
+  ],
+  "group": "whispering_trapdoors",
+  "key": {
+    "A": {
+      "item": "byg:maple_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_whispering"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:maple_whispering_trapdoor"
+  }
+}

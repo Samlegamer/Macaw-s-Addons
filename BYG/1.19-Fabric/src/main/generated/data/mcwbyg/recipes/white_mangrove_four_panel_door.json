@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "byg"
+      ]
+    }
+  ],
+  "group": "dark_oak",
+  "key": {
+    "A": {
+      "item": "byg:white_mangrove_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_dark_oak"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbyg:white_mangrove_four_panel_door"
+  }
+}
