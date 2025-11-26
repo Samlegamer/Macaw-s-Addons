@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "group": "recyclable_bridges",
+  "ingredients": [
+    {
+      "item": "mcwterraformersmc:rose_quartz_bricks_bridge_stair"
+    }
+  ],
+  "result": {
+    "item": "mcwterraformersmc:rose_quartz_bricks_bridge"
+  }
+}

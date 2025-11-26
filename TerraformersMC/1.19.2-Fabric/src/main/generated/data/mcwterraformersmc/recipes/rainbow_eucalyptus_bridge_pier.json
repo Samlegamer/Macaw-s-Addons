@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "wooden_piers",
+  "key": {
+    "A": {
+      "item": "terrestria:rainbow_eucalyptus_log"
+    },
+    "B": {
+      "item": "terrestria:rainbow_eucalyptus_fence"
+    }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:rainbow_eucalyptus_bridge_pier"
+  }
+}

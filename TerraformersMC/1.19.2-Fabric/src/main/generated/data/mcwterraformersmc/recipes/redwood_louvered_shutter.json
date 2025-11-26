@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "terrestria:redwood_slab"
+    },
+    {
+      "item": "terrestria:redwood_slab"
+    },
+    {
+      "item": "terrestria:redwood_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:redwood_louvered_shutter"
+  }
+}

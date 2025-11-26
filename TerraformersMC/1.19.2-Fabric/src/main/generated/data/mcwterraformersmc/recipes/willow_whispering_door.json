@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "whispering",
+  "key": {
+    "A": {
+      "item": "terrestria:willow_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_whispering"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:willow_whispering_door"
+  }
+}

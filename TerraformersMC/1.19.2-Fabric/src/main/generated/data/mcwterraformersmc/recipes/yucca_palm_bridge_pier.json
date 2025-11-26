@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "wooden_piers",
+  "key": {
+    "A": {
+      "item": "terrestria:yucca_palm_log"
+    },
+    "B": {
+      "item": "terrestria:yucca_palm_fence"
+    }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:yucca_palm_bridge_pier"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "group": "double_kitchen_cabinet",
+  "key": {
+    "A": {
+      "item": "cinderscapes:stripped_scorched_stem"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AA",
+    "BB",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:stripped_scorched_double_kitchen_cabinet"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "group": "tropical_trapdoors",
+  "key": {
+    "A": {
+      "item": "cinderscapes:umbral_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_tropical"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:umbral_tropical_trapdoor"
+  }
+}

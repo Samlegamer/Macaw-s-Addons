@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "traverse"
+      ]
+    }
+  ],
+  "group": "compact_stairs",
+  "key": {
+    "A": {
+      "item": "traverse:stripped_fir_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwterraformersmc:fir_compact_stairs"
+  }
+}

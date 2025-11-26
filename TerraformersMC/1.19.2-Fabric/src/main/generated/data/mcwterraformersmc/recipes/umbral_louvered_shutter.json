@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "cinderscapes:umbral_slab"
+    },
+    {
+      "item": "cinderscapes:umbral_slab"
+    },
+    {
+      "item": "cinderscapes:umbral_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:umbral_louvered_shutter"
+  }
+}

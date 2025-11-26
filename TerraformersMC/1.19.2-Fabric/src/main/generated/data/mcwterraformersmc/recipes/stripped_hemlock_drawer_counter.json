@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "drawer_counter",
+  "key": {
+    "A": {
+      "item": "terrestria:hemlock_slab"
+    },
+    "B": {
+      "item": "mcwterraformersmc:stripped_hemlock_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:stripped_hemlock_drawer_counter"
+  }
+}

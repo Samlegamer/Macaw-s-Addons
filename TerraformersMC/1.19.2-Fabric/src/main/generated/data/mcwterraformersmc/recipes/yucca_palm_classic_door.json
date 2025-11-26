@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "oak",
+  "key": {
+    "A": {
+      "item": "terrestria:yucca_palm_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_oak"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:yucca_palm_classic_door"
+  }
+}

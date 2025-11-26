@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "group": "log_stairs",
+  "key": {
+    "A": {
+      "item": "mcwterraformersmc:rose_quartz_bricks_bridge"
+    }
+  },
+  "pattern": [
+    "  A",
+    " AA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwterraformersmc:rose_quartz_bricks_bridge_stair"
+  }
+}

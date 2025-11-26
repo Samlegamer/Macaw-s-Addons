@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "beach_trapdoors",
+  "key": {
+    "A": {
+      "item": "terrestria:japanese_maple_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_beach"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:japanese_maple_beach_trapdoor"
+  }
+}

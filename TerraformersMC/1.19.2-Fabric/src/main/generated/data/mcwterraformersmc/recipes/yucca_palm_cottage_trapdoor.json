@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "cottage_trapdoors",
+  "key": {
+    "A": {
+      "item": "terrestria:yucca_palm_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_cottage"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:yucca_palm_cottage_trapdoor"
+  }
+}

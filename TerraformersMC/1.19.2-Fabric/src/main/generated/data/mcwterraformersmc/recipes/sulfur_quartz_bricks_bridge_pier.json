@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "group": "wooden_piers",
+  "key": {
+    "A": {
+      "item": "cinderscapes:sulfur_quartz_bricks"
+    },
+    "B": {
+      "item": "cinderscapes:sulfur_quartz_pillar"
+    }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:sulfur_quartz_bricks_bridge_pier"
+  }
+}

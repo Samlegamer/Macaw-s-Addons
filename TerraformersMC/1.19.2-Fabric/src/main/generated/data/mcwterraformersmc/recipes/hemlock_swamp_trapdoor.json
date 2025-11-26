@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "swamp_trapdoors",
+  "key": {
+    "A": {
+      "item": "terrestria:hemlock_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_swamp"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:hemlock_swamp_trapdoor"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "birch",
+  "key": {
+    "A": {
+      "item": "terrestria:yucca_palm_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_birch"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:yucca_palm_paper_door"
+  }
+}

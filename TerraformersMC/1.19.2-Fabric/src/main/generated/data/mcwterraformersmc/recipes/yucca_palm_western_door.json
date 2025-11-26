@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "western",
+  "key": {
+    "A": {
+      "item": "terrestria:yucca_palm_planks"
+    },
+    "B": {
+      "item": "terrestria:yucca_palm_slab"
+    }
+  },
+  "pattern": [
+    "  A",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:yucca_palm_western_door"
+  }
+}

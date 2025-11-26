@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "coffee_table",
+  "key": {
+    "A": {
+      "item": "terrestria:stripped_hemlock_log"
+    },
+    "B": {
+      "item": "terrestria:hemlock_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:stripped_hemlock_coffee_table"
+  }
+}

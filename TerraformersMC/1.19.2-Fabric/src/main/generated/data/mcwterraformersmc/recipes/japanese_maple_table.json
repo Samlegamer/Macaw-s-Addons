@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "table",
+  "key": {
+    "A": {
+      "item": "mcwterraformersmc:japanese_maple_coffee_table"
+    },
+    "B": {
+      "item": "terrestria:japanese_maple_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:japanese_maple_table"
+  }
+}

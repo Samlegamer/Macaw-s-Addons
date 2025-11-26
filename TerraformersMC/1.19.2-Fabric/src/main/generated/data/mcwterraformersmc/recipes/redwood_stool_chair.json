@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "stool_chair",
+  "key": {
+    "A": {
+      "item": "terrestria:redwood_log"
+    },
+    "B": {
+      "item": "terrestria:redwood_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:redwood_stool_chair"
+  }
+}

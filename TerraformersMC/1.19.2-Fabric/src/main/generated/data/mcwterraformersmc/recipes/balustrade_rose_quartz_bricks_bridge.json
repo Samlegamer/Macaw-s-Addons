@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "group": "balustrade_bridges",
+  "key": {
+    "A": {
+      "item": "cinderscapes:rose_quartz_slab"
+    },
+    "B": {
+      "item": "cinderscapes:rose_quartz_pillar"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "AAA"
+  ],
+  "result": {
+    "count": 5,
+    "item": "mcwterraformersmc:balustrade_rose_quartz_bricks_bridge"
+  }
+}

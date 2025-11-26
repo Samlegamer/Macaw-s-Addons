@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwwindows",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "terrestria:rubber_trapdoor"
+    },
+    {
+      "item": "terrestria:rubber_trapdoor"
+    },
+    {
+      "item": "terrestria:rubber_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:rubber_shutter"
+  }
+}

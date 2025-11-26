@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "modern_chair",
+  "key": {
+    "A": {
+      "item": "terrestria:rainbow_eucalyptus_log"
+    },
+    "B": {
+      "item": "terrestria:rainbow_eucalyptus_slab"
+    },
+    "C": {
+      "item": "terrestria:rainbow_eucalyptus_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:rainbow_eucalyptus_modern_chair"
+  }
+}

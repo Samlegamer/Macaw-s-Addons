@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "hedge",
+  "key": {
+    "A": {
+      "item": "terrestria:rainbow_eucalyptus_leaves"
+    }
+  },
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:rainbow_eucalyptus_hedge"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwtrpdoors",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "four_panel_trapdoors",
+  "key": {
+    "A": {
+      "item": "terrestria:redwood_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_four_panel"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:redwood_four_panel_trapdoor"
+  }
+}

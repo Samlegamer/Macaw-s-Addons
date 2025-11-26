@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwstairs",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "loft_stairs",
+  "key": {
+    "A": {
+      "item": "terrestria:stripped_redwood_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    " A ",
+    "  A"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:redwood_loft_stairs"
+  }
+}

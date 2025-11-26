@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "modern_desk",
+  "key": {
+    "A": {
+      "item": "terrestria:willow_log"
+    },
+    "B": {
+      "item": "terrestria:willow_fence"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BCB"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwterraformersmc:willow_modern_desk"
+  }
+}

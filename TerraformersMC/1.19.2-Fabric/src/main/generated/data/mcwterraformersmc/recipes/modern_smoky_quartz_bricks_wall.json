@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfences",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "group": "modern",
+  "key": {
+    "A": {
+      "item": "cinderscapes:smoky_quartz_block"
+    },
+    "B": {
+      "item": "cinderscapes:smoky_quartz_bricks"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwterraformersmc:modern_smoky_quartz_bricks_wall"
+  }
+}
