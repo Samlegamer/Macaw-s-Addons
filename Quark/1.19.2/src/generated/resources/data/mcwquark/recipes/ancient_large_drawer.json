@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "large_drawer",
+        "key": {
+          "A": {
+            "item": "quark:ancient_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "AAA",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwquark:ancient_large_drawer"
+        }
+      }
+    }
+  ]
+}

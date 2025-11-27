@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "stable_head",
+        "ingredients": [
+          {
+            "item": "mcwmoddinglegacy:bsky_bluebright_stable_door"
+          }
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:bsky_bluebright_stable_head_door"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "key": {
+          "A": {
+            "item": "blue_skies:cherry_log"
+          },
+          "B": {
+            "item": "blue_skies:cherry_fence"
+          }
+        },
+        "pattern": [
+          "ABA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwmoddinglegacy:bsky_cherry_bridge_pier"
+        }
+      }
+    }
+  ]
+}

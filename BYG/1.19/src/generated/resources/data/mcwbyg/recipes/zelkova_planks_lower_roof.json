@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "planks_lower_roof",
+        "key": {
+          "A": {
+            "item": "byg:zelkova_planks"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " AA",
+          "AAB"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbyg:zelkova_planks_lower_roof"
+        }
+      }
+    }
+  ]
+}

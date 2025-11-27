@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "end_table",
+        "key": {
+          "A": {
+            "item": "mcwterraformersmc:hemlock_table"
+          },
+          "B": {
+            "item": "terrestria:hemlock_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwterraformersmc:hemlock_end_table"
+        }
+      }
+    }
+  ]
+}

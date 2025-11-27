@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_the_recipe": {
+            "conditions": {
+              "recipe": "mcwbyg:zelkova_upper_steep_roof"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+          },
+          "has_zelkova_log": {
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "byg:zelkova_log"
+                  ]
+                }
+              ]
+            },
+            "trigger": "minecraft:inventory_changed"
+          }
+        },
+        "requirements": [
+          [
+            "has_zelkova_log",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "mcwbyg:zelkova_upper_steep_roof"
+          ]
+        }
+      },
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ]
+    }
+  ]
+}

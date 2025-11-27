@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "cinderscapes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "cottage_trapdoors",
+        "key": {
+          "A": {
+            "item": "cinderscapes:scorched_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_cottage"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwterraformersmc:scorched_cottage_trapdoor"
+        }
+      }
+    }
+  ]
+}

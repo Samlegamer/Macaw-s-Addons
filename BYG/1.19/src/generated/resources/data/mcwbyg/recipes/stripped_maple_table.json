@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "table",
+        "key": {
+          "A": {
+            "item": "mcwbyg:stripped_maple_coffee_table"
+          },
+          "B": {
+            "item": "byg:maple_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbyg:stripped_maple_table"
+        }
+      }
+    }
+  ]
+}

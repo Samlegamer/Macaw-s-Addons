@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "terrestria:cypress_trapdoor"
+          },
+          {
+            "item": "terrestria:cypress_trapdoor"
+          },
+          {
+            "item": "terrestria:cypress_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwterraformersmc:cypress_shutter"
+        }
+      }
+    }
+  ]
+}

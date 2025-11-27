@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern_chair",
+        "key": {
+          "A": {
+            "item": "quark:ancient_log"
+          },
+          "B": {
+            "item": "quark:ancient_planks_slab"
+          },
+          "C": {
+            "item": "quark:ancient_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwquark:ancient_modern_chair"
+        }
+      }
+    }
+  ]
+}

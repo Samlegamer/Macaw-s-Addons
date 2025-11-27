@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "byg:jacaranda_trapdoor"
+          },
+          {
+            "item": "byg:jacaranda_trapdoor"
+          },
+          {
+            "item": "byg:jacaranda_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbyg:jacaranda_shutter"
+        }
+      }
+    }
+  ]
+}

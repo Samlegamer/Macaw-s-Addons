@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "kitchen_cabinet",
+        "key": {
+          "A": {
+            "item": "byg:fungal_imparius_stem"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AA",
+          "AB",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbyg:stripped_imparius_kitchen_cabinet"
+        }
+      }
+    }
+  ]
+}

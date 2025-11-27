@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "barn_trapdoors",
+        "key": {
+          "A": {
+            "item": "quark:ancient_planks"
+          },
+          "B": {
+            "item": "mcwquark:ancient_glass_trapdoor"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwquark:ancient_barn_trapdoor"
+        }
+      }
+    }
+  ]
+}

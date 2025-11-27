@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "key": {
+          "A": {
+            "item": "premium_wood:magic_log"
+          },
+          "B": {
+            "item": "premium_wood:magic_fence"
+          }
+        },
+        "pattern": [
+          "ABA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwmoddinglegacy:pwood_magic_bridge_pier"
+        }
+      }
+    }
+  ]
+}

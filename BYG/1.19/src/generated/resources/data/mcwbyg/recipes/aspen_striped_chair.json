@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "striped_chair",
+        "key": {
+          "A": {
+            "item": "byg:aspen_log"
+          },
+          "B": {
+            "item": "byg:aspen_slab"
+          },
+          "C": {
+            "item": "byg:aspen_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbyg:aspen_striped_chair"
+        }
+      }
+    }
+  ]
+}

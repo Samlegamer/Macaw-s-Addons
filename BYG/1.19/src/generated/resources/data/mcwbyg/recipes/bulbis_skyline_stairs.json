@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "skyline_stairs",
+        "key": {
+          "A": {
+            "item": "byg:stripped_bulbis_stem"
+          },
+          "B": {
+            "item": "byg:bulbis_stem"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbyg:bulbis_skyline_stairs"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "stable_head",
+        "ingredients": [
+          {
+            "item": "mcwterraformersmc:willow_stable_door"
+          }
+        ],
+        "result": {
+          "item": "mcwterraformersmc:willow_stable_head_door"
+        }
+      }
+    }
+  ]
+}

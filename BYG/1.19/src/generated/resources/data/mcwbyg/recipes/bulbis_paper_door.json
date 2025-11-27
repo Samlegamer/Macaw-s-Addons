@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "birch",
+        "key": {
+          "A": {
+            "item": "byg:bulbis_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_birch"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbyg:bulbis_paper_door"
+        }
+      }
+    }
+  ]
+}

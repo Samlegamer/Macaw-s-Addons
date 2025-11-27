@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "railing_wall",
+        "key": {
+          "A": {
+            "item": "minecraft:granite"
+          },
+          "B": {
+            "item": "minecraft:iron_bars"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwquark:railing_granite_bricks_wall"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "traverse"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "end_table",
+        "key": {
+          "A": {
+            "item": "mcwterraformersmc:fir_table"
+          },
+          "B": {
+            "item": "traverse:fir_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwterraformersmc:fir_end_table"
+        }
+      }
+    }
+  ]
+}

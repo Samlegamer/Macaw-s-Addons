@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "traverse"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "traverse:fir_slab"
+          },
+          {
+            "item": "traverse:fir_slab"
+          },
+          {
+            "item": "traverse:fir_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwterraformersmc:fir_louvered_shutter"
+        }
+      }
+    }
+  ]
+}

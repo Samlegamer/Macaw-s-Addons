@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "loft_stairs",
+        "key": {
+          "A": {
+            "item": "byg:stripped_witch_hazel_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          " A ",
+          "  A"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbyg:witch_hazel_loft_stairs"
+        }
+      }
+    }
+  ]
+}

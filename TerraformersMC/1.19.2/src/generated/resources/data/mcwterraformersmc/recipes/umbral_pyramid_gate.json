@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "cinderscapes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "pyramid",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "cinderscapes:umbral_stem"
+          },
+          "C": {
+            "item": "cinderscapes:umbral_planks"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "ACA"
+        ],
+        "result": {
+          "item": "mcwterraformersmc:umbral_pyramid_gate"
+        }
+      }
+    }
+  ]
+}

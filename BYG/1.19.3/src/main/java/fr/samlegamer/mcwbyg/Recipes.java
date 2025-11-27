@@ -7,9 +7,7 @@ import fr.samlegamer.addonslib.generation.recipes.mat.McwWoodMat;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.world.level.block.Block;
-import org.jetbrains.annotations.NotNull;
 import potionstudios.byg.BYG;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
@@ -27,7 +25,7 @@ public class Recipes extends McwRecipes
     protected void buildRecipes(Consumer<FinishedRecipe> consumer)
     {
         registerAllMcwWood(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.WOOD, getWood());
-        //registerMcwHedge(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.LEAVES, getLeaves());
+        registerMcwHedge(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.LEAVES, getLeaves());
         onRegisterMcwStone(ModType.BRIDGES, consumer, McwByg.MODID, BYG.MOD_ID, McwByg.bridges_rockable, getStoneBridges());
         onRegisterMcwStone(ModType.FENCES, consumer, McwByg.MODID, BYG.MOD_ID, McwByg.fences_rockable, getStoneFencesAndRoofs());
         onRegisterMcwStone(ModType.ROOFS, consumer, McwByg.MODID, BYG.MOD_ID, McwByg.fences_rockable, getStoneFencesAndRoofs());

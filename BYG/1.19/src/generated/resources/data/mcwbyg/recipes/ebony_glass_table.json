@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "glass_table",
+        "key": {
+          "A": {
+            "item": "mcwbyg:ebony_end_table"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbyg:ebony_glass_table"
+        }
+      }
+    }
+  ]
+}

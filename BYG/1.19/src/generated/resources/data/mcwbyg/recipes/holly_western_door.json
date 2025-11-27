@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "western",
+        "key": {
+          "A": {
+            "item": "byg:holly_planks"
+          },
+          "B": {
+            "item": "byg:holly_slab"
+          }
+        },
+        "pattern": [
+          "  A",
+          "ABA",
+          "AAA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbyg:holly_western_door"
+        }
+      }
+    }
+  ]
+}

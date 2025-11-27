@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bulk_stairs",
+        "key": {
+          "A": {
+            "item": "byg:stripped_skyris_log"
+          },
+          "B": {
+            "item": "byg:skyris_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          "BBA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwbyg:skyris_bulk_stairs"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "rope_stairs",
+        "key": {
+          "A": {
+            "item": "mcwmoddinglegacy:rope_bsky_cherry_bridge"
+          }
+        },
+        "pattern": [
+          "  A",
+          " AA",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwmoddinglegacy:bsky_cherry_rope_bridge_stair"
+        }
+      }
+    }
+  ]
+}

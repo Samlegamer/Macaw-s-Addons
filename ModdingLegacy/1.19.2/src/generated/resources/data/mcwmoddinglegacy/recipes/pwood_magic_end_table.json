@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "end_table",
+        "key": {
+          "A": {
+            "item": "mcwmoddinglegacy:pwood_magic_table"
+          },
+          "B": {
+            "item": "premium_wood:magic_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_magic_end_table"
+        }
+      }
+    }
+  ]
+}

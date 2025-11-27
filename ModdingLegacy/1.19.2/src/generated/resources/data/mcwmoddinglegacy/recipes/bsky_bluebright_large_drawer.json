@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "large_drawer",
+        "key": {
+          "A": {
+            "item": "blue_skies:bluebright_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "AAA",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwmoddinglegacy:bsky_bluebright_large_drawer"
+        }
+      }
+    }
+  ]
+}

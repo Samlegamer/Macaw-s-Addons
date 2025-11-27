@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "striped_chair",
+        "key": {
+          "A": {
+            "item": "byg:pine_log"
+          },
+          "B": {
+            "item": "byg:pine_slab"
+          },
+          "C": {
+            "item": "byg:pine_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbyg:pine_striped_chair"
+        }
+      }
+    }
+  ]
+}

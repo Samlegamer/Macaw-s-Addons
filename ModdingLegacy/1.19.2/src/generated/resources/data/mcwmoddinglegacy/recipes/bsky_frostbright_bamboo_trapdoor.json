@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bamboo_trapdoors",
+        "key": {
+          "A": {
+            "item": "blue_skies:frostbright_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_bamboo"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:bsky_frostbright_bamboo_trapdoor"
+        }
+      }
+    }
+  ]
+}

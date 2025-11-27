@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_drawer_counter",
+        "key": {
+          "A": {
+            "item": "byg:bulbis_slab"
+          },
+          "B": {
+            "item": "mcwbyg:stripped_bulbis_double_drawer"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbyg:stripped_bulbis_double_drawer_counter"
+        }
+      }
+    }
+  ]
+}

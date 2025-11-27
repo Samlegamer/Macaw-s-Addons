@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "curved_gate",
+        "key": {
+          "A": {
+            "item": "blue_skies:starlit_planks"
+          },
+          "B": {
+            "item": "blue_skies:starlit_log"
+          }
+        },
+        "pattern": [
+          "B A",
+          "BAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwmoddinglegacy:bsky_starlit_curved_gate"
+        }
+      }
+    }
+  ]
+}

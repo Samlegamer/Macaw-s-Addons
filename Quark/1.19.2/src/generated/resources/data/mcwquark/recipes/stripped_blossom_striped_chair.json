@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "striped_chair",
+        "key": {
+          "A": {
+            "item": "quark:stripped_blossom_log"
+          },
+          "B": {
+            "item": "quark:blossom_planks_slab"
+          },
+          "C": {
+            "item": "quark:blossom_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwquark:stripped_blossom_striped_chair"
+        }
+      }
+    }
+  ]
+}

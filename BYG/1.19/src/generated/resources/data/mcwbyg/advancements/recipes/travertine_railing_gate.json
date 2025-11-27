@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_the_recipe": {
+            "conditions": {
+              "recipe": "mcwbyg:travertine_railing_gate"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+          },
+          "has_travertine": {
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "byg:travertine"
+                  ]
+                }
+              ]
+            },
+            "trigger": "minecraft:inventory_changed"
+          }
+        },
+        "requirements": [
+          [
+            "has_travertine",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "mcwbyg:travertine_railing_gate"
+          ]
+        }
+      },
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ]
+    }
+  ]
+}

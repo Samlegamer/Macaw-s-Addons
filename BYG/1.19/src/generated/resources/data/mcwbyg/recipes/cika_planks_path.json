@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwpaths"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks_paths",
+        "ingredients": [
+          {
+            "item": "byg:cika_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbyg:cika_planks_path"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "byg:aspen_slab"
+          },
+          {
+            "item": "byg:aspen_slab"
+          },
+          {
+            "item": "byg:aspen_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbyg:aspen_louvered_shutter"
+        }
+      }
+    }
+  ]
+}

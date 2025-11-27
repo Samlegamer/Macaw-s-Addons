@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern_desk",
+        "key": {
+          "A": {
+            "item": "byg:lament_log"
+          },
+          "B": {
+            "item": "byg:lament_fence"
+          },
+          "C": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BCB"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwbyg:lament_modern_desk"
+        }
+      }
+    }
+  ]
+}

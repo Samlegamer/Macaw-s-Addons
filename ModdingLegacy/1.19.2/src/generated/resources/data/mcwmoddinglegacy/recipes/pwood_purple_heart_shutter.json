@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "premium_wood:purple_heart_trapdoor"
+          },
+          {
+            "item": "premium_wood:purple_heart_trapdoor"
+          },
+          {
+            "item": "premium_wood:purple_heart_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwmoddinglegacy:pwood_purple_heart_shutter"
+        }
+      }
+    }
+  ]
+}

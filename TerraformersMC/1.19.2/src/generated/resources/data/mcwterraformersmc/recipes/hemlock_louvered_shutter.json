@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "terrestria:hemlock_slab"
+          },
+          {
+            "item": "terrestria:hemlock_slab"
+          },
+          {
+            "item": "terrestria:hemlock_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwterraformersmc:hemlock_louvered_shutter"
+        }
+      }
+    }
+  ]
+}

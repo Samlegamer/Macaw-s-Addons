@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "glass_kitchen_cabinet",
+        "key": {
+          "A": {
+            "item": "blue_skies:cherry_log"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          },
+          "C": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AA",
+          "BC",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwmoddinglegacy:bsky_cherry_glass_kitchen_cabinet"
+        }
+      }
+    }
+  ]
+}

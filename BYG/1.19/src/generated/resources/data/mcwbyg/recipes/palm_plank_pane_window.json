@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "windows_pane",
+        "key": {
+          "A": {
+            "item": "mcwwindows:window_base"
+          },
+          "B": {
+            "item": "byg:palm_planks"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ABA",
+          "AAA"
+        ],
+        "result": {
+          "count": 8,
+          "item": "mcwbyg:palm_plank_pane_window"
+        }
+      }
+    }
+  ]
+}

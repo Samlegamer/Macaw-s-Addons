@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "chair",
+        "key": {
+          "A": {
+            "item": "byg:stripped_cypress_log"
+          },
+          "B": {
+            "item": "byg:cypress_slab"
+          },
+          "C": {
+            "item": "byg:cypress_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbyg:stripped_cypress_chair"
+        }
+      }
+    }
+  ]
+}

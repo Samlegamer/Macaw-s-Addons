@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "skyline_stairs",
+        "key": {
+          "A": {
+            "item": "byg:stripped_holly_log"
+          },
+          "B": {
+            "item": "byg:holly_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbyg:holly_skyline_stairs"
+        }
+      }
+    }
+  ]
+}

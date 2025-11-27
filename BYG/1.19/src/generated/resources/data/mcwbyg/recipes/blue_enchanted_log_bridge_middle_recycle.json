@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "recyclable_bridges",
+        "ingredients": [
+          {
+            "item": "mcwbyg:blue_enchanted_log_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwbyg:blue_enchanted_log_bridge_middle"
+        }
+      }
+    }
+  ]
+}

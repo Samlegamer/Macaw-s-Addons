@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwpaths"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks_paths",
+        "ingredients": [
+          {
+            "item": "terrestria:japanese_maple_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwterraformersmc:japanese_maple_planks_path"
+        }
+      }
+    }
+  ]
+}

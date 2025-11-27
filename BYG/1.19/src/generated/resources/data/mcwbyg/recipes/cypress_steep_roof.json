@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "steep_roof",
+        "key": {
+          "A": {
+            "item": "byg:cypress_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " A",
+          "AA",
+          "AB"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbyg:cypress_steep_roof"
+        }
+      }
+    }
+  ]
+}

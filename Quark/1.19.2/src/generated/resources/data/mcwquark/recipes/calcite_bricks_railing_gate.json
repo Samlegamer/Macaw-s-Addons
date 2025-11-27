@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "railing_gate",
+        "key": {
+          "A": {
+            "item": "minecraft:iron_bars"
+          },
+          "B": {
+            "item": "quark:calcite_bricks"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "ABA"
+        ],
+        "result": {
+          "item": "mcwquark:calcite_bricks_railing_gate"
+        }
+      }
+    }
+  ]
+}

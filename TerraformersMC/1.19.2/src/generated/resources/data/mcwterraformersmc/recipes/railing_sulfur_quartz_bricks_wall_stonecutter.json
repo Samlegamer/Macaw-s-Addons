@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "cinderscapes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "count": 1,
+        "ingredient": {
+          "item": "cinderscapes:sulfur_quartz_bricks"
+        },
+        "result": "mcwterraformersmc:railing_sulfur_quartz_bricks_wall"
+      }
+    }
+  ]
+}

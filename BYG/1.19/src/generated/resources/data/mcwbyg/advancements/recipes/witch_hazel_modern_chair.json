@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_the_recipe": {
+            "conditions": {
+              "recipe": "mcwbyg:witch_hazel_modern_chair"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+          },
+          "has_witch_hazel_log": {
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "byg:witch_hazel_log"
+                  ]
+                }
+              ]
+            },
+            "trigger": "minecraft:inventory_changed"
+          }
+        },
+        "requirements": [
+          [
+            "has_witch_hazel_log",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "mcwbyg:witch_hazel_modern_chair"
+          ]
+        }
+      },
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ]
+    }
+  ]
+}

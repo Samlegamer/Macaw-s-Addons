@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "terrestria:redwood_trapdoor"
+          },
+          {
+            "item": "terrestria:redwood_trapdoor"
+          },
+          {
+            "item": "terrestria:redwood_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwterraformersmc:redwood_shutter"
+        }
+      }
+    }
+  ]
+}

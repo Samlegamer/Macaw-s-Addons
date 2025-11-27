@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "recyclable_bridges",
+        "ingredients": [
+          {
+            "item": "mcwquark:limestone_bricks_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwquark:limestone_bricks_bridge"
+        }
+      }
+    }
+  ]
+}

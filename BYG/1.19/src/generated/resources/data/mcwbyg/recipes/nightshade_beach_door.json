@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "jungle",
+        "key": {
+          "A": {
+            "item": "byg:nightshade_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_jungle"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbyg:nightshade_beach_door"
+        }
+      }
+    }
+  ]
+}

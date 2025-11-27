@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_kitchen_cabinet",
+        "key": {
+          "A": {
+            "item": "terrestria:stripped_rubber_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AA",
+          "BB",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwterraformersmc:stripped_rubber_double_kitchen_cabinet"
+        }
+      }
+    }
+  ]
+}

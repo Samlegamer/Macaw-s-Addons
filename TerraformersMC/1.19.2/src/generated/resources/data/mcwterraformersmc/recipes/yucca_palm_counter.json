@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "counter",
+        "key": {
+          "A": {
+            "item": "terrestria:yucca_palm_slab"
+          },
+          "B": {
+            "item": "terrestria:yucca_palm_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwterraformersmc:yucca_palm_counter"
+        }
+      }
+    }
+  ]
+}

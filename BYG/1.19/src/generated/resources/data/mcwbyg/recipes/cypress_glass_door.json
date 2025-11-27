@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "glassed",
+        "key": {
+          "A": {
+            "item": "byg:cypress_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "pattern": [
+          "AB",
+          "BB",
+          "AB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbyg:cypress_glass_door"
+        }
+      }
+    }
+  ]
+}

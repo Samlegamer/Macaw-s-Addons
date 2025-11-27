@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_the_recipe": {
+            "conditions": {
+              "recipe": "mcwbyg:white_mangrove_tropical_door"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+          },
+          "has_white_mangrove_planks": {
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "byg:white_mangrove_planks"
+                  ]
+                }
+              ]
+            },
+            "trigger": "minecraft:inventory_changed"
+          }
+        },
+        "requirements": [
+          [
+            "has_white_mangrove_planks",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "mcwbyg:white_mangrove_tropical_door"
+          ]
+        }
+      },
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ]
+    }
+  ]
+}

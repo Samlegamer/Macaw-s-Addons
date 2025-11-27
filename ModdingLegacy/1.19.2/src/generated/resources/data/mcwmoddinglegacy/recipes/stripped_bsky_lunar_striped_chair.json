@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "striped_chair",
+        "key": {
+          "A": {
+            "item": "blue_skies:stripped_lunar_log"
+          },
+          "B": {
+            "item": "blue_skies:lunar_slab"
+          },
+          "C": {
+            "item": "blue_skies:lunar_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_bsky_lunar_striped_chair"
+        }
+      }
+    }
+  ]
+}

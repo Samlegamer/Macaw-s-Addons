@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "coffee_table",
+        "key": {
+          "A": {
+            "item": "terrestria:stripped_rainbow_eucalyptus_log"
+          },
+          "B": {
+            "item": "terrestria:rainbow_eucalyptus_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwterraformersmc:stripped_rainbow_eucalyptus_coffee_table"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "barn_glass",
+        "key": {
+          "A": {
+            "item": "byg:witch_hazel_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "pattern": [
+          "BB",
+          "AA",
+          "AA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbyg:witch_hazel_barn_glass_door"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bark",
+        "key": {
+          "A": {
+            "item": "terrestria:hemlock_log"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          }
+        },
+        "pattern": [
+          "AB",
+          "BB",
+          "AB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwterraformersmc:hemlock_bark_glass_door"
+        }
+      }
+    }
+  ]
+}

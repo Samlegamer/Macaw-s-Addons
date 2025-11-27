@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "cinderscapes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "paper_trapdoors",
+        "key": {
+          "A": {
+            "item": "cinderscapes:umbral_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_paper"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwterraformersmc:umbral_paper_trapdoor"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "cinderscapes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_platform",
+        "key": {
+          "A": {
+            "item": "cinderscapes:scorched_stem"
+          },
+          "B": {
+            "item": "cinderscapes:scorched_slab"
+          }
+        },
+        "pattern": [
+          " BB",
+          " AA",
+          "   "
+        ],
+        "result": {
+          "count": 12,
+          "item": "mcwterraformersmc:scorched_platform"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "counter",
+        "key": {
+          "A": {
+            "item": "byg:zelkova_slab"
+          },
+          "B": {
+            "item": "byg:stripped_zelkova_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbyg:stripped_zelkova_counter"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "striped_chair",
+        "key": {
+          "A": {
+            "item": "byg:stripped_rainbow_eucalyptus_log"
+          },
+          "B": {
+            "item": "byg:rainbow_eucalyptus_slab"
+          },
+          "C": {
+            "item": "byg:rainbow_eucalyptus_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbyg:stripped_rainbow_eucalyptus_striped_chair"
+        }
+      }
+    }
+  ]
+}

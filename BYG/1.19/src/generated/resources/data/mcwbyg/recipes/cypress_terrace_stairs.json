@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "terrace_stairs",
+        "key": {
+          "A": {
+            "item": "byg:stripped_cypress_log"
+          },
+          "B": {
+            "item": "byg:cypress_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwbyg:cypress_terrace_stairs"
+        }
+      }
+    }
+  ]
+}

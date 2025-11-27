@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "pyramid",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "terrestria:willow_log"
+          },
+          "C": {
+            "item": "terrestria:willow_planks"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "ACA"
+        ],
+        "result": {
+          "item": "mcwterraformersmc:willow_pyramid_gate"
+        }
+      }
+    }
+  ]
+}

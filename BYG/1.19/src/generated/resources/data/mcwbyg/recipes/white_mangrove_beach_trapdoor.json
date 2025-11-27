@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "beach_trapdoors",
+        "key": {
+          "A": {
+            "item": "byg:white_mangrove_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_beach"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbyg:white_mangrove_beach_trapdoor"
+        }
+      }
+    }
+  ]
+}

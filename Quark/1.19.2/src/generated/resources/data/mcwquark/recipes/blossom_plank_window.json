@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "windows",
+        "key": {
+          "A": {
+            "item": "mcwwindows:window_base"
+          },
+          "B": {
+            "item": "quark:blossom_planks"
+          }
+        },
+        "pattern": [
+          " A ",
+          "ABA",
+          " A "
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwquark:blossom_plank_window"
+        }
+      }
+    }
+  ]
+}

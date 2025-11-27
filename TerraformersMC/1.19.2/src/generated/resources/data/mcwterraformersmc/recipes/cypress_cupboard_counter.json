@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "cupboard_counter",
+        "key": {
+          "A": {
+            "item": "terrestria:cypress_slab"
+          },
+          "B": {
+            "item": "mcwterraformersmc:cypress_wardrobe"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwterraformersmc:cypress_cupboard_counter"
+        }
+      }
+    }
+  ]
+}

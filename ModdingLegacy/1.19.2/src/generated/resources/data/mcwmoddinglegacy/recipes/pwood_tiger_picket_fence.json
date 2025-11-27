@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "picket",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "premium_wood:tiger_planks"
+          },
+          "C": {
+            "item": "premium_wood:tiger_log"
+          }
+        },
+        "pattern": [
+          "CBC",
+          "CAC"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwmoddinglegacy:pwood_tiger_picket_fence"
+        }
+      }
+    }
+  ]
+}

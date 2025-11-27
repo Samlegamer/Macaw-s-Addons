@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "coffee_table",
+        "key": {
+          "A": {
+            "item": "premium_wood:silverbell_stripped_log"
+          },
+          "B": {
+            "item": "premium_wood:silverbell_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_silverbell_coffee_table"
+        }
+      }
+    }
+  ]
+}

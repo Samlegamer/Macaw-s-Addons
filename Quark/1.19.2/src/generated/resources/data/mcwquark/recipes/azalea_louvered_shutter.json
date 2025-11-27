@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "quark:azalea_planks_slab"
+          },
+          {
+            "item": "quark:azalea_planks_slab"
+          },
+          {
+            "item": "quark:azalea_planks_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwquark:azalea_louvered_shutter"
+        }
+      }
+    }
+  ]
+}

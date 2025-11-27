@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_platform",
+        "key": {
+          "A": {
+            "item": "blue_skies:maple_log"
+          },
+          "B": {
+            "item": "blue_skies:maple_slab"
+          }
+        },
+        "pattern": [
+          " BB",
+          " AA",
+          "   "
+        ],
+        "result": {
+          "count": 12,
+          "item": "mcwmoddinglegacy:bsky_maple_platform"
+        }
+      }
+    }
+  ]
+}

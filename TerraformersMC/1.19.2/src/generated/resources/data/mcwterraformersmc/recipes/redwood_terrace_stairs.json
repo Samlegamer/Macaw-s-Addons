@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "terrace_stairs",
+        "key": {
+          "A": {
+            "item": "terrestria:stripped_redwood_log"
+          },
+          "B": {
+            "item": "terrestria:redwood_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwterraformersmc:redwood_terrace_stairs"
+        }
+      }
+    }
+  ]
+}

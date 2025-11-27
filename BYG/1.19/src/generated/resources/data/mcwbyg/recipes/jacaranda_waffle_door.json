@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "waffle",
+        "key": {
+          "A": {
+            "item": "byg:jacaranda_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_waffle"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbyg:jacaranda_waffle_door"
+        }
+      }
+    }
+  ]
+}

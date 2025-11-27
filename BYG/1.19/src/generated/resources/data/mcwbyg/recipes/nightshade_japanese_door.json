@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "shoji",
+        "key": {
+          "A": {
+            "item": "byg:nightshade_planks"
+          },
+          "B": {
+            "item": "minecraft:paper"
+          }
+        },
+        "pattern": [
+          "BB",
+          "BB",
+          "AA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbyg:nightshade_japanese_door"
+        }
+      }
+    }
+  ]
+}

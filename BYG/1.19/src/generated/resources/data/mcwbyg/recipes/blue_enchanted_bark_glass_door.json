@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bark",
+        "key": {
+          "A": {
+            "item": "byg:blue_enchanted_log"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          }
+        },
+        "pattern": [
+          "AB",
+          "BB",
+          "AB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbyg:blue_enchanted_bark_glass_door"
+        }
+      }
+    }
+  ]
+}

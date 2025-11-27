@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "rope_stairs",
+        "key": {
+          "A": {
+            "item": "mcwmoddinglegacy:rope_pwood_silverbell_bridge"
+          }
+        },
+        "pattern": [
+          "  A",
+          " AA",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwmoddinglegacy:pwood_silverbell_rope_bridge_stair"
+        }
+      }
+    }
+  ]
+}

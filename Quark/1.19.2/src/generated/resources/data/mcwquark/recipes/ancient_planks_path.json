@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwpaths"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks_paths",
+        "ingredients": [
+          {
+            "item": "quark:ancient_planks_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwquark:ancient_planks_path"
+        }
+      }
+    }
+  ]
+}

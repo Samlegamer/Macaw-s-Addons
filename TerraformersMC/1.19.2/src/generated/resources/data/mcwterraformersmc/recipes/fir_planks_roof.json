@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "traverse"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "planks_roof",
+        "key": {
+          "A": {
+            "item": "traverse:fir_planks"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " A",
+          "AB"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwterraformersmc:fir_planks_roof"
+        }
+      }
+    }
+  ]
+}

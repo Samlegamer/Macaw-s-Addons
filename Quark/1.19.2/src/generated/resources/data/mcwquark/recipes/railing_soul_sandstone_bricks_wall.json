@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "railing_wall",
+        "key": {
+          "A": {
+            "item": "quark:soul_sandstone"
+          },
+          "B": {
+            "item": "minecraft:iron_bars"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwquark:railing_soul_sandstone_bricks_wall"
+        }
+      }
+    }
+  ]
+}

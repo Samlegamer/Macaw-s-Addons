@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "log_bridges",
+        "key": {
+          "A": {
+            "item": "quark:limestone_bricks_slab"
+          },
+          "B": {
+            "item": "quark:limestone_bricks_wall"
+          }
+        },
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwquark:limestone_bricks_bridge"
+        }
+      }
+    }
+  ]
+}

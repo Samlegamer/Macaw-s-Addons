@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_the_recipe": {
+            "conditions": {
+              "recipe": "mcwterraformersmc:yucca_palm_barn_glass_door"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+          },
+          "has_yucca_palm_planks": {
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "terrestria:yucca_palm_planks"
+                  ]
+                }
+              ]
+            },
+            "trigger": "minecraft:inventory_changed"
+          }
+        },
+        "requirements": [
+          [
+            "has_yucca_palm_planks",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:yucca_palm_barn_glass_door"
+          ]
+        }
+      },
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "windows_two",
+        "key": {
+          "A": {
+            "item": "mcwwindows:window_half_bar_base"
+          },
+          "B": {
+            "item": "terrestria:stripped_redwood_log"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ABA",
+          "AAA"
+        ],
+        "result": {
+          "count": 8,
+          "item": "mcwterraformersmc:stripped_redwood_log_window2"
+        }
+      }
+    }
+  ]
+}

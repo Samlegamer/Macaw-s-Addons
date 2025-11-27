@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stool_chair",
+        "key": {
+          "A": {
+            "item": "blue_skies:stripped_frostbright_log"
+          },
+          "B": {
+            "item": "blue_skies:frostbright_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_bsky_frostbright_stool_chair"
+        }
+      }
+    }
+  ]
+}

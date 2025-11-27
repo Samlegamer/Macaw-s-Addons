@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "attic_roof",
+        "key": {
+          "A": {
+            "item": "byg:bulbis_stem"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          }
+        },
+        "pattern": [
+          " A",
+          "AB"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwbyg:bulbis_attic_roof"
+        }
+      }
+    }
+  ]
+}

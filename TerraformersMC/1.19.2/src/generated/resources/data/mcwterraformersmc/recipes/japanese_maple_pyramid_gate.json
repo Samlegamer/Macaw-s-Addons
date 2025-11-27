@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "pyramid",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "terrestria:japanese_maple_log"
+          },
+          "C": {
+            "item": "terrestria:japanese_maple_planks"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "ACA"
+        ],
+        "result": {
+          "item": "mcwterraformersmc:japanese_maple_pyramid_gate"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern_wardrobe",
+        "key": {
+          "A": {
+            "item": "terrestria:rainbow_eucalyptus_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "AAB",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwterraformersmc:rainbow_eucalyptus_modern_wardrobe"
+        }
+      }
+    }
+  ]
+}

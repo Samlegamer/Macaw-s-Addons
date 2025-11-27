@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "blinds",
+        "key": {
+          "A": {
+            "item": "byg:jacaranda_slab"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BBB",
+          "BBB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbyg:jacaranda_blinds"
+        }
+      }
+    }
+  ]
+}

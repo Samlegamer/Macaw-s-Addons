@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "cinderscapes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bulk_stairs",
+        "key": {
+          "A": {
+            "item": "cinderscapes:stripped_scorched_stem"
+          },
+          "B": {
+            "item": "cinderscapes:scorched_stem"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          "BBA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwterraformersmc:scorched_bulk_stairs"
+        }
+      }
+    }
+  ]
+}

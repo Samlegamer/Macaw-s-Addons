@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "horse",
+        "key": {
+          "A": {
+            "item": "byg:fir_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "BAB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbyg:fir_horse_fence"
+        }
+      }
+    }
+  ]
+}

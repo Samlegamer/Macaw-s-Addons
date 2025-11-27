@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "skyline_stairs",
+        "key": {
+          "A": {
+            "item": "blue_skies:stripped_bluebright_log"
+          },
+          "B": {
+            "item": "blue_skies:bluebright_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwmoddinglegacy:bsky_bluebright_skyline_stairs"
+        }
+      }
+    }
+  ]
+}

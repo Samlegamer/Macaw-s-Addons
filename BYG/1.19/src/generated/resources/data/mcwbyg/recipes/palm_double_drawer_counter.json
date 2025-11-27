@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_drawer_counter",
+        "key": {
+          "A": {
+            "item": "byg:palm_slab"
+          },
+          "B": {
+            "item": "mcwbyg:palm_double_drawer"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbyg:palm_double_drawer_counter"
+        }
+      }
+    }
+  ]
+}

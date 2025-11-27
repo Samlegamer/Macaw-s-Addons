@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "terrestria"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_drawer_counter",
+        "key": {
+          "A": {
+            "item": "terrestria:rubber_slab"
+          },
+          "B": {
+            "item": "mcwterraformersmc:stripped_rubber_double_drawer"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwterraformersmc:stripped_rubber_double_drawer_counter"
+        }
+      }
+    }
+  ]
+}

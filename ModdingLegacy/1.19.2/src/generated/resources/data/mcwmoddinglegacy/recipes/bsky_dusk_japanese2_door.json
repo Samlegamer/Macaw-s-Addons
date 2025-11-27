@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "shoji_two",
+        "key": {
+          "A": {
+            "item": "blue_skies:dusk_slab"
+          },
+          "B": {
+            "item": "minecraft:paper"
+          }
+        },
+        "pattern": [
+          "BB",
+          "BB",
+          "AA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwmoddinglegacy:bsky_dusk_japanese2_door"
+        }
+      }
+    }
+  ]
+}
