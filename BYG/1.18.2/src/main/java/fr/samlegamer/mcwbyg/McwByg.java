@@ -22,12 +22,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -90,9 +87,9 @@ public class McwByg extends McwMod
     public McwByg()
     {
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::dataSetup);
+        bus().addListener(this::clientSetup);
+        bus().addListener(this::commonSetup);
+        bus().addListener(this::dataSetup);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
     }
@@ -116,6 +113,7 @@ public class McwByg extends McwMod
                 protected void addTags() {
                     addAllMcwTags(MODID, WOOD, LEAVES);
                     mcwBridgesTagsStone(MODID, bridges_rockable);
+                    mcwRoofsTags(MODID, new ArrayList<>(), fences_rockable);
                     mcwFencesTags(MODID, new ArrayList<>(), new ArrayList<>(), fences_rockable);
                 }
             };

@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwbyg:stripped_skyris_kitchen_sink"
+          ]
+        },
+        "criteria": {
+          "has_stripped_skyris_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "byg:stripped_skyris_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwbyg:stripped_skyris_kitchen_sink"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_stripped_skyris_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

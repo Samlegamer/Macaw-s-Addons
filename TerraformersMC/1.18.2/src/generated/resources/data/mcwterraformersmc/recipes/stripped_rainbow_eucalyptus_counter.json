@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:rainbow_eucalyptus_slab"
+          },
+          "B": {
+            "item": "terrestria:stripped_rainbow_eucalyptus_log"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_rainbow_eucalyptus_counter"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:sakura_hedge"
+          ]
+        },
+        "criteria": {
+          "has_sakura_leaves": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "terrestria:sakura_leaves"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:sakura_hedge"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_sakura_leaves",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

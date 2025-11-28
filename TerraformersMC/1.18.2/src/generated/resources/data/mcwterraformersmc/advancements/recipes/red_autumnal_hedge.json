@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:red_autumnal_hedge"
+          ]
+        },
+        "criteria": {
+          "has_red_autumnal_leaves": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "traverse:red_autumnal_leaves"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:red_autumnal_hedge"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_red_autumnal_leaves",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

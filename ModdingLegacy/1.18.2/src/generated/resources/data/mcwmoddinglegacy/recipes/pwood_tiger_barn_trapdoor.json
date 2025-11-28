@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "barn_trapdoors",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:tiger_planks"
+          },
+          "B": {
+            "item": "mcwmoddinglegacy:pwood_tiger_glass_trapdoor"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_tiger_barn_trapdoor"
+        }
+      }
+    }
+  ]
+}

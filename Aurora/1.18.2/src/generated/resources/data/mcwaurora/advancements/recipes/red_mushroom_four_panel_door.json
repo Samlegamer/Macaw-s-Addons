@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "enhanced_mushrooms",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwaurora:red_mushroom_four_panel_door"
+          ]
+        },
+        "criteria": {
+          "has_red_mushroom_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "enhanced_mushrooms:red_mushroom_planks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwaurora:red_mushroom_four_panel_door"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_red_mushroom_planks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

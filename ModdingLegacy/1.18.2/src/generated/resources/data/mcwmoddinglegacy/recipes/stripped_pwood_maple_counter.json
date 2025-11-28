@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:maple_slab"
+          },
+          "B": {
+            "item": "premium_wood:maple_stripped_log"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_maple_counter"
+        }
+      }
+    }
+  ]
+}

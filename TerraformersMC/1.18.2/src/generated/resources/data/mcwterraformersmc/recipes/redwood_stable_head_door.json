@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "stable_head",
+        "ingredients": [
+          {
+            "item": "mcwterraformersmc:redwood_stable_door"
+          }
+        ],
+        "result": {
+          "item": "mcwterraformersmc:redwood_stable_head_door"
+        }
+      }
+    }
+  ]
+}

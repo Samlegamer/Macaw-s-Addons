@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "cupboard_counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:willow_slab"
+          },
+          "B": {
+            "item": "mcwterraformersmc:willow_wardrobe"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:willow_cupboard_counter"
+        }
+      }
+    }
+  ]
+}

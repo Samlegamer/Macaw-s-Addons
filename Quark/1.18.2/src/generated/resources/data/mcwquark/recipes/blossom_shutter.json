@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "quark:blossom_trapdoor"
+          },
+          {
+            "item": "quark:blossom_trapdoor"
+          },
+          {
+            "item": "quark:blossom_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwquark:blossom_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

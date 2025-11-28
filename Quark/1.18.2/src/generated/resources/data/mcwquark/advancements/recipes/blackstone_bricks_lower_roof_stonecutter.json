@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwquark:blackstone_bricks_lower_roof"
+          ]
+        },
+        "criteria": {
+          "has_blackstone_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "quark:blackstone_bricks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwquark:blackstone_bricks_lower_roof"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_blackstone_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

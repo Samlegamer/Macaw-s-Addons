@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "striped_chair",
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:cypress_log"
+          },
+          "B": {
+            "item": "terrestria:cypress_slab"
+          },
+          "C": {
+            "item": "terrestria:cypress_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:cypress_striped_chair"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:japanese_maple_plank_window"
+          ]
+        },
+        "criteria": {
+          "has_japanese_maple_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "terrestria:japanese_maple_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:japanese_maple_plank_window"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_japanese_maple_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

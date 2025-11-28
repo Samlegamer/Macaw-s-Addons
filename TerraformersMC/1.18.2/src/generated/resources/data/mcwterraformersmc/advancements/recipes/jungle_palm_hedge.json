@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:jungle_palm_hedge"
+          ]
+        },
+        "criteria": {
+          "has_jungle_palm_leaves": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "terrestria:jungle_palm_leaves"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:jungle_palm_hedge"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_jungle_palm_leaves",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

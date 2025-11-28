@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "enhanced_mushrooms",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "rope_bridges",
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "enhanced_mushrooms:brown_mushroom_slab"
+          },
+          "B": {
+            "item": "minecraft:string"
+          }
+        },
+        "result": {
+          "item": "mcwaurora:rope_brown_mushroom_bridge",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

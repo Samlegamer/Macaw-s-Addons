@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "blue_skies",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwmoddinglegacy:bsky_maple_japanese2_door"
+          ]
+        },
+        "criteria": {
+          "has_maple_slab": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "blue_skies:maple_slab"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwmoddinglegacy:bsky_maple_japanese2_door"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_maple_slab",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "coffee_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "quark:stripped_blossom_log"
+          },
+          "B": {
+            "item": "quark:blossom_fence"
+          }
+        },
+        "result": {
+          "item": "mcwquark:stripped_blossom_coffee_table"
+        }
+      }
+    }
+  ]
+}

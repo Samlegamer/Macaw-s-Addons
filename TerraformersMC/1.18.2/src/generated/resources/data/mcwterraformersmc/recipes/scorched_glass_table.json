@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "glass_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwterraformersmc:scorched_end_table"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:scorched_glass_table"
+        }
+      }
+    }
+  ]
+}

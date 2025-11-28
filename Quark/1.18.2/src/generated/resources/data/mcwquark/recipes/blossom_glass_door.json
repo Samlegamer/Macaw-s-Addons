@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "glassed",
+        "pattern": [
+          "AB",
+          "BB",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "quark:blossom_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "result": {
+          "item": "mcwquark:blossom_glass_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

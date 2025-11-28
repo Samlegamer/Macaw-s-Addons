@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "covered_desk",
+        "pattern": [
+          "AAA",
+          "A A"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:maple_log"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_maple_covered_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

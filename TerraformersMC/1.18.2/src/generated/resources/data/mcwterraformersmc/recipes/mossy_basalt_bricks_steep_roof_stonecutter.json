@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "terrestria:mossy_basalt_bricks"
+        },
+        "result": "mcwterraformersmc:mossy_basalt_bricks_steep_roof",
+        "count": 1
+      }
+    }
+  ]
+}

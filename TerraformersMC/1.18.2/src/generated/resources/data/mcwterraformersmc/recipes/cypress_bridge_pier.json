@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:cypress_log"
+          },
+          "B": {
+            "item": "terrestria:cypress_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:cypress_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

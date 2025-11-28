@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "blue_skies",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "covered_desk",
+        "pattern": [
+          "AAA",
+          "A A"
+        ],
+        "key": {
+          "A": {
+            "item": "blue_skies:stripped_starlit_log"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_bsky_starlit_covered_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

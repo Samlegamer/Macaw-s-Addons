@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "terrestria:sakura_trapdoor"
+          },
+          {
+            "item": "terrestria:sakura_trapdoor"
+          },
+          {
+            "item": "terrestria:sakura_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwterraformersmc:sakura_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

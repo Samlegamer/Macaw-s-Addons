@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "barred_trapdoors",
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:magic_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_barred"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_magic_barred_trapdoor"
+        }
+      }
+    }
+  ]
+}

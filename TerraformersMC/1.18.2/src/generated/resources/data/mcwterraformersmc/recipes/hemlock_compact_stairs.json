@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "compact_stairs",
+        "pattern": [
+          "A  ",
+          "AA ",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:stripped_hemlock_log"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:hemlock_compact_stairs",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

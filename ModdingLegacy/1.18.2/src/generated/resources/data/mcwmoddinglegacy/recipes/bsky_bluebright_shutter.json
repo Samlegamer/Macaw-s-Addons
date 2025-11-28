@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "blue_skies",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "blue_skies:bluebright_trapdoor"
+          },
+          {
+            "item": "blue_skies:bluebright_trapdoor"
+          },
+          {
+            "item": "blue_skies:bluebright_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:bsky_bluebright_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

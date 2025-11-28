@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "western",
+        "pattern": [
+          "  A",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "traverse:fir_planks"
+          },
+          "B": {
+            "item": "traverse:fir_slab"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:fir_western_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

@@ -19,7 +19,7 @@
           ]
         },
         "criteria": {
-          "has_item": {
+          "has_baobab_slab": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_item",
+            "has_baobab_slab",
             "has_the_recipe"
           ]
         ]

@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:rainbow_eucalyptus_ranch_trapdoor"
+          ]
+        },
+        "criteria": {
+          "has_rainbow_eucalyptus_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "terrestria:rainbow_eucalyptus_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:rainbow_eucalyptus_ranch_trapdoor"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_rainbow_eucalyptus_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

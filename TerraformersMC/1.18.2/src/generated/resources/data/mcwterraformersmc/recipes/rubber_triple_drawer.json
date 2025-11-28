@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "triple_drawer",
+        "pattern": [
+          "AAA",
+          "ABA",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:rubber_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:rubber_triple_drawer",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

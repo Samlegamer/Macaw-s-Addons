@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "horse",
+        "pattern": [
+          "ABA",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:willow_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:willow_horse_fence",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

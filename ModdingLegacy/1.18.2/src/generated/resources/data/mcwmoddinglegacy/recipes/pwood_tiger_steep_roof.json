@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "steep_roof",
+        "pattern": [
+          " A",
+          "AA",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:tiger_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_tiger_steep_roof",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

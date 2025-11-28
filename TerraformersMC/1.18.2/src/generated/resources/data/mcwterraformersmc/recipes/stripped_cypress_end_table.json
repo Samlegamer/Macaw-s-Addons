@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "end_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwterraformersmc:stripped_cypress_table"
+          },
+          "B": {
+            "item": "terrestria:stripped_cypress_log"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_cypress_end_table"
+        }
+      }
+    }
+  ]
+}

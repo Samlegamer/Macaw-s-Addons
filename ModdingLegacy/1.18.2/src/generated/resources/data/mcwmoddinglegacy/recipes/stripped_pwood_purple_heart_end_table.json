@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "end_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwmoddinglegacy:stripped_pwood_purple_heart_table"
+          },
+          "B": {
+            "item": "premium_wood:purple_heart_stripped_log"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_purple_heart_end_table"
+        }
+      }
+    }
+  ]
+}

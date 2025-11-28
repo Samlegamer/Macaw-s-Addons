@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "cinderscapes:rose_quartz_bricks"
+        },
+        "result": "mcwterraformersmc:rose_quartz_bricks_railing_gate",
+        "count": 1
+      }
+    }
+  ]
+}

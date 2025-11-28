@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "kitchen_cabinet",
+        "pattern": [
+          "AA",
+          "AB",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "cinderscapes:scorched_stem"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:scorched_kitchen_cabinet",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

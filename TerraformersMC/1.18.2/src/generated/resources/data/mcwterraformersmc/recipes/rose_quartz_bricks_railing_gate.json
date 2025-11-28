@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "railing_gate",
+        "pattern": [
+          "ABA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:iron_bars"
+          },
+          "B": {
+            "item": "cinderscapes:rose_quartz_bricks"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:rose_quartz_bricks_railing_gate"
+        }
+      }
+    }
+  ]
+}

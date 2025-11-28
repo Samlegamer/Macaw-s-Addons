@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:mossy_basalt_bricks_bridge_stair"
+          ]
+        },
+        "criteria": {
+          "has_mossy_basalt_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "terrestria:mossy_basalt_bricks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:mossy_basalt_bricks_bridge_stair"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_mossy_basalt_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

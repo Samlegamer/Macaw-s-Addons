@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "enhanced_mushrooms",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwaurora:brown_mushroom_desk"
+          ]
+        },
+        "criteria": {
+          "has_brown_mushroom_stem": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "enhanced_mushrooms:brown_mushroom_stem"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwaurora:brown_mushroom_desk"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_brown_mushroom_stem",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

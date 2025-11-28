@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "hedge",
+        "pattern": [
+          "AA",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "traverse:yellow_autumnal_leaves"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:yellow_autumnal_hedge",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

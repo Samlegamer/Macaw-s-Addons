@@ -117,7 +117,6 @@ public class McwAurora extends McwMod
             });
             generator.addProvider(true, new Recipes(output));
         }
-
     }
 
     @Override

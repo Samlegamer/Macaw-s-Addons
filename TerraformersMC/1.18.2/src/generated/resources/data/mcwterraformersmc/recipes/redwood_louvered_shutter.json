@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "terrestria:redwood_slab"
+          },
+          {
+            "item": "terrestria:redwood_slab"
+          },
+          {
+            "item": "terrestria:redwood_slab"
+          }
+        ],
+        "result": {
+          "item": "mcwterraformersmc:redwood_louvered_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

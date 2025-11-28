@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwpaths",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "enhanced_mushrooms",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks_paths",
+        "ingredients": [
+          {
+            "item": "enhanced_mushrooms:red_mushroom_slab"
+          }
+        ],
+        "result": {
+          "item": "mcwaurora:red_mushroom_planks_path",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "cinderscapes:smoky_quartz_bricks"
+        },
+        "result": "mcwterraformersmc:modern_smoky_quartz_bricks_wall",
+        "count": 1
+      }
+    }
+  ]
+}

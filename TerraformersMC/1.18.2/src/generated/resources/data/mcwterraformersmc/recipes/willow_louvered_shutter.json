@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "terrestria:willow_slab"
+          },
+          {
+            "item": "terrestria:willow_slab"
+          },
+          {
+            "item": "terrestria:willow_slab"
+          }
+        ],
+        "result": {
+          "item": "mcwterraformersmc:willow_louvered_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

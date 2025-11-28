@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "hedge",
+        "pattern": [
+          "AA",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:rubber_leaves"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:rubber_hedge",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

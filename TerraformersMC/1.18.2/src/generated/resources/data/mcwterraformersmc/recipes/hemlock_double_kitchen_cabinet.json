@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_kitchen_cabinet",
+        "pattern": [
+          "AA",
+          "BB",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:hemlock_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:hemlock_double_kitchen_cabinet",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

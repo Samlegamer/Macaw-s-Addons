@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "terrestria:hemlock_trapdoor"
+          },
+          {
+            "item": "terrestria:hemlock_trapdoor"
+          },
+          {
+            "item": "terrestria:hemlock_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwterraformersmc:hemlock_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

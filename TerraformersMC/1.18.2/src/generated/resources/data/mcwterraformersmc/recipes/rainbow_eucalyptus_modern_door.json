@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern",
+        "pattern": [
+          "AB",
+          "AA",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:rainbow_eucalyptus_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:rainbow_eucalyptus_modern_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

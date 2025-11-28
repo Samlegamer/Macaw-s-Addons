@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "drawer_counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "quark:blossom_planks_slab"
+          },
+          "B": {
+            "item": "mcwquark:blossom_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwquark:blossom_drawer_counter"
+        }
+      }
+    }
+  ]
+}

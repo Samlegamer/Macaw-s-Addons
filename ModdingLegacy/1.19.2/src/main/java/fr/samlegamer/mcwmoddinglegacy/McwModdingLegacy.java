@@ -151,7 +151,6 @@ public class McwModdingLegacy extends McwMod
             McwLootTables.addBlockHedges(MODID, wood_crystallized);
             McwLootTables.addBlockHedges(MODID, wood_premium_wood);
         });
-
     }
 
     @Override

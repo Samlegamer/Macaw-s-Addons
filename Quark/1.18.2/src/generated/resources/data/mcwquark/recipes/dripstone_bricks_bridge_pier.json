@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "quark:dripstone_bricks"
+          },
+          "B": {
+            "item": "quark:dripstone_bricks_wall"
+          }
+        },
+        "result": {
+          "item": "mcwquark:dripstone_bricks_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

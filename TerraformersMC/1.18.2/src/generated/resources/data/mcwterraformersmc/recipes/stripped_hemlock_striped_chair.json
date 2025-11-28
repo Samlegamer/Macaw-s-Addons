@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "striped_chair",
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:stripped_hemlock_log"
+          },
+          "B": {
+            "item": "terrestria:hemlock_slab"
+          },
+          "C": {
+            "item": "terrestria:hemlock_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_hemlock_striped_chair"
+        }
+      }
+    }
+  ]
+}

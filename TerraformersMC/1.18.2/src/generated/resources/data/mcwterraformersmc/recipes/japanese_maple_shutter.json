@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "terrestria:japanese_maple_trapdoor"
+          },
+          {
+            "item": "terrestria:japanese_maple_trapdoor"
+          },
+          {
+            "item": "terrestria:japanese_maple_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwterraformersmc:japanese_maple_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

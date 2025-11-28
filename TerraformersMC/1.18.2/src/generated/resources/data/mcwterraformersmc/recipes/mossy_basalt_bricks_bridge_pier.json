@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:mossy_basalt_bricks"
+          },
+          "B": {
+            "item": "terrestria:mossy_basalt_brick_wall"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:mossy_basalt_bricks_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "pyramid",
+        "pattern": [
+          "ABA",
+          "ACA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "premium_wood:tiger_log"
+          },
+          "C": {
+            "item": "premium_wood:tiger_planks"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_tiger_pyramid_gate"
+        }
+      }
+    }
+  ]
+}

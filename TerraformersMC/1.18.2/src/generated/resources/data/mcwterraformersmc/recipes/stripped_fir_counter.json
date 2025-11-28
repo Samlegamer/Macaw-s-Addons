@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "traverse:fir_slab"
+          },
+          "B": {
+            "item": "traverse:stripped_fir_log"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_fir_counter"
+        }
+      }
+    }
+  ]
+}

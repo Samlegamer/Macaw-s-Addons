@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwmoddinglegacy:pwood_willow_balcony"
+          ]
+        },
+        "criteria": {
+          "has_willow_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "premium_wood:willow_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwmoddinglegacy:pwood_willow_balcony"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_willow_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

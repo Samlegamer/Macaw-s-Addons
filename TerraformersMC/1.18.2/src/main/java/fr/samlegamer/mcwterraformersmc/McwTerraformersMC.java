@@ -7,31 +7,39 @@ import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.furnitures.Furnitures;
+import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
+import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
+import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.util.McwMod;
 import fr.samlegamer.addonslib.windows.Windows;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.registries.DeferredRegister;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import javax.annotation.Nonnull;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 @Mod(McwTerraformersMC.MODID)
-public class McwTerraformersMC
+public class McwTerraformersMC extends McwMod
 {
     public static final String MODID = "mcwterraformersmc";
     private static final Logger LOGGER = LogManager.getLogger();
@@ -134,8 +142,66 @@ public class McwTerraformersMC
         Windows.setRegistrationWoodModLoaded(WOODS_CINDERSCAPES, BLOCKS, ITEMS, MCWTERRAFORMERSMC_TAB, "cinderscapes");
         Windows.setRegistrationWoodModLoaded(WOODS_TERRESTRIA, BLOCKS, ITEMS, MCWTERRAFORMERSMC_TAB, "terrestria");
 
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
+        bus().addListener(this::clientSetup);
+        bus().addListener(this::commonSetup);
+        bus().addListener(this::dataSetup);
         LOGGER.info("Macaw's TerraformersMC Is Charged !");
+    }
+
+    @Override
+    public void clientSetup(FMLClientSetupEvent event) {
+        APIRenderTypes.initAllWood(event, MODID, WOODS_TRAVERSE, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllLeave(event, MODID, LEAVES_TRAVERSE);
+
+        APIRenderTypes.initAllWood(event, MODID, WOODS_CINDERSCAPES, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllStone(event, MODID, ROCKS_CINDERSCAPES, Registration.getAllModTypeStone());
+
+        APIRenderTypes.initAllWood(event, MODID, WOODS_TERRESTRIA, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllLeave(event, MODID, LEAVES_TERRESTRIA);
+        APIRenderTypes.initAllStone(event, MODID, ROCKS_TERRESTRIA, Registration.getAllModTypeStone());
+    }
+
+    @Override
+    public void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            McwLootTables.addBlockAllWood(MODID, WOODS_TRAVERSE);
+            McwLootTables.addBlockHedges(MODID, LEAVES_TRAVERSE);
+
+            McwLootTables.addBlockAllWood(MODID, WOODS_CINDERSCAPES);
+            McwLootTables.addBlockAllStone(MODID, ROCKS_CINDERSCAPES);
+
+            McwLootTables.addBlockAllWood(MODID, WOODS_TERRESTRIA);
+            McwLootTables.addBlockHedges(MODID, LEAVES_TERRESTRIA);
+            McwLootTables.addBlockAllStone(MODID, ROCKS_TERRESTRIA);
+        });
+    }
+
+    @Override
+    public void dataSetup(GatherDataEvent gatherDataEvent) {
+        DataGenerator generator = gatherDataEvent.getGenerator();
+        ExistingFileHelper existingFileHelper = gatherDataEvent.getExistingFileHelper();
+
+        if (gatherDataEvent.includeServer()) {
+            McwBlockTags mcwBlockTags = new McwBlockTags(generator, MODID, existingFileHelper) {
+                @Override
+                protected void addTags() {
+                    addAllMcwTags(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, McwTerraformersMC.LEAVES_TRAVERSE);
+                    addAllMcwTags(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, McwTerraformersMC.ROCKS_CINDERSCAPES, new ArrayList<>());
+                    addAllMcwTags(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, McwTerraformersMC.ROCKS_TERRESTRIA, McwTerraformersMC.LEAVES_TERRESTRIA);
+                }
+            };
+
+            generator.addProvider(new Recipes(generator));
+            generator.addProvider(mcwBlockTags);
+            generator.addProvider(new McwItemTags(generator, mcwBlockTags, MODID, existingFileHelper) {
+                @Override
+                protected void addTags() {
+                    addAllMcwTags(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, McwTerraformersMC.LEAVES_TRAVERSE);
+                    addAllMcwTags(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, McwTerraformersMC.ROCKS_CINDERSCAPES, new ArrayList<>());
+                    addAllMcwTags(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, McwTerraformersMC.ROCKS_TERRESTRIA, McwTerraformersMC.LEAVES_TERRESTRIA);
+                }
+            });
+        }
     }
 
     private static String randomNaming()
@@ -171,18 +237,5 @@ public class McwTerraformersMC
             }
         }
         return "fir";
-    }
-
-    private void client(FMLClientSetupEvent event)
-    {
-        APIRenderTypes.initAllWood(event, MODID, WOODS_TRAVERSE, Registration.getAllModTypeWood());
-        APIRenderTypes.initAllLeave(event, MODID, LEAVES_TRAVERSE);
-
-        APIRenderTypes.initAllWood(event, MODID, WOODS_CINDERSCAPES, Registration.getAllModTypeWood());
-        APIRenderTypes.initAllStone(event, MODID, ROCKS_CINDERSCAPES, Registration.getAllModTypeStone());
-
-        APIRenderTypes.initAllWood(event, MODID, WOODS_TERRESTRIA, Registration.getAllModTypeWood());
-        APIRenderTypes.initAllLeave(event, MODID, LEAVES_TERRESTRIA);
-        APIRenderTypes.initAllStone(event, MODID, ROCKS_TERRESTRIA, Registration.getAllModTypeStone());
     }
 }

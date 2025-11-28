@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "rail_bridges",
+        "pattern": [
+          "B B",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "quark:blossom_planks_slab"
+          },
+          "B": {
+            "item": "quark:blossom_fence"
+          }
+        },
+        "result": {
+          "item": "mcwquark:blossom_rail_bridge",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

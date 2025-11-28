@@ -173,8 +173,7 @@ dependencies {
 
     implementation fg.deobf("curse.maven:biomes-o-plenty-220318:${bop_version}")
     implementation fg.deobf("curse.maven:terrablender-563928:${terrablender_version}")
-    //implementation fg.deobf('com.github.glitchfiend:TerraBlender-forge:1.18.2-1.2.0.126')
-    //implementation 'org.spongepowered:spongeapi:8.1.0'  // Pour Minecraft 1.18.2
+
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     // Real mod deobf dependency examples - these get remapped to your current mappings

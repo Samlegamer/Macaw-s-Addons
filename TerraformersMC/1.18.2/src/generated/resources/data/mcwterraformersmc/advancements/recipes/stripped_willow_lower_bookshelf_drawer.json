@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:stripped_willow_lower_bookshelf_drawer"
+          ]
+        },
+        "criteria": {
+          "has_stripped_willow_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "terrestria:stripped_willow_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:stripped_willow_lower_bookshelf_drawer"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_stripped_willow_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

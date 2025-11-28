@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "western",
+        "pattern": [
+          "  A",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "cinderscapes:umbral_planks"
+          },
+          "B": {
+            "item": "cinderscapes:umbral_slab"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:umbral_western_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

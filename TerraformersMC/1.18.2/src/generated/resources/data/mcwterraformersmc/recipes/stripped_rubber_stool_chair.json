@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stool_chair",
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:stripped_rubber_log"
+          },
+          "B": {
+            "item": "terrestria:rubber_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_rubber_stool_chair"
+        }
+      }
+    }
+  ]
+}

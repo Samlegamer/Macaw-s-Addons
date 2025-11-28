@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "drawer_counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:hemlock_slab"
+          },
+          "B": {
+            "item": "mcwterraformersmc:hemlock_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:hemlock_drawer_counter"
+        }
+      }
+    }
+  ]
+}

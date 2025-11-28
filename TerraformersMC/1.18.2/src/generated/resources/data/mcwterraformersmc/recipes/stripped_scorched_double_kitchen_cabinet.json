@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_kitchen_cabinet",
+        "pattern": [
+          "AA",
+          "BB",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "cinderscapes:stripped_scorched_stem"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_scorched_double_kitchen_cabinet",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

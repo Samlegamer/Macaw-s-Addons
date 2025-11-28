@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "railing_gate",
+        "pattern": [
+          "ABA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:iron_bars"
+          },
+          "B": {
+            "item": "quark:jasper_bricks"
+          }
+        },
+        "result": {
+          "item": "mcwquark:jasper_bricks_railing_gate"
+        }
+      }
+    }
+  ]
+}

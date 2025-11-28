@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "blue_skies",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwmoddinglegacy:bsky_crystallized_lower_roof"
+          ]
+        },
+        "criteria": {
+          "has_crystallized_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "blue_skies:crystallized_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwmoddinglegacy:bsky_crystallized_lower_roof"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_crystallized_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

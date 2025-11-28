@@ -6,7 +6,6 @@ import fr.samlegamer.addonslib.generation.recipes.mat.McwStoneMat;
 import fr.samlegamer.addonslib.generation.recipes.mat.McwWoodMat;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.NotNull;
 import potionstudios.byg.BYG;
@@ -17,20 +16,20 @@ import java.util.function.Consumer;
 
 import static potionstudios.byg.common.block.BYGBlocks.*;
 
-public class Recipes extends RecipeProvider
+public class Recipes extends McwRecipes
 {
     public Recipes(DataGenerator p_i48262_1_) {
-        super(p_i48262_1_);
+        super(p_i48262_1_, McwByg.MODID, "", BYG.MOD_ID);
     }
 
     @Override
     protected void buildCraftingRecipes(@NotNull Consumer<FinishedRecipe> consumer)
     {
-        McwRecipes.registerAllMcwWood(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.WOOD, getWood());
-        McwRecipes.registerMcwHedge(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.LEAVES, getLeaves());
-        McwRecipes.onRegisterMcwStone(ModType.BRIDGES, consumer, McwByg.MODID, BYG.MOD_ID, McwByg.bridges_rockable, getStoneBridges());
-        McwRecipes.onRegisterMcwStone(ModType.FENCES, consumer, McwByg.MODID, BYG.MOD_ID, McwByg.fences_rockable, getStoneFencesAndRoofs());
-        McwRecipes.onRegisterMcwStone(ModType.ROOFS, consumer, McwByg.MODID, BYG.MOD_ID, McwByg.fences_rockable, getStoneFencesAndRoofs());
+        registerAllMcwWood(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.WOOD, getWood());
+        registerMcwHedge(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.LEAVES, getLeaves());
+        onRegisterMcwStone(ModType.BRIDGES, consumer, McwByg.MODID, BYG.MOD_ID, McwByg.bridges_rockable, getStoneBridges());
+        onRegisterMcwStone(ModType.FENCES, consumer, McwByg.MODID, BYG.MOD_ID, McwByg.fences_rockable, getStoneFencesAndRoofs());
+        onRegisterMcwStone(ModType.ROOFS, consumer, McwByg.MODID, BYG.MOD_ID, McwByg.fences_rockable, getStoneFencesAndRoofs());
     }
 
     private static List<Block> getLeaves()

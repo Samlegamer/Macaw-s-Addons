@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "grass_topped",
+        "pattern": [
+          "BCB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:dripstone_block"
+          },
+          "B": {
+            "item": "quark:dripstone_bricks"
+          },
+          "C": {
+            "item": "minecraft:dirt"
+          }
+        },
+        "result": {
+          "item": "mcwquark:dripstone_bricks_grass_topped_wall",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

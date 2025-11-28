@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "quark:soul_sandstone_bricks"
+          },
+          "B": {
+            "item": "quark:soul_sandstone_bricks_wall"
+          }
+        },
+        "result": {
+          "item": "mcwquark:soul_sandstone_bricks_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

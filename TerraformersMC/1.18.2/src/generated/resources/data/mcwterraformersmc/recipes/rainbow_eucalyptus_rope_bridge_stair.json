@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "rope_stairs",
+        "pattern": [
+          "  A",
+          " AA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwterraformersmc:rope_rainbow_eucalyptus_bridge"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:rainbow_eucalyptus_rope_bridge_stair",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwpaths",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "blue_skies",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks_paths",
+        "ingredients": [
+          {
+            "item": "blue_skies:dusk_slab"
+          }
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:bsky_dusk_planks_path",
+          "count": 3
+        }
+      }
+    }
+  ]
+}
