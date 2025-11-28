@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:dacite_railing_gate_stonecutter"
+      "minecraft:dacite_railing_gate_stonecutter"
     ]
   },
   "criteria": {
-    "has_stone": {
+    "has_dacite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:dacite_railing_gate_stonecutter"
+        "recipe": "minecraft:dacite_railing_gate_stonecutter"
       }
     }
   },
   "requirements": [
     [
-      "has_stone",
+      "has_dacite",
       "has_the_recipe"
     ]
   ],

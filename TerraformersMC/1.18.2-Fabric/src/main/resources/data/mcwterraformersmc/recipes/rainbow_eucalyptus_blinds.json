@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,32 +9,22 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "blinds",
-	
-    "pattern":
-    [
-        "AAA",
-        "BBB",
-        "BBB"		
-    ],
-    
-    "key":
-    { 
-        "B":
-        {
-            "item": "minecraft:stick"
-        },    
-        
-        "A":
-        {
-            "item": "terrestria:rainbow_eucalyptus_slab"
-        }
+  "group": "blinds",
+  "key": {
+    "A": {
+      "item": "terrestria:rainbow_eucalyptus_slab"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:rainbow_eucalyptus_blinds",
-        "count": 3
+    "B": {
+      "item": "minecraft:stick"
     }
+  },
+  "pattern": [
+    "AAA",
+    "BBB",
+    "BBB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:rainbow_eucalyptus_blinds"
+  }
 }

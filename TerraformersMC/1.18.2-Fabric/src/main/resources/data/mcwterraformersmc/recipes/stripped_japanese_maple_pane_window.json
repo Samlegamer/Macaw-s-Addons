@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,33 +9,22 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "windows_pane",
-	
-    "pattern":
-    [
-        "AAA",
-        "ABA",
-        "AAA"                
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "mcwwindows:window_base"
-        },    
-
-		
-        "B":
-        {
-            "item": "terrestria:stripped_japanese_maple_log"
-        }
+  "group": "windows_pane",
+  "key": {
+    "A": {
+      "item": "mcwwindows:window_base"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_japanese_maple_pane_window",
-        "count": 8
+    "B": {
+      "item": "terrestria:stripped_japanese_maple_log"
     }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 8,
+    "item": "mcwterraformersmc:stripped_japanese_maple_pane_window"
+  }
 }

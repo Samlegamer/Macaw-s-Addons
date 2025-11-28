@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kitchen_sink",
+  "pattern": [
+    "CDC",
+    "ABA",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:pine_log"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "item": "byg:pine_slab"
+    },
+    "D": {
+      "item": "minecraft:cauldron"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:pine_kitchen_sink"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwfurnitures",
+        "byg"
+      ]
+    }
+  ]
+}

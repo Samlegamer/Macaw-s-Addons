@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:witch_hazel_planks_steep_roof"
+      "mcwbyg:witch_hazel_planks_steep_roof"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_witch_hazel_planks": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:witch_hazel_planks_steep_roof"
+        "recipe": "mcwbyg:witch_hazel_planks_steep_roof"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_witch_hazel_planks",
       "has_the_recipe"
     ]
   ],

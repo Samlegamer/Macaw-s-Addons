@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,34 +9,22 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "modern",
-    
-    "pattern":
-    [
-        "AB",
-        "AA",
-        "AB"                
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "cinderscapes:umbral_planks"
-        },    
-        
-        "B":
-        {
-            "item": "minecraft:glass_pane"
-        }
+  "group": "modern",
+  "key": {
+    "A": {
+      "item": "cinderscapes:umbral_planks"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:umbral_modern_door",
-        "count": 3
+    "B": {
+      "item": "minecraft:glass_pane"
     }
+  },
+  "pattern": [
+    "AB",
+    "AA",
+    "AB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:umbral_modern_door"
+  }
 }
-
-

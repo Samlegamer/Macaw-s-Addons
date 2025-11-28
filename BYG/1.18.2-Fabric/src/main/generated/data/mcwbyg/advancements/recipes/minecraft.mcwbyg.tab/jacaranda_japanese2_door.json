@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:jacaranda_japanese2_door"
+      "mcwbyg:jacaranda_japanese2_door"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_jacaranda_slab": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:jacaranda_japanese2_door"
+        "recipe": "mcwbyg:jacaranda_japanese2_door"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_jacaranda_slab",
       "has_the_recipe"
     ]
   ],

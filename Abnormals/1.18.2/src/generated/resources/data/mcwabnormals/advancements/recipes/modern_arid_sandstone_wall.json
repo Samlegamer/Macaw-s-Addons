@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:modern_arid_sandstone_wall"
+          ]
+        },
+        "criteria": {
+          "has_arid_sandstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "atmospheric:arid_sandstone"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:modern_arid_sandstone_wall"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_arid_sandstone",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

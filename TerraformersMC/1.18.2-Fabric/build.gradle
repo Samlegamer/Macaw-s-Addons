@@ -1,49 +1,110 @@
 plugins {
-	id 'fabric-loom' version '0.12-SNAPSHOT'
+	id 'fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
-
-archivesBaseName = project.archives_base_name + "-fabric"
 version = project.mod_version
 group = project.maven_group
 
-repositories
-		{
-			maven {
-				name = "CurseForge"
-				url = "https://minecraft.curseforge.com/api/maven/"
-			}
-			maven {
-				name = "CurseMaven"
-				url = "https://www.cursemaven.com"
-			}
+base {
+	archivesName = project.archives_base_name + "-fabric"
+}
+
+repositories {
+    maven {
+        name = "CurseForge"
+        url = "https://minecraft.curseforge.com/api/maven/"
+    }
+    maven {
+        name = "CurseMaven"
+        url = "https://www.cursemaven.com"
+    }
+    maven {
+        name = "TerraformersMC"
+        url = "https://maven.terraformersmc.com/releases"
+    }
+    maven {
+        url = "https://maven.shedaniel.me"
+    }
+    maven { url = 'https://maven.minecraftforge.net/' }
+}
+
+loom {
+	splitEnvironmentSourceSets()
+
+	mods {
+        "template-mod" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
 		}
+	}
+
+}
+
+fabricApi {
+	configureDataGeneration {
+		client = true
+	}
+}
 
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation "curse.maven:addonslib-1090999:6749425"
+
+    modImplementation "curse.maven:addonslib-1090999:${addonslib_version}"
+
+    modImplementation "curse.maven:macaws-roofs-352039:${roofs_version}"
+    modImplementation "curse.maven:macaws-fences-and-walls-453925:${fences_version}"
+    modImplementation "curse.maven:macaws-doors-378646:${doors_version}"
+    modImplementation "curse.maven:macaws-bridges-351725:${bridges_version}"
+    modImplementation "curse.maven:macaws-windows-363569:${windows_version}"
+    modImplementation "curse.maven:macaws-paths-and-pavings-629153:${paths_version}"
+    modImplementation "curse.maven:macaws-trapdoors-400933:${trapdoors_version}"
+    modImplementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
+    modImplementation "curse.maven:macaws-furniture-359540:${furniture_version}"
+
+    //modCompileOnly files("libs/cinderscapes-common-2.0.2.jar")
+    //modCompileOnly files("libs/terrestria-common-4.0.6.jar")
+    //modCompileOnly files("libs/traverse-common-5.1.4.jar")
+    //modCompileOnly files("libs/terraform-wood-api-v1-3.1.0.jar")
+
+    modRuntimeOnly files("libs/cinderscapes-common-2.0.2.jar")
+    modRuntimeOnly files("libs/terrestria-common-4.0.6.jar")
+    modRuntimeOnly files("libs/traverse-common-5.1.4.jar")
+    modRuntimeOnly files("libs/cinderscapes-client-2.0.2.jar")
+    modRuntimeOnly files("libs/terrestria-client-4.0.6.jar")
+    modRuntimeOnly files("libs/traverse-client-5.1.4.jar")
+
+    modRuntimeOnly files("libs/terraform-config-api-v1-3.1.0.jar")
+    modRuntimeOnly files("libs/terraform-biome-remapper-api-v1-3.1.0.jar")
+    modRuntimeOnly files("libs/terraform-dirt-api-v1-3.1.0.jar")
+    modRuntimeOnly files("libs/terraform-shapes-api-v1-3.1.0.jar")
+    modRuntimeOnly files("libs/terraform-surfaces-api-v1-3.1.0.jar")
+    modRuntimeOnly files("libs/terraform-tree-api-v1-3.1.0.jar")
+    modRuntimeOnly files("libs/terraform-wood-api-v1-3.1.0.jar")
+
+    modRuntimeOnly "curse.maven:cloth-config-348521:${cloth_config_version}"
+    modRuntimeOnly "curse.maven:terrablender-fabric-565956:${terrablender_version}"
+    modRuntimeOnly("com.electronwill.night-config:toml:${nightconfig_version}")
+    modRuntimeOnly("com.electronwill.night-config:core:${nightconfig_version}")
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	
 }
 
 processResources {
 	inputs.property "version", project.version
 
 	filesMatching("fabric.mod.json") {
-		expand project.properties
+        expand project.properties
 		expand "version": inputs.properties.version
 	}
 }
 
 tasks.withType(JavaCompile).configureEach {
-	// Minecraft 1.18 (1.18-pre2) upwards uses Java 17.
 	it.options.release = 17
 }
 
@@ -52,18 +113,24 @@ java {
 	// if it is present.
 	// If you remove this line, sources will not be generated.
 	withSourcesJar()
+
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
 }
 
 jar {
+	inputs.property "archivesName", project.base.archivesName
+
 	from("LICENSE") {
-		rename { "${it}_${project.archivesBaseName}"}
+		rename { "${it}_${inputs.properties.archivesName}"}
 	}
 }
 
 // configure the maven publication
 publishing {
 	publications {
-		mavenJava(MavenPublication) {
+		create("mavenJava", MavenPublication) {
+			artifactId = project.archives_base_name
 			from components.java
 		}
 	}

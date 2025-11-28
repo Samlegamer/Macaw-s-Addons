@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:arid_sandstone"
+          },
+          "B": {
+            "item": "atmospheric:arid_sandstone_wall"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:arid_sandstone_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

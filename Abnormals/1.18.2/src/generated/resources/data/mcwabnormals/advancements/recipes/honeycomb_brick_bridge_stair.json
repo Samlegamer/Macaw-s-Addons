@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "buzzier_bees",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:honeycomb_brick_bridge_stair"
+          ]
+        },
+        "criteria": {
+          "has_honeycomb_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "buzzier_bees:honeycomb_bricks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:honeycomb_brick_bridge_stair"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_honeycomb_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

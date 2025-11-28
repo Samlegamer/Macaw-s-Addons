@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,19 +9,22 @@
       ]
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "terrace_stairs",
-  "pattern" : [ "W  ", "ZW ", " ZW" ],
-  "key" : {
-    "W" : {
-      "item" : "terrestria:stripped_hemlock_log"
+  "group": "terrace_stairs",
+  "key": {
+    "A": {
+      "item": "terrestria:stripped_hemlock_log"
     },
-    "Z" : {
-      "item" : "terrestria:hemlock_log"
+    "B": {
+      "item": "terrestria:hemlock_log"
     }
   },
-  "result" : {
-    "item" : "mcwterraformersmc:hemlock_terrace_stairs",
-    "count" : 5
+  "pattern": [
+    "A  ",
+    "BA ",
+    " BA"
+  ],
+  "result": {
+    "count": 5,
+    "item": "mcwterraformersmc:hemlock_terrace_stairs"
   }
 }

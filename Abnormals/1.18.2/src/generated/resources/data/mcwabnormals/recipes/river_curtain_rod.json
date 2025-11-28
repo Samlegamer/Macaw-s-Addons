@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "upgrade_aquatic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "curtain_rods",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "upgrade_aquatic:river_log"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:river_curtain_rod",
+          "count": 5
+        }
+      }
+    }
+  ]
+}

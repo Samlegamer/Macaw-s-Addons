@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,34 +9,21 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "whispering_trapdoors",
-    
-    "pattern":
-    [
-        " A ",
-        "ABA",
-        " A "               
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "terrestria:japanese_maple_planks"
-        },    
-        
-        "B":
-        {
-            "item": "mcwtrpdoors:print_whispering"
-        }
+  "group": "whispering_trapdoors",
+  "key": {
+    "A": {
+      "item": "terrestria:japanese_maple_planks"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:japanese_maple_whispering_trapdoor",
-        "count": 4
+    "B": {
+      "item": "mcwtrpdoors:print_whispering"
     }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:japanese_maple_whispering_trapdoor"
+  }
 }
-
-

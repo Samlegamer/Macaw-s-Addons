@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_drawer_counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:kousa_slab"
+          },
+          "B": {
+            "item": "mcwabnormals:stripped_kousa_double_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:stripped_kousa_double_drawer_counter"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "picket",
+        "pattern": [
+          "CBC",
+          "CAC"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "atmospheric:grimwood_planks"
+          },
+          "C": {
+            "item": "atmospheric:grimwood_log"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:grimwood_picket_fence",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

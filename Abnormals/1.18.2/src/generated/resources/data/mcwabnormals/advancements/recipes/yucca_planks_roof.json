@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:yucca_planks_roof"
+          ]
+        },
+        "criteria": {
+          "has_yucca_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "atmospheric:yucca_planks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:yucca_planks_roof"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_yucca_planks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

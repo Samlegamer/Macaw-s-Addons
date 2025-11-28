@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:redwood_bridge_pier"
+      "mcwbyg:redwood_bridge_pier"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_redwood_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:redwood_bridge_pier"
+        "recipe": "mcwbyg:redwood_bridge_pier"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_redwood_log",
       "has_the_recipe"
     ]
   ],

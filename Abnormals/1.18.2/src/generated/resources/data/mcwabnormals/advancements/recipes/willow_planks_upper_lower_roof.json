@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "environmental",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:willow_planks_upper_lower_roof"
+          ]
+        },
+        "criteria": {
+          "has_willow_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "environmental:willow_planks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:willow_planks_upper_lower_roof"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_willow_planks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

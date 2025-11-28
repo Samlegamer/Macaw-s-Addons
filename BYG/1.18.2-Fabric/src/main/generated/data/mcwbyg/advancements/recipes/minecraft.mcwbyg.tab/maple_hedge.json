@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:maple_hedge"
+      "mcwbyg:maple_hedge"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_maple_leaves": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:maple_hedge"
+        "recipe": "mcwbyg:maple_hedge"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_maple_leaves",
       "has_the_recipe"
     ]
   ],

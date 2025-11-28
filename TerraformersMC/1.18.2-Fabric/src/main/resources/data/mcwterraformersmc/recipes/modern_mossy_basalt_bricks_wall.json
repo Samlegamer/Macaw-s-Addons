@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,33 +9,21 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "modern",
-    
-    "pattern":
-    [
-		"ABA",
-		"AAA"
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "terrestria:mossy_basalt_cobblestone"
-        },    
-        
-        "B":
-        {
-            "item": "terrestria:mossy_basalt_bricks"
-        }
+  "group": "modern",
+  "key": {
+    "A": {
+      "item": "terrestria:mossy_basalt_cobblestone"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:modern_mossy_basalt_bricks_wall",
-        "count": 6
+    "B": {
+      "item": "terrestria:mossy_basalt_bricks"
     }
+  },
+  "pattern": [
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwterraformersmc:modern_mossy_basalt_bricks_wall"
+  }
 }
-
-

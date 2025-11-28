@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,33 +9,20 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "highley",
-    
-    "pattern":
-    [
-		"ABA",
-		"ABA"
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "minecraft:stick"
-        },    
-        
-        "B":
-        {
-            "item": "terrestria:cypress_log"
-        }
+  "group": "highley",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:cypress_highley_gate",
-        "count": 1
+    "B": {
+      "item": "terrestria:cypress_log"
     }
+  },
+  "pattern": [
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:cypress_highley_gate"
+  }
 }
-
-

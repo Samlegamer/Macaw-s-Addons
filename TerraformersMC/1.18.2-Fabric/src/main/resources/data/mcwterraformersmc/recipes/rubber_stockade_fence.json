@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,33 +9,21 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "stockade",
-    
-    "pattern":
-    [
-		"ABA",
-		"ABA"
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "terrestria:rubber_log"
-        },    
-        
-        "B":
-        {
-            "item": "terrestria:rubber_planks"
-        }
+  "group": "stockade",
+  "key": {
+    "A": {
+      "item": "terrestria:rubber_log"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:rubber_stockade_fence",
-        "count": 3
+    "B": {
+      "item": "terrestria:rubber_planks"
     }
+  },
+  "pattern": [
+    "ABA",
+    "BAB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:rubber_stockade_fence"
+  }
 }
-
-

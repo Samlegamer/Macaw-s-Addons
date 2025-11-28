@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,19 +9,22 @@
       ]
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "mcwstairs_platform",
-  "pattern" : [ " ZZ", " WW", "   " ],
-  "key" : {
-    "W" : {
-      "item" : "terrestria:rubber_log"
+  "group": "mcwstairs_platform",
+  "key": {
+    "A": {
+      "item": "terrestria:rubber_log"
     },
-    "Z" : {
-      "item" : "terrestria:rubber_slab"
+    "B": {
+      "item": "terrestria:rubber_slab"
     }
   },
-  "result" : {
-    "item" : "mcwterraformersmc:rubber_platform",
-    "count" : 12
+  "pattern": [
+    " BB",
+    " AA",
+    "   "
+  ],
+  "result": {
+    "count": 12,
+    "item": "mcwterraformersmc:rubber_platform"
   }
 }

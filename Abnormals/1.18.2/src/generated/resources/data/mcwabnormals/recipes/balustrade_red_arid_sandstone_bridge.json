@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "balustrade_bridges",
+        "pattern": [
+          "BBB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:red_arid_sandstone_slab"
+          },
+          "B": {
+            "item": "atmospheric:red_arid_sandstone_wall"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:balustrade_red_arid_sandstone_bridge",
+          "count": 5
+        }
+      }
+    }
+  ]
+}

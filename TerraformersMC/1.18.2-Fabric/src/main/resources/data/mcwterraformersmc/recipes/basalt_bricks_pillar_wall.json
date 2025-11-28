@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,33 +9,21 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "pillarwall",
-    
-    "pattern":
-    [
-		"AAA",
-		"B B"
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "terrestria:basalt_cobblestone"
-        },    
-        
-        "B":
-        {
-            "item": "terrestria:basalt_bricks"
-        }
+  "group": "pillarwall",
+  "key": {
+    "A": {
+      "item": "terrestria:basalt_cobblestone"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:basalt_bricks_pillar_wall",
-        "count": 5
+    "B": {
+      "item": "terrestria:basalt_bricks"
     }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 5,
+    "item": "mcwterraformersmc:basalt_bricks_pillar_wall"
+  }
 }
-
-

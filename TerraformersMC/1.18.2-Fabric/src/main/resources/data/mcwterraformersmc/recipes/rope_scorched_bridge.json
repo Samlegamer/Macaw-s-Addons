@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,30 +9,21 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "rope_bridges",
-    
-    "pattern": [
-    "F F",
-    "WWW"
-    ],
-    
-    "key":
-    {
-        "F":
-        {
-            "item": "minecraft:string"
-        },
-        
-        "W":
-        {
-            "item": "cinderscapes:scorched_slab"
-        }
+  "group": "rope_bridges",
+  "key": {
+    "A": {
+      "item": "cinderscapes:scorched_slab"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:rope_scorched_bridge",
-        "count": 4
+    "B": {
+      "item": "minecraft:string"
     }
+  },
+  "pattern": [
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:rope_scorched_bridge"
+  }
 }

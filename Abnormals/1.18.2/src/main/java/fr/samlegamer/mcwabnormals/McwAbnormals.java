@@ -2,9 +2,14 @@ package fr.samlegamer.mcwabnormals;
 
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.door.Doors;
+import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
+import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
+import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import fr.samlegamer.addonslib.path.Paths;
 import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.util.McwMod;
 import fr.samlegamer.addonslib.windows.Windows;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -12,9 +17,11 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import java.util.List;
@@ -29,7 +36,7 @@ import fr.samlegamer.addonslib.stairs.Stairs;
 import javax.annotation.Nonnull;
 
 @Mod(McwAbnormals.MODID)
-public class McwAbnormals
+public class McwAbnormals extends McwMod
 {
 	public static final String MODID = "mcwabnormals";
     private static final Logger LOGGER = LogManager.getLogger();
@@ -138,26 +145,82 @@ public class McwAbnormals
 		Windows.setRegistrationWoodModLoaded(WOOD_UAQUA, block, item, MCWABNORMALS_TAB, "upgrade_aquatic");
 		Windows.setRegistrationWoodModLoaded(WOOD_ENDER, block, item, MCWABNORMALS_TAB, "endergetic");
 
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::client);
+    	bus().addListener(this::clientSetup);
+        bus().addListener(this::commonSetup);
+        bus().addListener(this::dataSetup);
 		MinecraftForge.EVENT_BUS.register(MappingsFix.class);
     	LOGGER.info("Macaw's Abnormals Mod Finish !");
     }
-    
-    private void client(FMLClientSetupEvent e)
-    {
-		APIRenderTypes.initAllWood(e, MODID, WOOD_ATMO, Registration.getAllModTypeWood());
-		APIRenderTypes.initAllWood(e, MODID, WOOD_AUTU, Registration.getAllModTypeWood());
-		APIRenderTypes.initAllWood(e, MODID, WOOD_ENVI, Registration.getAllModTypeWood());
-		APIRenderTypes.initAllWood(e, MODID, WOOD_UAQUA, Registration.getAllModTypeWood());
-		APIRenderTypes.initAllWood(e, MODID, WOOD_ENDER, Registration.getAllModTypeWood());
 
-		APIRenderTypes.initAllLeave(e, MODID, LEAVES_ATMO);
-		APIRenderTypes.initAllLeave(e, MODID, LEAVES_AUTU);
-		APIRenderTypes.initAllLeave(e, MODID, LEAVES_ENVI);
-		APIRenderTypes.initAllLeave(e, MODID, LEAVES_UAQUA);
+    @Override
+    public void clientSetup(FMLClientSetupEvent e) {
+        APIRenderTypes.initAllWood(e, MODID, WOOD_ATMO, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(e, MODID, WOOD_AUTU, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(e, MODID, WOOD_ENVI, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(e, MODID, WOOD_UAQUA, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(e, MODID, WOOD_ENDER, Registration.getAllModTypeWood());
 
-		APIRenderTypes.initAllStone(e, MODID, ROCK_BB, Registration.getAllModTypeStone());
-		APIRenderTypes.initAllStone(e, MODID, ROCK_ATMO, Registration.getAllModTypeStone());
-		APIRenderTypes.initAllStone(e, MODID, ROCK_AUTU, Registration.getAllModTypeStone());
+        APIRenderTypes.initAllLeave(e, MODID, LEAVES_ATMO);
+        APIRenderTypes.initAllLeave(e, MODID, LEAVES_AUTU);
+        APIRenderTypes.initAllLeave(e, MODID, LEAVES_ENVI);
+        APIRenderTypes.initAllLeave(e, MODID, LEAVES_UAQUA);
+
+        APIRenderTypes.initAllStone(e, MODID, ROCK_BB, Registration.getAllModTypeStone());
+        APIRenderTypes.initAllStone(e, MODID, ROCK_ATMO, Registration.getAllModTypeStone());
+        APIRenderTypes.initAllStone(e, MODID, ROCK_AUTU, Registration.getAllModTypeStone());
+    }
+
+    @Override
+    public void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            McwLootTables.addBlockAllWood(MODID, WOOD_ATMO);
+            McwLootTables.addBlockAllWood(MODID, WOOD_AUTU);
+            McwLootTables.addBlockAllWood(MODID, WOOD_ENVI);
+            McwLootTables.addBlockAllWood(MODID, WOOD_UAQUA);
+            McwLootTables.addBlockAllWood(MODID, WOOD_ENDER);
+
+            McwLootTables.addBlockHedges(MODID, LEAVES_ATMO);
+            McwLootTables.addBlockHedges(MODID, LEAVES_AUTU);
+            McwLootTables.addBlockHedges(MODID, LEAVES_ENVI);
+            McwLootTables.addBlockHedges(MODID, LEAVES_UAQUA);
+
+            McwLootTables.addBlockAllStone(MODID, ROCK_BB);
+            McwLootTables.addBlockAllStone(MODID, ROCK_ATMO);
+            McwLootTables.addBlockAllStone(MODID, ROCK_AUTU);
+        });
+    }
+
+    @Override
+    public void dataSetup(GatherDataEvent gatherDataEvent) {
+        DataGenerator generator = gatherDataEvent.getGenerator();
+        ExistingFileHelper existingFileHelper = gatherDataEvent.getExistingFileHelper();
+
+        if(gatherDataEvent.includeServer())
+        {
+            McwBlockTags mcwBlockTags = new McwBlockTags(generator, MODID, existingFileHelper) {
+                @Override
+                protected void addTags() {
+                    addAllMcwTags(MODID, List.of(), ROCK_BB, List.of());
+                    addAllMcwTags(MODID, WOOD_ATMO, ROCK_ATMO, LEAVES_ATMO);
+                    addAllMcwTags(MODID, WOOD_AUTU, ROCK_AUTU, LEAVES_AUTU);
+                    addAllMcwTags(MODID, WOOD_ENVI, LEAVES_ENVI);
+                    addAllMcwTags(MODID, WOOD_ENDER);
+                    addAllMcwTags(MODID, WOOD_UAQUA, LEAVES_UAQUA);
+                }
+            };
+            generator.addProvider(new Recipes(generator));
+            generator.addProvider(mcwBlockTags);
+            generator.addProvider(new McwItemTags(generator, mcwBlockTags, MODID, existingFileHelper) {
+                @Override
+                protected void addTags() {
+                    addAllMcwTags(MODID, List.of(), ROCK_BB, List.of());
+                    addAllMcwTags(MODID, WOOD_ATMO, ROCK_ATMO, LEAVES_ATMO);
+                    addAllMcwTags(MODID, WOOD_AUTU, ROCK_AUTU, LEAVES_AUTU);
+                    addAllMcwTags(MODID, WOOD_ENVI, LEAVES_ENVI);
+                    addAllMcwTags(MODID, WOOD_ENDER);
+                    addAllMcwTags(MODID, WOOD_UAQUA, LEAVES_UAQUA);
+                }
+            });
+        }
     }
 }

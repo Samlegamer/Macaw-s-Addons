@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:blue_enchanted_upper_steep_roof"
+      "mcwbyg:blue_enchanted_upper_steep_roof"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_blue_enchanted_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:blue_enchanted_upper_steep_roof"
+        "recipe": "mcwbyg:blue_enchanted_upper_steep_roof"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_blue_enchanted_log",
       "has_the_recipe"
     ]
   ],

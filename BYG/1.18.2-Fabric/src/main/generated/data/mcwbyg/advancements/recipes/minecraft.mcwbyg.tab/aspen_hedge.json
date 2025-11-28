@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:aspen_hedge"
+      "mcwbyg:aspen_hedge"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_aspen_leaves": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:aspen_hedge"
+        "recipe": "mcwbyg:aspen_hedge"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_aspen_leaves",
       "has_the_recipe"
     ]
   ],

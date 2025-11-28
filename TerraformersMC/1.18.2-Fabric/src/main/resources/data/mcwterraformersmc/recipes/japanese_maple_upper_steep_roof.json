@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,31 +9,22 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "upper_steep",
-    
-    "pattern":
-    [
-		" W",
-		" W",
-        "WS"
-    ],
-    
-    "key":
-    {
-        "W":
-        {
-            "item": "terrestria:japanese_maple_log"
-        },
-		"S":
-        {
-            "item": "minecraft:stick"
-        }
+  "group": "upper_steep_roof",
+  "key": {
+    "A": {
+      "item": "terrestria:japanese_maple_log"
     },
-    
-    "result":
-    {
-        "item": "mcwterraformersmc:japanese_maple_upper_steep_roof",
-        "count": 3
+    "B": {
+      "item": "minecraft:stick"
     }
+  },
+  "pattern": [
+    " A",
+    " A",
+    "AB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:japanese_maple_upper_steep_roof"
+  }
 }

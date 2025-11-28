@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,34 +9,22 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "bark",
-	
-    "pattern":
-    [
-        "AB",
-        "BB",
-		"AB"
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "terrestria:yucca_palm_log"
-        },    
-        
-        "B":
-        {
-            "item": "minecraft:glass"
-        }
+  "group": "bark",
+  "key": {
+    "A": {
+      "item": "terrestria:yucca_palm_log"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:yucca_palm_bark_glass_door",
-        "count": 3
+    "B": {
+      "item": "minecraft:glass"
     }
+  },
+  "pattern": [
+    "AB",
+    "BB",
+    "AB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:yucca_palm_bark_glass_door"
+  }
 }
-
-

@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:rosewood_hedge"
+          ]
+        },
+        "criteria": {
+          "has_rosewood_leaves": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "atmospheric:rosewood_leaves"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:rosewood_hedge"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_rosewood_leaves",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,33 +9,21 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "curved_gate",
-    
-    "pattern":
-    [
-		"B A",
-		"BAA"
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "cinderscapes:umbral_planks"
-        },    
-        
-        "B":
-        {
-            "item": "cinderscapes:umbral_stem"
-        }
+  "group": "curved_gate",
+  "key": {
+    "A": {
+      "item": "cinderscapes:umbral_planks"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:umbral_curved_gate",
-        "count": 4
+    "B": {
+      "item": "cinderscapes:umbral_stem"
     }
+  },
+  "pattern": [
+    "B A",
+    "BAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:umbral_curved_gate"
+  }
 }
-
-

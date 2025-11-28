@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "upgrade_aquatic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "end_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwabnormals:river_table"
+          },
+          "B": {
+            "item": "upgrade_aquatic:river_log"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:river_end_table"
+        }
+      }
+    }
+  ]
+}

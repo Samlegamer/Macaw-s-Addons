@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:stripped_grimwood_bookshelf"
+          ]
+        },
+        "criteria": {
+          "has_stripped_grimwood_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "atmospheric:stripped_grimwood_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:stripped_grimwood_bookshelf"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_stripped_grimwood_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

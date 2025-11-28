@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:mahogany_bulk_stairs"
+      "mcwbyg:mahogany_bulk_stairs"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_mahogany_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:mahogany_bulk_stairs"
+        "recipe": "mcwbyg:mahogany_bulk_stairs"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_mahogany_log",
       "has_the_recipe"
     ]
   ],

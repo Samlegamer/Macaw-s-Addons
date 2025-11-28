@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,27 +9,20 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "shutters",
-	
-    "pattern":
-    [
-        "B",
-        "B",
-        "B"		
-    ],
-    
-    "key":
-    { 
-        "B":
-        {
-            "item": "terrestria:hemlock_trapdoor"
-        }
-    },
-    
-    "result":
+  "group": "shutters",
+  "ingredients": [
     {
-        "item":  "mcwterraformersmc:hemlock_shutter",
-        "count": 3
+      "item": "terrestria:hemlock_trapdoor"
+    },
+    {
+      "item": "terrestria:hemlock_trapdoor"
+    },
+    {
+      "item": "terrestria:hemlock_trapdoor"
     }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:hemlock_shutter"
+  }
 }

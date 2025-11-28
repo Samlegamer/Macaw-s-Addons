@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,19 +9,20 @@
       ]
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "curtain_rods",
-  "pattern" : [ "ABA" ],
-  "key" : {
-    "A" : {
-      "item" : "minecraft:stick"
+  "group": "curtain_rods",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
     },
-    "B" : {
-      "item" : "traverse:fir_log"
+    "B": {
+      "item": "traverse:fir_log"
     }
   },
-  "result" : {
-    "item" : "mcwterraformersmc:fir_curtain_rod",
-    "count" : 5
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 5,
+    "item": "mcwterraformersmc:fir_curtain_rod"
   }
 }

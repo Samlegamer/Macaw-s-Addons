@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:sythian_bamboo_door"
+      "mcwbyg:sythian_bamboo_door"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_sythian_planks": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:sythian_bamboo_door"
+        "recipe": "mcwbyg:sythian_bamboo_door"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_sythian_planks",
       "has_the_recipe"
     ]
   ],

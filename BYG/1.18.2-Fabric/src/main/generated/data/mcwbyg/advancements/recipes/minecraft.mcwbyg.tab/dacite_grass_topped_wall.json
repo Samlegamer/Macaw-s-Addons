@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:dacite_grass_topped_wall"
+      "mcwbyg:dacite_grass_topped_wall"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_dacite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:dacite_grass_topped_wall"
+        "recipe": "mcwbyg:dacite_grass_topped_wall"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_dacite",
       "has_the_recipe"
     ]
   ],

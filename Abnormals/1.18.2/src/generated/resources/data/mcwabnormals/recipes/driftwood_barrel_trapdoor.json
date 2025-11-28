@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "upgrade_aquatic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "barrel_trapdoors",
+        "pattern": [
+          " A ",
+          "ABA",
+          " A "
+        ],
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:driftwood_planks"
+          },
+          "B": {
+            "item": "minecraft:barrel"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:driftwood_barrel_trapdoor",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

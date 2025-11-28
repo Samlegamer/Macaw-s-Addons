@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,34 +9,22 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "barn_glass",
-    
-    "pattern":
-    [
-        "BB",
-        "AA",
-        "AA"                
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "terrestria:redwood_planks"
-        },    
-        
-        "B":
-        {
-            "item": "minecraft:glass_pane"
-        }
+  "group": "barn_glass",
+  "key": {
+    "A": {
+      "item": "terrestria:redwood_planks"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:redwood_barn_glass_door",
-        "count": 3
+    "B": {
+      "item": "minecraft:glass_pane"
     }
+  },
+  "pattern": [
+    "BB",
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:redwood_barn_glass_door"
+  }
 }
-
-

@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:brown_oak_hedge"
+      "mcwbyg:brown_oak_hedge"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_brown_oak_leaves": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:brown_oak_hedge"
+        "recipe": "mcwbyg:brown_oak_hedge"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_brown_oak_leaves",
       "has_the_recipe"
     ]
   ],

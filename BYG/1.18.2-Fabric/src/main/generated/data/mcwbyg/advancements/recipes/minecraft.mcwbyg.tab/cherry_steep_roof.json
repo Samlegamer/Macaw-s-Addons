@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:cherry_steep_roof"
+      "mcwbyg:cherry_steep_roof"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_cherry_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:cherry_steep_roof"
+        "recipe": "mcwbyg:cherry_steep_roof"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_cherry_log",
       "has_the_recipe"
     ]
   ],

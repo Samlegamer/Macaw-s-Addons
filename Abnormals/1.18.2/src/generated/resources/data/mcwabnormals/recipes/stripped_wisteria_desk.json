@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "environmental",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "desk",
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "key": {
+          "A": {
+            "item": "environmental:stripped_wisteria_log"
+          },
+          "B": {
+            "item": "environmental:wisteria_fence"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:stripped_wisteria_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

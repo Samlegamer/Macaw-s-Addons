@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "autumnity",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "grass_topped",
+        "pattern": [
+          "BCB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "autumnity:snail_shell_bricks"
+          },
+          "B": {
+            "item": "autumnity:snail_shell_tiles"
+          },
+          "C": {
+            "item": "minecraft:dirt"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:snail_shell_tiles_grass_topped_wall",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

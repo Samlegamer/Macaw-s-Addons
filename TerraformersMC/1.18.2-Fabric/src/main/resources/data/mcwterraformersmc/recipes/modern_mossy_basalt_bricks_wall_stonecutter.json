@@ -1,5 +1,7 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,11 +10,8 @@
       ]
     }
   ],
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "terrestria:mossy_basalt_bricks"
-    },
-    "result": "mcwterraformersmc:modern_mossy_basalt_bricks_wall",
-    "group": "fences",
-    "count": 1
+  "ingredient": {
+    "item": "terrestria:mossy_basalt_bricks"
+  },
+  "result": "mcwterraformersmc:modern_mossy_basalt_bricks_wall"
 }

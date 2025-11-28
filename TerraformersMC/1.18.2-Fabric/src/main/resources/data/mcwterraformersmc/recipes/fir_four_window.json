@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,33 +9,22 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "windows_four",
-	
-    "pattern":
-    [
-        "AAA",
-        "ABA",
-        "AAA"                
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "mcwwindows:window_centre_bar_base"
-        },    
-		
-        
-        "B":
-        {
-            "item": "traverse:fir_log"
-        }
+  "group": "windows_four",
+  "key": {
+    "A": {
+      "item": "mcwwindows:window_centre_bar_base"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:fir_four_window",
-        "count": 8
+    "B": {
+      "item": "traverse:fir_log"
     }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 8,
+    "item": "mcwterraformersmc:fir_four_window"
+  }
 }

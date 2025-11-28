@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "upgrade_aquatic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:river_planks_top_roof"
+          ]
+        },
+        "criteria": {
+          "has_river_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "upgrade_aquatic:river_planks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:river_planks_top_roof"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_river_planks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

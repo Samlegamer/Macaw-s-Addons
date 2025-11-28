@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "upgrade_aquatic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:stripped_river_kitchen_cabinet"
+          ]
+        },
+        "criteria": {
+          "has_stripped_river_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "upgrade_aquatic:stripped_river_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:stripped_river_kitchen_cabinet"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_stripped_river_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

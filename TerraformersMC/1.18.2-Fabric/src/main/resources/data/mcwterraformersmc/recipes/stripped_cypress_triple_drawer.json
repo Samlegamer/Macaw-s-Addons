@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,34 +9,22 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "triple_drawer",
-    "pattern":
-    [
-        "AAA",
-        "ABA",
-		"BAB"
-    ],
-    
-    "key":
-    { 
-	    "A":
-        {
-            "item": "terrestria:stripped_cypress_log"
-        }, 
-		
-        "B":
-        {
-            "item": "mcwfurnitures:cabinet_drawer"
-        }
-		
+  "group": "triple_drawer",
+  "key": {
+    "A": {
+      "item": "terrestria:stripped_cypress_log"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_cypress_triple_drawer",
-        "count": 4
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
     }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "BAB"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:stripped_cypress_triple_drawer"
+  }
 }
-
-

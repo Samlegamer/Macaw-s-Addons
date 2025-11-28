@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,29 +9,18 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "hedge",
-
-    "pattern":
-    [
-		"AA",
-		"AA"
-    ],
-    
-    "key":
-    { 
-
-        "A":
-        {
-            "item": "traverse:fir_leaves"
-        }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:fir_hedge",
-        "count": 4
+  "group": "hedge",
+  "key": {
+    "A": {
+      "item": "traverse:fir_leaves"
     }
+  },
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:fir_hedge"
+  }
 }
-
-

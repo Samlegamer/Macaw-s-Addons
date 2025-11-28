@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:green_enchanted_planks_roof"
+      "mcwbyg:green_enchanted_planks_roof"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_green_enchanted_planks": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:green_enchanted_planks_roof"
+        "recipe": "mcwbyg:green_enchanted_planks_roof"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_green_enchanted_planks",
       "has_the_recipe"
     ]
   ],

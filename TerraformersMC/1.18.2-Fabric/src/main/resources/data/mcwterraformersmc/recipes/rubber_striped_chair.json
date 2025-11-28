@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,38 +9,24 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "striped_chair",
-    "pattern":
-    [
-        " A",
-        "BC",
-		"CC"
-    ],
-    
-    "key":
-    { 
-	    "A":
-        {
-            "item": "terrestria:rubber_log"
-        }, 
-		
-        "B":
-        {
-            "item": "terrestria:rubber_slab"
-        },
-		
-		"C":
-        {
-            "item": "terrestria:rubber_fence"
-        }
+  "group": "striped_chair",
+  "key": {
+    "A": {
+      "item": "terrestria:rubber_log"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:rubber_striped_chair",
-        "count": 1
+    "B": {
+      "item": "terrestria:rubber_slab"
+    },
+    "C": {
+      "item": "terrestria:rubber_fence"
     }
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:rubber_striped_chair"
+  }
 }
-
-

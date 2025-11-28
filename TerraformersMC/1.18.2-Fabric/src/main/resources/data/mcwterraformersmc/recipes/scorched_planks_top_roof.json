@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,29 +9,20 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "top",
-    
-    "pattern":
-    [
-        "WSW"
-    ],
-    
-    "key":
-    {
-        "W":
-        {
-            "item": "cinderscapes:scorched_planks"
-        },
-		"S":
-        {
-            "item": "minecraft:stick"
-        }
+  "group": "planks_top_roof",
+  "key": {
+    "A": {
+      "item": "cinderscapes:scorched_planks"
     },
-    
-    "result":
-    {
-        "item": "mcwterraformersmc:scorched_planks_top_roof",
-        "count": 2
+    "B": {
+      "item": "minecraft:stick"
     }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwterraformersmc:scorched_planks_top_roof"
+  }
 }

@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:blue_enchanted_desk"
+      "mcwbyg:blue_enchanted_desk"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_blue_enchanted_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:blue_enchanted_desk"
+        "recipe": "mcwbyg:blue_enchanted_desk"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_blue_enchanted_log",
       "has_the_recipe"
     ]
   ],

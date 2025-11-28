@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:holly_log_bridge_middle"
+      "mcwbyg:holly_log_bridge_middle"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_holly_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:holly_log_bridge_middle"
+        "recipe": "mcwbyg:holly_log_bridge_middle"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_holly_log",
       "has_the_recipe"
     ]
   ],

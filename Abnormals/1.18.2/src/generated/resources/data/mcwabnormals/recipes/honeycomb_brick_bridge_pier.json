@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "buzzier_bees",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "buzzier_bees:honeycomb_bricks"
+          },
+          "B": {
+            "item": "buzzier_bees:honeycomb_brick_wall"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:honeycomb_brick_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

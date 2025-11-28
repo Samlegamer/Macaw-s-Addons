@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,31 +9,22 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "steep",
-    
-    "pattern":
-    [
-        " W",
-		"WW",
-        "WS"
-    ],
-    
-    "key":
-    {
-        "W":
-        {
-            "item": "terrestria:redwood_log"
-        },
-		"S":
-        {
-            "item": "minecraft:stick"
-        }
+  "group": "steep_roof",
+  "key": {
+    "A": {
+      "item": "terrestria:redwood_log"
     },
-    
-    "result":
-    {
-        "item": "mcwterraformersmc:redwood_steep_roof",
-        "count": 4
+    "B": {
+      "item": "minecraft:stick"
     }
+  },
+  "pattern": [
+    " A",
+    "AA",
+    "AB"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:redwood_steep_roof"
+  }
 }

@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bookshelf_cupboard",
+        "pattern": [
+          "AAA",
+          "BAC",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:grimwood_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          },
+          "C": {
+            "item": "minecraft:book"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:grimwood_bookshelf_cupboard",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:redwood_modern_door"
+      "mcwbyg:redwood_modern_door"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_redwood_planks": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:redwood_modern_door"
+        "recipe": "mcwbyg:redwood_modern_door"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_redwood_planks",
       "has_the_recipe"
     ]
   ],

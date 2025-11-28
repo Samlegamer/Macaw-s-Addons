@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,16 +9,19 @@
       ]
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "mcwstairs_railing",
-  "pattern" : [ "W  ", "WW ", "WWW" ],
-  "key" : {
-    "W" : {
-      "item" : "mcwterraformersmc:sakura_balcony"
+  "group": "mcwstairs_railing",
+  "key": {
+    "A": {
+      "item": "mcwterraformersmc:sakura_balcony"
     }
   },
-  "result" : {
-    "item" : "mcwterraformersmc:sakura_railing",
-    "count" : 6
+  "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwterraformersmc:sakura_railing"
   }
 }

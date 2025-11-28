@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,27 +9,18 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "covered_desk",
-    "pattern":
-    [
-        "AAA",
-        "A A"                
-    ],
-    
-    "key":
-    { 
-	    "A":
-        {
-            "item": "cinderscapes:stripped_umbral_stem"
-        }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_umbral_covered_desk",
-        "count": 2
+  "group": "covered_desk",
+  "key": {
+    "A": {
+      "item": "cinderscapes:stripped_umbral_stem"
     }
+  },
+  "pattern": [
+    "AAA",
+    "A A"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwterraformersmc:stripped_umbral_covered_desk"
+  }
 }
-
-

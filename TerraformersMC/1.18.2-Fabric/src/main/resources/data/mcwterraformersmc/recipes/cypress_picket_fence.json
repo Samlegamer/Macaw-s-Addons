@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,38 +9,24 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "picket",
-    
-    "pattern":
-    [
-		"CBC",
-		"CAC"
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "minecraft:stick"
-        },  
-
-        "B":
-        {
-            "item": "terrestria:cypress_planks"
-        },   		
-        
-        "C":
-        {
-            "item": "terrestria:cypress_log"
-        }
+  "group": "picket",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:cypress_picket_fence",
-        "count": 3
+    "B": {
+      "item": "terrestria:cypress_planks"
+    },
+    "C": {
+      "item": "terrestria:cypress_log"
     }
+  },
+  "pattern": [
+    "CBC",
+    "CAC"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:cypress_picket_fence"
+  }
 }
-
-

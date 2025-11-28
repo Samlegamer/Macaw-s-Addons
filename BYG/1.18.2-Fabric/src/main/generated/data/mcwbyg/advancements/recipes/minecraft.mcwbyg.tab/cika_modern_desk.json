@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:cika_modern_desk"
+      "mcwbyg:cika_modern_desk"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_cika_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:cika_modern_desk"
+        "recipe": "mcwbyg:cika_modern_desk"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_cika_log",
       "has_the_recipe"
     ]
   ],

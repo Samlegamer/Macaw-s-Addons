@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,34 +9,22 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "barn",
-    
-    "pattern":
-    [
-        "BB",
-	    "AA",
-        "AA"               
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "terrestria:hemlock_planks"
-        },    
-        
-        "B":
-        {
-            "item": "minecraft:stick"
-        }
+  "group": "barn",
+  "key": {
+    "A": {
+      "item": "terrestria:hemlock_planks"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:hemlock_barn_door",
-        "count": 2
+    "B": {
+      "item": "minecraft:stick"
     }
+  },
+  "pattern": [
+    "BB",
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwterraformersmc:hemlock_barn_door"
+  }
 }
-
-

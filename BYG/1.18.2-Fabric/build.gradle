@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.10-SNAPSHOT'
+	id 'fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 }
 
@@ -19,7 +19,22 @@ repositories {
         name = "CurseMaven"
         url = "https://www.cursemaven.com"
     }
-    maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+    maven {
+        name "jTDev MavenReleases"
+        url "https://maven.jt-dev.tech/releases"
+    }
+}
+
+loom {
+	splitEnvironmentSourceSets()
+
+	mods {
+        "template-mod" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+
 }
 
 fabricApi {
@@ -30,7 +45,7 @@ fabricApi {
 
 dependencies {
 	// To change the versions see the gradle.properties file
-	minecraft "net.minecraft:minecraft:${project.minecraft_version}"
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
@@ -49,8 +64,8 @@ dependencies {
 
     modImplementation "curse.maven:oh-the-biomes-youll-go-fabric-391378:${byg_version}"
     modImplementation "curse.maven:terrablender-fabric-565956:${terrablender_version}"
-    include implementation("com.electronwill.night-config:toml:${nightconfig_version}")
-    include implementation("com.electronwill.night-config:core:${nightconfig_version}")
+    modRuntimeOnly("com.electronwill.night-config:toml:${nightconfig_version}")
+    modRuntimeOnly("com.electronwill.night-config:core:${nightconfig_version}")
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
@@ -61,7 +76,7 @@ processResources {
 	inputs.property "version", project.version
 
 	filesMatching("fabric.mod.json") {
-		expand project.properties
+        expand project.properties
 		expand "version": inputs.properties.version
 	}
 }

@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,29 +9,20 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "wooden_piers",
-    
-    "pattern": [
-    "WFW"
-    ],
-    
-    "key":
-    {
-        "F":
-        {
-            "item": "terrestria:rainbow_eucalyptus_fence"
-        },
-        
-        "W":
-        {
-            "item": "terrestria:rainbow_eucalyptus_log"
-        }
+  "group": "wooden_piers",
+  "key": {
+    "A": {
+      "item": "terrestria:rainbow_eucalyptus_log"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:rainbow_eucalyptus_bridge_pier",
-        "count": 3
+    "B": {
+      "item": "terrestria:rainbow_eucalyptus_fence"
     }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:rainbow_eucalyptus_bridge_pier"
+  }
 }

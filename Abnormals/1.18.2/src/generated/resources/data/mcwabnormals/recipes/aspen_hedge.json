@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "hedge",
+        "pattern": [
+          "AA",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:aspen_leaves"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:aspen_hedge",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

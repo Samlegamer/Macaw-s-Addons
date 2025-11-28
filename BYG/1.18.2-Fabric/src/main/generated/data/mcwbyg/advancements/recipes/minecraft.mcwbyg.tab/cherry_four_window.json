@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:cherry_four_window"
+      "mcwbyg:cherry_four_window"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_cherry_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:cherry_four_window"
+        "recipe": "mcwbyg:cherry_four_window"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_cherry_log",
       "has_the_recipe"
     ]
   ],

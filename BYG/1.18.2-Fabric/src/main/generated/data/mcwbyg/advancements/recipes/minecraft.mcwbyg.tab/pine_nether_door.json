@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:pine_nether_door"
+      "mcwbyg:pine_nether_door"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_pine_planks": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:pine_nether_door"
+        "recipe": "mcwbyg:pine_nether_door"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_pine_planks",
       "has_the_recipe"
     ]
   ],

@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,33 +9,20 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "coffee_table",
-    "pattern":
-    [
-        "A",
-        "B"                
-    ],
-    
-    "key":
-    { 
-	    "A":
-        {
-            "item": "terrestria:cypress_log"
-        }, 
-		
-		
-        "B":
-        {
-            "item": "terrestria:cypress_fence"
-        }
+  "group": "coffee_table",
+  "key": {
+    "A": {
+      "item": "terrestria:cypress_log"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:cypress_coffee_table",
-        "count": 1
+    "B": {
+      "item": "terrestria:cypress_fence"
     }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:cypress_coffee_table"
+  }
 }
-
-

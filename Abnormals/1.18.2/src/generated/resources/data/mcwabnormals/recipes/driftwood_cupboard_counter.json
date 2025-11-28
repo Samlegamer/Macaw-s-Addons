@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "upgrade_aquatic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "cupboard_counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:driftwood_slab"
+          },
+          "B": {
+            "item": "mcwabnormals:driftwood_wardrobe"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:driftwood_cupboard_counter"
+        }
+      }
+    }
+  ]
+}

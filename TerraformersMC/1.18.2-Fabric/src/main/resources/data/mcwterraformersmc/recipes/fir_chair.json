@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,38 +9,24 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "chair",
-    "pattern":
-    [
-        " A",
-        "BA",
-        "CC"		
-    ],
-    
-    "key":
-    { 
-	    "A":
-        {
-            "item": "traverse:fir_log"
-        }, 
-		
-        "B":
-        {
-            "item": "traverse:fir_slab"
-        },
-		
-		"C":
-        {
-            "item": "traverse:fir_fence"
-        }
+  "group": "chair",
+  "key": {
+    "A": {
+      "item": "traverse:fir_log"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:fir_chair",
-        "count": 1
+    "B": {
+      "item": "traverse:fir_slab"
+    },
+    "C": {
+      "item": "traverse:fir_fence"
     }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:fir_chair"
+  }
 }
-
-

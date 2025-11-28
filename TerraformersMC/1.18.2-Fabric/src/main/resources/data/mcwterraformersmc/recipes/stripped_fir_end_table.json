@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,33 +9,20 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "end_table",
-    "pattern":
-    [
-        "A",
-        "B"                
-    ],
-    
-    "key":
-    { 
-	    "A":
-        {
-            "item": "mcwterraformersmc:stripped_fir_table"
-        }, 
-		
-		
-        "B":
-        {
-            "item": "traverse:stripped_fir_log"
-        }
+  "group": "end_table",
+  "key": {
+    "A": {
+      "item": "mcwterraformersmc:stripped_fir_table"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_fir_end_table",
-        "count": 1
+    "B": {
+      "item": "traverse:stripped_fir_log"
     }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:stripped_fir_end_table"
+  }
 }
-
-

@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:red_arid_sandstone_upper_steep_roof"
+          ]
+        },
+        "criteria": {
+          "has_red_arid_sandstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "atmospheric:red_arid_sandstone"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:red_arid_sandstone_upper_steep_roof"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_red_arid_sandstone",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

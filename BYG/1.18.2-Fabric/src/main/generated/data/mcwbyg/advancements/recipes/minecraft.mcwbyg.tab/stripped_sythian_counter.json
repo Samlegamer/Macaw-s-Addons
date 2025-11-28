@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:stripped_sythian_counter"
+      "mcwbyg:stripped_sythian_counter"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_stripped_sythian_stem": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:stripped_sythian_counter"
+        "recipe": "mcwbyg:stripped_sythian_counter"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_stripped_sythian_stem",
       "has_the_recipe"
     ]
   ],

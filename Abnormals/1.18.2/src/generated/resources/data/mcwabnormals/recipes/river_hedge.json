@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "upgrade_aquatic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "hedge",
+        "pattern": [
+          "AA",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:river_leaves"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:river_hedge",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:polished_travertine_bridge_stair"
+      "mcwbyg:polished_travertine_bridge_stair"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_polished_travertine": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:polished_travertine_bridge_stair"
+        "recipe": "mcwbyg:polished_travertine_bridge_stair"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_polished_travertine",
       "has_the_recipe"
     ]
   ],

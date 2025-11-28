@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "environmental",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:willow_modern_door"
+          ]
+        },
+        "criteria": {
+          "has_willow_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "environmental:willow_planks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:willow_modern_door"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_willow_planks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

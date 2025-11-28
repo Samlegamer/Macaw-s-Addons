@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:dacite_bricks_bridge_stair"
+      "mcwbyg:dacite_bricks_bridge_stair"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_dacite_bricks": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:dacite_bricks_bridge_stair"
+        "recipe": "mcwbyg:dacite_bricks_bridge_stair"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_dacite_bricks",
       "has_the_recipe"
     ]
   ],

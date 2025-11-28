@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,34 +9,21 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "cottage",
-    
-    "pattern":
-    [
-        "A",
-        "B",
-        "A"                
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "terrestria:yucca_palm_planks"
-        },    
-        
-        "B":
-        {
-            "item": "mcwdoors:print_spruce"
-        }
+  "group": "spruce",
+  "key": {
+    "A": {
+      "item": "terrestria:yucca_palm_planks"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:yucca_palm_cottage_door",
-        "count": 1
+    "B": {
+      "item": "mcwdoors:print_spruce"
     }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:yucca_palm_cottage_door"
+  }
 }
-
-

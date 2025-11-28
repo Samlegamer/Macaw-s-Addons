@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:purpur_stone_bridge"
+      "mcwbyg:purpur_stone_bridge"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_purpur_stone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:purpur_stone_bridge"
+        "recipe": "mcwbyg:purpur_stone_bridge"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_purpur_stone",
       "has_the_recipe"
     ]
   ],

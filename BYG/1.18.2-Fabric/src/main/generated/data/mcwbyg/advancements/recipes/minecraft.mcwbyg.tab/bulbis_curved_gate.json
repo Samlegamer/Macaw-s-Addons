@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:bulbis_curved_gate"
+      "mcwbyg:bulbis_curved_gate"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_bulbis_planks": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:bulbis_curved_gate"
+        "recipe": "mcwbyg:bulbis_curved_gate"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_bulbis_planks",
       "has_the_recipe"
     ]
   ],

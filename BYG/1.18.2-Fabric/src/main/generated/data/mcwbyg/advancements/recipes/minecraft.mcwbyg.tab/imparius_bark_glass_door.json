@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:imparius_bark_glass_door"
+      "mcwbyg:imparius_bark_glass_door"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_imparius_stem": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:imparius_bark_glass_door"
+        "recipe": "mcwbyg:imparius_bark_glass_door"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_imparius_stem",
       "has_the_recipe"
     ]
   ],

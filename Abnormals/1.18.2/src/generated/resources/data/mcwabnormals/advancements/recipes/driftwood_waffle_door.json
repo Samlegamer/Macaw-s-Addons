@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "upgrade_aquatic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:driftwood_waffle_door"
+          ]
+        },
+        "criteria": {
+          "has_driftwood_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "upgrade_aquatic:driftwood_planks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:driftwood_waffle_door"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_driftwood_planks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

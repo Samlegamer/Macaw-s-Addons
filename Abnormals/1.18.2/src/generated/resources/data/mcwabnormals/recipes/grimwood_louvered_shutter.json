@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "atmospheric:grimwood_slab"
+          },
+          {
+            "item": "atmospheric:grimwood_slab"
+          },
+          {
+            "item": "atmospheric:grimwood_slab"
+          }
+        ],
+        "result": {
+          "item": "mcwabnormals:grimwood_louvered_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

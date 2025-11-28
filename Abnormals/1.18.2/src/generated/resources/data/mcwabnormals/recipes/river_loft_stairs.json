@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "upgrade_aquatic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "loft_stairs",
+        "pattern": [
+          "A  ",
+          " A ",
+          "  A"
+        ],
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:stripped_river_log"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:river_loft_stairs",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

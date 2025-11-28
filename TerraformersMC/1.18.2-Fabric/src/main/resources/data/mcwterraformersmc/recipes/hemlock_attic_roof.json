@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,31 +9,21 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "attic",
-    
-    "pattern":
-    [
-        " W",
-        "WG"
-    ],
-    
-    "key":
-    {
-        "W":
-        {
-            "item": "terrestria:hemlock_log"
-        },
-		"G":
-        {
-            "item": "minecraft:glass"
-        }
+  "group": "attic_roof",
+  "key": {
+    "A": {
+      "item": "terrestria:hemlock_log"
     },
-
-    
-    "result":
-    {
-        "item": "mcwterraformersmc:hemlock_attic_roof",
-        "count": 2
+    "B": {
+      "item": "minecraft:glass"
     }
+  },
+  "pattern": [
+    " A",
+    "AB"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwterraformersmc:hemlock_attic_roof"
+  }
 }

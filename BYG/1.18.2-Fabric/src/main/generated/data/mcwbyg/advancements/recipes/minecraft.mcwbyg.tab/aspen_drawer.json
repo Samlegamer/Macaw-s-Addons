@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:aspen_drawer"
+      "mcwbyg:aspen_drawer"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_aspen_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:aspen_drawer"
+        "recipe": "mcwbyg:aspen_drawer"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_aspen_log",
       "has_the_recipe"
     ]
   ],

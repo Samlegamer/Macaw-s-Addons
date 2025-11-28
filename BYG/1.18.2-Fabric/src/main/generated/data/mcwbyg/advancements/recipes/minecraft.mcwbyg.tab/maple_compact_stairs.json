@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:maple_compact_stairs"
+      "mcwbyg:maple_compact_stairs"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_maple_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:maple_compact_stairs"
+        "recipe": "mcwbyg:maple_compact_stairs"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_maple_log",
       "has_the_recipe"
     ]
   ],

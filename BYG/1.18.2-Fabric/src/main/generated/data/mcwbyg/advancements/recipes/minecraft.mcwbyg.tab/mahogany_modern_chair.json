@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:mahogany_modern_chair"
+      "mcwbyg:mahogany_modern_chair"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_mahogany_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:mahogany_modern_chair"
+        "recipe": "mcwbyg:mahogany_modern_chair"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_mahogany_log",
       "has_the_recipe"
     ]
   ],

@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,32 +9,20 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "double_drawer_counter",
-    "pattern":
-    [
-        "A",
-        "B"	
-    ],
-    
-    "key":
-    { 
-	    "A":
-        {
-            "item": "cinderscapes:umbral_slab"
-        }, 
-		
-        "B":
-        {
-            "item": "mcwterraformersmc:stripped_umbral_double_drawer"
-        }
+  "group": "double_drawer_counter",
+  "key": {
+    "A": {
+      "item": "cinderscapes:umbral_slab"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_umbral_double_drawer_counter",
-        "count": 1
+    "B": {
+      "item": "mcwterraformersmc:stripped_umbral_double_drawer"
     }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:stripped_umbral_double_drawer_counter"
+  }
 }
-
-

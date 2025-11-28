@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:rainbow_eucalyptus_lower_triple_drawer"
+      "mcwbyg:rainbow_eucalyptus_lower_triple_drawer"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_rainbow_eucalyptus_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:rainbow_eucalyptus_lower_triple_drawer"
+        "recipe": "mcwbyg:rainbow_eucalyptus_lower_triple_drawer"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_rainbow_eucalyptus_log",
       "has_the_recipe"
     ]
   ],

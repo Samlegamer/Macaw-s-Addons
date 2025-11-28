@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:jacaranda_loft_stairs"
+      "mcwbyg:jacaranda_loft_stairs"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_jacaranda_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:jacaranda_loft_stairs"
+        "recipe": "mcwbyg:jacaranda_loft_stairs"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_jacaranda_log",
       "has_the_recipe"
     ]
   ],

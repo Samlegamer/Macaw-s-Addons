@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "log_stairs",
+        "pattern": [
+          "  A",
+          " AA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwabnormals:kousa_log_bridge_middle"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:kousa_log_bridge_stair",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

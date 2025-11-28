@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "environmental",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "log_bridges",
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "environmental:wisteria_slab"
+          },
+          "B": {
+            "item": "environmental:wisteria_fence"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:wisteria_log_bridge_middle",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

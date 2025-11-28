@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:imparius_bulk_stairs"
+      "mcwbyg:imparius_bulk_stairs"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_imparius_stem": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:imparius_bulk_stairs"
+        "recipe": "mcwbyg:imparius_bulk_stairs"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_imparius_stem",
       "has_the_recipe"
     ]
   ],

@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,32 +9,22 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "windows",
-	
-    "pattern":
-    [
-        " A ",
-        "ABA",
-        " A "                
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "mcwwindows:window_base"
-        },    
-        
-        "B":
-        {
-            "item": "cinderscapes:stripped_umbral_stem"
-        }
+  "group": "windows",
+  "key": {
+    "A": {
+      "item": "mcwwindows:window_base"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_umbral_log_window",
-        "count": 4
+    "B": {
+      "item": "cinderscapes:stripped_umbral_stem"
     }
+  },
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:stripped_umbral_log_window"
+  }
 }

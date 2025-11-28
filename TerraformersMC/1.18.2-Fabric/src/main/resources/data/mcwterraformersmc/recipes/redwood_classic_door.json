@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,34 +9,21 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "classic",
-    
-    "pattern":
-    [
-        "A",
-        "B",
-        "A"                
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "terrestria:redwood_planks"
-        },    
-        
-        "B":
-        {
-            "item": "mcwdoors:print_oak"
-        }
+  "group": "oak",
+  "key": {
+    "A": {
+      "item": "terrestria:redwood_planks"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:redwood_classic_door",
-        "count": 1
+    "B": {
+      "item": "mcwdoors:print_oak"
     }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:redwood_classic_door"
+  }
 }
-
-

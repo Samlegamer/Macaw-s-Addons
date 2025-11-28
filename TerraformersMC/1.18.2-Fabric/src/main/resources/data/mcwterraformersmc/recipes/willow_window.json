@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,32 +9,22 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "windows",
-	
-    "pattern":
-    [
-        " A ",
-        "ABA",
-        " A "                
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "mcwwindows:window_base"
-        },    
-        
-        "B":
-        {
-            "item": "terrestria:willow_log"
-        }
+  "group": "windows",
+  "key": {
+    "A": {
+      "item": "mcwwindows:window_base"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:willow_window",
-        "count": 4
+    "B": {
+      "item": "terrestria:willow_log"
     }
+  },
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:willow_window"
+  }
 }

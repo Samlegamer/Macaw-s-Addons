@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "autumnity",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "coffee_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "autumnity:maple_log"
+          },
+          "B": {
+            "item": "autumnity:maple_fence"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:maple_coffee_table"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "upgrade_aquatic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "rail_bridges",
+        "pattern": [
+          "B B",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:driftwood_slab"
+          },
+          "B": {
+            "item": "upgrade_aquatic:driftwood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:driftwood_rail_bridge",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

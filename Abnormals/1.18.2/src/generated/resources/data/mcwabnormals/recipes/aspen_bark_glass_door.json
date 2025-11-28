@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bark",
+        "pattern": [
+          "AB",
+          "BB",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:aspen_log"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:aspen_bark_glass_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

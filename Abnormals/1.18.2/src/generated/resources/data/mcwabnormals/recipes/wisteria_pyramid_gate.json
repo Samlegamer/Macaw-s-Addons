@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "environmental",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "pyramid",
+        "pattern": [
+          "ABA",
+          "ACA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "environmental:wisteria_log"
+          },
+          "C": {
+            "item": "environmental:wisteria_planks"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:wisteria_pyramid_gate"
+        }
+      }
+    }
+  ]
+}

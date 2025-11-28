@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,26 +9,19 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "stone_stairs",
-    
-    "pattern": [
-    "  F",
-    " FF",
-	"FFF"
-    ],
-    
-    "key":
-    {
-        "F":
-        {
-            "item": "mcwterraformersmc:basalt_bricks_bridge"
-        }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:basalt_bricks_bridge_stair",
-        "count": 6
+  "group": "log_stairs",
+  "key": {
+    "A": {
+      "item": "mcwterraformersmc:basalt_bricks_bridge"
     }
+  },
+  "pattern": [
+    "  A",
+    " AA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwterraformersmc:basalt_bricks_bridge_stair"
+  }
 }

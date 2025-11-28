@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:holly_lower_roof"
+      "mcwbyg:holly_lower_roof"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_holly_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:holly_lower_roof"
+        "recipe": "mcwbyg:holly_lower_roof"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_holly_log",
       "has_the_recipe"
     ]
   ],

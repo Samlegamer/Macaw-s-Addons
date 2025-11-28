@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,34 +9,21 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "blossom_trapdoors",
-    
-    "pattern":
-    [
-        "A",
-        "B",
-        "A"                
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "terrestria:redwood_planks"
-        },    
-        
-        "B":
-        {
-            "item": "mcwtrpdoors:print_blossom"
-        }
+  "group": "blossom_trapdoors",
+  "key": {
+    "A": {
+      "item": "terrestria:redwood_planks"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:redwood_blossom_trapdoor",
-        "count": 1
+    "B": {
+      "item": "mcwtrpdoors:print_blossom"
     }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:redwood_blossom_trapdoor"
+  }
 }
-
-

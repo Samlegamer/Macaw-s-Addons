@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,38 +9,24 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "wired",
-    
-    "pattern":
-    [
-		"ACA",
-		"ABA"
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "minecraft:stick"
-        },    
-        
-        "B":
-        {
-            "item": "cinderscapes:scorched_stem"
-        },   		
-        
-        "C":
-        {
-            "item": "minecraft:iron_bars"
-        }
+  "group": "wired",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:scorched_wired_fence",
-        "count": 3
+    "B": {
+      "item": "cinderscapes:scorched_stem"
+    },
+    "C": {
+      "item": "minecraft:iron_bars"
     }
+  },
+  "pattern": [
+    "ACA",
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:scorched_wired_fence"
+  }
 }
-
-

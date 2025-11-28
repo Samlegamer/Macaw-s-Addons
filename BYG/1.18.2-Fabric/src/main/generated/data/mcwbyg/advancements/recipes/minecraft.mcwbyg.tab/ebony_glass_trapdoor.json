@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:ebony_glass_trapdoor"
+      "mcwbyg:ebony_glass_trapdoor"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_ebony_planks": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:ebony_glass_trapdoor"
+        "recipe": "mcwbyg:ebony_glass_trapdoor"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_ebony_planks",
       "has_the_recipe"
     ]
   ],

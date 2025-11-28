@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,32 +9,20 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "cupboard_counter",
-    "pattern":
-    [
-        "A",
-        "B"	
-    ],
-    
-    "key":
-    { 
-	    "A":
-        {
-            "item": "terrestria:yucca_palm_slab"
-        }, 
-		
-        "B":
-        {
-            "item": "mcwterraformersmc:stripped_yucca_palm_wardrobe"
-        }
+  "group": "cupboard_counter",
+  "key": {
+    "A": {
+      "item": "terrestria:yucca_palm_slab"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_yucca_palm_cupboard_counter",
-        "count": 1
+    "B": {
+      "item": "mcwterraformersmc:stripped_yucca_palm_wardrobe"
     }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:stripped_yucca_palm_cupboard_counter"
+  }
 }
-
-

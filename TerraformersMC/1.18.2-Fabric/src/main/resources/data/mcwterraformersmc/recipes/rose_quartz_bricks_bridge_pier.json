@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,29 +9,20 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "stone_piers",
-    
-    "pattern": [
-    "WFW"
-    ],
-    
-    "key":
-    {
-        "F":
-        {
-            "item": "cinderscapes:rose_quartz_pillar"
-        },
-        
-        "W":
-        {
-            "item": "cinderscapes:rose_quartz_bricks"
-        }
+  "group": "wooden_piers",
+  "key": {
+    "A": {
+      "item": "cinderscapes:rose_quartz_bricks"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:rose_quartz_bricks_bridge_pier",
-        "count": 3
+    "B": {
+      "item": "cinderscapes:rose_quartz_pillar"
     }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:rose_quartz_bricks_bridge_pier"
+  }
 }

@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:bulbis_log_bridge_stair"
+      "mcwbyg:bulbis_log_bridge_stair"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_bulbis_stem": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:bulbis_log_bridge_stair"
+        "recipe": "mcwbyg:bulbis_log_bridge_stair"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_bulbis_stem",
       "has_the_recipe"
     ]
   ],

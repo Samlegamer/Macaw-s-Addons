@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,33 +9,22 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "cabinet",
-    "pattern":
-    [
-        "AA",
-        "AC",
-        "AA"		
-    ],
-    
-    "key":
-    { 
-	    "A":
-        {
-            "item": "cinderscapes:stripped_umbral_stem"
-        }, 
-		
-        "C":
-        {
-            "item": "mcwfurnitures:cabinet_door"
-        }
+  "group": "kitchen_cabinet",
+  "key": {
+    "A": {
+      "item": "cinderscapes:stripped_umbral_stem"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_umbral_kitchen_cabinet",
-        "count": 4
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
     }
+  },
+  "pattern": [
+    "AA",
+    "AB",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:stripped_umbral_kitchen_cabinet"
+  }
 }
-
-

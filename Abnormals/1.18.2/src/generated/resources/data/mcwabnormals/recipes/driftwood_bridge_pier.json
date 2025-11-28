@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "upgrade_aquatic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:driftwood_log"
+          },
+          "B": {
+            "item": "upgrade_aquatic:driftwood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:driftwood_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

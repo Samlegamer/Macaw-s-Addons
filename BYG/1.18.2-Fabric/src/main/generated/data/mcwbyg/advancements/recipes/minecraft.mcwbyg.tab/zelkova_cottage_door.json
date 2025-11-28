@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:zelkova_cottage_door"
+      "mcwbyg:zelkova_cottage_door"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_zelkova_planks": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:zelkova_cottage_door"
+        "recipe": "mcwbyg:zelkova_cottage_door"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_zelkova_planks",
       "has_the_recipe"
     ]
   ],

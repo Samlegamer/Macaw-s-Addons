@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:modern_dacite_wall_stonecutter"
+      "minecraft:modern_dacite_wall_stonecutter"
     ]
   },
   "criteria": {
-    "has_stone": {
+    "has_dacite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:modern_dacite_wall_stonecutter"
+        "recipe": "minecraft:modern_dacite_wall_stonecutter"
       }
     }
   },
   "requirements": [
     [
-      "has_stone",
+      "has_dacite",
       "has_the_recipe"
     ]
   ],

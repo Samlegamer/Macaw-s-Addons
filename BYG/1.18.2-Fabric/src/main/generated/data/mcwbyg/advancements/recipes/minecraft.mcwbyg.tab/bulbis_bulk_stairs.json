@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:bulbis_bulk_stairs"
+      "mcwbyg:bulbis_bulk_stairs"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_bulbis_stem": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:bulbis_bulk_stairs"
+        "recipe": "mcwbyg:bulbis_bulk_stairs"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_bulbis_stem",
       "has_the_recipe"
     ]
   ],

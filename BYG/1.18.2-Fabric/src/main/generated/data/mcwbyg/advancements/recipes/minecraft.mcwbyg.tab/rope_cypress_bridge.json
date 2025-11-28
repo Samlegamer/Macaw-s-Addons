@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:rope_cypress_bridge"
+      "mcwbyg:rope_cypress_bridge"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_cypress_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:rope_cypress_bridge"
+        "recipe": "mcwbyg:rope_cypress_bridge"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_cypress_log",
       "has_the_recipe"
     ]
   ],

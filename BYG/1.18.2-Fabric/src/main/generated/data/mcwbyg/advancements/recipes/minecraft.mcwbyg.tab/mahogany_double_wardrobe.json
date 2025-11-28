@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:mahogany_double_wardrobe"
+      "mcwbyg:mahogany_double_wardrobe"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_mahogany_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:mahogany_double_wardrobe"
+        "recipe": "mcwbyg:mahogany_double_wardrobe"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_mahogany_log",
       "has_the_recipe"
     ]
   ],

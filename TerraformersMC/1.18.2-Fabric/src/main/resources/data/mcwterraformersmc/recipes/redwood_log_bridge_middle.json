@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,30 +9,21 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "log_bridges",
-    
-    "pattern": [
-    "F F",
-    "WWW"
-    ],
-    
-    "key":
-    {
-        "F":
-        {
-            "item": "terrestria:redwood_fence"
-        },
-        
-        "W":
-        {
-            "item": "terrestria:redwood_slab"
-        }
+  "group": "log_bridges",
+  "key": {
+    "A": {
+      "item": "terrestria:redwood_slab"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:redwood_log_bridge_middle",
-        "count": 4
+    "B": {
+      "item": "terrestria:redwood_fence"
     }
+  },
+  "pattern": [
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:redwood_log_bridge_middle"
+  }
 }

@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:maple_blinds"
+      "mcwbyg:maple_blinds"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_maple_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:maple_blinds"
+        "recipe": "mcwbyg:maple_blinds"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_maple_log",
       "has_the_recipe"
     ]
   ],

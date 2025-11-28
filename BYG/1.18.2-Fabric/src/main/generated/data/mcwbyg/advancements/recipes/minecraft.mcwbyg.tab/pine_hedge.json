@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:pine_hedge"
+      "mcwbyg:pine_hedge"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_pine_leaves": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:pine_hedge"
+        "recipe": "mcwbyg:pine_hedge"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_pine_leaves",
       "has_the_recipe"
     ]
   ],

@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,38 +9,24 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "chair",
-    "pattern":
-    [
-        " A",
-        "BA",
-        "CC"		
-    ],
-    
-    "key":
-    { 
-	    "A":
-        {
-            "item": "terrestria:stripped_rainbow_eucalyptus_log"
-        }, 
-		
-        "B":
-        {
-            "item": "terrestria:rainbow_eucalyptus_slab"
-        },
-		
-		"C":
-        {
-            "item": "terrestria:rainbow_eucalyptus_fence"
-        }
+  "group": "chair",
+  "key": {
+    "A": {
+      "item": "terrestria:stripped_rainbow_eucalyptus_log"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_rainbow_eucalyptus_chair",
-        "count": 1
+    "B": {
+      "item": "terrestria:rainbow_eucalyptus_slab"
+    },
+    "C": {
+      "item": "terrestria:rainbow_eucalyptus_fence"
     }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:stripped_rainbow_eucalyptus_chair"
+  }
 }
-
-

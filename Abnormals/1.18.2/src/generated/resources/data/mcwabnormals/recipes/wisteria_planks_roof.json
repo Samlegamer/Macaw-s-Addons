@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "environmental",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "planks_roof",
+        "pattern": [
+          " A",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "environmental:wisteria_planks"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:wisteria_planks_roof",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

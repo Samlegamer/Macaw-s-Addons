@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:willow_japanese2_door"
+      "mcwbyg:willow_japanese2_door"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_willow_slab": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:willow_japanese2_door"
+        "recipe": "mcwbyg:willow_japanese2_door"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_willow_slab",
       "has_the_recipe"
     ]
   ],

@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:holly_cottage_trapdoor"
+      "mcwbyg:holly_cottage_trapdoor"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_holly_planks": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:holly_cottage_trapdoor"
+        "recipe": "mcwbyg:holly_cottage_trapdoor"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_holly_planks",
       "has_the_recipe"
     ]
   ],

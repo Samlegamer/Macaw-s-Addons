@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,33 +9,20 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "end_table",
-    "pattern":
-    [
-        "A",
-        "B"                
-    ],
-    
-    "key":
-    { 
-	    "A":
-        {
-            "item": "mcwterraformersmc:stripped_umbral_table"
-        }, 
-		
-		
-        "B":
-        {
-            "item": "cinderscapes:stripped_umbral_stem"
-        }
+  "group": "end_table",
+  "key": {
+    "A": {
+      "item": "mcwterraformersmc:stripped_umbral_table"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_umbral_end_table",
-        "count": 1
+    "B": {
+      "item": "cinderscapes:stripped_umbral_stem"
     }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:stripped_umbral_end_table"
+  }
 }
-
-

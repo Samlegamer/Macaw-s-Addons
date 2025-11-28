@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:mahogany_mystic_trapdoor"
+      "mcwbyg:mahogany_mystic_trapdoor"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_mahogany_planks": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:mahogany_mystic_trapdoor"
+        "recipe": "mcwbyg:mahogany_mystic_trapdoor"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_mahogany_planks",
       "has_the_recipe"
     ]
   ],

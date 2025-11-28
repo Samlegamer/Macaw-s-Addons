@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:zelkova_pyramid_gate"
+      "mcwbyg:zelkova_pyramid_gate"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_zelkova_planks": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:zelkova_pyramid_gate"
+        "recipe": "mcwbyg:zelkova_pyramid_gate"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_zelkova_planks",
       "has_the_recipe"
     ]
   ],

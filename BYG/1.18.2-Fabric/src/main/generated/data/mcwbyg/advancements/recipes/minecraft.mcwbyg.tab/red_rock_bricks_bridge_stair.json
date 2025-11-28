@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:red_rock_bricks_bridge_stair"
+      "mcwbyg:red_rock_bricks_bridge_stair"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_red_rock_bricks": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:red_rock_bricks_bridge_stair"
+        "recipe": "mcwbyg:red_rock_bricks_bridge_stair"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_red_rock_bricks",
       "has_the_recipe"
     ]
   ],

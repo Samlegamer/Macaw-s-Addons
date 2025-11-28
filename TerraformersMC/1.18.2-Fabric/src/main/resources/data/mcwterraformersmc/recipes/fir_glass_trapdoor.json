@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,33 +9,21 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "glass_trapdoors",
-    
-    "pattern":
-    [
-        "ABA",
-        "ABA"              
-    ],
-    
-    "key":
-    { 
-        "A":
-        {
-            "item": "traverse:fir_planks"
-        },    
-        
-        "B":
-        {
-            "item": "minecraft:glass_pane"
-        }
+  "group": "glass_trapdoors",
+  "key": {
+    "A": {
+      "item": "traverse:fir_planks"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:fir_glass_trapdoor",
-        "count": 2
+    "B": {
+      "item": "minecraft:glass_pane"
     }
+  },
+  "pattern": [
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwterraformersmc:fir_glass_trapdoor"
+  }
 }
-
-

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwdoors",
+        "cinderscapes"
+      ]
+    }
+  ],
+  "group": "whispering",
+  "key": {
+    "A": {
+      "item": "cinderscapes:umbral_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_whispering"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:umbral_whispering_door"
+  }
+}

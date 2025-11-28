@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "autumnity",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "autumnity:snail_shell_tiles"
+        },
+        "result": "mcwabnormals:modern_snail_shell_tiles_wall",
+        "count": 1
+      }
+    }
+  ]
+}

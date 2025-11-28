@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:railing_soapstone_wall_stonecutter"
+      "minecraft:railing_soapstone_wall_stonecutter"
     ]
   },
   "criteria": {
-    "has_stone": {
+    "has_soapstone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:railing_soapstone_wall_stonecutter"
+        "recipe": "minecraft:railing_soapstone_wall_stonecutter"
       }
     }
   },
   "requirements": [
     [
-      "has_stone",
+      "has_soapstone",
       "has_the_recipe"
     ]
   ],

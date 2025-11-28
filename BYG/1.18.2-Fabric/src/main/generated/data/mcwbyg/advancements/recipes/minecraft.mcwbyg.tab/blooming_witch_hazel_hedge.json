@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:blooming_witch_hazel_hedge"
+      "mcwbyg:blooming_witch_hazel_hedge"
     ]
   },
   "criteria": {
-    "has_item": {
+    "has_blooming_witch_hazel_leaves": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:blooming_witch_hazel_hedge"
+        "recipe": "mcwbyg:blooming_witch_hazel_hedge"
       }
     }
   },
   "requirements": [
     [
-      "has_item",
+      "has_blooming_witch_hazel_leaves",
       "has_the_recipe"
     ]
   ],

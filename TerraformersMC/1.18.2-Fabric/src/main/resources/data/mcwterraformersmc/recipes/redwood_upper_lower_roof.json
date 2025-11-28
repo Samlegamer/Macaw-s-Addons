@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,30 +9,21 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-	"group": "upper_lower",
-    
-    "pattern":
-    [
-		"  W",
-        "WWS"
-    ],
-    
-    "key":
-    {
-        "W":
-        {
-            "item": "terrestria:redwood_log"
-        },
-		"S":
-        {
-            "item": "minecraft:stick"
-        }
+  "group": "upper_lower_roof",
+  "key": {
+    "A": {
+      "item": "terrestria:redwood_log"
     },
-    
-    "result":
-    {
-        "item": "mcwterraformersmc:redwood_upper_lower_roof",
-        "count": 3
+    "B": {
+      "item": "minecraft:stick"
     }
+  },
+  "pattern": [
+    "  A",
+    "AAB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwterraformersmc:redwood_upper_lower_roof"
+  }
 }

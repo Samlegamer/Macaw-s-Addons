@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,33 +9,20 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "end_table",
-    "pattern":
-    [
-        "A",
-        "B"                
-    ],
-    
-    "key":
-    { 
-	    "A":
-        {
-            "item": "mcwterraformersmc:stripped_japanese_maple_table"
-        }, 
-		
-		
-        "B":
-        {
-            "item": "terrestria:stripped_japanese_maple_log"
-        }
+  "group": "end_table",
+  "key": {
+    "A": {
+      "item": "mcwterraformersmc:stripped_japanese_maple_table"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_japanese_maple_end_table",
-        "count": 1
+    "B": {
+      "item": "terrestria:stripped_japanese_maple_log"
     }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwterraformersmc:stripped_japanese_maple_end_table"
+  }
 }
-
-

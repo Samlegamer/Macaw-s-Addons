@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "autumnity",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:yellow_maple_hedge"
+          ]
+        },
+        "criteria": {
+          "has_yellow_maple_leaves": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "autumnity:yellow_maple_leaves"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:yellow_maple_hedge"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_yellow_maple_leaves",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -7,6 +7,15 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "mcwbyg:ebony_nether_door",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ],
           "name": "mcwbyg:ebony_nether_door"
         }
       ],

@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,39 +9,25 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "lower_bookshelf_drawer",
-    "pattern":
-    [
-        "AAA",
-        "ACA",
-		"ABA"
-    ],
-    
-    "key":
-    { 
-	    "A":
-        {
-            "item": "terrestria:rubber_log"
-        }, 
-		
-        "B":
-        {
-            "item": "mcwfurnitures:cabinet_drawer"
-        },
-		
-	    "C":
-        {
-            "item": "minecraft:book"
-        } 
-		
+  "group": "lower_bookshelf_drawer",
+  "key": {
+    "A": {
+      "item": "terrestria:rubber_log"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:rubber_lower_bookshelf_drawer",
-        "count": 4
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    },
+    "C": {
+      "item": "minecraft:book"
     }
+  },
+  "pattern": [
+    "AAA",
+    "ACA",
+    "ABA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:rubber_lower_bookshelf_drawer"
+  }
 }
-
-

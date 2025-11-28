@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "terrestria"
+      ]
+    }
+  ],
+  "group": "recyclable_bridges",
+  "ingredients": [
+    {
+      "item": "mcwterraformersmc:japanese_maple_rope_bridge_stair"
+    }
+  ],
+  "result": {
+    "item": "mcwterraformersmc:rope_japanese_maple_bridge"
+  }
+}

@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:travertine_railing_gate_stonecutter"
+      "minecraft:travertine_railing_gate_stonecutter"
     ]
   },
   "criteria": {
-    "has_stone": {
+    "has_travertine": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:travertine_railing_gate_stonecutter"
+        "recipe": "minecraft:travertine_railing_gate_stonecutter"
       }
     }
   },
   "requirements": [
     [
-      "has_stone",
+      "has_travertine",
       "has_the_recipe"
     ]
   ],

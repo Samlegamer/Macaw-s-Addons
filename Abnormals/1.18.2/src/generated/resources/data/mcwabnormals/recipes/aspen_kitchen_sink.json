@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "kitchen_sink",
+        "pattern": [
+          "CDC",
+          "ABA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "atmospheric:aspen_log"
+          },
+          "B": {
+            "item": "minecraft:water_bucket"
+          },
+          "C": {
+            "item": "atmospheric:aspen_slab"
+          },
+          "D": {
+            "item": "minecraft:cauldron"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:aspen_kitchen_sink"
+        }
+      }
+    }
+  ]
+}

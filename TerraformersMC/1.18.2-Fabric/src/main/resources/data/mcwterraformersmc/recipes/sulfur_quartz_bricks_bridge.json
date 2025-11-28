@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,30 +9,21 @@
       ]
     }
   ],
-    "type": "minecraft:crafting_shaped",
-    "group": "stone_bridges",
-    
-    "pattern": [
-    "F F",
-    "WWW"
-    ],
-    
-    "key":
-    {
-        "F":
-        {
-            "item": "cinderscapes:sulfur_quartz_pillar"
-        },
-        
-        "W":
-        {
-            "item": "cinderscapes:sulfur_quartz_slab"
-        }
+  "group": "log_bridges",
+  "key": {
+    "A": {
+      "item": "cinderscapes:sulfur_quartz_slab"
     },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:sulfur_quartz_bricks_bridge",
-        "count": 4
+    "B": {
+      "item": "cinderscapes:sulfur_quartz_pillar"
     }
+  },
+  "pattern": [
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:sulfur_quartz_bricks_bridge"
+  }
 }

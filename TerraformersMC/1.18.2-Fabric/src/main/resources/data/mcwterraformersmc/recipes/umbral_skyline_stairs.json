@@ -1,5 +1,6 @@
 {
- "fabric:load_conditions": [
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
@@ -8,19 +9,21 @@
       ]
     }
   ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "skyline_stairs",
-  "pattern" : [ "W  ", "ZW " ],
-  "key" : {
-    "W" : {
-      "item" : "cinderscapes:stripped_umbral_stem"
+  "group": "skyline_stairs",
+  "key": {
+    "A": {
+      "item": "cinderscapes:stripped_umbral_stem"
     },
-    "Z" : {
-      "item" : "cinderscapes:umbral_stem"
+    "B": {
+      "item": "cinderscapes:umbral_stem"
     }
   },
-  "result" : {
-    "item" : "mcwterraformersmc:umbral_skyline_stairs",
-    "count" : 4
+  "pattern": [
+    "A  ",
+    "BA "
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwterraformersmc:umbral_skyline_stairs"
   }
 }

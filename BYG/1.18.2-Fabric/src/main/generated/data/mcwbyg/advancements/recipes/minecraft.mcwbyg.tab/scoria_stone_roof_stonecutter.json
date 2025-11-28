@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:scoria_stone_roof_stonecutter"
+      "minecraft:scoria_stone_roof_stonecutter"
     ]
   },
   "criteria": {
-    "has_stone": {
+    "has_scoria_stone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:scoria_stone_roof_stonecutter"
+        "recipe": "minecraft:scoria_stone_roof_stonecutter"
       }
     }
   },
   "requirements": [
     [
-      "has_stone",
+      "has_scoria_stone",
       "has_the_recipe"
     ]
   ],

@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "upgrade_aquatic",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "kitchen_sink",
+        "pattern": [
+          "CDC",
+          "ABA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "upgrade_aquatic:stripped_driftwood_log"
+          },
+          "B": {
+            "item": "minecraft:water_bucket"
+          },
+          "C": {
+            "item": "upgrade_aquatic:driftwood_slab"
+          },
+          "D": {
+            "item": "minecraft:cauldron"
+          }
+        },
+        "result": {
+          "item": "mcwabnormals:stripped_driftwood_kitchen_sink"
+        }
+      }
+    }
+  ]
+}

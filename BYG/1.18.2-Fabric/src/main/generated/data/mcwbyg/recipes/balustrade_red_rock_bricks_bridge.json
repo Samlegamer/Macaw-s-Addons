@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "balustrade_bridges",
+  "pattern": [
+    "BBB",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "byg:red_rock_brick_slab"
+    },
+    "B": {
+      "item": "byg:red_rock_brick_wall"
+    }
+  },
+  "result": {
+    "item": "mcwbyg:balustrade_red_rock_bricks_bridge",
+    "count": 5
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mcwbridges",
+        "byg"
+      ]
+    }
+  ]
+}
