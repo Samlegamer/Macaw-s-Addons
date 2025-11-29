@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "blue_skies",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "windows_four",
+        "pattern": [
+          "AAA",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwwindows:window_centre_bar_base"
+          },
+          "B": {
+            "item": "blue_skies:stripped_starlit_log"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_bsky_starlit_log_four_window",
+          "count": 8
+        }
+      }
+    }
+  ]
+}

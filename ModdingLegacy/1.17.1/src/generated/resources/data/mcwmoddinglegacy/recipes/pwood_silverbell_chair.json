@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "chair",
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:silverbell_log"
+          },
+          "B": {
+            "item": "premium_wood:silverbell_slab"
+          },
+          "C": {
+            "item": "premium_wood:silverbell_fence"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_silverbell_chair"
+        }
+      }
+    }
+  ]
+}

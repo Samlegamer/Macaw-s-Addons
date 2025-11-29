@@ -5,7 +5,6 @@ import fr.samlegamer.addonslib.generation.recipes.McwRecipes;
 import fr.samlegamer.addonslib.generation.recipes.mat.McwWoodMat;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.level.block.Block;
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.ArrayList;
@@ -14,9 +13,9 @@ import java.util.function.Consumer;
 
 import static biomesoplenty.api.block.BOPBlocks.*;
 
-public class Recipes extends RecipeProvider {
+public class Recipes extends McwRecipes {
     public Recipes(DataGenerator p_i48262_1_) {
-        super(p_i48262_1_);
+        super(p_i48262_1_, McwBOP.MODID, "", BiomesOPlenty.MOD_ID);
     }
 
     @ParametersAreNonnullByDefault
@@ -26,11 +25,8 @@ public class Recipes extends RecipeProvider {
                 PALM_LEAVES, REDWOOD_LEAVES, UMBRAN_LEAVES, WILLOW_LEAVES, MAPLE_LEAVES, ORANGE_AUTUMN_LEAVES, YELLOW_AUTUMN_LEAVES, WHITE_CHERRY_LEAVES,
                 FLOWERING_OAK_LEAVES, RAINBOW_BIRCH_LEAVES, ORIGIN_LEAVES);
 
-        List<McwWoodMat> woodMats = getWoodMats();
-
-        McwRecipes.registerAllMcwWood(consumer, McwBOP.MODID, BiomesOPlenty.MOD_ID, McwBOP.WOOD, woodMats);
-        McwRecipes.registerMcwHedge(consumer, McwBOP.MODID, BiomesOPlenty.MOD_ID, McwBOP.LEAVES, leave);
-
+        registerAllMcwWood(consumer, McwBOP.MODID, BiomesOPlenty.MOD_ID, McwBOP.WOOD, getWoodMats());
+        registerMcwHedge(consumer, McwBOP.MODID, BiomesOPlenty.MOD_ID, McwBOP.LEAVES, leave);
     }
 
     private List<McwWoodMat> getWoodMats()

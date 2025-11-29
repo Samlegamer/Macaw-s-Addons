@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "western",
+        "pattern": [
+          "  A",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:tiger_planks"
+          },
+          "B": {
+            "item": "premium_wood:tiger_slab"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_tiger_western_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

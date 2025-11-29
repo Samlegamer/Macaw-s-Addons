@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mystic",
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:magic_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_mystic"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_magic_mystic_door"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "blue_skies",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "blinds",
+        "pattern": [
+          "AAA",
+          "BBB",
+          "BBB"
+        ],
+        "key": {
+          "A": {
+            "item": "blue_skies:cherry_slab"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:bsky_cherry_blinds",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

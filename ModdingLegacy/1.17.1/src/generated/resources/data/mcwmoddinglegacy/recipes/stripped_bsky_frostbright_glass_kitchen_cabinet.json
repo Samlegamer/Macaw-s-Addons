@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "blue_skies",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "glass_kitchen_cabinet",
+        "pattern": [
+          "AA",
+          "BC",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "blue_skies:stripped_frostbright_log"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          },
+          "C": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_bsky_frostbright_glass_kitchen_cabinet",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

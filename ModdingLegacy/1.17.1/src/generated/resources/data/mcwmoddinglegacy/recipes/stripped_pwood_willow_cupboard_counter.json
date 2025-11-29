@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "cupboard_counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:willow_slab"
+          },
+          "B": {
+            "item": "mcwmoddinglegacy:stripped_pwood_willow_wardrobe"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_willow_cupboard_counter"
+        }
+      }
+    }
+  ]
+}

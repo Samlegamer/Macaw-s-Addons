@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwmoddinglegacy:stripped_pwood_magic_double_drawer"
+          ]
+        },
+        "criteria": {
+          "has_magic_stripped_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "premium_wood:magic_stripped_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwmoddinglegacy:stripped_pwood_magic_double_drawer"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_magic_stripped_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

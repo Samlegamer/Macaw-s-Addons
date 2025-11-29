@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "terrace_stairs",
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:silverbell_stripped_log"
+          },
+          "B": {
+            "item": "premium_wood:silverbell_log"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_silverbell_terrace_stairs",
+          "count": 5
+        }
+      }
+    }
+  ]
+}

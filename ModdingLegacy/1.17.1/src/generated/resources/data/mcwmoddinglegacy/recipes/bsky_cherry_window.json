@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "blue_skies",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "windows",
+        "pattern": [
+          " A ",
+          "ABA",
+          " A "
+        ],
+        "key": {
+          "A": {
+            "item": "mcwwindows:window_base"
+          },
+          "B": {
+            "item": "blue_skies:cherry_log"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:bsky_cherry_window",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

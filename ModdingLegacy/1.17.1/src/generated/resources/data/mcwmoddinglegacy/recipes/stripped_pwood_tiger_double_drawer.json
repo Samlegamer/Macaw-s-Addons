@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_drawer",
+        "pattern": [
+          "AAA",
+          "ABA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:tiger_stripped_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_tiger_double_drawer",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

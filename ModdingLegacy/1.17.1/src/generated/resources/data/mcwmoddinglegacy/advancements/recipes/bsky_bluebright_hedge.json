@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "blue_skies",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwmoddinglegacy:bsky_bluebright_hedge"
+          ]
+        },
+        "criteria": {
+          "has_bluebright_leaves": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "blue_skies:bluebright_leaves"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwmoddinglegacy:bsky_bluebright_hedge"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_bluebright_leaves",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

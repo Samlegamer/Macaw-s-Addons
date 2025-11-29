@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "stable_head",
+        "ingredients": [
+          {
+            "item": "mcwmoddinglegacy:pwood_silverbell_stable_door"
+          }
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_silverbell_stable_head_door"
+        }
+      }
+    }
+  ]
+}

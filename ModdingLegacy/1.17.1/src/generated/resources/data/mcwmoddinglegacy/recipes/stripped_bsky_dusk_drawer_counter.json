@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "blue_skies",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "drawer_counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "blue_skies:dusk_slab"
+          },
+          "B": {
+            "item": "mcwmoddinglegacy:stripped_bsky_dusk_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_bsky_dusk_drawer_counter"
+        }
+      }
+    }
+  ]
+}
