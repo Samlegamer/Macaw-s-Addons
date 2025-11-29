@@ -1,46 +1,40 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "striped_chair",
-    "pattern":
-    [
-        " A",
-        "BC",
-		"CC"
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "terrestria:sakura_log"
-        }, 
-		
-        "B":
-        {
-            "item": "terrestria:sakura_slab"
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
         },
-		
-		"C":
         {
-            "item": "terrestria:sakura_fence"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:sakura_striped_chair",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "striped_chair",
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:sakura_log"
+          },
+          "B": {
+            "item": "terrestria:sakura_slab"
+          },
+          "C": {
+            "item": "terrestria:sakura_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:sakura_striped_chair"
+        }
+      }
     }
+  ]
 }
-
-

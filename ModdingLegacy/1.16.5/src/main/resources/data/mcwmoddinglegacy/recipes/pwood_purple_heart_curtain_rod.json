@@ -1,27 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwwindows"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "curtain_rods",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "premium_wood:purple_heart_log"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_purple_heart_curtain_rod",
+          "count": 5
+        }
+      }
     }
-  ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "curtain_rods",
-  "pattern" : [ "ABA" ],
-  "key" : {
-    "A" : {
-      "item" : "minecraft:stick"
-    },
-    "B" : {
-      "item" : "premium_wood:purple_heart_log"
-    }
-  },
-  "result" : {
-    "item" : "mcwmoddinglegacy:pwood_purple_heart_curtain_rod",
-    "count" : 5
-  }
+  ]
 }

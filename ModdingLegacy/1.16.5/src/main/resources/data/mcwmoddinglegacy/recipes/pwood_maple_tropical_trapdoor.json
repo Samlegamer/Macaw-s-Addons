@@ -1,42 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwtrpdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "tropical_trapdoors",
-    
-    "pattern":
-    [
-        "AAA",
-        "ABA",
-		"AAA"           
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "premium_wood:maple_planks"
-        },    
-        
-        "B":
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "mcwtrpdoors:print_tropical"
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwmoddinglegacy:pwood_maple_tropical_trapdoor",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "tropical_trapdoors",
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:maple_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_tropical"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_maple_tropical_trapdoor"
+        }
+      }
     }
+  ]
 }
-
-

@@ -1,27 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_balcony",
+        "pattern": [
+          "AAA",
+          "B B",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "terrestria:rainbow_eucalyptus_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:rainbow_eucalyptus_balcony",
+          "count": 6
+        }
+      }
     }
-  ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "mcwstairs_balcony",
-  "pattern" : [ "WWW", "Z Z", "WWW" ],
-  "key" : {
-    "W" : {
-      "item" : "minecraft:stick"
-    },
-    "Z" : {
-      "item" : "terrestria:rainbow_eucalyptus_fence"
-    }
-  },
-  "result" : {
-    "item" : "mcwterraformersmc:rainbow_eucalyptus_balcony",
-    "count" : 6
-  }
+  ]
 }

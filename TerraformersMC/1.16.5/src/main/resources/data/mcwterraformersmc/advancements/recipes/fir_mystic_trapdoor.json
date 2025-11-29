@@ -1,44 +1,50 @@
 {
-"conditions": [
+  "advancements": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwtrpdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "traverse"
-    }
-  ],
-  "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "mcwterraformersmc:fir_mystic_trapdoor"
-    ]
-  },
-  "criteria": {
-    "has_logs": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": 
-			[ "traverse:fir_log"
-                      ]
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:fir_mystic_trapdoor"
+          ]
+        },
+        "criteria": {
+          "has_fir_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "traverse:fir_planks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:fir_mystic_trapdoor"
+            }
           }
+        },
+        "requirements": [
+          [
+            "has_fir_planks",
+            "has_the_recipe"
+          ]
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "mcwterraformersmc:fir_mystic_trapdoor"
-      }
     }
-  },
-  "requirements": [
-    [
-      "has_logs",
-      "has_the_recipe"
-    ]
   ]
 }

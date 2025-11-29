@@ -1,42 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "four_panel",
-    
-    "pattern":
-    [
-        "A",
-        "B",
-        "A"                
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "premium_wood:tiger_planks"
-        },    
-        
-        "B":
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "mcwdoors:print_dark_oak"
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwmoddinglegacy:pwood_tiger_four_panel_door",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "dark_oak",
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:tiger_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_dark_oak"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_tiger_four_panel_door"
+        }
+      }
     }
+  ]
 }
-
-

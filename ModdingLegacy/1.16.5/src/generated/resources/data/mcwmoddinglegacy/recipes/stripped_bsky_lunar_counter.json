@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "blue_skies",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "blue_skies:lunar_slab"
+          },
+          "B": {
+            "item": "blue_skies:stripped_lunar_log"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_bsky_lunar_counter"
+        }
+      }
+    }
+  ]
+}

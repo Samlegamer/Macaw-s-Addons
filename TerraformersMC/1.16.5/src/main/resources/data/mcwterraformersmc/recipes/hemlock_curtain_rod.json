@@ -1,27 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwwindows"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "curtain_rods",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "terrestria:hemlock_log"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:hemlock_curtain_rod",
+          "count": 5
+        }
+      }
     }
-  ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "curtain_rods",
-  "pattern" : [ "ABA" ],
-  "key" : {
-    "A" : {
-      "item" : "minecraft:stick"
-    },
-    "B" : {
-      "item" : "terrestria:hemlock_log"
-    }
-  },
-  "result" : {
-    "item" : "mcwterraformersmc:hemlock_curtain_rod",
-    "count" : 5
-  }
+  ]
 }

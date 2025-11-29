@@ -1,46 +1,39 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "pyramid",
-    
-    "pattern":
-    [
-		"ABA",
-		"ACA"
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "minecraft:stick"
-        },    
-        
-        "B":
-        {
-            "item": "terrestria:redwood_log"
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
         },
-		
-		"C":
         {
-            "item": "terrestria:redwood_planks"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:redwood_pyramid_gate",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "pyramid",
+        "pattern": [
+          "ABA",
+          "ACA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "terrestria:redwood_log"
+          },
+          "C": {
+            "item": "terrestria:redwood_planks"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:redwood_pyramid_gate"
+        }
+      }
     }
+  ]
 }
-
-

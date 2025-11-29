@@ -1,46 +1,40 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "striped_chair",
-    "pattern":
-    [
-        " A",
-        "BC",
-		"CC"
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "terrestria:stripped_rainbow_eucalyptus_log"
-        }, 
-		
-        "B":
-        {
-            "item": "terrestria:rainbow_eucalyptus_slab"
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
         },
-		
-		"C":
         {
-            "item": "terrestria:rainbow_eucalyptus_fence"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_rainbow_eucalyptus_striped_chair",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "striped_chair",
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:stripped_rainbow_eucalyptus_log"
+          },
+          "B": {
+            "item": "terrestria:rainbow_eucalyptus_slab"
+          },
+          "C": {
+            "item": "terrestria:rainbow_eucalyptus_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_rainbow_eucalyptus_striped_chair"
+        }
+      }
     }
+  ]
 }
-
-

@@ -138,7 +138,7 @@ dependencies {
 
     compileOnly fg.deobf("curse.maven:structure-gel-api-378802:${structgel_version}")
     compileOnly fg.deobf("curse.maven:blue-skies-312918:${blueskies_version}")
-    compileOnly fg.deobf("curse.maven:premium-wood-353515:${premiumwood_version}")
+    //compileOnly fg.deobf("curse.maven:premium-wood-353515:${premiumwood_version}")
 
     runtimeOnly fg.deobf("curse.maven:structure-gel-api-378802:${structgel_version}")
     runtimeOnly fg.deobf("curse.maven:blue-skies-312918:${blueskies_version}")

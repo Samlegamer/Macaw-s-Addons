@@ -1,38 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "rail_bridges",
-    
-    "pattern": [
-    "F F",
-    "FWF"
-    ],
-    
-    "key":
-    {
-        "F":
+      "conditions": [
         {
-            "item": "terrestria:japanese_maple_fence"
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
         },
-        
-        "W":
         {
-            "item": "terrestria:japanese_maple_slab"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:japanese_maple_rail_bridge",
-        "count": 4
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "rail_bridges",
+        "pattern": [
+          "B B",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:japanese_maple_slab"
+          },
+          "B": {
+            "item": "terrestria:japanese_maple_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:japanese_maple_rail_bridge",
+          "count": 4
+        }
+      }
     }
+  ]
 }

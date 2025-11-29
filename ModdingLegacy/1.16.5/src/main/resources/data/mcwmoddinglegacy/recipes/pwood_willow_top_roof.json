@@ -1,37 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwroofs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "top",
-    
-    "pattern":
-    [
-        "WSW"
-    ],
-    
-    "key":
-    {
-        "W":
+      "conditions": [
         {
-            "item": "premium_wood:willow_log"
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
         },
-		"S":
         {
-            "item": "minecraft:stick"
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item": "mcwmoddinglegacy:pwood_willow_top_roof",
-        "count": 2
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "top_roof",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:willow_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_willow_top_roof",
+          "count": 2
+        }
+      }
     }
+  ]
 }

@@ -1,37 +1,34 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "traverse"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "hedge",
-
-    "pattern":
-    [
-		"AA",
-		"AA"
-    ],
-    
-    "key":
-    { 
-
-        "A":
+      "conditions": [
         {
-            "item": "traverse:orange_autumnal_leaves"
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:orange_autumnal_hedge",
-        "count": 4
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "hedge",
+        "pattern": [
+          "AA",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "traverse:orange_autumnal_leaves"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:orange_autumnal_hedge",
+          "count": 4
+        }
+      }
     }
+  ]
 }
-
-

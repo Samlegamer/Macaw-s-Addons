@@ -1,46 +1,41 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "glass_cabinet",
-    "pattern":
-    [
-        "AA",
-        "BC",
-        "AA"		
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "premium_wood:maple_log"
-        }, 
-		
-        "B":
-        {
-            "item": "minecraft:glass"
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
         },
-		
-        "C":
         {
-            "item": "mcwfurnitures:cabinet_door"
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwmoddinglegacy:pwood_maple_glass_kitchen_cabinet",
-        "count": 4
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "glass_kitchen_cabinet",
+        "pattern": [
+          "AA",
+          "BC",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:maple_log"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          },
+          "C": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_maple_glass_kitchen_cabinet",
+          "count": 4
+        }
+      }
     }
+  ]
 }
-
-

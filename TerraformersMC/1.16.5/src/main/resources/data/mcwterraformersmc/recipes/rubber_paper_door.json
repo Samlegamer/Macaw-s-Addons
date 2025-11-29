@@ -1,42 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "paper",
-	
-    "pattern":
-    [
-        "A",
-        "B",
-        "A"                
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "terrestria:rubber_planks"
-        },    
-        
-        "B":
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "mcwdoors:print_birch"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:rubber_paper_door",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "birch",
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:rubber_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_birch"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:rubber_paper_door"
+        }
+      }
     }
+  ]
 }
-
-

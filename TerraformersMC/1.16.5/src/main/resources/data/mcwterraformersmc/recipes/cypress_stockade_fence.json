@@ -1,41 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "stockade",
-    
-    "pattern":
-    [
-		"ABA",
-		"ABA"
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "terrestria:cypress_log"
-        },    
-        
-        "B":
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "terrestria:cypress_planks"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:cypress_stockade_fence",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stockade",
+        "pattern": [
+          "ABA",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:cypress_log"
+          },
+          "B": {
+            "item": "terrestria:cypress_planks"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:cypress_stockade_fence",
+          "count": 3
+        }
+      }
     }
+  ]
 }
-
-

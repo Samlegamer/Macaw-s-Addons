@@ -1,27 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "terrace_stairs",
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:stripped_japanese_maple_log"
+          },
+          "B": {
+            "item": "terrestria:japanese_maple_log"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:japanese_maple_terrace_stairs",
+          "count": 5
+        }
+      }
     }
-  ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "terrace_stairs",
-  "pattern" : [ "W  ", "ZW ", " ZW" ],
-  "key" : {
-    "W" : {
-      "item" : "terrestria:stripped_japanese_maple_log"
-    },
-    "Z" : {
-      "item" : "terrestria:japanese_maple_log"
-    }
-  },
-  "result" : {
-    "item" : "mcwterraformersmc:japanese_maple_terrace_stairs",
-    "count" : 5
-  }
+  ]
 }

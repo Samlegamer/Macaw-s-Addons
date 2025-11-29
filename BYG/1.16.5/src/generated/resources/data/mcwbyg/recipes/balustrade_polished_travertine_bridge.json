@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "balustrade_bridges",
+        "pattern": [
+          "BBB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "byg:polished_travertine_slab"
+          },
+          "B": {
+            "item": "byg:polished_travertine_wall"
+          }
+        },
+        "result": {
+          "item": "mcwbyg:balustrade_polished_travertine_bridge",
+          "count": 5
+        }
+      }
+    }
+  ]
+}

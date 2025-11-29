@@ -1,42 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "stable",
-	
-    "pattern":
-    [
-        "BB",
-        "AA",
-		"AA"
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "premium_wood:purple_heart_planks"
-        },    
-        
-        "B":
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "minecraft:iron_bars"
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwmoddinglegacy:pwood_purple_heart_stable_door",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stable",
+        "pattern": [
+          "BB",
+          "AA",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:purple_heart_planks"
+          },
+          "B": {
+            "item": "minecraft:iron_bars"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_purple_heart_stable_door",
+          "count": 3
+        }
+      }
     }
+  ]
 }
-
-

@@ -1,46 +1,40 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "wired",
-    
-    "pattern":
-    [
-		"ACA",
-		"ABA"
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "minecraft:stick"
-        },    
-        
-        "B":
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "premium_wood:purple_heart_log"
-        },   		
-        
-        "C":
-        {
-            "item": "minecraft:iron_bars"
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwmoddinglegacy:pwood_purple_heart_wired_fence",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wired",
+        "pattern": [
+          "ACA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "premium_wood:purple_heart_log"
+          },
+          "C": {
+            "item": "minecraft:iron_bars"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_purple_heart_wired_fence",
+          "count": 3
+        }
+      }
     }
+  ]
 }
-
-

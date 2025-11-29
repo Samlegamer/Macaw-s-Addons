@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwbyg:railing_travertine_wall_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_travertine": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "byg:travertine"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwbyg:railing_travertine_wall_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_travertine",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

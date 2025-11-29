@@ -1,34 +1,50 @@
 {
-"conditions": [
+  "advancements": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],  "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-	"mcwterraformersmc:dark_japanese_maple_hedge"
-    ]
-  },
-  "criteria": {
-    "has_birch": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "terrestria:dark_japanese_maple_leaves"
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:dark_japanese_maple_hedge"
+          ]
+        },
+        "criteria": {
+          "has_dark_japanese_maple_leaves": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "terrestria:dark_japanese_maple_leaves"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:dark_japanese_maple_hedge"
+            }
           }
+        },
+        "requirements": [
+          [
+            "has_dark_japanese_maple_leaves",
+            "has_the_recipe"
+          ]
         ]
       }
     }
-  },
-  "requirements": [
-    [
-      "has_birch"
-    ]
   ]
 }

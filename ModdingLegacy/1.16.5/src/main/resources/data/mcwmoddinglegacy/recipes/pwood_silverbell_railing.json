@@ -1,24 +1,35 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_railing",
+        "pattern": [
+          "A  ",
+          "AA ",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwmoddinglegacy:pwood_silverbell_balcony"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_silverbell_railing",
+          "count": 6
+        }
+      }
     }
-  ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "mcwstairs_railing",
-  "pattern" : [ "W  ", "WW ", "WWW" ],
-  "key" : {
-    "W" : {
-      "item" : "mcwmoddinglegacy:pwood_silverbell_balcony"
-    }
-  },
-  "result" : {
-    "item" : "mcwmoddinglegacy:pwood_silverbell_railing",
-    "count" : 6
-  }
+  ]
 }

@@ -1,41 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "cinderscapes"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "coffee_table",
-    "pattern":
-    [
-        "A",
-        "B"                
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "cinderscapes:umbral_stem"
-        }, 
-		
-		
-        "B":
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "cinderscapes:umbral_fence"
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:umbral_coffee_table",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "coffee_table",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "cinderscapes:umbral_stem"
+          },
+          "B": {
+            "item": "cinderscapes:umbral_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:umbral_coffee_table"
+        }
+      }
     }
+  ]
 }
-
-

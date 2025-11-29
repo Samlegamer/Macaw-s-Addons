@@ -1,37 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "cinderscapes"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "stone_piers",
-    
-    "pattern": [
-    "WFW"
-    ],
-    
-    "key":
-    {
-        "F":
+      "conditions": [
         {
-            "item": "cinderscapes:sulfur_quartz_pillar"
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
         },
-        
-        "W":
         {
-            "item": "cinderscapes:sulfur_quartz_bricks"
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:sulfur_quartz_bricks_bridge_pier",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "cinderscapes:sulfur_quartz_bricks"
+          },
+          "B": {
+            "item": "cinderscapes:sulfur_quartz_pillar"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:sulfur_quartz_bricks_bridge_pier",
+          "count": 3
+        }
+      }
     }
+  ]
 }

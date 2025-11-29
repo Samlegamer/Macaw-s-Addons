@@ -1,39 +1,50 @@
 {
-"conditions": [
+  "advancements": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "cinderscapes"
-    }
-  ],
-  "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "mcwterraformersmc:scorched_rope_bridge_stair"
-    ]
-  },
-  "criteria": {
-    "has_planks": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": ["mcwterraformersmc:rope_scorched_bridge"
-      ]    }     ]     }   },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "mcwterraformersmc:scorched_rope_bridge_stair"
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:scorched_rope_bridge_stair"
+          ]
+        },
+        "criteria": {
+          "has_scorched_stem": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "cinderscapes:scorched_stem"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:scorched_rope_bridge_stair"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_scorched_stem",
+            "has_the_recipe"
+          ]
+        ]
       }
     }
-  },
-  "requirements": [
-    [
-      "has_planks",
-      "has_the_recipe"
-    ]
   ]
 }

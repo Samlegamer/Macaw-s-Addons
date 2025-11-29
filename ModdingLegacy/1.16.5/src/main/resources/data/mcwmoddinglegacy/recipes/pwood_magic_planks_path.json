@@ -1,22 +1,30 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwpaths"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
+      "conditions": [
+        {
+          "modid": "mcwpaths",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks_paths",
+        "ingredients": [
+          {
+            "item": "premium_wood:magic_slab"
+          }
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_magic_planks_path",
+          "count": 3
+        }
+      }
     }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "premium_wood:magic_slab"
-    }
-  ],
-  "result": {
-    "item": "mcwmoddinglegacy:pwood_magic_planks_path",
-    "count": 3
-  }
+  ]
 }

@@ -1,41 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "highley",
-    
-    "pattern":
-    [
-		"ABA",
-		"ABA"
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "minecraft:stick"
-        },    
-        
-        "B":
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "terrestria:redwood_log"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:redwood_highley_gate",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "highley",
+        "pattern": [
+          "ABA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "terrestria:redwood_log"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:redwood_highley_gate"
+        }
+      }
     }
+  ]
 }
-
-

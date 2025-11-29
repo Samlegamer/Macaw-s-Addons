@@ -1,19 +1,25 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "terrestria:mossy_basalt_bricks"
+        },
+        "result": "mcwterraformersmc:modern_mossy_basalt_bricks_wall",
+        "count": 1
+      }
     }
-  ],
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "terrestria:mossy_basalt_bricks"
-    },
-    "result": "mcwterraformersmc:modern_mossy_basalt_bricks_wall",
-    "group": "fences",
-    "count": 1
+  ]
 }

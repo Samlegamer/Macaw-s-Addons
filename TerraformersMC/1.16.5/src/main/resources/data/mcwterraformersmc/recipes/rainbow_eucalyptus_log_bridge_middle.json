@@ -1,38 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "log_bridges",
-    
-    "pattern": [
-    "F F",
-    "WWW"
-    ],
-    
-    "key":
-    {
-        "F":
+      "conditions": [
         {
-            "item": "terrestria:rainbow_eucalyptus_fence"
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
         },
-        
-        "W":
         {
-            "item": "terrestria:rainbow_eucalyptus_slab"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:rainbow_eucalyptus_log_bridge_middle",
-        "count": 4
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "log_bridges",
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:rainbow_eucalyptus_slab"
+          },
+          "B": {
+            "item": "terrestria:rainbow_eucalyptus_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:rainbow_eucalyptus_log_bridge_middle",
+          "count": 4
+        }
+      }
     }
+  ]
 }

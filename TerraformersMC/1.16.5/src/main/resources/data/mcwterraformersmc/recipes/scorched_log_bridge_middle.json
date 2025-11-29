@@ -1,38 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "cinderscapes"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "log_bridges",
-    
-    "pattern": [
-    "F F",
-    "WWW"
-    ],
-    
-    "key":
-    {
-        "F":
+      "conditions": [
         {
-            "item": "cinderscapes:scorched_fence"
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
         },
-        
-        "W":
         {
-            "item": "cinderscapes:scorched_slab"
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:scorched_log_bridge_middle",
-        "count": 4
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "log_bridges",
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "cinderscapes:scorched_slab"
+          },
+          "B": {
+            "item": "cinderscapes:scorched_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:scorched_log_bridge_middle",
+          "count": 4
+        }
+      }
     }
+  ]
 }

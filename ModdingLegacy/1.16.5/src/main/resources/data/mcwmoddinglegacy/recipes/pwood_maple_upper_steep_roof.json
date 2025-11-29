@@ -1,39 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwroofs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "upper_steep",
-    
-    "pattern":
-    [
-		" W",
-		" W",
-        "WS"
-    ],
-    
-    "key":
-    {
-        "W":
+      "conditions": [
         {
-            "item": "premium_wood:maple_log"
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
         },
-		"S":
         {
-            "item": "minecraft:stick"
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item": "mcwmoddinglegacy:pwood_maple_upper_steep_roof",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "upper_steep_roof",
+        "pattern": [
+          " A",
+          " A",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:maple_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_maple_upper_steep_roof",
+          "count": 3
+        }
+      }
     }
+  ]
 }

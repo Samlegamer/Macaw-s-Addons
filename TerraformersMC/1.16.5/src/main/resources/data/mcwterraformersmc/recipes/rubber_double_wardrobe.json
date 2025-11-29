@@ -1,42 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "double_wardrobe",
-    "pattern":
-    [
-        "AAA",
-        "BAB",
-		"AAA"
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "terrestria:rubber_log"
-        }, 
-		
-        "B":
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "mcwfurnitures:cabinet_door"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-		
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:rubber_double_wardrobe",
-        "count": 4
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_wardrobe",
+        "pattern": [
+          "AAA",
+          "BAB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:rubber_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:rubber_double_wardrobe",
+          "count": 4
+        }
+      }
     }
+  ]
 }
-
-

@@ -1,42 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "traverse"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "large_drawer",
-    "pattern":
-    [
-        "ABA",
-        "AAA",
-		"AAA"
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "traverse:stripped_fir_log"
-        }, 
-		
-        "B":
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "mcwfurnitures:cabinet_drawer"
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
         }
-		
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_fir_large_drawer",
-        "count": 4
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "large_drawer",
+        "pattern": [
+          "ABA",
+          "AAA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "traverse:stripped_fir_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_fir_large_drawer",
+          "count": 4
+        }
+      }
     }
+  ]
 }
-
-

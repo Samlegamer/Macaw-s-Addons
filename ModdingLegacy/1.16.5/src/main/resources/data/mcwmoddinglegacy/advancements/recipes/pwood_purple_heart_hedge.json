@@ -1,34 +1,50 @@
 {
-"conditions": [
+  "advancements": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
-    }
-  ],  "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-	"mcwmoddinglegacy:pwood_purple_heart_hedge"
-    ]
-  },
-  "criteria": {
-    "has_birch": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "premium_wood:purple_heart_leaves"
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwmoddinglegacy:pwood_purple_heart_hedge"
+          ]
+        },
+        "criteria": {
+          "has_purple_heart_leaves": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "premium_wood:purple_heart_leaves"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwmoddinglegacy:pwood_purple_heart_hedge"
+            }
           }
+        },
+        "requirements": [
+          [
+            "has_purple_heart_leaves",
+            "has_the_recipe"
+          ]
         ]
       }
     }
-  },
-  "requirements": [
-    [
-      "has_birch"
-    ]
   ]
 }

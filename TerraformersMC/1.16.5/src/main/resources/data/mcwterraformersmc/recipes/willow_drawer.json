@@ -1,42 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "drawer",
-    "pattern":
-    [
-        "AAA",
-        "ABA",
-		"AAA"
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "terrestria:willow_log"
-        }, 
-		
-        "B":
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "mcwfurnitures:cabinet_drawer"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-		
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:willow_drawer",
-        "count": 4
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "drawer",
+        "pattern": [
+          "AAA",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:willow_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:willow_drawer",
+          "count": 4
+        }
+      }
     }
+  ]
 }
-
-

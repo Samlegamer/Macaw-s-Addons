@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "blue_skies",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwmoddinglegacy:stripped_bsky_lunar_glass_kitchen_cabinet"
+          ]
+        },
+        "criteria": {
+          "has_stripped_lunar_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "blue_skies:stripped_lunar_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwmoddinglegacy:stripped_bsky_lunar_glass_kitchen_cabinet"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_stripped_lunar_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

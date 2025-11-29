@@ -1,41 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "stool_chair",
-    "pattern":
-    [
-		"A",
-        "A",
-        "B"                
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "premium_wood:purple_heart_log"
-        }, 	
-		
-        "B":
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "premium_wood:purple_heart_fence"
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwmoddinglegacy:pwood_purple_heart_stool_chair",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stool_chair",
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:purple_heart_log"
+          },
+          "B": {
+            "item": "premium_wood:purple_heart_fence"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_purple_heart_stool_chair"
+        }
+      }
     }
+  ]
 }
-
-

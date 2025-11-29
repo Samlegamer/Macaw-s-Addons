@@ -1,40 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "double_drawer_counter",
-    "pattern":
-    [
-        "A",
-        "B"	
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "terrestria:redwood_slab"
-        }, 
-		
-        "B":
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "mcwterraformersmc:stripped_redwood_double_drawer"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_redwood_double_drawer_counter",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_drawer_counter",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:redwood_slab"
+          },
+          "B": {
+            "item": "mcwterraformersmc:stripped_redwood_double_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_redwood_double_drawer_counter"
+        }
+      }
     }
+  ]
 }
-
-

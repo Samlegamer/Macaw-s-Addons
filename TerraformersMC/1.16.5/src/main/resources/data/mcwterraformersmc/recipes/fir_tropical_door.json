@@ -1,42 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "traverse"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "tropical",
-    
-    "pattern":
-    [
-        "A",
-        "B",
-        "A"                
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "traverse:fir_planks"
-        },    
-        
-        "B":
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "mcwdoors:print_acacia"
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:fir_tropical_door",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "acacia",
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "key": {
+          "A": {
+            "item": "traverse:fir_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_acacia"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:fir_tropical_door"
+        }
+      }
     }
+  ]
 }
-
-

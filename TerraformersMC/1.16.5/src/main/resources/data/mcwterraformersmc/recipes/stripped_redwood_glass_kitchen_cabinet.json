@@ -1,46 +1,41 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "glass_cabinet",
-    "pattern":
-    [
-        "AA",
-        "BC",
-        "AA"		
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "terrestria:stripped_redwood_log"
-        }, 
-		
-        "B":
-        {
-            "item": "minecraft:glass"
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
         },
-		
-        "C":
         {
-            "item": "mcwfurnitures:cabinet_door"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_redwood_glass_kitchen_cabinet",
-        "count": 4
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "glass_kitchen_cabinet",
+        "pattern": [
+          "AA",
+          "BC",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:stripped_redwood_log"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          },
+          "C": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_redwood_glass_kitchen_cabinet",
+          "count": 4
+        }
+      }
     }
+  ]
 }
-
-

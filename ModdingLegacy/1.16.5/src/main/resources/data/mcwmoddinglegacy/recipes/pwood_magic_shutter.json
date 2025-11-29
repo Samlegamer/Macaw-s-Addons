@@ -1,35 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwwindows"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "shutters",
-	
-    "pattern":
-    [
-        "B",
-        "B",
-        "B"		
-    ],
-    
-    "key":
-    { 
-        "B":
+      "conditions": [
         {
-            "item": "premium_wood:magic_trapdoor"
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwmoddinglegacy:pwood_magic_shutter",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "premium_wood:magic_trapdoor"
+          },
+          {
+            "item": "premium_wood:magic_trapdoor"
+          },
+          {
+            "item": "premium_wood:magic_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_magic_shutter",
+          "count": 3
+        }
+      }
     }
+  ]
 }

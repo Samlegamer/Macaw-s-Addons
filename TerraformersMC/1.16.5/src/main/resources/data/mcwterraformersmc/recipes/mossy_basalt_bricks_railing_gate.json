@@ -1,41 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "railing_gate",
-    
-    "pattern":
-    [
-		"ABA",
-		"ABA"
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "minecraft:iron_bars"
-        },    
-        
-        "B":
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "terrestria:mossy_basalt_bricks"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:mossy_basalt_bricks_railing_gate",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "railing_gate",
+        "pattern": [
+          "ABA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:iron_bars"
+          },
+          "B": {
+            "item": "terrestria:mossy_basalt_bricks"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:mossy_basalt_bricks_railing_gate"
+        }
+      }
     }
+  ]
 }
-
-

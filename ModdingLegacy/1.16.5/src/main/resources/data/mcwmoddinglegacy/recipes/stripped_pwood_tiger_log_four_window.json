@@ -1,41 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwwindows"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "windows_four",
-	
-    "pattern":
-    [
-        "AAA",
-        "ABA",
-        "AAA"                
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "mcwwindows:window_centre_bar_base"
-        },    
-
-		
-        "B":
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "premium_wood:tiger_stripped_log"
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwmoddinglegacy:stripped_pwood_tiger_log_four_window",
-        "count": 8
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "windows_four",
+        "pattern": [
+          "AAA",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwwindows:window_centre_bar_base"
+          },
+          "B": {
+            "item": "premium_wood:tiger_stripped_log"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_tiger_log_four_window",
+          "count": 8
+        }
+      }
     }
+  ]
 }

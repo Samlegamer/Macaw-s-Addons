@@ -1,45 +1,39 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "modern_chair",
-    "pattern":
-    [
-        "BA",
-        "CC"                
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "terrestria:stripped_hemlock_log"
-        }, 
-		
-        "B":
-        {
-            "item": "terrestria:hemlock_slab"
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
         },
-		
-		"C":
         {
-            "item": "terrestria:hemlock_fence"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:stripped_hemlock_modern_chair",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern_chair",
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:stripped_hemlock_log"
+          },
+          "B": {
+            "item": "terrestria:hemlock_slab"
+          },
+          "C": {
+            "item": "terrestria:hemlock_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_hemlock_modern_chair"
+        }
+      }
     }
+  ]
 }
-
-

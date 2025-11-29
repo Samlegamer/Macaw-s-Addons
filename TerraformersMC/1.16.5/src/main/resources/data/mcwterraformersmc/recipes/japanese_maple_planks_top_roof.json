@@ -1,37 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwroofs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "top",
-    
-    "pattern":
-    [
-        "WSW"
-    ],
-    
-    "key":
-    {
-        "W":
+      "conditions": [
         {
-            "item": "terrestria:japanese_maple_planks"
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
         },
-		"S":
         {
-            "item": "minecraft:stick"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item": "mcwterraformersmc:japanese_maple_planks_top_roof",
-        "count": 2
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "planks_top_roof",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:japanese_maple_planks"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:japanese_maple_planks_top_roof",
+          "count": 2
+        }
+      }
     }
+  ]
 }

@@ -1,41 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "cinderscapes"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "railing_wall",
-    
-    "pattern":
-    [
-		"ABA",
-		"AAA"
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "cinderscapes:sulfur_quartz_block"
-        },    
-        
-        "B":
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "minecraft:iron_bars"
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:railing_sulfur_quartz_bricks_wall",
-        "count": 6
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "railing_wall",
+        "pattern": [
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "cinderscapes:sulfur_quartz_block"
+          },
+          "B": {
+            "item": "minecraft:iron_bars"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:railing_sulfur_quartz_bricks_wall",
+          "count": 6
+        }
+      }
     }
+  ]
 }
-
-

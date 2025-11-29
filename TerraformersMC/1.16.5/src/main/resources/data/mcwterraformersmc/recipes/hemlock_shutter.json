@@ -1,35 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwwindows"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "shutters",
-	
-    "pattern":
-    [
-        "B",
-        "B",
-        "B"		
-    ],
-    
-    "key":
-    { 
-        "B":
+      "conditions": [
         {
-            "item": "terrestria:hemlock_trapdoor"
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:hemlock_shutter",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "terrestria:hemlock_trapdoor"
+          },
+          {
+            "item": "terrestria:hemlock_trapdoor"
+          },
+          {
+            "item": "terrestria:hemlock_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwterraformersmc:hemlock_shutter",
+          "count": 3
+        }
+      }
     }
+  ]
 }

@@ -19,7 +19,7 @@
           ]
         },
         "criteria": {
-          "has_item": {
+          "has_polished_travertine": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_item",
+            "has_polished_travertine",
             "has_the_recipe"
           ]
         ]

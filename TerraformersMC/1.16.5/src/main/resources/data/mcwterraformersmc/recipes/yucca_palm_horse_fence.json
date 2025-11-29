@@ -1,41 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "horse",
-    
-    "pattern":
-    [
-		"ABA",
-		"BAB"
-    ],
-    
-    "key":
-    { 
-        "B":
+      "conditions": [
         {
-            "item": "minecraft:stick"
-        },    
-        
-        "A":
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "terrestria:yucca_palm_log"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:yucca_palm_horse_fence",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "horse",
+        "pattern": [
+          "ABA",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:yucca_palm_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:yucca_palm_horse_fence",
+          "count": 3
+        }
+      }
     }
+  ]
 }
-
-

@@ -113,6 +113,10 @@ repositories
         name = "CurseMaven"
         url = "https://www.cursemaven.com"
     }
+    maven {
+        name = "SpongePowered"
+        url = "https://repo.spongepowered.org/repository/maven-public/"
+    }
 }
 
 dependencies {
@@ -137,10 +141,12 @@ dependencies {
     implementation fg.deobf("curse.maven:macaws-furniture-359540:${furniture_version}")
 
     compileOnly fg.deobf("curse.maven:autoreglib-250363:${autoreglib_version}")
-    compileOnly fg.deobf("curse.maven:quark-243121:${quark_version}")
+    //compileOnly fg.deobf("curse.maven:quark-243121:${quark_version}")
 
     runtimeOnly fg.deobf("curse.maven:autoreglib-250363:${autoreglib_version}")
     runtimeOnly fg.deobf("curse.maven:quark-243121:${quark_version}")
+
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}") // Adds the full JEI mod as a runtime dependency

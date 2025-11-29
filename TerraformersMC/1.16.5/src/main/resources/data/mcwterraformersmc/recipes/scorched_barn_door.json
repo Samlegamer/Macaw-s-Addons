@@ -1,42 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "cinderscapes"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "barn",
-    
-    "pattern":
-    [
-        "BB",
-	    "AA",
-        "AA"               
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "cinderscapes:scorched_planks"
-        },    
-        
-        "B":
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "minecraft:stick"
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:scorched_barn_door",
-        "count": 2
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "barn",
+        "pattern": [
+          "BB",
+          "AA",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "cinderscapes:scorched_planks"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:scorched_barn_door",
+          "count": 2
+        }
+      }
     }
+  ]
 }
-
-

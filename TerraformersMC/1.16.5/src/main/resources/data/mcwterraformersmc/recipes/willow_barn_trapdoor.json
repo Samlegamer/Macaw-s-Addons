@@ -1,41 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwtrpdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "barn_trapdoors",
-	
-    "pattern":
-    [
-        "A",
-        "B"               
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "terrestria:willow_planks"
-        },    
-        
-        "B":
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "mcwterraformersmc:willow_glass_trapdoor"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:willow_barn_trapdoor",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "barn_trapdoors",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:willow_planks"
+          },
+          "B": {
+            "item": "mcwterraformersmc:willow_glass_trapdoor"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:willow_barn_trapdoor"
+        }
+      }
     }
+  ]
 }
-
-

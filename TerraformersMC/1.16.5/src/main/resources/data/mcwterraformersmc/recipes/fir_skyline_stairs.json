@@ -1,27 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "traverse"
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "skyline_stairs",
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "key": {
+          "A": {
+            "item": "traverse:stripped_fir_log"
+          },
+          "B": {
+            "item": "traverse:fir_log"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:fir_skyline_stairs",
+          "count": 4
+        }
+      }
     }
-  ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "skyline_stairs",
-  "pattern" : [ "W  ", "ZW " ],
-  "key" : {
-    "W" : {
-      "item" : "traverse:stripped_fir_log"
-    },
-    "Z" : {
-      "item" : "traverse:fir_log"
-    }
-  },
-  "result" : {
-    "item" : "mcwterraformersmc:fir_skyline_stairs",
-    "count" : 4
-  }
+  ]
 }

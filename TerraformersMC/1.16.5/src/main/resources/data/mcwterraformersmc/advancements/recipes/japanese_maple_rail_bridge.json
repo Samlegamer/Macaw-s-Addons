@@ -1,39 +1,50 @@
 {
-"conditions": [
+  "advancements": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-  "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "mcwterraformersmc:japanese_maple_rail_bridge"
-    ]
-  },
-  "criteria": {
-    "has_planks": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": ["terrestria:japanese_maple_planks"
-      ]    }     ]     }   },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "mcwterraformersmc:japanese_maple_rail_bridge"
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:japanese_maple_rail_bridge"
+          ]
+        },
+        "criteria": {
+          "has_japanese_maple_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "terrestria:japanese_maple_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:japanese_maple_rail_bridge"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_japanese_maple_log",
+            "has_the_recipe"
+          ]
+        ]
       }
     }
-  },
-  "requirements": [
-    [
-      "has_planks",
-      "has_the_recipe"
-    ]
   ]
 }

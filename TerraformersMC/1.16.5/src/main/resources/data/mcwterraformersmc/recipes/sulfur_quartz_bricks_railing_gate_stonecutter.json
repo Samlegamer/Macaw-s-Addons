@@ -1,19 +1,25 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "cinderscapes"
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "cinderscapes:sulfur_quartz_bricks"
+        },
+        "result": "mcwterraformersmc:sulfur_quartz_bricks_railing_gate",
+        "count": 1
+      }
     }
-  ],
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "cinderscapes:sulfur_quartz_bricks"
-    },
-    "result": "mcwterraformersmc:sulfur_quartz_bricks_railing_gate",
-    "group": "fences",
-    "count": 1
+  ]
 }

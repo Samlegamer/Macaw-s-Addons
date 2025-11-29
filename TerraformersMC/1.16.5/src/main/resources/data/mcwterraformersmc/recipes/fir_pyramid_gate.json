@@ -1,46 +1,39 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "traverse"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "pyramid",
-    
-    "pattern":
-    [
-		"ABA",
-		"ACA"
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "minecraft:stick"
-        },    
-        
-        "B":
-        {
-            "item": "traverse:fir_log"
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
         },
-		
-		"C":
         {
-            "item": "traverse:fir_planks"
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:fir_pyramid_gate",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "pyramid",
+        "pattern": [
+          "ABA",
+          "ACA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "traverse:fir_log"
+          },
+          "C": {
+            "item": "traverse:fir_planks"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:fir_pyramid_gate"
+        }
+      }
     }
+  ]
 }
-
-

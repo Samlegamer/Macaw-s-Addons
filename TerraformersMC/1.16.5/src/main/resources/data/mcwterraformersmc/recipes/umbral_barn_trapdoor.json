@@ -1,41 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwtrpdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "cinderscapes"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "barn_trapdoors",
-	
-    "pattern":
-    [
-        "A",
-        "B"               
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "cinderscapes:umbral_planks"
-        },    
-        
-        "B":
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "mcwterraformersmc:umbral_glass_trapdoor"
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:umbral_barn_trapdoor",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "barn_trapdoors",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "cinderscapes:umbral_planks"
+          },
+          "B": {
+            "item": "mcwterraformersmc:umbral_glass_trapdoor"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:umbral_barn_trapdoor"
+        }
+      }
     }
+  ]
 }
-
-

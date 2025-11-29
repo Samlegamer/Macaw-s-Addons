@@ -1,27 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "cinderscapes"
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bulk_stairs",
+        "pattern": [
+          "A  ",
+          "BA ",
+          "BBA"
+        ],
+        "key": {
+          "A": {
+            "item": "cinderscapes:stripped_umbral_stem"
+          },
+          "B": {
+            "item": "cinderscapes:umbral_stem"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:umbral_bulk_stairs",
+          "count": 6
+        }
+      }
     }
-  ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "bulk_stairs",
-  "pattern" : [ "W  ", "ZW ", "ZZW" ],
-  "key" : {
-    "W" : {
-      "item" : "cinderscapes:stripped_umbral_stem"
-    },
-    "Z" : {
-      "item" : "cinderscapes:umbral_stem"
-    }
-  },
-  "result" : {
-    "item" : "mcwterraformersmc:umbral_bulk_stairs",
-    "count" : 6
-  }
+  ]
 }

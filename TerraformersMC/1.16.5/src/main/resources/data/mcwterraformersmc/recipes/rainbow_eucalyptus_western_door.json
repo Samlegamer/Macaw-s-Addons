@@ -1,42 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "western",
-    
-    "pattern":
-    [
-        "  A",
-        "ABA",
-		"AAA"
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "terrestria:rainbow_eucalyptus_planks"
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
         },
-		
-		"B":
         {
-            "item": "terrestria:rainbow_eucalyptus_slab"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:rainbow_eucalyptus_western_door",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "western",
+        "pattern": [
+          "  A",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:rainbow_eucalyptus_planks"
+          },
+          "B": {
+            "item": "terrestria:rainbow_eucalyptus_slab"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:rainbow_eucalyptus_western_door",
+          "count": 3
+        }
+      }
     }
+  ]
 }
-
-

@@ -1,44 +1,50 @@
 {
-"conditions": [
+  "advancements": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwtrpdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
-    }
-  ],
-  "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "mcwmoddinglegacy:pwood_silverbell_swamp_trapdoor"
-    ]
-  },
-  "criteria": {
-    "has_logs": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": 
-			[ "premium_wood:silverbell_log"
-                      ]
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwmoddinglegacy:pwood_silverbell_swamp_trapdoor"
+          ]
+        },
+        "criteria": {
+          "has_silverbell_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "premium_wood:silverbell_planks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwmoddinglegacy:pwood_silverbell_swamp_trapdoor"
+            }
           }
+        },
+        "requirements": [
+          [
+            "has_silverbell_planks",
+            "has_the_recipe"
+          ]
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "mcwmoddinglegacy:pwood_silverbell_swamp_trapdoor"
-      }
     }
-  },
-  "requirements": [
-    [
-      "has_logs",
-      "has_the_recipe"
-    ]
   ]
 }

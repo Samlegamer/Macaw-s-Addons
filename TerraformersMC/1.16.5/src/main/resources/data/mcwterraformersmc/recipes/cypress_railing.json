@@ -1,24 +1,35 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_railing",
+        "pattern": [
+          "A  ",
+          "AA ",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwterraformersmc:cypress_balcony"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:cypress_railing",
+          "count": 6
+        }
+      }
     }
-  ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "mcwstairs_railing",
-  "pattern" : [ "W  ", "WW ", "WWW" ],
-  "key" : {
-    "W" : {
-      "item" : "mcwterraformersmc:cypress_balcony"
-    }
-  },
-  "result" : {
-    "item" : "mcwterraformersmc:cypress_railing",
-    "count" : 6
-  }
+  ]
 }

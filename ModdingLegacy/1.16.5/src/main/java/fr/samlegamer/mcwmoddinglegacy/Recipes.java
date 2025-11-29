@@ -1,52 +1,52 @@
 package fr.samlegamer.mcwmoddinglegacy;
 
 import com.legacy.blue_skies.BlueSkies;
-import com.legacy.premium_wood.PremiumWoodMod;
-import com.legacy.premium_wood.registry.PremiumBlocks;
+//import com.legacy.premium_wood.PremiumWoodMod;
+//import com.legacy.premium_wood.registry.PremiumBlocks;
 import fr.samlegamer.addonslib.data.ModType;
 import fr.samlegamer.addonslib.generation.recipes.McwRecipes;
 import fr.samlegamer.addonslib.generation.recipes.mat.McwWoodMat;
 import net.minecraft.block.Block;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
-import net.minecraft.data.RecipeProvider;
 import com.legacy.blue_skies.registries.SkiesBlocks;
-
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class Recipes extends RecipeProvider
+public class Recipes extends McwRecipes
 {
     public Recipes(DataGenerator p_i48262_1_) {
-        super(p_i48262_1_);
+        super(p_i48262_1_, McwModdingLegacy.MODID, "", "");
     }
 
     @Override
+    @ParametersAreNonnullByDefault
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer)
     {
-        McwRecipes.registerAllMcwWood(consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_blue_skies, getWoodBS());
-        McwRecipes.registerAllMcwWood(consumer, McwModdingLegacy.MODID, PremiumWoodMod.MODID, McwModdingLegacy.wood_premium_wood, getWoodPW());
+        registerAllMcwWood(consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_blue_skies, getWoodBS());
+//        registerAllMcwWood(consumer, McwModdingLegacy.MODID, PremiumWoodMod.MODID, McwModdingLegacy.wood_premium_wood, getWoodPW());
 
-        McwRecipes.onRegisterMcwWood(ModType.BRIDGES, consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_crystallized, getWoodBSCrystallized());
-        McwRecipes.onRegisterMcwWood(ModType.ROOFS, consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_crystallized, getWoodBSCrystallized());
-        McwRecipes.registerMcwHedge(consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_crystallized, getLeavesBSCrystallized());
+        onRegisterMcwWood(ModType.BRIDGES, consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_crystallized, getWoodBSCrystallized());
+        onRegisterMcwWood(ModType.ROOFS, consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_crystallized, getWoodBSCrystallized());
+        registerMcwHedge(consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_crystallized, getLeavesBSCrystallized());
 
-        McwRecipes.registerMcwHedge(consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_blue_skies, getLeavesBS());
-        McwRecipes.registerMcwHedge(consumer, McwModdingLegacy.MODID, PremiumWoodMod.MODID, McwModdingLegacy.wood_premium_wood, getLeavesPW());
+        registerMcwHedge(consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_blue_skies, getLeavesBS());
+//        registerMcwHedge(consumer, McwModdingLegacy.MODID, PremiumWoodMod.MODID, McwModdingLegacy.wood_premium_wood, getLeavesPW());
     }
 
-    private List<Block> getLeavesPW()
-    {
-        List<Block> mats = new ArrayList<>();
-        mats.add(PremiumBlocks.magic_leaves);
-        mats.add(PremiumBlocks.maple_leaves);
-        mats.add(PremiumBlocks.purple_heart_leaves);
-        mats.add(PremiumBlocks.silverbell_leaves);
-        mats.add(PremiumBlocks.tiger_leaves);
-        mats.add(PremiumBlocks.willow_leaves);
-        return mats;
-    }
+//    private List<Block> getLeavesPW()
+//    {
+//        List<Block> mats = new ArrayList<>();
+//        mats.add(PremiumBlocks.magic_leaves);
+//        mats.add(PremiumBlocks.maple_leaves);
+//        mats.add(PremiumBlocks.purple_heart_leaves);
+//        mats.add(PremiumBlocks.silverbell_leaves);
+//        mats.add(PremiumBlocks.tiger_leaves);
+//        mats.add(PremiumBlocks.willow_leaves);
+//        return mats;
+//    }
 
     private List<Block> getLeavesBS()
     {
@@ -75,17 +75,17 @@ public class Recipes extends RecipeProvider
         return mats;
     }
 
-    private List<McwWoodMat> getWoodPW()
-    {
-        List<McwWoodMat> mats = new ArrayList<>();
-        mats.add(new McwWoodMat(PremiumBlocks.magic_log, PremiumBlocks.magic_planks, PremiumBlocks.magic_stripped_log, PremiumBlocks.magic_slab, PremiumBlocks.magic_fence, PremiumBlocks.magic_trapdoor));
-        mats.add(new McwWoodMat(PremiumBlocks.maple_log, PremiumBlocks.maple_planks, PremiumBlocks.maple_stripped_log, PremiumBlocks.maple_slab, PremiumBlocks.maple_fence, PremiumBlocks.maple_trapdoor));
-        mats.add(new McwWoodMat(PremiumBlocks.purple_heart_log, PremiumBlocks.purple_heart_planks, PremiumBlocks.purple_heart_stripped_log, PremiumBlocks.purple_heart_slab, PremiumBlocks.purple_heart_fence, PremiumBlocks.purple_heart_trapdoor));
-        mats.add(new McwWoodMat(PremiumBlocks.silverbell_log, PremiumBlocks.silverbell_planks, PremiumBlocks.silverbell_stripped_log, PremiumBlocks.silverbell_slab, PremiumBlocks.silverbell_fence, PremiumBlocks.silverbell_trapdoor));
-        mats.add(new McwWoodMat(PremiumBlocks.tiger_log, PremiumBlocks.tiger_planks, PremiumBlocks.tiger_stripped_log, PremiumBlocks.tiger_slab, PremiumBlocks.tiger_fence, PremiumBlocks.tiger_trapdoor));
-        mats.add(new McwWoodMat(PremiumBlocks.willow_log, PremiumBlocks.willow_planks, PremiumBlocks.willow_stripped_log, PremiumBlocks.willow_slab, PremiumBlocks.willow_fence, PremiumBlocks.willow_trapdoor));
-        return mats;
-    }
+//    private List<McwWoodMat> getWoodPW()
+//    {
+//        List<McwWoodMat> mats = new ArrayList<>();
+//        mats.add(new McwWoodMat(PremiumBlocks.magic_log, PremiumBlocks.magic_planks, PremiumBlocks.magic_stripped_log, PremiumBlocks.magic_slab, PremiumBlocks.magic_fence, PremiumBlocks.magic_trapdoor));
+//        mats.add(new McwWoodMat(PremiumBlocks.maple_log, PremiumBlocks.maple_planks, PremiumBlocks.maple_stripped_log, PremiumBlocks.maple_slab, PremiumBlocks.maple_fence, PremiumBlocks.maple_trapdoor));
+//        mats.add(new McwWoodMat(PremiumBlocks.purple_heart_log, PremiumBlocks.purple_heart_planks, PremiumBlocks.purple_heart_stripped_log, PremiumBlocks.purple_heart_slab, PremiumBlocks.purple_heart_fence, PremiumBlocks.purple_heart_trapdoor));
+//        mats.add(new McwWoodMat(PremiumBlocks.silverbell_log, PremiumBlocks.silverbell_planks, PremiumBlocks.silverbell_stripped_log, PremiumBlocks.silverbell_slab, PremiumBlocks.silverbell_fence, PremiumBlocks.silverbell_trapdoor));
+//        mats.add(new McwWoodMat(PremiumBlocks.tiger_log, PremiumBlocks.tiger_planks, PremiumBlocks.tiger_stripped_log, PremiumBlocks.tiger_slab, PremiumBlocks.tiger_fence, PremiumBlocks.tiger_trapdoor));
+//        mats.add(new McwWoodMat(PremiumBlocks.willow_log, PremiumBlocks.willow_planks, PremiumBlocks.willow_stripped_log, PremiumBlocks.willow_slab, PremiumBlocks.willow_fence, PremiumBlocks.willow_trapdoor));
+//        return mats;
+//    }
 
     private List<McwWoodMat> getWoodBS()
     {

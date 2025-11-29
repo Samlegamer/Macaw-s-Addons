@@ -1,41 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwtrpdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "glass_trapdoors",
-    
-    "pattern":
-    [
-        "ABA",
-        "ABA"              
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "premium_wood:tiger_planks"
-        },    
-        
-        "B":
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "minecraft:glass_pane"
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwmoddinglegacy:pwood_tiger_glass_trapdoor",
-        "count": 2
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "glass_trapdoors",
+        "pattern": [
+          "ABA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:tiger_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_tiger_glass_trapdoor",
+          "count": 2
+        }
+      }
     }
+  ]
 }
-
-

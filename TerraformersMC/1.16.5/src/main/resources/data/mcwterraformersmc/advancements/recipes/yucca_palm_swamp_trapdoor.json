@@ -1,44 +1,50 @@
 {
-"conditions": [
+  "advancements": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwtrpdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-  "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "mcwterraformersmc:yucca_palm_swamp_trapdoor"
-    ]
-  },
-  "criteria": {
-    "has_logs": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": 
-			[ "terrestria:yucca_palm_log"
-                      ]
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:yucca_palm_swamp_trapdoor"
+          ]
+        },
+        "criteria": {
+          "has_yucca_palm_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "terrestria:yucca_palm_planks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:yucca_palm_swamp_trapdoor"
+            }
           }
+        },
+        "requirements": [
+          [
+            "has_yucca_palm_planks",
+            "has_the_recipe"
+          ]
         ]
       }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "mcwterraformersmc:yucca_palm_swamp_trapdoor"
-      }
     }
-  },
-  "requirements": [
-    [
-      "has_logs",
-      "has_the_recipe"
-    ]
   ]
 }

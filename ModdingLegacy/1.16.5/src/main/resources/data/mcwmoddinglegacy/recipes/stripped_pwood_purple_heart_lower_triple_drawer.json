@@ -1,42 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "lower_triple_drawer",
-    "pattern":
-    [
-        "AAA",
-        "BAB",
-		"ABA"
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "premium_wood:purple_heart_stripped_log"
-        }, 
-		
-        "B":
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "mcwfurnitures:cabinet_drawer"
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
         }
-		
-    },
-    
-    "result":
-    {
-        "item":  "mcwmoddinglegacy:stripped_pwood_purple_heart_lower_triple_drawer",
-        "count": 4
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "lower_triple_drawer",
+        "pattern": [
+          "AAA",
+          "BAB",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:purple_heart_stripped_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_purple_heart_lower_triple_drawer",
+          "count": 4
+        }
+      }
     }
+  ]
 }
-
-

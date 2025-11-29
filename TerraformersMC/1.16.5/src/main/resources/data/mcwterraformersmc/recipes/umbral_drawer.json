@@ -1,42 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "cinderscapes"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "drawer",
-    "pattern":
-    [
-        "AAA",
-        "ABA",
-		"AAA"
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "cinderscapes:umbral_stem"
-        }, 
-		
-        "B":
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "mcwfurnitures:cabinet_drawer"
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
         }
-		
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:umbral_drawer",
-        "count": 4
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "drawer",
+        "pattern": [
+          "AAA",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "cinderscapes:umbral_stem"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:umbral_drawer",
+          "count": 4
+        }
+      }
     }
+  ]
 }
-
-

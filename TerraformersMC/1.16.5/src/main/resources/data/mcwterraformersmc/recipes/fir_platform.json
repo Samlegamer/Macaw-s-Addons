@@ -1,27 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "traverse"
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_platform",
+        "pattern": [
+          " BB",
+          " AA",
+          "   "
+        ],
+        "key": {
+          "A": {
+            "item": "traverse:fir_log"
+          },
+          "B": {
+            "item": "traverse:fir_slab"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:fir_platform",
+          "count": 12
+        }
+      }
     }
-  ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "mcwstairs_platform",
-  "pattern" : [ " ZZ", " WW", "   " ],
-  "key" : {
-    "W" : {
-      "item" : "traverse:fir_log"
-    },
-    "Z" : {
-      "item" : "traverse:fir_slab"
-    }
-  },
-  "result" : {
-    "item" : "mcwterraformersmc:fir_platform",
-    "count" : 12
-  }
+  ]
 }

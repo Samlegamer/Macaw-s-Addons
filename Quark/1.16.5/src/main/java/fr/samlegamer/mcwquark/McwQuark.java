@@ -19,8 +19,6 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -65,9 +63,9 @@ public class McwQuark extends McwMod
     public McwQuark()
     {
     	LOGGER.info("Macaw's Quark Loading...");
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::dataSetup);
+		bus().addListener(this::clientSetup);
+        bus().addListener(this::commonSetup);
+        bus().addListener(this::dataSetup);
     	LOGGER.info("Macaw's Quark Is Charged !");
     }
 
@@ -99,7 +97,7 @@ public class McwQuark extends McwMod
                     addAllMcwTags(MODID, new ArrayList<>(), stone, leaves);
                 }
             });
-            //generator.addProvider(new Recipes(generator));
+            generator.addProvider(new Recipes(generator));
         }
     }
 

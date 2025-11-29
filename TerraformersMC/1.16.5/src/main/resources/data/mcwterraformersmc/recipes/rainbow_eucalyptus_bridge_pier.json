@@ -1,37 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "wooden_piers",
-    
-    "pattern": [
-    "WFW"
-    ],
-    
-    "key":
-    {
-        "F":
+      "conditions": [
         {
-            "item": "terrestria:rainbow_eucalyptus_fence"
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
         },
-        
-        "W":
         {
-            "item": "terrestria:rainbow_eucalyptus_log"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:rainbow_eucalyptus_bridge_pier",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:rainbow_eucalyptus_log"
+          },
+          "B": {
+            "item": "terrestria:rainbow_eucalyptus_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:rainbow_eucalyptus_bridge_pier",
+          "count": 3
+        }
+      }
     }
+  ]
 }

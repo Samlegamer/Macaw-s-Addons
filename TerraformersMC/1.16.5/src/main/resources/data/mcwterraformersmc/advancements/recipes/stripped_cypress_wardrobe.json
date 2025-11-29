@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:stripped_cypress_wardrobe"
+          ]
+        },
+        "criteria": {
+          "has_stripped_cypress_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "terrestria:stripped_cypress_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:stripped_cypress_wardrobe"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_stripped_cypress_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwbyg:soapstone_upper_steep_roof_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_soapstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "byg:soapstone"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwbyg:soapstone_upper_steep_roof_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_soapstone",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

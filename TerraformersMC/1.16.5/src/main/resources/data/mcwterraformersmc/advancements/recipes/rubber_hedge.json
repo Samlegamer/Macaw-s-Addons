@@ -1,34 +1,50 @@
 {
-"conditions": [
+  "advancements": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],  "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-	"mcwterraformersmc:rubber_hedge"
-    ]
-  },
-  "criteria": {
-    "has_birch": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "terrestria:rubber_leaves"
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:rubber_hedge"
+          ]
+        },
+        "criteria": {
+          "has_rubber_leaves": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "terrestria:rubber_leaves"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:rubber_hedge"
+            }
           }
+        },
+        "requirements": [
+          [
+            "has_rubber_leaves",
+            "has_the_recipe"
+          ]
         ]
       }
     }
-  },
-  "requirements": [
-    [
-      "has_birch"
-    ]
   ]
 }

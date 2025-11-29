@@ -1,27 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "premium_wood"
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_balcony",
+        "pattern": [
+          "AAA",
+          "B B",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "premium_wood:tiger_fence"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_tiger_balcony",
+          "count": 6
+        }
+      }
     }
-  ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "mcwstairs_balcony",
-  "pattern" : [ "WWW", "Z Z", "WWW" ],
-  "key" : {
-    "W" : {
-      "item" : "minecraft:stick"
-    },
-    "Z" : {
-      "item" : "premium_wood:tiger_fence"
-    }
-  },
-  "result" : {
-    "item" : "mcwmoddinglegacy:pwood_tiger_balcony",
-    "count" : 6
-  }
+  ]
 }

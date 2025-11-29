@@ -1,27 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "skyline_stairs",
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:stripped_cypress_log"
+          },
+          "B": {
+            "item": "terrestria:cypress_log"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:cypress_skyline_stairs",
+          "count": 4
+        }
+      }
     }
-  ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "skyline_stairs",
-  "pattern" : [ "W  ", "ZW " ],
-  "key" : {
-    "W" : {
-      "item" : "terrestria:stripped_cypress_log"
-    },
-    "Z" : {
-      "item" : "terrestria:cypress_log"
-    }
-  },
-  "result" : {
-    "item" : "mcwterraformersmc:cypress_skyline_stairs",
-    "count" : 4
-  }
+  ]
 }

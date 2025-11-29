@@ -1,42 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "shoji_two",
-    
-    "pattern":
-    [
-        "BB",
-        "BB",
-        "AA"                
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "terrestria:sakura_slab"
-        },    
-        
-        "B":
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "minecraft:paper"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:sakura_japanese2_door",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "shoji_two",
+        "pattern": [
+          "BB",
+          "BB",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:sakura_slab"
+          },
+          "B": {
+            "item": "minecraft:paper"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:sakura_japanese2_door",
+          "count": 3
+        }
+      }
     }
+  ]
 }
-
-

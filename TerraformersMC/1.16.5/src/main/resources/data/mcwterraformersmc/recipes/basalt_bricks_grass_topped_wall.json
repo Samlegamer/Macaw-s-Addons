@@ -1,46 +1,40 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "grass_topped",
-    
-    "pattern":
-    [
-		"BGB",
-		"AAA"
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "terrestria:basalt_cobblestone"
-        },    
-        
-		"G":
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "minecraft:dirt"
-        }, 
-        
-        "B":
-        {
-            "item": "terrestria:basalt_bricks"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:basalt_bricks_grass_topped_wall",
-        "count": 6
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "grass_topped",
+        "pattern": [
+          "BCB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:basalt_cobblestone"
+          },
+          "B": {
+            "item": "terrestria:basalt_bricks"
+          },
+          "C": {
+            "item": "minecraft:dirt"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:basalt_bricks_grass_topped_wall",
+          "count": 6
+        }
+      }
     }
+  ]
 }
-
-

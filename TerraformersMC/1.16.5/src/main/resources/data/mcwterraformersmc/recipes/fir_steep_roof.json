@@ -1,39 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwroofs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "traverse"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "steep",
-    
-    "pattern":
-    [
-        " W",
-		"WW",
-        "WS"
-    ],
-    
-    "key":
-    {
-        "W":
+      "conditions": [
         {
-            "item": "traverse:fir_log"
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
         },
-		"S":
         {
-            "item": "minecraft:stick"
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item": "mcwterraformersmc:fir_steep_roof",
-        "count": 4
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "steep_roof",
+        "pattern": [
+          " A",
+          "AA",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "traverse:fir_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:fir_steep_roof",
+          "count": 4
+        }
+      }
     }
+  ]
 }

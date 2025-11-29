@@ -1,42 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "western",
-    
-    "pattern":
-    [
-        "  A",
-        "ABA",
-		"AAA"
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "terrestria:hemlock_planks"
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
         },
-		
-		"B":
         {
-            "item": "terrestria:hemlock_slab"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:hemlock_western_door",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "western",
+        "pattern": [
+          "  A",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:hemlock_planks"
+          },
+          "B": {
+            "item": "terrestria:hemlock_slab"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:hemlock_western_door",
+          "count": 3
+        }
+      }
     }
+  ]
 }
-
-

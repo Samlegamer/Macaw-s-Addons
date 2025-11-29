@@ -1,41 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "desk",
-    "pattern":
-    [
-        "AAA",
-        "B B"                
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "terrestria:yucca_palm_log"
-        }, 
-		
-		
-        "B":
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "terrestria:yucca_palm_fence"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:yucca_palm_desk",
-        "count": 2
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "desk",
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:yucca_palm_log"
+          },
+          "B": {
+            "item": "terrestria:yucca_palm_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:yucca_palm_desk",
+          "count": 2
+        }
+      }
     }
+  ]
 }
-
-

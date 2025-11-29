@@ -82,9 +82,9 @@ public class McwBOP extends McwMod
     	Doors.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Windows.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
     	Stairs.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::dataSetup);
+    	bus().addListener(this::clientSetup);
+        bus().addListener(this::commonSetup);
+        bus().addListener(this::dataSetup);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }

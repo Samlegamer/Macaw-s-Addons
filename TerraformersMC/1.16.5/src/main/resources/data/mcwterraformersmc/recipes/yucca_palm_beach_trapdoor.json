@@ -1,42 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwtrpdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "beach_trapdoors",
-    
-    "pattern":
-    [
-        "A",
-        "B",
-        "A"                
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "terrestria:yucca_palm_planks"
-        },    
-        
-        "B":
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "mcwtrpdoors:print_beach"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:yucca_palm_beach_trapdoor",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "beach_trapdoors",
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:yucca_palm_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_beach"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:yucca_palm_beach_trapdoor"
+        }
+      }
     }
+  ]
 }
-
-

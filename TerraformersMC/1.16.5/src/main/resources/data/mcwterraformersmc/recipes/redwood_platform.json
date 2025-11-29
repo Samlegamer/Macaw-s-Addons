@@ -1,27 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_platform",
+        "pattern": [
+          " BB",
+          " AA",
+          "   "
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:redwood_log"
+          },
+          "B": {
+            "item": "terrestria:redwood_slab"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:redwood_platform",
+          "count": 12
+        }
+      }
     }
-  ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "mcwstairs_platform",
-  "pattern" : [ " ZZ", " WW", "   " ],
-  "key" : {
-    "W" : {
-      "item" : "terrestria:redwood_log"
-    },
-    "Z" : {
-      "item" : "terrestria:redwood_slab"
-    }
-  },
-  "result" : {
-    "item" : "mcwterraformersmc:redwood_platform",
-    "count" : 12
-  }
+  ]
 }

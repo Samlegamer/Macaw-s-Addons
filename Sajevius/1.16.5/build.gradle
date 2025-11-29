@@ -132,6 +132,9 @@ dependencies {
     implementation fg.deobf("curse.maven:macaws-stairs-1119394:${stairs_version}")
     implementation fg.deobf("curse.maven:macaws-furniture-359540:${furniture_version}")
 
+    //compileOnly fg.deobf("curse.maven:betterlands-482870:3336248")
+    //compileOnly fg.deobf("curse.maven:shroomed-493665:3365207")
+
     runtimeOnly fg.deobf("curse.maven:betterlands-482870:3336248")
     runtimeOnly fg.deobf("curse.maven:shroomed-493665:3365207")
 

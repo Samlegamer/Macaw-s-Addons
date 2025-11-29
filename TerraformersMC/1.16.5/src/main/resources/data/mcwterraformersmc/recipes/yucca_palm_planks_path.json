@@ -1,22 +1,30 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwpaths"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
+      "conditions": [
+        {
+          "modid": "mcwpaths",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks_paths",
+        "ingredients": [
+          {
+            "item": "terrestria:yucca_palm_slab"
+          }
+        ],
+        "result": {
+          "item": "mcwterraformersmc:yucca_palm_planks_path",
+          "count": 3
+        }
+      }
     }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "terrestria:yucca_palm_slab"
-    }
-  ],
-  "result": {
-    "item": "mcwterraformersmc:yucca_palm_planks_path",
-    "count": 3
-  }
+  ]
 }

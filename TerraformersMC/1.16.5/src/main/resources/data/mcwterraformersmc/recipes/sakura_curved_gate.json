@@ -1,41 +1,37 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "curved_gate",
-    
-    "pattern":
-    [
-		"B A",
-		"BAA"
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "terrestria:sakura_planks"
-        },    
-        
-        "B":
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "terrestria:sakura_log"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:sakura_curved_gate",
-        "count": 4
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "curved_gate",
+        "pattern": [
+          "B A",
+          "BAA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:sakura_planks"
+          },
+          "B": {
+            "item": "terrestria:sakura_log"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:sakura_curved_gate",
+          "count": 4
+        }
+      }
     }
+  ]
 }
-
-

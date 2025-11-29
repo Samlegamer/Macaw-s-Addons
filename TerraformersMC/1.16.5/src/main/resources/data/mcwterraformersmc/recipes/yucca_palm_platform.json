@@ -1,27 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwstairs"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_platform",
+        "pattern": [
+          " BB",
+          " AA",
+          "   "
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:yucca_palm_log"
+          },
+          "B": {
+            "item": "terrestria:yucca_palm_slab"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:yucca_palm_platform",
+          "count": 12
+        }
+      }
     }
-  ],
-  "type" : "minecraft:crafting_shaped",
-  "group" : "mcwstairs_platform",
-  "pattern" : [ " ZZ", " WW", "   " ],
-  "key" : {
-    "W" : {
-      "item" : "terrestria:yucca_palm_log"
-    },
-    "Z" : {
-      "item" : "terrestria:yucca_palm_slab"
-    }
-  },
-  "result" : {
-    "item" : "mcwterraformersmc:yucca_palm_platform",
-    "count" : 12
-  }
+  ]
 }

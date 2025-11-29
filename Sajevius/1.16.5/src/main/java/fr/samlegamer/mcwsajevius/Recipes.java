@@ -7,37 +7,38 @@ import fr.samlegamer.addonslib.generation.recipes.mat.McwStoneMat;
 import fr.samlegamer.addonslib.generation.recipes.mat.McwWoodMat;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
-import net.minecraft.data.RecipeProvider;
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class Recipes extends RecipeProvider
+public class Recipes extends McwRecipes
 {
     private final String betterlands = "betterlands";
     private final String shroomed = "shroomed";
 
     public Recipes(DataGenerator p_i48262_1_) {
-        super(p_i48262_1_);
+        super(p_i48262_1_, McwSajevius.MODID, "", "");
     }
 
     @Override
+    @ParametersAreNonnullByDefault
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer)
     {
         mkRecipesWood(consumer, betterlands, McwSajevius.wood_betterlands, woodBetterlands());
-        McwRecipes.registerMcwHedge(consumer, McwSajevius.MODID, betterlands, McwSajevius.wood_betterlands, Arrays.asList(Finder.findBlock(betterlands, "juniper_leaves")));
-        McwRecipes.registerAllMcwStone(consumer, McwSajevius.MODID, betterlands, McwSajevius.stone_betterlands, stoneBetterlands());
+        registerMcwHedge(consumer, McwSajevius.MODID, betterlands, McwSajevius.wood_betterlands, Arrays.asList(Finder.findBlock(betterlands, "juniper_leaves")));
+        registerAllMcwStone(consumer, McwSajevius.MODID, betterlands, McwSajevius.stone_betterlands, stoneBetterlands());
         mkRecipesWood(consumer, shroomed, McwSajevius.wood_shroomed, woodShroomed());
     }
 
     private void mkRecipesWood(Consumer<IFinishedRecipe> consumer, String original, List<String> mat, List<McwWoodMat> mcwWoodMats)
     {
-        McwRecipes.onRegisterMcwWood(ModType.BRIDGES, consumer, McwSajevius.MODID, original, mat, mcwWoodMats);
-        McwRecipes.onRegisterMcwWood(ModType.ROOFS, consumer, McwSajevius.MODID, original, mat, mcwWoodMats);
-        McwRecipes.onRegisterMcwWood(ModType.FENCES, consumer, McwSajevius.MODID, original, mat, mcwWoodMats);
-        McwRecipes.onRegisterMcwWood(ModType.FURNITURES, consumer, McwSajevius.MODID, original, mat, mcwWoodMats);
-        McwRecipes.onRegisterMcwWood(ModType.STAIRS, consumer, McwSajevius.MODID, original, mat, mcwWoodMats);
+        onRegisterMcwWood(ModType.BRIDGES, consumer, McwSajevius.MODID, original, mat, mcwWoodMats);
+        onRegisterMcwWood(ModType.ROOFS, consumer, McwSajevius.MODID, original, mat, mcwWoodMats);
+        onRegisterMcwWood(ModType.FENCES, consumer, McwSajevius.MODID, original, mat, mcwWoodMats);
+        onRegisterMcwWood(ModType.FURNITURES, consumer, McwSajevius.MODID, original, mat, mcwWoodMats);
+        onRegisterMcwWood(ModType.STAIRS, consumer, McwSajevius.MODID, original, mat, mcwWoodMats);
     }
 
     private List<McwWoodMat> woodShroomed()

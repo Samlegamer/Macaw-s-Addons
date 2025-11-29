@@ -1,42 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwdoors"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "shoji",
-    
-    "pattern":
-    [
-        "BB",
-        "BB",
-        "AA"                
-    ],
-    
-    "key":
-    { 
-        "A":
+      "conditions": [
         {
-            "item": "terrestria:japanese_maple_planks"
-        },    
-        
-        "B":
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "minecraft:paper"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:japanese_maple_japanese_door",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "shoji",
+        "pattern": [
+          "BB",
+          "BB",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:japanese_maple_planks"
+          },
+          "B": {
+            "item": "minecraft:paper"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:japanese_maple_japanese_door",
+          "count": 3
+        }
+      }
     }
+  ]
 }
-
-

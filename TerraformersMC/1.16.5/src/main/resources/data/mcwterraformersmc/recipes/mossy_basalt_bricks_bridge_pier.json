@@ -1,37 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwbridges"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-	"group": "stone_piers",
-    
-    "pattern": [
-    "WFW"
-    ],
-    
-    "key":
-    {
-        "F":
+      "conditions": [
         {
-            "item": "terrestria:mossy_basalt_brick_wall"
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
         },
-        
-        "W":
         {
-            "item": "terrestria:mossy_basalt_bricks"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:mossy_basalt_bricks_bridge_pier",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:mossy_basalt_bricks"
+          },
+          "B": {
+            "item": "terrestria:mossy_basalt_brick_wall"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:mossy_basalt_bricks_bridge_pier",
+          "count": 3
+        }
+      }
     }
+  ]
 }

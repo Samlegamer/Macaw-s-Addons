@@ -1,35 +1,36 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwwindows"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "traverse"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "shutters",
-	
-    "pattern":
-    [
-        "B",
-        "B",
-        "B"		
-    ],
-    
-    "key":
-    { 
-        "B":
+      "conditions": [
         {
-            "item": "traverse:fir_trapdoor"
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:fir_shutter",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "traverse:fir_trapdoor"
+          },
+          {
+            "item": "traverse:fir_trapdoor"
+          },
+          {
+            "item": "traverse:fir_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwterraformersmc:fir_shutter",
+          "count": 3
+        }
+      }
     }
+  ]
 }

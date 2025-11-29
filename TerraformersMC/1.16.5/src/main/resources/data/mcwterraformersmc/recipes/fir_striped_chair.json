@@ -1,46 +1,40 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "traverse"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "striped_chair",
-    "pattern":
-    [
-        " A",
-        "BC",
-		"CC"
-    ],
-    
-    "key":
-    { 
-	    "A":
+      "conditions": [
         {
-            "item": "traverse:fir_log"
-        }, 
-		
-        "B":
-        {
-            "item": "traverse:fir_slab"
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
         },
-		
-		"C":
         {
-            "item": "traverse:fir_fence"
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:fir_striped_chair",
-        "count": 1
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "striped_chair",
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "traverse:fir_log"
+          },
+          "B": {
+            "item": "traverse:fir_slab"
+          },
+          "C": {
+            "item": "traverse:fir_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:fir_striped_chair"
+        }
+      }
     }
+  ]
 }
-
-

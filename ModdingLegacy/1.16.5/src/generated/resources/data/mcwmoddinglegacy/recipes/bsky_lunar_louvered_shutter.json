@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "blue_skies",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "blue_skies:lunar_slab"
+          },
+          {
+            "item": "blue_skies:lunar_slab"
+          },
+          {
+            "item": "blue_skies:lunar_slab"
+          }
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:bsky_lunar_louvered_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

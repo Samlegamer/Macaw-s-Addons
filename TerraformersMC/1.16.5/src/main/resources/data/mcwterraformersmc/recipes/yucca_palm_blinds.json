@@ -1,40 +1,38 @@
 {
-"conditions": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "mcwwindows"
-    },
-    {
-      "type": "forge:mod_loaded",
-      "modid": "terrestria"
-    }
-  ],
-    "type": "minecraft:crafting_shaped",
-    "group": "blinds",
-	
-    "pattern":
-    [
-        "AAA",
-        "BBB",
-        "BBB"		
-    ],
-    
-    "key":
-    { 
-        "B":
+      "conditions": [
         {
-            "item": "minecraft:stick"
-        },    
-        
-        "A":
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
         {
-            "item": "terrestria:yucca_palm_slab"
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
         }
-    },
-    
-    "result":
-    {
-        "item":  "mcwterraformersmc:yucca_palm_blinds",
-        "count": 3
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "blinds",
+        "pattern": [
+          "AAA",
+          "BBB",
+          "BBB"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:yucca_palm_slab"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:yucca_palm_blinds",
+          "count": 3
+        }
+      }
     }
+  ]
 }
