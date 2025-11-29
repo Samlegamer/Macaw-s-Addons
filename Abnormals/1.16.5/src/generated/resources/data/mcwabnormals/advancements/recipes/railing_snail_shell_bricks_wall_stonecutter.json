@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "autumnity",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:railing_snail_shell_bricks_wall_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_snail_shell_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "autumnity:snail_shell_bricks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:railing_snail_shell_bricks_wall_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_snail_shell_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

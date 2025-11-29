@@ -1,7 +1,6 @@
 {
     "variants": {                     
 		"connection=base":  { "model": "mcwaurora:block/bridge/bridge_wood/redbud_base","uvlock": true},
-		"connection=base_toggled":  { "model": "mcwaurora:block/bridge/bridge_wood/redbud_base","uvlock": true},
 		
         "connection=middle_ns":  { "model": "mcwaurora:block/bridge/bridge_wood/redbud_middle", "y": 90,"uvlock": true},
 		"connection=middle_ew":  { "model": "mcwaurora:block/bridge/bridge_wood/redbud_middle","uvlock": true},
@@ -14,11 +13,6 @@
 		"connection=side_s":  { "model": "mcwaurora:block/bridge/bridge_wood/redbud_side","uvlock": true},
 		"connection=side_n":  { "model": "mcwaurora:block/bridge/bridge_wood/redbud_side", "y": 180,"uvlock": true},
 		"connection=side_w":  { "model": "mcwaurora:block/bridge/bridge_wood/redbud_side", "y": 90,"uvlock": true},
-		"connection=side_e":  { "model": "mcwaurora:block/bridge/bridge_wood/redbud_side", "y": 270,"uvlock": true},
-		
-		"connection=end_s_toggled":  { "model": "mcwaurora:block/bridge/bridge_wood/redbud_side", "y": 0,"uvlock": true},
-		"connection=end_n_toggled":  { "model": "mcwaurora:block/bridge/bridge_wood/redbud_side", "y": 180,"uvlock": true},
-		"connection=end_w_toggled":  { "model": "mcwaurora:block/bridge/bridge_wood/redbud_side", "y": 90,"uvlock": true},
-		"connection=end_e_toggled":  { "model": "mcwaurora:block/bridge/bridge_wood/redbud_side", "y": 270,"uvlock": true}
+		"connection=side_e":  { "model": "mcwaurora:block/bridge/bridge_wood/redbud_side", "y": 270,"uvlock": true}
     }
 }

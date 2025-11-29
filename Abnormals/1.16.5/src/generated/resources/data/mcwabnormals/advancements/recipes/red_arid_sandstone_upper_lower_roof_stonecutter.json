@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "atmospheric",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:red_arid_sandstone_upper_lower_roof_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_red_arid_sandstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "atmospheric:red_arid_sandstone"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:red_arid_sandstone_upper_lower_roof_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_red_arid_sandstone",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

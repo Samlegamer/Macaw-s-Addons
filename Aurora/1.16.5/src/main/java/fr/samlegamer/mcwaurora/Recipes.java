@@ -10,26 +10,27 @@ import fr.samlegamer.addonslib.generation.recipes.McwRecipes;
 import fr.samlegamer.addonslib.generation.recipes.mat.McwWoodMat;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
-import net.minecraft.data.RecipeProvider;
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class Recipes extends RecipeProvider
+public class Recipes extends McwRecipes
 {
     public Recipes(DataGenerator p_i48262_1_) {
-        super(p_i48262_1_);
+        super(p_i48262_1_, McwAurora.MODID, "", "");
     }
 
     @Override
+    @ParametersAreNonnullByDefault
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer) {
-        McwRecipes.registerAllMcwWood(consumer, McwAurora.MODID, EnhancedMushrooms.MODID, McwAurora.WOOD_ENHANCED_MUSH, getEM());
-        McwRecipes.registerAllMcwWood(consumer, McwAurora.MODID, BayouBlues.MODID, McwAurora.WOOD_BAYOU, getBayouWood());
-        McwRecipes.registerAllMcwWood(consumer, McwAurora.MODID, Abundance.MODID, McwAurora.WOOD_ABUNDANCE, getAbunWood());
+        registerAllMcwWood(consumer, McwAurora.MODID, EnhancedMushrooms.MODID, McwAurora.WOOD_ENHANCED_MUSH, getEM());
+        registerAllMcwWood(consumer, McwAurora.MODID, BayouBlues.MODID, McwAurora.WOOD_BAYOU, getBayouWood());
+        registerAllMcwWood(consumer, McwAurora.MODID, Abundance.MODID, McwAurora.WOOD_ABUNDANCE, getAbunWood());
 
-        McwRecipes.registerMcwHedge(consumer, McwAurora.MODID, BayouBlues.MODID, McwAurora.WOOD_BAYOU, Arrays.asList(BayouBluesBlocks.CYPRESS_LEAVES.get()));
-        McwRecipes.registerMcwHedge(consumer, McwAurora.MODID, Abundance.MODID, McwAurora.WOOD_ABUNDANCE, Arrays.asList(AbundanceBlocks.JACARANDA_LEAVES.get(), AbundanceBlocks.REDBUD_LEAVES.get()));
+        registerMcwHedge(consumer, McwAurora.MODID, BayouBlues.MODID, McwAurora.WOOD_BAYOU, Arrays.asList(BayouBluesBlocks.CYPRESS_LEAVES.get()));
+        registerMcwHedge(consumer, McwAurora.MODID, Abundance.MODID, McwAurora.WOOD_ABUNDANCE, Arrays.asList(AbundanceBlocks.JACARANDA_LEAVES.get(), AbundanceBlocks.REDBUD_LEAVES.get()));
     }
 
     private List<McwWoodMat> getBayouWood()

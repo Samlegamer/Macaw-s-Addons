@@ -1,0 +1,14 @@
+
+{
+    "variants": {
+        "facing=east,water=false":  { "model": "mcwaurora:block/counter/stripped_brown_mushroom_kitchen_sink", "y": 270 },
+        "facing=west,water=false":  { "model": "mcwaurora:block/counter/stripped_brown_mushroom_kitchen_sink", "y": 90 },
+        "facing=south,water=false": { "model": "mcwaurora:block/counter/stripped_brown_mushroom_kitchen_sink", "y": 0 },
+        "facing=north,water=false": { "model": "mcwaurora:block/counter/stripped_brown_mushroom_kitchen_sink", "y": 180 },
+		
+	    "facing=east,water=true":  { "model": "mcwaurora:block/counter/stripped_brown_mushroom_kitchen_sink_filled", "y": 270 },
+        "facing=west,water=true":  { "model": "mcwaurora:block/counter/stripped_brown_mushroom_kitchen_sink_filled", "y": 90 },
+        "facing=south,water=true": { "model": "mcwaurora:block/counter/stripped_brown_mushroom_kitchen_sink_filled", "y": 0 },
+        "facing=north,water=true": { "model": "mcwaurora:block/counter/stripped_brown_mushroom_kitchen_sink_filled", "y": 180 }
+    }
+}

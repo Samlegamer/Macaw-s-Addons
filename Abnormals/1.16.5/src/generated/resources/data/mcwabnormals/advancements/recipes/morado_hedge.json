@@ -19,7 +19,7 @@
           ]
         },
         "criteria": {
-          "has_item": {
+          "has_morado_leaves": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_item",
+            "has_morado_leaves",
             "has_the_recipe"
           ]
         ]

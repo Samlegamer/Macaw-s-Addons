@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "buzzier_bees",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:railing_honeycomb_tile_wall_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_honeycomb_tiles": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "buzzier_bees:honeycomb_tiles"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:railing_honeycomb_tile_wall_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_honeycomb_tiles",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}
