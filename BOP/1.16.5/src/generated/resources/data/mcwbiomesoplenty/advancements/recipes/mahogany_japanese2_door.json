@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_mahogany_slab": {
+          "has_mahogany_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "biomesoplenty:mahogany_slab"
+                  "item": "biomesoplenty:mahogany_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_mahogany_slab",
+            "has_mahogany_log",
             "has_the_recipe"
           ]
         ]

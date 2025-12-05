@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_dead_slab": {
+          "has_dead_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "biomesoplenty:dead_slab"
+                  "item": "biomesoplenty:dead_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_dead_slab",
+            "has_dead_log",
             "has_the_recipe"
           ]
         ]

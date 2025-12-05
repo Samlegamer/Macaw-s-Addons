@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_stripped_jacaranda_log": {
+          "has_jacaranda_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "biomesoplenty:stripped_jacaranda_log"
+                  "item": "biomesoplenty:jacaranda_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_stripped_jacaranda_log",
+            "has_jacaranda_log",
             "has_the_recipe"
           ]
         ]

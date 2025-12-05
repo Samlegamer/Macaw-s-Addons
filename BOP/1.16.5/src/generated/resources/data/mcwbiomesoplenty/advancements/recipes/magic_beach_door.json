@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_magic_planks": {
+          "has_magic_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "biomesoplenty:magic_planks"
+                  "item": "biomesoplenty:magic_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_magic_planks",
+            "has_magic_log",
             "has_the_recipe"
           ]
         ]

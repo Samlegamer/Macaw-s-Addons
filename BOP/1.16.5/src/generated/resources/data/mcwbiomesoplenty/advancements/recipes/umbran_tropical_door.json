@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_umbran_planks": {
+          "has_umbran_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "biomesoplenty:umbran_planks"
+                  "item": "biomesoplenty:umbran_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_umbran_planks",
+            "has_umbran_log",
             "has_the_recipe"
           ]
         ]

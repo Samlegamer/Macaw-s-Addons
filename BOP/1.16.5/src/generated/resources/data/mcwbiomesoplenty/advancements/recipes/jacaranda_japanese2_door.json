@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_jacaranda_slab": {
+          "has_jacaranda_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "biomesoplenty:jacaranda_slab"
+                  "item": "biomesoplenty:jacaranda_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_jacaranda_slab",
+            "has_jacaranda_log",
             "has_the_recipe"
           ]
         ]

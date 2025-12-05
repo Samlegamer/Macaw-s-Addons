@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_stripped_redwood_log": {
+          "has_redwood_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "biomesoplenty:stripped_redwood_log"
+                  "item": "biomesoplenty:redwood_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_stripped_redwood_log",
+            "has_redwood_log",
             "has_the_recipe"
           ]
         ]
