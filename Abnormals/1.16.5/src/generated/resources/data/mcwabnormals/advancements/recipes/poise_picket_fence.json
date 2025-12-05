@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_poise_planks": {
+          "has_poise_stem": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "endergetic:poise_planks"
+                  "item": "endergetic:poise_stem"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_poise_planks",
+            "has_poise_stem",
             "has_the_recipe"
           ]
         ]

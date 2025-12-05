@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_willow_planks": {
+          "has_willow_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "environmental:willow_planks"
+                  "item": "environmental:willow_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_willow_planks",
+            "has_willow_log",
             "has_the_recipe"
           ]
         ]

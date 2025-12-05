@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_stripped_poise_stem": {
+          "has_poise_stem": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "endergetic:stripped_poise_stem"
+                  "item": "endergetic:poise_stem"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_stripped_poise_stem",
+            "has_poise_stem",
             "has_the_recipe"
           ]
         ]

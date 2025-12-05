@@ -1,25 +1,18 @@
 package fr.samlegamer.mcwaurora;
 
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
-import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
-import fr.samlegamer.addonslib.path.Paths;
-import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.util.McwMod;
-import fr.samlegamer.addonslib.windows.Windows;
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
@@ -34,13 +27,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.bridges.Bridges;
-import fr.samlegamer.addonslib.fences.Fences;
-import fr.samlegamer.addonslib.furnitures.Furnitures;
-import fr.samlegamer.addonslib.roofs.Roofs;
-import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
-import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 import javax.annotation.Nonnull;
 
 @Mod(McwAurora.MODID)
@@ -71,17 +58,17 @@ public class McwAurora extends McwMod
 					Finder.findBlock(MODID, randomNaming()+"_planks_path"),
 					Finder.findBlock(MODID, randomNaming()+"_skyline_stairs"));
 	        
-	    	prop.addType(BlockType.BRIDGES)
-					.addType(BlockType.ROOFS)
-					.addType(BlockType.FENCES)
-					.addType(BlockType.FURNITURES)
-					.addType(BlockType.STAIRS)
-					.addType(BlockType.PATHS)
-					.addType(BlockType.WINDOWS)
-					.addType(BlockType.DOORS)
-					.addType(BlockType.TRAPDOORS);
-	    	Block icon = prop.buildIcon(BlockType.BRIDGES, BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.STAIRS,
-					BlockType.PATHS, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS);
+	    	prop.addType(ModType.BRIDGES)
+					.addType(ModType.ROOFS)
+					.addType(ModType.FENCES)
+					.addType(ModType.FURNITURES)
+					.addType(ModType.STAIRS)
+					.addType(ModType.PATHS)
+					.addType(ModType.WINDOWS)
+					.addType(ModType.DOORS)
+					.addType(ModType.TRAPDOORS);
+	    	Block icon = prop.buildIcon(ModType.BRIDGES, ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.STAIRS,
+					ModType.PATHS, ModType.WINDOWS, ModType.DOORS, ModType.TRAPDOORS);
 	    	return new ItemStack(icon);
 	    }
 	};
@@ -91,47 +78,12 @@ public class McwAurora extends McwMod
     	LOGGER.info("Macaw's Aurora Mod Loading...");
     	Registration.init(block, item);
 
-    	final AbstractBlock.Properties wood = AbstractBlock.Properties.of(Material.WOOD).harvestTool(ToolType.AXE).strength(0.5F, 2.5F).sound(SoundType.WOOD);
-    	final AbstractBlock.Properties leaves = AbstractBlock.Properties.copy(Blocks.OAK_LEAVES).harvestTool(ToolType.HOE);
+        McwRegistry.setRegistriesWood(WOOD_BAYOU, block, item, "bayou_blues", MCWAURORA_TAB, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(WOOD_ENHANCED_MUSH, block, item, "enhanced_mushrooms", MCWAURORA_TAB, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(WOOD_ABUNDANCE, block, item, "abundance", MCWAURORA_TAB, Registration.getAllModTypeWood());
 
-    	Bridges.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues", wood);
-    	Bridges.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms", wood);
-    	Bridges.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance", wood);
-
-    	Roofs.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues", wood);
-    	Roofs.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms", wood);
-    	Roofs.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance", wood);
-
-    	Fences.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues", wood);
-    	Fences.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms", wood);
-    	Fences.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance", wood);
-
-    	Fences.setRegistrationHedgesModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues", leaves);
-    	Fences.setRegistrationHedgesModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance", leaves);
-
-    	Furnitures.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues");
-    	Furnitures.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms");
-    	Furnitures.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance");
-
-    	Stairs.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues", wood);
-    	Stairs.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms", wood);
-    	Stairs.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance", wood);
-
-		Paths.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues");
-		Paths.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms");
-		Paths.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance");
-
-		Trapdoors.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues");
-		Trapdoors.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms");
-		Trapdoors.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance");
-
-		Doors.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues");
-		Doors.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms");
-		Doors.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance");
-
-		Windows.setRegistrationWoodModLoaded(WOOD_BAYOU, block, item, MCWAURORA_TAB, "bayou_blues");
-		Windows.setRegistrationWoodModLoaded(WOOD_ENHANCED_MUSH, block, item, MCWAURORA_TAB, "enhanced_mushrooms");
-		Windows.setRegistrationWoodModLoaded(WOOD_ABUNDANCE, block, item, MCWAURORA_TAB, "abundance");
+        McwRegistry.setRegistriesLeave(WOOD_BAYOU, block, item, "bayou_blues", MCWAURORA_TAB);
+        McwRegistry.setRegistriesLeave(WOOD_ABUNDANCE, block, item, "abundance", MCWAURORA_TAB);
 
 		bus().addListener(this::clientSetup);
         bus().addListener(this::commonSetup);
@@ -159,18 +111,26 @@ public class McwAurora extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(generator, MODID, existingFileHelper) {
                 @Override
                 protected void addTags() {
-                    addAllMcwTags(MODID, WOOD_ENHANCED_MUSH);
-                    addAllMcwTags(MODID, WOOD_BAYOU, WOOD_BAYOU);
-                    addAllMcwTags(MODID, WOOD_ABUNDANCE, WOOD_ABUNDANCE);
+                    addAllMcwTagsWood(MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());
+
+                    addAllMcwTagsWood(MODID, WOOD_BAYOU, Registration.getAllModTypeWood());
+                    addAllMcwTagsLeave(MODID, WOOD_BAYOU);
+
+                    addAllMcwTagsWood(MODID, WOOD_ABUNDANCE, Registration.getAllModTypeWood());
+                    addAllMcwTagsLeave(MODID, WOOD_ABUNDANCE);
                 }
             };
             generator.addProvider(mcwBlockTags);
             generator.addProvider(new McwItemTags(generator, mcwBlockTags, MODID, existingFileHelper) {
                 @Override
                 protected void addTags() {
-                    addAllMcwTags(MODID, WOOD_ENHANCED_MUSH);
-                    addAllMcwTags(MODID, WOOD_BAYOU, WOOD_BAYOU);
-                    addAllMcwTags(MODID, WOOD_ABUNDANCE, WOOD_ABUNDANCE);
+                    addAllMcwTagsWood(MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());
+
+                    addAllMcwTagsWood(MODID, WOOD_BAYOU, Registration.getAllModTypeWood());
+                    addAllMcwTagsLeave(MODID, WOOD_BAYOU);
+
+                    addAllMcwTagsWood(MODID, WOOD_ABUNDANCE, Registration.getAllModTypeWood());
+                    addAllMcwTagsLeave(MODID, WOOD_ABUNDANCE);
                 }
             });
             generator.addProvider(new Recipes(generator));

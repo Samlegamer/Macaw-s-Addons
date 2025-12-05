@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_red_mushroom_slab": {
+          "has_red_mushroom_stem": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "enhanced_mushrooms:red_mushroom_slab"
+                  "item": "enhanced_mushrooms:red_mushroom_stem"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_red_mushroom_slab",
+            "has_red_mushroom_stem",
             "has_the_recipe"
           ]
         ]

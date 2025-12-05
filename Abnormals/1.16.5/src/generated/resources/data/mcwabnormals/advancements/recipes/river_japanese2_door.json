@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_river_slab": {
+          "has_river_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "upgrade_aquatic:river_slab"
+                  "item": "upgrade_aquatic:river_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_river_slab",
+            "has_river_log",
             "has_the_recipe"
           ]
         ]

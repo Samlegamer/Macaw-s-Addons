@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_stripped_driftwood_log": {
+          "has_driftwood_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "upgrade_aquatic:stripped_driftwood_log"
+                  "item": "upgrade_aquatic:driftwood_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_stripped_driftwood_log",
+            "has_driftwood_log",
             "has_the_recipe"
           ]
         ]

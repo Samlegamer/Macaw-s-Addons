@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_redbud_slab": {
+          "has_redbud_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "abundance:redbud_slab"
+                  "item": "abundance:redbud_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_redbud_slab",
+            "has_redbud_log",
             "has_the_recipe"
           ]
         ]

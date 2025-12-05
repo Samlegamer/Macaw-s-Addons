@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_stripped_grimwood_log": {
+          "has_grimwood_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "atmospheric:stripped_grimwood_log"
+                  "item": "atmospheric:grimwood_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_stripped_grimwood_log",
+            "has_grimwood_log",
             "has_the_recipe"
           ]
         ]

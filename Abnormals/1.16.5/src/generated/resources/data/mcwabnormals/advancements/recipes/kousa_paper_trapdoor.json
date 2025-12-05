@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_kousa_planks": {
+          "has_kousa_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "atmospheric:kousa_planks"
+                  "item": "atmospheric:kousa_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_kousa_planks",
+            "has_kousa_log",
             "has_the_recipe"
           ]
         ]

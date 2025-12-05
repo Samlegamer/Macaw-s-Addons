@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_stripped_cypress_log": {
+          "has_cypress_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "bayou_blues:stripped_cypress_log"
+                  "item": "bayou_blues:cypress_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_stripped_cypress_log",
+            "has_cypress_log",
             "has_the_recipe"
           ]
         ]

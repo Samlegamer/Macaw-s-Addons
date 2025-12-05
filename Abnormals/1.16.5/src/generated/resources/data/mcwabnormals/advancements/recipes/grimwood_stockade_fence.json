@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_grimwood_planks": {
+          "has_grimwood_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "atmospheric:grimwood_planks"
+                  "item": "atmospheric:grimwood_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_grimwood_planks",
+            "has_grimwood_log",
             "has_the_recipe"
           ]
         ]

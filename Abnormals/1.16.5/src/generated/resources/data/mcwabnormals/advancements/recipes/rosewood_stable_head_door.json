@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_rosewood_planks": {
+          "has_rosewood_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "atmospheric:rosewood_planks"
+                  "item": "atmospheric:rosewood_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_rosewood_planks",
+            "has_rosewood_log",
             "has_the_recipe"
           ]
         ]

@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_maple_planks": {
+          "has_maple_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "autumnity:maple_planks"
+                  "item": "autumnity:maple_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_maple_planks",
+            "has_maple_log",
             "has_the_recipe"
           ]
         ]
