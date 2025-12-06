@@ -1,10 +1,12 @@
 package fr.samlegamer.mcwquark;
 
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
+import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.util.McwMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -19,17 +21,12 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.bridges.Bridges;
-import fr.samlegamer.addonslib.fences.Fences;
-import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
-import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 import javax.annotation.Nonnull;
 
 @Mod(McwQuark.MODID)
@@ -54,8 +51,8 @@ public class McwQuark extends McwMod
 	    	NewIconRandom.NewProperties propIcon = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "limestone_bricks_roof"), Finder.findBlock(MODID, "orange_blossom_hedge"), Blocks.CRAFTING_TABLE,
 	    	Finder.findBlock(MODID, "marble_bricks_bridge"), Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE);
 	    	
-	    	propIcon.addType(BlockType.BRIDGES).addType(BlockType.ROOFS).addType(BlockType.FENCES);
-	    	Block icon = propIcon.buildIcon(BlockType.BRIDGES, BlockType.ROOFS, BlockType.FENCES);
+	    	propIcon.addType(ModType.BRIDGES).addType(ModType.ROOFS).addType(ModType.FENCES);
+	    	Block icon = propIcon.buildIcon(ModType.BRIDGES, ModType.ROOFS, ModType.FENCES);
 	        return new ItemStack(icon);
 	    }
 	};
@@ -87,14 +84,16 @@ public class McwQuark extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(generator, MODID, existingFileHelper) {
                 @Override
                 protected void addTags() {
-                    addAllMcwTags(MODID, new ArrayList<>(), stone, leaves);
+                    addAllMcwTagsLeave(MODID, leaves);
+                    addAllMcwTagsStone(MODID, stone, Registration.getAllModTypeWood());
                 }
             };
             generator.addProvider(mcwBlockTags);
             generator.addProvider(new McwItemTags(generator, mcwBlockTags, MODID, existingFileHelper) {
                 @Override
                 protected void addTags() {
-                    addAllMcwTags(MODID, new ArrayList<>(), stone, leaves);
+                    addAllMcwTagsLeave(MODID, leaves);
+                    addAllMcwTagsStone(MODID, stone, Registration.getAllModTypeWood());
                 }
             });
             generator.addProvider(new Recipes(generator));
@@ -109,11 +108,9 @@ public class McwQuark extends McwMod
     }
     
     @SubscribeEvent
-    public static void registry(final RegistryEvent.Register<Block> e)
+    public static void registry(final RegistryEvent.Register<Block> event)
     {
-    	Bridges.registryStone(e, MODID, stone, MCWQUARK_TAB);
-    	Fences.registryStone(e, MODID, stone, MCWQUARK_TAB);
-    	Fences.registryHedges(e, MODID, leaves, MCWQUARK_TAB);
-    	Roofs.registryStone(e, MODID, stone, MCWQUARK_TAB);
+        McwRegistry.registryEventStone(event, MODID, stone, MCWQUARK_TAB, Registration.getAllModTypeStone());
+        McwRegistry.registryEventLeave(event, MODID, leaves, MCWQUARK_TAB);
     }
 }

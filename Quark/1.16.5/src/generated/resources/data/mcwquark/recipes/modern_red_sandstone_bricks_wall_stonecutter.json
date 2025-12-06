@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "quark:red_sandstone_bricks"
+        },
+        "result": "mcwquark:modern_red_sandstone_bricks_wall",
+        "count": 1
+      }
+    }
+  ]
+}

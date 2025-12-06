@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwquark:limestone_bricks_railing_gate"
+          ]
+        },
+        "criteria": {
+          "has_limestone_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "quark:limestone_bricks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwquark:limestone_bricks_railing_gate"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_limestone_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

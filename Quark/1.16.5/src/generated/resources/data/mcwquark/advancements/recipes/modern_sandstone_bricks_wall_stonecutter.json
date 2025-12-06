@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwquark:modern_sandstone_bricks_wall_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_sandstone_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "quark:sandstone_bricks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwquark:modern_sandstone_bricks_wall_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_sandstone_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

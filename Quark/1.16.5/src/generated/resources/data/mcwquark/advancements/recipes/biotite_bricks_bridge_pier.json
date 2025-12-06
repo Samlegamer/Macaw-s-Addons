@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwquark:biotite_bricks_bridge_pier"
+          ]
+        },
+        "criteria": {
+          "has_biotite_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "quark:biotite_bricks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwquark:biotite_bricks_bridge_pier"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_biotite_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

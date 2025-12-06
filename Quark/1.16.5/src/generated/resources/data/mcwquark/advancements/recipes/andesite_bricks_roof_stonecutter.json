@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwquark:andesite_bricks_roof_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_andesite_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "quark:andesite_bricks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwquark:andesite_bricks_roof_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_andesite_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

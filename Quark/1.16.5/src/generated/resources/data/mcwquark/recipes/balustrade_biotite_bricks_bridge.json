@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "balustrade_bridges",
+        "pattern": [
+          "BBB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "quark:biotite_block_slab"
+          },
+          "B": {
+            "item": "quark:biotite_block_vertical_slab"
+          }
+        },
+        "result": {
+          "item": "mcwquark:balustrade_biotite_bricks_bridge",
+          "count": 5
+        }
+      }
+    }
+  ]
+}

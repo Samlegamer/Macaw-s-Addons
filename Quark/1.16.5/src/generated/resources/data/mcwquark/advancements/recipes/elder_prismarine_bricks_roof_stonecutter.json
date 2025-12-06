@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwquark:elder_prismarine_bricks_roof_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_elder_prismarine_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "quark:elder_prismarine_bricks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwquark:elder_prismarine_bricks_roof_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_elder_prismarine_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

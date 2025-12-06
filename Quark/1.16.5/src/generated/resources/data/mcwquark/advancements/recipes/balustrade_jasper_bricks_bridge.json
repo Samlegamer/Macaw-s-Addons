@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwquark:balustrade_jasper_bricks_bridge"
+          ]
+        },
+        "criteria": {
+          "has_jasper_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "quark:jasper_bricks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwquark:balustrade_jasper_bricks_bridge"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_jasper_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

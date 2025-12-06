@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "grass_topped",
+        "pattern": [
+          "BCB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:diorite"
+          },
+          "B": {
+            "item": "quark:diorite_bricks"
+          },
+          "C": {
+            "item": "minecraft:dirt"
+          }
+        },
+        "result": {
+          "item": "mcwquark:diorite_bricks_grass_topped_wall",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

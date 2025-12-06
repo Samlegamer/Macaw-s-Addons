@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stone_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "quark:jasper_bricks"
+          },
+          "B": {
+            "item": "quark:jasper_bricks_wall"
+          }
+        },
+        "result": {
+          "item": "mcwquark:jasper_bricks_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

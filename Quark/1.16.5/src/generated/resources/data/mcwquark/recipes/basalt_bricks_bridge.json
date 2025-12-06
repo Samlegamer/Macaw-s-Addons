@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stone_bridges",
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "quark:basalt_bricks_slab"
+          },
+          "B": {
+            "item": "quark:basalt_bricks_wall"
+          }
+        },
+        "result": {
+          "item": "mcwquark:basalt_bricks_bridge",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

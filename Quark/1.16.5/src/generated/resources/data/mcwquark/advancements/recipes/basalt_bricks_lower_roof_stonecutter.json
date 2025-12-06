@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwquark:basalt_bricks_lower_roof_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_basalt_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "quark:basalt_bricks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwquark:basalt_bricks_lower_roof_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_basalt_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}
