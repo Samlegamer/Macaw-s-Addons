@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_ether_planks": {
+          "has_ether_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "byg:ether_planks"
+                  "item": "byg:ether_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_ether_planks",
+            "has_ether_log",
             "has_the_recipe"
           ]
         ]

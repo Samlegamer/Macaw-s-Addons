@@ -114,6 +114,10 @@ repositories
         name = "CurseMaven"
         url = "https://www.cursemaven.com"
     }
+
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
@@ -138,10 +142,11 @@ dependencies {
 
     compileOnly fg.deobf("curse.maven:structure-gel-api-378802:${structgel_version}")
     compileOnly fg.deobf("curse.maven:blue-skies-312918:${blueskies_version}")
-    //compileOnly fg.deobf("curse.maven:premium-wood-353515:${premiumwood_version}")
+    compileOnly fg.deobf("blank:premium_wood-1.16.5-1.0:${premiumwood_version}")
 
     runtimeOnly fg.deobf("curse.maven:structure-gel-api-378802:${structgel_version}")
     runtimeOnly fg.deobf("curse.maven:blue-skies-312918:${blueskies_version}")
+    //runtimeOnly fg.deobf("blank:premium_wood-1.16.5-1.0:${premiumwood_version}")
     runtimeOnly fg.deobf("curse.maven:premium-wood-353515:${premiumwood_version}")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings

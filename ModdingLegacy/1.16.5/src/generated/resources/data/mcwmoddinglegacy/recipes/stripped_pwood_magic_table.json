@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_tables",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwmoddinglegacy:stripped_pwood_magic_coffee_table"
+          },
+          "B": {
+            "item": "premium_wood:magic_fence"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_magic_table"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_modern_chairs",
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:tiger_stripped_log"
+          },
+          "B": {
+            "item": "premium_wood:tiger_slab"
+          },
+          "C": {
+            "item": "premium_wood:tiger_fence"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_tiger_modern_chair"
+        }
+      }
+    }
+  ]
+}

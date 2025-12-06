@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_mangrove_planks": {
+          "has_mangrove_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "byg:mangrove_planks"
+                  "item": "byg:mangrove_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_mangrove_planks",
+            "has_mangrove_log",
             "has_the_recipe"
           ]
         ]

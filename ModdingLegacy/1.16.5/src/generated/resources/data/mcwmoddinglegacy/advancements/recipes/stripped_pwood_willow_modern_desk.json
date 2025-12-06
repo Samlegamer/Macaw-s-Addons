@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwmoddinglegacy:stripped_pwood_willow_modern_desk"
+          ]
+        },
+        "criteria": {
+          "has_willow_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "premium_wood:willow_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwmoddinglegacy:stripped_pwood_willow_modern_desk"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_willow_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

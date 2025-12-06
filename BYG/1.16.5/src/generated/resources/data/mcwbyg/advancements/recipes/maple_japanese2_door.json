@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_maple_slab": {
+          "has_maple_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "byg:maple_slab"
+                  "item": "byg:maple_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_maple_slab",
+            "has_maple_log",
             "has_the_recipe"
           ]
         ]

@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwmoddinglegacy:rope_pwood_silverbell_bridge"
+          ]
+        },
+        "criteria": {
+          "has_silverbell_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "premium_wood:silverbell_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwmoddinglegacy:rope_pwood_silverbell_bridge"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_silverbell_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

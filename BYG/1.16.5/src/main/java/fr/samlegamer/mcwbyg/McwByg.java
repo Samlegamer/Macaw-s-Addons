@@ -1,17 +1,14 @@
 package fr.samlegamer.mcwbyg;
 
+import fr.addonslib.api.data.McwBlocksIdBase;
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
-import fr.samlegamer.addonslib.data.McwBlocksIdBase;
-import fr.samlegamer.addonslib.data.ModType;
-import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
-import fr.samlegamer.addonslib.path.Paths;
-import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.util.McwMod;
-import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -23,19 +20,12 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.bridges.Bridges;
-import fr.samlegamer.addonslib.fences.Fences;
-import fr.samlegamer.addonslib.furnitures.Furnitures;
-import fr.samlegamer.addonslib.roofs.Roofs;
-import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
-import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 import javax.annotation.Nonnull;
 
 @Mod(McwByg.MODID)
@@ -69,17 +59,17 @@ public class McwByg extends McwMod
 					Finder.findBlock(MODID, "aspen_bulk_stairs"));
 	    	
 					prop
-					.addType(BlockType.ROOFS)
-					.addType(BlockType.FENCES)
-					.addType(BlockType.BRIDGES)
-					.addType(BlockType.FURNITURES)
-					.addType(BlockType.STAIRS)
-					.addType(BlockType.DOORS)
-					.addType(BlockType.TRAPDOORS)
-					.addType(BlockType.PATHS)
-					.addType(BlockType.WINDOWS);
-	    	Block icon = prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.BRIDGES, BlockType.FURNITURES, BlockType.STAIRS,
-					BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.WINDOWS);
+					.addType(ModType.ROOFS)
+					.addType(ModType.FENCES)
+					.addType(ModType.BRIDGES)
+					.addType(ModType.FURNITURES)
+					.addType(ModType.STAIRS)
+					.addType(ModType.DOORS)
+					.addType(ModType.TRAPDOORS)
+					.addType(ModType.PATHS)
+					.addType(ModType.WINDOWS);
+	    	Block icon = prop.buildIcon(ModType.ROOFS, ModType.FENCES, ModType.BRIDGES, ModType.FURNITURES, ModType.STAIRS,
+					ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.WINDOWS);
 	        return new ItemStack(icon);
 	    }
 	};
@@ -111,10 +101,10 @@ public class McwByg extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(gatherDataEvent.getGenerator(), MODID, gatherDataEvent.getExistingFileHelper()) {
                 @Override
                 protected void addTags() {
-                    addAllMcwTags(MODID, WOOD, LEAVES);
-                    mcwBridgesTagsStone(MODID, bridges_rockable);
-                    mcwRoofsTags(MODID, new ArrayList<>(), fences_rockable);
-                    mcwFencesTags(MODID, new ArrayList<>(), new ArrayList<>(), fences_rockable);
+                    addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+                    addAllMcwTagsLeave(MODID, LEAVES);
+                    addAllMcwTagsStone(MODID, bridges_rockable, ModType.BRIDGES);
+                    addAllMcwTagsStone(MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
                 }
             };
 
@@ -123,8 +113,10 @@ public class McwByg extends McwMod
             gatherDataEvent.getGenerator().addProvider(new McwItemTags(gatherDataEvent.getGenerator(), mcwBlockTags, MODID, gatherDataEvent.getExistingFileHelper()) {
                 @Override
                 protected void addTags() {
-                    addAllMcwTags(MODID, WOOD, LEAVES);
-                    mcwFencesTags(MODID, new ArrayList<>(), new ArrayList<>(), fences_rockable);
+                    addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+                    addAllMcwTagsLeave(MODID, LEAVES);
+                    addAllMcwTagsStone(MODID, bridges_rockable, ModType.BRIDGES);
+                    addAllMcwTagsStone(MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
                 }
             });
         }
@@ -141,18 +133,9 @@ public class McwByg extends McwMod
     @SubscribeEvent
     public static void registry(final RegistryEvent.Register<Block> event)
     {
-    	Bridges.registryWood(event, MODID, WOOD, MCWBYG_TAB);
-    	Bridges.registryStone(event, MODID, bridges_rockable, MCWBYG_TAB);
-    	Roofs.registryWood(event, MODID, WOOD, MCWBYG_TAB);
-    	Roofs.registryStone(event, MODID, fences_rockable, MCWBYG_TAB);
-    	Fences.registryWood(event, MODID, WOOD, MCWBYG_TAB);
-    	Fences.registryHedges(event, MODID, LEAVES, MCWBYG_TAB);
-    	Fences.registryStone(event, MODID, fences_rockable, MCWBYG_TAB);
-    	Furnitures.registryWood(event, MODID, WOOD, MCWBYG_TAB);
-    	Stairs.registryWood(event, MODID, WOOD, MCWBYG_TAB);
-		Paths.registryWood(event, MODID, WOOD, MCWBYG_TAB);
-		Doors.registryWood(event, MODID, WOOD, MCWBYG_TAB);
-		Trapdoors.registryWood(event, MODID, WOOD, MCWBYG_TAB);
-		Windows.registryWood(event, MODID, WOOD, MCWBYG_TAB);
+        McwRegistry.registryEventWood(event, MODID, WOOD, MCWBYG_TAB, Registration.getAllModTypeWood());
+    	McwRegistry.registryEventLeave(event, MODID, LEAVES, MCWBYG_TAB);
+    	McwRegistry.registryEventStone(event, MODID, bridges_rockable, MCWBYG_TAB, ModType.BRIDGES);
+    	McwRegistry.registryEventStone(event, MODID, fences_rockable, MCWBYG_TAB, ModType.FENCES, ModType.ROOFS);
     }
 }

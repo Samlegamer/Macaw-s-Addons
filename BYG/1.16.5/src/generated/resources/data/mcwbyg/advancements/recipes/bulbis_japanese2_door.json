@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_bulbis_slab": {
+          "has_bulbis_stem": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "byg:bulbis_slab"
+                  "item": "byg:bulbis_stem"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_bulbis_slab",
+            "has_bulbis_stem",
             "has_the_recipe"
           ]
         ]

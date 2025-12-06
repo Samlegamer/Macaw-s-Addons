@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_kitchen_sinks",
+        "pattern": [
+          "CDC",
+          "ABA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:magic_stripped_log"
+          },
+          "B": {
+            "item": "minecraft:water_bucket"
+          },
+          "C": {
+            "item": "premium_wood:magic_slab"
+          },
+          "D": {
+            "item": "minecraft:cauldron"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_magic_kitchen_sink"
+        }
+      }
+    }
+  ]
+}

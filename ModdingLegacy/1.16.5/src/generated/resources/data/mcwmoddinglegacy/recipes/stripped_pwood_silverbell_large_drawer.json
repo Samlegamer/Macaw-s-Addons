@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_large_drawers",
+        "pattern": [
+          "ABA",
+          "AAA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:silverbell_stripped_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_silverbell_large_drawer",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_crystallized_planks": {
+          "has_crystallized_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "blue_skies:crystallized_planks"
+                  "item": "blue_skies:crystallized_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_crystallized_planks",
+            "has_crystallized_log",
             "has_the_recipe"
           ]
         ]

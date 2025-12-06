@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_rainbow_eucalyptus_slab": {
+          "has_rainbow_eucalyptus_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "byg:rainbow_eucalyptus_slab"
+                  "item": "byg:rainbow_eucalyptus_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_rainbow_eucalyptus_slab",
+            "has_rainbow_eucalyptus_log",
             "has_the_recipe"
           ]
         ]

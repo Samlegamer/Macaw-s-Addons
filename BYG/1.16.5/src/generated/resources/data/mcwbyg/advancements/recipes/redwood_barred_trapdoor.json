@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_redwood_planks": {
+          "has_redwood_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "byg:redwood_planks"
+                  "item": "byg:redwood_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_redwood_planks",
+            "has_redwood_log",
             "has_the_recipe"
           ]
         ]

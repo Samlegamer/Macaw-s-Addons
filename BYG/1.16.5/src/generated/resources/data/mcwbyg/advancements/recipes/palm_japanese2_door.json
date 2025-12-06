@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_palm_slab": {
+          "has_palm_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "byg:palm_slab"
+                  "item": "byg:palm_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_palm_slab",
+            "has_palm_log",
             "has_the_recipe"
           ]
         ]

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_modern_chairs",
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:purple_heart_stripped_log"
+          },
+          "B": {
+            "item": "premium_wood:purple_heart_slab"
+          },
+          "C": {
+            "item": "premium_wood:purple_heart_fence"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_purple_heart_modern_chair"
+        }
+      }
+    }
+  ]
+}

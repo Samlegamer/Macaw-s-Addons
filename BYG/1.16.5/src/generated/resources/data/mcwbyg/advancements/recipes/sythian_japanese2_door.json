@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_sythian_slab": {
+          "has_sythian_stem": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "byg:sythian_slab"
+                  "item": "byg:sythian_stem"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_sythian_slab",
+            "has_sythian_stem",
             "has_the_recipe"
           ]
         ]

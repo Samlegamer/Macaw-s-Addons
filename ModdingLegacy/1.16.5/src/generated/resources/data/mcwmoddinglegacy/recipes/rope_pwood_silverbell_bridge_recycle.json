@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "recyclable_bridges_recycle",
+        "ingredients": [
+          {
+            "item": "mcwmoddinglegacy:pwood_silverbell_rope_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:rope_pwood_silverbell_bridge"
+        }
+      }
+    }
+  ]
+}

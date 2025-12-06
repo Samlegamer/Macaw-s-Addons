@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_stripped_skyris_log": {
+          "has_skyris_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "byg:stripped_skyris_log"
+                  "item": "byg:skyris_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_stripped_skyris_log",
+            "has_skyris_log",
             "has_the_recipe"
           ]
         ]

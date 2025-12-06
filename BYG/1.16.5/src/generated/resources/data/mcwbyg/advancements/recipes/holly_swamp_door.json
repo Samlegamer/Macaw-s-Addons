@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_holly_planks": {
+          "has_holly_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "byg:holly_planks"
+                  "item": "byg:holly_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_holly_planks",
+            "has_holly_log",
             "has_the_recipe"
           ]
         ]

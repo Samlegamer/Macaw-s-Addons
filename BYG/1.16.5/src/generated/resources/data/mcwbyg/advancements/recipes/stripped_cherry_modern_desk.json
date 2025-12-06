@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_stripped_cherry_log": {
+          "has_cherry_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "byg:stripped_cherry_log"
+                  "item": "byg:cherry_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_stripped_cherry_log",
+            "has_cherry_log",
             "has_the_recipe"
           ]
         ]

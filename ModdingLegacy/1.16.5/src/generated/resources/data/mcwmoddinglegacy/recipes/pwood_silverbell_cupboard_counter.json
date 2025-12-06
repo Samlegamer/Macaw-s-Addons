@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "cupboard_counters",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:silverbell_slab"
+          },
+          "B": {
+            "item": "mcwmoddinglegacy:pwood_silverbell_wardrobe"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_silverbell_cupboard_counter"
+        }
+      }
+    }
+  ]
+}

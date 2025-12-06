@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_green_enchanted_slab": {
+          "has_green_enchanted_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "byg:green_enchanted_slab"
+                  "item": "byg:green_enchanted_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_green_enchanted_slab",
+            "has_green_enchanted_log",
             "has_the_recipe"
           ]
         ]

@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_ebony_slab": {
+          "has_ebony_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "byg:ebony_slab"
+                  "item": "byg:ebony_log"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_ebony_slab",
+            "has_ebony_log",
             "has_the_recipe"
           ]
         ]

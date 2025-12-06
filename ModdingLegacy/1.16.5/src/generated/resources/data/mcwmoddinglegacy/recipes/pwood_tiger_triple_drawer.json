@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "premium_wood",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "triple_drawers",
+        "pattern": [
+          "AAA",
+          "ABA",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "premium_wood:tiger_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_tiger_triple_drawer",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

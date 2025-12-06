@@ -19,12 +19,12 @@
           ]
         },
         "criteria": {
-          "has_imparius_planks": {
+          "has_imparius_stem": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
-                  "item": "byg:imparius_planks"
+                  "item": "byg:imparius_stem"
                 }
               ]
             }
@@ -38,7 +38,7 @@
         },
         "requirements": [
           [
-            "has_imparius_planks",
+            "has_imparius_stem",
             "has_the_recipe"
           ]
         ]
