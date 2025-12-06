@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "counters",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:orange_shroomwood_slab"
+          },
+          "B": {
+            "item": "shroomed:orange_hard_mushroom_stem"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:orange_hard_mushroom_counter"
+        }
+      }
+    }
+  ]
+}

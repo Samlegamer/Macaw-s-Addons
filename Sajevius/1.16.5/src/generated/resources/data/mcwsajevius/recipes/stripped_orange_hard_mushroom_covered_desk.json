@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_covered_desks",
+        "pattern": [
+          "AAA",
+          "A A"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:orange_hard_mushroom_hyphae"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:stripped_orange_hard_mushroom_covered_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

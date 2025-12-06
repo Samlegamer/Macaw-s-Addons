@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterlands",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "grass_topped",
+        "pattern": [
+          "BCB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "betterlands:brown_terracotta_tiles"
+          },
+          "B": {
+            "item": "betterlands:brown_terracotta_bricks"
+          },
+          "C": {
+            "item": "minecraft:dirt"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:brown_terracotta_bricks_grass_topped_wall",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

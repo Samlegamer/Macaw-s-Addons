@@ -1,24 +1,21 @@
 package fr.samlegamer.mcwsajevius;
 
+import fr.addonslib.api.data.McwBlocksIdBase;
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
-import fr.samlegamer.addonslib.data.McwBlocksIdBase;
-import fr.samlegamer.addonslib.data.ModType;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
+import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.util.McwMod;
 import mcp.MethodsReturnNonnullByDefault;
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
@@ -26,7 +23,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.registries.DeferredRegister;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -34,19 +30,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.bridges.Bridges;
-import fr.samlegamer.addonslib.fences.Fences;
-import fr.samlegamer.addonslib.furnitures.Furnitures;
-import fr.samlegamer.addonslib.roofs.Roofs;
-import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
-import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 
 @Mod(McwSajevius.MODID)
 public class McwSajevius extends McwMod
 {    
 	public static final String MODID = "mcwsajevius";
 	private static final Logger LOGGER = LogManager.getLogger();
+    public static final ModType[] WOOD_MOD_TYPES = {ModType.BRIDGES, ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.STAIRS};
 
 	public static final List<String> wood_shroomed = Arrays.asList("blue_hard_mushroom", "hard_mushroom", "orange_hard_mushroom", "purple_hard_mushroom");
 	public static final List<String> wood_betterlands = Arrays.asList("juniper");
@@ -77,8 +68,8 @@ public class McwSajevius extends McwMod
 	    	NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(Finder.findBlock(MODID, randomNaming()+"_roof"), Finder.findBlock(MODID, randomNaming()+"_picket_fence"), Finder.findBlock(MODID, randomNaming()+"_wardrobe"), 
 	        Finder.findBlock(MODID, randomNaming()+"_log_bridge_middle"), Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Finder.findBlock(MODID, randomNaming()+"_skyline_stairs"));
 	        
-	    	prop.addType(BlockType.ROOFS).addType(BlockType.BRIDGES).addType(BlockType.FENCES).addType(BlockType.FURNITURES).addType(BlockType.STAIRS);
-	    	Block icon = prop.buildIcon(BlockType.ROOFS, BlockType.BRIDGES, BlockType.FENCES, BlockType.FURNITURES, BlockType.STAIRS);
+	    	prop.addType(ModType.ROOFS).addType(ModType.BRIDGES).addType(ModType.FENCES).addType(ModType.FURNITURES).addType(ModType.STAIRS);
+	    	Block icon = prop.buildIcon(ModType.ROOFS, ModType.BRIDGES, ModType.FENCES, ModType.FURNITURES, ModType.STAIRS);
 	    	return new ItemStack(icon);
 	    }
 	};
@@ -88,27 +79,11 @@ public class McwSajevius extends McwMod
     	LOGGER.info("Macaw's Sajevius Mod Loading...");
     	Registration.init(block, item);
 
-    	final AbstractBlock.Properties wood = AbstractBlock.Properties.of(Material.WOOD).harvestTool(ToolType.AXE).strength(0.5F, 2.5F).sound(SoundType.WOOD);
-    	final AbstractBlock.Properties leaves = AbstractBlock.Properties.copy(Blocks.OAK_LEAVES);
-    	final AbstractBlock.Properties stone = AbstractBlock.Properties.of(Material.STONE).harvestTool(ToolType.PICKAXE).strength(3.0F, 5.0F).sound(SoundType.STONE);
+        McwRegistry.setRegistriesWood(wood_shroomed, block, item, "shroomed", MCWSAJEVIUS_TAB, WOOD_MOD_TYPES);
+        McwRegistry.setRegistriesWood(wood_betterlands, block, item, "betterlands", MCWSAJEVIUS_TAB, WOOD_MOD_TYPES);
+        McwRegistry.setRegistriesLeave(wood_betterlands, block, item, "betterlands", MCWSAJEVIUS_TAB);
+        McwRegistry.setRegistriesStone(stone_betterlands, block, item, "betterlands", MCWSAJEVIUS_TAB, Registration.getAllModTypeStone());
 
-    	Bridges.setRegistrationWoodModLoaded(wood_shroomed, block, item, MCWSAJEVIUS_TAB, "shroomed", wood);
-    	Roofs.setRegistrationWoodModLoaded(wood_shroomed, block, item, MCWSAJEVIUS_TAB, "shroomed", wood);
-    	Fences.setRegistrationWoodModLoaded(wood_shroomed, block, item, MCWSAJEVIUS_TAB, "shroomed", wood);
-    	Furnitures.setRegistrationWoodModLoaded(wood_shroomed, block, item, MCWSAJEVIUS_TAB, "shroomed");
-    	Stairs.setRegistrationWoodModLoaded(wood_shroomed, block, item, MCWSAJEVIUS_TAB, "shroomed", wood);
-
-    	Bridges.setRegistrationWoodModLoaded(wood_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", wood);
-    	Roofs.setRegistrationWoodModLoaded(wood_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", wood);
-    	Fences.setRegistrationWoodModLoaded(wood_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", wood);
-    	Furnitures.setRegistrationWoodModLoaded(wood_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands");
-    	Fences.setRegistrationHedgesModLoaded(wood_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", leaves);
-    	Stairs.setRegistrationWoodModLoaded(wood_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", wood);
-
-    	Bridges.setRegistrationRockModLoaded(stone_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", stone);
-    	Roofs.setRegistrationRockModLoaded(stone_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", stone);
-    	Fences.setRegistrationRockModLoaded(stone_betterlands, block, item, MCWSAJEVIUS_TAB, "betterlands", stone);
-    	
     	bus().addListener(this::clientSetup);
         bus().addListener(this::commonSetup);
         bus().addListener(this::dataSetup);
@@ -144,28 +119,23 @@ public class McwSajevius extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(generator, MODID, existingFileHelper) {
                 @Override
                 protected void addTags() {
-                    mcwFencesTags(MODID, wood_betterlands, wood_betterlands, stone_betterlands);
-                    mcwFencesTags(MODID, wood_shroomed, new ArrayList<>(), new ArrayList<>());
-                    mcwBridgesTagsWood(MODID, wood_betterlands);
-                    mcwBridgesTagsWood(MODID, wood_shroomed);
-                    mcwBridgesTagsStone(MODID, stone_betterlands);
-                    mcwRoofsTags(MODID, wood_betterlands, stone_betterlands);
-                    mcwRoofsTags(MODID, wood_shroomed, new ArrayList<>());
-                    mcwFurnituresTags(MODID, wood_betterlands);
-                    mcwFurnituresTags(MODID, wood_shroomed);
-                    mcwStairsTags(MODID, wood_betterlands);
-                    mcwStairsTags(MODID, wood_shroomed);
+                    addAllMcwTagsWood(MODID, wood_betterlands, WOOD_MOD_TYPES);
+                    addAllMcwTagsWood(MODID, wood_shroomed, WOOD_MOD_TYPES);
+                    addAllMcwTagsStone(MODID, stone_betterlands, Registration.getAllModTypeStone());
+                    addAllMcwTagsLeave(MODID, wood_betterlands);
                 }
             };
             generator.addProvider(mcwBlockTags);
             generator.addProvider(new McwItemTags(generator, mcwBlockTags, MODID, existingFileHelper) {
                 @Override
                 protected void addTags() {
-                    mcwFencesTags(MODID, wood_betterlands, wood_betterlands, stone_betterlands);
-                    mcwFencesTags(MODID, wood_shroomed, new ArrayList<>(), new ArrayList<>());
+                    addAllMcwTagsWood(MODID, wood_betterlands, WOOD_MOD_TYPES);
+                    addAllMcwTagsWood(MODID, wood_shroomed, WOOD_MOD_TYPES);
+                    addAllMcwTagsStone(MODID, stone_betterlands, Registration.getAllModTypeStone());
+                    addAllMcwTagsLeave(MODID, wood_betterlands);
                 }
             });
-            //generator.addProvider(new Recipes(generator));
+            generator.addProvider(new Recipes(generator));
         }
     }
 

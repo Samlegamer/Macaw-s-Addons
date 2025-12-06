@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "chairs",
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:orange_hard_mushroom_stem"
+          },
+          "B": {
+            "item": "shroomed:orange_shroomwood_slab"
+          },
+          "C": {
+            "item": "shroomed:orange_shroomwood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:orange_hard_mushroom_chair"
+        }
+      }
+    }
+  ]
+}

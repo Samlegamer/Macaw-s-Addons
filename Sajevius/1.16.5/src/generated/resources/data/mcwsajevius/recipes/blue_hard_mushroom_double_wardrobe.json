@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_wardrobes",
+        "pattern": [
+          "AAA",
+          "BAB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:blue_hard_mushroom_stem"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:blue_hard_mushroom_double_wardrobe",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

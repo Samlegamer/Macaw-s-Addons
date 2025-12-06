@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterlands",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwsajevius:red_terracotta_bricks_top_roof_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_red_terracotta_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betterlands:red_terracotta_bricks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwsajevius:red_terracotta_bricks_top_roof_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_red_terracotta_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

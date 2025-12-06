@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterlands",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwsajevius:juniper_hedge"
+          ]
+        },
+        "criteria": {
+          "has_juniper_leaves": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betterlands:juniper_leaves"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwsajevius:juniper_hedge"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_juniper_leaves",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

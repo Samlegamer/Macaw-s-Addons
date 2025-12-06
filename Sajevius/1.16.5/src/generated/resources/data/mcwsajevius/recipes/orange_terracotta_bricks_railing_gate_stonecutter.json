@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterlands",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "betterlands:orange_terracotta_bricks"
+        },
+        "result": "mcwsajevius:orange_terracotta_bricks_railing_gate",
+        "count": 1
+      }
+    }
+  ]
+}

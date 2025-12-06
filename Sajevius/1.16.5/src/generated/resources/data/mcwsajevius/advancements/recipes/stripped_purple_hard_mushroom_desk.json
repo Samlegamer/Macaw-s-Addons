@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwsajevius:stripped_purple_hard_mushroom_desk"
+          ]
+        },
+        "criteria": {
+          "has_purple_hard_mushroom_stem": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "shroomed:purple_hard_mushroom_stem"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwsajevius:stripped_purple_hard_mushroom_desk"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_purple_hard_mushroom_stem",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

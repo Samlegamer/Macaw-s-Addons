@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterlands",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwsajevius:railing_claystone_bricks_wall_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_claystone_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betterlands:claystone_bricks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwsajevius:railing_claystone_bricks_wall_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_claystone_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

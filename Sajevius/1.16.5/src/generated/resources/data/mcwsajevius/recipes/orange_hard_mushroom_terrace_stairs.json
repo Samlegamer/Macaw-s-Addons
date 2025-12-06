@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "terrace_stairs",
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:orange_hard_mushroom_hyphae"
+          },
+          "B": {
+            "item": "shroomed:orange_hard_mushroom_stem"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:orange_hard_mushroom_terrace_stairs",
+          "count": 5
+        }
+      }
+    }
+  ]
+}

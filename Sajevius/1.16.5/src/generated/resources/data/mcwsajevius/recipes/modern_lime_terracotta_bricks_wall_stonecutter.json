@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterlands",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "betterlands:lime_terracotta_bricks"
+        },
+        "result": "mcwsajevius:modern_lime_terracotta_bricks_wall",
+        "count": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "desks",
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:purple_hard_mushroom_stem"
+          },
+          "B": {
+            "item": "shroomed:purple_shroomwood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:purple_hard_mushroom_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterlands",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwsajevius:light_blue_terracotta_bricks_railing_gate_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_light_blue_terracotta_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betterlands:light_blue_terracotta_bricks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwsajevius:light_blue_terracotta_bricks_railing_gate_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_light_blue_terracotta_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

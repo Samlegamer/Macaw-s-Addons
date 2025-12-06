@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_tables",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwsajevius:stripped_orange_hard_mushroom_coffee_table"
+          },
+          "B": {
+            "item": "shroomed:orange_shroomwood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:stripped_orange_hard_mushroom_table"
+        }
+      }
+    }
+  ]
+}

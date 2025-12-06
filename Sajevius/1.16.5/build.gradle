@@ -114,6 +114,9 @@ repositories
         name = "CurseMaven"
         url = "https://www.cursemaven.com"
     }
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
@@ -132,11 +135,13 @@ dependencies {
     implementation fg.deobf("curse.maven:macaws-stairs-1119394:${stairs_version}")
     implementation fg.deobf("curse.maven:macaws-furniture-359540:${furniture_version}")
 
-    //compileOnly fg.deobf("curse.maven:betterlands-482870:3336248")
-    //compileOnly fg.deobf("curse.maven:shroomed-493665:3365207")
+    compileOnly fg.deobf("blank:betterlands-1.16.5-1.0:${betterlands_version}")
+    compileOnly fg.deobf("blank:shroomed-1.16.5-1.0:${shroomed_version}")
 
-    runtimeOnly fg.deobf("curse.maven:betterlands-482870:3336248")
-    runtimeOnly fg.deobf("curse.maven:shroomed-493665:3365207")
+    //runtimeOnly fg.deobf("blank:betterlands-1.16.5-1.0:${betterlands_version}")
+    //runtimeOnly fg.deobf("blank:shroomed-1.16.5-1.0:${shroomed_version}")
+    runtimeOnly fg.deobf("curse.maven:betterlands-482870:${betterlands_version}")
+    runtimeOnly fg.deobf("curse.maven:shroomed-493665:${shroomed_version}")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency

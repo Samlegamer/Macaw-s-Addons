@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "attic_roof",
+        "pattern": [
+          " A",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:purple_hard_mushroom_stem"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:purple_hard_mushroom_attic_roof",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

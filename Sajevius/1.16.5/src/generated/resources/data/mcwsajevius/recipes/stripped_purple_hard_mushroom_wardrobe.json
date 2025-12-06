@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_wardrobes",
+        "pattern": [
+          "AAA",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:purple_hard_mushroom_hyphae"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:stripped_purple_hard_mushroom_wardrobe",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

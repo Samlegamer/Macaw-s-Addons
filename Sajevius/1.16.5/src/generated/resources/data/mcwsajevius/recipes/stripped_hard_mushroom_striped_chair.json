@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_striped_chairs",
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:hard_mushroom_hyphae"
+          },
+          "B": {
+            "item": "shroomed:shroomwood_slab"
+          },
+          "C": {
+            "item": "shroomed:shroomwood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:stripped_hard_mushroom_striped_chair"
+        }
+      }
+    }
+  ]
+}

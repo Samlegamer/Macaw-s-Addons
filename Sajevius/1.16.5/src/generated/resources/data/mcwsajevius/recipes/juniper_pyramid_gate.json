@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterlands",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "pyramid",
+        "pattern": [
+          "ABA",
+          "ACA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "betterlands:juniper_log"
+          },
+          "C": {
+            "item": "betterlands:juniper_planks"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:juniper_pyramid_gate"
+        }
+      }
+    }
+  ]
+}

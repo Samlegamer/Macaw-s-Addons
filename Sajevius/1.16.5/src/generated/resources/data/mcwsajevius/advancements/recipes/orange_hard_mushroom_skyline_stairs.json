@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwsajevius:orange_hard_mushroom_skyline_stairs"
+          ]
+        },
+        "criteria": {
+          "has_orange_hard_mushroom_stem": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "shroomed:orange_hard_mushroom_stem"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwsajevius:orange_hard_mushroom_skyline_stairs"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_orange_hard_mushroom_stem",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

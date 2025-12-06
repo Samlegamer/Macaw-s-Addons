@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterlands",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_counters",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "betterlands:juniper_slab"
+          },
+          "B": {
+            "item": "betterlands:stripped_juniper_log"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:stripped_juniper_counter"
+        }
+      }
+    }
+  ]
+}

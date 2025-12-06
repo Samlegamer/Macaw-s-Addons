@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "planks_top_roof",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:shroomwood_planks"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:hard_mushroom_planks_top_roof",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "log_bridges",
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:shroomwood_slab"
+          },
+          "B": {
+            "item": "shroomed:shroomwood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:hard_mushroom_log_bridge_middle",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

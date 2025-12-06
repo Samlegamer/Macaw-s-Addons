@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "large_drawers",
+        "pattern": [
+          "ABA",
+          "AAA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:purple_hard_mushroom_stem"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:purple_hard_mushroom_large_drawer",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

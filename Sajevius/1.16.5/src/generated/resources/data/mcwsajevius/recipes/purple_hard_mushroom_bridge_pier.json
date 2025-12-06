@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:purple_hard_mushroom_stem"
+          },
+          "B": {
+            "item": "shroomed:purple_shroomwood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:purple_hard_mushroom_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

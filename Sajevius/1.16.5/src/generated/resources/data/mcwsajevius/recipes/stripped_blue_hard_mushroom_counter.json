@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_counters",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:blue_shroomwood_slab"
+          },
+          "B": {
+            "item": "shroomed:blue_hard_mushroom_hyphae"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:stripped_blue_hard_mushroom_counter"
+        }
+      }
+    }
+  ]
+}

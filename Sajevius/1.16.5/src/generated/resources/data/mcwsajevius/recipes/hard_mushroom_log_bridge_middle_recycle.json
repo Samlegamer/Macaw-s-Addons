@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "recyclable_bridges_recycle",
+        "ingredients": [
+          {
+            "item": "mcwsajevius:hard_mushroom_log_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwsajevius:hard_mushroom_log_bridge_middle"
+        }
+      }
+    }
+  ]
+}

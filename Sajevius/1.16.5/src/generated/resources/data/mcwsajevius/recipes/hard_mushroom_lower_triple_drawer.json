@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "lower_triple_drawers",
+        "pattern": [
+          "AAA",
+          "BAB",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:hard_mushroom_stem"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:hard_mushroom_lower_triple_drawer",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

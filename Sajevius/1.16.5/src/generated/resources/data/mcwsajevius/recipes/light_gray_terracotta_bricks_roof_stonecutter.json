@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterlands",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "betterlands:light_gray_terracotta_bricks"
+        },
+        "result": "mcwsajevius:light_gray_terracotta_bricks_roof",
+        "count": 1
+      }
+    }
+  ]
+}

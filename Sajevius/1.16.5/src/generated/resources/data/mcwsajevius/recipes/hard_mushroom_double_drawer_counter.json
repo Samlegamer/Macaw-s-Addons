@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "shroomed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_drawer_counters",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "shroomed:shroomwood_slab"
+          },
+          "B": {
+            "item": "mcwsajevius:hard_mushroom_double_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwsajevius:hard_mushroom_double_drawer_counter"
+        }
+      }
+    }
+  ]
+}
