@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:stripped_japanese_maple_lower_triple_drawer"
+          ]
+        },
+        "criteria": {
+          "has_japanese_maple_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "terrestria:japanese_maple_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:stripped_japanese_maple_lower_triple_drawer"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_japanese_maple_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

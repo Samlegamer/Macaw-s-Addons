@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_bookshelf_cupboards",
+        "pattern": [
+          "AAA",
+          "BAC",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "cinderscapes:stripped_umbral_stem"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          },
+          "C": {
+            "item": "minecraft:book"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_umbral_bookshelf_cupboard",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

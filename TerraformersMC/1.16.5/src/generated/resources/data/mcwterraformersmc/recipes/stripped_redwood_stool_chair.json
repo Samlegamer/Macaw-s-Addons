@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_stool_chairs",
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:stripped_redwood_log"
+          },
+          "B": {
+            "item": "terrestria:redwood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_redwood_stool_chair"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:stripped_redwood_double_drawer_counter"
+          ]
+        },
+        "criteria": {
+          "has_redwood_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "terrestria:redwood_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:stripped_redwood_double_drawer_counter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_redwood_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_end_tables",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwterraformersmc:stripped_willow_table"
+          },
+          "B": {
+            "item": "terrestria:stripped_willow_log"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_willow_end_table"
+        }
+      }
+    }
+  ]
+}

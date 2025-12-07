@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:rose_quartz_bricks_upper_lower_roof_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_rose_quartz_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "cinderscapes:rose_quartz_bricks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:rose_quartz_bricks_upper_lower_roof_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_rose_quartz_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:modern_rose_quartz_bricks_wall"
+          ]
+        },
+        "criteria": {
+          "has_rose_quartz_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "cinderscapes:rose_quartz_bricks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:modern_rose_quartz_bricks_wall"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_rose_quartz_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

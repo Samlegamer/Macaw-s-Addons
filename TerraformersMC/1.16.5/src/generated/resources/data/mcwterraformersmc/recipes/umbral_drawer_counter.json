@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "drawer_counters",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "cinderscapes:umbral_slab"
+          },
+          "B": {
+            "item": "mcwterraformersmc:umbral_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:umbral_drawer_counter"
+        }
+      }
+    }
+  ]
+}

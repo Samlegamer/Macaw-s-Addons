@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "chairs",
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "traverse:fir_log"
+          },
+          "B": {
+            "item": "traverse:fir_slab"
+          },
+          "C": {
+            "item": "traverse:fir_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:fir_chair"
+        }
+      }
+    }
+  ]
+}

@@ -1,103 +1,115 @@
 package fr.samlegamer.mcwterraformersmc;
 
-//import com.terraformersmc.cinderscapes.Cinderscapes;
-//import com.terraformersmc.cinderscapes.init.CinderscapesBlocks;
-//import com.terraformersmc.terrestria.Terrestria;
-//import com.terraformersmc.terrestria.init.TerrestriaBlocks;
-//import epicsquid.traverse.Traverse;
-//import epicsquid.traverse.init.ModBlocks;
+import fr.addonslib.api.recipes.material.McwStoneMat;
+import fr.addonslib.api.recipes.material.McwWoodMat;
+import fr.samlegamer.addonslib.Finder;
+import fr.samlegamer.addonslib.generation.recipes.McwRecipes;
+import net.minecraft.block.Block;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.IFinishedRecipe;
+import terraformmc.cinderscapes.Cinderscapes;
+import terraformmc.cinderscapes.init.CinderscapesBlocks;
+import terraformmc.terrestria.Terrestria;
+import terraformmc.terrestria.init.TerrastriaBlocks;
+import terraformsmc.traverse.Traverse;
+import terraformsmc.traverse.init.ModBlocks;
 
-public class Recipes //extends RecipeProvider
+import javax.annotation.ParametersAreNonnullByDefault;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+
+public class Recipes extends McwRecipes
 {
-    /*
     public Recipes(DataGenerator p_i48262_1_) {
         super(p_i48262_1_);
     }
 
     @Override
+    @ParametersAreNonnullByDefault
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer) {
-        McwRecipes.registerAllMcwWood(consumer, McwTerraformersMC.MODID, Traverse.MODID, McwTerraformersMC.WOODS_TRAVERSE, getWoodTraverse());
-        McwRecipes.registerAllMcwWood(consumer, McwTerraformersMC.MODID, Cinderscapes.ID, McwTerraformersMC.WOODS_CINDERSCAPES, getWoodCinderscapes());
-        McwRecipes.registerAllMcwWood(consumer, McwTerraformersMC.MODID, Terrestria.MOD_ID, McwTerraformersMC.WOODS_TERRESTRIA, getWoodTerrestria());
+        registerAllMcwWood(consumer, McwTerraformersMC.MODID, Traverse.MODID, McwTerraformersMC.WOODS_TRAVERSE, getWoodTraverse());
+        registerAllMcwWood(consumer, McwTerraformersMC.MODID, Cinderscapes.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, getWoodCinderscapes());
+        registerAllMcwWood(consumer, McwTerraformersMC.MODID, Terrestria.MODID, McwTerraformersMC.WOODS_TERRESTRIA, getWoodTerrestria());
 
-        McwRecipes.registerAllMcwStone(consumer, McwTerraformersMC.MODID, Cinderscapes.ID, McwTerraformersMC.ROCKS_CINDERSCAPES, getStoneCinderscapes());
-        McwRecipes.registerAllMcwStone(consumer, McwTerraformersMC.MODID, Terrestria.MOD_ID, McwTerraformersMC.ROCKS_TERRESTRIA, getStoneTerrestria());
+        registerAllMcwStone(consumer, McwTerraformersMC.MODID, Cinderscapes.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, getStoneCinderscapes());
+        registerAllMcwStone(consumer, McwTerraformersMC.MODID, Terrestria.MODID, McwTerraformersMC.ROCKS_TERRESTRIA, getStoneTerrestria());
 
-        McwRecipes.registerMcwHedge(consumer, McwTerraformersMC.MODID, Traverse.MODID, McwTerraformersMC.LEAVES_TRAVERSE, getLeaveTraverse());
-        McwRecipes.registerMcwHedge(consumer, McwTerraformersMC.MODID, Terrestria.MOD_ID, McwTerraformersMC.LEAVES_TERRESTRIA, getLeaveTerrestria());
+        registerMcwHedge(consumer, McwTerraformersMC.MODID, Traverse.MODID, McwTerraformersMC.LEAVES_TRAVERSE, getLeaveTraverse());
+        registerMcwHedge(consumer, McwTerraformersMC.MODID, Terrestria.MODID, McwTerraformersMC.LEAVES_TERRESTRIA, getLeaveTerrestria());
     }
 
-    private List<McwStoneMat> getStoneTerrestria()
+    private List<McwStoneMat<Block>> getStoneTerrestria()
     {
-        List<McwStoneMat> mats = new ArrayList<>();
-        mats.add(new McwStoneMat(Finder.findBlock(Terrestria.MOD_ID, "basalt_bricks"), Finder.findBlock(Terrestria.MOD_ID, "basalt_brick_wall"),
-                Finder.findBlock(Terrestria.MOD_ID, "basalt_brick_slab"), Finder.findBlock(Terrestria.MOD_ID, "basalt_cobblestone")));
-        mats.add(new McwStoneMat(Finder.findBlock(Terrestria.MOD_ID, "mossy_basalt_bricks"), Finder.findBlock(Terrestria.MOD_ID, "mossy_basalt_brick_wall"),
-                Finder.findBlock(Terrestria.MOD_ID, "mossy_basalt_brick_slab"), Finder.findBlock(Terrestria.MOD_ID, "mossy_basalt_cobblestone")));
+        List<McwStoneMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwStoneMat<>(Finder.findBlock(Terrestria.MODID, "basalt_bricks"), Finder.findBlock(Terrestria.MODID, "basalt_brick_wall"),
+                Finder.findBlock(Terrestria.MODID, "basalt_brick_slab"), Finder.findBlock(Terrestria.MODID, "basalt_cobblestone")));
+        mats.add(new McwStoneMat<>(Finder.findBlock(Terrestria.MODID, "mossy_basalt_bricks"), Finder.findBlock(Terrestria.MODID, "mossy_basalt_brick_wall"),
+                Finder.findBlock(Terrestria.MODID, "mossy_basalt_brick_slab"), Finder.findBlock(Terrestria.MODID, "mossy_basalt_cobblestone")));
         return mats;
     }
 
-    private List<McwWoodMat> getWoodTerrestria()
+    private List<McwWoodMat<Block>> getWoodTerrestria()
     {
-        List<McwWoodMat> mats = new ArrayList<>();
-        mats.add(new McwWoodMat(TerrestriaBlocks.REDWOOD.log, TerrestriaBlocks.REDWOOD.planks, TerrestriaBlocks.REDWOOD.strippedLog, TerrestriaBlocks.REDWOOD.slab,
-                TerrestriaBlocks.REDWOOD.fence, Finder.findBlock(Traverse.MODID, "redwood_trapdoor")));
-        mats.add(new McwWoodMat(TerrestriaBlocks.HEMLOCK.log, TerrestriaBlocks.HEMLOCK.planks, TerrestriaBlocks.HEMLOCK.strippedLog, TerrestriaBlocks.HEMLOCK.slab,
-                TerrestriaBlocks.HEMLOCK.fence, Finder.findBlock(Terrestria.MOD_ID, "hemlock_trapdoor")));
-        mats.add(new McwWoodMat(TerrestriaBlocks.RUBBER.log, TerrestriaBlocks.RUBBER.planks, TerrestriaBlocks.RUBBER.strippedLog, TerrestriaBlocks.RUBBER.slab,
-                TerrestriaBlocks.RUBBER.fence, Finder.findBlock(Terrestria.MOD_ID, "rubber_trapdoor")));
-        mats.add(new McwWoodMat(TerrestriaBlocks.CYPRESS.log, TerrestriaBlocks.CYPRESS.planks, TerrestriaBlocks.CYPRESS.strippedLog, TerrestriaBlocks.CYPRESS.slab,
-                TerrestriaBlocks.CYPRESS.fence, Finder.findBlock(Terrestria.MOD_ID, "cypress_trapdoor")));
-        mats.add(new McwWoodMat(TerrestriaBlocks.WILLOW.log, TerrestriaBlocks.WILLOW.planks, TerrestriaBlocks.WILLOW.strippedLog, TerrestriaBlocks.WILLOW.slab,
-                TerrestriaBlocks.WILLOW.fence, Finder.findBlock(Terrestria.MOD_ID, "willow_trapdoor")));
-        mats.add(new McwWoodMat(TerrestriaBlocks.JAPANESE_MAPLE.log, TerrestriaBlocks.JAPANESE_MAPLE.planks, TerrestriaBlocks.JAPANESE_MAPLE.strippedLog, TerrestriaBlocks.JAPANESE_MAPLE.slab,
-                TerrestriaBlocks.JAPANESE_MAPLE.fence, Finder.findBlock(Terrestria.MOD_ID, "japanese_maple_trapdoor")));
-        mats.add(new McwWoodMat(TerrestriaBlocks.RAINBOW_EUCALYPTUS.log, TerrestriaBlocks.RAINBOW_EUCALYPTUS.planks, TerrestriaBlocks.RAINBOW_EUCALYPTUS.strippedLog, TerrestriaBlocks.RAINBOW_EUCALYPTUS.slab,
-                TerrestriaBlocks.RAINBOW_EUCALYPTUS.fence, Finder.findBlock(Terrestria.MOD_ID, "rainbow_eucalyptus_trapdoor")));
-        mats.add(new McwWoodMat(TerrestriaBlocks.SAKURA.log, TerrestriaBlocks.SAKURA.planks, TerrestriaBlocks.SAKURA.strippedLog, TerrestriaBlocks.SAKURA.slab,
-                TerrestriaBlocks.SAKURA.fence, Finder.findBlock(Terrestria.MOD_ID, "sakura_trapdoor")));
-        mats.add(new McwWoodMat(TerrestriaBlocks.YUCCA_PALM.log, TerrestriaBlocks.YUCCA_PALM.planks, TerrestriaBlocks.YUCCA_PALM.strippedLog, TerrestriaBlocks.YUCCA_PALM.slab,
-                TerrestriaBlocks.YUCCA_PALM.fence, Finder.findBlock(Terrestria.MOD_ID, "yucca_palm_trapdoor")));
+        List<McwWoodMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwWoodMat<>(Finder.findBlock(Terrestria.MODID, "redwood_log"), Finder.findBlock(Terrestria.MODID, "redwood_planks"), Finder.findBlock(Terrestria.MODID, "stripped_redwood_log"), Finder.findBlock(Terrestria.MODID, "redwood_slab"),
+                Finder.findBlock(Terrestria.MODID, "redwood_fence"), Finder.findBlock(Terrestria.MODID, "redwood_trapdoor")));
+        mats.add(new McwWoodMat<>(Finder.findBlock(Terrestria.MODID, "hemlock_log"), Finder.findBlock(Terrestria.MODID, "hemlock_planks"), Finder.findBlock(Terrestria.MODID, "stripped_hemlock_log"), Finder.findBlock(Terrestria.MODID, "hemlock_slab"),
+                Finder.findBlock(Terrestria.MODID, "hemlock_fence"), Finder.findBlock(Terrestria.MODID, "hemlock_trapdoor")));
+        mats.add(new McwWoodMat<>(Finder.findBlock(Terrestria.MODID, "rubber_log"), Finder.findBlock(Terrestria.MODID, "rubber_planks"), Finder.findBlock(Terrestria.MODID, "stripped_rubber_log"), Finder.findBlock(Terrestria.MODID, "rubber_slab"),
+                Finder.findBlock(Terrestria.MODID, "rubber_fence"), Finder.findBlock(Terrestria.MODID, "rubber_trapdoor")));
+        mats.add(new McwWoodMat<>(Finder.findBlock(Terrestria.MODID, "cypress_log"), Finder.findBlock(Terrestria.MODID, "cypress_planks"), Finder.findBlock(Terrestria.MODID, "stripped_cypress_log"), Finder.findBlock(Terrestria.MODID, "cypress_slab"),
+                Finder.findBlock(Terrestria.MODID, "cypress_fence"), Finder.findBlock(Terrestria.MODID, "cypress_trapdoor")));
+        mats.add(new McwWoodMat<>(Finder.findBlock(Terrestria.MODID, "willow_log"), Finder.findBlock(Terrestria.MODID, "willow_planks"), Finder.findBlock(Terrestria.MODID, "stripped_willow_log"), Finder.findBlock(Terrestria.MODID, "willow_slab"),
+                Finder.findBlock(Terrestria.MODID, "willow_fence"), Finder.findBlock(Terrestria.MODID, "willow_trapdoor")));
+        mats.add(new McwWoodMat<>(Finder.findBlock(Terrestria.MODID, "japanese_maple_log"), Finder.findBlock(Terrestria.MODID, "japanese_maple_planks"), Finder.findBlock(Terrestria.MODID, "stripped_japanese_maple_log"), Finder.findBlock(Terrestria.MODID, "japanese_maple_slab"),
+                Finder.findBlock(Terrestria.MODID, "japanese_maple_fence"), Finder.findBlock(Terrestria.MODID, "japanese_maple_trapdoor")));
+        mats.add(new McwWoodMat<>(Finder.findBlock(Terrestria.MODID, "rainbow_eucalyptus_log"), Finder.findBlock(Terrestria.MODID, "rainbow_eucalyptus_planks"), Finder.findBlock(Terrestria.MODID, "stripped_rainbow_eucalyptus_log"), Finder.findBlock(Terrestria.MODID, "rainbow_eucalyptus_slab"),
+                Finder.findBlock(Terrestria.MODID, "rainbow_eucalyptus_fence"), Finder.findBlock(Terrestria.MODID, "rainbow_eucalyptus_trapdoor")));
+        mats.add(new McwWoodMat<>(Finder.findBlock(Terrestria.MODID, "sakura_log"), Finder.findBlock(Terrestria.MODID, "sakura_planks"), Finder.findBlock(Terrestria.MODID, "stripped_sakura_log"), Finder.findBlock(Terrestria.MODID, "sakura_slab"),
+                Finder.findBlock(Terrestria.MODID, "sakura_fence"), Finder.findBlock(Terrestria.MODID, "sakura_trapdoor")));
+        mats.add(new McwWoodMat<>(Finder.findBlock(Terrestria.MODID, "yucca_palm_log"), Finder.findBlock(Terrestria.MODID, "yucca_palm_planks"), Finder.findBlock(Terrestria.MODID, "stripped_yucca_palm_log"), Finder.findBlock(Terrestria.MODID, "yucca_palm_slab"),
+                Finder.findBlock(Terrestria.MODID, "yucca_palm_fence"), Finder.findBlock(Terrestria.MODID, "yucca_palm_trapdoor")));
         return mats;
     }
 
     private List<Block> getLeaveTerrestria()
     {
         List<Block> mats = new ArrayList<>();
-        mats.add(TerrestriaBlocks.REDWOOD.leaves);
-        mats.add(TerrestriaBlocks.HEMLOCK.leaves);
-        mats.add(TerrestriaBlocks.RUBBER.leaves);
-        mats.add(TerrestriaBlocks.CYPRESS.leaves);
-        mats.add(TerrestriaBlocks.WILLOW.leaves);
-        mats.add(TerrestriaBlocks.JAPANESE_MAPLE.leaves);
-        mats.add(TerrestriaBlocks.RAINBOW_EUCALYPTUS.leaves);
-        mats.add(TerrestriaBlocks.SAKURA.leaves);
-        mats.add(TerrestriaBlocks.YUCCA_PALM.leaves);
-        mats.add(TerrestriaBlocks.JAPANESE_MAPLE_SHRUB_LEAVES);
-        mats.add(TerrestriaBlocks.DARK_JAPANESE_MAPLE_LEAVES);
-        mats.add(TerrestriaBlocks.JUNGLE_PALM_LEAVES);
+        mats.add(TerrastriaBlocks.REDWOOD_LEAVES.get());
+        mats.add(TerrastriaBlocks.HEMLOCK_LEAVES.get());
+        mats.add(TerrastriaBlocks.RUBBER_LEAVES.get());
+        mats.add(TerrastriaBlocks.CYPRESS_LEAVES.get());
+        mats.add(TerrastriaBlocks.WILLOW_LEAVES.get());
+        mats.add(TerrastriaBlocks.JAPANESE_MAPLE_LEAVES.get());
+        mats.add(TerrastriaBlocks.RAINBOW_EUCALYPTUS_LEAVES.get());
+        mats.add(TerrastriaBlocks.SAKURA_LEAVES.get());
+        mats.add(TerrastriaBlocks.YUCCA_PALM_LEAVES.get());
+        mats.add(TerrastriaBlocks.JAPANESE_MAPLE_SHRUB_LEAVES.get());
+        mats.add(TerrastriaBlocks.DARK_JAPANESE_MAPLE_LEAVES.get());
+        mats.add(TerrastriaBlocks.JUNGLE_PALM_LEAVES.get());
         return mats;
     }
 
-    private List<McwStoneMat> getStoneCinderscapes()
+    private List<McwStoneMat<Block>> getStoneCinderscapes()
     {
-        List<McwStoneMat> mats = new ArrayList<>();
-        mats.add(new McwStoneMat(CinderscapesBlocks.SULFUR_QUARTZ_BRICKS, CinderscapesBlocks.SULFUR_QUARTZ_PILLAR, CinderscapesBlocks.SULFUR_QUARTZ_SLAB,
-                CinderscapesBlocks.SULFUR_QUARTZ_BLOCK));
-        mats.add(new McwStoneMat(CinderscapesBlocks.ROSE_QUARTZ_BRICKS, CinderscapesBlocks.ROSE_QUARTZ_PILLAR, CinderscapesBlocks.ROSE_QUARTZ_SLAB,
-                CinderscapesBlocks.ROSE_QUARTZ_BLOCK));
-        mats.add(new McwStoneMat(CinderscapesBlocks.SMOKY_QUARTZ_BRICKS, CinderscapesBlocks.SMOKY_QUARTZ_PILLAR, CinderscapesBlocks.SMOKY_QUARTZ_SLAB,
-                CinderscapesBlocks.SMOKY_QUARTZ_BLOCK));
+        List<McwStoneMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwStoneMat<>(CinderscapesBlocks.SULFUR_QUARTZ_BRICKS.get(), CinderscapesBlocks.SULFUR_QUARTZ_PILLAR.get(), CinderscapesBlocks.SULFUR_QUARTZ_SLAB.get(),
+                CinderscapesBlocks.SULFUR_QUARTZ_BLOCK.get()));
+        mats.add(new McwStoneMat<>(CinderscapesBlocks.ROSE_QUARTZ_BRICKS.get(), CinderscapesBlocks.ROSE_QUARTZ_PILLAR.get(), CinderscapesBlocks.ROSE_QUARTZ_SLAB.get(),
+                CinderscapesBlocks.ROSE_QUARTZ_BLOCK.get()));
+        mats.add(new McwStoneMat<>(CinderscapesBlocks.SMOKY_QUARTZ_BRICKS.get(), CinderscapesBlocks.SMOKY_QUARTZ_PILLAR.get(), CinderscapesBlocks.SMOKY_QUARTZ_SLAB.get(),
+                CinderscapesBlocks.SMOKY_QUARTZ_BLOCK.get()));
         return mats;
     }
 
-    private List<McwWoodMat> getWoodCinderscapes()
+    private List<McwWoodMat<Block>> getWoodCinderscapes()
     {
-        List<McwWoodMat> mats = new ArrayList<>();
-        mats.add(new McwWoodMat(CinderscapesBlocks.SCORCHED_STEM, CinderscapesBlocks.SCORCHED_PLANKS, CinderscapesBlocks.STRIPPED_SCORCHED_STEM, CinderscapesBlocks.SCORCHED_SLAB,
-                CinderscapesBlocks.SCORCHED_FENCE, CinderscapesBlocks.SCORCHED_TRAPDOOR));
-        mats.add(new McwWoodMat(CinderscapesBlocks.UMBRAL_STEM, CinderscapesBlocks.UMBRAL_PLANKS, CinderscapesBlocks.STRIPPED_UMBRAL_STEM, CinderscapesBlocks.UMBRAL_SLAB,
-                CinderscapesBlocks.UMBRAL_FENCE, CinderscapesBlocks.UMBRAL_TRAPDOOR));
+        List<McwWoodMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwWoodMat<>(CinderscapesBlocks.SCORCHED_STEM.get(), CinderscapesBlocks.SCORCHED_PLANKS.get(), CinderscapesBlocks.STRIPPED_SCORCHED_STEM.get(), CinderscapesBlocks.SCORCHED_SLAB.get(),
+                CinderscapesBlocks.SCORCHED_FENCE.get(), CinderscapesBlocks.SCORCHED_TRAPDOOR.get()));
+        mats.add(new McwWoodMat<>(CinderscapesBlocks.UMBRAL_STEM.get(), CinderscapesBlocks.UMBRAL_PLANKS.get(), CinderscapesBlocks.STRIPPED_UMBRAL_STEM.get(), CinderscapesBlocks.UMBRAL_SLAB.get(),
+                CinderscapesBlocks.UMBRAL_FENCE.get(), CinderscapesBlocks.UMBRAL_TRAPDOOR.get()));
         return mats;
     }
 
@@ -112,11 +124,11 @@ public class Recipes //extends RecipeProvider
         return mats;
     }
 
-    private List<McwWoodMat> getWoodTraverse()
+    private List<McwWoodMat<Block>> getWoodTraverse()
     {
-        List<McwWoodMat> mats = new ArrayList<>();
-        mats.add(new McwWoodMat(ModBlocks.FIR_LOG.get(), ModBlocks.FIR_PLANKS.get(), ModBlocks.STRIPPED_FIR_LOG.get(), ModBlocks.FIR_SLAB.get(),
+        List<McwWoodMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwWoodMat<>(ModBlocks.FIR_LOG.get(), ModBlocks.FIR_PLANKS.get(), ModBlocks.STRIPPED_FIR_LOG.get(), ModBlocks.FIR_SLAB.get(),
                 ModBlocks.FIR_FENCE.get(), ModBlocks.FIR_TRAPDOOR.get()));
         return mats;
-    }*/
+    }
 }

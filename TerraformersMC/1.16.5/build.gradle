@@ -119,6 +119,9 @@ repositories {
     }
     maven {  url = "https://maven.blamejared.com/"}
     maven { url 'https://jitpack.io' }
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
@@ -142,24 +145,16 @@ dependencies {
     implementation fg.deobf("curse.maven:macaws-stairs-1119394:${stairs_version}")
     implementation fg.deobf("curse.maven:macaws-furniture-359540:${furniture_version}")
 
-    //compileOnly fg.deobf("curse.maven:traverse-reforged-267769:${traverse_reforged_version}")
-    //compileOnly fg.deobf("curse.maven:cinderscapes-reforged-525270:${cinderscapes_version}")
-    //compileOnly fg.deobf("curse.maven:terrestria-reforged-525277:${terrestria_reforged_version}")
-    //compileOnly fg.deobf("dev.trinsdar:terraform-wood-api-v1:${terraform_api_version}")
+
+    compileOnly fg.deobf("blank:traverse-1.16.5-1.0:${traverse_reforged_version}")
+    compileOnly fg.deobf("blank:terrestria-1.16.5-1.0:${terrestria_reforged_version}")
+    compileOnly fg.deobf("blank:cinderscapes-1.16.5-1.0:${cinderscapes_version}")
 
 
-    //runtimeOnly fg.deobf("curse.maven:traverse-reforged-267769:${traverse_reforged_version}")
-    //runtimeOnly fg.deobf("curse.maven:cinderscapes-reforged-525270:${cinderscapes_version}")
-    //runtimeOnly fg.deobf("curse.maven:terrestria-reforged-525277:${terrestria_reforged_version}")
-    //runtimeOnly fg.deobf("curse.maven:cloth-config-348521:${cloth_config_version}")
-    //runtimeOnly fg.deobf("maven.modrinth:fb-api-reforged:${fbapi_reforged_version}")
+    runtimeOnly fg.deobf("blank:traverse-1.16.5-1.0:${traverse_reforged_version}")
+    runtimeOnly fg.deobf("blank:terrestria-1.16.5-1.0:${terrestria_reforged_version}")
+    runtimeOnly fg.deobf("blank:cinderscapes-1.16.5-1.0:${cinderscapes_version}")
 
-    //implementation files("libs/terraform-1.0.2.jar")
-
-    //implementation fg.deobf("com.github.Reforged-Mods.Terraform-Reforged:terraform:f9daefa796")
-    //runtimeOnly fg.deobf("curse.maven:terraformed-api-reforged-525254:3452425")
-
-    //annotationProcessor 'org.spongepowered:mixin:0.8.2:processor'
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency

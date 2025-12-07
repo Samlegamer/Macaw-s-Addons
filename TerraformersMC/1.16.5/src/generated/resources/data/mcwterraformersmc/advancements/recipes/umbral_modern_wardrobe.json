@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:umbral_modern_wardrobe"
+          ]
+        },
+        "criteria": {
+          "has_umbral_stem": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "cinderscapes:umbral_stem"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:umbral_modern_wardrobe"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_umbral_stem",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

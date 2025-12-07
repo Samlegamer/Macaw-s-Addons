@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_coffee_tables",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:stripped_rubber_log"
+          },
+          "B": {
+            "item": "terrestria:rubber_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_rubber_coffee_table"
+        }
+      }
+    }
+  ]
+}

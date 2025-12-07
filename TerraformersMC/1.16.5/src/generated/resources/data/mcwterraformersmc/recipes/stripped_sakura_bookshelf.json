@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_bookshelves",
+        "pattern": [
+          "AAA",
+          "BBB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "terrestria:stripped_sakura_log"
+          },
+          "B": {
+            "item": "minecraft:book"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:stripped_sakura_bookshelf",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

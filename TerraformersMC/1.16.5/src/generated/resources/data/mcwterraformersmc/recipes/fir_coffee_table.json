@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "traverse",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "coffee_tables",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "traverse:fir_log"
+          },
+          "B": {
+            "item": "traverse:fir_fence"
+          }
+        },
+        "result": {
+          "item": "mcwterraformersmc:fir_coffee_table"
+        }
+      }
+    }
+  ]
+}
