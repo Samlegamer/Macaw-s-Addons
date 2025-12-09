@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_frostbright_planks": {
+          "has_frostbright_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "blue_skies:frostbright_planks"
+                    "blue_skies:frostbright_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_frostbright_planks",
+            "has_frostbright_log",
             "has_the_recipe"
           ]
         ]

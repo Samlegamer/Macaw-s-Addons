@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_magic_slab": {
+          "has_magic_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "biomesoplenty:magic_slab"
+                    "biomesoplenty:magic_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_magic_slab",
+            "has_magic_log",
             "has_the_recipe"
           ]
         ]

@@ -138,10 +138,10 @@ dependencies {
     compileOnly fg.deobf("blank:betterlands-1.16.5-1.0:${betterlands_version}")
     compileOnly fg.deobf("blank:shroomed-1.16.5-1.0:${shroomed_version}")
 
-    //runtimeOnly fg.deobf("blank:betterlands-1.16.5-1.0:${betterlands_version}")
-    //runtimeOnly fg.deobf("blank:shroomed-1.16.5-1.0:${shroomed_version}")
-    runtimeOnly fg.deobf("curse.maven:betterlands-482870:${betterlands_version}")
-    runtimeOnly fg.deobf("curse.maven:shroomed-493665:${shroomed_version}")
+    runtimeOnly fg.deobf("blank:betterlands-1.16.5-1.0:${betterlands_version}")
+    runtimeOnly fg.deobf("blank:shroomed-1.16.5-1.0:${shroomed_version}")
+    //runtimeOnly fg.deobf("curse.maven:betterlands-482870:${betterlands_version}")
+    //runtimeOnly fg.deobf("curse.maven:shroomed-493665:${shroomed_version}")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency

@@ -1,9 +1,11 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
+import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.util.McwMod;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.world.item.CreativeModeTab;
@@ -14,7 +16,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.registries.DeferredRegister;
 import java.util.List;
@@ -22,17 +23,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.bridges.Bridges;
-import fr.samlegamer.addonslib.door.Doors;
-import fr.samlegamer.addonslib.fences.Fences;
-import fr.samlegamer.addonslib.furnitures.Furnitures;
-import fr.samlegamer.addonslib.path.Paths;
-import fr.samlegamer.addonslib.roofs.Roofs;
-import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
-import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
-import fr.samlegamer.addonslib.trapdoor.Trapdoors;
-import fr.samlegamer.addonslib.windows.Windows;
 
 @Mod(McwBOP.MODID)
 public class McwBOP extends McwMod
@@ -53,16 +44,16 @@ public class McwBOP extends McwMod
 	        Finder.findBlock(MODID, "cherry_log_bridge_middle"), Finder.findBlock(MODID, "cherry_window"), Finder.findBlock(MODID, "cherry_japanese_door"), Finder.findBlock(MODID, "cherry_glass_trapdoor"), 
 	        Finder.findBlock(MODID, "cherry_planks_path"), Finder.findBlock(MODID, "cherry_loft_stairs"));
 	    	woodProperties
-	    	.addType(BlockType.ROOFS)
-	    	.addType(BlockType.FENCES)
-	    	.addType(BlockType.FURNITURES)
-	    	.addType(BlockType.BRIDGES)
-	    	.addType(BlockType.WINDOWS)
-	    	.addType(BlockType.DOORS)
-	    	.addType(BlockType.TRAPDOORS)
-	    	.addType(BlockType.PATHS)
-	    	.addType(BlockType.STAIRS);
-	        Block icon = woodProperties.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.STAIRS);
+	    	.addType(ModType.ROOFS)
+	    	.addType(ModType.FENCES)
+	    	.addType(ModType.FURNITURES)
+	    	.addType(ModType.BRIDGES)
+	    	.addType(ModType.WINDOWS)
+	    	.addType(ModType.DOORS)
+	    	.addType(ModType.TRAPDOORS)
+	    	.addType(ModType.PATHS)
+	    	.addType(ModType.STAIRS);
+	        Block icon = woodProperties.buildIcon(ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.BRIDGES, ModType.WINDOWS, ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.STAIRS);
 	        return new ItemStack(icon);
 	    }
 	};
@@ -71,19 +62,13 @@ public class McwBOP extends McwMod
     {
     	LOGGER.info("Macaw's Biomes O' Plenty Loading...");
     	Registration.init(block, item);
-    	Bridges.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Furnitures.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Roofs.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Fences.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Fences.setRegistrationHedges(LEAVES, block, item, MCWBOP_TAB);
-    	Trapdoors.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Paths.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Doors.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Windows.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-    	Stairs.setRegistrationWood(WOOD, block, item, MCWBOP_TAB);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::dataSetup);
+
+        McwRegistry.setRegistriesWood(WOOD, block, item, MCWBOP_TAB, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesLeave(LEAVES, block, item, MCWBOP_TAB);
+
+        bus().addListener(this::clientSetup);
+        bus().addListener(this::commonSetup);
+        bus().addListener(this::dataSetup);
 		MinecraftForge.EVENT_BUS.register(Mapping.class);
     	LOGGER.info("Macaw's Biomes O' Plenty Is Charged !");
     }
@@ -110,7 +95,8 @@ public class McwBOP extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(e.getGenerator(), MODID, e.getExistingFileHelper()) {
                 @Override
                 protected void addTags() {
-                    addAllMcwTags(MODID, WOOD, LEAVES);
+                    addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+                    addAllMcwTagsLeave(MODID, LEAVES);
                 }
             };
             e.getGenerator().addProvider(new Recipes(e.getGenerator()));
@@ -118,7 +104,8 @@ public class McwBOP extends McwMod
             e.getGenerator().addProvider(new McwItemTags(e.getGenerator(), mcwBlockTags, MODID, e.getExistingFileHelper()) {
                 @Override
                 protected void addTags() {
-                    addAllMcwTags(MODID, WOOD, LEAVES);
+                    addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+                    addAllMcwTagsLeave(MODID, LEAVES);
                 }
             });
         }

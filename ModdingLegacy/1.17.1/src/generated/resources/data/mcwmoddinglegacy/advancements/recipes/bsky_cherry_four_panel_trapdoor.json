@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_cherry_planks": {
+          "has_cherry_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "blue_skies:cherry_planks"
+                    "blue_skies:cherry_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_cherry_planks",
+            "has_cherry_log",
             "has_the_recipe"
           ]
         ]
