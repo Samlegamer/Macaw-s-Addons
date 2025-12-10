@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_stripped_fir_log": {
+          "has_fir_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "traverse:stripped_fir_log"
+                    "traverse:fir_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_stripped_fir_log",
+            "has_fir_log",
             "has_the_recipe"
           ]
         ]

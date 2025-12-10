@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_umbral_planks": {
+          "has_umbral_stem": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "cinderscapes:umbral_planks"
+                    "cinderscapes:umbral_stem"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_umbral_planks",
+            "has_umbral_stem",
             "has_the_recipe"
           ]
         ]

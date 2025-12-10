@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_japanese_maple_slab": {
+          "has_japanese_maple_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "terrestria:japanese_maple_slab"
+                    "terrestria:japanese_maple_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_japanese_maple_slab",
+            "has_japanese_maple_log",
             "has_the_recipe"
           ]
         ]

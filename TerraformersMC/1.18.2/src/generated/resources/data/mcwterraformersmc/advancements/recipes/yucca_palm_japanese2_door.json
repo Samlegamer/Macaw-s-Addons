@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_yucca_palm_slab": {
+          "has_yucca_palm_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "terrestria:yucca_palm_slab"
+                    "terrestria:yucca_palm_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_yucca_palm_slab",
+            "has_yucca_palm_log",
             "has_the_recipe"
           ]
         ]

@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_hemlock_slab": {
+          "has_hemlock_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "terrestria:hemlock_slab"
+                    "terrestria:hemlock_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_hemlock_slab",
+            "has_hemlock_log",
             "has_the_recipe"
           ]
         ]

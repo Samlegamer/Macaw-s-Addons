@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_stripped_sakura_log": {
+          "has_sakura_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "terrestria:stripped_sakura_log"
+                    "terrestria:sakura_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_stripped_sakura_log",
+            "has_sakura_log",
             "has_the_recipe"
           ]
         ]

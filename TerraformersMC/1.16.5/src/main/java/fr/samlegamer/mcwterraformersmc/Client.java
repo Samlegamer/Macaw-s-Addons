@@ -12,7 +12,6 @@ import java.util.Arrays;
 @Mod.EventBusSubscriber(modid = McwTerraformersMC.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class Client
 {
-
     protected static final ColorRegistry colorRegistry = new ColorRegistry(new McwColors(Arrays.asList(
             Finder.makeIdHedge(McwTerraformersMC.MODID, "redwood"),
             Finder.makeIdHedge(McwTerraformersMC.MODID, "hemlock"),

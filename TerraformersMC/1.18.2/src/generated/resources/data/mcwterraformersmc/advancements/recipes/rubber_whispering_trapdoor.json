@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_rubber_planks": {
+          "has_rubber_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "terrestria:rubber_planks"
+                    "terrestria:rubber_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_rubber_planks",
+            "has_rubber_log",
             "has_the_recipe"
           ]
         ]

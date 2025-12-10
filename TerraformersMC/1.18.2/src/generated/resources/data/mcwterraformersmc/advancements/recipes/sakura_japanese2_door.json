@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_sakura_slab": {
+          "has_sakura_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "terrestria:sakura_slab"
+                    "terrestria:sakura_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_sakura_slab",
+            "has_sakura_log",
             "has_the_recipe"
           ]
         ]

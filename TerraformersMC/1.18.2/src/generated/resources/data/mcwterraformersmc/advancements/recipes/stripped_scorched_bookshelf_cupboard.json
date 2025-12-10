@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_stripped_scorched_stem": {
+          "has_scorched_stem": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "cinderscapes:stripped_scorched_stem"
+                    "cinderscapes:scorched_stem"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_stripped_scorched_stem",
+            "has_scorched_stem",
             "has_the_recipe"
           ]
         ]

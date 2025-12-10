@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_stripped_japanese_maple_log": {
+          "has_japanese_maple_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "terrestria:stripped_japanese_maple_log"
+                    "terrestria:japanese_maple_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_stripped_japanese_maple_log",
+            "has_japanese_maple_log",
             "has_the_recipe"
           ]
         ]

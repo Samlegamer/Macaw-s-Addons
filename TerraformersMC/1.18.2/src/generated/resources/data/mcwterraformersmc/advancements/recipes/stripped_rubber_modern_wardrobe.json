@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_stripped_rubber_log": {
+          "has_rubber_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "terrestria:stripped_rubber_log"
+                    "terrestria:rubber_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_stripped_rubber_log",
+            "has_rubber_log",
             "has_the_recipe"
           ]
         ]
