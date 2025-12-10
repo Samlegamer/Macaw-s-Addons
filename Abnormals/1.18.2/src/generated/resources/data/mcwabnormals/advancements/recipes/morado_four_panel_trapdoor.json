@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_morado_planks": {
+          "has_morado_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "atmospheric:morado_planks"
+                    "atmospheric:morado_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_morado_planks",
+            "has_morado_log",
             "has_the_recipe"
           ]
         ]

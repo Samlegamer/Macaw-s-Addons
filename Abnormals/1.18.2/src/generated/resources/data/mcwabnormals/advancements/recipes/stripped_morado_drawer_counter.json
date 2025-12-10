@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_stripped_morado_log": {
+          "has_morado_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "atmospheric:stripped_morado_log"
+                    "atmospheric:morado_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_stripped_morado_log",
+            "has_morado_log",
             "has_the_recipe"
           ]
         ]

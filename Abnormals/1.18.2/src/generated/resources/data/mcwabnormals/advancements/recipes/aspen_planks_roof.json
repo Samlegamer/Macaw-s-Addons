@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_aspen_planks": {
+          "has_aspen_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "atmospheric:aspen_planks"
+                    "atmospheric:aspen_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_aspen_planks",
+            "has_aspen_log",
             "has_the_recipe"
           ]
         ]

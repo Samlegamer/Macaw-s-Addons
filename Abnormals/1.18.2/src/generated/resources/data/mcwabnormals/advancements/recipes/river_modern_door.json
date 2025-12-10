@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_river_planks": {
+          "has_river_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "upgrade_aquatic:river_planks"
+                    "upgrade_aquatic:river_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_river_planks",
+            "has_river_log",
             "has_the_recipe"
           ]
         ]

@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_rosewood_slab": {
+          "has_rosewood_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "atmospheric:rosewood_slab"
+                    "atmospheric:rosewood_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_rosewood_slab",
+            "has_rosewood_log",
             "has_the_recipe"
           ]
         ]

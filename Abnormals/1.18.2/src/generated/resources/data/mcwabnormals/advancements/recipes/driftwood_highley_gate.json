@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_driftwood_planks": {
+          "has_driftwood_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "upgrade_aquatic:driftwood_planks"
+                    "upgrade_aquatic:driftwood_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_driftwood_planks",
+            "has_driftwood_log",
             "has_the_recipe"
           ]
         ]

@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_stripped_wisteria_log": {
+          "has_wisteria_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "environmental:stripped_wisteria_log"
+                    "environmental:wisteria_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_stripped_wisteria_log",
+            "has_wisteria_log",
             "has_the_recipe"
           ]
         ]

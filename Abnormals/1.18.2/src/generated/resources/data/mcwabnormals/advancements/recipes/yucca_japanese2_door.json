@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_yucca_slab": {
+          "has_yucca_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "atmospheric:yucca_slab"
+                    "atmospheric:yucca_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_yucca_slab",
+            "has_yucca_log",
             "has_the_recipe"
           ]
         ]

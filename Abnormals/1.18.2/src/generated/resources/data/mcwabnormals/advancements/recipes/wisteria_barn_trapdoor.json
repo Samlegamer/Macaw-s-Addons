@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_wisteria_planks": {
+          "has_wisteria_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "environmental:wisteria_planks"
+                    "environmental:wisteria_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_wisteria_planks",
+            "has_wisteria_log",
             "has_the_recipe"
           ]
         ]
