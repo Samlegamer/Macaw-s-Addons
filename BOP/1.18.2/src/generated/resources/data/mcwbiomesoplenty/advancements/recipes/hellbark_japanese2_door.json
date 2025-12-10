@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_hellbark_slab": {
+          "has_hellbark_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "biomesoplenty:hellbark_slab"
+                    "biomesoplenty:hellbark_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_hellbark_slab",
+            "has_hellbark_log",
             "has_the_recipe"
           ]
         ]

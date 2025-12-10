@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_dead_planks": {
+          "has_dead_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "biomesoplenty:dead_planks"
+                    "biomesoplenty:dead_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_dead_planks",
+            "has_dead_log",
             "has_the_recipe"
           ]
         ]
