@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_stripped_red_mushroom_stem": {
+          "has_red_mushroom_stem": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "enhanced_mushrooms:stripped_red_mushroom_stem"
+                    "enhanced_mushrooms:red_mushroom_stem"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_stripped_red_mushroom_stem",
+            "has_red_mushroom_stem",
             "has_the_recipe"
           ]
         ]

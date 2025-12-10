@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_brown_mushroom_planks": {
+          "has_brown_mushroom_stem": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "enhanced_mushrooms:brown_mushroom_planks"
+                    "enhanced_mushrooms:brown_mushroom_stem"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_brown_mushroom_planks",
+            "has_brown_mushroom_stem",
             "has_the_recipe"
           ]
         ]
