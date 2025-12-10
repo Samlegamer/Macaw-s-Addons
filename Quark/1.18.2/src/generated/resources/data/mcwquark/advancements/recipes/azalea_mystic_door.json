@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_azalea_planks": {
+          "has_azalea_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "quark:azalea_planks"
+                    "quark:azalea_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_azalea_planks",
+            "has_azalea_log",
             "has_the_recipe"
           ]
         ]

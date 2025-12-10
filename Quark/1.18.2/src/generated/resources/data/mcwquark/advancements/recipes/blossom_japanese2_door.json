@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_blossom_planks_slab": {
+          "has_blossom_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "quark:blossom_planks_slab"
+                    "quark:blossom_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_blossom_planks_slab",
+            "has_blossom_log",
             "has_the_recipe"
           ]
         ]
