@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_bluebright_planks": {
+          "has_bluebright_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "blue_skies:bluebright_planks"
+                    "blue_skies:bluebright_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_bluebright_planks",
+            "has_bluebright_log",
             "has_the_recipe"
           ]
         ]

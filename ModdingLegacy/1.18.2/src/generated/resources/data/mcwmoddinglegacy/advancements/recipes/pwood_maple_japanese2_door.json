@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_maple_slab": {
+          "has_maple_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "premium_wood:maple_slab"
+                    "premium_wood:maple_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_maple_slab",
+            "has_maple_log",
             "has_the_recipe"
           ]
         ]

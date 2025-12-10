@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_tiger_stripped_log": {
+          "has_tiger_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "premium_wood:tiger_stripped_log"
+                    "premium_wood:tiger_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_tiger_stripped_log",
+            "has_tiger_log",
             "has_the_recipe"
           ]
         ]

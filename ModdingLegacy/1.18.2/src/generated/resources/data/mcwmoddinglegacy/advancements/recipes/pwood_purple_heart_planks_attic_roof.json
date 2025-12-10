@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_purple_heart_planks": {
+          "has_purple_heart_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "premium_wood:purple_heart_planks"
+                    "premium_wood:purple_heart_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_purple_heart_planks",
+            "has_purple_heart_log",
             "has_the_recipe"
           ]
         ]

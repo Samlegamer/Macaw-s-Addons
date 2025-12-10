@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_dusk_planks": {
+          "has_dusk_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "blue_skies:dusk_planks"
+                    "blue_skies:dusk_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_dusk_planks",
+            "has_dusk_log",
             "has_the_recipe"
           ]
         ]

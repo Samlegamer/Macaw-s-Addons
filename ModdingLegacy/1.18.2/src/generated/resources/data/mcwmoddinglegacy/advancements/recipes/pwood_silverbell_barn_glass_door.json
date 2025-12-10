@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_silverbell_planks": {
+          "has_silverbell_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "premium_wood:silverbell_planks"
+                    "premium_wood:silverbell_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_silverbell_planks",
+            "has_silverbell_log",
             "has_the_recipe"
           ]
         ]
