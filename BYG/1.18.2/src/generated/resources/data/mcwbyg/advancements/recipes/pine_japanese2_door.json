@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_pine_slab": {
+          "has_pine_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:pine_slab"
+                    "byg:pine_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_pine_slab",
+            "has_pine_log",
             "has_the_recipe"
           ]
         ]

@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_blue_enchanted_planks": {
+          "has_blue_enchanted_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:blue_enchanted_planks"
+                    "byg:blue_enchanted_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_blue_enchanted_planks",
+            "has_blue_enchanted_log",
             "has_the_recipe"
           ]
         ]

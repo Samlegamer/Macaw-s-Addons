@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_baobab_slab": {
+          "has_baobab_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:baobab_slab"
+                    "byg:baobab_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_baobab_slab",
+            "has_baobab_log",
             "has_the_recipe"
           ]
         ]

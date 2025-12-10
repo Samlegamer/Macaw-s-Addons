@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_pine_planks": {
+          "has_pine_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:pine_planks"
+                    "byg:pine_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_pine_planks",
+            "has_pine_log",
             "has_the_recipe"
           ]
         ]

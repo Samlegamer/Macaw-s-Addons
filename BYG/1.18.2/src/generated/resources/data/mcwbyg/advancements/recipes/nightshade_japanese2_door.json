@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_nightshade_slab": {
+          "has_nightshade_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:nightshade_slab"
+                    "byg:nightshade_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_nightshade_slab",
+            "has_nightshade_log",
             "has_the_recipe"
           ]
         ]

@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_stripped_mangrove_log": {
+          "has_mangrove_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:stripped_mangrove_log"
+                    "byg:mangrove_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_stripped_mangrove_log",
+            "has_mangrove_log",
             "has_the_recipe"
           ]
         ]

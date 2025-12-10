@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_rainbow_eucalyptus_planks": {
+          "has_rainbow_eucalyptus_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:rainbow_eucalyptus_planks"
+                    "byg:rainbow_eucalyptus_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_rainbow_eucalyptus_planks",
+            "has_rainbow_eucalyptus_log",
             "has_the_recipe"
           ]
         ]

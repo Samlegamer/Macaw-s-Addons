@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_stripped_sythian_stem": {
+          "has_sythian_stem": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:stripped_sythian_stem"
+                    "byg:sythian_stem"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_stripped_sythian_stem",
+            "has_sythian_stem",
             "has_the_recipe"
           ]
         ]

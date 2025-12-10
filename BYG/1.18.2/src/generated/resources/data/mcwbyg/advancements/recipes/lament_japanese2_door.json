@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_lament_slab": {
+          "has_lament_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:lament_slab"
+                    "byg:lament_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_lament_slab",
+            "has_lament_log",
             "has_the_recipe"
           ]
         ]

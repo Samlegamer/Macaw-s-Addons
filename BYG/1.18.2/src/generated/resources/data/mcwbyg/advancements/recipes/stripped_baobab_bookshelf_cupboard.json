@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_stripped_baobab_log": {
+          "has_baobab_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:stripped_baobab_log"
+                    "byg:baobab_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_stripped_baobab_log",
+            "has_baobab_log",
             "has_the_recipe"
           ]
         ]

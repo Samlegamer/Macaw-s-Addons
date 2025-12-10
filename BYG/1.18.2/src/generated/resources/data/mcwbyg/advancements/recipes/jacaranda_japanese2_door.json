@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_jacaranda_slab": {
+          "has_jacaranda_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:jacaranda_slab"
+                    "byg:jacaranda_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_jacaranda_slab",
+            "has_jacaranda_log",
             "has_the_recipe"
           ]
         ]

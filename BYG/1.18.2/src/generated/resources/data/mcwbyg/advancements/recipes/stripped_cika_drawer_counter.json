@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_stripped_cika_log": {
+          "has_cika_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:stripped_cika_log"
+                    "byg:cika_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_stripped_cika_log",
+            "has_cika_log",
             "has_the_recipe"
           ]
         ]

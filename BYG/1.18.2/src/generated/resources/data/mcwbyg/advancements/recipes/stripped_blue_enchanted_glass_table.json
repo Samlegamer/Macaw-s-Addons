@@ -19,13 +19,13 @@
           ]
         },
         "criteria": {
-          "has_stripped_blue_enchanted_log": {
+          "has_blue_enchanted_log": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:stripped_blue_enchanted_log"
+                    "byg:blue_enchanted_log"
                   ]
                 }
               ]
@@ -40,7 +40,7 @@
         },
         "requirements": [
           [
-            "has_stripped_blue_enchanted_log",
+            "has_blue_enchanted_log",
             "has_the_recipe"
           ]
         ]

@@ -1,7 +1,8 @@
 package fr.samlegamer.mcwbyg;
 
 import java.util.Arrays;
-import java.util.List;
+import fr.addonslib.api.client.McwColors;
+import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.client.ColorRegistry;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
@@ -12,18 +13,19 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 @Mod.EventBusSubscriber(modid = McwByg.MODID, bus = Bus.MOD, value = Dist.CLIENT)
 public class Client
 {
-	private static final List<String> LEAVES_NO_COLORED = Arrays.asList("mahogany", "maple");
-	private static final ColorRegistry COLOR = new ColorRegistry(McwByg.MODID, LEAVES_NO_COLORED);
+	private static final ColorRegistry COLOR = new ColorRegistry(new McwColors(Arrays.asList(
+			Finder.makeIdHedge(McwByg.MODID, "mahogany"),
+			Finder.makeIdHedge(McwByg.MODID, "maple"))));
 
 	@SubscribeEvent
 	public static void colorsBlock(ColorHandlerEvent.Block event)
 	{
-		COLOR.colorsBlock(event);
+		COLOR.registryBlockColorsAverage(event);
 	}
-	
+
 	@SubscribeEvent
 	public static void colorsItem(ColorHandlerEvent.Item event)
 	{
-		COLOR.colorsItem(event);
+		COLOR.registryItemColors(event);
 	}
 }
