@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_scorched_slab": {
+          "has_scorched_stem": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "cinderscapes:scorched_slab"
+                    "cinderscapes:scorched_stem"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_scorched_slab",
+            "has_scorched_stem",
             "has_the_recipe"
           ]
         ],

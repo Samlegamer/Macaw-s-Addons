@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_stripped_blossom_log": {
+          "has_blossom_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "quark:stripped_blossom_log"
+                    "quark:blossom_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_stripped_blossom_log",
+            "has_blossom_log",
             "has_the_recipe"
           ]
         ],

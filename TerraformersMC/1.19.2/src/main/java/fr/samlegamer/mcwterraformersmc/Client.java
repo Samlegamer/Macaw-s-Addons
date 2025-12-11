@@ -1,29 +1,35 @@
 package fr.samlegamer.mcwterraformersmc;
 
+import fr.addonslib.api.client.McwColors;
+import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.client.ColorRegistry;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import java.util.List;
+import java.util.Arrays;
 
-@OnlyIn(Dist.CLIENT)
 @Mod.EventBusSubscriber(modid = McwTerraformersMC.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class Client
 {
-    protected static final ColorRegistry colorRegistry = new ColorRegistry(McwTerraformersMC.MODID, List.of("redwood", "hemlock", "rubber", "cypress",
-            "willow", "japanese_maple_shrub", "rainbow_eucalyptus"));
+    protected static final ColorRegistry colorRegistry = new ColorRegistry(new McwColors(Arrays.asList(
+            Finder.makeIdHedge(McwTerraformersMC.MODID, "redwood"),
+            Finder.makeIdHedge(McwTerraformersMC.MODID, "hemlock"),
+            Finder.makeIdHedge(McwTerraformersMC.MODID, "rubber"),
+            Finder.makeIdHedge(McwTerraformersMC.MODID, "cypress"),
+            Finder.makeIdHedge(McwTerraformersMC.MODID, "willow"),
+            Finder.makeIdHedge(McwTerraformersMC.MODID, "japanese_maple_shrub"),
+            Finder.makeIdHedge(McwTerraformersMC.MODID, "rainbow_eucalyptus"))));
 
     @SubscribeEvent
     public static void blockColor(RegisterColorHandlersEvent.Block event)
     {
-        colorRegistry.colorsBlock(event);
+        colorRegistry.registryBlockColorsAverage(event);
     }
 
     @SubscribeEvent
     public static void itemColor(RegisterColorHandlersEvent.Item event)
     {
-        colorRegistry.colorsItem(event);
+        colorRegistry.registryItemColors(event);
     }
 }

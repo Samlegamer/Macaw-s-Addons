@@ -10,12 +10,12 @@
             },
             "trigger": "minecraft:recipe_unlocked"
           },
-          "has_yucca_palm_planks": {
+          "has_yucca_palm_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "terrestria:yucca_palm_planks"
+                    "terrestria:yucca_palm_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_yucca_palm_planks",
+            "has_yucca_palm_log",
             "has_the_recipe"
           ]
         ],
