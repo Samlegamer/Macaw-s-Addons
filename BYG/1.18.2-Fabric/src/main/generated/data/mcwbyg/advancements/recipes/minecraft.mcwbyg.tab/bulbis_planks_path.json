@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:bulbis_planks_path"
+      "minecraft:bulbis_planks_path"
     ]
   },
   "criteria": {
-    "has_bulbis_planks": {
+    "has_bulbis_stem": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:bulbis_planks"
+              "byg:bulbis_stem"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:bulbis_planks_path"
+        "recipe": "minecraft:bulbis_planks_path"
       }
     }
   },
   "requirements": [
     [
-      "has_bulbis_planks",
+      "has_bulbis_stem",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "byg"
+        "byg",
+        "mcwpaths"
       ]
     }
   ]

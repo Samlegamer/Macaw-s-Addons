@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:sythian_stable_head_door"
+      "minecraft:sythian_stable_head_door"
     ]
   },
   "criteria": {
-    "has_sythian_planks": {
+    "has_sythian_stem": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:sythian_planks"
+              "byg:sythian_stem"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:sythian_stable_head_door"
+        "recipe": "minecraft:sythian_stable_head_door"
       }
     }
   },
   "requirements": [
     [
-      "has_sythian_planks",
+      "has_sythian_stem",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ]

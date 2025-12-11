@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "railing_gate",
+  "pattern": [
+    "ABA",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:iron_bars"
+    },
+    "B": {
+      "item": "cinderscapes:sulfur_quartz_bricks"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:sulfur_quartz_bricks_railing_gate"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cinderscapes",
+        "mcwfences"
+      ]
+    }
+  ]
+}

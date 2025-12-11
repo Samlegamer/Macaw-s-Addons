@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:zelkova_planks_path"
+      "minecraft:zelkova_planks_path"
     ]
   },
   "criteria": {
-    "has_zelkova_planks": {
+    "has_zelkova_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:zelkova_planks"
+              "byg:zelkova_log"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:zelkova_planks_path"
+        "recipe": "minecraft:zelkova_planks_path"
       }
     }
   },
   "requirements": [
     [
-      "has_zelkova_planks",
+      "has_zelkova_log",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "byg"
+        "byg",
+        "mcwpaths"
       ]
     }
   ]

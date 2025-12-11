@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stockade",
+  "pattern": [
+    "ABA",
+    "BAB"
+  ],
+  "key": {
+    "A": {
+      "item": "terrestria:japanese_maple_log"
+    },
+    "B": {
+      "item": "terrestria:japanese_maple_planks"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:japanese_maple_stockade_fence",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfences"
+      ]
+    }
+  ]
+}

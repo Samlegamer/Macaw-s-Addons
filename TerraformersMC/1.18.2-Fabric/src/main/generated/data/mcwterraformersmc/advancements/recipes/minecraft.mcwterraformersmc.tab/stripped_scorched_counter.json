@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "mcwterraformersmc:stripped_scorched_counter"
+    ]
+  },
+  "criteria": {
+    "has_scorched_stem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cinderscapes:scorched_stem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwterraformersmc:stripped_scorched_counter"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_scorched_stem",
+      "has_the_recipe"
+    ]
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cinderscapes",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

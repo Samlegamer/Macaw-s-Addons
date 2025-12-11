@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stripped_desks",
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "key": {
+    "A": {
+      "item": "terrestria:stripped_rainbow_eucalyptus_log"
+    },
+    "B": {
+      "item": "terrestria:rainbow_eucalyptus_fence"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:stripped_rainbow_eucalyptus_desk",
+    "count": 2
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

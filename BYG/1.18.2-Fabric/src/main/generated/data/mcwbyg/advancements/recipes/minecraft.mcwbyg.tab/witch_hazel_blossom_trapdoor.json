@@ -6,13 +6,13 @@
     ]
   },
   "criteria": {
-    "has_witch_hazel_planks": {
+    "has_witch_hazel_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:witch_hazel_planks"
+              "byg:witch_hazel_log"
             ]
           }
         ]
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "has_witch_hazel_planks",
+      "has_witch_hazel_log",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwtrpdoors",
-        "byg"
+        "byg",
+        "mcwtrpdoors"
       ]
     }
   ]

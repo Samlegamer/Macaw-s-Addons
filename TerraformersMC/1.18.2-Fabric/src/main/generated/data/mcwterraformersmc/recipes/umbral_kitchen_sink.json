@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kitchen_sinks",
+  "pattern": [
+    "CDC",
+    "ABA",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "cinderscapes:umbral_stem"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "item": "cinderscapes:umbral_slab"
+    },
+    "D": {
+      "item": "minecraft:cauldron"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:umbral_kitchen_sink"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cinderscapes",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

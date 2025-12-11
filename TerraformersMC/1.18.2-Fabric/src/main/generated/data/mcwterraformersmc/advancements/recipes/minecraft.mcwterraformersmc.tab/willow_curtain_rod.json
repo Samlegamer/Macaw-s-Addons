@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "mcwterraformersmc:willow_curtain_rod"
+    ]
+  },
+  "criteria": {
+    "has_willow_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:willow_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwterraformersmc:willow_curtain_rod"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_willow_log",
+      "has_the_recipe"
+    ]
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwwindows"
+      ]
+    }
+  ]
+}

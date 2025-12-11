@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "mcwterraformersmc:stripped_sakura_log_window"
+    ]
+  },
+  "criteria": {
+    "has_sakura_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:sakura_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwterraformersmc:stripped_sakura_log_window"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sakura_log",
+      "has_the_recipe"
+    ]
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwwindows"
+      ]
+    }
+  ]
+}

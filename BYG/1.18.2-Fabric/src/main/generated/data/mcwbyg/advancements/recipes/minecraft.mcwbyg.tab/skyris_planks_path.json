@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:skyris_planks_path"
+      "minecraft:skyris_planks_path"
     ]
   },
   "criteria": {
-    "has_skyris_planks": {
+    "has_skyris_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:skyris_planks"
+              "byg:skyris_log"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:skyris_planks_path"
+        "recipe": "minecraft:skyris_planks_path"
       }
     }
   },
   "requirements": [
     [
-      "has_skyris_planks",
+      "has_skyris_log",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "byg"
+        "byg",
+        "mcwpaths"
       ]
     }
   ]

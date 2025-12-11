@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:redwood_stable_head_door"
+      "minecraft:redwood_stable_head_door"
     ]
   },
   "criteria": {
-    "has_redwood_planks": {
+    "has_redwood_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:redwood_planks"
+              "byg:redwood_log"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:redwood_stable_head_door"
+        "recipe": "minecraft:redwood_stable_head_door"
       }
     }
   },
   "requirements": [
     [
-      "has_redwood_planks",
+      "has_redwood_log",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ]

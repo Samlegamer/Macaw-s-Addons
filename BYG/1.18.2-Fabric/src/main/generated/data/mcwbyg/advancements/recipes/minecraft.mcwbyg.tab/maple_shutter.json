@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:maple_shutter"
+      "minecraft:maple_shutter"
     ]
   },
   "criteria": {
@@ -21,7 +21,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:maple_shutter"
+        "recipe": "minecraft:maple_shutter"
       }
     }
   },
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwwindows",
-        "byg"
+        "byg",
+        "mcwwindows"
       ]
     }
   ]

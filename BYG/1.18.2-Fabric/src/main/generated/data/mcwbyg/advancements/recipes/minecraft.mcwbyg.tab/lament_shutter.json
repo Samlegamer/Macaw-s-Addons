@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:lament_shutter"
+      "minecraft:lament_shutter"
     ]
   },
   "criteria": {
@@ -21,7 +21,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:lament_shutter"
+        "recipe": "minecraft:lament_shutter"
       }
     }
   },
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwwindows",
-        "byg"
+        "byg",
+        "mcwwindows"
       ]
     }
   ]

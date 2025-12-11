@@ -6,13 +6,13 @@
     ]
   },
   "criteria": {
-    "has_cika_planks": {
+    "has_cika_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:cika_planks"
+              "byg:cika_log"
             ]
           }
         ]
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "has_cika_planks",
+      "has_cika_log",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwroofs",
-        "byg"
+        "byg",
+        "mcwroofs"
       ]
     }
   ]

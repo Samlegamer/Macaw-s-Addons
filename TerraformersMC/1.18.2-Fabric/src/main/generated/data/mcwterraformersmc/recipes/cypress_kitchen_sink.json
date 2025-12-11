@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kitchen_sinks",
+  "pattern": [
+    "CDC",
+    "ABA",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "terrestria:cypress_log"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "item": "terrestria:cypress_slab"
+    },
+    "D": {
+      "item": "minecraft:cauldron"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:cypress_kitchen_sink"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stripped_modern_desks",
+  "pattern": [
+    "AAA",
+    "BCB"
+  ],
+  "key": {
+    "A": {
+      "item": "terrestria:stripped_yucca_palm_log"
+    },
+    "B": {
+      "item": "terrestria:yucca_palm_fence"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:stripped_yucca_palm_modern_desk",
+    "count": 2
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "end_tables",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "mcwterraformersmc:rainbow_eucalyptus_table"
+    },
+    "B": {
+      "item": "terrestria:rainbow_eucalyptus_log"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:rainbow_eucalyptus_end_table"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

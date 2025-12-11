@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "horse",
+  "pattern": [
+    "ABA",
+    "BAB"
+  ],
+  "key": {
+    "A": {
+      "item": "terrestria:hemlock_log"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:hemlock_horse_fence",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfences"
+      ]
+    }
+  ]
+}

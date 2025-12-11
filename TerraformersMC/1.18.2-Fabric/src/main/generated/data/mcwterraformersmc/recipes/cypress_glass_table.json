@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glass_tables",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "mcwterraformersmc:cypress_end_table"
+    },
+    "B": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:cypress_glass_table"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

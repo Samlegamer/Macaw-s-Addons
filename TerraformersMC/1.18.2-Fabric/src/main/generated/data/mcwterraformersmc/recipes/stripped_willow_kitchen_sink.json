@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stripped_kitchen_sinks",
+  "pattern": [
+    "CDC",
+    "ABA",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "terrestria:stripped_willow_log"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "item": "terrestria:willow_slab"
+    },
+    "D": {
+      "item": "minecraft:cauldron"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:stripped_willow_kitchen_sink"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

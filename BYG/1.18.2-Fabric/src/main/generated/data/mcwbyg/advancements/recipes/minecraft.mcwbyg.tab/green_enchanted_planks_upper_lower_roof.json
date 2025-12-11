@@ -6,13 +6,13 @@
     ]
   },
   "criteria": {
-    "has_green_enchanted_planks": {
+    "has_green_enchanted_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:green_enchanted_planks"
+              "byg:green_enchanted_log"
             ]
           }
         ]
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "has_green_enchanted_planks",
+      "has_green_enchanted_log",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwroofs",
-        "byg"
+        "byg",
+        "mcwroofs"
       ]
     }
   ]

@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:basalt_bricks_upper_steep_roof_stonecutter"
+    ]
+  },
+  "criteria": {
+    "has_basalt_bricks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:basalt_bricks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:basalt_bricks_upper_steep_roof_stonecutter"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_basalt_bricks",
+      "has_the_recipe"
+    ]
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwroofs"
+      ]
+    }
+  ]
+}

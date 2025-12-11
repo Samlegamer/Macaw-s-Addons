@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tables",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "mcwterraformersmc:willow_coffee_table"
+    },
+    "B": {
+      "item": "terrestria:willow_fence"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:willow_table"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

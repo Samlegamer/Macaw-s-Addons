@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "mcwterraformersmc:rainbow_eucalyptus_four_panel_trapdoor"
+    ]
+  },
+  "criteria": {
+    "has_rainbow_eucalyptus_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:rainbow_eucalyptus_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mcwterraformersmc:rainbow_eucalyptus_four_panel_trapdoor"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_rainbow_eucalyptus_log",
+      "has_the_recipe"
+    ]
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwtrpdoors"
+      ]
+    }
+  ]
+}

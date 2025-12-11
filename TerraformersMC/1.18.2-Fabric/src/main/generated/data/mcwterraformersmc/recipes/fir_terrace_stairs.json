@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "terrace_stairs",
+  "pattern": [
+    "A  ",
+    "BA ",
+    " BA"
+  ],
+  "key": {
+    "A": {
+      "item": "traverse:stripped_fir_log"
+    },
+    "B": {
+      "item": "traverse:fir_log"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:fir_terrace_stairs",
+    "count": 5
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "traverse",
+        "mcwstairs"
+      ]
+    }
+  ]
+}

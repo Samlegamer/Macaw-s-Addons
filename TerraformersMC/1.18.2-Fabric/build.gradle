@@ -3,6 +3,17 @@ plugins {
 	id 'maven-publish'
 }
 
+def extraPropsFile = file('../../_properties/1.18.2fabricgradle.properties')
+if (extraPropsFile.exists()) {
+    def extraProps = new Properties()
+    extraPropsFile.withInputStream { extraProps.load(it) }
+    extraProps.each { k, v ->
+        project.ext.set(k.toString(), v.toString())
+    }
+} else {
+    println "WARNING: Properties file not found: ${extraPropsFile.absolutePath}"
+}
+
 version = project.mod_version
 group = project.maven_group
 
@@ -65,10 +76,10 @@ dependencies {
     modImplementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
     modImplementation "curse.maven:macaws-furniture-359540:${furniture_version}"
 
-    //modCompileOnly files("libs/cinderscapes-common-2.0.2.jar")
-    //modCompileOnly files("libs/terrestria-common-4.0.6.jar")
-    //modCompileOnly files("libs/traverse-common-5.1.4.jar")
-    //modCompileOnly files("libs/terraform-wood-api-v1-3.1.0.jar")
+    modCompileOnly files("libs/cinderscapes-common-2.0.2.jar")
+    modCompileOnly files("libs/terrestria-common-4.0.6.jar")
+    modCompileOnly files("libs/traverse-common-5.1.4.jar")
+    modCompileOnly files("libs/terraform-wood-api-v1-3.1.0.jar")
 
     modRuntimeOnly files("libs/cinderscapes-common-2.0.2.jar")
     modRuntimeOnly files("libs/terrestria-common-4.0.6.jar")

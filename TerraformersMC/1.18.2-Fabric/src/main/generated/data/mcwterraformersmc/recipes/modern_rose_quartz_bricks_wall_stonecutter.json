@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "cinderscapes:rose_quartz_bricks"
+  },
+  "result": "mcwterraformersmc:modern_rose_quartz_bricks_wall",
+  "count": 1,
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cinderscapes",
+        "mcwfences"
+      ]
+    }
+  ]
+}

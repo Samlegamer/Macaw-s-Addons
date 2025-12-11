@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stripped_glass_tables",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "mcwterraformersmc:stripped_rainbow_eucalyptus_end_table"
+    },
+    "B": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:stripped_rainbow_eucalyptus_glass_table"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

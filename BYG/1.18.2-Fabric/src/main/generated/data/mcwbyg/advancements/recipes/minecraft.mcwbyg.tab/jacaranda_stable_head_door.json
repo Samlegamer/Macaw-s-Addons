@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:jacaranda_stable_head_door"
+      "minecraft:jacaranda_stable_head_door"
     ]
   },
   "criteria": {
-    "has_jacaranda_planks": {
+    "has_jacaranda_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:jacaranda_planks"
+              "byg:jacaranda_log"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:jacaranda_stable_head_door"
+        "recipe": "minecraft:jacaranda_stable_head_door"
       }
     }
   },
   "requirements": [
     [
-      "has_jacaranda_planks",
+      "has_jacaranda_log",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ]

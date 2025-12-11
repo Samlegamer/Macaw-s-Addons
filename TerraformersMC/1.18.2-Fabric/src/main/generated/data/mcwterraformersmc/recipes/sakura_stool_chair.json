@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stool_chairs",
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "terrestria:sakura_log"
+    },
+    "B": {
+      "item": "terrestria:sakura_fence"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:sakura_stool_chair"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

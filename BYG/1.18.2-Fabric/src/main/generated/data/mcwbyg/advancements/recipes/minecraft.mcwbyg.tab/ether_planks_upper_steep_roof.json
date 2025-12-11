@@ -6,13 +6,13 @@
     ]
   },
   "criteria": {
-    "has_ether_planks": {
+    "has_ether_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:ether_planks"
+              "byg:ether_log"
             ]
           }
         ]
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "has_ether_planks",
+      "has_ether_log",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwroofs",
-        "byg"
+        "byg",
+        "mcwroofs"
       ]
     }
   ]

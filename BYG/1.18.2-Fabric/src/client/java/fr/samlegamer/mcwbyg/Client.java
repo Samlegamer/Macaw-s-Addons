@@ -1,10 +1,12 @@
 package fr.samlegamer.mcwbyg;
 
-import java.util.List;
+import java.util.Arrays;
+import fr.addonslib.api.client.McwColors;
+import fr.addonslib.api.data.ModType;
+import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.client.ColorRegistry;
-import fr.samlegamer.addonslib.data.ModType;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -12,14 +14,15 @@ import net.fabricmc.api.Environment;
 @Environment(EnvType.CLIENT)
 public class Client implements ClientModInitializer
 {
-	private static final List<String> LEAVES_NO_COLORED = List.of("mahogany", "maple");
-	private static final ColorRegistry COLOR = new ColorRegistry(McwByg.MODID, LEAVES_NO_COLORED);
+	private static final ColorRegistry COLOR = new ColorRegistry(new McwColors(Arrays.asList(
+			Finder.makeIdHedge(McwByg.MODID, "mahogany"),
+			Finder.makeIdHedge(McwByg.MODID, "maple"))));
 
 	@Override
 	public void onInitializeClient()
 	{
-		COLOR.colorsBlock();
-		COLOR.colorsItem();
+		COLOR.registryBlockColorsAverage();
+		COLOR.registryItemColors();
 
 		APIRenderTypes.initAllWood(McwByg.MODID, McwByg.WOOD, Registration.getAllModTypeWood());
 		APIRenderTypes.initAllLeave(McwByg.MODID, McwByg.LEAVES);

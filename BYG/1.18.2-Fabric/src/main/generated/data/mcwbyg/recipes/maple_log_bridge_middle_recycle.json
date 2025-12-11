@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "recyclable_bridges",
+  "group": "recyclable_bridges_recycle",
   "ingredients": [
     {
       "item": "mcwbyg:maple_log_bridge_stair"
@@ -13,8 +13,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwbridges",
-        "byg"
+        "byg",
+        "mcwbridges"
       ]
     }
   ]

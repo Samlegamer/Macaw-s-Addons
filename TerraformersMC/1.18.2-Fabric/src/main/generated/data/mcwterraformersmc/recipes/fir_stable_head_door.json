@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "stable_head",
+  "ingredients": [
+    {
+      "item": "mcwterraformersmc:fir_stable_door"
+    }
+  ],
+  "result": {
+    "item": "mcwterraformersmc:fir_stable_head_door"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "traverse",
+        "mcwdoors"
+      ]
+    }
+  ]
+}

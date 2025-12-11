@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "shoji_two",
+  "pattern": [
+    "BB",
+    "BB",
+    "AA"
+  ],
+  "key": {
+    "A": {
+      "item": "terrestria:japanese_maple_slab"
+    },
+    "B": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:japanese_maple_japanese2_door",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwdoors"
+      ]
+    }
+  ]
+}

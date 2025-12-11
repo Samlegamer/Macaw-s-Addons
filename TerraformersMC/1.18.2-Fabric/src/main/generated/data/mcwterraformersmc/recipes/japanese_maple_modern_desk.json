@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "modern_desks",
+  "pattern": [
+    "AAA",
+    "BCB"
+  ],
+  "key": {
+    "A": {
+      "item": "terrestria:japanese_maple_log"
+    },
+    "B": {
+      "item": "terrestria:japanese_maple_fence"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:japanese_maple_modern_desk",
+    "count": 2
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

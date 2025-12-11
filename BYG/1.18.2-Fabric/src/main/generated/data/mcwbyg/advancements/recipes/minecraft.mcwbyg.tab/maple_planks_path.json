@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:maple_planks_path"
+      "minecraft:maple_planks_path"
     ]
   },
   "criteria": {
-    "has_maple_planks": {
+    "has_maple_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:maple_planks"
+              "byg:maple_log"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:maple_planks_path"
+        "recipe": "minecraft:maple_planks_path"
       }
     }
   },
   "requirements": [
     [
-      "has_maple_planks",
+      "has_maple_log",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "byg"
+        "byg",
+        "mcwpaths"
       ]
     }
   ]

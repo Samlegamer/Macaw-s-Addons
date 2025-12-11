@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "terrestria:japanese_maple_trapdoor"
+    },
+    {
+      "item": "terrestria:japanese_maple_trapdoor"
+    },
+    {
+      "item": "terrestria:japanese_maple_trapdoor"
+    }
+  ],
+  "result": {
+    "item": "mcwterraformersmc:japanese_maple_shutter",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwwindows"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "cinderscapes:scorched_trapdoor"
+    },
+    {
+      "item": "cinderscapes:scorched_trapdoor"
+    },
+    {
+      "item": "cinderscapes:scorched_trapdoor"
+    }
+  ],
+  "result": {
+    "item": "mcwterraformersmc:scorched_shutter",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cinderscapes",
+        "mcwwindows"
+      ]
+    }
+  ]
+}

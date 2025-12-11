@@ -6,13 +6,13 @@
     ]
   },
   "criteria": {
-    "has_mangrove_planks": {
+    "has_mangrove_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:mangrove_planks"
+              "byg:mangrove_log"
             ]
           }
         ]
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "has_mangrove_planks",
+      "has_mangrove_log",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwtrpdoors",
-        "byg"
+        "byg",
+        "mcwtrpdoors"
       ]
     }
   ]

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks_paths",
+  "ingredients": [
+    {
+      "item": "terrestria:yucca_palm_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwterraformersmc:yucca_palm_planks_path",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwpaths"
+      ]
+    }
+  ]
+}

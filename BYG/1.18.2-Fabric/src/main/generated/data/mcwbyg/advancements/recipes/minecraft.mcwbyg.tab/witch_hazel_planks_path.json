@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:witch_hazel_planks_path"
+      "minecraft:witch_hazel_planks_path"
     ]
   },
   "criteria": {
-    "has_witch_hazel_planks": {
+    "has_witch_hazel_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:witch_hazel_planks"
+              "byg:witch_hazel_log"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:witch_hazel_planks_path"
+        "recipe": "minecraft:witch_hazel_planks_path"
       }
     }
   },
   "requirements": [
     [
-      "has_witch_hazel_planks",
+      "has_witch_hazel_log",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "byg"
+        "byg",
+        "mcwpaths"
       ]
     }
   ]

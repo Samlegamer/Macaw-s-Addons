@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "double_drawers",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "terrestria:hemlock_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:hemlock_double_drawer",
+    "count": 4
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "large_drawers",
+  "pattern": [
+    "ABA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "terrestria:sakura_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:sakura_large_drawer",
+    "count": 4
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

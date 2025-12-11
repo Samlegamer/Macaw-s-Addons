@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "curved_gate",
+  "pattern": [
+    "B A",
+    "BAA"
+  ],
+  "key": {
+    "A": {
+      "item": "cinderscapes:umbral_planks"
+    },
+    "B": {
+      "item": "cinderscapes:umbral_stem"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:umbral_curved_gate",
+    "count": 4
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cinderscapes",
+        "mcwfences"
+      ]
+    }
+  ]
+}

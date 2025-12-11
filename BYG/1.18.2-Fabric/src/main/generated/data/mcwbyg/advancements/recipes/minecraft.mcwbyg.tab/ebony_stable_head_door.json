@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:ebony_stable_head_door"
+      "minecraft:ebony_stable_head_door"
     ]
   },
   "criteria": {
-    "has_ebony_planks": {
+    "has_ebony_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:ebony_planks"
+              "byg:ebony_log"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:ebony_stable_head_door"
+        "recipe": "minecraft:ebony_stable_head_door"
       }
     }
   },
   "requirements": [
     [
-      "has_ebony_planks",
+      "has_ebony_log",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ]

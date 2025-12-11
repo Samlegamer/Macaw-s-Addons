@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "mcwbyg:green_enchanted_planks_path"
+      "minecraft:green_enchanted_planks_path"
     ]
   },
   "criteria": {
-    "has_green_enchanted_planks": {
+    "has_green_enchanted_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:green_enchanted_planks"
+              "byg:green_enchanted_log"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "mcwbyg:green_enchanted_planks_path"
+        "recipe": "minecraft:green_enchanted_planks_path"
       }
     }
   },
   "requirements": [
     [
-      "has_green_enchanted_planks",
+      "has_green_enchanted_log",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "byg"
+        "byg",
+        "mcwpaths"
       ]
     }
   ]

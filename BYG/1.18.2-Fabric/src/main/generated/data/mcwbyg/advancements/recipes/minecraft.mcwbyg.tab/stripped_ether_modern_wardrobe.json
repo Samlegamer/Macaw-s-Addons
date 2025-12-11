@@ -6,13 +6,13 @@
     ]
   },
   "criteria": {
-    "has_stripped_ether_log": {
+    "has_ether_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:stripped_ether_log"
+              "byg:ether_log"
             ]
           }
         ]
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "has_stripped_ether_log",
+      "has_ether_log",
       "has_the_recipe"
     ]
   ],
@@ -35,8 +35,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "byg"
+        "byg",
+        "mcwfurnitures"
       ]
     }
   ]

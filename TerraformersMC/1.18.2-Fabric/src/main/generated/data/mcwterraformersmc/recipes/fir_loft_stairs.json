@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "loft_stairs",
+  "pattern": [
+    "A  ",
+    " A ",
+    "  A"
+  ],
+  "key": {
+    "A": {
+      "item": "traverse:stripped_fir_log"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:fir_loft_stairs",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "traverse",
+        "mcwstairs"
+      ]
+    }
+  ]
+}

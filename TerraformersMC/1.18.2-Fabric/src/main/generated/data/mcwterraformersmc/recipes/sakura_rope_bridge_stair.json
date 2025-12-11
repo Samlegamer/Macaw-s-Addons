@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "rope_stairs",
+  "pattern": [
+    "  A",
+    " AA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "mcwterraformersmc:rope_sakura_bridge"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:sakura_rope_bridge_stair",
+    "count": 6
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwbridges"
+      ]
+    }
+  ]
+}

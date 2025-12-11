@@ -1,5 +1,6 @@
 package fr.samlegamer.mcwterraformersmc;
 
+import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
@@ -16,9 +17,15 @@ public class Tags
 
         @Override
         protected void generateTags() {
-            addAllMcwTags(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, McwTerraformersMC.LEAVES_TRAVERSE);
-            addAllMcwTags(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, McwTerraformersMC.ROCKS_CINDERSCAPES, new ArrayList<>());
-            addAllMcwTags(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, McwTerraformersMC.ROCKS_TERRESTRIA, McwTerraformersMC.LEAVES_TERRESTRIA);
+            addAllMcwTagsWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, Registration.getAllModTypeWood());
+            addAllMcwTagsLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE);
+
+            addAllMcwTagsWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, Registration.getAllModTypeWood());
+            addAllMcwTagsStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, Registration.getAllModTypeStone());
+
+            addAllMcwTagsWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, Registration.getAllModTypeWood());
+            addAllMcwTagsLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA);
+            addAllMcwTagsStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA, Registration.getAllModTypeStone());
         }
     }
 
@@ -30,9 +37,15 @@ public class Tags
 
         @Override
         protected void generateTags() {
-            addAllMcwTags(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, McwTerraformersMC.LEAVES_TRAVERSE);
-            addAllMcwTags(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, McwTerraformersMC.ROCKS_CINDERSCAPES, new ArrayList<>());
-            addAllMcwTags(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, McwTerraformersMC.ROCKS_TERRESTRIA, McwTerraformersMC.LEAVES_TERRESTRIA);
+            addAllMcwTagsWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, Registration.getAllModTypeWood());
+            addAllMcwTagsLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE);
+
+            addAllMcwTagsWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, Registration.getAllModTypeWood());
+            addAllMcwTagsStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, Registration.getAllModTypeStone());
+
+            addAllMcwTagsWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, Registration.getAllModTypeWood());
+            addAllMcwTagsLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA);
+            addAllMcwTagsStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA, Registration.getAllModTypeStone());
         }
     }
 }

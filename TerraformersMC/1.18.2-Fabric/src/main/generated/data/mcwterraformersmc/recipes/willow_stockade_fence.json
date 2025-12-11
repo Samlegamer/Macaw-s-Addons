@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stockade",
+  "pattern": [
+    "ABA",
+    "BAB"
+  ],
+  "key": {
+    "A": {
+      "item": "terrestria:willow_log"
+    },
+    "B": {
+      "item": "terrestria:willow_planks"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:willow_stockade_fence",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfences"
+      ]
+    }
+  ]
+}

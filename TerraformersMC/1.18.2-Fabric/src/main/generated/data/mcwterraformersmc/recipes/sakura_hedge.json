@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "hedge",
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "key": {
+    "A": {
+      "item": "terrestria:sakura_leaves"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:sakura_hedge",
+    "count": 4
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "terrestria",
+        "mcwfences"
+      ]
+    }
+  ]
+}

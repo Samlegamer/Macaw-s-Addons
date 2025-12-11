@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "barn_trapdoors",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "cinderscapes:umbral_planks"
+    },
+    "B": {
+      "item": "mcwterraformersmc:umbral_glass_trapdoor"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:umbral_barn_trapdoor"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cinderscapes",
+        "mcwtrpdoors"
+      ]
+    }
+  ]
+}

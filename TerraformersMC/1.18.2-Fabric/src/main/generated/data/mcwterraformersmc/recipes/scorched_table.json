@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tables",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "mcwterraformersmc:scorched_coffee_table"
+    },
+    "B": {
+      "item": "cinderscapes:scorched_fence"
+    }
+  },
+  "result": {
+    "item": "mcwterraformersmc:scorched_table"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cinderscapes",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}
