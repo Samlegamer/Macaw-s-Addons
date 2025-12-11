@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_grimwood_slab": {
+          "has_grimwood_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "atmospheric:grimwood_slab"
+                    "atmospheric:grimwood_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_grimwood_slab",
+            "has_grimwood_log",
             "has_the_recipe"
           ]
         ],

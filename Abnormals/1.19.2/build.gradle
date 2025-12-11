@@ -1,3 +1,5 @@
+import java.util.Properties
+
 buildscript {
     repositories {
         maven { url = "https://files.minecraftforge.net/maven" }
@@ -13,6 +15,20 @@ apply plugin: "net.minecraftforge.gradle"
 apply plugin: "eclipse"
 apply plugin: "maven-publish"
 apply plugin: "org.spongepowered.mixin"
+
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
+    }
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
+}
+
+loadExtraProperties('../../_properties/1.19.2forgegradle.properties')
 
 version = mod_version
 group = mod_group_id

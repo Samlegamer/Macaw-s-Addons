@@ -14,9 +14,9 @@ import com.teamabnormals.environmental.core.Environmental;
 import com.teamabnormals.environmental.core.registry.EnvironmentalBlocks;
 import com.teamabnormals.upgrade_aquatic.core.UpgradeAquatic;
 import com.teamabnormals.upgrade_aquatic.core.registry.UABlocks;
+import fr.addonslib.api.recipes.material.McwStoneMat;
+import fr.addonslib.api.recipes.material.McwWoodMat;
 import fr.samlegamer.addonslib.generation.recipes.McwRecipes;
-import fr.samlegamer.addonslib.generation.recipes.mat.McwStoneMat;
-import fr.samlegamer.addonslib.generation.recipes.mat.McwWoodMat;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.world.level.block.Block;
@@ -29,7 +29,7 @@ import java.util.function.Consumer;
 public class Recipes extends McwRecipes
 {
     public Recipes(DataGenerator pOutput) {
-        super(pOutput, McwAbnormals.MODID, "", "");
+        super(pOutput);
     }
 
     @Override
@@ -52,24 +52,24 @@ public class Recipes extends McwRecipes
         registerMcwHedge(output, McwAbnormals.MODID, UpgradeAquatic.MOD_ID, McwAbnormals.LEAVES_UAQUA, getUAquaLeaves());
     }
 
-    private List<McwWoodMat> getCavernAndChasmWood()
+    private List<McwWoodMat<Block>> getCavernAndChasmWood()
     {
-        List<McwWoodMat> mats = new ArrayList<>();
-        mats.add(new McwWoodMat(CCBlocks.AZALEA_LOG.get(), CCBlocks.AZALEA_PLANKS.get(), CCBlocks.STRIPPED_AZALEA_LOG.get(),
+        List<McwWoodMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwWoodMat<>(CCBlocks.AZALEA_LOG.get(), CCBlocks.AZALEA_PLANKS.get(), CCBlocks.STRIPPED_AZALEA_LOG.get(),
                 CCBlocks.AZALEA_SLAB.get(), CCBlocks.AZALEA_FENCE.get(), CCBlocks.AZALEA_TRAPDOOR.get()));
         return mats;
     }
 
-    private List<McwStoneMat> getCavernAndChasmStone()
+    private List<McwStoneMat<Block>> getCavernAndChasmStone()
     {
-        List<McwStoneMat> mats = new ArrayList<>();
-        mats.add(new McwStoneMat(CCBlocks.CUT_AMETHYST_BRICKS.get(), CCBlocks.CUT_AMETHYST_BRICK_WALL.get(), CCBlocks.CUT_AMETHYST_BRICK_SLAB.get(), CCBlocks.CUT_AMETHYST.get()));
-        mats.add(new McwStoneMat(CCBlocks.SPINEL_BRICKS.get(), CCBlocks.SPINEL_BRICK_WALL.get(), CCBlocks.SPINEL_BRICK_SLAB.get(), CCBlocks.SPINEL_BLOCK.get()));
-        mats.add(new McwStoneMat(CCBlocks.LAPIS_LAZULI_BRICKS.get(), CCBlocks.LAPIS_LAZULI_BRICK_WALL.get(), CCBlocks.LAPIS_LAZULI_BRICK_SLAB.get(), Blocks.LAPIS_BLOCK));
-        mats.add(new McwStoneMat(CCBlocks.COBBLESTONE_BRICKS.get(), CCBlocks.COBBLESTONE_BRICK_WALL.get(), CCBlocks.COBBLESTONE_BRICK_SLAB.get(), CCBlocks.COBBLESTONE_TILES.get()));
-        mats.add(new McwStoneMat(CCBlocks.POLISHED_CALCITE.get(), CCBlocks.CALCITE_WALL.get(), CCBlocks.CALCITE_SLAB.get(), Blocks.CALCITE));
-        mats.add(new McwStoneMat(CCBlocks.MOSSY_COBBLESTONE_BRICKS.get(), CCBlocks.MOSSY_COBBLESTONE_BRICK_WALL.get(), CCBlocks.MOSSY_COBBLESTONE_BRICK_SLAB.get(), CCBlocks.MOSSY_COBBLESTONE_TILES.get()));
-        mats.add(new McwStoneMat(CCBlocks.FLOODED_DRIPSTONE_SHINGLES.get(), CCBlocks.DRIPSTONE_SHINGLE_WALL.get(), CCBlocks.DRIPSTONE_SHINGLE_SLAB.get(), Blocks.DRIPSTONE_BLOCK));
+        List<McwStoneMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwStoneMat<>(CCBlocks.CUT_AMETHYST_BRICKS.get(), CCBlocks.CUT_AMETHYST_BRICK_WALL.get(), CCBlocks.CUT_AMETHYST_BRICK_SLAB.get(), CCBlocks.CUT_AMETHYST.get()));
+        mats.add(new McwStoneMat<>(CCBlocks.SPINEL_BRICKS.get(), CCBlocks.SPINEL_BRICK_WALL.get(), CCBlocks.SPINEL_BRICK_SLAB.get(), CCBlocks.SPINEL_BLOCK.get()));
+        mats.add(new McwStoneMat<>(CCBlocks.LAPIS_LAZULI_BRICKS.get(), CCBlocks.LAPIS_LAZULI_BRICK_WALL.get(), CCBlocks.LAPIS_LAZULI_BRICK_SLAB.get(), Blocks.LAPIS_BLOCK));
+        mats.add(new McwStoneMat<>(CCBlocks.COBBLESTONE_BRICKS.get(), CCBlocks.COBBLESTONE_BRICK_WALL.get(), CCBlocks.COBBLESTONE_BRICK_SLAB.get(), CCBlocks.COBBLESTONE_TILES.get()));
+        mats.add(new McwStoneMat<>(CCBlocks.POLISHED_CALCITE.get(), CCBlocks.CALCITE_WALL.get(), CCBlocks.CALCITE_SLAB.get(), Blocks.CALCITE));
+        mats.add(new McwStoneMat<>(CCBlocks.MOSSY_COBBLESTONE_BRICKS.get(), CCBlocks.MOSSY_COBBLESTONE_BRICK_WALL.get(), CCBlocks.MOSSY_COBBLESTONE_BRICK_SLAB.get(), CCBlocks.MOSSY_COBBLESTONE_TILES.get()));
+        mats.add(new McwStoneMat<>(CCBlocks.FLOODED_DRIPSTONE_SHINGLES.get(), CCBlocks.DRIPSTONE_SHINGLE_WALL.get(), CCBlocks.DRIPSTONE_SHINGLE_SLAB.get(), Blocks.DRIPSTONE_BLOCK));
         return mats;
     }
 
@@ -116,84 +116,84 @@ public class Recipes extends McwRecipes
         return mats;
     }
 
-    private List<McwWoodMat> getEnderWood()
+    private List<McwWoodMat<Block>> getEnderWood()
     {
-        List<McwWoodMat> mats = new ArrayList<>();
-        mats.add(new McwWoodMat(EEBlocks.POISE_STEM.get(), EEBlocks.POISE_PLANKS.get(), EEBlocks.STRIPPED_POISE_STEM.get(),
+        List<McwWoodMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwWoodMat<>(EEBlocks.POISE_STEM.get(), EEBlocks.POISE_PLANKS.get(), EEBlocks.STRIPPED_POISE_STEM.get(),
                 EEBlocks.POISE_SLAB.get(), EEBlocks.POISE_FENCE.get(), EEBlocks.POISE_TRAPDOOR.get()));
         return mats;
     }
 
-    private List<McwWoodMat> getAtmoWood()
+    private List<McwWoodMat<Block>> getAtmoWood()
     {
-        List<McwWoodMat> mats = new ArrayList<>();
-        mats.add(new McwWoodMat(AtmosphericBlocks.ASPEN_LOG.get(), AtmosphericBlocks.ASPEN_PLANKS.get(), AtmosphericBlocks.STRIPPED_ASPEN_LOG.get(),
+        List<McwWoodMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwWoodMat<>(AtmosphericBlocks.ASPEN_LOG.get(), AtmosphericBlocks.ASPEN_PLANKS.get(), AtmosphericBlocks.STRIPPED_ASPEN_LOG.get(),
                 AtmosphericBlocks.ASPEN_SLAB.get(), AtmosphericBlocks.ASPEN_FENCE.get(), AtmosphericBlocks.ASPEN_TRAPDOOR.get()));
-        mats.add(new McwWoodMat(AtmosphericBlocks.GRIMWOOD_LOG.get(), AtmosphericBlocks.GRIMWOOD_PLANKS.get(), AtmosphericBlocks.STRIPPED_GRIMWOOD_LOG.get(),
+        mats.add(new McwWoodMat<>(AtmosphericBlocks.GRIMWOOD_LOG.get(), AtmosphericBlocks.GRIMWOOD_PLANKS.get(), AtmosphericBlocks.STRIPPED_GRIMWOOD_LOG.get(),
                 AtmosphericBlocks.GRIMWOOD_SLAB.get(), AtmosphericBlocks.GRIMWOOD_FENCE.get(), AtmosphericBlocks.GRIMWOOD_TRAPDOOR.get()));
-        mats.add(new McwWoodMat(AtmosphericBlocks.KOUSA_LOG.get(), AtmosphericBlocks.KOUSA_PLANKS.get(), AtmosphericBlocks.STRIPPED_KOUSA_LOG.get(),
+        mats.add(new McwWoodMat<>(AtmosphericBlocks.KOUSA_LOG.get(), AtmosphericBlocks.KOUSA_PLANKS.get(), AtmosphericBlocks.STRIPPED_KOUSA_LOG.get(),
                 AtmosphericBlocks.KOUSA_SLAB.get(), AtmosphericBlocks.KOUSA_FENCE.get(), AtmosphericBlocks.KOUSA_TRAPDOOR.get()));
-        mats.add(new McwWoodMat(AtmosphericBlocks.MORADO_LOG.get(), AtmosphericBlocks.MORADO_PLANKS.get(), AtmosphericBlocks.STRIPPED_MORADO_LOG.get(),
+        mats.add(new McwWoodMat<>(AtmosphericBlocks.MORADO_LOG.get(), AtmosphericBlocks.MORADO_PLANKS.get(), AtmosphericBlocks.STRIPPED_MORADO_LOG.get(),
                 AtmosphericBlocks.MORADO_SLAB.get(), AtmosphericBlocks.MORADO_FENCE.get(), AtmosphericBlocks.MORADO_TRAPDOOR.get()));
-        mats.add(new McwWoodMat(AtmosphericBlocks.ROSEWOOD_LOG.get(), AtmosphericBlocks.ROSEWOOD_PLANKS.get(), AtmosphericBlocks.STRIPPED_ROSEWOOD_LOG.get(),
+        mats.add(new McwWoodMat<>(AtmosphericBlocks.ROSEWOOD_LOG.get(), AtmosphericBlocks.ROSEWOOD_PLANKS.get(), AtmosphericBlocks.STRIPPED_ROSEWOOD_LOG.get(),
                 AtmosphericBlocks.ROSEWOOD_SLAB.get(), AtmosphericBlocks.ROSEWOOD_FENCE.get(), AtmosphericBlocks.ROSEWOOD_TRAPDOOR.get()));
-        mats.add(new McwWoodMat(AtmosphericBlocks.YUCCA_LOG.get(), AtmosphericBlocks.YUCCA_PLANKS.get(), AtmosphericBlocks.STRIPPED_YUCCA_LOG.get(),
+        mats.add(new McwWoodMat<>(AtmosphericBlocks.YUCCA_LOG.get(), AtmosphericBlocks.YUCCA_PLANKS.get(), AtmosphericBlocks.STRIPPED_YUCCA_LOG.get(),
                 AtmosphericBlocks.YUCCA_SLAB.get(), AtmosphericBlocks.YUCCA_FENCE.get(), AtmosphericBlocks.YUCCA_TRAPDOOR.get()));
         return mats;
     }
 
-    private List<McwWoodMat> getUAquaWood()
+    private List<McwWoodMat<Block>> getUAquaWood()
     {
-        List<McwWoodMat> mats = new ArrayList<>();
-        mats.add(new McwWoodMat(UABlocks.DRIFTWOOD_LOG.get(), UABlocks.DRIFTWOOD_PLANKS.get(), UABlocks.STRIPPED_DRIFTWOOD_LOG.get(),
+        List<McwWoodMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwWoodMat<>(UABlocks.DRIFTWOOD_LOG.get(), UABlocks.DRIFTWOOD_PLANKS.get(), UABlocks.STRIPPED_DRIFTWOOD_LOG.get(),
                 UABlocks.DRIFTWOOD_SLAB.get(), UABlocks.DRIFTWOOD_FENCE.get(), UABlocks.DRIFTWOOD_TRAPDOOR.get()));
-        mats.add(new McwWoodMat(UABlocks.RIVER_LOG.get(), UABlocks.RIVER_PLANKS.get(), UABlocks.STRIPPED_RIVER_LOG.get(),
+        mats.add(new McwWoodMat<>(UABlocks.RIVER_LOG.get(), UABlocks.RIVER_PLANKS.get(), UABlocks.STRIPPED_RIVER_LOG.get(),
                 UABlocks.RIVER_SLAB.get(), UABlocks.RIVER_FENCE.get(), UABlocks.RIVER_TRAPDOOR.get()));
         return mats;
     }
 
-    private List<McwWoodMat> getEnviWood()
+    private List<McwWoodMat<Block>> getEnviWood()
     {
-        List<McwWoodMat> mats = new ArrayList<>();
-        mats.add(new McwWoodMat(EnvironmentalBlocks.CHERRY_LOG.get(), EnvironmentalBlocks.CHERRY_PLANKS.get(), EnvironmentalBlocks.STRIPPED_CHERRY_LOG.get(),
+        List<McwWoodMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwWoodMat<>(EnvironmentalBlocks.CHERRY_LOG.get(), EnvironmentalBlocks.CHERRY_PLANKS.get(), EnvironmentalBlocks.STRIPPED_CHERRY_LOG.get(),
                 EnvironmentalBlocks.CHERRY_SLAB.get(), EnvironmentalBlocks.CHERRY_FENCE.get(), EnvironmentalBlocks.CHERRY_TRAPDOOR.get()));
-        mats.add(new McwWoodMat(EnvironmentalBlocks.WISTERIA_LOG.get(), EnvironmentalBlocks.WISTERIA_PLANKS.get(), EnvironmentalBlocks.STRIPPED_WISTERIA_LOG.get(),
+        mats.add(new McwWoodMat<>(EnvironmentalBlocks.WISTERIA_LOG.get(), EnvironmentalBlocks.WISTERIA_PLANKS.get(), EnvironmentalBlocks.STRIPPED_WISTERIA_LOG.get(),
                 EnvironmentalBlocks.WISTERIA_SLAB.get(), EnvironmentalBlocks.WISTERIA_FENCE.get(), EnvironmentalBlocks.WISTERIA_TRAPDOOR.get()));
-        mats.add(new McwWoodMat(EnvironmentalBlocks.WILLOW_LOG.get(), EnvironmentalBlocks.WILLOW_PLANKS.get(), EnvironmentalBlocks.STRIPPED_WILLOW_LOG.get(),
+        mats.add(new McwWoodMat<>(EnvironmentalBlocks.WILLOW_LOG.get(), EnvironmentalBlocks.WILLOW_PLANKS.get(), EnvironmentalBlocks.STRIPPED_WILLOW_LOG.get(),
                 EnvironmentalBlocks.WILLOW_SLAB.get(), EnvironmentalBlocks.WILLOW_FENCE.get(), EnvironmentalBlocks.WILLOW_TRAPDOOR.get()));
         return mats;
     }
 
-    private List<McwWoodMat> getAutuWood()
+    private List<McwWoodMat<Block>> getAutuWood()
     {
-        List<McwWoodMat> mats = new ArrayList<>();
-        mats.add(new McwWoodMat(AutumnityBlocks.MAPLE_LOG.get(), AutumnityBlocks.MAPLE_PLANKS.get(), AutumnityBlocks.STRIPPED_MAPLE_LOG.get(),
+        List<McwWoodMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwWoodMat<>(AutumnityBlocks.MAPLE_LOG.get(), AutumnityBlocks.MAPLE_PLANKS.get(), AutumnityBlocks.STRIPPED_MAPLE_LOG.get(),
                 AutumnityBlocks.MAPLE_SLAB.get(), AutumnityBlocks.MAPLE_FENCE.get(), AutumnityBlocks.MAPLE_TRAPDOOR.get()));
         return mats;
     }
 
-    private List<McwStoneMat> getAutuRock()
+    private List<McwStoneMat<Block>> getAutuRock()
     {
-        List<McwStoneMat> mats = new ArrayList<>();
-        mats.add(new McwStoneMat(AutumnityBlocks.SNAIL_SHELL_BRICKS.get(), AutumnityBlocks.SNAIL_SHELL_BRICK_WALL.get(), AutumnityBlocks.SNAIL_SHELL_BRICK_SLAB.get(), AutumnityBlocks.SNAIL_SHELL_BLOCK.get()));
-        mats.add(new McwStoneMat(AutumnityBlocks.SNAIL_SHELL_TILES.get(), AutumnityBlocks.SNAIL_SHELL_TILE_WALL.get(), AutumnityBlocks.SNAIL_SHELL_TILE_SLAB.get(), AutumnityBlocks.SNAIL_SHELL_BRICKS.get()));
+        List<McwStoneMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwStoneMat<>(AutumnityBlocks.SNAIL_SHELL_BRICKS.get(), AutumnityBlocks.SNAIL_SHELL_BRICK_WALL.get(), AutumnityBlocks.SNAIL_SHELL_BRICK_SLAB.get(), AutumnityBlocks.SNAIL_SHELL_BLOCK.get()));
+        mats.add(new McwStoneMat<>(AutumnityBlocks.SNAIL_SHELL_TILES.get(), AutumnityBlocks.SNAIL_SHELL_TILE_WALL.get(), AutumnityBlocks.SNAIL_SHELL_TILE_SLAB.get(), AutumnityBlocks.SNAIL_SHELL_BRICKS.get()));
         return mats;
     }
 
 
-    private List<McwStoneMat> getAtmoRock()
+    private List<McwStoneMat<Block>> getAtmoRock()
     {
-        List<McwStoneMat> mats = new ArrayList<>();
-        mats.add(new McwStoneMat(AtmosphericBlocks.ARID_SANDSTONE.get(), AtmosphericBlocks.ARID_SANDSTONE_WALL.get(), AtmosphericBlocks.ARID_SANDSTONE_SLAB.get(), AtmosphericBlocks.SMOOTH_ARID_SANDSTONE.get()));
-        mats.add(new McwStoneMat(AtmosphericBlocks.RED_ARID_SANDSTONE.get(), AtmosphericBlocks.RED_ARID_SANDSTONE_WALL.get(), AtmosphericBlocks.RED_ARID_SANDSTONE_SLAB.get(), AtmosphericBlocks.SMOOTH_RED_ARID_SANDSTONE.get()));
+        List<McwStoneMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwStoneMat<>(AtmosphericBlocks.ARID_SANDSTONE.get(), AtmosphericBlocks.ARID_SANDSTONE_WALL.get(), AtmosphericBlocks.ARID_SANDSTONE_SLAB.get(), AtmosphericBlocks.SMOOTH_ARID_SANDSTONE.get()));
+        mats.add(new McwStoneMat<>(AtmosphericBlocks.RED_ARID_SANDSTONE.get(), AtmosphericBlocks.RED_ARID_SANDSTONE_WALL.get(), AtmosphericBlocks.RED_ARID_SANDSTONE_SLAB.get(), AtmosphericBlocks.SMOOTH_RED_ARID_SANDSTONE.get()));
         return mats;
     }
 
-    private List<McwStoneMat> getBB()
+    private List<McwStoneMat<Block>> getBB()
     {
-        List<McwStoneMat> mats = new ArrayList<>();
-        mats.add(new McwStoneMat(BBBlocks.HONEYCOMB_BRICKS.get(), BBBlocks.HONEYCOMB_BRICK_WALL.get(), BBBlocks.HONEYCOMB_BRICK_SLAB.get(), Blocks.HONEYCOMB_BLOCK));
-        mats.add(new McwStoneMat(BBBlocks.HONEYCOMB_TILES.get(), BBBlocks.HONEYCOMB_TILE_WALL.get(), BBBlocks.HONEYCOMB_TILE_SLAB.get(), BBBlocks.HONEYCOMB_BRICKS.get()));
+        List<McwStoneMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwStoneMat<>(BBBlocks.HONEYCOMB_BRICKS.get(), BBBlocks.HONEYCOMB_BRICK_WALL.get(), BBBlocks.HONEYCOMB_BRICK_SLAB.get(), Blocks.HONEYCOMB_BLOCK));
+        mats.add(new McwStoneMat<>(BBBlocks.HONEYCOMB_TILES.get(), BBBlocks.HONEYCOMB_TILE_WALL.get(), BBBlocks.HONEYCOMB_TILE_SLAB.get(), BBBlocks.HONEYCOMB_BRICKS.get()));
         return mats;
     }
 }

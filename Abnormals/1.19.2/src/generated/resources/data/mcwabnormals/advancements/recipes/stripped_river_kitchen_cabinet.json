@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_stripped_river_log": {
+          "has_river_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "upgrade_aquatic:stripped_river_log"
+                    "upgrade_aquatic:river_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_stripped_river_log",
+            "has_river_log",
             "has_the_recipe"
           ]
         ],

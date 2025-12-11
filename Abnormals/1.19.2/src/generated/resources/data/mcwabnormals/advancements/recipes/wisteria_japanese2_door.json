@@ -10,12 +10,12 @@
             },
             "trigger": "minecraft:recipe_unlocked"
           },
-          "has_wisteria_slab": {
+          "has_wisteria_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "environmental:wisteria_slab"
+                    "environmental:wisteria_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_wisteria_slab",
+            "has_wisteria_log",
             "has_the_recipe"
           ]
         ],

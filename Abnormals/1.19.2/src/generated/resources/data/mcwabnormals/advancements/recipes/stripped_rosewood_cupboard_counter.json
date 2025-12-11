@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_stripped_rosewood_log": {
+          "has_rosewood_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "atmospheric:stripped_rosewood_log"
+                    "atmospheric:rosewood_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_stripped_rosewood_log",
+            "has_rosewood_log",
             "has_the_recipe"
           ]
         ],
