@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_skyris_slab": {
+    "has_skyris_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:skyris_slab"
+              "byg:skyris_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_skyris_slab",
+      "has_skyris_log",
       "has_the_recipe"
     ]
   ],

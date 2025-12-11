@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mahogany_planks": {
+    "has_mahogany_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:mahogany_planks"
+              "byg:mahogany_log"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:mahogany_stable_head_door"
+        "recipe": "minecraft:mahogany_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -24,20 +24,20 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_mahogany_planks",
+      "has_mahogany_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:mahogany_stable_head_door"
+      "minecraft:mahogany_stable_head_door"
     ]
   }
 }

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sythian_planks": {
+    "has_sythian_stem": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:sythian_planks"
+              "byg:sythian_stem"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_sythian_planks",
+      "has_sythian_stem",
       "has_the_recipe"
     ]
   ],

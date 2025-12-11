@@ -3,16 +3,16 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:zelkova_stable_head_door"
+        "recipe": "minecraft:zelkova_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_zelkova_planks": {
+    "has_zelkova_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:zelkova_planks"
+              "byg:zelkova_log"
             ]
           }
         ]
@@ -24,20 +24,20 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_zelkova_planks",
+      "has_zelkova_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:zelkova_stable_head_door"
+      "minecraft:zelkova_stable_head_door"
     ]
   }
 }

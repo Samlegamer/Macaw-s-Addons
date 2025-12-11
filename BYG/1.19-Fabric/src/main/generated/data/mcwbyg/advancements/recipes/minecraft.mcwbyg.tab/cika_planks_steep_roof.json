@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cika_planks": {
+    "has_cika_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:cika_planks"
+              "byg:cika_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwroofs",
-        "byg"
+        "byg",
+        "mcwroofs"
       ]
     }
   ],
   "requirements": [
     [
-      "has_cika_planks",
+      "has_cika_log",
       "has_the_recipe"
     ]
   ],

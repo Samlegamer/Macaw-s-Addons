@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:lament_louvered_shutter"
+        "recipe": "minecraft:lament_louvered_shutter"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -24,8 +24,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwwindows",
-        "byg"
+        "byg",
+        "mcwwindows"
       ]
     }
   ],
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:lament_louvered_shutter"
+      "minecraft:lament_louvered_shutter"
     ]
   }
 }

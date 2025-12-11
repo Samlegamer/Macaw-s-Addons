@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lament_planks": {
+    "has_lament_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:lament_planks"
+              "byg:lament_log"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:lament_planks_path"
+        "recipe": "minecraft:lament_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -24,20 +24,20 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "byg"
+        "byg",
+        "mcwpaths"
       ]
     }
   ],
   "requirements": [
     [
-      "has_lament_planks",
+      "has_lament_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:lament_planks_path"
+      "minecraft:lament_planks_path"
     ]
   }
 }

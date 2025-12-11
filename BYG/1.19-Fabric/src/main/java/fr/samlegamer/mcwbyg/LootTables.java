@@ -1,6 +1,6 @@
 package fr.samlegamer.mcwbyg;
 
-import fr.samlegamer.addonslib.data.McwBlocksIdBase;
+import fr.addonslib.api.data.McwBlocksIdBase;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -17,15 +17,5 @@ public class LootTables extends McwLootTables {
         addBlock(McwByg.MODID, McwByg.fences_rockable, McwBlocksIdBase.ROOFS_STONE_BLOCKS);
         addBlock(McwByg.MODID, McwByg.fences_rockable, McwBlocksIdBase.FENCES_STONE_BLOCKS);
         makeLootTables();
-
     }
-
-//    @Override
-//    public void generate() {
-//    }
-//
-//    @Override
-//    public void accept(BiConsumer<ResourceLocation, LootTable.Builder> exporter) {
-//        super.generate(exporter);
-//    }
 }

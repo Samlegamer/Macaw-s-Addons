@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:mahogany_shutter"
+        "recipe": "minecraft:mahogany_shutter"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -24,8 +24,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwwindows",
-        "byg"
+        "byg",
+        "mcwwindows"
       ]
     }
   ],
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:mahogany_shutter"
+      "minecraft:mahogany_shutter"
     ]
   }
 }

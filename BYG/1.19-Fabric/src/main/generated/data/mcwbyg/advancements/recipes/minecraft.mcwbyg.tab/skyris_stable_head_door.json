@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_skyris_planks": {
+    "has_skyris_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:skyris_planks"
+              "byg:skyris_log"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:skyris_stable_head_door"
+        "recipe": "minecraft:skyris_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -24,20 +24,20 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_skyris_planks",
+      "has_skyris_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:skyris_stable_head_door"
+      "minecraft:skyris_stable_head_door"
     ]
   }
 }

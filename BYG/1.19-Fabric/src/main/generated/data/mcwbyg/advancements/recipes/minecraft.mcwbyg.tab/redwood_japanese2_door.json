@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_redwood_slab": {
+    "has_redwood_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:redwood_slab"
+              "byg:redwood_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_redwood_slab",
+      "has_redwood_log",
       "has_the_recipe"
     ]
   ],

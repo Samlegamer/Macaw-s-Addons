@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ether_planks": {
+    "has_ether_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:ether_planks"
+              "byg:ether_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwtrpdoors",
-        "byg"
+        "byg",
+        "mcwtrpdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_ether_planks",
+      "has_ether_log",
       "has_the_recipe"
     ]
   ],

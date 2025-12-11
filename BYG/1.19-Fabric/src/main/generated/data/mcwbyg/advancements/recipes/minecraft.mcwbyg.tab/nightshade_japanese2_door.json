@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nightshade_slab": {
+    "has_nightshade_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:nightshade_slab"
+              "byg:nightshade_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_nightshade_slab",
+      "has_nightshade_log",
       "has_the_recipe"
     ]
   ],

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_palm_log": {
+    "has_palm_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:stripped_palm_log"
+              "byg:palm_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "byg"
+        "byg",
+        "mcwfurnitures"
       ]
     }
   ],
   "requirements": [
     [
-      "has_stripped_palm_log",
+      "has_palm_log",
       "has_the_recipe"
     ]
   ],

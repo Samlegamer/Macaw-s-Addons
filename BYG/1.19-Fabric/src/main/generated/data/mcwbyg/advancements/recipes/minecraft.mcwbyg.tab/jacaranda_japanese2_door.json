@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_jacaranda_slab": {
+    "has_jacaranda_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:jacaranda_slab"
+              "byg:jacaranda_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_jacaranda_slab",
+      "has_jacaranda_log",
       "has_the_recipe"
     ]
   ],

@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_witch_hazel_slab": {
+    "has_witch_hazel_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:witch_hazel_slab"
+              "byg:witch_hazel_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_witch_hazel_slab",
+      "has_witch_hazel_log",
       "has_the_recipe"
     ]
   ],

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_rainbow_eucalyptus_planks": {
+    "has_rainbow_eucalyptus_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:rainbow_eucalyptus_planks"
+              "byg:rainbow_eucalyptus_log"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:rainbow_eucalyptus_planks_path"
+        "recipe": "minecraft:rainbow_eucalyptus_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -24,20 +24,20 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "byg"
+        "byg",
+        "mcwpaths"
       ]
     }
   ],
   "requirements": [
     [
-      "has_rainbow_eucalyptus_planks",
+      "has_rainbow_eucalyptus_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:rainbow_eucalyptus_planks_path"
+      "minecraft:rainbow_eucalyptus_planks_path"
     ]
   }
 }

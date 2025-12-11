@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nightshade_planks": {
+    "has_nightshade_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:nightshade_planks"
+              "byg:nightshade_log"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:nightshade_planks_path"
+        "recipe": "minecraft:nightshade_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -24,20 +24,20 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "byg"
+        "byg",
+        "mcwpaths"
       ]
     }
   ],
   "requirements": [
     [
-      "has_nightshade_planks",
+      "has_nightshade_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:nightshade_planks_path"
+      "minecraft:nightshade_planks_path"
     ]
   }
 }

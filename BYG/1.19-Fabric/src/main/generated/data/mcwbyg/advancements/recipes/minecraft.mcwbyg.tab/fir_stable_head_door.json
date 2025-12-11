@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_fir_planks": {
+    "has_fir_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:fir_planks"
+              "byg:fir_log"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:fir_stable_head_door"
+        "recipe": "minecraft:fir_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -24,20 +24,20 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_fir_planks",
+      "has_fir_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:fir_stable_head_door"
+      "minecraft:fir_stable_head_door"
     ]
   }
 }

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mahogany_planks": {
+    "has_mahogany_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:mahogany_planks"
+              "byg:mahogany_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfences",
-        "byg"
+        "byg",
+        "mcwfences"
       ]
     }
   ],
   "requirements": [
     [
-      "has_mahogany_planks",
+      "has_mahogany_log",
       "has_the_recipe"
     ]
   ],

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_green_enchanted_planks": {
+    "has_green_enchanted_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:green_enchanted_planks"
+              "byg:green_enchanted_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_green_enchanted_planks",
+      "has_green_enchanted_log",
       "has_the_recipe"
     ]
   ],

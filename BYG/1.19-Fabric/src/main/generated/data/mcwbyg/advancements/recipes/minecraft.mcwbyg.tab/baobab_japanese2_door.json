@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_baobab_slab": {
+    "has_baobab_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:baobab_slab"
+              "byg:baobab_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_baobab_slab",
+      "has_baobab_log",
       "has_the_recipe"
     ]
   ],

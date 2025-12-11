@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_maple_planks": {
+    "has_maple_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:maple_planks"
+              "byg:maple_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfences",
-        "byg"
+        "byg",
+        "mcwfences"
       ]
     }
   ],
   "requirements": [
     [
-      "has_maple_planks",
+      "has_maple_log",
       "has_the_recipe"
     ]
   ],

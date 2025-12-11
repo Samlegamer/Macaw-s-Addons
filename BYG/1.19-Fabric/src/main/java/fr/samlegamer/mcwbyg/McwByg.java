@@ -1,21 +1,15 @@
 package fr.samlegamer.mcwbyg;
 
 import java.util.List;
-import fr.samlegamer.addonslib.door.Doors;
+
+import fr.addonslib.api.data.ModType;
+import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.fuel.APIFuels;
-import fr.samlegamer.addonslib.path.Paths;
-import fr.samlegamer.addonslib.trapdoor.Trapdoors;
-import fr.samlegamer.addonslib.windows.Windows;
+import fr.samlegamer.addonslib.registry.McwRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.bridges.Bridges;
-import fr.samlegamer.addonslib.fences.Fences;
-import fr.samlegamer.addonslib.furnitures.Furnitures;
-import fr.samlegamer.addonslib.roofs.Roofs;
-import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
-import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.Block;
@@ -42,19 +36,11 @@ public class McwByg implements ModInitializer
 	public void onInitialize()
 	{
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
-    	Bridges.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-    	Bridges.setRegistrationRock(MODID, bridges_rockable, MCWBYG_TAB);
-    	Roofs.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-    	Roofs.setRegistrationRock(MODID, fences_rockable, MCWBYG_TAB);
-    	Fences.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-    	Fences.setRegistrationHedges(MODID, LEAVES, MCWBYG_TAB);
-    	Fences.setRegistrationRock(MODID, fences_rockable, MCWBYG_TAB);
-    	Furnitures.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-    	Stairs.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-		Paths.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-		Doors.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-		Trapdoors.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
-		Windows.setRegistrationWood(MODID, WOOD, MCWBYG_TAB);
+
+		McwRegistry.setRegistriesWood(MODID, WOOD, MCWBYG_TAB, Registration.getAllModTypeWood());
+		McwRegistry.setRegistriesLeave(MODID, LEAVES, MCWBYG_TAB);
+		McwRegistry.setRegistriesStone(MODID, bridges_rockable, MCWBYG_TAB, ModType.BRIDGES);
+		McwRegistry.setRegistriesStone(MODID, fences_rockable, MCWBYG_TAB, ModType.ROOFS, ModType.FENCES);
 
 		Mapping.missingnoWoodBlock();
 
@@ -78,16 +64,16 @@ public class McwByg implements ModInitializer
 				Finder.findBlock(MODID, "aspen_bulk_stairs"));
 
 		prop
-				.addType(BlockType.ROOFS)
-				.addType(BlockType.FENCES)
-				.addType(BlockType.BRIDGES)
-				.addType(BlockType.FURNITURES)
-				.addType(BlockType.STAIRS)
-				.addType(BlockType.DOORS)
-				.addType(BlockType.TRAPDOORS)
-				.addType(BlockType.PATHS)
-				.addType(BlockType.WINDOWS);
-		return prop.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.BRIDGES, BlockType.FURNITURES, BlockType.STAIRS,
-				BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.WINDOWS);
+				.addType(ModType.ROOFS)
+				.addType(ModType.FENCES)
+				.addType(ModType.BRIDGES)
+				.addType(ModType.FURNITURES)
+				.addType(ModType.STAIRS)
+				.addType(ModType.DOORS)
+				.addType(ModType.TRAPDOORS)
+				.addType(ModType.PATHS)
+				.addType(ModType.WINDOWS);
+		return prop.buildIcon(ModType.ROOFS, ModType.FENCES, ModType.BRIDGES, ModType.FURNITURES, ModType.STAIRS,
+				ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.WINDOWS);
 	}
 }

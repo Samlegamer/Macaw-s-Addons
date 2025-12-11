@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cherry_slab": {
+    "has_cherry_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:cherry_slab"
+              "byg:cherry_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_cherry_slab",
+      "has_cherry_log",
       "has_the_recipe"
     ]
   ],
