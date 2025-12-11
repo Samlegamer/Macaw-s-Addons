@@ -10,12 +10,12 @@
             },
             "trigger": "minecraft:recipe_unlocked"
           },
-          "has_zelkova_planks": {
+          "has_zelkova_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:zelkova_planks"
+                    "byg:zelkova_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_zelkova_planks",
+            "has_zelkova_log",
             "has_the_recipe"
           ]
         ],

@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_sythian_planks": {
+          "has_sythian_stem": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:sythian_planks"
+                    "byg:sythian_stem"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_sythian_planks",
+            "has_sythian_stem",
             "has_the_recipe"
           ]
         ],

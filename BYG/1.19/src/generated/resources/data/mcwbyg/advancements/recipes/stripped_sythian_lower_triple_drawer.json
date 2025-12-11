@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_stripped_sythian_stem": {
+          "has_sythian_stem": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:stripped_sythian_stem"
+                    "byg:sythian_stem"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_stripped_sythian_stem",
+            "has_sythian_stem",
             "has_the_recipe"
           ]
         ],
