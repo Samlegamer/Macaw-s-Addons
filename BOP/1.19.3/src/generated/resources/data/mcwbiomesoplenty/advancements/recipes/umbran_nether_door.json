@@ -10,12 +10,12 @@
             },
             "trigger": "minecraft:recipe_unlocked"
           },
-          "has_umbran_planks": {
+          "has_umbran_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "biomesoplenty:umbran_planks"
+                    "biomesoplenty:umbran_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_umbran_planks",
+            "has_umbran_log",
             "has_the_recipe"
           ]
         ],

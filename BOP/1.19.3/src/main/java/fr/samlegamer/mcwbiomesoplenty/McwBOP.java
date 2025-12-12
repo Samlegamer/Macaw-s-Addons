@@ -1,9 +1,11 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
+import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.util.McwMod;
 import net.minecraft.core.HolderLookup;
@@ -22,22 +24,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.registries.DeferredRegister;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.bridges.Bridges;
-import fr.samlegamer.addonslib.door.Doors;
-import fr.samlegamer.addonslib.fences.Fences;
-import fr.samlegamer.addonslib.furnitures.Furnitures;
-import fr.samlegamer.addonslib.path.Paths;
-import fr.samlegamer.addonslib.roofs.Roofs;
-import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
-import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
-import fr.samlegamer.addonslib.trapdoor.Trapdoors;
-import fr.samlegamer.addonslib.windows.Windows;
 import org.jetbrains.annotations.NotNull;
 
 @Mod(McwBOP.MODID)
@@ -57,17 +48,9 @@ public class McwBOP extends McwMod
         LOGGER.info("Macaw's Biomes O' Plenty Loading...");
     	Registration.init(block, item);
 
-    	Bridges.setRegistrationWood(WOOD, block, item);
-    	Fences.setRegistrationWood(WOOD, block, item);
-    	Fences.setRegistrationHedges(LEAVES, block, item);
-    	Furnitures.setRegistrationWood(WOOD, block, item);
-    	Roofs.setRegistrationWood(WOOD, block, item);
-    	Trapdoors.setRegistrationWood(WOOD, block, item);
-    	Paths.setRegistrationWood(WOOD, block, item);
-    	Doors.setRegistrationWood(WOOD, block, item);
-    	Windows.setRegistrationWood(WOOD, block, item);
-    	Stairs.setRegistrationWood(WOOD, block, item);
-
+        McwRegistry.setRegistriesWood(WOOD, block, item, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesLeave(LEAVES, block, item);
+        
         bus().addListener(this::clientSetup);
         bus().addListener(this::commonSetup);
         bus().addListener(this::dataSetup);
@@ -103,7 +86,8 @@ public class McwBOP extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(output, lookupProvider, MODID, existingFileHelper) {
                 @Override
                 protected void addTags(HolderLookup.@NotNull Provider p_256380_) {
-                    addAllMcwTags(MODID, WOOD, LEAVES);
+                    addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+                    addAllMcwTagsLeave(MODID, LEAVES);
                 }
             };
 
@@ -112,7 +96,8 @@ public class McwBOP extends McwMod
             generator.addProvider(true, new McwItemTags(output, lookupProvider, mcwBlockTags, MODID, existingFileHelper) {
                 @Override
                 protected void addTags(HolderLookup.@NotNull Provider p_256380_) {
-                    addAllMcwTags(MODID, WOOD, LEAVES);
+                    addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+                    addAllMcwTagsLeave(MODID, LEAVES);
                 }
             });
         }
@@ -124,16 +109,16 @@ public class McwBOP extends McwMod
                 Finder.findBlock(MODID, "cherry_log_bridge_middle"), Finder.findBlock(MODID, "cherry_window"), Finder.findBlock(MODID, "cherry_japanese_door"), Finder.findBlock(MODID, "cherry_glass_trapdoor"),
                 Finder.findBlock(MODID, "cherry_planks_path"), Finder.findBlock(MODID, "cherry_loft_stairs"));
         woodProperties
-                .addType(BlockType.ROOFS)
-                .addType(BlockType.FENCES)
-                .addType(BlockType.FURNITURES)
-                .addType(BlockType.BRIDGES)
-                .addType(BlockType.WINDOWS)
-                .addType(BlockType.DOORS)
-                .addType(BlockType.TRAPDOORS)
-                .addType(BlockType.PATHS)
-                .addType(BlockType.STAIRS);
-        final Block icon = woodProperties.buildIcon(BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.BRIDGES, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS, BlockType.STAIRS);
+                .addType(ModType.ROOFS)
+                .addType(ModType.FENCES)
+                .addType(ModType.FURNITURES)
+                .addType(ModType.BRIDGES)
+                .addType(ModType.WINDOWS)
+                .addType(ModType.DOORS)
+                .addType(ModType.TRAPDOORS)
+                .addType(ModType.PATHS)
+                .addType(ModType.STAIRS);
+        final Block icon = woodProperties.buildIcon(ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.BRIDGES, ModType.WINDOWS, ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.STAIRS);
         MCWBOP_TAB = Registration.tabs(event, MODID, "tab", icon);
     }
 
