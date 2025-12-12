@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:fir_shutter"
+        "recipe": "minecraft:fir_shutter"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -24,8 +24,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwwindows",
-        "traverse"
+        "traverse",
+        "mcwwindows"
       ]
     }
   ],
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:fir_shutter"
+      "minecraft:fir_shutter"
     ]
   }
 }

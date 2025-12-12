@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_willow_planks": {
+    "has_willow_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "terrestria:willow_planks"
+              "terrestria:willow_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwtrpdoors",
-        "terrestria"
+        "terrestria",
+        "mcwtrpdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_willow_planks",
+      "has_willow_log",
       "has_the_recipe"
     ]
   ],

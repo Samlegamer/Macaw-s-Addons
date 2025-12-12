@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:cypress_shutter"
+        "recipe": "minecraft:cypress_shutter"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -24,8 +24,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwwindows",
-        "terrestria"
+        "terrestria",
+        "mcwwindows"
       ]
     }
   ],
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:cypress_shutter"
+      "minecraft:cypress_shutter"
     ]
   }
 }

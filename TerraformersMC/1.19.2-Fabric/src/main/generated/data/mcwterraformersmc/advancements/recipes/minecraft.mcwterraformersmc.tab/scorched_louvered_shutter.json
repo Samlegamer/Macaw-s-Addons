@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:scorched_louvered_shutter"
+        "recipe": "minecraft:scorched_louvered_shutter"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -24,8 +24,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwwindows",
-        "cinderscapes"
+        "cinderscapes",
+        "mcwwindows"
       ]
     }
   ],
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:scorched_louvered_shutter"
+      "minecraft:scorched_louvered_shutter"
     ]
   }
 }

@@ -3,16 +3,16 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:umbral_planks_path"
+        "recipe": "minecraft:umbral_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_umbral_planks": {
+    "has_umbral_stem": {
       "conditions": {
         "items": [
           {
             "items": [
-              "cinderscapes:umbral_planks"
+              "cinderscapes:umbral_stem"
             ]
           }
         ]
@@ -24,20 +24,20 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "cinderscapes"
+        "cinderscapes",
+        "mcwpaths"
       ]
     }
   ],
   "requirements": [
     [
-      "has_umbral_planks",
+      "has_umbral_stem",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:umbral_planks_path"
+      "minecraft:umbral_planks_path"
     ]
   }
 }

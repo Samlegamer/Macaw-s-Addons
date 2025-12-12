@@ -3,16 +3,16 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:yucca_palm_planks_path"
+        "recipe": "minecraft:yucca_palm_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_yucca_palm_planks": {
+    "has_yucca_palm_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "terrestria:yucca_palm_planks"
+              "terrestria:yucca_palm_log"
             ]
           }
         ]
@@ -24,20 +24,20 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "terrestria"
+        "terrestria",
+        "mcwpaths"
       ]
     }
   ],
   "requirements": [
     [
-      "has_yucca_palm_planks",
+      "has_yucca_palm_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:yucca_palm_planks_path"
+      "minecraft:yucca_palm_planks_path"
     ]
   }
 }

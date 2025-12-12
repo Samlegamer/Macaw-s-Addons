@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_rubber_planks": {
+    "has_rubber_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "terrestria:rubber_planks"
+              "terrestria:rubber_log"
             ]
           }
         ]
@@ -24,14 +24,14 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfences",
-        "terrestria"
+        "terrestria",
+        "mcwfences"
       ]
     }
   ],
   "requirements": [
     [
-      "has_rubber_planks",
+      "has_rubber_log",
       "has_the_recipe"
     ]
   ],

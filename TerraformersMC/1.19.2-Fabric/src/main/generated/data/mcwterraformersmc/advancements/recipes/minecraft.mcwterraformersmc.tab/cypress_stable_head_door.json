@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cypress_planks": {
+    "has_cypress_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "terrestria:cypress_planks"
+              "terrestria:cypress_log"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:cypress_stable_head_door"
+        "recipe": "minecraft:cypress_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -24,20 +24,20 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "terrestria"
+        "terrestria",
+        "mcwdoors"
       ]
     }
   ],
   "requirements": [
     [
-      "has_cypress_planks",
+      "has_cypress_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:cypress_stable_head_door"
+      "minecraft:cypress_stable_head_door"
     ]
   }
 }
