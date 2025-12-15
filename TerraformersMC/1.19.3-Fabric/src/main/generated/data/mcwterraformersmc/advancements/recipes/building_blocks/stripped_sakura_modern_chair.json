@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "terrestria"
+        "terrestria",
+        "mcwfurnitures"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_sakura_log": {
+    "has_sakura_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "terrestria:stripped_sakura_log"
+              "terrestria:sakura_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_stripped_sakura_log",
+      "has_sakura_log",
       "has_the_recipe"
     ]
   ],

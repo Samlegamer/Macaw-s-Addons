@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "traverse"
+        "traverse",
+        "mcwfurnitures"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_fir_log": {
+    "has_fir_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "traverse:stripped_fir_log"
+              "traverse:fir_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_stripped_fir_log",
+      "has_fir_log",
       "has_the_recipe"
     ]
   ],
