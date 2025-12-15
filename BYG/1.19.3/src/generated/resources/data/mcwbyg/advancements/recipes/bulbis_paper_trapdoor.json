@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_bulbis_planks": {
+          "has_bulbis_stem": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:bulbis_planks"
+                    "byg:bulbis_stem"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_bulbis_planks",
+            "has_bulbis_stem",
             "has_the_recipe"
           ]
         ],

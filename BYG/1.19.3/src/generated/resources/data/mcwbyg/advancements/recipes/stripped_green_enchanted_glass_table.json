@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_stripped_green_enchanted_log": {
+          "has_green_enchanted_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:stripped_green_enchanted_log"
+                    "byg:green_enchanted_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_stripped_green_enchanted_log",
+            "has_green_enchanted_log",
             "has_the_recipe"
           ]
         ],

@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_stripped_ether_log": {
+          "has_ether_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:stripped_ether_log"
+                    "byg:ether_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_stripped_ether_log",
+            "has_ether_log",
             "has_the_recipe"
           ]
         ],

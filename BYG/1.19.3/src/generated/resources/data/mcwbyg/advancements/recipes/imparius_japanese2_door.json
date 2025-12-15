@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_imparius_slab": {
+          "has_imparius_stem": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "byg:imparius_slab"
+                    "byg:imparius_stem"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_imparius_slab",
+            "has_imparius_stem",
             "has_the_recipe"
           ]
         ],
