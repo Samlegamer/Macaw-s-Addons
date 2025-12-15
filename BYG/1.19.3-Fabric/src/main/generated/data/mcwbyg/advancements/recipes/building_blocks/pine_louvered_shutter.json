@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwwindows",
-        "byg"
+        "byg",
+        "mcwwindows"
       ]
     }
   ],
@@ -24,7 +24,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:pine_louvered_shutter"
+        "recipe": "minecraft:pine_louvered_shutter"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:pine_louvered_shutter"
+      "minecraft:pine_louvered_shutter"
     ]
   }
 }

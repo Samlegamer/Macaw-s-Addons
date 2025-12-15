@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfences",
-        "byg"
+        "byg",
+        "mcwfences"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_skyris_planks": {
+    "has_skyris_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:skyris_planks"
+              "byg:skyris_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_skyris_planks",
+      "has_skyris_log",
       "has_the_recipe"
     ]
   ],

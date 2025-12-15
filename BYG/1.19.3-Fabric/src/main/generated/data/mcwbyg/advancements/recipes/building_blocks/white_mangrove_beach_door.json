@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
@@ -16,12 +16,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_white_mangrove_planks": {
+    "has_white_mangrove_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:white_mangrove_planks"
+              "byg:white_mangrove_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_white_mangrove_planks",
+      "has_white_mangrove_log",
       "has_the_recipe"
     ]
   ],

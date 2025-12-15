@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwtrpdoors",
-        "byg"
+        "byg",
+        "mcwtrpdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cherry_planks": {
+    "has_cherry_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:cherry_planks"
+              "byg:cherry_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_cherry_planks",
+      "has_cherry_log",
       "has_the_recipe"
     ]
   ],

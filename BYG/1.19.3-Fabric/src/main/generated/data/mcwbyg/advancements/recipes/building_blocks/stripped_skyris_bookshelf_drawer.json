@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "byg"
+        "byg",
+        "mcwfurnitures"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_skyris_log": {
+    "has_skyris_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:stripped_skyris_log"
+              "byg:skyris_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_stripped_skyris_log",
+      "has_skyris_log",
       "has_the_recipe"
     ]
   ],

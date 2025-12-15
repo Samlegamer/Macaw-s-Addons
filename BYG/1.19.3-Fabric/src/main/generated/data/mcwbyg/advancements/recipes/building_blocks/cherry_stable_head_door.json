@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "byg"
+        "byg",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cherry_planks": {
+    "has_cherry_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:cherry_planks"
+              "byg:cherry_log"
             ]
           }
         ]
@@ -24,20 +24,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:cherry_stable_head_door"
+        "recipe": "minecraft:cherry_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_cherry_planks",
+      "has_cherry_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:cherry_stable_head_door"
+      "minecraft:cherry_stable_head_door"
     ]
   }
 }

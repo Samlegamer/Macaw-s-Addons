@@ -1,6 +1,6 @@
 package fr.samlegamer.mcwbyg;
 
-import fr.samlegamer.addonslib.data.McwBlocksIdBase;
+import fr.addonslib.api.data.McwBlocksIdBase;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.resources.ResourceLocation;

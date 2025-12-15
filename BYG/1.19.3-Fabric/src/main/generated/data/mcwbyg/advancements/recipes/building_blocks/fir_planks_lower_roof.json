@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwroofs",
-        "byg"
+        "byg",
+        "mcwroofs"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_fir_planks": {
+    "has_fir_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:fir_planks"
+              "byg:fir_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_fir_planks",
+      "has_fir_log",
       "has_the_recipe"
     ]
   ],

@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "byg"
+        "byg",
+        "mcwpaths"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sythian_planks": {
+    "has_sythian_stem": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:sythian_planks"
+              "byg:sythian_stem"
             ]
           }
         ]
@@ -24,20 +24,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:sythian_planks_path"
+        "recipe": "minecraft:sythian_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_sythian_planks",
+      "has_sythian_stem",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:sythian_planks_path"
+      "minecraft:sythian_planks_path"
     ]
   }
 }

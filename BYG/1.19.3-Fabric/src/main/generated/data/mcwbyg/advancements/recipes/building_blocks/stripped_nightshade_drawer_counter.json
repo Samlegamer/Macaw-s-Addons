@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "byg"
+        "byg",
+        "mcwfurnitures"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_nightshade_log": {
+    "has_nightshade_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:stripped_nightshade_log"
+              "byg:nightshade_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_stripped_nightshade_log",
+      "has_nightshade_log",
       "has_the_recipe"
     ]
   ],

@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwtrpdoors",
-        "byg"
+        "byg",
+        "mcwtrpdoors"
       ]
     }
   ],
@@ -16,12 +16,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_willow_planks": {
+    "has_willow_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:willow_planks"
+              "byg:willow_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_willow_planks",
+      "has_willow_log",
       "has_the_recipe"
     ]
   ],

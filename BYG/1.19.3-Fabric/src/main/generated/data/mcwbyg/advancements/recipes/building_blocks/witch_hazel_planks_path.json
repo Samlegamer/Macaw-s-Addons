@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "byg"
+        "byg",
+        "mcwpaths"
       ]
     }
   ],
@@ -12,16 +12,16 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:witch_hazel_planks_path"
+        "recipe": "minecraft:witch_hazel_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_witch_hazel_planks": {
+    "has_witch_hazel_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "byg:witch_hazel_planks"
+              "byg:witch_hazel_log"
             ]
           }
         ]
@@ -31,13 +31,13 @@
   },
   "requirements": [
     [
-      "has_witch_hazel_planks",
+      "has_witch_hazel_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:witch_hazel_planks_path"
+      "minecraft:witch_hazel_planks_path"
     ]
   }
 }
