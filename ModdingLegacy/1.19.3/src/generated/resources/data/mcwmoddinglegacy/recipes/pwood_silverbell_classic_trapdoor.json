@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "classic_trapdoors",
+        "key": {
+          "A": {
+            "item": "premium_wood:silverbell_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_classic"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_silverbell_classic_trapdoor"
+        }
+      }
+    }
+  ]
+}

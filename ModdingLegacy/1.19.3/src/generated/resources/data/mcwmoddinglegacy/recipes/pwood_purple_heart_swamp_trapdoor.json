@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "swamp_trapdoors",
+        "key": {
+          "A": {
+            "item": "premium_wood:purple_heart_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_swamp"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_purple_heart_swamp_trapdoor"
+        }
+      }
+    }
+  ]
+}

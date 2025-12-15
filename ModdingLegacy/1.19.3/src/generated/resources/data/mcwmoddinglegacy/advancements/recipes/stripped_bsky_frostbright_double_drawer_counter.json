@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_stripped_frostbright_log": {
+          "has_frostbright_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "blue_skies:stripped_frostbright_log"
+                    "blue_skies:frostbright_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_stripped_frostbright_log",
+            "has_frostbright_log",
             "has_the_recipe"
           ]
         ],

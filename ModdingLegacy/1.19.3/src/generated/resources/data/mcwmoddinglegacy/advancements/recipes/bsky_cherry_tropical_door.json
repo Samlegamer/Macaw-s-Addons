@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_cherry_planks": {
+          "has_cherry_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "blue_skies:cherry_planks"
+                    "blue_skies:cherry_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_cherry_planks",
+            "has_cherry_log",
             "has_the_recipe"
           ]
         ],
