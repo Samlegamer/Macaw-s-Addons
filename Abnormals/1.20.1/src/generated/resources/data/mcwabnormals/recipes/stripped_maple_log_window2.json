@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwwindows"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "autumnity"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "autumnity"
         }
       ],
       "recipe": {

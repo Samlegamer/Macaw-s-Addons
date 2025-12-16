@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwstairs"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "environmental"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "environmental"
         }
       ],
       "recipe": {

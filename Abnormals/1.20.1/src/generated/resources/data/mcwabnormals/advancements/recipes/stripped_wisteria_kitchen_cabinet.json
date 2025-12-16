@@ -4,28 +4,28 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_stripped_wisteria_log": {
-            "conditions": {
-              "items": [
-                {
-                  "items": [
-                    "environmental:stripped_wisteria_log"
-                  ]
-                }
-              ]
-            },
-            "trigger": "minecraft:inventory_changed"
-          },
           "has_the_recipe": {
             "conditions": {
               "recipe": "mcwabnormals:stripped_wisteria_kitchen_cabinet"
             },
             "trigger": "minecraft:recipe_unlocked"
+          },
+          "has_wisteria_log": {
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "environmental:wisteria_log"
+                  ]
+                }
+              ]
+            },
+            "trigger": "minecraft:inventory_changed"
           }
         },
         "requirements": [
           [
-            "has_stripped_wisteria_log",
+            "has_wisteria_log",
             "has_the_recipe"
           ]
         ],
@@ -38,17 +38,12 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwfurnitures"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "environmental"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "environmental"
         }
       ]
     }

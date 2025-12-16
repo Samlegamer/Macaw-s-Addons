@@ -38,17 +38,12 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwroofs"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "caverns_and_chasms"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "caverns_and_chasms"
         }
       ]
     }

@@ -4,23 +4,18 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwfurnitures"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "atmospheric"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "atmospheric"
         }
       ],
       "recipe": {
         "type": "minecraft:crafting_shaped",
         "category": "building",
-        "group": "drawer_counter",
+        "group": "stripped_drawer_counters",
         "key": {
           "A": {
             "item": "atmospheric:kousa_slab"

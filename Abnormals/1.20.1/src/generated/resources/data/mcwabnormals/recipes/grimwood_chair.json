@@ -4,23 +4,18 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwfurnitures"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "atmospheric"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "atmospheric"
         }
       ],
       "recipe": {
         "type": "minecraft:crafting_shaped",
         "category": "building",
-        "group": "chair",
+        "group": "chairs",
         "key": {
           "A": {
             "item": "atmospheric:grimwood_log"

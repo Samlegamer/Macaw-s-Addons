@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_driftwood_slab": {
+          "has_driftwood_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "upgrade_aquatic:driftwood_slab"
+                    "upgrade_aquatic:driftwood_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_driftwood_slab",
+            "has_driftwood_log",
             "has_the_recipe"
           ]
         ],
@@ -38,17 +38,12 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwdoors"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "upgrade_aquatic"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "upgrade_aquatic"
         }
       ]
     }

@@ -4,23 +4,18 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwfurnitures"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "atmospheric"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "atmospheric"
         }
       ],
       "recipe": {
         "type": "minecraft:crafting_shaped",
         "category": "building",
-        "group": "modern_wardrobe",
+        "group": "stripped_modern_wardrobes",
         "key": {
           "A": {
             "item": "atmospheric:stripped_grimwood_log"

@@ -18,7 +18,7 @@
           },
           "has_the_recipe": {
             "conditions": {
-              "recipe": "mcwabnormals:railing_snail_shell_bricks_wall"
+              "recipe": "mcwabnormals:railing_snail_shell_bricks_wall_stonecutter"
             },
             "trigger": "minecraft:recipe_unlocked"
           }
@@ -31,24 +31,19 @@
         ],
         "rewards": {
           "recipes": [
-            "mcwabnormals:railing_snail_shell_bricks_wall"
+            "mcwabnormals:railing_snail_shell_bricks_wall_stonecutter"
           ]
         },
         "sends_telemetry_event": false
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwfences"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "autumnity"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "autumnity"
         }
       ]
     }

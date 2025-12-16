@@ -10,12 +10,12 @@
             },
             "trigger": "minecraft:recipe_unlocked"
           },
-          "has_wisteria_planks": {
+          "has_wisteria_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "environmental:wisteria_planks"
+                    "environmental:wisteria_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_wisteria_planks",
+            "has_wisteria_log",
             "has_the_recipe"
           ]
         ],
@@ -38,17 +38,12 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwpaths"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "environmental"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwpaths"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "environmental"
         }
       ]
     }

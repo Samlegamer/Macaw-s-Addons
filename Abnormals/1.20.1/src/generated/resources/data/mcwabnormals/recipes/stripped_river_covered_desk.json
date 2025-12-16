@@ -4,23 +4,18 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwfurnitures"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "upgrade_aquatic"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "upgrade_aquatic"
         }
       ],
       "recipe": {
         "type": "minecraft:crafting_shaped",
         "category": "building",
-        "group": "covered_desk",
+        "group": "stripped_covered_desks",
         "key": {
           "A": {
             "item": "upgrade_aquatic:stripped_river_log"

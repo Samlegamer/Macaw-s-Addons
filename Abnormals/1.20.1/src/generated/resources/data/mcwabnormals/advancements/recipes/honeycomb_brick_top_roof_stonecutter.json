@@ -18,7 +18,7 @@
           },
           "has_the_recipe": {
             "conditions": {
-              "recipe": "mcwabnormals:honeycomb_brick_top_roof"
+              "recipe": "mcwabnormals:honeycomb_brick_top_roof_stonecutter"
             },
             "trigger": "minecraft:recipe_unlocked"
           }
@@ -31,24 +31,19 @@
         ],
         "rewards": {
           "recipes": [
-            "mcwabnormals:honeycomb_brick_top_roof"
+            "mcwabnormals:honeycomb_brick_top_roof_stonecutter"
           ]
         },
         "sends_telemetry_event": false
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwroofs"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "buzzier_bees"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "buzzier_bees"
         }
       ]
     }

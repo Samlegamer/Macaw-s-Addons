@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_grimwood_planks": {
+          "has_grimwood_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "atmospheric:grimwood_planks"
+                    "atmospheric:grimwood_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_grimwood_planks",
+            "has_grimwood_log",
             "has_the_recipe"
           ]
         ],
@@ -38,17 +38,12 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwdoors"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "atmospheric"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "atmospheric"
         }
       ]
     }

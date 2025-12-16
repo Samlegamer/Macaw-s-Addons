@@ -18,7 +18,7 @@
           },
           "has_the_recipe": {
             "conditions": {
-              "recipe": "mcwabnormals:modern_red_arid_sandstone_wall"
+              "recipe": "mcwabnormals:modern_red_arid_sandstone_wall_stonecutter"
             },
             "trigger": "minecraft:recipe_unlocked"
           }
@@ -31,24 +31,19 @@
         ],
         "rewards": {
           "recipes": [
-            "mcwabnormals:modern_red_arid_sandstone_wall"
+            "mcwabnormals:modern_red_arid_sandstone_wall_stonecutter"
           ]
         },
         "sends_telemetry_event": false
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwfences"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "atmospheric"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "atmospheric"
         }
       ]
     }
