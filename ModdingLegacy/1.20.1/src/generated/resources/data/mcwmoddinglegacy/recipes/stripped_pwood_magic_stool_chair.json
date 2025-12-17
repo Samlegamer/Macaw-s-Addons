@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_stool_chairs",
+        "key": {
+          "A": {
+            "item": "premium_wood:magic_stripped_log"
+          },
+          "B": {
+            "item": "premium_wood:magic_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_magic_stool_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

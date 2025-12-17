@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "blossom_trapdoors",
+        "key": {
+          "A": {
+            "item": "premium_wood:maple_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_blossom"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_maple_blossom_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

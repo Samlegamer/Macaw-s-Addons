@@ -5,6 +5,20 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
 
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
+    }
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
+}
+
+loadExtraProperties('../../_properties/1.20.1forgegradle.properties')
+
 version = mod_version
 group = mod_group_id
 
@@ -121,6 +135,9 @@ repositories {
         name = "CurseMaven"
         url = "https://www.cursemaven.com"
     }
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
@@ -144,10 +161,12 @@ dependencies {
     implementation fg.deobf("curse.maven:macaws-stairs-1119394:${stairs_version}")
     implementation fg.deobf("curse.maven:macaws-furniture-359540:${furniture_version}")
 
+    compileOnly fg.deobf("blank:premium_wood-1.20.1-1.0:${pwood_version}")
     //compileOnly fg.deobf("curse.maven:premium-wood-353515:${pwood_version}")
     compileOnly fg.deobf("curse.maven:blue-skies-312918:${bsky_version}")
     compileOnly fg.deobf("curse.maven:structure-gel-api-378802:${structgel_version}")
 
+    //runtimeOnly fg.deobf("blank:premium_wood-1.20.1-1.0:${pwood_version}")
     //runtimeOnly fg.deobf("curse.maven:premium-wood-353515:${pwood_version}")
     runtimeOnly fg.deobf("curse.maven:blue-skies-312918:${bsky_version}")
     runtimeOnly fg.deobf("curse.maven:structure-gel-api-378802:${structgel_version}")

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "parapets",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "premium_wood:maple_planks"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ABA"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwmoddinglegacy:pwood_maple_plank_parapet"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

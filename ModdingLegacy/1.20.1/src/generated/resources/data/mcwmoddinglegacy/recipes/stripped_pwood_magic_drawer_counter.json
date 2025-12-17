@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_drawer_counters",
+        "key": {
+          "A": {
+            "item": "premium_wood:magic_slab"
+          },
+          "B": {
+            "item": "mcwmoddinglegacy:stripped_pwood_magic_drawer"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_magic_drawer_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_modern_desks",
+        "key": {
+          "A": {
+            "item": "premium_wood:purple_heart_stripped_log"
+          },
+          "B": {
+            "item": "premium_wood:purple_heart_fence"
+          },
+          "C": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BCB"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwmoddinglegacy:stripped_pwood_purple_heart_modern_desk"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

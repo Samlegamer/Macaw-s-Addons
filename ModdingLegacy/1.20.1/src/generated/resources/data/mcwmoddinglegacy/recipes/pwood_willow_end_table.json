@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "end_tables",
+        "key": {
+          "A": {
+            "item": "mcwmoddinglegacy:pwood_willow_table"
+          },
+          "B": {
+            "item": "premium_wood:willow_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_willow_end_table"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

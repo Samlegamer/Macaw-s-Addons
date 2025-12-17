@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_starlit_planks": {
+          "has_starlit_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "blue_skies:starlit_planks"
+                    "blue_skies:starlit_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_starlit_planks",
+            "has_starlit_log",
             "has_the_recipe"
           ]
         ],

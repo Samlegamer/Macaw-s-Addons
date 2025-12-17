@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "cottage",
+        "key": {
+          "A": {
+            "item": "premium_wood:maple_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_spruce"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_maple_cottage_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "shoji_two",
+        "key": {
+          "A": {
+            "item": "premium_wood:silverbell_slab"
+          },
+          "B": {
+            "item": "minecraft:paper"
+          }
+        },
+        "pattern": [
+          "BB",
+          "BB",
+          "AA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwmoddinglegacy:pwood_silverbell_japanese2_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

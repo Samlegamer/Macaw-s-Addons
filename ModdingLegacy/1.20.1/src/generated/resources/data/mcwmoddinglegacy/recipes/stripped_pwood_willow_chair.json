@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_chairs",
+        "key": {
+          "A": {
+            "item": "premium_wood:willow_stripped_log"
+          },
+          "B": {
+            "item": "premium_wood:willow_slab"
+          },
+          "C": {
+            "item": "premium_wood:willow_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:stripped_pwood_willow_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

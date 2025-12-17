@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chairs",
+        "key": {
+          "A": {
+            "item": "premium_wood:magic_log"
+          },
+          "B": {
+            "item": "premium_wood:magic_slab"
+          },
+          "C": {
+            "item": "premium_wood:magic_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_magic_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

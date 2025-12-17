@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "paper",
+        "key": {
+          "A": {
+            "item": "premium_wood:magic_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_birch"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwmoddinglegacy:pwood_magic_paper_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

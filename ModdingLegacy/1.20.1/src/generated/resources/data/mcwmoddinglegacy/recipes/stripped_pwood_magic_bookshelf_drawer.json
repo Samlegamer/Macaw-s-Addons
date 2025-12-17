@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_bookshelf_drawers",
+        "key": {
+          "A": {
+            "item": "premium_wood:magic_stripped_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          },
+          "C": {
+            "item": "minecraft:book"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ABA",
+          "ACA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwmoddinglegacy:stripped_pwood_magic_bookshelf_drawer"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

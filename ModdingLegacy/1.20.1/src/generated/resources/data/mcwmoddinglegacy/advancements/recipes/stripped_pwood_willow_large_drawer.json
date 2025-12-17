@@ -1,0 +1,51 @@
+{
+  "advancements": [
+    {
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_the_recipe": {
+            "conditions": {
+              "recipe": "mcwmoddinglegacy:stripped_pwood_willow_large_drawer"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+          },
+          "has_willow_log": {
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "premium_wood:willow_log"
+                  ]
+                }
+              ]
+            },
+            "trigger": "minecraft:inventory_changed"
+          }
+        },
+        "requirements": [
+          [
+            "has_willow_log",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "mcwmoddinglegacy:stripped_pwood_willow_large_drawer"
+          ]
+        },
+        "sends_telemetry_event": false
+      },
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ]
+    }
+  ]
+}
