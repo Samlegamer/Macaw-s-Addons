@@ -18,7 +18,7 @@
           },
           "has_the_recipe": {
             "conditions": {
-              "recipe": "mcwquark:blackstone_bricks_upper_lower_roof"
+              "recipe": "mcwquark:blackstone_bricks_upper_lower_roof_stonecutter"
             },
             "trigger": "minecraft:recipe_unlocked"
           }
@@ -31,24 +31,19 @@
         ],
         "rewards": {
           "recipes": [
-            "mcwquark:blackstone_bricks_upper_lower_roof"
+            "mcwquark:blackstone_bricks_upper_lower_roof_stonecutter"
           ]
         },
         "sends_telemetry_event": false
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwroofs"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "quark"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
         }
       ]
     }

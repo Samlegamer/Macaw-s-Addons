@@ -18,7 +18,7 @@
           },
           "has_the_recipe": {
             "conditions": {
-              "recipe": "mcwquark:diorite_bricks_railing_gate"
+              "recipe": "mcwquark:diorite_bricks_railing_gate_stonecutter"
             },
             "trigger": "minecraft:recipe_unlocked"
           }
@@ -31,24 +31,19 @@
         ],
         "rewards": {
           "recipes": [
-            "mcwquark:diorite_bricks_railing_gate"
+            "mcwquark:diorite_bricks_railing_gate_stonecutter"
           ]
         },
         "sends_telemetry_event": false
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwfences"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "quark"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
         }
       ]
     }

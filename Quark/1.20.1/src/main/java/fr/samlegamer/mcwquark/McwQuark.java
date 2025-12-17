@@ -1,18 +1,14 @@
 package fr.samlegamer.mcwquark;
 
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
-import fr.samlegamer.addonslib.door.Doors;
-import fr.samlegamer.addonslib.furnitures.Furnitures;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
-import fr.samlegamer.addonslib.path.Paths;
-import fr.samlegamer.addonslib.stairs.Stairs;
+import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.tab.APICreativeTab;
-import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.util.McwMod;
-import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -21,16 +17,15 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.common.Mod;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
-
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -39,13 +34,8 @@ import net.minecraftforge.registries.RegistryObject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.bridges.Bridges;
-import fr.samlegamer.addonslib.fences.Fences;
-import fr.samlegamer.addonslib.roofs.Roofs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
-import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
 import org.jetbrains.annotations.NotNull;
-
 import javax.annotation.Nonnull;
 
 @Mod(McwQuark.MODID)
@@ -74,34 +64,19 @@ public class McwQuark extends McwMod
 				"red_sandstone_bricks", "sandstone_bricks", "cobblestone_bricks", "mossy_cobblestone_bricks", "blackstone_bricks", "diorite_bricks", "granite_bricks",
 				"andesite_bricks", "raw_iron_bricks", "raw_gold_bricks", "raw_copper_bricks");
 
-		BlockBehaviour.Properties propDrip = BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).sound(SoundType.DRIPSTONE_BLOCK);
-		BlockBehaviour.Properties propCalcite = BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).sound(SoundType.CALCITE);
-		BlockBehaviour.Properties propTuff = BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).sound(SoundType.TUFF);
-
+		Map<String, SoundType> rockSounds = new LinkedHashMap<>();
+		rockSounds.put("calcite_bricks", SoundType.CALCITE);
+		rockSounds.put("dripstone_bricks", SoundType.DRIPSTONE_BLOCK);
+		rockSounds.put("tuff_bricks", SoundType.TUFF);
+		
 		LOGGER.info("Macaw's Quark Loading...");
 		Registration.init(javaModLoadingContext, BLOCKS, ITEMS, CT);
-		Bridges.setRegistrationWood(wood, BLOCKS, ITEMS);
-		Bridges.setRegistrationRock(rockClassic, BLOCKS, ITEMS);
-		Bridges.setRegistrationRockModLoaded(List.of("calcite_bricks"), BLOCKS, ITEMS, propCalcite);
-		Bridges.setRegistrationRockModLoaded(List.of("dripstone_bricks"), BLOCKS, ITEMS, propDrip);
-		Bridges.setRegistrationRockModLoaded(List.of("tuff_bricks"), BLOCKS, ITEMS, propTuff);
-		Roofs.setRegistrationWood(wood, BLOCKS, ITEMS);
-		Roofs.setRegistrationRock(rockClassic, BLOCKS, ITEMS);
-		Roofs.setRegistrationRockModLoaded(List.of("calcite_bricks"), BLOCKS, ITEMS, propCalcite);
-		Roofs.setRegistrationRockModLoaded(List.of("dripstone_bricks"), BLOCKS, ITEMS, propDrip);
-		Roofs.setRegistrationRockModLoaded(List.of("tuff_bricks"), BLOCKS, ITEMS, propTuff);
-		Fences.setRegistrationWood(wood, BLOCKS, ITEMS);
-		Fences.setRegistrationRock(rockClassic, BLOCKS, ITEMS);
-		Fences.setRegistrationRockModLoaded(List.of("calcite_bricks"), BLOCKS, ITEMS, propCalcite);
-		Fences.setRegistrationRockModLoaded(List.of("dripstone_bricks"), BLOCKS, ITEMS, propDrip);
-		Fences.setRegistrationRockModLoaded(List.of("tuff_bricks"), BLOCKS, ITEMS, propTuff);
-		Fences.setRegistrationHedges(leaves, BLOCKS, ITEMS);
-		Furnitures.setRegistrationWood(wood, BLOCKS, ITEMS);
-		Stairs.setRegistrationWood(wood, BLOCKS, ITEMS);
-		Doors.setRegistrationWood(wood, BLOCKS, ITEMS);
-		Trapdoors.setRegistrationWood(wood, BLOCKS, ITEMS);
-		Paths.setRegistrationWood(wood, BLOCKS, ITEMS);
-		Windows.setRegistrationWood(wood, BLOCKS, ITEMS);
+
+		McwRegistry.setRegistriesWood(wood, BLOCKS, ITEMS, Registration.getAllModTypeWood());
+		McwRegistry.setRegistriesLeave(leaves, BLOCKS, ITEMS);
+		McwRegistry.setRegistriesStone(rockClassic, BLOCKS, ITEMS, Registration.getAllModTypeStone());
+		McwRegistry.setRegistriesStone(rockSounds, BLOCKS, ITEMS, Registration.getAllModTypeStone());
+		
         javaModLoadingContext.getModEventBus().addListener(this::clientSetup);
         javaModLoadingContext.getModEventBus().addListener(this::commonSetup);
         javaModLoadingContext.getModEventBus().addListener(this::dataSetup);
@@ -138,7 +113,9 @@ public class McwQuark extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(output, lookupProvider, MODID, existingFileHelper) {
                 @Override
                 protected void addTags(HolderLookup.@NotNull Provider provider) {
-                    addAllMcwTags(MODID, wood, stone, leaves);
+					addAllMcwTagsWood(MODID, wood, Registration.getAllModTypeWood());
+					addAllMcwTagsLeave(MODID, leaves);
+					addAllMcwTagsStone(MODID, stone, Registration.getAllModTypeStone());
                 }
             };
 
@@ -147,7 +124,9 @@ public class McwQuark extends McwMod
             generator.addProvider(true, new McwItemTags(output, lookupProvider, mcwBlockTags.contentsGetter(), MODID, existingFileHelper) {
                 @Override
                 protected void addTags(HolderLookup.@NotNull Provider provider) {
-                    addAllMcwTags(MODID, wood, stone, leaves);
+					addAllMcwTagsWood(MODID, wood, Registration.getAllModTypeWood());
+					addAllMcwTagsLeave(MODID, leaves);
+					addAllMcwTagsStone(MODID, stone, Registration.getAllModTypeStone());
                 }
             });
         }
@@ -175,17 +154,17 @@ public class McwQuark extends McwMod
 				Finder.findBlock(MODID, "ancient_balcony"));
 
 		propIcon
-				.addType(BlockType.BRIDGES)
-				.addType(BlockType.ROOFS)
-				.addType(BlockType.FENCES)
-				.addType(BlockType.FURNITURES)
-				.addType(BlockType.STAIRS)
-				.addType(BlockType.WINDOWS)
-				.addType(BlockType.DOORS)
-				.addType(BlockType.TRAPDOORS)
-				.addType(BlockType.PATHS);
-		Block icon = propIcon.buildIcon(BlockType.BRIDGES, BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES,
-				BlockType.STAIRS, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS, BlockType.PATHS);
+				.addType(ModType.BRIDGES)
+				.addType(ModType.ROOFS)
+				.addType(ModType.FENCES)
+				.addType(ModType.FURNITURES)
+				.addType(ModType.STAIRS)
+				.addType(ModType.WINDOWS)
+				.addType(ModType.DOORS)
+				.addType(ModType.TRAPDOORS)
+				.addType(ModType.PATHS);
+		Block icon = propIcon.buildIcon(ModType.BRIDGES, ModType.ROOFS, ModType.FENCES, ModType.FURNITURES,
+				ModType.STAIRS, ModType.WINDOWS, ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS);
 		return new ItemStack(icon);
 	}
 }

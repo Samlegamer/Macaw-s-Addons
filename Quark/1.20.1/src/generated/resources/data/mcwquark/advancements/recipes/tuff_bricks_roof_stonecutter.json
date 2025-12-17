@@ -6,7 +6,7 @@
         "criteria": {
           "has_the_recipe": {
             "conditions": {
-              "recipe": "mcwquark:tuff_bricks_roof"
+              "recipe": "mcwquark:tuff_bricks_roof_stonecutter"
             },
             "trigger": "minecraft:recipe_unlocked"
           },
@@ -31,24 +31,19 @@
         ],
         "rewards": {
           "recipes": [
-            "mcwquark:tuff_bricks_roof"
+            "mcwquark:tuff_bricks_roof_stonecutter"
           ]
         },
         "sends_telemetry_event": false
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mcwroofs"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "quark"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
         }
       ]
     }
