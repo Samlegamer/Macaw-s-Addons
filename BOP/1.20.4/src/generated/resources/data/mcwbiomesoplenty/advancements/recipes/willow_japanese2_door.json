@@ -9,12 +9,12 @@
           },
           "trigger": "minecraft:recipe_unlocked"
         },
-        "has_willow_slab": {
+        "has_willow_log": {
           "conditions": {
             "items": [
               {
                 "items": [
-                  "biomesoplenty:willow_slab"
+                  "biomesoplenty:willow_log"
                 ]
               }
             ]
@@ -38,7 +38,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_willow_slab"
+          "has_willow_log"
         ]
       ],
       "rewards": {

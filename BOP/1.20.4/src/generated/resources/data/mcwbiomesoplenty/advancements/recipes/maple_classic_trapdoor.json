@@ -3,12 +3,12 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_maple_planks": {
+        "has_maple_log": {
           "conditions": {
             "items": [
               {
                 "items": [
-                  "biomesoplenty:maple_planks"
+                  "biomesoplenty:maple_log"
                 ]
               }
             ]
@@ -38,7 +38,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_maple_planks"
+          "has_maple_log"
         ]
       ],
       "rewards": {

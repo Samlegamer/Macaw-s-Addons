@@ -3,12 +3,12 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_hellbark_planks": {
+        "has_hellbark_log": {
           "conditions": {
             "items": [
               {
                 "items": [
-                  "biomesoplenty:hellbark_planks"
+                  "biomesoplenty:hellbark_log"
                 ]
               }
             ]
@@ -38,7 +38,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_hellbark_planks"
+          "has_hellbark_log"
         ]
       ],
       "rewards": {

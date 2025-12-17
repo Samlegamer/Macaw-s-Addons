@@ -3,12 +3,12 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_stripped_pine_log": {
+        "has_pine_log": {
           "conditions": {
             "items": [
               {
                 "items": [
-                  "biomesoplenty:stripped_pine_log"
+                  "biomesoplenty:pine_log"
                 ]
               }
             ]
@@ -38,7 +38,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_stripped_pine_log"
+          "has_pine_log"
         ]
       ],
       "rewards": {

@@ -3,12 +3,12 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_magic_slab": {
+        "has_magic_log": {
           "conditions": {
             "items": [
               {
                 "items": [
-                  "biomesoplenty:magic_slab"
+                  "biomesoplenty:magic_log"
                 ]
               }
             ]
@@ -38,7 +38,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_magic_slab"
+          "has_magic_log"
         ]
       ],
       "rewards": {

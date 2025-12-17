@@ -3,12 +3,12 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_stripped_magic_log": {
+        "has_magic_log": {
           "conditions": {
             "items": [
               {
                 "items": [
-                  "biomesoplenty:stripped_magic_log"
+                  "biomesoplenty:magic_log"
                 ]
               }
             ]
@@ -38,7 +38,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_stripped_magic_log"
+          "has_magic_log"
         ]
       ],
       "rewards": {

@@ -3,12 +3,12 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_empyreal_planks": {
+        "has_empyreal_log": {
           "conditions": {
             "items": [
               {
                 "items": [
-                  "biomesoplenty:empyreal_planks"
+                  "biomesoplenty:empyreal_log"
                 ]
               }
             ]
@@ -38,7 +38,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_empyreal_planks"
+          "has_empyreal_log"
         ]
       ],
       "rewards": {

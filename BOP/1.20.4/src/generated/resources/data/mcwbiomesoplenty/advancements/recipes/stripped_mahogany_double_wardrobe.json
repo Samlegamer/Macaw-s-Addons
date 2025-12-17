@@ -3,12 +3,12 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_stripped_mahogany_log": {
+        "has_mahogany_log": {
           "conditions": {
             "items": [
               {
                 "items": [
-                  "biomesoplenty:stripped_mahogany_log"
+                  "biomesoplenty:mahogany_log"
                 ]
               }
             ]
@@ -38,7 +38,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_stripped_mahogany_log"
+          "has_mahogany_log"
         ]
       ],
       "rewards": {

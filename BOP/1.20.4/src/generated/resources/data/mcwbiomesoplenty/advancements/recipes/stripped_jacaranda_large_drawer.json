@@ -3,12 +3,12 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_stripped_jacaranda_log": {
+        "has_jacaranda_log": {
           "conditions": {
             "items": [
               {
                 "items": [
-                  "biomesoplenty:stripped_jacaranda_log"
+                  "biomesoplenty:jacaranda_log"
                 ]
               }
             ]
@@ -38,7 +38,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_stripped_jacaranda_log"
+          "has_jacaranda_log"
         ]
       ],
       "rewards": {
