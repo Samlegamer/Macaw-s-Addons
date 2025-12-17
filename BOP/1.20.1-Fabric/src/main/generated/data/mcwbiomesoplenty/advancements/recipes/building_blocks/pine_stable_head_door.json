@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pine_planks": {
+    "has_pine_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomesoplenty:pine_planks"
+              "biomesoplenty:pine_log"
             ]
           }
         ]
@@ -24,20 +24,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbiomesoplenty:pine_stable_head_door"
+        "recipe": "minecraft:pine_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_pine_planks",
+      "has_pine_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbiomesoplenty:pine_stable_head_door"
+      "minecraft:pine_stable_head_door"
     ]
   },
   "sends_telemetry_event": false

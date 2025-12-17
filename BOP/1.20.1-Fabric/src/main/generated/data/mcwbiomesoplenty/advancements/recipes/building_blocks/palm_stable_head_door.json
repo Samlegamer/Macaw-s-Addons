@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_palm_planks": {
+    "has_palm_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomesoplenty:palm_planks"
+              "biomesoplenty:palm_log"
             ]
           }
         ]
@@ -24,20 +24,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbiomesoplenty:palm_stable_head_door"
+        "recipe": "minecraft:palm_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_palm_planks",
+      "has_palm_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbiomesoplenty:palm_stable_head_door"
+      "minecraft:palm_stable_head_door"
     ]
   },
   "sends_telemetry_event": false

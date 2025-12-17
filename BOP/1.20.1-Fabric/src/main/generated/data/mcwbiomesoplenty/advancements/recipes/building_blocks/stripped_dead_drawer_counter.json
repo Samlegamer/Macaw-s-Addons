@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwfurnitures"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_dead_log": {
+    "has_dead_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomesoplenty:stripped_dead_log"
+              "biomesoplenty:dead_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_stripped_dead_log",
+      "has_dead_log",
       "has_the_recipe"
     ]
   ],

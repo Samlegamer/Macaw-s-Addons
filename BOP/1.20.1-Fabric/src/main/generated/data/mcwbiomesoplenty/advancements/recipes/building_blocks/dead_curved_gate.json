@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfences",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwfences"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dead_planks": {
+    "has_dead_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomesoplenty:dead_planks"
+              "biomesoplenty:dead_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_dead_planks",
+      "has_dead_log",
       "has_the_recipe"
     ]
   ],

@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwdoors"
       ]
     }
   ],
@@ -12,16 +12,16 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbiomesoplenty:umbran_stable_head_door"
+        "recipe": "minecraft:umbran_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_umbran_planks": {
+    "has_umbran_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomesoplenty:umbran_planks"
+              "biomesoplenty:umbran_log"
             ]
           }
         ]
@@ -31,13 +31,13 @@
   },
   "requirements": [
     [
-      "has_umbran_planks",
+      "has_umbran_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbiomesoplenty:umbran_stable_head_door"
+      "minecraft:umbran_stable_head_door"
     ]
   },
   "sends_telemetry_event": false

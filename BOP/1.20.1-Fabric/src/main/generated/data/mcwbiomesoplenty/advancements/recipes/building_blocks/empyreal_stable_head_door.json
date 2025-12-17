@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_empyreal_planks": {
+    "has_empyreal_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomesoplenty:empyreal_planks"
+              "biomesoplenty:empyreal_log"
             ]
           }
         ]
@@ -24,20 +24,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbiomesoplenty:empyreal_stable_head_door"
+        "recipe": "minecraft:empyreal_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_empyreal_planks",
+      "has_empyreal_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbiomesoplenty:empyreal_stable_head_door"
+      "minecraft:empyreal_stable_head_door"
     ]
   },
   "sends_telemetry_event": false
