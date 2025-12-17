@@ -1,15 +1,13 @@
 package fr.samlegamer.mcwaurora;
 
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
-import fr.samlegamer.addonslib.door.Doors;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
-import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.tab.APICreativeTab;
-import fr.samlegamer.addonslib.trapdoor.Trapdoors;
 import fr.samlegamer.addonslib.util.McwMod;
-import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -35,13 +33,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.bridges.Bridges;
-import fr.samlegamer.addonslib.fences.Fences;
-import fr.samlegamer.addonslib.furnitures.Furnitures;
-import fr.samlegamer.addonslib.roofs.Roofs;
-import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
-import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
+import org.jetbrains.annotations.NotNull;
 
 @Mod(McwAurora.MODID)
 public class McwAurora extends McwMod
@@ -64,15 +57,7 @@ public class McwAurora extends McwMod
         LOGGER.info("Macaw's Aurora Mod Loading...");
     	Registration.init(javaModLoadingContext, block, item, ct);
 
-    	Bridges.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-    	Roofs.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-    	Fences.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-		Furnitures.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-    	Stairs.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-		Paths.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-		Trapdoors.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-		Doors.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-		Windows.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
+        McwRegistry.setRegistriesWood(WOOD_ENHANCED_MUSH, block, item, Registration.getAllModTypeWood());
 
         javaModLoadingContext.getModEventBus().addListener(this::clientSetup);
         javaModLoadingContext.getModEventBus().addListener(this::commonSetup);
@@ -104,15 +89,15 @@ public class McwAurora extends McwMod
         if(gatherDataEvent.includeServer()) {
             McwBlockTags mcwBlockTags = new McwBlockTags(output, lookupProvider, MODID, existingFileHelper) {
                 @Override
-                protected void addTags(HolderLookup.Provider provider) {
-                    addAllMcwTags(MODID, WOOD_ENHANCED_MUSH);
+                protected void addTags(HolderLookup.@NotNull Provider provider) {
+                    addAllMcwTagsWood(MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());
                 }
             };
             generator.addProvider(true, mcwBlockTags);
             generator.addProvider(true, new McwItemTags(output, lookupProvider, mcwBlockTags.contentsGetter(), MODID, existingFileHelper) {
                 @Override
-                protected void addTags(HolderLookup.Provider provider) {
-                    addAllMcwTags(MODID, WOOD_ENHANCED_MUSH);
+                protected void addTags(HolderLookup.@NotNull Provider provider) {
+                    addAllMcwTagsWood(MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());
                 }
             });
             generator.addProvider(true, new Recipes(output));
@@ -137,17 +122,17 @@ public class McwAurora extends McwMod
 				Finder.findBlock(MODID, "mushroom_planks_path"),
 				Finder.findBlock(MODID, "mushroom_skyline_stairs"));
 
-		prop.addType(BlockType.BRIDGES)
-				.addType(BlockType.ROOFS)
-				.addType(BlockType.FENCES)
-				.addType(BlockType.FURNITURES)
-				.addType(BlockType.STAIRS)
-				.addType(BlockType.PATHS)
-				.addType(BlockType.WINDOWS)
-				.addType(BlockType.DOORS)
-				.addType(BlockType.TRAPDOORS);
-		Block icon = prop.buildIcon(BlockType.BRIDGES, BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.STAIRS,
-				BlockType.PATHS, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS);
+		prop.addType(ModType.BRIDGES)
+				.addType(ModType.ROOFS)
+				.addType(ModType.FENCES)
+				.addType(ModType.FURNITURES)
+				.addType(ModType.STAIRS)
+				.addType(ModType.PATHS)
+				.addType(ModType.WINDOWS)
+				.addType(ModType.DOORS)
+				.addType(ModType.TRAPDOORS);
+		Block icon = prop.buildIcon(ModType.BRIDGES, ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.STAIRS,
+				ModType.PATHS, ModType.WINDOWS, ModType.DOORS, ModType.TRAPDOORS);
     	return new ItemStack(icon);
     }
 }
