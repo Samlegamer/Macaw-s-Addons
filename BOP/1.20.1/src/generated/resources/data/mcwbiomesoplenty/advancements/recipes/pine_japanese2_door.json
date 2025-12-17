@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_pine_slab": {
+          "has_pine_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "biomesoplenty:pine_slab"
+                    "biomesoplenty:pine_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_pine_slab",
+            "has_pine_log",
             "has_the_recipe"
           ]
         ],
