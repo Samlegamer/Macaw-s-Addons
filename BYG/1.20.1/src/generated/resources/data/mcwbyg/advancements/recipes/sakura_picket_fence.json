@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_sakura_planks": {
+          "has_sakura_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "biomeswevegone:sakura_planks"
+                    "biomeswevegone:sakura_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_sakura_planks",
+            "has_sakura_log",
             "has_the_recipe"
           ]
         ],

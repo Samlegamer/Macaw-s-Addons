@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_cika_slab": {
+          "has_cika_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "biomeswevegone:cika_slab"
+                    "biomeswevegone:cika_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_cika_slab",
+            "has_cika_log",
             "has_the_recipe"
           ]
         ],

@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_baobab_planks": {
+          "has_baobab_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "biomeswevegone:baobab_planks"
+                    "biomeswevegone:baobab_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_baobab_planks",
+            "has_baobab_log",
             "has_the_recipe"
           ]
         ],

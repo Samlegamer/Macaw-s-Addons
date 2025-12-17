@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_skyris_slab": {
+          "has_skyris_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "biomeswevegone:skyris_slab"
+                    "biomeswevegone:skyris_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_skyris_slab",
+            "has_skyris_log",
             "has_the_recipe"
           ]
         ],

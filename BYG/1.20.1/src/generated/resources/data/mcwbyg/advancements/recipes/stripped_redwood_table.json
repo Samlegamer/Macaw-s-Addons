@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_stripped_redwood_log": {
+          "has_redwood_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "biomeswevegone:stripped_redwood_log"
+                    "biomeswevegone:redwood_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_stripped_redwood_log",
+            "has_redwood_log",
             "has_the_recipe"
           ]
         ],

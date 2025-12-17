@@ -4,12 +4,12 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_blue_enchanted_slab": {
+          "has_blue_enchanted_log": {
             "conditions": {
               "items": [
                 {
                   "items": [
-                    "biomeswevegone:blue_enchanted_slab"
+                    "biomeswevegone:blue_enchanted_log"
                   ]
                 }
               ]
@@ -25,7 +25,7 @@
         },
         "requirements": [
           [
-            "has_blue_enchanted_slab",
+            "has_blue_enchanted_log",
             "has_the_recipe"
           ]
         ],
