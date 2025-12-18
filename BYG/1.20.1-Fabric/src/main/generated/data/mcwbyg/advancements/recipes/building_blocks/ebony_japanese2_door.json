@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ebony_slab": {
+    "has_ebony_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomeswevegone:ebony_slab"
+              "biomeswevegone:ebony_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_ebony_slab",
+      "has_ebony_log",
       "has_the_recipe"
     ]
   ],

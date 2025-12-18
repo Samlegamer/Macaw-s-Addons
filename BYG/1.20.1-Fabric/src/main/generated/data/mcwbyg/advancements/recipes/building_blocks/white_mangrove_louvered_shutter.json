@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwwindows",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwwindows"
       ]
     }
   ],
@@ -12,7 +12,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:white_mangrove_louvered_shutter"
+        "recipe": "minecraft:white_mangrove_louvered_shutter"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:white_mangrove_louvered_shutter"
+      "minecraft:white_mangrove_louvered_shutter"
     ]
   },
   "sends_telemetry_event": false

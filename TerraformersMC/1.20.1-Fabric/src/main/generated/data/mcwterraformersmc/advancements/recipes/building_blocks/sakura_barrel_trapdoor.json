@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwtrpdoors",
-        "terrestria"
+        "terrestria",
+        "mcwtrpdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sakura_planks": {
+    "has_sakura_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "terrestria:sakura_planks"
+              "terrestria:sakura_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_sakura_planks",
+      "has_sakura_log",
       "has_the_recipe"
     ]
   ],

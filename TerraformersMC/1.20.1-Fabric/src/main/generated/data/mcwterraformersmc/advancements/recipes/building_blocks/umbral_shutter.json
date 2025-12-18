@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwwindows",
-        "cinderscapes"
+        "cinderscapes",
+        "mcwwindows"
       ]
     }
   ],
@@ -12,7 +12,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:umbral_shutter"
+        "recipe": "minecraft:umbral_shutter"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:umbral_shutter"
+      "minecraft:umbral_shutter"
     ]
   },
   "sends_telemetry_event": false

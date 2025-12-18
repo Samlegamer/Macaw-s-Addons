@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "terrestria"
+        "terrestria",
+        "mcwpaths"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_rubber_planks": {
+    "has_rubber_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "terrestria:rubber_planks"
+              "terrestria:rubber_log"
             ]
           }
         ]
@@ -24,20 +24,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:rubber_planks_path"
+        "recipe": "minecraft:rubber_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_rubber_planks",
+      "has_rubber_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:rubber_planks_path"
+      "minecraft:rubber_planks_path"
     ]
   },
   "sends_telemetry_event": false

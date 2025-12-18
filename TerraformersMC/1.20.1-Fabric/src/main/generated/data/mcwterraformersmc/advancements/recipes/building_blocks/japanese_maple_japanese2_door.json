@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "terrestria"
+        "terrestria",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_japanese_maple_slab": {
+    "has_japanese_maple_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "terrestria:japanese_maple_slab"
+              "terrestria:japanese_maple_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_japanese_maple_slab",
+      "has_japanese_maple_log",
       "has_the_recipe"
     ]
   ],

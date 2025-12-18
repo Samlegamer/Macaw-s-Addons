@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwpaths"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sakura_planks": {
+    "has_sakura_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomeswevegone:sakura_planks"
+              "biomeswevegone:sakura_log"
             ]
           }
         ]
@@ -24,20 +24,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:sakura_planks_path"
+        "recipe": "minecraft:sakura_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_sakura_planks",
+      "has_sakura_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:sakura_planks_path"
+      "minecraft:sakura_planks_path"
     ]
   },
   "sends_telemetry_event": false

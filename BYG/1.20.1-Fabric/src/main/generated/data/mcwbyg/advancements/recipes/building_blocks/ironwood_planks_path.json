@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwpaths"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ironwood_planks": {
+    "has_ironwood_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomeswevegone:ironwood_planks"
+              "biomeswevegone:ironwood_log"
             ]
           }
         ]
@@ -24,20 +24,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:ironwood_planks_path"
+        "recipe": "minecraft:ironwood_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_ironwood_planks",
+      "has_ironwood_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:ironwood_planks_path"
+      "minecraft:ironwood_planks_path"
     ]
   },
   "sends_telemetry_event": false

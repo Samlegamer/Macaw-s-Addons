@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwwindows",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwwindows"
       ]
     }
   ],
@@ -24,7 +24,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:ironwood_louvered_shutter"
+        "recipe": "minecraft:ironwood_louvered_shutter"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:ironwood_louvered_shutter"
+      "minecraft:ironwood_louvered_shutter"
     ]
   },
   "sends_telemetry_event": false

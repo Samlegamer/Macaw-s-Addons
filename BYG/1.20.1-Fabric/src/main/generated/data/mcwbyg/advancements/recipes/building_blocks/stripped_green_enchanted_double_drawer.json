@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwfurnitures"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_green_enchanted_log": {
+    "has_green_enchanted_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomeswevegone:stripped_green_enchanted_log"
+              "biomeswevegone:green_enchanted_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_stripped_green_enchanted_log",
+      "has_green_enchanted_log",
       "has_the_recipe"
     ]
   ],

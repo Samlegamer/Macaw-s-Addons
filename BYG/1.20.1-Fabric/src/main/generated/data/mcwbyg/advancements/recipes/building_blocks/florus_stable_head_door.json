@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_florus_planks": {
+    "has_florus_stem": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomeswevegone:florus_planks"
+              "biomeswevegone:florus_stem"
             ]
           }
         ]
@@ -24,20 +24,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:florus_stable_head_door"
+        "recipe": "minecraft:florus_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_florus_planks",
+      "has_florus_stem",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:florus_stable_head_door"
+      "minecraft:florus_stable_head_door"
     ]
   },
   "sends_telemetry_event": false

@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "terrestria"
+        "terrestria",
+        "mcwpaths"
       ]
     }
   ],
@@ -12,16 +12,16 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:willow_planks_path"
+        "recipe": "minecraft:willow_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_willow_planks": {
+    "has_willow_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "terrestria:willow_planks"
+              "terrestria:willow_log"
             ]
           }
         ]
@@ -31,13 +31,13 @@
   },
   "requirements": [
     [
-      "has_willow_planks",
+      "has_willow_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:willow_planks_path"
+      "minecraft:willow_planks_path"
     ]
   },
   "sends_telemetry_event": false

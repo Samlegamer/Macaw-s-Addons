@@ -3,6 +3,17 @@ plugins {
 	id 'maven-publish'
 }
 
+def extraPropsFile = file('../../_properties/1.20.1fabricgradle.properties')
+if (extraPropsFile.exists()) {
+    def extraProps = new Properties()
+    extraPropsFile.withInputStream { extraProps.load(it) }
+    extraProps.each { k, v ->
+        project.ext.set(k.toString(), v.toString())
+    }
+} else {
+    println "WARNING: Properties file not found: ${extraPropsFile.absolutePath}"
+}
+
 version = project.mod_version
 group = project.maven_group
 
@@ -58,12 +69,10 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-    modImplementation("net.potionstudios:Oh-The-Biomes-Weve-Gone-Fabric:1.7.1") { transitive = false }
-    modRuntimeOnly 'com.github.glitchfiend:TerraBlender-fabric:1.20.1-3.0.1.7'
-    modRuntimeOnly("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:4.8.2")
-    modRuntimeOnly("com.eliotlash.mclib:mclib:20")
-    modRuntimeOnly "corgitaco.corgilib:Corgilib-Fabric:1.20.1-4.0.3.3"
-    modRuntimeOnly "dev.corgitaco:Oh-The-Trees-Youll-Grow-fabric:1.20.1-1.4.2"
+    //modImplementation("net.potionstudios:Oh-The-Biomes-Weve-Gone-Fabric:1.7.1") { transitive = false }
+    //modRuntimeOnly 'com.github.glitchfiend:TerraBlender-fabric:1.20.1-3.0.1.7'
+    //modRuntimeOnly "corgitaco.corgilib:Corgilib-Fabric:1.20.1-4.0.3.3"
+    //modRuntimeOnly "dev.corgitaco:Oh-The-Trees-Youll-Grow-fabric:1.20.1-1.4.2"
 
     modImplementation "curse.maven:addonslib-1090999:${addonslib_version}"
     modImplementation "curse.maven:jei-238222:${jei_version}"
@@ -78,13 +87,15 @@ dependencies {
     modImplementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
     modImplementation "curse.maven:macaws-furniture-359540:${furniture_version}"
 
-    //modCompileOnly "curse.maven:oh-the-biomes-weve-gone-1070751:${bwg_version}"
+    modImplementation "curse.maven:oh-the-biomes-weve-gone-1070751:${bwg_version}"
     //modImplementation "curse.maven:geckolib-388172:${geckolib_version}"
-    //modImplementation "curse.maven:corgilib-693313:${corgilib_version}"
-    //modImplementation "curse.maven:oh-the-trees-youll-grow-962544:${ohtree_version}"
-    //modImplementation "curse.maven:terrablender-fabric-565956:${terrablender_version}"
-    //include implementation("com.electronwill.night-config:toml:${nightconfig_version}")
-    //include implementation("com.electronwill.night-config:core:${nightconfig_version}")
+    modRuntimeOnly("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:4.8.2")
+    modRuntimeOnly("com.eliotlash.mclib:mclib:20")
+    modImplementation "curse.maven:corgilib-693313:${corgilib_version}"
+    modImplementation "curse.maven:oh-the-trees-youll-grow-962544:${ohtree_version}"
+    modImplementation "curse.maven:terrablender-fabric-565956:${terrablender_version}"
+    include implementation("com.electronwill.night-config:toml:${nightconfig_version}")
+    include implementation("com.electronwill.night-config:core:${nightconfig_version}")
 
     // Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"

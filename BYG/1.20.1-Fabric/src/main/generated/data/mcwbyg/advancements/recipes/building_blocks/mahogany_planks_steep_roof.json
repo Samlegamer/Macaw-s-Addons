@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwroofs",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwroofs"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mahogany_planks": {
+    "has_mahogany_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomeswevegone:mahogany_planks"
+              "biomeswevegone:mahogany_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_mahogany_planks",
+      "has_mahogany_log",
       "has_the_recipe"
     ]
   ],

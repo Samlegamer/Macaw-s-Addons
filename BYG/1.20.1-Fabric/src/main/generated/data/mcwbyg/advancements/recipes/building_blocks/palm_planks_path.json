@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwpaths"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_palm_planks": {
+    "has_palm_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomeswevegone:palm_planks"
+              "biomeswevegone:palm_log"
             ]
           }
         ]
@@ -24,20 +24,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:palm_planks_path"
+        "recipe": "minecraft:palm_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_palm_planks",
+      "has_palm_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:palm_planks_path"
+      "minecraft:palm_planks_path"
     ]
   },
   "sends_telemetry_event": false

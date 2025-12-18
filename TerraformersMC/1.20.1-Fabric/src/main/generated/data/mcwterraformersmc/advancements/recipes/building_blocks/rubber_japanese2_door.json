@@ -3,19 +3,19 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "terrestria"
+        "terrestria",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_rubber_slab": {
+    "has_rubber_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "terrestria:rubber_slab"
+              "terrestria:rubber_log"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "has_rubber_slab",
+      "has_rubber_log",
       "has_the_recipe"
     ]
   ],

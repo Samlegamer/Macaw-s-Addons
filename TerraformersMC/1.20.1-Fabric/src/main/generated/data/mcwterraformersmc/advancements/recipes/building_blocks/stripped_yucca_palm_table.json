@@ -3,35 +3,35 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "terrestria"
+        "terrestria",
+        "mcwfurnitures"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_yucca_palm_log": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "terrestria:stripped_yucca_palm_log"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "mcwterraformersmc:stripped_yucca_palm_table"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yucca_palm_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrestria:yucca_palm_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "has_stripped_yucca_palm_log",
+      "has_yucca_palm_log",
       "has_the_recipe"
     ]
   ],

@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwdoors"
       ]
     }
   ],
@@ -12,16 +12,16 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbyg:witch_hazel_stable_head_door"
+        "recipe": "minecraft:witch_hazel_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_witch_hazel_planks": {
+    "has_witch_hazel_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomeswevegone:witch_hazel_planks"
+              "biomeswevegone:witch_hazel_log"
             ]
           }
         ]
@@ -31,13 +31,13 @@
   },
   "requirements": [
     [
-      "has_witch_hazel_planks",
+      "has_witch_hazel_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbyg:witch_hazel_stable_head_door"
+      "minecraft:witch_hazel_stable_head_door"
     ]
   },
   "sends_telemetry_event": false
