@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_cupboard_counters",
+  "key": {
+    "A": {
+      "item": "premium_wood:magic_slab"
+    },
+    "B": {
+      "item": "mcwmoddinglegacy:stripped_pwood_magic_wardrobe"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwmoddinglegacy:stripped_pwood_magic_cupboard_counter"
+  }
+}

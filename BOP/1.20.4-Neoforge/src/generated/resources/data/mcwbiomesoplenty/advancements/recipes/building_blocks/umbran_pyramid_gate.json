@@ -1,12 +1,17 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "biomesoplenty"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
@@ -17,12 +22,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_umbran_planks": {
+    "has_umbran_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomesoplenty:umbran_planks"
+              "biomesoplenty:umbran_log"
             ]
           }
         ]
@@ -33,7 +38,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_umbran_planks"
+      "has_umbran_log"
     ]
   ],
   "rewards": {

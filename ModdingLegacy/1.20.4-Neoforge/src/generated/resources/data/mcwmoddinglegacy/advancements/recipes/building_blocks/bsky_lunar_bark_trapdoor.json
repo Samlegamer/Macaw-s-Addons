@@ -1,12 +1,17 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwtrpdoors"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "blue_skies"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",

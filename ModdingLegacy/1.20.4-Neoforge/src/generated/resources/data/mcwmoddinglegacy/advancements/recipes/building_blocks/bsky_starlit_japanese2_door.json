@@ -1,22 +1,27 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwdoors"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "blue_skies"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "blue_skies"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_starlit_slab": {
+    "has_starlit_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "blue_skies:starlit_slab"
+              "blue_skies:starlit_log"
             ]
           }
         ]
@@ -33,7 +38,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_starlit_slab"
+      "has_starlit_log"
     ]
   ],
   "rewards": {

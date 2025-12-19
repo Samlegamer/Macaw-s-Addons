@@ -5,6 +5,20 @@ plugins {
     id 'idea'
 }
 
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
+    }
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
+}
+
+loadExtraProperties('../../_properties/1.20.4neogradle.properties')
+
 tasks.named('wrapper', Wrapper).configure {
     // Define wrapper values here so as to not have to always do so when updating gradlew.properties.
     // Switching this to Wrapper.DistributionType.ALL will download the full gradle sources that comes with
@@ -120,6 +134,9 @@ repositories {
         name = "CurseMaven"
         url = "https://www.cursemaven.com"
     }
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
@@ -142,10 +159,12 @@ dependencies {
     implementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
     implementation "curse.maven:macaws-furniture-359540:${furniture_version}"
 
+    compileOnly "blank:premium_wood-neoforge-1.20.4-1.0:${pwood_version}"
     //compileOnly "curse.maven:premium-wood-353515:${pwood_version}"
     compileOnly "curse.maven:blue-skies-312918:${bsky_version}"
     compileOnly "curse.maven:structure-gel-api-378802:${structgel_version}"
 
+    //runtimeOnly "blank:premium_wood-neoforge-1.20.4-1.0:${pwood_version}"
     runtimeOnly "curse.maven:premium-wood-353515:${pwood_version}"
     runtimeOnly "curse.maven:blue-skies-312918:${bsky_version}"
     runtimeOnly "curse.maven:structure-gel-api-378802:${structgel_version}"

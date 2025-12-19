@@ -1,12 +1,17 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwpaths"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "biomesoplenty"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwpaths"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
@@ -17,12 +22,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_willow_planks": {
+    "has_willow_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "biomesoplenty:willow_planks"
+              "biomesoplenty:willow_log"
             ]
           }
         ]
@@ -33,7 +38,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_willow_planks"
+      "has_willow_log"
     ]
   ],
   "rewards": {
