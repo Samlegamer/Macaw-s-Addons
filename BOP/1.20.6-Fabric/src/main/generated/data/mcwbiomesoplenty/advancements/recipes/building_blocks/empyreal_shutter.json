@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwwindows",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwwindows"
       ]
     }
   ],
@@ -22,7 +22,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbiomesoplenty:empyreal_shutter"
+        "recipe": "minecraft:empyreal_shutter"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -35,7 +35,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mcwbiomesoplenty:empyreal_shutter"
+      "minecraft:empyreal_shutter"
     ]
   }
 }

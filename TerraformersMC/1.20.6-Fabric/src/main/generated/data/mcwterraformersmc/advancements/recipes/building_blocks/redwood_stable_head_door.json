@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "terrestria"
+        "terrestria",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_redwood_planks": {
+    "has_redwood_log": {
       "conditions": {
         "items": [
           {
-            "items": "terrestria:redwood_planks"
+            "items": "terrestria:redwood_log"
           }
         ]
       },
@@ -22,7 +22,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:redwood_stable_head_door"
+        "recipe": "minecraft:redwood_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -30,12 +30,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_redwood_planks"
+      "has_redwood_log"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:redwood_stable_head_door"
+      "minecraft:redwood_stable_head_door"
     ]
   }
 }

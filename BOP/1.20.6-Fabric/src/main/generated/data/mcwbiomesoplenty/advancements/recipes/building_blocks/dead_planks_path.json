@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwpaths"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dead_planks": {
+    "has_dead_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomesoplenty:dead_planks"
+            "items": "biomesoplenty:dead_log"
           }
         ]
       },
@@ -22,7 +22,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbiomesoplenty:dead_planks_path"
+        "recipe": "minecraft:dead_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -30,12 +30,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_dead_planks"
+      "has_dead_log"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbiomesoplenty:dead_planks_path"
+      "minecraft:dead_planks_path"
     ]
   }
 }

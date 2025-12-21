@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwpaths"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_magic_planks": {
+    "has_magic_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomesoplenty:magic_planks"
+            "items": "biomesoplenty:magic_log"
           }
         ]
       },
@@ -22,7 +22,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbiomesoplenty:magic_planks_path"
+        "recipe": "minecraft:magic_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -30,12 +30,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_magic_planks"
+      "has_magic_log"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbiomesoplenty:magic_planks_path"
+      "minecraft:magic_planks_path"
     ]
   }
 }

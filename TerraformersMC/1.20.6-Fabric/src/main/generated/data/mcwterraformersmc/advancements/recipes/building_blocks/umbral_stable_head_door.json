@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "cinderscapes"
+        "cinderscapes",
+        "mcwdoors"
       ]
     }
   ],
@@ -12,15 +12,15 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:umbral_stable_head_door"
+        "recipe": "minecraft:umbral_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_umbral_planks": {
+    "has_umbral_stem": {
       "conditions": {
         "items": [
           {
-            "items": "cinderscapes:umbral_planks"
+            "items": "cinderscapes:umbral_stem"
           }
         ]
       },
@@ -30,12 +30,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_umbral_planks"
+      "has_umbral_stem"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:umbral_stable_head_door"
+      "minecraft:umbral_stable_head_door"
     ]
   }
 }

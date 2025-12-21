@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwpaths"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mahogany_planks": {
+    "has_mahogany_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomesoplenty:mahogany_planks"
+            "items": "biomesoplenty:mahogany_log"
           }
         ]
       },
@@ -22,7 +22,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbiomesoplenty:mahogany_planks_path"
+        "recipe": "minecraft:mahogany_planks_path"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -30,12 +30,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mahogany_planks"
+      "has_mahogany_log"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbiomesoplenty:mahogany_planks_path"
+      "minecraft:mahogany_planks_path"
     ]
   }
 }

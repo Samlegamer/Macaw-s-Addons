@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_jacaranda_planks": {
+    "has_jacaranda_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomesoplenty:jacaranda_planks"
+            "items": "biomesoplenty:jacaranda_log"
           }
         ]
       },
@@ -22,7 +22,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbiomesoplenty:jacaranda_stable_head_door"
+        "recipe": "minecraft:jacaranda_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -30,12 +30,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_jacaranda_planks"
+      "has_jacaranda_log"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwbiomesoplenty:jacaranda_stable_head_door"
+      "minecraft:jacaranda_stable_head_door"
     ]
   }
 }

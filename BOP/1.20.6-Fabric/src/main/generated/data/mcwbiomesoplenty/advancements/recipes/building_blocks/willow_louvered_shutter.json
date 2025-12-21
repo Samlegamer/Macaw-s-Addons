@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwwindows",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwwindows"
       ]
     }
   ],
@@ -12,7 +12,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwbiomesoplenty:willow_louvered_shutter"
+        "recipe": "minecraft:willow_louvered_shutter"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -35,7 +35,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mcwbiomesoplenty:willow_louvered_shutter"
+      "minecraft:willow_louvered_shutter"
     ]
   }
 }

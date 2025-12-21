@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwfurnitures"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_hellbark_log": {
+    "has_hellbark_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomesoplenty:stripped_hellbark_log"
+            "items": "biomesoplenty:hellbark_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stripped_hellbark_log"
+      "has_hellbark_log"
     ]
   ],
   "rewards": {

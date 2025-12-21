@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "traverse"
+        "traverse",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_fir_planks": {
+    "has_fir_log": {
       "conditions": {
         "items": [
           {
-            "items": "traverse:fir_planks"
+            "items": "traverse:fir_log"
           }
         ]
       },
@@ -22,7 +22,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:fir_stable_head_door"
+        "recipe": "minecraft:fir_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -30,12 +30,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_fir_planks"
+      "has_fir_log"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:fir_stable_head_door"
+      "minecraft:fir_stable_head_door"
     ]
   }
 }

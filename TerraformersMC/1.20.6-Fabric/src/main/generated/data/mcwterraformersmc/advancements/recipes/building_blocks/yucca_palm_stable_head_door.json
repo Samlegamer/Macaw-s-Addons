@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "terrestria"
+        "terrestria",
+        "mcwdoors"
       ]
     }
   ],
@@ -12,15 +12,15 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:yucca_palm_stable_head_door"
+        "recipe": "minecraft:yucca_palm_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_yucca_palm_planks": {
+    "has_yucca_palm_log": {
       "conditions": {
         "items": [
           {
-            "items": "terrestria:yucca_palm_planks"
+            "items": "terrestria:yucca_palm_log"
           }
         ]
       },
@@ -30,12 +30,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_yucca_palm_planks"
+      "has_yucca_palm_log"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:yucca_palm_stable_head_door"
+      "minecraft:yucca_palm_stable_head_door"
     ]
   }
 }

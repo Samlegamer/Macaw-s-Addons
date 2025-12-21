@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "terrestria"
+        "terrestria",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_japanese_maple_planks": {
+    "has_japanese_maple_log": {
       "conditions": {
         "items": [
           {
-            "items": "terrestria:japanese_maple_planks"
+            "items": "terrestria:japanese_maple_log"
           }
         ]
       },
@@ -22,7 +22,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:japanese_maple_stable_head_door"
+        "recipe": "minecraft:japanese_maple_stable_head_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -30,12 +30,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_japanese_maple_planks"
+      "has_japanese_maple_log"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:japanese_maple_stable_head_door"
+      "minecraft:japanese_maple_stable_head_door"
     ]
   }
 }

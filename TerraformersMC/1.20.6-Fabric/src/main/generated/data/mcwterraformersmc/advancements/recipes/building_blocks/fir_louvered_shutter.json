@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwwindows",
-        "traverse"
+        "traverse",
+        "mcwwindows"
       ]
     }
   ],
@@ -22,7 +22,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mcwterraformersmc:fir_louvered_shutter"
+        "recipe": "minecraft:fir_louvered_shutter"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -35,7 +35,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mcwterraformersmc:fir_louvered_shutter"
+      "minecraft:fir_louvered_shutter"
     ]
   }
 }
