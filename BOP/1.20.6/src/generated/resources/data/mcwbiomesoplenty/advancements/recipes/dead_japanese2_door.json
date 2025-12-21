@@ -3,11 +3,11 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_dead_slab": {
+        "has_dead_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomesoplenty:dead_slab"
+                "items": "biomesoplenty:dead_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_dead_slab"
+          "has_dead_log"
         ]
       ],
       "rewards": {

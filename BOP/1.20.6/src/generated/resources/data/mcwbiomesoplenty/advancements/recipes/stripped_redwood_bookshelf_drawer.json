@@ -3,11 +3,11 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_stripped_redwood_log": {
+        "has_redwood_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomesoplenty:stripped_redwood_log"
+                "items": "biomesoplenty:redwood_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_stripped_redwood_log"
+          "has_redwood_log"
         ]
       ],
       "rewards": {
