@@ -3,11 +3,11 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_maple_slab": {
+        "has_maple_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomeswevegone:maple_slab"
+                "items": "biomeswevegone:maple_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_maple_slab"
+          "has_maple_log"
         ]
       ],
       "rewards": {

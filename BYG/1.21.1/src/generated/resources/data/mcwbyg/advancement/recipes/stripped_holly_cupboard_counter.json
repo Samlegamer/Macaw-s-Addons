@@ -3,11 +3,11 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_stripped_holly_log": {
+        "has_holly_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomeswevegone:stripped_holly_log"
+                "items": "biomeswevegone:holly_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_stripped_holly_log"
+          "has_holly_log"
         ]
       ],
       "rewards": {

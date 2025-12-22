@@ -9,11 +9,11 @@
           },
           "trigger": "minecraft:recipe_unlocked"
         },
-        "has_white_mangrove_slab": {
+        "has_white_mangrove_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomeswevegone:white_mangrove_slab"
+                "items": "biomeswevegone:white_mangrove_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_white_mangrove_slab"
+          "has_white_mangrove_log"
         ]
       ],
       "rewards": {

@@ -3,11 +3,11 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_rainbow_eucalyptus_slab": {
+        "has_rainbow_eucalyptus_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomeswevegone:rainbow_eucalyptus_slab"
+                "items": "biomeswevegone:rainbow_eucalyptus_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_rainbow_eucalyptus_slab"
+          "has_rainbow_eucalyptus_log"
         ]
       ],
       "rewards": {

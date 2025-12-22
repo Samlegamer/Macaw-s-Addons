@@ -3,11 +3,11 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_fir_slab": {
+        "has_fir_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomeswevegone:fir_slab"
+                "items": "biomeswevegone:fir_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_fir_slab"
+          "has_fir_log"
         ]
       ],
       "rewards": {

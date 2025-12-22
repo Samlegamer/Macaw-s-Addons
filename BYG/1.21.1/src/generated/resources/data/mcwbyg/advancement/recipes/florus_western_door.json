@@ -3,11 +3,11 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_florus_planks": {
+        "has_florus_stem": {
           "conditions": {
             "items": [
               {
-                "items": "biomeswevegone:florus_planks"
+                "items": "biomeswevegone:florus_stem"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_florus_planks"
+          "has_florus_stem"
         ]
       ],
       "rewards": {

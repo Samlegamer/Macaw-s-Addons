@@ -3,11 +3,11 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_stripped_palm_log": {
+        "has_palm_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomesoplenty:stripped_palm_log"
+                "items": "biomesoplenty:palm_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_stripped_palm_log"
+          "has_palm_log"
         ]
       ],
       "rewards": {

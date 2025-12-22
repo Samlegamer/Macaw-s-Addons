@@ -3,11 +3,11 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_stripped_baobab_log": {
+        "has_baobab_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomeswevegone:stripped_baobab_log"
+                "items": "biomeswevegone:baobab_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_stripped_baobab_log"
+          "has_baobab_log"
         ]
       ],
       "rewards": {

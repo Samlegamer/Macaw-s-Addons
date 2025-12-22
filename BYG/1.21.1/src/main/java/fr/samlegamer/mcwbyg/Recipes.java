@@ -1,15 +1,14 @@
 package fr.samlegamer.mcwbyg;
 
+import fr.addonslib.api.recipes.material.McwStoneMat;
+import fr.addonslib.api.recipes.material.McwWoodMat;
 import fr.samlegamer.addonslib.generation.recipes.McwRecipes;
-import fr.samlegamer.addonslib.generation.recipes.mat.McwStoneMat;
-import fr.samlegamer.addonslib.generation.recipes.mat.McwWoodMat;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.world.level.block.Block;
 import net.potionstudios.biomeswevegone.BiomesWeveGone;
 import org.jetbrains.annotations.NotNull;
-
 import static net.potionstudios.biomeswevegone.world.level.block.BWGBlocks.*;
 import static net.potionstudios.biomeswevegone.world.level.block.wood.BWGWood.*;
 import java.util.ArrayList;
@@ -18,7 +17,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class Recipes extends McwRecipes {
     public Recipes(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {
-        super(packOutput, registries, McwByg.MODID, "", BiomesWeveGone.MOD_ID);
+        super(packOutput, registries);
     }
 
     @Override
@@ -79,47 +78,47 @@ public class Recipes extends McwRecipes {
         return blocks;
     }
 
-    private List<McwStoneMat> getStoneMat()
+    private List<McwStoneMat<Block>> getStoneMat()
     {
-        List<McwStoneMat> stoneMats = new ArrayList<>();
-        stoneMats.add(new McwStoneMat(DACITE_BRICKS_SET.getBase(), DACITE_BRICKS_SET.getWall(), DACITE_BRICKS_SET.getSlab(), DACITE_BRICKS_SET.getBase()));
-        stoneMats.add(new McwStoneMat(RED_ROCK_BRICKS_SET.getBase(), RED_ROCK_BRICKS_SET.getWall(), RED_ROCK_BRICKS_SET.getSlab(), RED_ROCK_BRICKS_SET.getBase()));
-        stoneMats.add(new McwStoneMat(PINK_SAND_SET.getSandstone(), PINK_SAND_SET.getSandstoneWall(), PINK_SAND_SET.getSandstoneSlab(), PINK_SAND_SET.getSmoothSandstone()));
-        stoneMats.add(new McwStoneMat(WHITE_SAND_SET.getSandstone(), WHITE_SAND_SET.getSandstoneWall(), WHITE_SAND_SET.getSandstoneSlab(), WHITE_SAND_SET.getSmoothSandstone()));
-        stoneMats.add(new McwStoneMat(BLUE_SAND_SET.getSandstone(), BLUE_SAND_SET.getSandstoneWall(), BLUE_SAND_SET.getSandstoneSlab(), BLUE_SAND_SET.getSmoothSandstone()));
-        stoneMats.add(new McwStoneMat(PURPLE_SAND_SET.getSandstone(), PURPLE_SAND_SET.getSandstoneWall(), PURPLE_SAND_SET.getSandstoneSlab(), PURPLE_SAND_SET.getSmoothSandstone()));
-        stoneMats.add(new McwStoneMat(BLACK_SAND_SET.getSandstone(), BLACK_SAND_SET.getSandstoneWall(), BLACK_SAND_SET.getSandstoneSlab(), BLACK_SAND_SET.getSmoothSandstone()));
-        stoneMats.add(new McwStoneMat(WINDSWEPT_SAND_SET.getSandstone(), WINDSWEPT_SAND_SET.getSandstoneWall(), WINDSWEPT_SAND_SET.getSandstoneSlab(), WINDSWEPT_SAND_SET.getSmoothSandstone()));
+        List<McwStoneMat<Block>> stoneMats = new ArrayList<>();
+        stoneMats.add(new McwStoneMat<>(DACITE_BRICKS_SET.getBase(), DACITE_BRICKS_SET.getWall(), DACITE_BRICKS_SET.getSlab(), DACITE_BRICKS_SET.getBase()));
+        stoneMats.add(new McwStoneMat<>(RED_ROCK_BRICKS_SET.getBase(), RED_ROCK_BRICKS_SET.getWall(), RED_ROCK_BRICKS_SET.getSlab(), RED_ROCK_BRICKS_SET.getBase()));
+        stoneMats.add(new McwStoneMat<>(PINK_SAND_SET.getSandstone(), PINK_SAND_SET.getSandstoneWall(), PINK_SAND_SET.getSandstoneSlab(), PINK_SAND_SET.getSmoothSandstone()));
+        stoneMats.add(new McwStoneMat<>(WHITE_SAND_SET.getSandstone(), WHITE_SAND_SET.getSandstoneWall(), WHITE_SAND_SET.getSandstoneSlab(), WHITE_SAND_SET.getSmoothSandstone()));
+        stoneMats.add(new McwStoneMat<>(BLUE_SAND_SET.getSandstone(), BLUE_SAND_SET.getSandstoneWall(), BLUE_SAND_SET.getSandstoneSlab(), BLUE_SAND_SET.getSmoothSandstone()));
+        stoneMats.add(new McwStoneMat<>(PURPLE_SAND_SET.getSandstone(), PURPLE_SAND_SET.getSandstoneWall(), PURPLE_SAND_SET.getSandstoneSlab(), PURPLE_SAND_SET.getSmoothSandstone()));
+        stoneMats.add(new McwStoneMat<>(BLACK_SAND_SET.getSandstone(), BLACK_SAND_SET.getSandstoneWall(), BLACK_SAND_SET.getSandstoneSlab(), BLACK_SAND_SET.getSmoothSandstone()));
+        stoneMats.add(new McwStoneMat<>(WINDSWEPT_SAND_SET.getSandstone(), WINDSWEPT_SAND_SET.getSandstoneWall(), WINDSWEPT_SAND_SET.getSandstoneSlab(), WINDSWEPT_SAND_SET.getSmoothSandstone()));
         return stoneMats;
     }
 
-    private List<McwWoodMat> getWoodMat()
+    private List<McwWoodMat<Block>> getWoodMat()
     {
-        List<McwWoodMat> woodMats = new ArrayList<>();
-        woodMats.add(new McwWoodMat(ASPEN.logstem(), ASPEN.planks(), ASPEN.strippedLogStem(), ASPEN.slab(), ASPEN.fence(), ASPEN.trapdoor()));
-        woodMats.add(new McwWoodMat(BAOBAB.logstem(), BAOBAB.planks(), BAOBAB.strippedLogStem(), BAOBAB.slab(), BAOBAB.fence(), BAOBAB.trapdoor()));
-        woodMats.add(new McwWoodMat(BLUE_ENCHANTED.logstem(), BLUE_ENCHANTED.planks(), BLUE_ENCHANTED.strippedLogStem(), BLUE_ENCHANTED.slab(), BLUE_ENCHANTED.fence(), BLUE_ENCHANTED.trapdoor()));
-        woodMats.add(new McwWoodMat(CIKA.logstem(), CIKA.planks(), CIKA.strippedLogStem(), CIKA.slab(), CIKA.fence(), CIKA.trapdoor()));
-        woodMats.add(new McwWoodMat(CYPRESS.logstem(), CYPRESS.planks(), CYPRESS.strippedLogStem(), CYPRESS.slab(), CYPRESS.fence(), CYPRESS.trapdoor()));
-        woodMats.add(new McwWoodMat(EBONY.logstem(), EBONY.planks(), EBONY.strippedLogStem(), EBONY.slab(), EBONY.fence(), EBONY.trapdoor()));
-        woodMats.add(new McwWoodMat(FIR.logstem(), FIR.planks(), FIR.strippedLogStem(), FIR.slab(), FIR.fence(), FIR.trapdoor()));
-        woodMats.add(new McwWoodMat(GREEN_ENCHANTED.logstem(), GREEN_ENCHANTED.planks(), GREEN_ENCHANTED.strippedLogStem(), GREEN_ENCHANTED.slab(), GREEN_ENCHANTED.fence(), GREEN_ENCHANTED.trapdoor()));
-        woodMats.add(new McwWoodMat(HOLLY.logstem(), HOLLY.planks(), HOLLY.strippedLogStem(), HOLLY.slab(), HOLLY.fence(), HOLLY.trapdoor()));
-        woodMats.add(new McwWoodMat(IRONWOOD.logstem(), IRONWOOD.planks(), IRONWOOD.strippedLogStem(), IRONWOOD.slab(), IRONWOOD.fence(), IRONWOOD.trapdoor()));
-        woodMats.add(new McwWoodMat(JACARANDA.logstem(), JACARANDA.planks(), JACARANDA.strippedLogStem(), JACARANDA.slab(), JACARANDA.fence(), JACARANDA.trapdoor()));
-        woodMats.add(new McwWoodMat(MAHOGANY.logstem(), MAHOGANY.planks(), MAHOGANY.strippedLogStem(), MAHOGANY.slab(), MAHOGANY.fence(), MAHOGANY.trapdoor()));
-        woodMats.add(new McwWoodMat(MAPLE.logstem(), MAPLE.planks(), MAPLE.strippedLogStem(), MAPLE.slab(), MAPLE.fence(), MAPLE.trapdoor()));
-        woodMats.add(new McwWoodMat(PALM.logstem(), PALM.planks(), PALM.strippedLogStem(), PALM.slab(), PALM.fence(), PALM.trapdoor()));
-        woodMats.add(new McwWoodMat(PINE.logstem(), PINE.planks(), PINE.strippedLogStem(), PINE.slab(), PINE.fence(), PINE.trapdoor()));
-        woodMats.add(new McwWoodMat(RAINBOW_EUCALYPTUS.logstem(), RAINBOW_EUCALYPTUS.planks(), RAINBOW_EUCALYPTUS.strippedLogStem(), RAINBOW_EUCALYPTUS.slab(), RAINBOW_EUCALYPTUS.fence(), RAINBOW_EUCALYPTUS.trapdoor()));
-        woodMats.add(new McwWoodMat(REDWOOD.logstem(), REDWOOD.planks(), REDWOOD.strippedLogStem(), REDWOOD.slab(), REDWOOD.fence(), REDWOOD.trapdoor()));
-        woodMats.add(new McwWoodMat(SAKURA.logstem(), SAKURA.planks(), SAKURA.strippedLogStem(), SAKURA.slab(), SAKURA.fence(), SAKURA.trapdoor()));
-        woodMats.add(new McwWoodMat(SKYRIS.logstem(), SKYRIS.planks(), SKYRIS.strippedLogStem(), SKYRIS.slab(), SKYRIS.fence(), SKYRIS.trapdoor()));
-        woodMats.add(new McwWoodMat(WHITE_MANGROVE.logstem(), WHITE_MANGROVE.planks(), WHITE_MANGROVE.strippedLogStem(), WHITE_MANGROVE.slab(), WHITE_MANGROVE.fence(), WHITE_MANGROVE.trapdoor()));
-        woodMats.add(new McwWoodMat(WILLOW.logstem(), WILLOW.planks(), WILLOW.strippedLogStem(), WILLOW.slab(), WILLOW.fence(), WILLOW.trapdoor()));
-        woodMats.add(new McwWoodMat(WITCH_HAZEL.logstem(), WITCH_HAZEL.planks(), WITCH_HAZEL.strippedLogStem(), WITCH_HAZEL.slab(), WITCH_HAZEL.fence(), WITCH_HAZEL.trapdoor()));
-        woodMats.add(new McwWoodMat(ZELKOVA.logstem(), ZELKOVA.planks(), ZELKOVA.strippedLogStem(), ZELKOVA.slab(), ZELKOVA.fence(), ZELKOVA.trapdoor()));
-        woodMats.add(new McwWoodMat(FLORUS.logstem(), FLORUS.planks(), FLORUS.strippedLogStem(), FLORUS.slab(), FLORUS.fence(), FLORUS.trapdoor()));
+        List<McwWoodMat<Block>> woodMats = new ArrayList<>();
+        woodMats.add(new McwWoodMat<>(ASPEN.logstem(), ASPEN.planks(), ASPEN.strippedLogStem(), ASPEN.slab(), ASPEN.fence(), ASPEN.trapdoor()));
+        woodMats.add(new McwWoodMat<>(BAOBAB.logstem(), BAOBAB.planks(), BAOBAB.strippedLogStem(), BAOBAB.slab(), BAOBAB.fence(), BAOBAB.trapdoor()));
+        woodMats.add(new McwWoodMat<>(BLUE_ENCHANTED.logstem(), BLUE_ENCHANTED.planks(), BLUE_ENCHANTED.strippedLogStem(), BLUE_ENCHANTED.slab(), BLUE_ENCHANTED.fence(), BLUE_ENCHANTED.trapdoor()));
+        woodMats.add(new McwWoodMat<>(CIKA.logstem(), CIKA.planks(), CIKA.strippedLogStem(), CIKA.slab(), CIKA.fence(), CIKA.trapdoor()));
+        woodMats.add(new McwWoodMat<>(CYPRESS.logstem(), CYPRESS.planks(), CYPRESS.strippedLogStem(), CYPRESS.slab(), CYPRESS.fence(), CYPRESS.trapdoor()));
+        woodMats.add(new McwWoodMat<>(EBONY.logstem(), EBONY.planks(), EBONY.strippedLogStem(), EBONY.slab(), EBONY.fence(), EBONY.trapdoor()));
+        woodMats.add(new McwWoodMat<>(FIR.logstem(), FIR.planks(), FIR.strippedLogStem(), FIR.slab(), FIR.fence(), FIR.trapdoor()));
+        woodMats.add(new McwWoodMat<>(GREEN_ENCHANTED.logstem(), GREEN_ENCHANTED.planks(), GREEN_ENCHANTED.strippedLogStem(), GREEN_ENCHANTED.slab(), GREEN_ENCHANTED.fence(), GREEN_ENCHANTED.trapdoor()));
+        woodMats.add(new McwWoodMat<>(HOLLY.logstem(), HOLLY.planks(), HOLLY.strippedLogStem(), HOLLY.slab(), HOLLY.fence(), HOLLY.trapdoor()));
+        woodMats.add(new McwWoodMat<>(IRONWOOD.logstem(), IRONWOOD.planks(), IRONWOOD.strippedLogStem(), IRONWOOD.slab(), IRONWOOD.fence(), IRONWOOD.trapdoor()));
+        woodMats.add(new McwWoodMat<>(JACARANDA.logstem(), JACARANDA.planks(), JACARANDA.strippedLogStem(), JACARANDA.slab(), JACARANDA.fence(), JACARANDA.trapdoor()));
+        woodMats.add(new McwWoodMat<>(MAHOGANY.logstem(), MAHOGANY.planks(), MAHOGANY.strippedLogStem(), MAHOGANY.slab(), MAHOGANY.fence(), MAHOGANY.trapdoor()));
+        woodMats.add(new McwWoodMat<>(MAPLE.logstem(), MAPLE.planks(), MAPLE.strippedLogStem(), MAPLE.slab(), MAPLE.fence(), MAPLE.trapdoor()));
+        woodMats.add(new McwWoodMat<>(PALM.logstem(), PALM.planks(), PALM.strippedLogStem(), PALM.slab(), PALM.fence(), PALM.trapdoor()));
+        woodMats.add(new McwWoodMat<>(PINE.logstem(), PINE.planks(), PINE.strippedLogStem(), PINE.slab(), PINE.fence(), PINE.trapdoor()));
+        woodMats.add(new McwWoodMat<>(RAINBOW_EUCALYPTUS.logstem(), RAINBOW_EUCALYPTUS.planks(), RAINBOW_EUCALYPTUS.strippedLogStem(), RAINBOW_EUCALYPTUS.slab(), RAINBOW_EUCALYPTUS.fence(), RAINBOW_EUCALYPTUS.trapdoor()));
+        woodMats.add(new McwWoodMat<>(REDWOOD.logstem(), REDWOOD.planks(), REDWOOD.strippedLogStem(), REDWOOD.slab(), REDWOOD.fence(), REDWOOD.trapdoor()));
+        woodMats.add(new McwWoodMat<>(SAKURA.logstem(), SAKURA.planks(), SAKURA.strippedLogStem(), SAKURA.slab(), SAKURA.fence(), SAKURA.trapdoor()));
+        woodMats.add(new McwWoodMat<>(SKYRIS.logstem(), SKYRIS.planks(), SKYRIS.strippedLogStem(), SKYRIS.slab(), SKYRIS.fence(), SKYRIS.trapdoor()));
+        woodMats.add(new McwWoodMat<>(WHITE_MANGROVE.logstem(), WHITE_MANGROVE.planks(), WHITE_MANGROVE.strippedLogStem(), WHITE_MANGROVE.slab(), WHITE_MANGROVE.fence(), WHITE_MANGROVE.trapdoor()));
+        woodMats.add(new McwWoodMat<>(WILLOW.logstem(), WILLOW.planks(), WILLOW.strippedLogStem(), WILLOW.slab(), WILLOW.fence(), WILLOW.trapdoor()));
+        woodMats.add(new McwWoodMat<>(WITCH_HAZEL.logstem(), WITCH_HAZEL.planks(), WITCH_HAZEL.strippedLogStem(), WITCH_HAZEL.slab(), WITCH_HAZEL.fence(), WITCH_HAZEL.trapdoor()));
+        woodMats.add(new McwWoodMat<>(ZELKOVA.logstem(), ZELKOVA.planks(), ZELKOVA.strippedLogStem(), ZELKOVA.slab(), ZELKOVA.fence(), ZELKOVA.trapdoor()));
+        woodMats.add(new McwWoodMat<>(FLORUS.logstem(), FLORUS.planks(), FLORUS.strippedLogStem(), FLORUS.slab(), FLORUS.fence(), FLORUS.trapdoor()));
         return woodMats;
     }
 }

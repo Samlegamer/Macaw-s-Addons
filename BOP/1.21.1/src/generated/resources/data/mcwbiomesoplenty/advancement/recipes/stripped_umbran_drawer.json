@@ -3,21 +3,21 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_stripped_umbran_log": {
-          "conditions": {
-            "items": [
-              {
-                "items": "biomesoplenty:stripped_umbran_log"
-              }
-            ]
-          },
-          "trigger": "minecraft:inventory_changed"
-        },
         "has_the_recipe": {
           "conditions": {
             "recipe": "mcwbiomesoplenty:stripped_umbran_drawer"
           },
           "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_umbran_log": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomesoplenty:umbran_log"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
         }
       },
       "forge:condition": {
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_stripped_umbran_log"
+          "has_umbran_log"
         ]
       ],
       "rewards": {

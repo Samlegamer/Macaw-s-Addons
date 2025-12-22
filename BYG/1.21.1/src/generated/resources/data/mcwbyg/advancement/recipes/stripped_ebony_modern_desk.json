@@ -3,11 +3,11 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_stripped_ebony_log": {
+        "has_ebony_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomeswevegone:stripped_ebony_log"
+                "items": "biomeswevegone:ebony_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_stripped_ebony_log"
+          "has_ebony_log"
         ]
       ],
       "rewards": {

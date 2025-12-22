@@ -9,11 +9,11 @@
           },
           "trigger": "minecraft:recipe_unlocked"
         },
-        "has_witch_hazel_slab": {
+        "has_witch_hazel_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomeswevegone:witch_hazel_slab"
+                "items": "biomeswevegone:witch_hazel_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_witch_hazel_slab"
+          "has_witch_hazel_log"
         ]
       ],
       "rewards": {

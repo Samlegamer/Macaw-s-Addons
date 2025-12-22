@@ -3,11 +3,11 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_sakura_slab": {
+        "has_sakura_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomeswevegone:sakura_slab"
+                "items": "biomeswevegone:sakura_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_sakura_slab"
+          "has_sakura_log"
         ]
       ],
       "rewards": {
