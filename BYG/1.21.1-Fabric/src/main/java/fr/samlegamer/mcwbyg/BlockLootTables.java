@@ -8,8 +8,8 @@ import java.util.concurrent.CompletableFuture;
 
 public class BlockLootTables extends McwLootTables
 {
-    protected BlockLootTables(FabricDataOutput dataGenerator, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
-        super(dataGenerator, registryLookup);
+    protected BlockLootTables(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+        super(dataOutput, registryLookup);
     }
 
     @Override

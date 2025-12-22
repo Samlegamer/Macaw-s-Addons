@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwtrpdoors",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwtrpdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_baobab_planks": {
+    "has_baobab_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomeswevegone:baobab_planks"
+            "items": "biomeswevegone:baobab_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_baobab_planks"
+      "has_baobab_log"
     ]
   ],
   "rewards": {

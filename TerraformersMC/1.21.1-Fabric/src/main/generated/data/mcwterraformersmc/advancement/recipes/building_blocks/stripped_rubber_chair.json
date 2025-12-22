@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "terrestria"
+        "terrestria",
+        "mcwfurnitures"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_rubber_log": {
+    "has_rubber_log": {
       "conditions": {
         "items": [
           {
-            "items": "terrestria:stripped_rubber_log"
+            "items": "terrestria:rubber_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stripped_rubber_log"
+      "has_rubber_log"
     ]
   ],
   "rewards": {

@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwdoors"
       ]
     }
   ],
@@ -16,11 +16,11 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_willow_planks": {
+    "has_willow_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomeswevegone:willow_planks"
+            "items": "biomeswevegone:willow_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_willow_planks"
+      "has_willow_log"
     ]
   ],
   "rewards": {

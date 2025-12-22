@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwfurnitures"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_palm_log": {
+    "has_palm_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomeswevegone:stripped_palm_log"
+            "items": "biomeswevegone:palm_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stripped_palm_log"
+      "has_palm_log"
     ]
   ],
   "rewards": {

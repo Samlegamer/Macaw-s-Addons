@@ -1,5 +1,7 @@
 package fr.samlegamer.mcwterraformersmc.client;
 
+import fr.addonslib.api.client.McwColors;
+import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.client.ColorRegistry;
@@ -7,19 +9,25 @@ import fr.samlegamer.mcwterraformersmc.McwTerraformersMC;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import java.util.List;
+import java.util.Arrays;
 
 @Environment(EnvType.CLIENT)
 public class Client implements ClientModInitializer
 {
-    protected static final ColorRegistry colorRegistry = new ColorRegistry(McwTerraformersMC.MODID, List.of("redwood", "hemlock", "rubber", "cypress",
-            "willow", "japanese_maple_shrub", "rainbow_eucalyptus"));
+    protected static final ColorRegistry colorRegistry = new ColorRegistry(new McwColors(Arrays.asList(
+            Finder.makeIdHedge(McwTerraformersMC.MODID, "redwood"),
+            Finder.makeIdHedge(McwTerraformersMC.MODID, "hemlock"),
+            Finder.makeIdHedge(McwTerraformersMC.MODID, "rubber"),
+            Finder.makeIdHedge(McwTerraformersMC.MODID, "cypress"),
+            Finder.makeIdHedge(McwTerraformersMC.MODID, "willow"),
+            Finder.makeIdHedge(McwTerraformersMC.MODID, "japanese_maple_shrub"),
+            Finder.makeIdHedge(McwTerraformersMC.MODID, "rainbow_eucalyptus"))));
 
     @Override
     public void onInitializeClient()
     {
-        colorRegistry.colorsBlock();
-        colorRegistry.colorsItem();
+        colorRegistry.registryBlockColorsAverage();
+        colorRegistry.registryItemColors();
 
         APIRenderTypes.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, Registration.getAllModTypeWood());
         APIRenderTypes.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE);

@@ -2,7 +2,6 @@
 	"schemaVersion": 1,
   "id": "${archives_base_name}",
   "version": "${version}",
-
   "name": "${mod_name}",
   "description": "${mod_description}",
   "authors": [
@@ -32,7 +31,7 @@
 		"java": ">=21",
 		"fabric-api": "*",
         "biomesoplenty": ">=21.1.0.7",
-        "addonslib": ">=1.21.1-1.10"
+        "addonslib": ">=1.21.1-1.12"
 	},
 	"suggests": {
 		"another-mod": "*"

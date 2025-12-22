@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfences",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwfences"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_maple_planks": {
+    "has_maple_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomeswevegone:maple_planks"
+            "items": "biomeswevegone:maple_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_maple_planks"
+      "has_maple_log"
     ]
   ],
   "rewards": {

@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "cinderscapes"
+        "cinderscapes",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_scorched_planks": {
+    "has_scorched_stem": {
       "conditions": {
         "items": [
           {
-            "items": "cinderscapes:scorched_planks"
+            "items": "cinderscapes:scorched_stem"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_scorched_planks"
+      "has_scorched_stem"
     ]
   ],
   "rewards": {

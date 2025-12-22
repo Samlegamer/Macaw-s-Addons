@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "terrestria"
+        "terrestria",
+        "mcwfurnitures"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_rainbow_eucalyptus_log": {
+    "has_rainbow_eucalyptus_log": {
       "conditions": {
         "items": [
           {
-            "items": "terrestria:stripped_rainbow_eucalyptus_log"
+            "items": "terrestria:rainbow_eucalyptus_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stripped_rainbow_eucalyptus_log"
+      "has_rainbow_eucalyptus_log"
     ]
   ],
   "rewards": {
