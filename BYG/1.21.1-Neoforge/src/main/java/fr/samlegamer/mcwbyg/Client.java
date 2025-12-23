@@ -1,6 +1,8 @@
 package fr.samlegamer.mcwbyg;
 
-import java.util.List;
+import java.util.Arrays;
+import fr.addonslib.api.client.McwColors;
+import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.client.ColorRegistry;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -10,18 +12,19 @@ import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 @EventBusSubscriber(modid = McwByg.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class Client
 {
-	private static final List<String> LEAVES_NO_COLORED = List.of("mahogany", "maple");
-	private static final ColorRegistry COLOR = new ColorRegistry(McwByg.MODID, LEAVES_NO_COLORED);
+	private static final ColorRegistry COLOR = new ColorRegistry(new McwColors(Arrays.asList(
+			Finder.makeIdHedge(McwByg.MODID, "mahogany"),
+			Finder.makeIdHedge(McwByg.MODID, "maple"))));
 
 	@SubscribeEvent
 	public static void colorsBlock(RegisterColorHandlersEvent.Block event)
 	{
-		COLOR.colorsBlock(event);
+		COLOR.registryBlockColorsAverage(event);
 	}
-	
+
 	@SubscribeEvent
 	public static void colorsItem(RegisterColorHandlersEvent.Item event)
 	{
-		COLOR.colorsItem(event);
+		COLOR.registryItemColors(event);
 	}
 }

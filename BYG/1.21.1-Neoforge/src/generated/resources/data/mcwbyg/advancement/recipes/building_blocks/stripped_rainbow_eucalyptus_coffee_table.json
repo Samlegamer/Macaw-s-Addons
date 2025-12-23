@@ -1,21 +1,26 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "biomeswevegone"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_rainbow_eucalyptus_log": {
+    "has_rainbow_eucalyptus_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomeswevegone:stripped_rainbow_eucalyptus_log"
+            "items": "biomeswevegone:rainbow_eucalyptus_log"
           }
         ]
       },
@@ -31,7 +36,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stripped_rainbow_eucalyptus_log"
+      "has_rainbow_eucalyptus_log"
     ]
   ],
   "rewards": {
