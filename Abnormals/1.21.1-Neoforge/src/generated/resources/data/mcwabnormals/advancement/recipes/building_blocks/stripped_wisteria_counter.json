@@ -1,37 +1,42 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "environmental"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "environmental"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_wisteria_log": {
-      "conditions": {
-        "items": [
-          {
-            "items": "environmental:stripped_wisteria_log"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "mcwabnormals:stripped_wisteria_counter"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wisteria_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "environmental:wisteria_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_stripped_wisteria_log"
+      "has_wisteria_log"
     ]
   ],
   "rewards": {

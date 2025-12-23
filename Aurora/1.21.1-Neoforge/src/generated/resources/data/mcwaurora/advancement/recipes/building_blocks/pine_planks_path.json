@@ -1,21 +1,26 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwpaths"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "nomansland"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwpaths"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "nomansland"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pine_planks": {
+    "has_pine_log": {
       "conditions": {
         "items": [
           {
-            "items": "nomansland:pine_planks"
+            "items": "nomansland:pine_log"
           }
         ]
       },
@@ -31,7 +36,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_pine_planks"
+      "has_pine_log"
     ]
   ],
   "rewards": {

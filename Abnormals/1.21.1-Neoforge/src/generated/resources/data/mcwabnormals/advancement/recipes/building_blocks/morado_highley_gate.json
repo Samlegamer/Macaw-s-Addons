@@ -1,21 +1,26 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "atmospheric"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "atmospheric"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_morado_planks": {
+    "has_morado_log": {
       "conditions": {
         "items": [
           {
-            "items": "atmospheric:morado_planks"
+            "items": "atmospheric:morado_log"
           }
         ]
       },
@@ -31,7 +36,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_morado_planks"
+      "has_morado_log"
     ]
   ],
   "rewards": {

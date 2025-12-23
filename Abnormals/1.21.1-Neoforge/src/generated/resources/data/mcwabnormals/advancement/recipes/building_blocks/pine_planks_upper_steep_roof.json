@@ -1,21 +1,26 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwroofs"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "environmental"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "environmental"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pine_planks": {
+    "has_pine_log": {
       "conditions": {
         "items": [
           {
-            "items": "environmental:pine_planks"
+            "items": "environmental:pine_log"
           }
         ]
       },
@@ -31,7 +36,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_pine_planks"
+      "has_pine_log"
     ]
   ],
   "rewards": {

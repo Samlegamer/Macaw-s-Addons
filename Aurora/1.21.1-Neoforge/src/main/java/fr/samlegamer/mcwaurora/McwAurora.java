@@ -1,16 +1,14 @@
 package fr.samlegamer.mcwaurora;
 
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
-import fr.samlegamer.addonslib.door.Doors;
-import fr.samlegamer.addonslib.furnitures.AddFurnituresStorage;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
-import fr.samlegamer.addonslib.path.Paths;
+import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.tab.APICreativeTab;
-import fr.samlegamer.addonslib.trapdoor.Trapdoors;
+import fr.samlegamer.addonslib.util.McwCommon;
 import fr.samlegamer.addonslib.util.McwMod;
-import fr.samlegamer.addonslib.windows.Windows;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -19,11 +17,10 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.CompletableFuture;
-
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
@@ -39,13 +36,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.bridges.Bridges;
-import fr.samlegamer.addonslib.fences.Fences;
-import fr.samlegamer.addonslib.furnitures.Furnitures;
-import fr.samlegamer.addonslib.roofs.Roofs;
-import fr.samlegamer.addonslib.stairs.Stairs;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
-import fr.samlegamer.addonslib.tab.NewIconRandom.BlockType;
+import org.jetbrains.annotations.NotNull;
 
 @Mod(McwAurora.MODID)
 public class McwAurora extends McwMod
@@ -69,33 +61,13 @@ public class McwAurora extends McwMod
         super(modBus);
         LOGGER.info("Macaw's Aurora Mod Loading...");
     	Registration.init(modBus, block, item, ct);
+		final List<String> leaveClassic = List.of("maple", "pine", "walnut", "willow", "autumnal_oak", "frosted", "yellow_birch", "red_maple");
+		Map<String, SoundType> leaveSoundCherry = McwRegistry.makeDefaultFromList(List.of("pale_cherry"), SoundType.CHERRY_LEAVES);
 
-    	Bridges.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-    	Roofs.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-    	Fences.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-		Furnitures.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-    	Stairs.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-		Paths.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-		Trapdoors.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-		Doors.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-		Windows.setRegistrationWood(WOOD_ENHANCED_MUSH, block, item);
-
-		Bridges.setRegistrationWood(WOOD_NOMANSLAND, block, item);
-		Roofs.setRegistrationWood(WOOD_NOMANSLAND, block, item);
-		Fences.setRegistrationWood(WOOD_NOMANSLAND, block, item);
-
-		final List<String> leaveClassic = List.of("maple", "pine", "walnut", "willow", "autumnal_oak", "frosted", "yellow_birch", "red_maple"); // nomansland
-		final List<String> leaveCherry = List.of("pale_cherry"); // nomansland
-
-		Fences.setRegistrationHedges(leaveClassic, block, item);
-		Fences.setRegistrationHedgesModLoaded(leaveCherry, block, item, BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES));
-
-		Furnitures.setRegistrationWood(WOOD_NOMANSLAND, block, item);
-		Stairs.setRegistrationWood(WOOD_NOMANSLAND, block, item);
-		Paths.setRegistrationWood(WOOD_NOMANSLAND, block, item);
-		Trapdoors.setRegistrationWood(WOOD_NOMANSLAND, block, item);
-		Doors.setRegistrationWood(WOOD_NOMANSLAND, block, item);
-		Windows.setRegistrationWood(WOOD_NOMANSLAND, block, item);
+		McwRegistry.setRegistriesWood(WOOD_ENHANCED_MUSH, block, item, Registration.getAllModTypeWood());
+		McwRegistry.setRegistriesWood(WOOD_NOMANSLAND, block, item, Registration.getAllModTypeWood());
+		McwRegistry.setRegistriesLeave(leaveClassic, block, item);
+		McwRegistry.setRegistriesLeave(leaveSoundCherry, block, item);
 
 		modBus.addListener(this::addToFurnitureStorage);
 		modBus.addListener(this::clientSetup);
@@ -131,9 +103,11 @@ public class McwAurora extends McwMod
         if(gatherDataEvent.includeServer()) {
             McwBlockTags mcwBlockTags = new McwBlockTags(output, registries, MODID, existingFileHelper) {
                 @Override
-                protected void addTags(HolderLookup.Provider provider) {
-                    addAllMcwTags(MODID, WOOD_ENHANCED_MUSH);
-                    addAllMcwTags(MODID, WOOD_NOMANSLAND, LEAVE_NOMANSLAND);
+                protected void addTags(HolderLookup.@NotNull Provider provider) {
+                    addAllMcwTagsWood(MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());
+
+					addAllMcwTagsWood(MODID, WOOD_NOMANSLAND, Registration.getAllModTypeWood());
+					addAllMcwTagsLeave(MODID, LEAVE_NOMANSLAND);
                 }
             };
 
@@ -141,9 +115,11 @@ public class McwAurora extends McwMod
             generator.addProvider(true, mcwBlockTags);
             generator.addProvider(true, new McwItemTags(output, registries, mcwBlockTags.contentsGetter(), MODID, existingFileHelper) {
                 @Override
-                protected void addTags(HolderLookup.Provider provider) {
-                    addAllMcwTags(MODID, WOOD_ENHANCED_MUSH);
-                    addAllMcwTags(MODID, WOOD_NOMANSLAND, LEAVE_NOMANSLAND);
+                protected void addTags(HolderLookup.@NotNull Provider provider) {
+					addAllMcwTagsWood(MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());
+
+					addAllMcwTagsWood(MODID, WOOD_NOMANSLAND, Registration.getAllModTypeWood());
+					addAllMcwTagsLeave(MODID, LEAVE_NOMANSLAND);
                 }
             });
         }
@@ -164,8 +140,8 @@ public class McwAurora extends McwMod
 
     public void addToFurnitureStorage(BlockEntityTypeAddBlocksEvent event)
 	{
-		AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD_ENHANCED_MUSH);
-		AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD_NOMANSLAND);
+		McwCommon.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD_ENHANCED_MUSH);
+		McwCommon.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD_NOMANSLAND);
 	}
     
     private static ItemStack getIcon()
@@ -181,17 +157,17 @@ public class McwAurora extends McwMod
 				Finder.findBlock(MODID, randomNaming()+"_planks_path"),
 				Finder.findBlock(MODID, randomNaming()+"_skyline_stairs"));
 
-		prop.addType(BlockType.BRIDGES)
-				.addType(BlockType.ROOFS)
-				.addType(BlockType.FENCES)
-				.addType(BlockType.FURNITURES)
-				.addType(BlockType.STAIRS)
-				.addType(BlockType.PATHS)
-				.addType(BlockType.WINDOWS)
-				.addType(BlockType.DOORS)
-				.addType(BlockType.TRAPDOORS);
-		Block icon = prop.buildIcon(BlockType.BRIDGES, BlockType.ROOFS, BlockType.FENCES, BlockType.FURNITURES, BlockType.STAIRS,
-				BlockType.PATHS, BlockType.WINDOWS, BlockType.DOORS, BlockType.TRAPDOORS);
+		prop.addType(ModType.BRIDGES)
+				.addType(ModType.ROOFS)
+				.addType(ModType.FENCES)
+				.addType(ModType.FURNITURES)
+				.addType(ModType.STAIRS)
+				.addType(ModType.PATHS)
+				.addType(ModType.WINDOWS)
+				.addType(ModType.DOORS)
+				.addType(ModType.TRAPDOORS);
+		Block icon = prop.buildIcon(ModType.BRIDGES, ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.STAIRS,
+				ModType.PATHS, ModType.WINDOWS, ModType.DOORS, ModType.TRAPDOORS);
     	return new ItemStack(icon);
     }
 
