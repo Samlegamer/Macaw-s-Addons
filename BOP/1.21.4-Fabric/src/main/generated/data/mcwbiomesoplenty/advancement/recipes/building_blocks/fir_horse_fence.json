@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfences",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwfences"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_fir_planks": {
+    "has_fir_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomesoplenty:fir_planks"
+            "items": "biomesoplenty:fir_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_fir_planks"
+      "has_fir_log"
     ]
   ],
   "rewards": {

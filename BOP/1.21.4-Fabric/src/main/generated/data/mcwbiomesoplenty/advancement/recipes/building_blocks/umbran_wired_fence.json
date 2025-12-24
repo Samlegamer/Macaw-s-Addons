@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfences",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwfences"
       ]
     }
   ],
@@ -16,11 +16,11 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_umbran_planks": {
+    "has_umbran_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomesoplenty:umbran_planks"
+            "items": "biomesoplenty:umbran_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_umbran_planks"
+      "has_umbran_log"
     ]
   ],
   "rewards": {
