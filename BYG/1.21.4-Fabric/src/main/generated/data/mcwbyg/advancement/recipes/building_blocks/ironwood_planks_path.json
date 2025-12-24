@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwpaths",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwpaths"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ironwood_planks": {
+    "has_ironwood_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomeswevegone:ironwood_planks"
+            "items": "biomeswevegone:ironwood_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_ironwood_planks"
+      "has_ironwood_log"
     ]
   ],
   "rewards": {

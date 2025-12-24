@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_holly_planks": {
+    "has_holly_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomeswevegone:holly_planks"
+            "items": "biomeswevegone:holly_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_holly_planks"
+      "has_holly_log"
     ]
   ],
   "rewards": {

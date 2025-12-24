@@ -3,6 +3,17 @@ plugins {
 	id 'maven-publish'
 }
 
+def extraPropsFile = file('../../_properties/1.21.4fabricgradle.properties')
+if (extraPropsFile.exists()) {
+    def extraProps = new Properties()
+    extraPropsFile.withInputStream { extraProps.load(it) }
+    extraProps.each { k, v ->
+        project.ext.set(k.toString(), v.toString())
+    }
+} else {
+    println "WARNING: Properties file not found: ${extraPropsFile.absolutePath}"
+}
+
 version = project.mod_version
 group = project.maven_group
 
@@ -82,13 +93,13 @@ dependencies {
 
 
     modRuntimeOnly("com.terraformersmc:traverse-common:${traverse_version}")
-    //modImplementation("com.terraformersmc:traverse-client:${traverse_version}")
+    modImplementation("com.terraformersmc:traverse-client:${traverse_version}")
 
     modRuntimeOnly("com.terraformersmc:cinderscapes-common:${cinderscapes_version}")
-    //modImplementation("com.terraformersmc:cinderscapes-client:${cinderscapes_version}")
+    modImplementation("com.terraformersmc:cinderscapes-client:${cinderscapes_version}")
 
     modRuntimeOnly("com.terraformersmc:terrestria-common:${terrestria_version}")
-    //modImplementation("com.terraformersmc:terrestria-client:${terrestria_version}")
+    modImplementation("com.terraformersmc:terrestria-client:${terrestria_version}")
 
     modImplementation("com.terraformersmc:biolith-fabric:${biolith_fabric_version}")
     modImplementation "curse.maven:cloth-config-348521:${cloth_config_version}"

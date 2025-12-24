@@ -1,33 +1,18 @@
 package fr.samlegamer.mcwterraformersmc;
 
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.bridges.Bridges;
-import fr.samlegamer.addonslib.door.Doors;
-import fr.samlegamer.addonslib.fences.Fences;
 import fr.samlegamer.addonslib.fuel.APIFuels;
-import fr.samlegamer.addonslib.furnitures.AddFurnituresStorage;
-import fr.samlegamer.addonslib.furnitures.Furnitures;
-import fr.samlegamer.addonslib.path.Paths;
-import fr.samlegamer.addonslib.roofs.Roofs;
-import fr.samlegamer.addonslib.stairs.Stairs;
+import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
-import fr.samlegamer.addonslib.trapdoor.Trapdoors;
-import fr.samlegamer.addonslib.windows.Windows;
+import fr.samlegamer.addonslib.util.McwCommon;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
+import net.minecraft.sound.BlockSoundGroup;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.util.List;
@@ -50,88 +35,46 @@ public class McwTerraformersMC implements ModInitializer
     public static final List<String> LEAVES_TERRESTRIA = List.of("redwood", "hemlock", "rubber", "cypress", "willow", "japanese_maple",
             "rainbow_eucalyptus", "sakura", "yucca_palm", "japanese_maple_shrub", "dark_japanese_maple", "jungle_palm");
 
-    public static final ItemGroup MCWTERRAFORMERSMC_TAB = FabricItemGroup.builder().icon(McwTerraformersMC::icon)
-            .displayName(Text.translatable("itemGroup.minecraft.mcwterraformersmc.tab")).build();
-    private static final Identifier TAB_ID = Identifier.of(MODID + ".tab");
+    public static final ItemGroup MCWTERRAFORMERSMC_TAB = APICreativeTab.initGroup(MODID, McwTerraformersMC::icon);
 
     public void onInitialize()
     {
         LOGGER.info("Macaw's TerraformersMC Loading...");
-        final AbstractBlock.Settings wood = AbstractBlock.Settings.copy(Blocks.OAK_PLANKS);
-        final AbstractBlock.Settings woodCrimson = AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS);
-        final AbstractBlock.Settings stone = AbstractBlock.Settings.copy(Blocks.COBBLESTONE);
-        final AbstractBlock.Settings leave = AbstractBlock.Settings.copy(Blocks.OAK_LEAVES);
 
-        Bridges.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
-        Bridges.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, woodCrimson);
-        Bridges.setRegistrationRockModLoaded(MODID, ROCKS_CINDERSCAPES, stone);
-        Bridges.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
-        Bridges.setRegistrationRockModLoaded(MODID, ROCKS_TERRESTRIA, stone);
+        McwRegistry.setRegistriesWood(MODID, WOODS_TRAVERSE, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(MODID, McwRegistry.makeDefaultFromList(WOODS_CINDERSCAPES, BlockSoundGroup.NETHER_WOOD), Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(MODID, WOODS_TERRESTRIA, Registration.getAllModTypeWood());
 
-        Roofs.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
-        Roofs.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, woodCrimson);
-        Roofs.setRegistrationRockModLoaded(MODID, ROCKS_CINDERSCAPES, stone);
-        Roofs.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
-        Roofs.setRegistrationRockModLoaded(MODID, ROCKS_TERRESTRIA, stone);
+        McwRegistry.setRegistriesLeave(MODID, LEAVES_TRAVERSE);
+        McwRegistry.setRegistriesLeave(MODID, LEAVES_TERRESTRIA);
 
-        Fences.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
-        Fences.setRegistrationHedgesModLoaded(MODID, LEAVES_TRAVERSE, leave);
-        Fences.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, woodCrimson);
-        Fences.setRegistrationRockModLoaded(MODID, ROCKS_CINDERSCAPES, stone);
-        Fences.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
-        Fences.setRegistrationHedgesModLoaded(MODID, LEAVES_TERRESTRIA, leave);
-        Fences.setRegistrationRockModLoaded(MODID, ROCKS_TERRESTRIA, stone);
+        McwRegistry.setRegistriesStone(MODID, ROCKS_CINDERSCAPES, Registration.getAllModTypeStone());
+        McwRegistry.setRegistriesStone(MODID, ROCKS_TERRESTRIA, Registration.getAllModTypeStone());
+        
+        McwCommon.addCompatibleBlocksToFurnitureStorage(MODID, WOODS_TRAVERSE);
+        McwCommon.addCompatibleBlocksToFurnitureStorage(MODID, WOODS_CINDERSCAPES);
+        McwCommon.addCompatibleBlocksToFurnitureStorage(MODID, WOODS_TERRESTRIA);
 
-        Furnitures.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
-        Furnitures.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, woodCrimson);
-        Furnitures.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
+        APICreativeTab.registerGroup(MODID, MCWTERRAFORMERSMC_TAB);
+        boolean isDev = FabricLoader.getInstance().isDevelopmentEnvironment();
 
-        Stairs.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
-        Stairs.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, woodCrimson);
-        Stairs.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
-
-        Paths.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
-        Paths.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, woodCrimson);
-        Paths.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
-
-        Doors.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, AbstractBlock.Settings.copy(Blocks.OAK_DOOR), AbstractBlock.Settings.copy(Blocks.OAK_DOOR));
-        Doors.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, AbstractBlock.Settings.copy(Blocks.CRIMSON_DOOR), AbstractBlock.Settings.copy(Blocks.CRIMSON_DOOR));
-        Doors.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, AbstractBlock.Settings.copy(Blocks.OAK_DOOR), AbstractBlock.Settings.copy(Blocks.OAK_DOOR));
-
-        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR));
-        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, AbstractBlock.Settings.copy(Blocks.CRIMSON_TRAPDOOR));
-        Trapdoors.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR));
-
-        Windows.setRegistrationWoodModLoaded(MODID, WOODS_TRAVERSE, wood);
-        Windows.setRegistrationWoodModLoaded(MODID, WOODS_CINDERSCAPES, woodCrimson);
-        Windows.setRegistrationWoodModLoaded(MODID, WOODS_TERRESTRIA, wood);
-
-        AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(MODID, WOODS_TRAVERSE);
-        AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(MODID, WOODS_CINDERSCAPES);
-        AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(MODID, WOODS_TERRESTRIA);
-
-        Registry.register(Registries.ITEM_GROUP, TAB_ID, MCWTERRAFORMERSMC_TAB);
-        RegistryKey<ItemGroup> group_key = RegistryKey.of(RegistryKeys.ITEM_GROUP, TAB_ID);
-
-        String suffixMld = FabricLoader.getInstance().isDevelopmentEnvironment() ? "-common" : "";
-
-        if(FabricLoader.getInstance().isModLoaded("traverse"+suffixMld))
+        if(FabricLoader.getInstance().isModLoaded("traverse") || isDev)
         {
-            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, group_key, Registration.getAllModTypeWood());
-            APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE, group_key);
+            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeWood());
+            APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE, MCWTERRAFORMERSMC_TAB);
         }
 
-        if(FabricLoader.getInstance().isModLoaded("cinderscapes"+suffixMld))
+        if(FabricLoader.getInstance().isModLoaded("cinderscapes") || isDev)
         {
-            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, group_key, Registration.getAllModTypeWood());
-            APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, group_key, Registration.getAllModTypeStone());
+            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeWood());
+            APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeStone());
         }
 
-        if(FabricLoader.getInstance().isModLoaded("terrestria"+suffixMld))
+        if(FabricLoader.getInstance().isModLoaded("terrestria") || isDev)
         {
-            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, group_key, Registration.getAllModTypeWood());
-            APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA, group_key);
-            APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA, group_key, Registration.getAllModTypeStone());
+            APICreativeTab.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeWood());
+            APICreativeTab.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA, MCWTERRAFORMERSMC_TAB);
+            APICreativeTab.initAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeStone());
         }
 
         APIFuels.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, Registration.getAllModTypeWood());
@@ -157,18 +100,18 @@ public class McwTerraformersMC implements ModInitializer
                 Finder.findBlock(MODID, randomNaming()+"_planks_path"),
                 Finder.findBlock(MODID, randomNaming()+"_skyline_stairs"));
 
-        propIcon.addType(NewIconRandom.BlockType.BRIDGES)
-                .addType(NewIconRandom.BlockType.ROOFS)
-                .addType(NewIconRandom.BlockType.FENCES)
-                .addType(NewIconRandom.BlockType.FURNITURES)
-                .addType(NewIconRandom.BlockType.STAIRS)
-                .addType(NewIconRandom.BlockType.PATHS)
-                .addType(NewIconRandom.BlockType.DOORS)
-                .addType(NewIconRandom.BlockType.WINDOWS)
-                .addType(NewIconRandom.BlockType.TRAPDOORS);
-        return new ItemStack(propIcon.buildIcon(NewIconRandom.BlockType.BRIDGES, NewIconRandom.BlockType.ROOFS, NewIconRandom.BlockType.FENCES,
-                NewIconRandom.BlockType.FURNITURES, NewIconRandom.BlockType.STAIRS, NewIconRandom.BlockType.PATHS, NewIconRandom.BlockType.DOORS,
-                NewIconRandom.BlockType.WINDOWS, NewIconRandom.BlockType.TRAPDOORS));
+        propIcon.addType(ModType.BRIDGES)
+                .addType(ModType.ROOFS)
+                .addType(ModType.FENCES)
+                .addType(ModType.FURNITURES)
+                .addType(ModType.STAIRS)
+                .addType(ModType.PATHS)
+                .addType(ModType.DOORS)
+                .addType(ModType.WINDOWS)
+                .addType(ModType.TRAPDOORS);
+        return new ItemStack(propIcon.buildIcon(ModType.BRIDGES, ModType.ROOFS, ModType.FENCES,
+                ModType.FURNITURES, ModType.STAIRS, ModType.PATHS, ModType.DOORS,
+                ModType.WINDOWS, ModType.TRAPDOORS));
     }
 
     private static String randomNaming()

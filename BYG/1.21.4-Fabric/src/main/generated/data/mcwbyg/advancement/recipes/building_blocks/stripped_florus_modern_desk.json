@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwfurnitures"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_florus_stem": {
+    "has_florus_stem": {
       "conditions": {
         "items": [
           {
-            "items": "biomeswevegone:stripped_florus_stem"
+            "items": "biomeswevegone:florus_stem"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stripped_florus_stem"
+      "has_florus_stem"
     ]
   ],
   "rewards": {

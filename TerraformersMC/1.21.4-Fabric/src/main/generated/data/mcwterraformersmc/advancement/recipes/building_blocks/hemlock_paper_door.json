@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "terrestria"
+        "terrestria",
+        "mcwdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hemlock_planks": {
+    "has_hemlock_log": {
       "conditions": {
         "items": [
           {
-            "items": "terrestria:hemlock_planks"
+            "items": "terrestria:hemlock_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_hemlock_planks"
+      "has_hemlock_log"
     ]
   ],
   "rewards": {

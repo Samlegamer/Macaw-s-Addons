@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "biomeswevegone"
+        "biomeswevegone",
+        "mcwdoors"
       ]
     }
   ],
@@ -16,11 +16,11 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_zelkova_slab": {
+    "has_zelkova_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomeswevegone:zelkova_slab"
+            "items": "biomeswevegone:zelkova_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_zelkova_slab"
+      "has_zelkova_log"
     ]
   ],
   "rewards": {
