@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwdoors",
-        "cinderscapes"
+        "cinderscapes",
+        "mcwdoors"
       ]
     }
   ],
@@ -16,11 +16,11 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_umbral_planks": {
+    "has_umbral_stem": {
       "conditions": {
         "items": [
           {
-            "items": "cinderscapes:umbral_planks"
+            "items": "cinderscapes:umbral_stem"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_umbral_planks"
+      "has_umbral_stem"
     ]
   ],
   "rewards": {

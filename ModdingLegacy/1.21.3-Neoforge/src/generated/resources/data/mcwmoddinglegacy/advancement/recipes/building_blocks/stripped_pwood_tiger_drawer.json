@@ -1,37 +1,42 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "premium_wood"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_tiger_log": {
-      "conditions": {
-        "items": [
-          {
-            "items": "premium_wood:stripped_tiger_log"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "mcwmoddinglegacy:stripped_pwood_tiger_drawer"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tiger_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "premium_wood:tiger_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_stripped_tiger_log"
+      "has_tiger_log"
     ]
   ],
   "rewards": {

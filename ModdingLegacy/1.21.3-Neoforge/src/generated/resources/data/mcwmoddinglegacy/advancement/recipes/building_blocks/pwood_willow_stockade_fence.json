@@ -1,12 +1,17 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwfences"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "premium_wood"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
@@ -17,11 +22,11 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_willow_planks": {
+    "has_willow_log": {
       "conditions": {
         "items": [
           {
-            "items": "premium_wood:willow_planks"
+            "items": "premium_wood:willow_log"
           }
         ]
       },
@@ -31,7 +36,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_willow_planks"
+      "has_willow_log"
     ]
   ],
   "rewards": {

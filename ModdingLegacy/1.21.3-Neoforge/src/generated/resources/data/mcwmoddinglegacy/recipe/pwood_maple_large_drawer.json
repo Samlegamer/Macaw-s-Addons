@@ -1,17 +1,22 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "premium_wood"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ]
     }
   ],
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "large_drawer",
+  "group": "large_drawers",
   "key": {
     "A": "premium_wood:maple_log",
     "B": "mcwfurnitures:cabinet_drawer"

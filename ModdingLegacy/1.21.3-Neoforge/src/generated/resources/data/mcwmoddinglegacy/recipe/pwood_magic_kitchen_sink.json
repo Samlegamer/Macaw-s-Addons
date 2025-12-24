@@ -1,17 +1,22 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "premium_wood"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ]
     }
   ],
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "kitchen_sink",
+  "group": "kitchen_sinks",
   "key": {
     "A": "premium_wood:magic_log",
     "B": "minecraft:water_bucket",

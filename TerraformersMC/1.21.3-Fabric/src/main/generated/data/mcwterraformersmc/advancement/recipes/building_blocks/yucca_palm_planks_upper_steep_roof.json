@@ -3,8 +3,8 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwroofs",
-        "terrestria"
+        "terrestria",
+        "mcwroofs"
       ]
     }
   ],
@@ -16,11 +16,11 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_yucca_palm_planks": {
+    "has_yucca_palm_log": {
       "conditions": {
         "items": [
           {
-            "items": "terrestria:yucca_palm_planks"
+            "items": "terrestria:yucca_palm_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_yucca_palm_planks"
+      "has_yucca_palm_log"
     ]
   ],
   "rewards": {

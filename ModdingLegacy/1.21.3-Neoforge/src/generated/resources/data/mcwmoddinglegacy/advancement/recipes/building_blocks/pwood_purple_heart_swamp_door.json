@@ -1,21 +1,26 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwdoors"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "premium_wood"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_purple_heart_planks": {
+    "has_purple_heart_log": {
       "conditions": {
         "items": [
           {
-            "items": "premium_wood:purple_heart_planks"
+            "items": "premium_wood:purple_heart_log"
           }
         ]
       },
@@ -31,7 +36,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_purple_heart_planks"
+      "has_purple_heart_log"
     ]
   ],
   "rewards": {

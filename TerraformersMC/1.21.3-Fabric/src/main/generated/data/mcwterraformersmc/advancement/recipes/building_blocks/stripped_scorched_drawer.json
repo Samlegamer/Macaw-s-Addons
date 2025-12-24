@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "cinderscapes"
+        "cinderscapes",
+        "mcwfurnitures"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_scorched_stem": {
+    "has_scorched_stem": {
       "conditions": {
         "items": [
           {
-            "items": "cinderscapes:stripped_scorched_stem"
+            "items": "cinderscapes:scorched_stem"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stripped_scorched_stem"
+      "has_scorched_stem"
     ]
   ],
   "rewards": {

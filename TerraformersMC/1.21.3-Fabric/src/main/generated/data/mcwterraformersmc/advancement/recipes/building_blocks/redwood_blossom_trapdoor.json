@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwtrpdoors",
-        "terrestria"
+        "terrestria",
+        "mcwtrpdoors"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_redwood_planks": {
+    "has_redwood_log": {
       "conditions": {
         "items": [
           {
-            "items": "terrestria:redwood_planks"
+            "items": "terrestria:redwood_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_redwood_planks"
+      "has_redwood_log"
     ]
   ],
   "rewards": {
