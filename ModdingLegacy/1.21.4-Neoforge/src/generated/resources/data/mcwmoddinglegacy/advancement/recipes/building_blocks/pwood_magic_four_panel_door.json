@@ -1,21 +1,26 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwdoors"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "premium_wood"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_magic_planks": {
+    "has_magic_log": {
       "conditions": {
         "items": [
           {
-            "items": "premium_wood:magic_planks"
+            "items": "premium_wood:magic_log"
           }
         ]
       },
@@ -31,7 +36,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_magic_planks"
+      "has_magic_log"
     ]
   ],
   "rewards": {

@@ -1,12 +1,17 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "biomeswevegone"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",

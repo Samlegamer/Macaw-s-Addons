@@ -1,17 +1,22 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwfurnitures"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "biomeswevegone"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ]
     }
   ],
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "chair",
+  "group": "chairs",
   "key": {
     "A": "biomeswevegone:baobab_log",
     "B": "biomeswevegone:baobab_slab",

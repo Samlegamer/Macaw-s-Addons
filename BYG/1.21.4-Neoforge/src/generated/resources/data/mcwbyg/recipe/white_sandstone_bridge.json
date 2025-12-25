@@ -1,17 +1,22 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwbridges"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "biomeswevegone"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ]
     }
   ],
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "log_bridges",
+  "group": "stone_bridges",
   "key": {
     "A": "biomeswevegone:white_sandstone_slab",
     "B": "biomeswevegone:white_sandstone_wall"

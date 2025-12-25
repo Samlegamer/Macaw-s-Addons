@@ -1,17 +1,22 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwdoors"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "biomeswevegone"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ]
     }
   ],
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "mcwdoors:whispering",
+  "group": "whispering",
   "key": {
     "A": "biomeswevegone:witch_hazel_planks",
     "B": "mcwdoors:print_whispering"

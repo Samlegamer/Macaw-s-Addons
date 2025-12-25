@@ -1,17 +1,22 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwbridges"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "premium_wood"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ]
     }
   ],
   "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "group": "recyclable_bridges",
+  "group": "recyclable_bridges_recycle",
   "ingredients": [
     "mcwmoddinglegacy:pwood_purple_heart_rope_bridge_stair"
   ],

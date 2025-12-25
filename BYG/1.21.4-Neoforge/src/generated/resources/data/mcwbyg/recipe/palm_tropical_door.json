@@ -1,17 +1,22 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwdoors"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "biomeswevegone"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ]
     }
   ],
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "mcwdoors:acacia",
+  "group": "tropical",
   "key": {
     "A": "biomeswevegone:palm_planks",
     "B": "mcwdoors:print_acacia"

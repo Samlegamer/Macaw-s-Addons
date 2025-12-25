@@ -1,21 +1,26 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwpaths"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "biomeswevegone"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwpaths"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ironwood_planks": {
+    "has_ironwood_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomeswevegone:ironwood_planks"
+            "items": "biomeswevegone:ironwood_log"
           }
         ]
       },
@@ -31,7 +36,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_ironwood_planks"
+      "has_ironwood_log"
     ]
   ],
   "rewards": {
