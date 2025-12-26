@@ -1,21 +1,26 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwpaths"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "biomesoplenty"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwpaths"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_redwood_planks": {
+    "has_redwood_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomesoplenty:redwood_planks"
+            "items": "biomesoplenty:redwood_log"
           }
         ]
       },
@@ -31,7 +36,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_redwood_planks"
+      "has_redwood_log"
     ]
   ],
   "rewards": {

@@ -1,6 +1,7 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
-import java.util.List;
+import java.util.Arrays;
+import fr.addonslib.api.client.McwColors;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.client.ColorRegistry;
 import net.minecraft.client.renderer.BiomeColors;
@@ -12,13 +13,18 @@ import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 @EventBusSubscriber(modid = McwBOP.MODID, value = Dist.CLIENT)
 public class Client
 {
-	private static final List<String> LEAVES_NO_COLORED = List.of("pine", "mahogany", "willow", "palm", "flowering_oak");
-	private static final ColorRegistry COLOR = new ColorRegistry(McwBOP.MODID, LEAVES_NO_COLORED);
+	private static final ColorRegistry COLOR = new ColorRegistry(new McwColors(Arrays.asList(
+			Finder.makeIdHedge(McwBOP.MODID, "pine"),
+			Finder.makeIdHedge(McwBOP.MODID, "mahogany"),
+			Finder.makeIdHedge(McwBOP.MODID, "willow"),
+			Finder.makeIdHedge(McwBOP.MODID, "palm"),
+			Finder.makeIdHedge(McwBOP.MODID, "flowering_oak")
+	)));
 
 	@SubscribeEvent
 	public static void colorsBlock(RegisterColorHandlersEvent.Block event)
 	{
-		COLOR.colorsBlock(event);
+		COLOR.registryBlockColorsAverage(event);
 		event.register((state, world, pos, tintIndex) ->
 				(world != null && pos != null) ? BiomeColors.getAverageDryFoliageColor(world, pos) : -10732494, Finder.findBlock(McwBOP.MODID, "dead_hedge"));
 	}
