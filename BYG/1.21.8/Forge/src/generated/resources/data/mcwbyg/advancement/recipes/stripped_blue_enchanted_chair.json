@@ -3,11 +3,11 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_stripped_blue_enchanted_log": {
+        "has_blue_enchanted_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomeswevegone:stripped_blue_enchanted_log"
+                "items": "biomeswevegone:blue_enchanted_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_stripped_blue_enchanted_log"
+          "has_blue_enchanted_log"
         ]
       ],
       "rewards": {

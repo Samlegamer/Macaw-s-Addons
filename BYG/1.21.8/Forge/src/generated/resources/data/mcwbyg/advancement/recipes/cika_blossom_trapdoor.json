@@ -3,11 +3,11 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_cika_planks": {
+        "has_cika_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomeswevegone:cika_planks"
+                "items": "biomeswevegone:cika_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_cika_planks"
+          "has_cika_log"
         ]
       ],
       "rewards": {

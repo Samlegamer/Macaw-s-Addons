@@ -1,11 +1,14 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
+import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
+import fr.samlegamer.addonslib.util.McwCommon;
 import fr.samlegamer.addonslib.util.McwMod;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -16,10 +19,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -31,22 +30,13 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.bridges.Bridges;
-import fr.samlegamer.addonslib.door.Doors;
-import fr.samlegamer.addonslib.fences.Fences;
-import fr.samlegamer.addonslib.furnitures.AddFurnituresStorage;
-import fr.samlegamer.addonslib.furnitures.Furnitures;
-import fr.samlegamer.addonslib.path.Paths;
-import fr.samlegamer.addonslib.roofs.Roofs;
-import fr.samlegamer.addonslib.stairs.Stairs;
-import fr.samlegamer.addonslib.trapdoor.Trapdoors;
-import fr.samlegamer.addonslib.windows.Windows;
+import org.jspecify.annotations.NonNull;
 
 @Mod(McwBOP.MODID)
 public class McwBOP extends McwMod
@@ -68,50 +58,22 @@ public class McwBOP extends McwMod
 	public McwBOP(FMLJavaModLoadingContext context)
     {
         super(context);
-        LOGGER.info("Macaw's Biomes O' Plenty Loading...");
-		Registration.init(context, block, item, ct);
-
-		BlockBehaviour.Properties prop_crimson = BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_STEM).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.NETHER_WOOD);
-		BlockBehaviour.Properties prop_cherry = BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.CHERRY_WOOD).ignitedByLava();
 
 		List<String> woodClassic = List.of("dead", "fir", "mahogany", "palm", "redwood", "willow", "pine");
-		List<String> woodCrimson = List.of("hellbark", "umbran", "empyreal");
-		List<String> woodCherry = List.of("magic", "jacaranda", "maple");
-
 		List<String> leaveClassic = List.of("dead", "fir", "hellbark", "mahogany", "palm", "redwood", "umbran", "willow", "empyreal", "pine", "cypress", "flowering_oak", "rainbow_birch", "origin");
-		List<String> leaveCherry = List.of("snowblossom", "orange_maple", "red_maple", "yellow_maple", "jacaranda", "magic");
 
-		Bridges.setRegistrationWood(woodClassic, block, item);
-		Fences.setRegistrationWood(woodClassic, block, item);
-		Fences.setRegistrationHedges(leaveClassic, block, item);
-		Furnitures.setRegistrationWood(woodClassic, block, item);
-		Roofs.setRegistrationWood(woodClassic, block, item);
-		Trapdoors.setRegistrationWood(woodClassic, block, item);
-		Paths.setRegistrationWood(woodClassic, block, item);
-		Doors.setRegistrationWood(woodClassic, block, item);
-		Windows.setRegistrationWood(woodClassic, block, item);
-		Stairs.setRegistrationWood(woodClassic, block, item);
+		Map<String, SoundType> mapWoodSoundCrimson = McwRegistry.makeDefaultFromList(List.of("hellbark", "umbran", "empyreal"), SoundType.NETHER_WOOD);
+		Map<String, SoundType> mapWoodSoundCherry = McwRegistry.makeDefaultFromList(List.of("magic", "jacaranda", "maple"), SoundType.CHERRY_WOOD);
+		Map<String, SoundType> mapLeaveSoundCherry = McwRegistry.makeDefaultFromList(List.of("snowblossom", "orange_maple", "red_maple", "yellow_maple", "jacaranda", "magic"), SoundType.CHERRY_LEAVES);
 
-		Bridges.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
-		Fences.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
-		Furnitures.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
-		Roofs.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
-		Trapdoors.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
-		Paths.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
-		Doors.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson, BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASS).strength(3.0F).noOcclusion().pushReaction(PushReaction.DESTROY));
-		Windows.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
-		Stairs.setRegistrationWoodModLoaded(woodCrimson, block, item, prop_crimson);
+		LOGGER.info("Macaw's Biomes O' Plenty Loading...");
+		Registration.init(context, block, item, ct);
 
-		Bridges.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
-		Fences.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
-		Fences.setRegistrationHedgesModLoaded(leaveCherry, block, item, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).strength(0.2F).randomTicks().sound(SoundType.CHERRY_LEAVES).noOcclusion());
-		Furnitures.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
-		Roofs.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
-		Trapdoors.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
-		Paths.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
-		Doors.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry, BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASS).strength(3.0F).noOcclusion());
-		Windows.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
-		Stairs.setRegistrationWoodModLoaded(woodCherry, block, item, prop_cherry);
+		McwRegistry.setRegistriesWood(woodClassic, block, item, Registration.getAllModTypeWood());
+		McwRegistry.setRegistriesWood(mapWoodSoundCrimson, block, item, Registration.getAllModTypeWood());
+		McwRegistry.setRegistriesWood(mapWoodSoundCherry, block, item, Registration.getAllModTypeWood());
+		McwRegistry.setRegistriesLeave(leaveClassic, block, item);
+		McwRegistry.setRegistriesLeave(mapLeaveSoundCherry, block, item);
 
 		BusGroup modBusGroup = context.getModBusGroup();
 		FMLCommonSetupEvent.getBus(modBusGroup).addListener(this::commonSetup);
@@ -131,10 +93,10 @@ public class McwBOP extends McwMod
     @Override
     public void commonSetup(FMLCommonSetupEvent event)
 	{
-		AddFurnituresStorage.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD);
         event.enqueueWork(() -> {
             McwLootTables.addBlockAllWood(MODID, WOOD);
             McwLootTables.addBlockHedges(MODID, LEAVES);
+			McwCommon.addCompatibleBlocksToFurnitureStorage(event, MODID, WOOD);
         });
 	}
 
@@ -149,14 +111,16 @@ public class McwBOP extends McwMod
             generator.addProvider(true, new Recipes.Runner(output, registries));
             generator.addProvider(true, new McwBlockTags(output, registries, MODID, existingFileHelper) {
                 @Override
-                protected void addTags(HolderLookup.Provider p_256380_) {
-                    addAllMcwTags(McwBOP.MODID, McwBOP.WOOD, McwBOP.LEAVES);
+                protected void addTags(HolderLookup.@NonNull Provider p_256380_) {
+					addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+					addAllMcwTagsLeave(MODID, LEAVES);
                 }
             });
             generator.addProvider(true, new McwItemTags(output, registries, MODID, existingFileHelper) {
                 @Override
-                protected void addTags(HolderLookup.Provider p_255639_) {
-                    addAllMcwTags(McwBOP.MODID, McwBOP.WOOD, McwBOP.LEAVES);
+                protected void addTags(HolderLookup.@NonNull Provider p_255639_) {
+					addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+					addAllMcwTagsLeave(MODID, LEAVES);
                 }
             });
         }
@@ -181,17 +145,17 @@ public class McwBOP extends McwMod
 				Finder.findBlock(MODID, "redwood_planks_path"),
 				Finder.findBlock(MODID, "redwood_skyline_stairs"));
 
-		prop.addType(NewIconRandom.BlockType.BRIDGES)
-				.addType(NewIconRandom.BlockType.ROOFS)
-				.addType(NewIconRandom.BlockType.FENCES)
-				.addType(NewIconRandom.BlockType.FURNITURES)
-				.addType(NewIconRandom.BlockType.STAIRS)
-				.addType(NewIconRandom.BlockType.PATHS)
-				.addType(NewIconRandom.BlockType.WINDOWS)
-				.addType(NewIconRandom.BlockType.DOORS)
-				.addType(NewIconRandom.BlockType.TRAPDOORS);
-		Block icon = prop.buildIcon(NewIconRandom.BlockType.BRIDGES, NewIconRandom.BlockType.ROOFS, NewIconRandom.BlockType.FENCES, NewIconRandom.BlockType.FURNITURES, NewIconRandom.BlockType.STAIRS,
-				NewIconRandom.BlockType.PATHS, NewIconRandom.BlockType.WINDOWS, NewIconRandom.BlockType.DOORS, NewIconRandom.BlockType.TRAPDOORS);
+		prop.addType(ModType.BRIDGES)
+				.addType(ModType.ROOFS)
+				.addType(ModType.FENCES)
+				.addType(ModType.FURNITURES)
+				.addType(ModType.STAIRS)
+				.addType(ModType.PATHS)
+				.addType(ModType.WINDOWS)
+				.addType(ModType.DOORS)
+				.addType(ModType.TRAPDOORS);
+		Block icon = prop.buildIcon(ModType.BRIDGES, ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.STAIRS,
+				ModType.PATHS, ModType.WINDOWS, ModType.DOORS, ModType.TRAPDOORS);
 		return new ItemStack(icon);
 	}
 }
