@@ -1,12 +1,17 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwpaths"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "premium_wood"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwpaths"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "premium_wood"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
@@ -17,11 +22,11 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_tiger_planks": {
+    "has_tiger_log": {
       "conditions": {
         "items": [
           {
-            "items": "premium_wood:tiger_planks"
+            "items": "premium_wood:tiger_log"
           }
         ]
       },
@@ -31,7 +36,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_tiger_planks"
+      "has_tiger_log"
     ]
   ],
   "rewards": {
