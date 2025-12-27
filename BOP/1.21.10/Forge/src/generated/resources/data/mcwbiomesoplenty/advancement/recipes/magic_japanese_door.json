@@ -3,11 +3,11 @@
     {
       "parent": "minecraft:recipes/root",
       "criteria": {
-        "has_magic_planks": {
+        "has_magic_log": {
           "conditions": {
             "items": [
               {
-                "items": "biomesoplenty:magic_planks"
+                "items": "biomesoplenty:magic_log"
               }
             ]
           },
@@ -36,7 +36,7 @@
       "requirements": [
         [
           "has_the_recipe",
-          "has_magic_planks"
+          "has_magic_log"
         ]
       ],
       "rewards": {
