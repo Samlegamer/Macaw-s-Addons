@@ -1,21 +1,26 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mcwtrpdoors"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "biomesoplenty"
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "biomesoplenty"
+        }
+      ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_empyreal_planks": {
+    "has_empyreal_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomesoplenty:empyreal_planks"
+            "items": "biomesoplenty:empyreal_log"
           }
         ]
       },
@@ -31,7 +36,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_empyreal_planks"
+      "has_empyreal_log"
     ]
   ],
   "rewards": {
