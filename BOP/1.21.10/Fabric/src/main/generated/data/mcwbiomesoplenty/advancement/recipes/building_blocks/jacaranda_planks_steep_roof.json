@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwroofs",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwroofs"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_jacaranda_planks": {
+    "has_jacaranda_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomesoplenty:jacaranda_planks"
+            "items": "biomesoplenty:jacaranda_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_jacaranda_planks"
+      "has_jacaranda_log"
     ]
   ],
   "rewards": {

@@ -3,18 +3,18 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "mcwfurnitures",
-        "biomesoplenty"
+        "biomesoplenty",
+        "mcwfurnitures"
       ]
     }
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_empyreal_log": {
+    "has_empyreal_log": {
       "conditions": {
         "items": [
           {
-            "items": "biomesoplenty:stripped_empyreal_log"
+            "items": "biomesoplenty:empyreal_log"
           }
         ]
       },
@@ -30,7 +30,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stripped_empyreal_log"
+      "has_empyreal_log"
     ]
   ],
   "rewards": {
