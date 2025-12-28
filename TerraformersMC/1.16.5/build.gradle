@@ -6,6 +6,20 @@ plugins {
     //id 'org.spongepowered.mixin' version '0.7+'
 }
 
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
+    }
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
+}
+
+loadExtraProperties('../../_properties/1.16.5forgegradle.properties')
+
 version = mod_version
 group = mod_group_id
 

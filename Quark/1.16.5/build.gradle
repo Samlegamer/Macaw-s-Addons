@@ -5,6 +5,20 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     }
 
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
+    }
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
+}
+
+loadExtraProperties('../../_properties/1.16.5forgegradle.properties')
+
 version = mod_version
 group = mod_group_id
 
@@ -148,8 +162,8 @@ dependencies {
     compileOnly fg.deobf("blank:quark-1.16.5-1.0:${quark_version}")
 
     runtimeOnly fg.deobf("curse.maven:autoreglib-250363:${autoreglib_version}")
-    //runtimeOnly fg.deobf("blank:quark-1.16.5-1.0:${quark_version}")
-    runtimeOnly fg.deobf("curse.maven:quark-243121:${quark_version}")
+    runtimeOnly fg.deobf("blank:quark-1.16.5-1.0:${quark_version}")
+    //runtimeOnly fg.deobf("curse.maven:quark-243121:${quark_version}")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     // Real mod deobf dependency examples - these get remapped to your current mappings

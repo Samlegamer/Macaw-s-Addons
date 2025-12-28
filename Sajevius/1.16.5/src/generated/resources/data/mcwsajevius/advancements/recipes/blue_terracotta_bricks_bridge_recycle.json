@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterlands",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwsajevius:blue_terracotta_bricks_bridge"
+          ]
+        },
+        "criteria": {
+          "has_blue_terracotta_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betterlands:blue_terracotta_bricks"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwsajevius:blue_terracotta_bricks_bridge"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_blue_terracotta_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}
