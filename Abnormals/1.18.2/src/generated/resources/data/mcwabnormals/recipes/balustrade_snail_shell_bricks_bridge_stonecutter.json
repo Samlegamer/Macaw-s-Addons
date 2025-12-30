@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "autumnity",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "autumnity:snail_shell_bricks"
+        },
+        "result": "mcwabnormals:balustrade_snail_shell_bricks_bridge",
+        "count": 1
+      }
+    }
+  ]
+}

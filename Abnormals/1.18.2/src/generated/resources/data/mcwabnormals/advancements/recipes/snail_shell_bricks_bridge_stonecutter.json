@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "autumnity",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwabnormals:snail_shell_bricks_bridge_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_snail_shell_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "autumnity:snail_shell_bricks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwabnormals:snail_shell_bricks_bridge_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_snail_shell_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

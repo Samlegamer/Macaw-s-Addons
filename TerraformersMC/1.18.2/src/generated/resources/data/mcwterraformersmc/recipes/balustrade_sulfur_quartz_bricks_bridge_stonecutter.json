@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "cinderscapes:sulfur_quartz_bricks"
+        },
+        "result": "mcwterraformersmc:balustrade_sulfur_quartz_bricks_bridge",
+        "count": 1
+      }
+    }
+  ]
+}

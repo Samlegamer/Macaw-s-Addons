@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwquark:red_sandstone_bricks_bridge_stair_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_red_sandstone_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "quark:red_sandstone_bricks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwquark:red_sandstone_bricks_bridge_stair_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_red_sandstone_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

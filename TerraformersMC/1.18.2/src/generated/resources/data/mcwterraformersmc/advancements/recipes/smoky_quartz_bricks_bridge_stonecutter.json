@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "cinderscapes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwterraformersmc:smoky_quartz_bricks_bridge_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_smoky_quartz_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "cinderscapes:smoky_quartz_bricks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwterraformersmc:smoky_quartz_bricks_bridge_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_smoky_quartz_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

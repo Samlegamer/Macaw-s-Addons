@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "quark",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "quark:mossy_cobblestone_bricks"
+        },
+        "result": "mcwquark:mossy_cobblestone_bricks_bridge_pier",
+        "count": 1
+      }
+    }
+  ]
+}

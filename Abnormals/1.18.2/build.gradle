@@ -17,6 +17,19 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: "org.spongepowered.mixin"
 
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
+    }
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
+}
+
+loadExtraProperties('../../_properties/1.18.2forgegradle.properties')
 
 version = mod_version
 group = mod_group_id // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -191,6 +204,8 @@ dependencies {
 
     runtimeOnly fg.deobf("curse.maven:woodworks-543610:${woodworks_version}")
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
+    runtimeOnly fg.deobf("curse.maven:modernfix-790626:5399365")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency

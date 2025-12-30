@@ -4,14 +4,9 @@ import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-
 import fr.addonslib.api.client.McwColors;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.client.ColorRegistry;
-import net.minecraft.client.renderer.BiomeColors;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.level.FoliageColor;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

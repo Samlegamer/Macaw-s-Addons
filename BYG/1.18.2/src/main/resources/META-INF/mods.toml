@@ -37,6 +37,11 @@ description='''${mod_description}'''
 [[dependencies.${mod_id}]]
     modId="addonslib"
     mandatory=true
-    versionRange="[1.18.2-1.9,)"
-    ordering="BEFORE"
-    side="BOTH"
+    versionRange="[1.18.2-1.10,)"
+    ordering="AFTER"
+
+[[dependencies.${mod_id}]]
+    modId="modernfix"
+    mandatory=true
+    versionRange="NONE"
+    ordering="AFTER"

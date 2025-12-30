@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "byg",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwbyg:dacite_bricks_bridge_stair_stonecutter"
+          ]
+        },
+        "criteria": {
+          "has_dacite_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "byg:dacite_bricks"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwbyg:dacite_bricks_bridge_stair_stonecutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_dacite_bricks",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}
