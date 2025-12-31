@@ -2,7 +2,6 @@ package fr.samlegamer.mcwbyg;
 
 import java.util.List;
 import fr.addonslib.api.data.ModType;
-import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.fuel.APIFuels;
 import fr.samlegamer.addonslib.registry.McwRegistry;
 import org.apache.logging.log4j.LogManager;
@@ -36,7 +35,7 @@ public class McwByg implements ModInitializer
 	{
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
 
-		McwRegistry.setRegistriesWood(MODID, WOOD, MCWBYG_TAB, Registration.getAllModTypeWood());
+		McwRegistry.setRegistriesWood(MODID, WOOD, MCWBYG_TAB, ModType.getAllModTypeWood());
 		McwRegistry.setRegistriesLeave(MODID, LEAVES, MCWBYG_TAB);
 		McwRegistry.setRegistriesStone(MODID, bridges_rockable, MCWBYG_TAB, ModType.BRIDGES);
 		McwRegistry.setRegistriesStone(MODID, fences_rockable, MCWBYG_TAB, ModType.ROOFS, ModType.FENCES);

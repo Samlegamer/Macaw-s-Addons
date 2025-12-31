@@ -2,7 +2,6 @@ package fr.samlegamer.mcwterraformersmc;
 
 import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.fuel.APIFuels;
 import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.tab.NewIconRandom;
@@ -43,19 +42,19 @@ public class McwTerraformersMC implements ModInitializer
         boolean isDev = FabricLoader.getInstance().isDevelopmentEnvironment();
         String suffix = isDev ? "-common" : "";
 
-        McwRegistry.setRegistriesWood(MODID, WOODS_TRAVERSE, "traverse"+suffix, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeWood());
-        McwRegistry.setRegistriesWood(MODID, WOODS_CINDERSCAPES, "cinderscapes"+suffix, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeWood());
-        McwRegistry.setRegistriesWood(MODID, WOODS_TERRESTRIA, "terrestria"+suffix, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(MODID, WOODS_TRAVERSE, "traverse"+suffix, MCWTERRAFORMERSMC_TAB, ModType.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(MODID, WOODS_CINDERSCAPES, "cinderscapes"+suffix, MCWTERRAFORMERSMC_TAB, ModType.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(MODID, WOODS_TERRESTRIA, "terrestria"+suffix, MCWTERRAFORMERSMC_TAB, ModType.getAllModTypeWood());
         
         McwRegistry.setRegistriesLeave(MODID, LEAVES_TRAVERSE, "traverse"+suffix, MCWTERRAFORMERSMC_TAB);
         McwRegistry.setRegistriesLeave(MODID, LEAVES_TERRESTRIA, "terrestria"+suffix, MCWTERRAFORMERSMC_TAB);
         
-        McwRegistry.setRegistriesStone(MODID, ROCKS_CINDERSCAPES, "cinderscapes"+suffix, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeStone());
-        McwRegistry.setRegistriesStone(MODID, ROCKS_TERRESTRIA, "terrestria"+suffix, MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeStone());
+        McwRegistry.setRegistriesStone(MODID, ROCKS_CINDERSCAPES, "cinderscapes"+suffix, MCWTERRAFORMERSMC_TAB, ModType.getAllModTypeStone());
+        McwRegistry.setRegistriesStone(MODID, ROCKS_TERRESTRIA, "terrestria"+suffix, MCWTERRAFORMERSMC_TAB, ModType.getAllModTypeStone());
         
-        APIFuels.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, Registration.getAllModTypeWood());
-        APIFuels.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, Registration.getAllModTypeWood());
-        APIFuels.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, Registration.getAllModTypeWood());
+        APIFuels.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE, ModType.getAllModTypeWood());
+        APIFuels.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES, ModType.getAllModTypeWood());
+        APIFuels.initAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA, ModType.getAllModTypeWood());
 
         APIFuels.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE);
         APIFuels.initAllLeave(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA);

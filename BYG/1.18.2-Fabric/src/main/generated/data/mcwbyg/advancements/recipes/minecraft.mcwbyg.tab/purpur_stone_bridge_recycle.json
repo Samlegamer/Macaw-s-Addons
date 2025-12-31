@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:purpur_stone_bridge_recycle"
+    ]
+  },
+  "criteria": {
+    "has_purpur_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:purpur_stone"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:purpur_stone_bridge_recycle"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_purpur_stone",
+      "has_the_recipe"
+    ]
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "byg",
+        "mcwbridges"
+      ]
+    }
+  ]
+}

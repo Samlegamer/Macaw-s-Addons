@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:soapstone_bricks_bridge_stair_stonecutter"
+    ]
+  },
+  "criteria": {
+    "has_soapstone_bricks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:soapstone_bricks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:soapstone_bricks_bridge_stair_stonecutter"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_soapstone_bricks",
+      "has_the_recipe"
+    ]
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "byg",
+        "mcwbridges"
+      ]
+    }
+  ]
+}

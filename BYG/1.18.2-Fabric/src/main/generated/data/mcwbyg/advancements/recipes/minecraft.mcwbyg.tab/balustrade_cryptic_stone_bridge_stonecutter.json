@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:balustrade_cryptic_stone_bridge_stonecutter"
+    ]
+  },
+  "criteria": {
+    "has_cryptic_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "byg:cryptic_stone"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:balustrade_cryptic_stone_bridge_stonecutter"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cryptic_stone",
+      "has_the_recipe"
+    ]
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "byg",
+        "mcwbridges"
+      ]
+    }
+  ]
+}

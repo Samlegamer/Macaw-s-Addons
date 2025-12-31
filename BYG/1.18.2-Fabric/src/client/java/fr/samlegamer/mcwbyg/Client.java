@@ -4,7 +4,6 @@ import java.util.Arrays;
 import fr.addonslib.api.client.McwColors;
 import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.client.ColorRegistry;
 import net.fabricmc.api.ClientModInitializer;
@@ -24,7 +23,7 @@ public class Client implements ClientModInitializer
 		COLOR.registryBlockColorsAverage();
 		COLOR.registryItemColors();
 
-		APIRenderTypes.initAllWood(McwByg.MODID, McwByg.WOOD, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(McwByg.MODID, McwByg.WOOD, ModType.getAllModTypeWood());
 		APIRenderTypes.initAllLeave(McwByg.MODID, McwByg.LEAVES);
 		APIRenderTypes.initAllStone(McwByg.MODID, McwByg.bridges_rockable, ModType.BRIDGES);
 		APIRenderTypes.initAllStone(McwByg.MODID, McwByg.fences_rockable, ModType.ROOFS, ModType.FENCES);

@@ -17,7 +17,7 @@ public class Tags
 
         @Override
         protected void generateTags() {
-            addAllMcwTagsWood(McwByg.MODID, McwByg.WOOD, Registration.getAllModTypeWood());
+            addAllMcwTagsWood(McwByg.MODID, McwByg.WOOD, ModType.getAllModTypeWood());
             addAllMcwTagsLeave(McwByg.MODID, McwByg.LEAVES);
             addAllMcwTagsStone(McwByg.MODID, McwByg.bridges_rockable, ModType.BRIDGES);
             addAllMcwTagsStone(McwByg.MODID, McwByg.fences_rockable, ModType.FENCES, ModType.ROOFS);
@@ -32,7 +32,7 @@ public class Tags
 
         @Override
         protected void generateTags() {
-            addAllMcwTagsWood(McwByg.MODID, McwByg.WOOD, Registration.getAllModTypeWood());
+            addAllMcwTagsWood(McwByg.MODID, McwByg.WOOD, ModType.getAllModTypeWood());
             addAllMcwTagsLeave(McwByg.MODID, McwByg.LEAVES);
             addAllMcwTagsStone(McwByg.MODID, McwByg.bridges_rockable, ModType.BRIDGES);
             addAllMcwTagsStone(McwByg.MODID, McwByg.fences_rockable, ModType.FENCES, ModType.ROOFS);
