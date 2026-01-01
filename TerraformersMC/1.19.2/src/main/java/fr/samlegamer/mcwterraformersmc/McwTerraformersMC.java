@@ -85,13 +85,13 @@ public class McwTerraformersMC extends McwMod
         LOGGER.info("Macaw's TerraformersMC Loading...");
         Registration.init(BLOCKS, ITEMS);
 
-        McwRegistry.setRegistriesWood(WOODS_TRAVERSE, BLOCKS, ITEMS, "traverse", MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(WOODS_TRAVERSE, BLOCKS, ITEMS, "traverse", MCWTERRAFORMERSMC_TAB, ModType.getAllModTypeWood());
         McwRegistry.setRegistriesLeave(LEAVES_TRAVERSE, BLOCKS, ITEMS, "traverse", MCWTERRAFORMERSMC_TAB);
-        McwRegistry.setRegistriesWood(WOODS_CINDERSCAPES, BLOCKS, ITEMS, "cinderscapes", MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeWood());
-        McwRegistry.setRegistriesStone(ROCKS_CINDERSCAPES, BLOCKS, ITEMS, "cinderscapes", MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeStone());
-        McwRegistry.setRegistriesWood(WOODS_TERRESTRIA, BLOCKS, ITEMS, "terrestria", MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(WOODS_CINDERSCAPES, BLOCKS, ITEMS, "cinderscapes", MCWTERRAFORMERSMC_TAB, ModType.getAllModTypeWood());
+        McwRegistry.setRegistriesStone(ROCKS_CINDERSCAPES, BLOCKS, ITEMS, "cinderscapes", MCWTERRAFORMERSMC_TAB, ModType.getAllModTypeStone());
+        McwRegistry.setRegistriesWood(WOODS_TERRESTRIA, BLOCKS, ITEMS, "terrestria", MCWTERRAFORMERSMC_TAB, ModType.getAllModTypeWood());
         McwRegistry.setRegistriesLeave(LEAVES_TERRESTRIA, BLOCKS, ITEMS, "terrestria", MCWTERRAFORMERSMC_TAB);
-        McwRegistry.setRegistriesStone(ROCKS_TERRESTRIA, BLOCKS, ITEMS, "terrestria", MCWTERRAFORMERSMC_TAB, Registration.getAllModTypeStone());
+        McwRegistry.setRegistriesStone(ROCKS_TERRESTRIA, BLOCKS, ITEMS, "terrestria", MCWTERRAFORMERSMC_TAB, ModType.getAllModTypeStone());
 
         bus().addListener(this::clientSetup);
         bus().addListener(this::commonSetup);
@@ -101,15 +101,15 @@ public class McwTerraformersMC extends McwMod
 
     @Override
     public void clientSetup(FMLClientSetupEvent event) {
-        APIRenderTypes.initAllWood(event, MODID, WOODS_TRAVERSE, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, WOODS_TRAVERSE, ModType.getAllModTypeWood());
         APIRenderTypes.initAllLeave(event, MODID, LEAVES_TRAVERSE);
 
-        APIRenderTypes.initAllWood(event, MODID, WOODS_CINDERSCAPES, Registration.getAllModTypeWood());
-        APIRenderTypes.initAllStone(event, MODID, ROCKS_CINDERSCAPES, Registration.getAllModTypeStone());
+        APIRenderTypes.initAllWood(event, MODID, WOODS_CINDERSCAPES, ModType.getAllModTypeWood());
+        APIRenderTypes.initAllStone(event, MODID, ROCKS_CINDERSCAPES, ModType.getAllModTypeStone());
 
-        APIRenderTypes.initAllWood(event, MODID, WOODS_TERRESTRIA, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, WOODS_TERRESTRIA, ModType.getAllModTypeWood());
         APIRenderTypes.initAllLeave(event, MODID, LEAVES_TERRESTRIA);
-        APIRenderTypes.initAllStone(event, MODID, ROCKS_TERRESTRIA, Registration.getAllModTypeStone());
+        APIRenderTypes.initAllStone(event, MODID, ROCKS_TERRESTRIA, ModType.getAllModTypeStone());
     }
 
     @Override
@@ -136,15 +136,15 @@ public class McwTerraformersMC extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(generator, MODID, existingFileHelper) {
                 @Override
                 protected void addTags() {
-                    addAllMcwTagsWood(MODID, WOODS_TRAVERSE, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOODS_TRAVERSE, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(MODID, LEAVES_TRAVERSE);
 
-                    addAllMcwTagsWood(MODID, WOODS_CINDERSCAPES, Registration.getAllModTypeWood());
-                    addAllMcwTagsStone(MODID, ROCKS_CINDERSCAPES, Registration.getAllModTypeStone());
+                    addAllMcwTagsWood(MODID, WOODS_CINDERSCAPES, ModType.getAllModTypeWood());
+                    addAllMcwTagsStone(MODID, ROCKS_CINDERSCAPES, ModType.getAllModTypeStone());
 
-                    addAllMcwTagsWood(MODID, WOODS_TERRESTRIA, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOODS_TERRESTRIA, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(MODID, LEAVES_TERRESTRIA);
-                    addAllMcwTagsStone(MODID, ROCKS_TERRESTRIA, Registration.getAllModTypeStone());
+                    addAllMcwTagsStone(MODID, ROCKS_TERRESTRIA, ModType.getAllModTypeStone());
                 }
             };
 
@@ -153,15 +153,15 @@ public class McwTerraformersMC extends McwMod
             generator.addProvider(true, new McwItemTags(generator, mcwBlockTags, MODID, existingFileHelper) {
                 @Override
                 protected void addTags() {
-                    addAllMcwTagsWood(MODID, WOODS_TRAVERSE, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOODS_TRAVERSE, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(MODID, LEAVES_TRAVERSE);
 
-                    addAllMcwTagsWood(MODID, WOODS_CINDERSCAPES, Registration.getAllModTypeWood());
-                    addAllMcwTagsStone(MODID, ROCKS_CINDERSCAPES, Registration.getAllModTypeStone());
+                    addAllMcwTagsWood(MODID, WOODS_CINDERSCAPES, ModType.getAllModTypeWood());
+                    addAllMcwTagsStone(MODID, ROCKS_CINDERSCAPES, ModType.getAllModTypeStone());
 
-                    addAllMcwTagsWood(MODID, WOODS_TERRESTRIA, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOODS_TERRESTRIA, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(MODID, LEAVES_TERRESTRIA);
-                    addAllMcwTagsStone(MODID, ROCKS_TERRESTRIA, Registration.getAllModTypeStone());
+                    addAllMcwTagsStone(MODID, ROCKS_TERRESTRIA, ModType.getAllModTypeStone());
                 }
             });
         }

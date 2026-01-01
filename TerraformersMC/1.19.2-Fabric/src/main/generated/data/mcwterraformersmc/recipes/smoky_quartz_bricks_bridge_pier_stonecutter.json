@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cinderscapes",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "ingredient": {
+    "item": "cinderscapes:smoky_quartz_bricks"
+  },
+  "result": "mcwterraformersmc:smoky_quartz_bricks_bridge_pier"
+}

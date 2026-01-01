@@ -1,12 +1,10 @@
 package fr.samlegamer.mcwbyg;
 
 import fr.addonslib.api.data.ModType;
-import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import org.jetbrains.annotations.Nullable;
-import java.util.ArrayList;
 
 public class Tags
 {
@@ -18,7 +16,7 @@ public class Tags
 
         @Override
         protected void generateTags() {
-            addAllMcwTagsWood(McwByg.MODID, McwByg.WOOD, Registration.getAllModTypeWood());
+            addAllMcwTagsWood(McwByg.MODID, McwByg.WOOD, ModType.getAllModTypeWood());
             addAllMcwTagsLeave(McwByg.MODID, McwByg.LEAVES);
             addAllMcwTagsStone(McwByg.MODID, McwByg.bridges_rockable, ModType.BRIDGES);
             addAllMcwTagsStone(McwByg.MODID, McwByg.fences_rockable, ModType.FENCES, ModType.ROOFS);
@@ -33,7 +31,7 @@ public class Tags
 
         @Override
         protected void generateTags() {
-            addAllMcwTagsWood(McwByg.MODID, McwByg.WOOD, Registration.getAllModTypeWood());
+            addAllMcwTagsWood(McwByg.MODID, McwByg.WOOD, ModType.getAllModTypeWood());
             addAllMcwTagsLeave(McwByg.MODID, McwByg.LEAVES);
             addAllMcwTagsStone(McwByg.MODID, McwByg.bridges_rockable, ModType.BRIDGES);
             addAllMcwTagsStone(McwByg.MODID, McwByg.fences_rockable, ModType.FENCES, ModType.ROOFS);

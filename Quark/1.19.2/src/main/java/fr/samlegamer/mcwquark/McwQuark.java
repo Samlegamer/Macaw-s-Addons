@@ -78,9 +78,9 @@ public class McwQuark extends McwMod
     	LOGGER.info("Macaw's Quark Loading...");
 		Registration.init(BLOCKS, ITEMS);
 
-		McwRegistry.setRegistriesWood(wood, BLOCKS, ITEMS, MCWQUARK_TAB, Registration.getAllModTypeWood());
+		McwRegistry.setRegistriesWood(wood, BLOCKS, ITEMS, MCWQUARK_TAB, ModType.getAllModTypeWood());
 		McwRegistry.setRegistriesLeave(leaves, BLOCKS, ITEMS, MCWQUARK_TAB);
-		McwRegistry.setRegistriesStone(stone, BLOCKS, ITEMS, MCWQUARK_TAB, Registration.getAllModTypeStone());
+		McwRegistry.setRegistriesStone(stone, BLOCKS, ITEMS, MCWQUARK_TAB, ModType.getAllModTypeStone());
 
         bus().addListener(this::clientSetup);
         bus().addListener(this::commonSetup);
@@ -90,9 +90,9 @@ public class McwQuark extends McwMod
 
     @Override
     public void clientSetup(FMLClientSetupEvent event) {
-        APIRenderTypes.initAllWood(event, MODID, wood, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, wood, ModType.getAllModTypeWood());
         APIRenderTypes.initAllLeave(event, MODID, leaves);
-        APIRenderTypes.initAllWood(event, MODID, stone, Registration.getAllModTypeStone());
+        APIRenderTypes.initAllWood(event, MODID, stone, ModType.getAllModTypeStone());
     }
 
     @Override
@@ -114,8 +114,8 @@ public class McwQuark extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(generator, MODID, existingFileHelper) {
                 @Override
                 protected void addTags() {
-					addAllMcwTagsWood(MODID, wood, Registration.getAllModTypeWood());
-					addAllMcwTagsStone(MODID, stone, Registration.getAllModTypeStone());
+					addAllMcwTagsWood(MODID, wood, ModType.getAllModTypeWood());
+					addAllMcwTagsStone(MODID, stone, ModType.getAllModTypeStone());
 					addAllMcwTagsLeave(MODID, leaves);
                 }
             };
@@ -125,8 +125,8 @@ public class McwQuark extends McwMod
             generator.addProvider(true, new McwItemTags(generator, mcwBlockTags, MODID, existingFileHelper) {
                 @Override
                 protected void addTags() {
-					addAllMcwTagsWood(MODID, wood, Registration.getAllModTypeWood());
-					addAllMcwTagsStone(MODID, stone, Registration.getAllModTypeStone());
+					addAllMcwTagsWood(MODID, wood, ModType.getAllModTypeWood());
+					addAllMcwTagsStone(MODID, stone, ModType.getAllModTypeStone());
 					addAllMcwTagsLeave(MODID, leaves);
                 }
             });

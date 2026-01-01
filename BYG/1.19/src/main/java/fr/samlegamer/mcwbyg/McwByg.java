@@ -80,7 +80,7 @@ public class McwByg extends McwMod
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
     	Registration.init(block, item);
 
-		McwRegistry.setRegistriesWood(WOOD, block, item, MCWBYG_TAB, Registration.getAllModTypeWood());
+		McwRegistry.setRegistriesWood(WOOD, block, item, MCWBYG_TAB, ModType.getAllModTypeWood());
 		McwRegistry.setRegistriesLeave(LEAVES, block, item, MCWBYG_TAB);
 		McwRegistry.setRegistriesStone(bridges_rockable, block, item, MCWBYG_TAB, ModType.BRIDGES);
 		McwRegistry.setRegistriesStone(fences_rockable, block, item, MCWBYG_TAB, ModType.FENCES, ModType.ROOFS);
@@ -94,7 +94,7 @@ public class McwByg extends McwMod
 
     @Override
     public void clientSetup(FMLClientSetupEvent event) {
-        APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, WOOD, ModType.getAllModTypeWood());
         APIRenderTypes.initAllLeave(event, MODID, LEAVES);
         APIRenderTypes.initAllStone(event, MODID, bridges_rockable, ModType.BRIDGES);
         APIRenderTypes.initAllStone(event, MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
@@ -121,7 +121,7 @@ public class McwByg extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(generator, MODID, existingFileHelper) {
                 @Override
                 protected void addTags() {
-					addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+					addAllMcwTagsWood(MODID, WOOD, ModType.getAllModTypeWood());
 					addAllMcwTagsLeave(MODID, LEAVES);
 					addAllMcwTagsStone(MODID, bridges_rockable, ModType.BRIDGES);
 					addAllMcwTagsStone(MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
@@ -133,7 +133,7 @@ public class McwByg extends McwMod
             generator.addProvider(true, new McwItemTags(generator, mcwBlockTags, MODID, existingFileHelper) {
                 @Override
                 protected void addTags() {
-					addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+					addAllMcwTagsWood(MODID, WOOD, ModType.getAllModTypeWood());
 					addAllMcwTagsLeave(MODID, LEAVES);
 					addAllMcwTagsStone(MODID, bridges_rockable, ModType.BRIDGES);
 					addAllMcwTagsStone(MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);

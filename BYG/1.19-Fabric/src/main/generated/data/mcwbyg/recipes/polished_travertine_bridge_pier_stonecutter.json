@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "byg",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "ingredient": {
+    "item": "byg:polished_travertine"
+  },
+  "result": "mcwbyg:polished_travertine_bridge_pier"
+}
