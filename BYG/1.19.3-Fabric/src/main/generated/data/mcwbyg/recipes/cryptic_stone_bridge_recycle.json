@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "byg",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "recyclable_bridges_recycle",
+  "ingredients": [
+    {
+      "item": "mcwbyg:cryptic_stone_bridge_stair"
+    }
+  ],
+  "result": {
+    "item": "mcwbyg:cryptic_stone_bridge"
+  }
+}

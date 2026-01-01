@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cinderscapes",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "recyclable_bridges_recycle",
+  "ingredients": [
+    {
+      "item": "mcwterraformersmc:sulfur_quartz_bricks_bridge_stair"
+    }
+  ],
+  "result": {
+    "item": "mcwterraformersmc:sulfur_quartz_bricks_bridge"
+  }
+}

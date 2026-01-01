@@ -1,0 +1,17 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "byg",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "byg:red_rock_bricks"
+  },
+  "result": "mcwbyg:red_rock_bricks_bridge_stair"
+}

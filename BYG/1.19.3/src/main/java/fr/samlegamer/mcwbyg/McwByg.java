@@ -55,7 +55,7 @@ public class McwByg extends McwMod
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
     	Registration.init(block, item);
 
-        McwRegistry.setRegistriesWood(WOOD, block, item, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(WOOD, block, item, ModType.getAllModTypeWood());
         McwRegistry.setRegistriesLeave(LEAVES, block, item);
         McwRegistry.setRegistriesStone(bridges_rockable, block, item, ModType.BRIDGES);
         McwRegistry.setRegistriesStone(fences_rockable, block, item, ModType.FENCES, ModType.ROOFS);
@@ -71,7 +71,7 @@ public class McwByg extends McwMod
 
     @Override
     public void clientSetup(FMLClientSetupEvent event) {
-        APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, WOOD, ModType.getAllModTypeWood());
         APIRenderTypes.initAllLeave(event, MODID, LEAVES);
         APIRenderTypes.initAllStone(event, MODID, bridges_rockable, ModType.BRIDGES);
         APIRenderTypes.initAllStone(event, MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
@@ -100,7 +100,7 @@ public class McwByg extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(output, lookupProvider, MODID, existingFileHelper) {
                 @Override
                 protected void addTags(HolderLookup.@NotNull Provider p_256380_) {
-                    addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOOD, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(MODID, LEAVES);
                     addAllMcwTagsStone(MODID, bridges_rockable, ModType.BRIDGES);
                     addAllMcwTagsStone(MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
@@ -112,7 +112,7 @@ public class McwByg extends McwMod
             generator.addProvider(true, new McwItemTags(output, lookupProvider, mcwBlockTags, MODID, existingFileHelper) {
                 @Override
                 protected void addTags(HolderLookup.@NotNull Provider p_256380_) {
-                    addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOOD, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(MODID, LEAVES);
                     addAllMcwTagsStone(MODID, bridges_rockable, ModType.BRIDGES);
                     addAllMcwTagsStone(MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
@@ -151,7 +151,7 @@ public class McwByg extends McwMod
 
     @Override
     public void tabSetup(CreativeModeTabEvent.BuildContents event) {
-        APICreativeTab.initAllWood(event, MODID, WOOD, MCWBYG_TAB, Registration.getAllModTypeWood());
+        APICreativeTab.initAllWood(event, MODID, WOOD, MCWBYG_TAB, ModType.getAllModTypeWood());
         APICreativeTab.initAllLeave(event, MODID, LEAVES, MCWBYG_TAB);
         APICreativeTab.initAllStone(event, MODID, bridges_rockable, MCWBYG_TAB, ModType.BRIDGES);
         APICreativeTab.initAllStone(event, MODID, fences_rockable, MCWBYG_TAB, ModType.FENCES, ModType.ROOFS);
