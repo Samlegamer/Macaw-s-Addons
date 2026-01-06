@@ -1,0 +1,18 @@
+{
+    "variants": {                     
+		"connection=base":  { "model": "mcwregionsunexplored:block/bridge/bridge_wood/blue_bioshroom_base","uvlock": true},
+		
+        "connection=middle_ns":  { "model": "mcwregionsunexplored:block/bridge/bridge_wood/blue_bioshroom_middle", "y": 90,"uvlock": true},
+		"connection=middle_ew":  { "model": "mcwregionsunexplored:block/bridge/bridge_wood/blue_bioshroom_middle","uvlock": true},
+
+		"connection=corner_nw":  { "model": "mcwregionsunexplored:block/bridge/bridge_wood/blue_bioshroom_corner", "y": 180,"uvlock": true},
+		"connection=corner_ne":  { "model": "mcwregionsunexplored:block/bridge/bridge_wood/blue_bioshroom_corner", "y": 270,"uvlock": true},
+		"connection=corner_se":  { "model": "mcwregionsunexplored:block/bridge/bridge_wood/blue_bioshroom_corner","uvlock": true},
+		"connection=corner_sw":  { "model": "mcwregionsunexplored:block/bridge/bridge_wood/blue_bioshroom_corner", "y": 90,"uvlock": true},	
+		
+		"connection=side_s":  { "model": "mcwregionsunexplored:block/bridge/bridge_wood/blue_bioshroom_side","uvlock": true},
+		"connection=side_n":  { "model": "mcwregionsunexplored:block/bridge/bridge_wood/blue_bioshroom_side", "y": 180,"uvlock": true},
+		"connection=side_w":  { "model": "mcwregionsunexplored:block/bridge/bridge_wood/blue_bioshroom_side", "y": 90,"uvlock": true},
+		"connection=side_e":  { "model": "mcwregionsunexplored:block/bridge/bridge_wood/blue_bioshroom_side", "y": 270,"uvlock": true}
+    }
+}

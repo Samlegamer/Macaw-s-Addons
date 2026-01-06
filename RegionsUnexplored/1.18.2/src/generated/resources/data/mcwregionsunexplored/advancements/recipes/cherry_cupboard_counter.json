@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwregionsunexplored:cherry_cupboard_counter"
+          ]
+        },
+        "criteria": {
+          "has_cherry_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "regions_unexplored:cherry_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwregionsunexplored:cherry_cupboard_counter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_cherry_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

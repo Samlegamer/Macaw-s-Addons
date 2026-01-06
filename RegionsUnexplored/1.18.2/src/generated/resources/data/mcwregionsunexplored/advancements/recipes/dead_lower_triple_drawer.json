@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwregionsunexplored:dead_lower_triple_drawer"
+          ]
+        },
+        "criteria": {
+          "has_dead_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "regions_unexplored:dead_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwregionsunexplored:dead_lower_triple_drawer"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_dead_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

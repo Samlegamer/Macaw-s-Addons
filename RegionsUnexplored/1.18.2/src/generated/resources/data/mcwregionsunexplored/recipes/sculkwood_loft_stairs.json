@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "loft_stairs",
+        "pattern": [
+          "A  ",
+          " A ",
+          "  A"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:sculkwood_log_dark"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:sculkwood_loft_stairs",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

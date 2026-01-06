@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_cupboard_counters",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:cypress_slab"
+          },
+          "B": {
+            "item": "mcwregionsunexplored:stripped_cypress_wardrobe"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:stripped_cypress_cupboard_counter"
+        }
+      }
+    }
+  ]
+}

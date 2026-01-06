@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "chairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:blue_bioshroom_hyphae"
+          },
+          "B": {
+            "item": "regions_unexplored:blue_bioshroom_slab"
+          },
+          "C": {
+            "item": "regions_unexplored:blue_bioshroom_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:blue_bioshroom_chair"
+        }
+      }
+    }
+  ]
+}

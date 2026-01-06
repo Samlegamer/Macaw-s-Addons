@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "cottage",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:blackwood_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_spruce"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:blackwood_cottage_door"
+        }
+      }
+    }
+  ]
+}

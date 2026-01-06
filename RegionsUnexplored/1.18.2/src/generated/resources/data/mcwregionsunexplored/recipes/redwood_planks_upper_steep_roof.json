@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "planks_upper_steep_roof",
+        "pattern": [
+          " A",
+          " A",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:redwood_planks"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:redwood_planks_upper_steep_roof",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

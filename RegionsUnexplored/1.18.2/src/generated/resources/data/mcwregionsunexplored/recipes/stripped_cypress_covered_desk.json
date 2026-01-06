@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_covered_desks",
+        "pattern": [
+          "AAA",
+          "A A"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_cypress_log"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:stripped_cypress_covered_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

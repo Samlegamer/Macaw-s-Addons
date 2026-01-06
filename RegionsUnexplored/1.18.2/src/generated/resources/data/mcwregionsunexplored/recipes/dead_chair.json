@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "chairs",
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:dead_log"
+          },
+          "B": {
+            "item": "regions_unexplored:dead_slab"
+          },
+          "C": {
+            "item": "regions_unexplored:dead_fence"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:dead_chair"
+        }
+      }
+    }
+  ]
+}

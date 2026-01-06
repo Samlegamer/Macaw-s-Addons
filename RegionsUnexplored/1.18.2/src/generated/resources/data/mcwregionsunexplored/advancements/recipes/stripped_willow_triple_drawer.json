@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwregionsunexplored:stripped_willow_triple_drawer"
+          ]
+        },
+        "criteria": {
+          "has_willow_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "regions_unexplored:willow_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwregionsunexplored:stripped_willow_triple_drawer"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_willow_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

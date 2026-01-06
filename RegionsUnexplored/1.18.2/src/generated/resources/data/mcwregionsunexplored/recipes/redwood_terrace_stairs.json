@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "terrace_stairs",
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_redwood_log"
+          },
+          "B": {
+            "item": "regions_unexplored:redwood_log"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:redwood_terrace_stairs",
+          "count": 5
+        }
+      }
+    }
+  ]
+}

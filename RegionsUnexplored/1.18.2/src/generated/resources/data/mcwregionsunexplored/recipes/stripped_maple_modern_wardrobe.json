@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_modern_wardrobes",
+        "pattern": [
+          "AAA",
+          "AAB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_maple_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:stripped_maple_modern_wardrobe",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

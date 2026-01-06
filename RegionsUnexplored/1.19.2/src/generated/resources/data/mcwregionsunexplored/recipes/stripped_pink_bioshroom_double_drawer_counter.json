@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_double_drawer_counters",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:pink_bioshroom_slab"
+          },
+          "B": {
+            "item": "mcwregionsunexplored:stripped_pink_bioshroom_double_drawer"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:stripped_pink_bioshroom_double_drawer_counter"
+        }
+      }
+    }
+  ]
+}

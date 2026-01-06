@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "regions_unexplored:magnolia_trapdoor"
+          },
+          {
+            "item": "regions_unexplored:magnolia_trapdoor"
+          },
+          {
+            "item": "regions_unexplored:magnolia_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwregionsunexplored:magnolia_shutter"
+        }
+      }
+    }
+  ]
+}

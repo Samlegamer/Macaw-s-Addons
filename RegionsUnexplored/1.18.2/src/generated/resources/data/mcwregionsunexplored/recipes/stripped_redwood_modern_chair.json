@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_modern_chairs",
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_redwood_log"
+          },
+          "B": {
+            "item": "regions_unexplored:redwood_slab"
+          },
+          "C": {
+            "item": "regions_unexplored:redwood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:stripped_redwood_modern_chair"
+        }
+      }
+    }
+  ]
+}

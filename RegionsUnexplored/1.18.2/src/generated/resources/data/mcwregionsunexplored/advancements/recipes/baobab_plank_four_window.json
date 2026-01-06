@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwregionsunexplored:baobab_plank_four_window"
+          ]
+        },
+        "criteria": {
+          "has_baobab_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "regions_unexplored:baobab_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwregionsunexplored:baobab_plank_four_window"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_baobab_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

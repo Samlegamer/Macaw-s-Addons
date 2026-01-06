@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bookshelf_cupboards",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:mauve_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          },
+          "C": {
+            "item": "minecraft:book"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BAC",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwregionsunexplored:mauve_bookshelf_cupboard"
+        }
+      }
+    }
+  ]
+}

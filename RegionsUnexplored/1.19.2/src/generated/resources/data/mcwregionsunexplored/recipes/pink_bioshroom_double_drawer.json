@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_drawers",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:pink_bioshroom_hyphae"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ABA",
+          "ABA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwregionsunexplored:pink_bioshroom_double_drawer"
+        }
+      }
+    }
+  ]
+}

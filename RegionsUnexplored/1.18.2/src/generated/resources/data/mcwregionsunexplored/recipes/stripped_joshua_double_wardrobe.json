@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_double_wardrobes",
+        "pattern": [
+          "AAA",
+          "BAB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_joshua_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:stripped_joshua_double_wardrobe",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

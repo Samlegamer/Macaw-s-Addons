@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_modern_chairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_blackwood_log"
+          },
+          "B": {
+            "item": "regions_unexplored:blackwood_slab"
+          },
+          "C": {
+            "item": "regions_unexplored:blackwood_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:stripped_blackwood_modern_chair"
+        }
+      }
+    }
+  ]
+}

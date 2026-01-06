@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "cupboard_counters",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:pine_slab"
+          },
+          "B": {
+            "item": "mcwregionsunexplored:pine_wardrobe"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:pine_cupboard_counter"
+        }
+      }
+    }
+  ]
+}

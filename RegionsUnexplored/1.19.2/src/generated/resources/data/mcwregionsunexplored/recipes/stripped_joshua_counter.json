@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_counters",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:joshua_slab"
+          },
+          "B": {
+            "item": "regions_unexplored:stripped_joshua_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:stripped_joshua_counter"
+        }
+      }
+    }
+  ]
+}

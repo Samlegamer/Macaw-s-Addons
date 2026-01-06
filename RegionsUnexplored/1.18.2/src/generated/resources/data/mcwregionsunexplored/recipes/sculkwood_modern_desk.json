@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern_desks",
+        "pattern": [
+          "AAA",
+          "BCB"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:sculkwood_log"
+          },
+          "B": {
+            "item": "regions_unexplored:sculkwood_fence"
+          },
+          "C": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:sculkwood_modern_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

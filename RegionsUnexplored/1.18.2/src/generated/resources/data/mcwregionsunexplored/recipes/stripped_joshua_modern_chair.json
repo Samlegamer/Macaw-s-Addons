@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_modern_chairs",
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_joshua_log"
+          },
+          "B": {
+            "item": "regions_unexplored:joshua_slab"
+          },
+          "C": {
+            "item": "regions_unexplored:joshua_fence"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:stripped_joshua_modern_chair"
+        }
+      }
+    }
+  ]
+}

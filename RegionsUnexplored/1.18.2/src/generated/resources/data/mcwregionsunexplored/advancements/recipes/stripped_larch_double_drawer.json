@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwregionsunexplored:stripped_larch_double_drawer"
+          ]
+        },
+        "criteria": {
+          "has_larch_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "regions_unexplored:larch_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwregionsunexplored:stripped_larch_double_drawer"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_larch_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

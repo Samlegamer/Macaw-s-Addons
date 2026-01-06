@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "barn_glass",
+        "pattern": [
+          "BB",
+          "AA",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:joshua_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:joshua_barn_glass_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

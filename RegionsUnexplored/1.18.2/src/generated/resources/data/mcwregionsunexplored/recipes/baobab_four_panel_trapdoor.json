@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "four_panel_trapdoors",
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:baobab_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_four_panel"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:baobab_four_panel_trapdoor"
+        }
+      }
+    }
+  ]
+}

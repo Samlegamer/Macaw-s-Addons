@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "pyramid",
+        "pattern": [
+          "ABA",
+          "ACA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "regions_unexplored:eucalyptus_log"
+          },
+          "C": {
+            "item": "regions_unexplored:eucalyptus_planks"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:eucalyptus_pyramid_gate"
+        }
+      }
+    }
+  ]
+}

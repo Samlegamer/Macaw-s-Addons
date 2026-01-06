@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_tables",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwregionsunexplored:stripped_blackwood_coffee_table"
+          },
+          "B": {
+            "item": "regions_unexplored:blackwood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:stripped_blackwood_table"
+        }
+      }
+    }
+  ]
+}

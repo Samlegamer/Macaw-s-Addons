@@ -63,8 +63,15 @@ ordering="NONE"
 side="BOTH"
 
 [[dependencies.${mod_id}]]
-modId="addonslib"
-mandatory=true
-versionRange="[1.19.2-1.4,)"
-ordering="NONE"
-side="BOTH"
+    modId="regions_unexplored"
+    mandatory=true
+    versionRange="NONE"
+    ordering="BEFORE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="addonslib"
+    mandatory=true
+    versionRange="[1.19-1.8,)"
+    ordering="NONE"
+    side="BOTH"

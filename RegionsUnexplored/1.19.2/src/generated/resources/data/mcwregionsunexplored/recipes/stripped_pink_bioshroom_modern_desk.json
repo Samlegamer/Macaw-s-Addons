@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_modern_desks",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_pink_bioshroom_hyphae"
+          },
+          "B": {
+            "item": "regions_unexplored:pink_bioshroom_fence"
+          },
+          "C": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BCB"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwregionsunexplored:stripped_pink_bioshroom_modern_desk"
+        }
+      }
+    }
+  ]
+}

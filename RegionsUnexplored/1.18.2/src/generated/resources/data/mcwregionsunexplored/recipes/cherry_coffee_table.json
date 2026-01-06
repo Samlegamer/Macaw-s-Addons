@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "coffee_tables",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:cherry_log"
+          },
+          "B": {
+            "item": "regions_unexplored:cherry_fence"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:cherry_coffee_table"
+        }
+      }
+    }
+  ]
+}

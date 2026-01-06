@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "terrace_stairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_blue_bioshroom_hyphae"
+          },
+          "B": {
+            "item": "regions_unexplored:blue_bioshroom_hyphae"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwregionsunexplored:blue_bioshroom_terrace_stairs"
+        }
+      }
+    }
+  ]
+}

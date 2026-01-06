@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bookshelf_drawers",
+        "pattern": [
+          "AAA",
+          "ABA",
+          "ACA"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:blackwood_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          },
+          "C": {
+            "item": "minecraft:book"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:blackwood_bookshelf_drawer",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

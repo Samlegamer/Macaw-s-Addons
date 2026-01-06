@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "windows",
+        "pattern": [
+          " A ",
+          "ABA",
+          " A "
+        ],
+        "key": {
+          "A": {
+            "item": "mcwwindows:window_base"
+          },
+          "B": {
+            "item": "regions_unexplored:joshua_log"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:joshua_window",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

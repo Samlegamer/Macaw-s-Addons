@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_coffee_tables",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:sculkwood_log_dark"
+          },
+          "B": {
+            "item": "regions_unexplored:sculkwood_fence"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:stripped_sculkwood_coffee_table"
+        }
+      }
+    }
+  ]
+}

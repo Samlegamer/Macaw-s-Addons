@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "rail_bridges",
+        "pattern": [
+          "B B",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:cherry_slab"
+          },
+          "B": {
+            "item": "regions_unexplored:cherry_fence"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:cherry_rail_bridge",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

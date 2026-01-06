@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "barn_trapdoors",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:mauve_planks"
+          },
+          "B": {
+            "item": "mcwregionsunexplored:mauve_glass_trapdoor"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:mauve_barn_trapdoor"
+        }
+      }
+    }
+  ]
+}

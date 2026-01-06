@@ -1,0 +1,120 @@
+{
+  "multipart" : [ {
+    "apply" : {
+      "model" : "mcwregionsunexplored:block/balcony/socotra_classic_balcony",
+      "uvlock" : true,
+      "y" : 270
+    },
+    "when" : {
+      "north" : "true",
+      "style" : "classic"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwregionsunexplored:block/balcony/socotra_classic_balcony",
+      "uvlock" : true
+    },
+    "when" : {
+      "east" : "true",
+      "style" : "classic"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwregionsunexplored:block/balcony/socotra_classic_balcony",
+      "uvlock" : true,
+      "y" : 90
+    },
+    "when" : {
+      "south" : "true",
+      "style" : "classic"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwregionsunexplored:block/balcony/socotra_classic_balcony",
+      "uvlock" : true,
+      "y" : 180
+    },
+    "when" : {
+      "west" : "true",
+      "style" : "classic"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwregionsunexplored:block/balcony/socotra_harp_balcony",
+      "uvlock" : true,
+      "y" : 270
+    },
+    "when" : {
+      "north" : "true",
+      "style" : "harp"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwregionsunexplored:block/balcony/socotra_harp_balcony",
+      "uvlock" : true
+    },
+    "when" : {
+      "east" : "true",
+      "style" : "harp"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwregionsunexplored:block/balcony/socotra_harp_balcony",
+      "uvlock" : true,
+      "y" : 90
+    },
+    "when" : {
+      "south" : "true",
+      "style" : "harp"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwregionsunexplored:block/balcony/socotra_harp_balcony",
+      "uvlock" : true,
+      "y" : 180
+    },
+    "when" : {
+      "west" : "true",
+      "style" : "harp"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwregionsunexplored:block/balcony/socotra_smooth_balcony",
+      "uvlock" : true,
+      "y" : 270
+    },
+    "when" : {
+      "north" : "true",
+      "style" : "smooth"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwregionsunexplored:block/balcony/socotra_smooth_balcony",
+      "uvlock" : true
+    },
+    "when" : {
+      "east" : "true",
+      "style" : "smooth"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwregionsunexplored:block/balcony/socotra_smooth_balcony",
+      "uvlock" : true,
+      "y" : 90
+    },
+    "when" : {
+      "south" : "true",
+      "style" : "smooth"
+    }
+  }, {
+    "apply" : {
+      "model" : "mcwregionsunexplored:block/balcony/socotra_smooth_balcony",
+      "uvlock" : true,
+      "y" : 180
+    },
+    "when" : {
+      "west" : "true",
+      "style" : "smooth"
+    }
+  } ]
+}

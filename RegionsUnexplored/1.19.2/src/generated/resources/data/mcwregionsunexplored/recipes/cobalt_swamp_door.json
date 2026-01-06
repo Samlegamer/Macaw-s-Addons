@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "swamp",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:cobalt_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_swamp"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:cobalt_swamp_door"
+        }
+      }
+    }
+  ]
+}

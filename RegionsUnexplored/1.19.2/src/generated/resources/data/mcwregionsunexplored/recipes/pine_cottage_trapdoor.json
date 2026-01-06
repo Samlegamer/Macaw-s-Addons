@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "cottage_trapdoors",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:pine_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_cottage"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:pine_cottage_trapdoor"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern_chairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:redwood_log"
+          },
+          "B": {
+            "item": "regions_unexplored:redwood_slab"
+          },
+          "C": {
+            "item": "regions_unexplored:redwood_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:redwood_modern_chair"
+        }
+      }
+    }
+  ]
+}

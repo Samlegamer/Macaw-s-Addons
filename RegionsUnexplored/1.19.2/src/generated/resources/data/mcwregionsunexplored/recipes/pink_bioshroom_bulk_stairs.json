@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bulk_stairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_pink_bioshroom_hyphae"
+          },
+          "B": {
+            "item": "regions_unexplored:pink_bioshroom_hyphae"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          "BBA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwregionsunexplored:pink_bioshroom_bulk_stairs"
+        }
+      }
+    }
+  ]
+}

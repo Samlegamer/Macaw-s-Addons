@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "regions_unexplored:dead_trapdoor"
+          },
+          {
+            "item": "regions_unexplored:dead_trapdoor"
+          },
+          {
+            "item": "regions_unexplored:dead_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:dead_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

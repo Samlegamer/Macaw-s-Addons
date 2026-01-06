@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwpaths"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks_paths",
+        "ingredients": [
+          {
+            "item": "regions_unexplored:cypress_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwregionsunexplored:cypress_planks_path"
+        }
+      }
+    }
+  ]
+}

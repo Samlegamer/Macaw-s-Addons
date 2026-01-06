@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wired",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "regions_unexplored:eucalyptus_log"
+          },
+          "C": {
+            "item": "minecraft:iron_bars"
+          }
+        },
+        "pattern": [
+          "ACA",
+          "ABA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwregionsunexplored:eucalyptus_wired_fence"
+        }
+      }
+    }
+  ]
+}

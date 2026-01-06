@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "skyline_stairs",
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_palm_log"
+          },
+          "B": {
+            "item": "regions_unexplored:palm_log"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:palm_skyline_stairs",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

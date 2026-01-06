@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "regions_unexplored",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_drawer_counters",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "regions_unexplored:mauve_slab"
+          },
+          "B": {
+            "item": "mcwregionsunexplored:stripped_mauve_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwregionsunexplored:stripped_mauve_drawer_counter"
+        }
+      }
+    }
+  ]
+}

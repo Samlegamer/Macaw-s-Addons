@@ -3,9 +3,14 @@ buildscript {
         // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
         maven { url = 'https://maven.minecraftforge.net' }
         mavenCentral()
+        maven {
+            name = 'SpongePowered'
+            url = 'https://repo.spongepowered.org/repository/maven-public/'
+        }
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath group: 'org.spongepowered', name: 'mixingradle', version: '0.7-SNAPSHOT'
     }
 }
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
@@ -14,7 +19,21 @@ plugins {
     id 'maven-publish'
 }
 apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.spongepowered.mixin'
 
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
+    }
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
+}
+
+loadExtraProperties('../../_properties/1.18.2forgegradle.properties')
 
 version = mod_version
 group = mod_group_id // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -154,7 +173,24 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.18.2-40.3.11'
-    implementation fg.deobf("curse.maven:addonslib-1090999:6381621")
+    implementation fg.deobf("curse.maven:addonslib-1090999:${addonslib_version}")
+    implementation fg.deobf("curse.maven:jei-238222:${jei_version}")
+
+    implementation fg.deobf("curse.maven:macaws-roofs-352039:${roofs_version}")
+    implementation fg.deobf("curse.maven:macaws-fences-and-walls-453925:${fences_version}")
+    implementation fg.deobf("curse.maven:macaws-doors-378646:${doors_version}")
+    implementation fg.deobf("curse.maven:macaws-bridges-351725:${bridges_version}")
+    implementation fg.deobf("curse.maven:macaws-windows-363569:${windows_version}")
+    implementation fg.deobf("curse.maven:macaws-paths-and-pavings-629153:${paths_version}")
+    implementation fg.deobf("curse.maven:macaws-trapdoors-400933:${trapdoors_version}")
+    implementation fg.deobf("curse.maven:macaws-stairs-1119394:${stairs_version}")
+    implementation fg.deobf("curse.maven:macaws-furniture-359540:${furniture_version}")
+
+    implementation fg.deobf("curse.maven:terrablender-563928:${terrablender_version}")
+    implementation fg.deobf("curse.maven:regions-unexplored-659110:${regionunexp_version}")
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    runtimeOnly fg.deobf("curse.maven:modernfix-790626:5399365")
+    runtimeOnly fg.deobf("curse.maven:wiki-zoomer-383277:3782160")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency

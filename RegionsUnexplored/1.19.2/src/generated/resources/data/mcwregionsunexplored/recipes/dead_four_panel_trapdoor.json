@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "four_panel_trapdoors",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:dead_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_four_panel"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:dead_four_panel_trapdoor"
+        }
+      }
+    }
+  ]
+}

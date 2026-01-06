@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "end_tables",
+        "key": {
+          "A": {
+            "item": "mcwregionsunexplored:joshua_table"
+          },
+          "B": {
+            "item": "regions_unexplored:joshua_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:joshua_end_table"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_end_tables",
+        "key": {
+          "A": {
+            "item": "mcwregionsunexplored:stripped_cypress_table"
+          },
+          "B": {
+            "item": "regions_unexplored:stripped_cypress_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:stripped_cypress_end_table"
+        }
+      }
+    }
+  ]
+}
