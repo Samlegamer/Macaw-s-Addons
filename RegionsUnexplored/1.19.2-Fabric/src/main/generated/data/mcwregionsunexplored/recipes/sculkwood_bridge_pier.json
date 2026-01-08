@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "group": "wooden_piers",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:sculkwood_log"
+    },
+    "B": {
+      "item": "regions_unexplored:sculkwood_fence"
+    }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwregionsunexplored:sculkwood_bridge_pier"
+  }
+}

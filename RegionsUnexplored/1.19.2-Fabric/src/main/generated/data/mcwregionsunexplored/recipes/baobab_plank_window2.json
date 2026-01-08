@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "group": "windows_two",
+  "key": {
+    "A": {
+      "item": "mcwwindows:window_half_bar_base"
+    },
+    "B": {
+      "item": "regions_unexplored:baobab_planks"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 8,
+    "item": "mcwregionsunexplored:baobab_plank_window2"
+  }
+}

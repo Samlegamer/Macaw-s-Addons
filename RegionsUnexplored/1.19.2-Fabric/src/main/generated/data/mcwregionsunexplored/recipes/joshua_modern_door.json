@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "modern",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:joshua_planks"
+    },
+    "B": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "pattern": [
+    "AB",
+    "AA",
+    "AB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwregionsunexplored:joshua_modern_door"
+  }
+}

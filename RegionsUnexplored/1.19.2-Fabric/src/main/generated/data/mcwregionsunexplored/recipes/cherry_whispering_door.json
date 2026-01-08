@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "whispering",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:cherry_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_whispering"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:cherry_whispering_door"
+  }
+}

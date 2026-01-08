@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "western",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:dead_planks"
+    },
+    "B": {
+      "item": "regions_unexplored:dead_slab"
+    }
+  },
+  "pattern": [
+    "  A",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwregionsunexplored:dead_western_door"
+  }
+}

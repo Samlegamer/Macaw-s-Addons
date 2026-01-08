@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dead_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:dead_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwregionsunexplored:dead_platform"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwstairs"
+      ]
+    }
+  ],
+  "requirements": [
+    [
+      "has_dead_log",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwregionsunexplored:dead_platform"
+    ]
+  }
+}

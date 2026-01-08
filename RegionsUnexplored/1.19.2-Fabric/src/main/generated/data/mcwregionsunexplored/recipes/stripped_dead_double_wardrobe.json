@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "stripped_double_wardrobes",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:stripped_dead_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BAB",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwregionsunexplored:stripped_dead_double_wardrobe"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwroofs"
+      ]
+    }
+  ],
+  "group": "steep_roof",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:palm_log"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " A",
+    "AA",
+    "AB"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwregionsunexplored:palm_steep_roof"
+  }
+}

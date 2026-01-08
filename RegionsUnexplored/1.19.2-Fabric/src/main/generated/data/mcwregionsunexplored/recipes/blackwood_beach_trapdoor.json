@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "group": "beach_trapdoors",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:blackwood_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_beach"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:blackwood_beach_trapdoor"
+  }
+}

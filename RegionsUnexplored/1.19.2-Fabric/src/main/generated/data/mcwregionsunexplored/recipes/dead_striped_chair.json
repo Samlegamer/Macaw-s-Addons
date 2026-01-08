@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "striped_chairs",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:dead_log"
+    },
+    "B": {
+      "item": "regions_unexplored:dead_slab"
+    },
+    "C": {
+      "item": "regions_unexplored:dead_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:dead_striped_chair"
+  }
+}

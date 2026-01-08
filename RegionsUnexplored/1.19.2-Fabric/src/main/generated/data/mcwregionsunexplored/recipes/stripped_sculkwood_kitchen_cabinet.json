@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "stripped_kitchen_cabinets",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:sculkwood_log_dark"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AA",
+    "AB",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwregionsunexplored:stripped_sculkwood_kitchen_cabinet"
+  }
+}

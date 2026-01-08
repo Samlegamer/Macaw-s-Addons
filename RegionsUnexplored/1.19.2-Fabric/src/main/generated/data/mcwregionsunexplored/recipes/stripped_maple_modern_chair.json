@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "stripped_modern_chairs",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:stripped_maple_log"
+    },
+    "B": {
+      "item": "regions_unexplored:maple_slab"
+    },
+    "C": {
+      "item": "regions_unexplored:maple_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:stripped_maple_modern_chair"
+  }
+}

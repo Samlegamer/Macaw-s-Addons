@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:eucalyptus_trapdoor"
+    },
+    {
+      "item": "regions_unexplored:eucalyptus_trapdoor"
+    },
+    {
+      "item": "regions_unexplored:eucalyptus_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwregionsunexplored:eucalyptus_shutter"
+  }
+}

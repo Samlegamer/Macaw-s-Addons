@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "stripped_cupboard_counters",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:maple_slab"
+    },
+    "B": {
+      "item": "mcwregionsunexplored:stripped_maple_wardrobe"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:stripped_maple_cupboard_counter"
+  }
+}

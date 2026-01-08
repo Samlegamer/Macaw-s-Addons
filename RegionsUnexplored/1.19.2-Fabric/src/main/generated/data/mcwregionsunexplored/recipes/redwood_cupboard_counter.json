@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "cupboard_counters",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:redwood_slab"
+    },
+    "B": {
+      "item": "mcwregionsunexplored:redwood_wardrobe"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:redwood_cupboard_counter"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "group": "four_panel_trapdoors",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:mauve_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_four_panel"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:mauve_four_panel_trapdoor"
+  }
+}

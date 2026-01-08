@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "modern_wardrobes",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:cherry_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AAB",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwregionsunexplored:cherry_modern_wardrobe"
+  }
+}

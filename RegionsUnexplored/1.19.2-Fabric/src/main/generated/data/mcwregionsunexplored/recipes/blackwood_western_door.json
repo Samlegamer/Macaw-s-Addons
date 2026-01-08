@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "western",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:blackwood_planks"
+    },
+    "B": {
+      "item": "regions_unexplored:blackwood_slab"
+    }
+  },
+  "pattern": [
+    "  A",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwregionsunexplored:blackwood_western_door"
+  }
+}

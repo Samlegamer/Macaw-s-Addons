@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "stable_head",
+  "ingredients": [
+    {
+      "item": "mcwregionsunexplored:sculkwood_stable_door"
+    }
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:sculkwood_stable_head_door"
+  }
+}

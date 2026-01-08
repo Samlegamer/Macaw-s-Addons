@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "paper",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:larch_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_birch"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:larch_paper_door"
+  }
+}

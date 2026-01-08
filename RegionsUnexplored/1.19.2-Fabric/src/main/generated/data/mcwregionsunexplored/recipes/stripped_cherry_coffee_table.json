@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "stripped_coffee_tables",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:stripped_cherry_log"
+    },
+    "B": {
+      "item": "regions_unexplored:cherry_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:stripped_cherry_coffee_table"
+  }
+}

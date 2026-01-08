@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "group": "bark_trapdoors",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:blackwood_log"
+    },
+    "B": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwregionsunexplored:blackwood_bark_trapdoor"
+  }
+}

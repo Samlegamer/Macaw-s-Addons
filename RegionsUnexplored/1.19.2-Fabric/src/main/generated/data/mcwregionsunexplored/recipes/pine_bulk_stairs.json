@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwstairs"
+      ]
+    }
+  ],
+  "group": "bulk_stairs",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:stripped_pine_log"
+    },
+    "B": {
+      "item": "regions_unexplored:pine_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA ",
+    "BBA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwregionsunexplored:pine_bulk_stairs"
+  }
+}

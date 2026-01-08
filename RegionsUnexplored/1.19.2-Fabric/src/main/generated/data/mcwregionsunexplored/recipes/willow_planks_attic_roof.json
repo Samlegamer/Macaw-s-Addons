@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwroofs"
+      ]
+    }
+  ],
+  "group": "planks_attic_roof",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:willow_planks"
+    },
+    "B": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    " A",
+    "AB"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwregionsunexplored:willow_planks_attic_roof"
+  }
+}

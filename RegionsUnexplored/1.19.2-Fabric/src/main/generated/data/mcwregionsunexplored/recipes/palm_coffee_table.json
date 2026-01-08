@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "coffee_tables",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:palm_log"
+    },
+    "B": {
+      "item": "regions_unexplored:palm_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:palm_coffee_table"
+  }
+}

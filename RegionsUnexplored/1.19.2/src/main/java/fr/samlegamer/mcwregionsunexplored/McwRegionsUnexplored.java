@@ -49,7 +49,7 @@ public class McwRegionsUnexplored extends McwMod
                     Finder.findBlock(MODID, "palm_roof"),
                     Finder.findBlock(MODID, "willow_picket_fence"),
                     Finder.findBlock(MODID, "redwood_wardrobe"),
-                    Finder.findBlock(MODID, "cherry_log_bridge_middle"),
+                    Finder.findBlock(MODID, "magnolia_log_bridge_middle"),
                     Finder.findBlock(MODID, "eucalyptus_window"),
                     Finder.findBlock(MODID, "larch_japanese_door"),
                     Finder.findBlock(MODID, "maple_glass_trapdoor"),

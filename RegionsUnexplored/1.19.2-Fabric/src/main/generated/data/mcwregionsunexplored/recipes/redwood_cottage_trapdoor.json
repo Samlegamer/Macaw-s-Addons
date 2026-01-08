@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "group": "cottage_trapdoors",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:redwood_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_cottage"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:redwood_cottage_trapdoor"
+  }
+}
