@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:eucalyptus_log"
+          },
+          "B": {
+            "item": "regions_unexplored:eucalyptus_slab"
+          },
+          "C": {
+            "item": "regions_unexplored:eucalyptus_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:eucalyptus_chair"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "paper_trapdoors",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:joshua_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_paper"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:joshua_paper_trapdoor"
+        }
+      }
+    }
+  ]
+}

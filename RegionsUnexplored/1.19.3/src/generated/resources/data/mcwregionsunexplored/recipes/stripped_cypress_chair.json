@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_chairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_cypress_log"
+          },
+          "B": {
+            "item": "regions_unexplored:cypress_slab"
+          },
+          "C": {
+            "item": "regions_unexplored:cypress_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:stripped_cypress_chair"
+        }
+      }
+    }
+  ]
+}

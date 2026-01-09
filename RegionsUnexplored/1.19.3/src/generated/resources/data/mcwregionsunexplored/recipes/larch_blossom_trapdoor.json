@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "blossom_trapdoors",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:larch_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_blossom"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:larch_blossom_trapdoor"
+        }
+      }
+    }
+  ]
+}
