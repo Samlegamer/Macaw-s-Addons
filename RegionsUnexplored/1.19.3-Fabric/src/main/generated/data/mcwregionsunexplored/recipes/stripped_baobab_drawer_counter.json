@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_drawer_counters",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:baobab_slab"
+    },
+    "B": {
+      "item": "mcwregionsunexplored:stripped_baobab_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:stripped_baobab_drawer_counter"
+  }
+}

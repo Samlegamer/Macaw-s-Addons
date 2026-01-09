@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "beach_trapdoors",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:joshua_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_beach"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:joshua_beach_trapdoor"
+  }
+}

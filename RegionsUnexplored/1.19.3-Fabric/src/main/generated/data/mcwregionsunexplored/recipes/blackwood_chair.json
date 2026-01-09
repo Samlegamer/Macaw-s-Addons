@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chairs",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:blackwood_log"
+    },
+    "B": {
+      "item": "regions_unexplored:blackwood_slab"
+    },
+    "C": {
+      "item": "regions_unexplored:blackwood_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:blackwood_chair"
+  }
+}

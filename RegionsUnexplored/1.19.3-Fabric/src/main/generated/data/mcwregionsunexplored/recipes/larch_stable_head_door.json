@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stable_head",
+  "ingredients": [
+    {
+      "item": "mcwregionsunexplored:larch_stable_door"
+    }
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:larch_stable_head_door"
+  }
+}

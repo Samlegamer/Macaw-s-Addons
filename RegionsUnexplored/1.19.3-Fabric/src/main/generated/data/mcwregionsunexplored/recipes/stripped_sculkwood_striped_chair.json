@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_striped_chairs",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:sculkwood_log_dark"
+    },
+    "B": {
+      "item": "regions_unexplored:sculkwood_slab"
+    },
+    "C": {
+      "item": "regions_unexplored:sculkwood_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:stripped_sculkwood_striped_chair"
+  }
+}

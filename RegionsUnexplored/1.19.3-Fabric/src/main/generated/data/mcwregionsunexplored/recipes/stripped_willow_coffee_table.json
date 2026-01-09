@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_coffee_tables",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:stripped_willow_log"
+    },
+    "B": {
+      "item": "regions_unexplored:willow_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:stripped_willow_coffee_table"
+  }
+}

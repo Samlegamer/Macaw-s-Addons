@@ -1,0 +1,43 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwregionsunexplored:willow_swamp_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_willow_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:willow_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_willow_log",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwregionsunexplored:willow_swamp_door"
+    ]
+  }
+}

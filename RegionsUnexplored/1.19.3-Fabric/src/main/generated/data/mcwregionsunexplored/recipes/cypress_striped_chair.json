@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "striped_chairs",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:cypress_log"
+    },
+    "B": {
+      "item": "regions_unexplored:cypress_slab"
+    },
+    "C": {
+      "item": "regions_unexplored:cypress_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:cypress_striped_chair"
+  }
+}

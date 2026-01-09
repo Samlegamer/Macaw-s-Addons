@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "drawer_counters",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:palm_slab"
+    },
+    "B": {
+      "item": "mcwregionsunexplored:palm_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:palm_drawer_counter"
+  }
+}

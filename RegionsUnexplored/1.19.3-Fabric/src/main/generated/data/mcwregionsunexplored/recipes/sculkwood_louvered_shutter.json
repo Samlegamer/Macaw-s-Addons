@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:sculkwood_slab"
+    },
+    {
+      "item": "regions_unexplored:sculkwood_slab"
+    },
+    {
+      "item": "regions_unexplored:sculkwood_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwregionsunexplored:sculkwood_louvered_shutter"
+  }
+}

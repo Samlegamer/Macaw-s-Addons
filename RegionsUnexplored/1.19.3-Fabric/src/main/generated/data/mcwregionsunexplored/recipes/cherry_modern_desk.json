@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_desks",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:cherry_log"
+    },
+    "B": {
+      "item": "regions_unexplored:cherry_fence"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BCB"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwregionsunexplored:cherry_modern_desk"
+  }
+}

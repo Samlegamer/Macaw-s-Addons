@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_chairs",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:stripped_joshua_log"
+    },
+    "B": {
+      "item": "regions_unexplored:joshua_slab"
+    },
+    "C": {
+      "item": "regions_unexplored:joshua_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:stripped_joshua_chair"
+  }
+}
