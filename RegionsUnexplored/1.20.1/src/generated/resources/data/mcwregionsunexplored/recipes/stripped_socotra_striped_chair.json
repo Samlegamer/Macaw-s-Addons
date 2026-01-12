@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_striped_chairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_socotra_log"
+          },
+          "B": {
+            "item": "regions_unexplored:socotra_slab"
+          },
+          "C": {
+            "item": "regions_unexplored:socotra_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:stripped_socotra_striped_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

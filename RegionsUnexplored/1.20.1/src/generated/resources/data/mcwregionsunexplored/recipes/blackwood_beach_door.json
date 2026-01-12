@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "beach",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:blackwood_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_jungle"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:blackwood_beach_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

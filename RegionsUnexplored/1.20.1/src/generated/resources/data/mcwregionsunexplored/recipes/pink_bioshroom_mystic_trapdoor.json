@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "mystic_trapdoors",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:pink_bioshroom_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_mystic"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:pink_bioshroom_mystic_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "stable_head",
+        "ingredients": [
+          {
+            "item": "mcwregionsunexplored:kapok_stable_door"
+          }
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:kapok_stable_head_door"
+        }
+      }
+    }
+  ]
+}

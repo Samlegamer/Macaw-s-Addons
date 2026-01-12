@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "whispering_trapdoors",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:cobalt_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_whispering"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:cobalt_whispering_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

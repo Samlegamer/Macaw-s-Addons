@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:blue_bioshroom_hyphae"
+          },
+          "B": {
+            "item": "regions_unexplored:blue_bioshroom_slab"
+          },
+          "C": {
+            "item": "regions_unexplored:blue_bioshroom_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:blue_bioshroom_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

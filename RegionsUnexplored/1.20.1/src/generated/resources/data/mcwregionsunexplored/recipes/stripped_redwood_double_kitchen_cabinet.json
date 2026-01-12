@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_double_kitchen_cabinets",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_redwood_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AA",
+          "BB",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwregionsunexplored:stripped_redwood_double_kitchen_cabinet"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "four_panel",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:palm_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_dark_oak"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:palm_four_panel_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

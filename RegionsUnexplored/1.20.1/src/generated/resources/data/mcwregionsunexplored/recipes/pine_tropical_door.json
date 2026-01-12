@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "tropical",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:pine_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_acacia"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:pine_tropical_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "loft_stairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_maple_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          " A ",
+          "  A"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwregionsunexplored:maple_loft_stairs"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

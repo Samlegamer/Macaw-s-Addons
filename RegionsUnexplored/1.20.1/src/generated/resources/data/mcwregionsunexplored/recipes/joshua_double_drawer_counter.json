@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "double_drawer_counters",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:joshua_slab"
+          },
+          "B": {
+            "item": "mcwregionsunexplored:joshua_double_drawer"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:joshua_double_drawer_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

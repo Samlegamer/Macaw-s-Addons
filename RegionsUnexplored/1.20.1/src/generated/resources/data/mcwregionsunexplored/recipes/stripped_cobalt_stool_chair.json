@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_stool_chairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_cobalt_log"
+          },
+          "B": {
+            "item": "regions_unexplored:cobalt_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:stripped_cobalt_stool_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

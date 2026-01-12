@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "double_drawers",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:dead_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ABA",
+          "ABA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwregionsunexplored:dead_double_drawer"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

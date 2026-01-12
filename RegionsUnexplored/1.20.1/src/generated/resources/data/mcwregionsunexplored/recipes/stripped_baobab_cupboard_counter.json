@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_cupboard_counters",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:baobab_slab"
+          },
+          "B": {
+            "item": "mcwregionsunexplored:stripped_baobab_wardrobe"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:stripped_baobab_cupboard_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

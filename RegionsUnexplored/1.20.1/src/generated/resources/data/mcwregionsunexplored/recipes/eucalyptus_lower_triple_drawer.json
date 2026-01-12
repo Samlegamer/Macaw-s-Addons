@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "lower_triple_drawers",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:eucalyptus_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BAB",
+          "ABA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwregionsunexplored:eucalyptus_lower_triple_drawer"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "end_tables",
+        "key": {
+          "A": {
+            "item": "mcwregionsunexplored:yellow_bioshroom_table"
+          },
+          "B": {
+            "item": "regions_unexplored:yellow_bioshroom_hyphae"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:yellow_bioshroom_end_table"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

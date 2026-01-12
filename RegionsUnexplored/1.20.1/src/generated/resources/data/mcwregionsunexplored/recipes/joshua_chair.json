@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:joshua_log"
+          },
+          "B": {
+            "item": "regions_unexplored:joshua_slab"
+          },
+          "C": {
+            "item": "regions_unexplored:joshua_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwregionsunexplored:joshua_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

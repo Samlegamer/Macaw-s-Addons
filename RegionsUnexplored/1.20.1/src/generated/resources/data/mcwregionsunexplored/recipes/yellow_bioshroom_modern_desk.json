@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_desks",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:yellow_bioshroom_hyphae"
+          },
+          "B": {
+            "item": "regions_unexplored:yellow_bioshroom_fence"
+          },
+          "C": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BCB"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwregionsunexplored:yellow_bioshroom_modern_desk"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}
