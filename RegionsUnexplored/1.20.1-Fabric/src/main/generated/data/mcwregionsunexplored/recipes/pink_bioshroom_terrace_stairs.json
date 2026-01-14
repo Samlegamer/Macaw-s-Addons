@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwstairs"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "terrace_stairs",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:stripped_pink_bioshroom_hyphae"
+    },
+    "B": {
+      "item": "regions_unexplored:pink_bioshroom_hyphae"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA ",
+    " BA"
+  ],
+  "result": {
+    "count": 5,
+    "item": "mcwregionsunexplored:pink_bioshroom_terrace_stairs"
+  },
+  "show_notification": true
+}

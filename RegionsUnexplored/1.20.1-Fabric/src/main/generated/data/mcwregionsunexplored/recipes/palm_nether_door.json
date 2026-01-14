@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "nether",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:palm_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_nether"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:palm_nether_door"
+  },
+  "show_notification": true
+}

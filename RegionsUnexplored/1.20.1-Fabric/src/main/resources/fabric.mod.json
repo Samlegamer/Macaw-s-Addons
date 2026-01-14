@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+  "id": "${archives_base_name}",
+  "version": "${version}",
+
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "${mod_authors}"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "${mod_license}",
+  "icon": "logo.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "${mod_init}"
+    ],
+    "client": [
+      "${mod_init_client}"
+    ],
+    "fabric-datagen": [
+      "${mod_init_datagen}"
+    ]
+  },
+  "depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+        "addonslib": ">=1.20.1-1.9",
+        "regions_unexplored": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

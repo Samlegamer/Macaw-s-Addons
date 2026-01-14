@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "paper_trapdoors",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:redwood_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_paper"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:redwood_paper_trapdoor"
+  },
+  "show_notification": true
+}

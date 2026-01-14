@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_kitchen_cabinets",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:redwood_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AA",
+    "BB",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwregionsunexplored:redwood_double_kitchen_cabinet"
+  },
+  "show_notification": true
+}

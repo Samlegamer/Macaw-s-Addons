@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_modern_desks",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:stripped_mauve_log"
+    },
+    "B": {
+      "item": "regions_unexplored:mauve_fence"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BCB"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwregionsunexplored:stripped_mauve_modern_desk"
+  },
+  "show_notification": true
+}

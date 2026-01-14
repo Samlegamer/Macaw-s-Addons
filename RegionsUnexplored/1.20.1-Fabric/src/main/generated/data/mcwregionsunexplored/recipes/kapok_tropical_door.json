@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "tropical",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:kapok_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_acacia"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:kapok_tropical_door"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "classic",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:green_bioshroom_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_oak"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwregionsunexplored:green_bioshroom_classic_door"
+  },
+  "show_notification": true
+}
