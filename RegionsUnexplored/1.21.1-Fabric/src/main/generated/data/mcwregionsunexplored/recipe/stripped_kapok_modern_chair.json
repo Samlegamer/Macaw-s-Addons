@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_modern_chairs",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:stripped_kapok_log"
+    },
+    "B": {
+      "item": "regions_unexplored:kapok_slab"
+    },
+    "C": {
+      "item": "regions_unexplored:kapok_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwregionsunexplored:stripped_kapok_modern_chair"
+  }
+}

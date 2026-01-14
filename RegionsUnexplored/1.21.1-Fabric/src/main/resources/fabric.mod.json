@@ -29,10 +29,12 @@
     ]
   },
   "depends": {
-		"fabricloader": ">=0.17.3",
+		"fabricloader": ">=0.18.4",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+        "addonslib": ">=1.21.1-1.12",
+        "regions_unexplored": "*"
 	},
 	"suggests": {
 		"another-mod": "*"
