@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_striped_chairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_magnolia_log"
+          },
+          "B": {
+            "item": "regions_unexplored:magnolia_slab"
+          },
+          "C": {
+            "item": "regions_unexplored:magnolia_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwregionsunexplored:stripped_magnolia_striped_chair"
+        }
+      }
+    }
+  ]
+}

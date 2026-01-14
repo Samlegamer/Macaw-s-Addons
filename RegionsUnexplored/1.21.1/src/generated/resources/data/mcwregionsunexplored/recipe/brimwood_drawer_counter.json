@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "drawer_counters",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:brimwood_slab"
+          },
+          "B": {
+            "item": "mcwregionsunexplored:brimwood_drawer"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwregionsunexplored:brimwood_drawer_counter"
+        }
+      }
+    }
+  ]
+}

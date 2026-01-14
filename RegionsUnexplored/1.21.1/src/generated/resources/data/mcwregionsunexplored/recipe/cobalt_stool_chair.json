@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stool_chairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:cobalt_log"
+          },
+          "B": {
+            "item": "regions_unexplored:cobalt_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwregionsunexplored:cobalt_stool_chair"
+        }
+      }
+    }
+  ]
+}

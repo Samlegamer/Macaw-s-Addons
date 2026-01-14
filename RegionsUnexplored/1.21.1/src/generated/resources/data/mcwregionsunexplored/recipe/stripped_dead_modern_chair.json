@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_modern_chairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_dead_log"
+          },
+          "B": {
+            "item": "regions_unexplored:dead_slab"
+          },
+          "C": {
+            "item": "regions_unexplored:dead_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwregionsunexplored:stripped_dead_modern_chair"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwbridges"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "recyclable_bridges_recycle",
+        "ingredients": [
+          {
+            "item": "mcwregionsunexplored:eucalyptus_log_bridge_stair"
+          }
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwregionsunexplored:eucalyptus_log_bridge_middle"
+        }
+      }
+    }
+  ]
+}

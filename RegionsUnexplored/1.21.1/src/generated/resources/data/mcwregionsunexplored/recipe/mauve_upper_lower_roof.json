@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwroofs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "upper_lower_roof",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:mauve_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "  A",
+          "AAB"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwregionsunexplored:mauve_upper_lower_roof"
+        }
+      }
+    }
+  ]
+}

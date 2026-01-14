@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "barn_glass",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:green_bioshroom_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "pattern": [
+          "BB",
+          "AA",
+          "AA"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwregionsunexplored:green_bioshroom_barn_glass_door"
+        }
+      }
+    }
+  ]
+}

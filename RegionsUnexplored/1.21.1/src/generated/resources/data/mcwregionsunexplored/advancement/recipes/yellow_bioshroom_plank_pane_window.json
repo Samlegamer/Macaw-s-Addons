@@ -1,0 +1,49 @@
+{
+  "advancements": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwregionsunexplored:yellow_bioshroom_plank_pane_window"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_yellow_bioshroom_hyphae": {
+          "conditions": {
+            "items": [
+              {
+                "items": "regions_unexplored:yellow_bioshroom_hyphae"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwwindows"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "regions_unexplored"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_yellow_bioshroom_hyphae"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwregionsunexplored:yellow_bioshroom_plank_pane_window"
+        ]
+      }
+    }
+  ]
+}

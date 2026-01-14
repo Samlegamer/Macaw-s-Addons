@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_lower_bookshelf_drawers",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_magnolia_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          },
+          "C": {
+            "item": "minecraft:book"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ACA",
+          "ABA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwregionsunexplored:stripped_magnolia_lower_bookshelf_drawer"
+        }
+      }
+    }
+  ]
+}

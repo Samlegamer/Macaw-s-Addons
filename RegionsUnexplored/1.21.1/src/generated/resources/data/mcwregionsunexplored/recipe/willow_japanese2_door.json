@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "shoji_two",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:willow_slab"
+          },
+          "B": {
+            "item": "minecraft:paper"
+          }
+        },
+        "pattern": [
+          "BB",
+          "BB",
+          "AA"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwregionsunexplored:willow_japanese2_door"
+        }
+      }
+    }
+  ]
+}

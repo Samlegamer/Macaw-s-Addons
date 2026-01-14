@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwtrpdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "barrel_trapdoors",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:redwood_planks"
+          },
+          "B": {
+            "item": "minecraft:barrel"
+          }
+        },
+        "pattern": [
+          " A ",
+          "ABA",
+          " A "
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwregionsunexplored:redwood_barrel_trapdoor"
+        }
+      }
+    }
+  ]
+}

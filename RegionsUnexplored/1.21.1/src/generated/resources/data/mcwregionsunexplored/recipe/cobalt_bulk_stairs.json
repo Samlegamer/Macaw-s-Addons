@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwstairs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bulk_stairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_cobalt_log"
+          },
+          "B": {
+            "item": "regions_unexplored:cobalt_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          "BBA"
+        ],
+        "result": {
+          "count": 6,
+          "id": "mcwregionsunexplored:cobalt_bulk_stairs"
+        }
+      }
+    }
+  ]
+}

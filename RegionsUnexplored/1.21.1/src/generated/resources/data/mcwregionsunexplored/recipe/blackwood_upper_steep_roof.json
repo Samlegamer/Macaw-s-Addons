@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwroofs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "upper_steep_roof",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:blackwood_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " A",
+          " A",
+          "AB"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwregionsunexplored:blackwood_upper_steep_roof"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwstairs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "compact_stairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_pink_bioshroom_hyphae"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "AA ",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "id": "mcwregionsunexplored:pink_bioshroom_compact_stairs"
+        }
+      }
+    }
+  ]
+}

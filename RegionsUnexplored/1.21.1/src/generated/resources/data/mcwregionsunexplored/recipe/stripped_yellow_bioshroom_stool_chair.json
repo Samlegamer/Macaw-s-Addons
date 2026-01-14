@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_stool_chairs",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_yellow_bioshroom_hyphae"
+          },
+          "B": {
+            "item": "regions_unexplored:yellow_bioshroom_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwregionsunexplored:stripped_yellow_bioshroom_stool_chair"
+        }
+      }
+    }
+  ]
+}

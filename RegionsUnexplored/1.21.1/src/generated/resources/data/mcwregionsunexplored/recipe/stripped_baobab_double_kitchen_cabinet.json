@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_double_kitchen_cabinets",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_baobab_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AA",
+          "BB",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwregionsunexplored:stripped_baobab_double_kitchen_cabinet"
+        }
+      }
+    }
+  ]
+}

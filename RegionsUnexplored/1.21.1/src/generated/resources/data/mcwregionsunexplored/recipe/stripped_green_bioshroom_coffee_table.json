@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "regions_unexplored"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_coffee_tables",
+        "key": {
+          "A": {
+            "item": "regions_unexplored:stripped_green_bioshroom_hyphae"
+          },
+          "B": {
+            "item": "regions_unexplored:green_bioshroom_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwregionsunexplored:stripped_green_bioshroom_coffee_table"
+        }
+      }
+    }
+  ]
+}
