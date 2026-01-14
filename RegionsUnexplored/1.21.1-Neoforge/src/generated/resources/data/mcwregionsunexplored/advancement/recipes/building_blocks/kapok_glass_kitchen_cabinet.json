@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_kapok_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "regions_unexplored:kapok_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwregionsunexplored:kapok_glass_kitchen_cabinet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_kapok_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwregionsunexplored:kapok_glass_kitchen_cabinet"
+    ]
+  }
+}

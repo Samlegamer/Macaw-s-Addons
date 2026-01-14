@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwregionsunexplored:yellow_bioshroom_end_table"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yellow_bioshroom_stem": {
+      "conditions": {
+        "items": [
+          {
+            "items": "regions_unexplored:yellow_bioshroom_stem"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_yellow_bioshroom_stem"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwregionsunexplored:yellow_bioshroom_end_table"
+    ]
+  }
+}
