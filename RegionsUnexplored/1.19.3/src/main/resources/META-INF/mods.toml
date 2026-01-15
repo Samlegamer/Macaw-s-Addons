@@ -1,16 +1,14 @@
 modLoader="javafml"
 loaderVersion="[44,)"
-
 license="${mod_license}"
-issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
+issueTrackerURL="${mod_issue_tracker}"
 
 [[mods]]
 modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
-displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+displayURL="${mod_project_url}"
 logoFile="logo.png"
-#credits=""
 authors="${mod_authors}"
 description='''${mod_description}'''
 

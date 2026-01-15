@@ -18,6 +18,7 @@ def loadExtraProperties(String relPath) {
 }
 
 loadExtraProperties('../../_properties/1.21.1neogradle.properties')
+loadExtraProperties('../_GlobalRsc/globalgradle.properties')
 
 tasks.named('wrapper', Wrapper).configure {
     distributionType = Wrapper.DistributionType.BIN
@@ -191,7 +192,9 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             mod_license            : mod_license,
             mod_version            : mod_version,
             mod_authors            : mod_authors,
-            mod_description        : mod_description
+            mod_description        : mod_description,
+            mod_issue_tracker: mod_issue_tracker,
+            mod_project_url: mod_project_url
     ]
     inputs.properties replaceProperties
     expand replaceProperties

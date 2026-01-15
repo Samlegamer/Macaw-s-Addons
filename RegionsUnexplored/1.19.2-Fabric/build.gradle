@@ -3,16 +3,20 @@ plugins {
 	id 'maven-publish'
 }
 
-def extraPropsFile = file('../../_properties/1.19.2fabricgradle.properties')
-if (extraPropsFile.exists()) {
-	def extraProps = new Properties()
-	extraPropsFile.withInputStream { extraProps.load(it) }
-	extraProps.each { k, v ->
-		project.ext.set(k.toString(), v.toString())
+def loadExtraProperties(String relPath) {
+	def f = file(relPath)
+	if (!f.exists()) {
+		println "WARNING: Properties file not found: ${f.absolutePath}"
+		return false
 	}
-} else {
-	println "WARNING: Properties file not found: ${extraPropsFile.absolutePath}"
+	def props = new Properties()
+	f.withInputStream { props.load(it) }
+	props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+	return true
 }
+
+loadExtraProperties('../../_properties/1.19.2fabricgradle.properties')
+loadExtraProperties('../_GlobalRsc/globalgradle.properties')
 
 version = project.mod_version
 group = project.maven_group
