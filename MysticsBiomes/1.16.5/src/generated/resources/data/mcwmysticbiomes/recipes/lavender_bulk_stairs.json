@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "bulk_stairs",
+        "pattern": [
+          "A  ",
+          "BA ",
+          "BBA"
+        ],
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:stripped_lavender_log"
+          },
+          "B": {
+            "item": "mysticsbiomes:lavender_log"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:lavender_bulk_stairs",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

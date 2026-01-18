@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "double_drawer_counters",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:cherry_slab"
+          },
+          "B": {
+            "item": "mcwmysticbiomes:cherry_double_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:cherry_double_drawer_counter"
+        }
+      }
+    }
+  ]
+}

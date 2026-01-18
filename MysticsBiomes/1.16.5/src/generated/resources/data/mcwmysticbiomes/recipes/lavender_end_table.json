@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "end_tables",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwmysticbiomes:lavender_table"
+          },
+          "B": {
+            "item": "mysticsbiomes:lavender_log"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:lavender_end_table"
+        }
+      }
+    }
+  ]
+}

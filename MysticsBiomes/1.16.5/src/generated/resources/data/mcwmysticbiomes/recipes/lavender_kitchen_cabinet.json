@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "kitchen_cabinets",
+        "pattern": [
+          "AA",
+          "AB",
+          "AA"
+        ],
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:lavender_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:lavender_kitchen_cabinet",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

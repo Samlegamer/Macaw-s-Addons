@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mystic_trapdoors",
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:lavender_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_mystic"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:lavender_mystic_trapdoor"
+        }
+      }
+    }
+  ]
+}

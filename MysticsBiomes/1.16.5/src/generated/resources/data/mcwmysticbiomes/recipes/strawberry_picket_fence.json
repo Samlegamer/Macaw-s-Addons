@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "picket",
+        "pattern": [
+          "CBC",
+          "CAC"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "mysticsbiomes:strawberry_planks"
+          },
+          "C": {
+            "item": "mysticsbiomes:strawberrry_log"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:strawberry_picket_fence",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

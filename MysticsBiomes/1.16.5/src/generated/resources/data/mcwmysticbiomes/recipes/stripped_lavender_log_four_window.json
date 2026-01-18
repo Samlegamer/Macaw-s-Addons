@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "windows_four",
+        "pattern": [
+          "AAA",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwwindows:window_centre_bar_base"
+          },
+          "B": {
+            "item": "mysticsbiomes:stripped_lavender_log"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:stripped_lavender_log_four_window",
+          "count": 8
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "drawer_counters",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:lavender_slab"
+          },
+          "B": {
+            "item": "mcwmysticbiomes:lavender_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:lavender_drawer_counter"
+        }
+      }
+    }
+  ]
+}

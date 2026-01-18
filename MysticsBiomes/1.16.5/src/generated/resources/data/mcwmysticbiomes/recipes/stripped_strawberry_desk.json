@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_desks",
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:stripped_strawberry_log"
+          },
+          "B": {
+            "item": "mysticsbiomes:strawberry_fence"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:stripped_strawberry_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

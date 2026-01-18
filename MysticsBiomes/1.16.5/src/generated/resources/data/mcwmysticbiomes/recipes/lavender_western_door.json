@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "western",
+        "pattern": [
+          "  A",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:lavender_planks"
+          },
+          "B": {
+            "item": "mysticsbiomes:lavender_slab"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:lavender_western_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

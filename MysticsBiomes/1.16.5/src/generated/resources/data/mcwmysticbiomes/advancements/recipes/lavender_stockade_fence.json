@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwmysticbiomes:lavender_stockade_fence"
+          ]
+        },
+        "criteria": {
+          "has_lavender_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "mysticsbiomes:lavender_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwmysticbiomes:lavender_stockade_fence"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_lavender_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

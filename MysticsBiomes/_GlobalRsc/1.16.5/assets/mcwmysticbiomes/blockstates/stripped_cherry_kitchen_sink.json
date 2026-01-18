@@ -1,0 +1,14 @@
+
+{
+    "variants": {
+        "facing=east,water=false":  { "model": "mcwmysticbiomes:block/counter/stripped_cherry_kitchen_sink", "y": 270 },
+        "facing=west,water=false":  { "model": "mcwmysticbiomes:block/counter/stripped_cherry_kitchen_sink", "y": 90 },
+        "facing=south,water=false": { "model": "mcwmysticbiomes:block/counter/stripped_cherry_kitchen_sink", "y": 0 },
+        "facing=north,water=false": { "model": "mcwmysticbiomes:block/counter/stripped_cherry_kitchen_sink", "y": 180 },
+		
+	    "facing=east,water=true":  { "model": "mcwmysticbiomes:block/counter/stripped_cherry_kitchen_sink_filled", "y": 270 },
+        "facing=west,water=true":  { "model": "mcwmysticbiomes:block/counter/stripped_cherry_kitchen_sink_filled", "y": 90 },
+        "facing=south,water=true": { "model": "mcwmysticbiomes:block/counter/stripped_cherry_kitchen_sink_filled", "y": 0 },
+        "facing=north,water=true": { "model": "mcwmysticbiomes:block/counter/stripped_cherry_kitchen_sink_filled", "y": 180 }
+    }
+}

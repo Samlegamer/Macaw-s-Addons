@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "recyclable_bridges_recycle",
+        "ingredients": [
+          {
+            "item": "mcwmysticbiomes:lavender_log_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:lavender_log_bridge_middle"
+        }
+      }
+    }
+  ]
+}

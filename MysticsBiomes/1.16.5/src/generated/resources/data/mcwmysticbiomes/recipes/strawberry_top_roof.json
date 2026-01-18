@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "top_roof",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:strawberrry_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:strawberry_top_roof",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

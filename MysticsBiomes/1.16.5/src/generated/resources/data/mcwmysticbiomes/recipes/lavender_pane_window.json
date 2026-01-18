@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "windows_pane",
+        "pattern": [
+          "AAA",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwwindows:window_base"
+          },
+          "B": {
+            "item": "mysticsbiomes:lavender_log"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:lavender_pane_window",
+          "count": 8
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_modern_desks",
+        "pattern": [
+          "AAA",
+          "BCB"
+        ],
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:stripped_cherry_log"
+          },
+          "B": {
+            "item": "mysticsbiomes:cherry_fence"
+          },
+          "C": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:stripped_cherry_modern_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}
