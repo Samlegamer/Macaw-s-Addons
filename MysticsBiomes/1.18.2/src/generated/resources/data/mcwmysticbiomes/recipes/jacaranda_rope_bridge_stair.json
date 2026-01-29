@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "rope_stairs",
+        "pattern": [
+          "  A",
+          " AA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwmysticbiomes:rope_jacaranda_bridge"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:jacaranda_rope_bridge_stair",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

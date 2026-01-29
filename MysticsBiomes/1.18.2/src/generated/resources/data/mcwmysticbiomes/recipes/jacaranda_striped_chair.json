@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "striped_chairs",
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:jacaranda_log"
+          },
+          "B": {
+            "item": "mysticsbiomes:jacaranda_slab"
+          },
+          "C": {
+            "item": "mysticsbiomes:jacaranda_fence"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:jacaranda_striped_chair"
+        }
+      }
+    }
+  ]
+}

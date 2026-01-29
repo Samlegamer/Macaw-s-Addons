@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "skyline_stairs",
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:stripped_jacaranda_log"
+          },
+          "B": {
+            "item": "mysticsbiomes:jacaranda_log"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:jacaranda_skyline_stairs",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

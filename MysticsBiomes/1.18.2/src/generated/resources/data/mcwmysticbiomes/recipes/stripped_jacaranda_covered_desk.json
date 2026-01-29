@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_covered_desks",
+        "pattern": [
+          "AAA",
+          "A A"
+        ],
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:stripped_jacaranda_log"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:stripped_jacaranda_covered_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwmysticbiomes:strawberry_louvered_shutter"
+          ]
+        },
+        "criteria": {
+          "has_strawberry_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "mysticsbiomes:strawberry_log"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwmysticbiomes:strawberry_louvered_shutter"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_strawberry_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

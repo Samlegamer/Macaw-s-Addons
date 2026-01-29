@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "pyramid",
+        "pattern": [
+          "ABA",
+          "ACA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "mysticsbiomes:strawberry_log"
+          },
+          "C": {
+            "item": "mysticsbiomes:strawberry_planks"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:strawberry_pyramid_gate"
+        }
+      }
+    }
+  ]
+}

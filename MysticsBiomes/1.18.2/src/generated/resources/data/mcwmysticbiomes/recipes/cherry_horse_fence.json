@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "horse",
+        "pattern": [
+          "ABA",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:cherry_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:cherry_horse_fence",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

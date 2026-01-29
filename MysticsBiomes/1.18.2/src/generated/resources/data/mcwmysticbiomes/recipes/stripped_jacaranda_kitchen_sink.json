@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_kitchen_sinks",
+        "pattern": [
+          "CDC",
+          "ABA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:stripped_jacaranda_log"
+          },
+          "B": {
+            "item": "minecraft:water_bucket"
+          },
+          "C": {
+            "item": "mysticsbiomes:jacaranda_slab"
+          },
+          "D": {
+            "item": "minecraft:cauldron"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:stripped_jacaranda_kitchen_sink"
+        }
+      }
+    }
+  ]
+}

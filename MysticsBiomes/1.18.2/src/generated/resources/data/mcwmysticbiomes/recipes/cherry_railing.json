@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_railing",
+        "pattern": [
+          "A  ",
+          "AA ",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwmysticbiomes:cherry_balcony"
+          }
+        },
+        "result": {
+          "item": "mcwmysticbiomes:cherry_railing",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwmysticbiomes:peony_hedge"
+          ]
+        },
+        "criteria": {
+          "has_peony_leaves": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "mysticsbiomes:peony_leaves"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwmysticbiomes:peony_hedge"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_peony_leaves",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwpaths",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "mysticsbiomes",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks_paths",
+        "ingredients": [
+          {
+            "item": "mysticsbiomes:jacaranda_slab"
+          }
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:jacaranda_planks_path",
+          "count": 3
+        }
+      }
+    }
+  ]
+}
