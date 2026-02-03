@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_drawer_counters",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:jacaranda_slab"
+          },
+          "B": {
+            "item": "mcwmysticbiomes:stripped_jacaranda_drawer"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:stripped_jacaranda_drawer_counter"
+        }
+      }
+    }
+  ]
+}

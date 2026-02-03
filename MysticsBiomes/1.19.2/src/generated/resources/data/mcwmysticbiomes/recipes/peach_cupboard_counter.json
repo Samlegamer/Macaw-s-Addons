@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "cupboard_counters",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:peach_slab"
+          },
+          "B": {
+            "item": "mcwmysticbiomes:peach_wardrobe"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:peach_cupboard_counter"
+        }
+      }
+    }
+  ]
+}

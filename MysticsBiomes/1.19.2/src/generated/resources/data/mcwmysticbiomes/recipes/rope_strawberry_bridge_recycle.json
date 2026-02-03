@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "recyclable_bridges_recycle",
+        "ingredients": [
+          {
+            "item": "mcwmysticbiomes:strawberry_rope_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:rope_strawberry_bridge"
+        }
+      }
+    }
+  ]
+}

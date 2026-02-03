@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_kitchen_cabinets",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:stripped_jacaranda_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AA",
+          "AB",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwmysticbiomes:stripped_jacaranda_kitchen_cabinet"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mystic_trapdoors",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:cherry_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_mystic"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:cherry_mystic_trapdoor"
+        }
+      }
+    }
+  ]
+}

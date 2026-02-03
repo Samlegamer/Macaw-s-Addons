@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "counters",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:maple_slab"
+          },
+          "B": {
+            "item": "mysticsbiomes:maple_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:maple_counter"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "covered_desks",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:strawberry_log"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "A A"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwmysticbiomes:strawberry_covered_desk"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_tables",
+        "key": {
+          "A": {
+            "item": "mcwmysticbiomes:stripped_jacaranda_coffee_table"
+          },
+          "B": {
+            "item": "mysticsbiomes:jacaranda_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:stripped_jacaranda_table"
+        }
+      }
+    }
+  ]
+}

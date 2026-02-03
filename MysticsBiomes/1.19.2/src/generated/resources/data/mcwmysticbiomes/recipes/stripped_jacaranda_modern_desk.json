@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_modern_desks",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:stripped_jacaranda_log"
+          },
+          "B": {
+            "item": "mysticsbiomes:jacaranda_fence"
+          },
+          "C": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BCB"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwmysticbiomes:stripped_jacaranda_modern_desk"
+        }
+      }
+    }
+  ]
+}

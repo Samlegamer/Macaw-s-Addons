@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_chairs",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:stripped_tropical_log"
+          },
+          "B": {
+            "item": "mysticsbiomes:tropical_slab"
+          },
+          "C": {
+            "item": "mysticsbiomes:tropical_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:stripped_tropical_chair"
+        }
+      }
+    }
+  ]
+}

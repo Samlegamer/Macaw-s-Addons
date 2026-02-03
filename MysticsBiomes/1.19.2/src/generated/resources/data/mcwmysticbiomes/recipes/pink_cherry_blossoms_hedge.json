@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "hedge",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:pink_cherry_blossoms"
+          }
+        },
+        "pattern": [
+          "AA",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwmysticbiomes:pink_cherry_blossoms_hedge"
+        }
+      }
+    }
+  ]
+}

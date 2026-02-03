@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "whispering_trapdoors",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:sea_foam_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_whispering"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:sea_foam_whispering_trapdoor"
+        }
+      }
+    }
+  ]
+}

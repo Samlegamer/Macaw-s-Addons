@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "mysticsbiomes:peach_trapdoor"
+          },
+          {
+            "item": "mysticsbiomes:peach_trapdoor"
+          },
+          {
+            "item": "mysticsbiomes:peach_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwmysticbiomes:peach_shutter"
+        }
+      }
+    }
+  ]
+}

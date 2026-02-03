@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwpaths"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks_paths",
+        "ingredients": [
+          {
+            "item": "mysticsbiomes:peach_slab"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwmysticbiomes:peach_planks_path"
+        }
+      }
+    }
+  ]
+}

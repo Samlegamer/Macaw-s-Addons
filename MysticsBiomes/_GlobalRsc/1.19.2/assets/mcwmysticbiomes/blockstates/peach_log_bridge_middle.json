@@ -1,0 +1,18 @@
+{
+    "variants": {                     
+		"connection=base":  { "model": "mcwmysticbiomes:block/bridge/bridge_wood/peach_base","uvlock": true},
+		
+        "connection=middle_ns":  { "model": "mcwmysticbiomes:block/bridge/bridge_wood/peach_middle", "y": 90,"uvlock": true},
+		"connection=middle_ew":  { "model": "mcwmysticbiomes:block/bridge/bridge_wood/peach_middle","uvlock": true},
+
+		"connection=corner_nw":  { "model": "mcwmysticbiomes:block/bridge/bridge_wood/peach_corner", "y": 180,"uvlock": true},
+		"connection=corner_ne":  { "model": "mcwmysticbiomes:block/bridge/bridge_wood/peach_corner", "y": 270,"uvlock": true},
+		"connection=corner_se":  { "model": "mcwmysticbiomes:block/bridge/bridge_wood/peach_corner","uvlock": true},
+		"connection=corner_sw":  { "model": "mcwmysticbiomes:block/bridge/bridge_wood/peach_corner", "y": 90,"uvlock": true},	
+		
+		"connection=side_s":  { "model": "mcwmysticbiomes:block/bridge/bridge_wood/peach_side","uvlock": true},
+		"connection=side_n":  { "model": "mcwmysticbiomes:block/bridge/bridge_wood/peach_side", "y": 180,"uvlock": true},
+		"connection=side_w":  { "model": "mcwmysticbiomes:block/bridge/bridge_wood/peach_side", "y": 90,"uvlock": true},
+		"connection=side_e":  { "model": "mcwmysticbiomes:block/bridge/bridge_wood/peach_side", "y": 270,"uvlock": true}
+    }
+}

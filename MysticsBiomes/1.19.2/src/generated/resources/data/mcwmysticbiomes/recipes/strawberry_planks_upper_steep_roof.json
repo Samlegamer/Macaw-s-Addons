@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "planks_upper_steep_roof",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:strawberry_planks"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " A",
+          " A",
+          "AB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwmysticbiomes:strawberry_planks_upper_steep_roof"
+        }
+      }
+    }
+  ]
+}

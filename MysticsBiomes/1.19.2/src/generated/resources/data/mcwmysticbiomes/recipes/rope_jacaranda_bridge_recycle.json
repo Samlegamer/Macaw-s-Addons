@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "recyclable_bridges_recycle",
+        "ingredients": [
+          {
+            "item": "mcwmysticbiomes:jacaranda_rope_bridge_stair"
+          }
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:rope_jacaranda_bridge"
+        }
+      }
+    }
+  ]
+}

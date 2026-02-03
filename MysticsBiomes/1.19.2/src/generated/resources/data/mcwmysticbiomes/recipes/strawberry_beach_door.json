@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "beach",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:strawberry_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_jungle"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:strawberry_beach_door"
+        }
+      }
+    }
+  ]
+}

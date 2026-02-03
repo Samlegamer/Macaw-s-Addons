@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern_chairs",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:cherry_log"
+          },
+          "B": {
+            "item": "mysticsbiomes:cherry_slab"
+          },
+          "C": {
+            "item": "mysticsbiomes:cherry_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:cherry_modern_chair"
+        }
+      }
+    }
+  ]
+}

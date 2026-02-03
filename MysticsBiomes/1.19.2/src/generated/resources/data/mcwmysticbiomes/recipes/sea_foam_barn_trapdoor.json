@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "barn_trapdoors",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:sea_foam_planks"
+          },
+          "B": {
+            "item": "mcwmysticbiomes:sea_foam_glass_trapdoor"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:sea_foam_barn_trapdoor"
+        }
+      }
+    }
+  ]
+}

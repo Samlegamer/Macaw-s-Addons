@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_lower_bookshelf_drawers",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:stripped_peach_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          },
+          "C": {
+            "item": "minecraft:book"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "ACA",
+          "ABA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwmysticbiomes:stripped_peach_lower_bookshelf_drawer"
+        }
+      }
+    }
+  ]
+}
