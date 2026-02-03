@@ -38,3 +38,9 @@ modId="addonslib"
 mandatory=true
 versionRange="[1.18.2-1.10,)"
 ordering="AFTER"
+
+[[dependencies.${mod_id}]]
+modId="modernfix"
+mandatory=true
+versionRange="NONE"
+ordering="AFTER"
