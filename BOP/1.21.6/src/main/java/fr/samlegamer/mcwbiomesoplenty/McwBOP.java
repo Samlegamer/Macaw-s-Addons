@@ -86,8 +86,10 @@ public class McwBOP extends McwMod
     @Override
     public void clientSetup(FMLClientSetupEvent event)
 	{
-		APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
-		APIRenderTypes.initAllLeave(event, MODID, LEAVES);
+		event.enqueueWork(() -> {
+			APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+			APIRenderTypes.initAllLeave(event, MODID, LEAVES);
+		});
 	}
 
     @Override
