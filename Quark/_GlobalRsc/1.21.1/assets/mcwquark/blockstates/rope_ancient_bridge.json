@@ -1,0 +1,66 @@
+{
+    "variants": {                     
+		"facing=north,connection=base":  { "model": "mcwquark:block/bridge/rope/ancient_base"},
+		"facing=north,connection=base_toggled":  { "model": "mcwquark:block/bridge/rope/ancient_base"},
+		
+        "facing=north,connection=middle_ns":  { "model": "mcwquark:block/bridge/rope/ancient_middle", "y": 90},
+		"facing=north,connection=middle_ew":  { "model": "mcwquark:block/bridge/rope/ancient_middle"},
+
+		"facing=north,connection=middle_end_s":  { "model": "mcwquark:block/bridge/rope/ancient_middle_end", "y": 180},
+		"facing=north,connection=middle_end_n":  { "model": "mcwquark:block/bridge/rope/ancient_middle_end"},
+		"facing=north,connection=middle_end_w":  { "model": "mcwquark:block/bridge/rope/ancient_middle_end", "y": 270},
+		"facing=north,connection=middle_end_e":  { "model": "mcwquark:block/bridge/rope/ancient_middle_end", "y": 90},
+
+		"facing=north,connection=corner_nw":  { "model": "mcwquark:block/bridge/rope/ancient_corner_clear", "y": 180},
+		"facing=north,connection=corner_ne":  { "model": "mcwquark:block/bridge/rope/ancient_corner_clear_r", "y": 270},
+		"facing=north,connection=corner_se":  { "model": "mcwquark:block/bridge/rope/ancient_corner_clear"},
+		"facing=north,connection=corner_sw":  { "model": "mcwquark:block/bridge/rope/ancient_corner_clear_r", "y": 90},	
+		
+		"facing=north,connection=side_s":  { "model": "mcwquark:block/bridge/rope/ancient_side_r"},
+		"facing=north,connection=side_n":  { "model": "mcwquark:block/bridge/rope/ancient_side_r", "y": 180},
+		"facing=north,connection=side_w":  { "model": "mcwquark:block/bridge/rope/ancient_side", "y": 90},
+		"facing=north,connection=side_e":  { "model": "mcwquark:block/bridge/rope/ancient_side", "y": 270},
+		
+		"facing=north,connection=end_n_right":  { "model": "mcwquark:block/bridge/rope/ancient_side_right"},
+		"facing=north,connection=end_n_left":  { "model": "mcwquark:block/bridge/rope/ancient_side_left", "y": 180},
+		"facing=north,connection=end_e_right":  { "model": "mcwquark:block/bridge/rope/ancient_side_right", "y": 180},
+		"facing=north,connection=end_e_left":  { "model": "mcwquark:block/bridge/rope/ancient_side_left"},
+		
+		"facing=north,connection=end_s_left":  { "model": "mcwquark:block/bridge/rope/ancient_side_left_r", "y": 270},
+		"facing=north,connection=end_s_right":  { "model": "mcwquark:block/bridge/rope/ancient_side_right_r", "y": 270},
+		"facing=north,connection=end_w_left":  { "model": "mcwquark:block/bridge/rope/ancient_side_left_r", "y": 90},
+		"facing=north,connection=end_w_right":  { "model": "mcwquark:block/bridge/rope/ancient_side_right_r", "y": 90},
+		
+		
+		"facing=east,connection=base":  { "model": "mcwquark:block/bridge/rope/ancient_base", "y": 90},
+		"facing=east,connection=base_toggled":  { "model": "mcwquark:block/bridge/rope/ancient_base", "y": 90},
+		
+        "facing=east,connection=middle_ns":  { "model": "mcwquark:block/bridge/rope/ancient_middle", "y": 90},
+		"facing=east,connection=middle_ew":  { "model": "mcwquark:block/bridge/rope/ancient_middle"},
+
+		"facing=east,connection=middle_end_s":  { "model": "mcwquark:block/bridge/rope/ancient_middle_end", "y": 180},
+		"facing=east,connection=middle_end_n":  { "model": "mcwquark:block/bridge/rope/ancient_middle_end"},
+		"facing=east,connection=middle_end_w":  { "model": "mcwquark:block/bridge/rope/ancient_middle_end", "y": 270},
+		"facing=east,connection=middle_end_e":  { "model": "mcwquark:block/bridge/rope/ancient_middle_end", "y": 90},
+
+		"facing=east,connection=corner_nw":  { "model": "mcwquark:block/bridge/rope/ancient_corner_clear_r", "y": 180},
+		"facing=east,connection=corner_ne":  { "model": "mcwquark:block/bridge/rope/ancient_corner_clear", "y": 270},
+		"facing=east,connection=corner_se":  { "model": "mcwquark:block/bridge/rope/ancient_corner_clear_r"},
+		"facing=east,connection=corner_sw":  { "model": "mcwquark:block/bridge/rope/ancient_corner_clear", "y": 90},	
+		
+		"facing=east,connection=side_s":  { "model": "mcwquark:block/bridge/rope/ancient_side"},
+		"facing=east,connection=side_n":  { "model": "mcwquark:block/bridge/rope/ancient_side", "y": 180},
+		"facing=east,connection=side_w":  { "model": "mcwquark:block/bridge/rope/ancient_side_r", "y": 90},
+		"facing=east,connection=side_e":  { "model": "mcwquark:block/bridge/rope/ancient_side_r", "y": 270},
+		
+		"facing=east,connection=end_n_right":  { "model": "mcwquark:block/bridge/rope/ancient_side_right_r"},
+		"facing=east,connection=end_n_left":  { "model": "mcwquark:block/bridge/rope/ancient_side_left_r", "y": 180},
+		"facing=east,connection=end_e_right":  { "model": "mcwquark:block/bridge/rope/ancient_side_right_r", "y": 180},
+		"facing=east,connection=end_e_left":  { "model": "mcwquark:block/bridge/rope/ancient_side_left_r"},
+		
+		"facing=east,connection=end_s_left":  { "model": "mcwquark:block/bridge/rope/ancient_side_left", "y": 270},
+		"facing=east,connection=end_s_right":  { "model": "mcwquark:block/bridge/rope/ancient_side_right", "y": 270},
+		"facing=east,connection=end_w_left":  { "model": "mcwquark:block/bridge/rope/ancient_side_left", "y": 90},
+		"facing=east,connection=end_w_right":  { "model": "mcwquark:block/bridge/rope/ancient_side_right", "y": 90}
+    }
+}

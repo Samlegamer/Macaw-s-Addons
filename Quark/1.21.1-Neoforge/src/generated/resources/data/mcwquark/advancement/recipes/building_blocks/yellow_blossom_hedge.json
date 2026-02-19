@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "quark"
+        }
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwquark:yellow_blossom_hedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yellow_blossom_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": "quark:yellow_blossom_leaves"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_yellow_blossom_leaves"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwquark:yellow_blossom_hedge"
+    ]
+  }
+}

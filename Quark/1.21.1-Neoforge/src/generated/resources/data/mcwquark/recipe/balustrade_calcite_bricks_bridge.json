@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "quark"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "balustrade_bridges",
+  "key": {
+    "A": {
+      "item": "quark:calcite_bricks_slab"
+    },
+    "B": {
+      "item": "quark:calcite_bricks_wall"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "AAA"
+  ],
+  "result": {
+    "count": 5,
+    "id": "mcwquark:balustrade_calcite_bricks_bridge"
+  }
+}
