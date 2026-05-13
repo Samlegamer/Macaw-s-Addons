@@ -30,20 +30,20 @@ public class Recipes extends McwRecipes
 
     @Override
     protected void buildCraftingRecipes(@NotNull Consumer<FinishedRecipe> output) {
-        registerAllMcwStone(output, McwAbnormals.MODID, BuzzierBees.MOD_ID, McwAbnormals.ROCK_BB, getBB());
-        registerAllMcwStone(output, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.ROCK_ATMO, getAtmoRock());
-        registerAllMcwStone(output, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.ROCK_AUTU, getAutuRock());
+        recipesUtils.registerAllMcwStone(output, McwAbnormals.MODID, BuzzierBees.MOD_ID, McwAbnormals.ROCK_BB, getBB());
+        recipesUtils.registerAllMcwStone(output, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.ROCK_ATMO, getAtmoRock());
+        recipesUtils.registerAllMcwStone(output, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.ROCK_AUTU, getAutuRock());
 
-        registerAllMcwWood(output, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.WOOD_AUTU, getAutuWood());
-        registerAllMcwWood(output, McwAbnormals.MODID, Environmental.MOD_ID, McwAbnormals.WOOD_ENVI, getEnviWood());
-        registerAllMcwWood(output, McwAbnormals.MODID, UpgradeAquatic.MOD_ID, McwAbnormals.WOOD_UAQUA, getUAquaWood());
-        registerAllMcwWood(output, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.WOOD_ATMO, getAtmoWood());
-//        registerAllMcwWood(output, McwAbnormals.MODID, EndergeticExpansion.MOD_ID, McwAbnormals.WOOD_ENDER, getEnderWood());
+        recipesUtils.registerAllMcwWood(output, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.WOOD_AUTU, getAutuWood());
+        recipesUtils.registerAllMcwWood(output, McwAbnormals.MODID, Environmental.MOD_ID, McwAbnormals.WOOD_ENVI, getEnviWood());
+        recipesUtils.registerAllMcwWood(output, McwAbnormals.MODID, UpgradeAquatic.MOD_ID, McwAbnormals.WOOD_UAQUA, getUAquaWood());
+        recipesUtils.registerAllMcwWood(output, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.WOOD_ATMO, getAtmoWood());
+        //registerAllMcwWood(output, McwAbnormals.MODID, EndergeticExpansion.MOD_ID, McwAbnormals.WOOD_ENDER, getEnderWood());
 
-        registerMcwHedge(output, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.LEAVES_ATMO, getAtmoLeaves());
-        registerMcwHedge(output, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.LEAVES_AUTU, getAutuLeaves());
-        registerMcwHedge(output, McwAbnormals.MODID, Environmental.MOD_ID, McwAbnormals.LEAVES_ENVI, getEnviLeaves());
-        registerMcwHedge(output, McwAbnormals.MODID, UpgradeAquatic.MOD_ID, McwAbnormals.LEAVES_UAQUA, getUAquaLeaves());
+        recipesUtils.registerMcwHedge(output, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.LEAVES_ATMO, getAtmoLeaves());
+        recipesUtils.registerMcwHedge(output, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.LEAVES_AUTU, getAutuLeaves());
+        recipesUtils.registerMcwHedge(output, McwAbnormals.MODID, Environmental.MOD_ID, McwAbnormals.LEAVES_ENVI, getEnviLeaves());
+        recipesUtils.registerMcwHedge(output, McwAbnormals.MODID, UpgradeAquatic.MOD_ID, McwAbnormals.LEAVES_UAQUA, getUAquaLeaves());
     }
 
     private List<Block> getUAquaLeaves()

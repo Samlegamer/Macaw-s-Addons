@@ -2,13 +2,13 @@ modLoader="javafml"
 loaderVersion="[40,)"
 
 license="${mod_license}"
-issueTrackerURL="https://github.com/Samlegamer/Macaw-s-Addons/issues"
+issueTrackerURL="${issues_link}"
 
 [[mods]]
 modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
-displayURL="https://www.curseforge.com/minecraft/mc-mods/macaws-aurora"
+displayURL="${website_link}"
 logoFile="logo.png"
 authors="${mod_authors}"
 description='''${mod_description}'''
@@ -30,7 +30,7 @@ description='''${mod_description}'''
 [[dependencies.${mod_id}]]
     modId="addonslib"
     mandatory=true
-    versionRange="[1.18.2-1.10,)"
+    versionRange="[1.18.2-1.11,)"
     ordering="AFTER"
 
 [[dependencies.${mod_id}]]

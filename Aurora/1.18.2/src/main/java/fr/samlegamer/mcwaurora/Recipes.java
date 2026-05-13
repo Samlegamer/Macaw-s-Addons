@@ -21,7 +21,7 @@ public class Recipes extends McwRecipes
 
     @Override
     protected void buildCraftingRecipes(@NotNull Consumer<FinishedRecipe> consumer) {
-        registerAllMcwWood(consumer, McwAurora.MODID, EnhancedMushrooms.MOD_ID, McwAurora.WOOD_ENHANCED_MUSH, getEM());
+        recipesUtils.registerAllMcwWood(consumer, McwAurora.MODID, EnhancedMushrooms.MOD_ID, McwAurora.WOOD_ENHANCED_MUSH, getEM());
     }
 
     private List<McwWoodMat<Block>> getEM()
