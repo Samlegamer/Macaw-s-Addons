@@ -2,12 +2,12 @@ package fr.samlegamer.mcwbyg;
 
 import fr.addonslib.api.data.McwBlocksIdBase;
 import fr.addonslib.api.data.ModType;
-import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import fr.samlegamer.addonslib.registry.McwRegistry;
+import fr.samlegamer.addonslib.tab.IconRandomForge;
 import fr.samlegamer.addonslib.util.McwMod;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -25,7 +25,6 @@ import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.tab.NewIconRandom;
 import javax.annotation.Nonnull;
 
 @Mod(McwByg.MODID)
@@ -47,30 +46,17 @@ public class McwByg extends McwMod
 	    @Override
 		@Nonnull
 	    public ItemStack makeIcon() {
-			NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
-					Finder.findBlock(MODID, "aspen_roof"),
-					Finder.findBlock(MODID, "aspen_picket_fence"),
-					Finder.findBlock(MODID, "aspen_wardrobe"),
-					Finder.findBlock(MODID, "aspen_log_bridge_middle"),
-					Finder.findBlock(MODID, "aspen_plank_window2"),
-					Finder.findBlock(MODID, "aspen_paper_door"),
-					Finder.findBlock(MODID, "aspen_blossom_trapdoor"),
-					Finder.findBlock(MODID, "aspen_planks_path"),
-					Finder.findBlock(MODID, "aspen_bulk_stairs"));
-
-			prop
-					.addType(ModType.ROOFS)
-					.addType(ModType.FENCES)
-					.addType(ModType.BRIDGES)
-					.addType(ModType.FURNITURES)
-					.addType(ModType.STAIRS)
-					.addType(ModType.DOORS)
-					.addType(ModType.TRAPDOORS)
-					.addType(ModType.PATHS)
-					.addType(ModType.WINDOWS);
-			Block icon = prop.buildIcon(ModType.ROOFS, ModType.FENCES, ModType.BRIDGES, ModType.FURNITURES, ModType.STAIRS,
-					ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.WINDOWS);
-			return new ItemStack(icon);
+			return IconRandomForge.buildIcon(
+                    Finder.findBlock(MODID, "aspen_roof"),
+                    Finder.findBlock(MODID, "aspen_picket_fence"),
+                    Finder.findBlock(MODID, "aspen_wardrobe"),
+                    Finder.findBlock(MODID, "aspen_log_bridge_middle"),
+                    Finder.findBlock(MODID, "aspen_plank_window2"),
+                    Finder.findBlock(MODID, "aspen_paper_door"),
+                    Finder.findBlock(MODID, "aspen_blossom_trapdoor"),
+                    Finder.findBlock(MODID, "aspen_planks_path"),
+                    Finder.findBlock(MODID, "aspen_bulk_stairs"),
+                    ModType.getAllModTypeWood());
 	    }
 	};
 	
@@ -87,11 +73,11 @@ public class McwByg extends McwMod
     @Override
     public void commonSetup(FMLCommonSetupEvent fmlCommonSetupEvent) {
         fmlCommonSetupEvent.enqueueWork(() -> {
-            McwLootTables.addBlockAllWood(MODID, WOOD);
-            McwLootTables.addBlockHedges(MODID, LEAVES);
-            McwLootTables.addBlock(MODID, bridges_rockable, McwBlocksIdBase.BRIDGES_STONE_BLOCKS);
-            McwLootTables.addBlock(MODID, fences_rockable, McwBlocksIdBase.ROOFS_STONE_BLOCKS);
-            McwLootTables.addBlock(MODID, fences_rockable, McwBlocksIdBase.FENCES_STONE_BLOCKS);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, LEAVES);
+            McwLootTables.LOOT_TABLE_UTILS.addBlock(MODID, bridges_rockable, McwBlocksIdBase.BRIDGES_STONE_BLOCKS);
+            McwLootTables.LOOT_TABLE_UTILS.addBlock(MODID, fences_rockable, McwBlocksIdBase.ROOFS_STONE_BLOCKS);
+            McwLootTables.LOOT_TABLE_UTILS.addBlock(MODID, fences_rockable, McwBlocksIdBase.FENCES_STONE_BLOCKS);
         });
     }
 
@@ -101,7 +87,7 @@ public class McwByg extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(gatherDataEvent.getGenerator(), MODID, gatherDataEvent.getExistingFileHelper()) {
                 @Override
                 protected void addTags() {
-                    addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOOD, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(MODID, LEAVES);
                     addAllMcwTagsStone(MODID, bridges_rockable, ModType.BRIDGES);
                     addAllMcwTagsStone(MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
@@ -113,7 +99,7 @@ public class McwByg extends McwMod
             gatherDataEvent.getGenerator().addProvider(new McwItemTags(gatherDataEvent.getGenerator(), mcwBlockTags, MODID, gatherDataEvent.getExistingFileHelper()) {
                 @Override
                 protected void addTags() {
-                    addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOOD, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(MODID, LEAVES);
                     addAllMcwTagsStone(MODID, bridges_rockable, ModType.BRIDGES);
                     addAllMcwTagsStone(MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
@@ -125,7 +111,7 @@ public class McwByg extends McwMod
     @Override
     public void clientSetup(FMLClientSetupEvent event)
     {
-        APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, WOOD, ModType.getAllModTypeWood());
         APIRenderTypes.initAllLeave(event, MODID, LEAVES);
         APIRenderTypes.initAllStone(event, MODID, bridges_rockable, ModType.BRIDGES);
         APIRenderTypes.initAllStone(event, MODID, fences_rockable, ModType.FENCES, ModType.ROOFS);
@@ -134,7 +120,7 @@ public class McwByg extends McwMod
     @SubscribeEvent
     public static void registry(final RegistryEvent.Register<Block> event)
     {
-        McwRegistry.registryEventWood(event, MODID, WOOD, MCWBYG_TAB, Registration.getAllModTypeWood());
+        McwRegistry.registryEventWood(event, MODID, WOOD, MCWBYG_TAB, ModType.getAllModTypeWood());
         McwRegistry.registryEventLeave(event, MODID, LEAVES, MCWBYG_TAB);
         McwRegistry.registryEventStone(event, MODID, bridges_rockable, MCWBYG_TAB, ModType.BRIDGES);
         McwRegistry.registryEventStone(event, MODID, fences_rockable, MCWBYG_TAB, ModType.FENCES, ModType.ROOFS);
