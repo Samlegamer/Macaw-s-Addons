@@ -2,13 +2,13 @@ modLoader="javafml"
 loaderVersion="[40,)"
 
 license="${mod_license}"
-issueTrackerURL="https://github.com/Samlegamer/Macaw-s-Addons/issues"
+issueTrackerURL="${mod_issue_tracker}"
 
 [[mods]]
 modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
-displayURL="https://curseforge.com/minecraft/mc-mods/macaws-quark"
+displayURL="${mod_project_url}"
 logoFile="logo.png"
 credits="sketch_macaw"
 authors="${mod_authors}"
@@ -45,7 +45,7 @@ side="BOTH"
 [[dependencies.${mod_id}]]
     modId="addonslib"
     mandatory=true
-    versionRange="[1.18.2-1.10,)"
+    versionRange="[1.18.2-1.11,)"
     ordering="AFTER"
 
 [[dependencies.${mod_id}]]
