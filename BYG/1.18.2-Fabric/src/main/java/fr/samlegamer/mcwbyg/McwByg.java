@@ -7,10 +7,9 @@ import fr.samlegamer.addonslib.registry.McwRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.tab.NewIconRandom;
+import fr.samlegamer.addonslib.tab.IconRandomFabric;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.minecraft.block.Block;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -20,7 +19,7 @@ public class McwByg implements ModInitializer
 	public static final String MODID = "mcwbyg";
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public static ItemGroup MCWBYG_TAB = FabricItemGroupBuilder.build(new Identifier(MODID + ".tab"), () -> new ItemStack(icon()));
+    public static ItemGroup MCWBYG_TAB = FabricItemGroupBuilder.build(new Identifier(MODID + ".tab"), McwByg::icon);
 	public static final List<String> WOOD = List.of("aspen","baobab", "blue_enchanted","cherry","cika","cypress","ebony","ether","fir","green_enchanted","holly","jacaranda",
     	    "lament","mahogany","mangrove","maple","nightshade","palm","pine","rainbow_eucalyptus","redwood","skyris", "willow", "witch_hazel", "zelkova", "bulbis", "imparius", "sythian");
 	public static final List<String> fences_rockable = List.of("soapstone", "travertine", "dacite", "red_rock", "scoria_stone");
@@ -48,9 +47,9 @@ public class McwByg implements ModInitializer
         LOGGER.info("Macaw's Oh the Biomes You'll Go Is Charged !");
 	}
 	
-	private static Block icon()
+	private static ItemStack icon()
 	{
-		NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
+		return IconRandomFabric.buildIcon(
 				Finder.findBlock(MODID, "aspen_roof"),
 				Finder.findBlock(MODID, "aspen_picket_fence"),
 				Finder.findBlock(MODID, "aspen_wardrobe"),
@@ -59,18 +58,7 @@ public class McwByg implements ModInitializer
 				Finder.findBlock(MODID, "aspen_paper_door"),
 				Finder.findBlock(MODID, "aspen_blossom_trapdoor"),
 				Finder.findBlock(MODID, "aspen_planks_path"),
-				Finder.findBlock(MODID, "aspen_bulk_stairs"));
-
-		    prop.addType(ModType.ROOFS)
-                .addType(ModType.FENCES)
-				.addType(ModType.BRIDGES)
-				.addType(ModType.FURNITURES)
-				.addType(ModType.STAIRS)
-				.addType(ModType.DOORS)
-				.addType(ModType.TRAPDOORS)
-				.addType(ModType.PATHS)
-				.addType(ModType.WINDOWS);
-		return prop.buildIcon(ModType.ROOFS, ModType.FENCES, ModType.BRIDGES, ModType.FURNITURES, ModType.STAIRS,
-				ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.WINDOWS);
+				Finder.findBlock(MODID, "aspen_bulk_stairs"),
+				ModType.getAllModTypeWood());
 	}
 }

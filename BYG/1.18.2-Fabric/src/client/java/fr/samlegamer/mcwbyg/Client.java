@@ -1,9 +1,8 @@
 package fr.samlegamer.mcwbyg;
 
 import java.util.Arrays;
-import fr.addonslib.api.client.McwColors;
+import fr.addonslib.api.client.ObjectColor;
 import fr.addonslib.api.data.ModType;
-import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.client.ColorRegistry;
 import net.fabricmc.api.ClientModInitializer;
@@ -13,14 +12,14 @@ import net.fabricmc.api.Environment;
 @Environment(EnvType.CLIENT)
 public class Client implements ClientModInitializer
 {
-	private static final ColorRegistry COLOR = new ColorRegistry(new McwColors(Arrays.asList(
-			Finder.makeIdHedge(McwByg.MODID, "mahogany"),
-			Finder.makeIdHedge(McwByg.MODID, "maple"))));
+	private static final ColorRegistry COLOR = new ColorRegistry(Arrays.asList(
+			new ObjectColor(McwByg.MODID, "mahogany"),
+			new ObjectColor(McwByg.MODID, "maple")));
 
 	@Override
 	public void onInitializeClient()
 	{
-		COLOR.registryBlockColorsAverage();
+		COLOR.registryBlockColors();
 		COLOR.registryItemColors();
 
 		APIRenderTypes.initAllWood(McwByg.MODID, McwByg.WOOD, ModType.getAllModTypeWood());
