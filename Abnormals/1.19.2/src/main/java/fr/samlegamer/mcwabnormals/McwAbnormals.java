@@ -1,11 +1,13 @@
 package fr.samlegamer.mcwabnormals;
 
 import fr.addonslib.api.data.ModType;
+import fr.samlegamer.addonslib.RegistrationForge;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import fr.samlegamer.addonslib.registry.McwRegistry;
+import fr.samlegamer.addonslib.registry.RegistryUtils;
 import fr.samlegamer.addonslib.util.McwMod;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.item.CreativeModeTab;
@@ -26,7 +28,6 @@ import java.util.List;
 import java.util.Map;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import fr.samlegamer.addonslib.Registration;
 import org.jetbrains.annotations.NotNull;
 
 @Mod(McwAbnormals.MODID)
@@ -51,8 +52,8 @@ public class McwAbnormals extends McwMod
     public static final List<String> LEAVES_ENVI = List.of("cherry", "blue_wisteria", "pink_wisteria", "white_wisteria", "purple_wisteria", "willow");
     public static final List<String> LEAVES_UAQUA = List.of("river");
     
-    private static final DeferredRegister<Block> block = Registration.blocks(MODID);
-    private static final DeferredRegister<Item> item = Registration.items(MODID);
+    private static final DeferredRegister<Block> block = RegistrationForge.blocks(MODID);
+    private static final DeferredRegister<Item> item = RegistrationForge.items(MODID);
 
 	public static final RegistryObject<Item> LOGO = item.register("logo", () -> new Item(new Item.Properties()));
 	
@@ -66,9 +67,9 @@ public class McwAbnormals extends McwMod
     public McwAbnormals()
     {
     	LOGGER.info("Macaw's Abnormals Mod Loading...");
-    	Registration.init(block, item);
+        RegistrationForge.init(block, item);
 
-        Map<String, SoundType> mapBuzzierBees = McwRegistry.makeDefaultFromList(ROCK_BB, SoundType.CORAL_BLOCK);
+        Map<String, SoundType> mapBuzzierBees = RegistryUtils.makeDefaultFromList(ROCK_BB, SoundType.CORAL_BLOCK);
         Map<String, SoundType> mapCavernsChasms = new HashMap<>();
 
         for(String key : ROCK_CAVERNSCHASMS)
@@ -138,22 +139,22 @@ public class McwAbnormals extends McwMod
     @Override
     public void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            McwLootTables.addBlockAllWood(MODID, WOOD_ATMO);
-            McwLootTables.addBlockAllWood(MODID, WOOD_AUTU);
-            McwLootTables.addBlockAllWood(MODID, WOOD_ENVI);
-            McwLootTables.addBlockAllWood(MODID, WOOD_UAQUA);
-            McwLootTables.addBlockAllWood(MODID, WOOD_ENDER);
-            McwLootTables.addBlockAllWood(MODID, WOOD_CAVERNSCHASMS);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD_ATMO);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD_AUTU);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD_ENVI);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD_UAQUA);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD_ENDER);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD_CAVERNSCHASMS);
 
-            McwLootTables.addBlockHedges(MODID, LEAVES_ATMO);
-            McwLootTables.addBlockHedges(MODID, LEAVES_AUTU);
-            McwLootTables.addBlockHedges(MODID, LEAVES_ENVI);
-            McwLootTables.addBlockHedges(MODID, LEAVES_UAQUA);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, LEAVES_ATMO);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, LEAVES_AUTU);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, LEAVES_ENVI);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, LEAVES_UAQUA);
 
-            McwLootTables.addBlockAllStone(MODID, ROCK_BB);
-            McwLootTables.addBlockAllStone(MODID, ROCK_ATMO);
-            McwLootTables.addBlockAllStone(MODID, ROCK_AUTU);
-            McwLootTables.addBlockAllStone(MODID, ROCK_CAVERNSCHASMS);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllStone(MODID, ROCK_BB);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllStone(MODID, ROCK_ATMO);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllStone(MODID, ROCK_AUTU);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllStone(MODID, ROCK_CAVERNSCHASMS);
         });
     }
 
