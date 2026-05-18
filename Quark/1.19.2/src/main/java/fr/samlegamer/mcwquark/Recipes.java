@@ -23,9 +23,9 @@ public class Recipes extends McwRecipes
 
     @Override
     protected void buildCraftingRecipes(@NotNull Consumer<FinishedRecipe> consumer) {
-        registerAllMcwWood(consumer, McwQuark.MODID, Quark.MOD_ID, McwQuark.wood, wood());
-        registerMcwHedge(consumer, McwQuark.MODID, Quark.MOD_ID, McwQuark.leaves, leave());
-        registerAllMcwStone(consumer, McwQuark.MODID, Quark.MOD_ID, McwQuark.stone, stone());
+        recipesUtils.registerAllMcwWood(consumer, McwQuark.MODID, Quark.MOD_ID, McwQuark.wood, wood());
+        recipesUtils.registerMcwHedge(consumer, McwQuark.MODID, Quark.MOD_ID, McwQuark.leaves, leave());
+        recipesUtils.registerAllMcwStone(consumer, McwQuark.MODID, Quark.MOD_ID, McwQuark.stone, stone());
     }
 
     private List<Block> leave()
