@@ -2,13 +2,13 @@ modLoader="javafml"
 loaderVersion="[41,)"
 
 license="${mod_license}"
-issueTrackerURL="https://github.com/Samlegamer/Macaw-s-Addons/issues"
+issueTrackerURL="${issues_link}"
 
 [[mods]]
 modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
-displayURL="https://www.curseforge.com/minecraft/mc-mods/macaws-byg-bwg"
+displayURL="${website_link}"
 logoFile="logo.png"
 authors="${mod_authors}"
 description='''${mod_description}'''
@@ -37,6 +37,6 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="addonslib"
 mandatory=true
-versionRange="[1.19-1.8,)"
+versionRange="[1.19-1.9,)"
 ordering="BEFORE"
 side="BOTH"

@@ -2,6 +2,7 @@ package fr.samlegamer.mcwbyg;
 
 import fr.addonslib.api.data.McwBlocksIdBase;
 import fr.addonslib.api.data.ModType;
+import fr.samlegamer.addonslib.RegistrationForge;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
@@ -24,8 +25,7 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.tab.NewIconRandom;
+import fr.samlegamer.addonslib.tab.IconRandomForge;
 import org.jetbrains.annotations.NotNull;
 
 @Mod(McwByg.MODID)
@@ -46,7 +46,7 @@ public class McwByg extends McwMod
 	    @Override
 	    public @NotNull ItemStack makeIcon()
 		{
-				NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
+				return IconRandomForge.buildIcon(
 						Finder.findBlock(MODID, "aspen_roof"),
 						Finder.findBlock(MODID, "aspen_picket_fence"),
 						Finder.findBlock(MODID, "aspen_wardrobe"),
@@ -55,30 +55,17 @@ public class McwByg extends McwMod
 						Finder.findBlock(MODID, "aspen_paper_door"),
 						Finder.findBlock(MODID, "aspen_blossom_trapdoor"),
 						Finder.findBlock(MODID, "aspen_planks_path"),
-						Finder.findBlock(MODID, "aspen_bulk_stairs"));
-
-				prop
-						.addType(ModType.ROOFS)
-						.addType(ModType.FENCES)
-						.addType(ModType.BRIDGES)
-						.addType(ModType.FURNITURES)
-						.addType(ModType.STAIRS)
-						.addType(ModType.DOORS)
-						.addType(ModType.TRAPDOORS)
-						.addType(ModType.PATHS)
-						.addType(ModType.WINDOWS);
-				Block icon = prop.buildIcon(ModType.ROOFS, ModType.FENCES, ModType.BRIDGES, ModType.FURNITURES, ModType.STAIRS,
-						ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.WINDOWS);
-				return new ItemStack(icon);
+						Finder.findBlock(MODID, "aspen_bulk_stairs"),
+						ModType.getAllModTypeWood());
 	    }
 	};
-    private static final DeferredRegister<Block> block = Registration.blocks(MODID);
-    private static final DeferredRegister<Item> item = Registration.items(MODID);
+    private static final DeferredRegister<Block> block = RegistrationForge.blocks(MODID);
+    private static final DeferredRegister<Item> item = RegistrationForge.items(MODID);
 
     public McwByg()
     {
     	LOGGER.info("Macaw's Oh the Biomes You'll Go Loading...");
-    	Registration.init(block, item);
+		RegistrationForge.init(block, item);
 
 		McwRegistry.setRegistriesWood(WOOD, block, item, MCWBYG_TAB, ModType.getAllModTypeWood());
 		McwRegistry.setRegistriesLeave(LEAVES, block, item, MCWBYG_TAB);
@@ -103,11 +90,11 @@ public class McwByg extends McwMod
     @Override
     public void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            McwLootTables.addBlockAllWood(MODID, WOOD);
-            McwLootTables.addBlockHedges(MODID, LEAVES);
-            McwLootTables.addBlock(MODID, bridges_rockable, McwBlocksIdBase.BRIDGES_STONE_BLOCKS);
-            McwLootTables.addBlock(MODID, fences_rockable, McwBlocksIdBase.ROOFS_STONE_BLOCKS);
-            McwLootTables.addBlock(MODID, fences_rockable, McwBlocksIdBase.FENCES_STONE_BLOCKS);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, LEAVES);
+            McwLootTables.LOOT_TABLE_UTILS.addBlock(MODID, bridges_rockable, McwBlocksIdBase.BRIDGES_STONE_BLOCKS);
+            McwLootTables.LOOT_TABLE_UTILS.addBlock(MODID, fences_rockable, McwBlocksIdBase.ROOFS_STONE_BLOCKS);
+            McwLootTables.LOOT_TABLE_UTILS.addBlock(MODID, fences_rockable, McwBlocksIdBase.FENCES_STONE_BLOCKS);
         });
     }
 
