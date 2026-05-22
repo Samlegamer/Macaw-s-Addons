@@ -4,11 +4,10 @@ import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.fuel.APIFuels;
 import fr.samlegamer.addonslib.registry.McwRegistry;
-import fr.samlegamer.addonslib.tab.NewIconRandom;
+import fr.samlegamer.addonslib.tab.IconRandomFabric;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.block.Block;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -34,7 +33,7 @@ public class McwTerraformersMC implements ModInitializer
     public static final List<String> LEAVES_TERRESTRIA = List.of("redwood", "hemlock", "rubber", "cypress", "willow", "japanese_maple",
             "rainbow_eucalyptus", "sakura", "yucca_palm", "japanese_maple_shrub", "dark_japanese_maple", "jungle_palm");
 
-    public static final ItemGroup MCWTERRAFORMERSMC_TAB = FabricItemGroupBuilder.build(new Identifier(MODID + ".tab"), () -> new ItemStack(icon()));
+    public static final ItemGroup MCWTERRAFORMERSMC_TAB = FabricItemGroupBuilder.build(new Identifier(MODID + ".tab"), McwTerraformersMC::icon);
 
     public void onInitialize()
     {
@@ -62,9 +61,9 @@ public class McwTerraformersMC implements ModInitializer
         LOGGER.info("Macaw's TerraformersMC Is Charged !");
     }
 
-    private static Block icon()
+    private static ItemStack icon()
     {
-        NewIconRandom.NewProperties propIcon = new NewIconRandom.NewProperties(
+        return IconRandomFabric.buildIcon(
                 Finder.findBlock(MODID, randomNaming()+"_planks_roof"),
                 Finder.findBlock(MODID, randomNaming()+"_pyramid_gate"),
                 Finder.findBlock(MODID, randomNaming()+"_bookshelf_drawer"),
@@ -73,20 +72,8 @@ public class McwTerraformersMC implements ModInitializer
                 Finder.findBlock(MODID, randomNaming()+"_barn_glass_door"),
                 Finder.findBlock(MODID, randomNaming()+"_blossom_trapdoor"),
                 Finder.findBlock(MODID, randomNaming()+"_planks_path"),
-                Finder.findBlock(MODID, randomNaming()+"_skyline_stairs"));
-
-        propIcon.addType(ModType.BRIDGES)
-                .addType(ModType.ROOFS)
-                .addType(ModType.FENCES)
-                .addType(ModType.FURNITURES)
-                .addType(ModType.STAIRS)
-                .addType(ModType.PATHS)
-                .addType(ModType.DOORS)
-                .addType(ModType.WINDOWS)
-                .addType(ModType.TRAPDOORS);
-        return propIcon.buildIcon(ModType.BRIDGES, ModType.ROOFS, ModType.FENCES,
-                ModType.FURNITURES, ModType.STAIRS, ModType.PATHS, ModType.DOORS,
-                ModType.WINDOWS, ModType.TRAPDOORS);
+                Finder.findBlock(MODID, randomNaming()+"_skyline_stairs"),
+                ModType.getAllModTypeWood());
     }
 
     private static String randomNaming()
