@@ -1,6 +1,7 @@
 package fr.samlegamer.mcwregionsunexplored;
 
 import fr.addonslib.api.data.ModType;
+import fr.samlegamer.addonslib.RegistrationForge;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
@@ -13,6 +14,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -26,8 +28,7 @@ import java.util.concurrent.CompletableFuture;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.tab.NewIconRandom;
+import fr.samlegamer.addonslib.tab.IconRandomForge;
 import org.jetbrains.annotations.NotNull;
 
 @Mod(McwRegionsUnexplored.MODID)
@@ -41,15 +42,15 @@ public class McwRegionsUnexplored extends McwMod
     "larch", "maple", "mauve", "palm", "pine", "redwood", "sculkwood", "willow", "alpha_oak", "pink_cherry", "red_cherry", "white_cherry",
     "red_maple", "orange_maple", "golden_larch", "dead_pine", "silver_birch");
 
-    private static final DeferredRegister<Block> block = Registration.blocks(MODID);
-    private static final DeferredRegister<Item> item = Registration.items(MODID);
+    private static final DeferredRegister<Block> block = RegistrationForge.blocks(MODID);
+    private static final DeferredRegister<Item> item = RegistrationForge.items(MODID);
 
     public static CreativeModeTab MCWREGIONUNEXPLORED_TAB;
 
     public McwRegionsUnexplored()
     {
         LOGGER.info("Macaw's Regions Unexplored Loading...");
-        Registration.init(block, item);
+        RegistrationForge.init(block, item);
         McwRegistry.setRegistriesWood(WOOD, block, item, ModType.getAllModTypeWood());
         McwRegistry.setRegistriesLeave(LEAVES, block, item);
         bus().addListener(this::clientSetup);
@@ -69,8 +70,8 @@ public class McwRegionsUnexplored extends McwMod
     @Override
     public void commonSetup(FMLCommonSetupEvent fmlCommonSetupEvent) {
         fmlCommonSetupEvent.enqueueWork(() -> {
-            McwLootTables.addBlockAllWood(MODID, WOOD);
-            McwLootTables.addBlockHedges(MODID, LEAVES);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, LEAVES);
         });
     }
 
@@ -103,7 +104,7 @@ public class McwRegionsUnexplored extends McwMod
 
     @Override
     public void tabRegistry(CreativeModeTabEvent.Register register) {
-        NewIconRandom.NewProperties woodProperties = new NewIconRandom.NewProperties(
+        final ItemStack icon = IconRandomForge.buildIcon(
                 Finder.findBlock(MODID, "palm_roof"),
                 Finder.findBlock(MODID, "willow_picket_fence"),
                 Finder.findBlock(MODID, "redwood_wardrobe"),
@@ -112,22 +113,9 @@ public class McwRegionsUnexplored extends McwMod
                 Finder.findBlock(MODID, "larch_japanese_door"),
                 Finder.findBlock(MODID, "maple_glass_trapdoor"),
                 Finder.findBlock(MODID, "baobab_planks_path"),
-                Finder.findBlock(MODID, "pine_loft_stairs")
-        );
-        woodProperties
-                .addType(ModType.ROOFS)
-                .addType(ModType.FENCES)
-                .addType(ModType.FURNITURES)
-                .addType(ModType.BRIDGES)
-                .addType(ModType.WINDOWS)
-                .addType(ModType.DOORS)
-                .addType(ModType.TRAPDOORS)
-                .addType(ModType.PATHS)
-                .addType(ModType.STAIRS);
-        final Block icon = woodProperties.buildIcon(ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.BRIDGES, ModType.WINDOWS,
-                ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.STAIRS);
-
-        MCWREGIONUNEXPLORED_TAB = Registration.tabs(register, MODID, "tab", icon);
+                Finder.findBlock(MODID, "pine_loft_stairs"),
+                ModType.getAllModTypeWood());
+        MCWREGIONUNEXPLORED_TAB = RegistrationForge.tabs(register, MODID, "tab", icon.getItem());
     }
 
     @Override
