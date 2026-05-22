@@ -2,15 +2,14 @@
 	"schemaVersion": 1,
   "id": "${archives_base_name}",
   "version": "${version}",
-
   "name": "${mod_name}",
   "description": "${mod_description}",
   "authors": [
     "${mod_authors}"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/macaws-byg-bwg",
-    "sources": "https://github.com/Samlegamer/Macaw-s-Addons"
+    "homepage": "${website_link}",
+    "sources": "${issues_link}"
   },
   "license": "${mod_license}",
   "icon": "logo.png",
@@ -31,7 +30,7 @@
 		"minecraft": "~1.19.3",
 		"java": ">=17",
 		"fabric-api": "*",
-        "addonslib": ">=1.19.3-1.9",
+        "addonslib": ">=1.19.3-1.10",
         "byg": "*"
 	},
 	"suggests": {
