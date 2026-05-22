@@ -11,8 +11,8 @@ public class LootTables extends McwLootTables
 
     @Override
     protected void generateBlockLootTables() {
-        addBlockAllWood(McwRegionsUnexplored.MODID, McwRegionsUnexplored.WOOD);
-        addBlockHedges(McwRegionsUnexplored.MODID, McwRegionsUnexplored.LEAVES);
+        lootTableUtils.addBlockAllWood(McwRegionsUnexplored.MODID, McwRegionsUnexplored.WOOD);
+        lootTableUtils.addBlockHedges(McwRegionsUnexplored.MODID, McwRegionsUnexplored.LEAVES);
         makeLootTables();
     }
 }

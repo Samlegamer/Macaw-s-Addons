@@ -4,10 +4,9 @@ import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.Finder;
 import fr.samlegamer.addonslib.fuel.APIFuels;
 import fr.samlegamer.addonslib.registry.McwRegistry;
-import fr.samlegamer.addonslib.tab.NewIconRandom;
+import fr.samlegamer.addonslib.tab.IconRandomFabric;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.minecraft.block.Block;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -38,7 +37,7 @@ public class McwRegionsUnexplored implements ModInitializer {
     }
 
     public static ItemStack makeIcon() {
-        NewIconRandom.NewProperties woodProperties = new NewIconRandom.NewProperties(
+        return IconRandomFabric.buildIcon(
                 Finder.findBlock(MODID, "palm_roof"),
                 Finder.findBlock(MODID, "willow_picket_fence"),
                 Finder.findBlock(MODID, "redwood_wardrobe"),
@@ -47,20 +46,7 @@ public class McwRegionsUnexplored implements ModInitializer {
                 Finder.findBlock(MODID, "larch_japanese_door"),
                 Finder.findBlock(MODID, "maple_glass_trapdoor"),
                 Finder.findBlock(MODID, "baobab_planks_path"),
-                Finder.findBlock(MODID, "pine_loft_stairs")
-        );
-        woodProperties
-                .addType(ModType.ROOFS)
-                .addType(ModType.FENCES)
-                .addType(ModType.FURNITURES)
-                .addType(ModType.BRIDGES)
-                .addType(ModType.WINDOWS)
-                .addType(ModType.DOORS)
-                .addType(ModType.TRAPDOORS)
-                .addType(ModType.PATHS)
-                .addType(ModType.STAIRS);
-        Block icon = woodProperties.buildIcon(ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.BRIDGES, ModType.WINDOWS,
-                ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.STAIRS);
-        return new ItemStack(icon);
+                Finder.findBlock(MODID, "pine_loft_stairs"),
+                ModType.getAllModTypeWood());
     }
 }
