@@ -3,19 +3,34 @@ plugins {
 	id 'maven-publish'
 }
 
-def extraPropsFile = file('../../_properties/1.19.4fabricgradle.properties')
-if (extraPropsFile.exists()) {
-    def extraProps = new Properties()
-    extraPropsFile.withInputStream { extraProps.load(it) }
-    extraProps.each { k, v ->
-        project.ext.set(k.toString(), v.toString())
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
     }
-} else {
-    println "WARNING: Properties file not found: ${extraPropsFile.absolutePath}"
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
 }
+
+loadExtraProperties('../../_properties/1.19.4fabricgradle.properties')
+loadExtraProperties('../_GlobalRsc/globalgradle.properties')
 
 version = project.mod_version
 group = project.maven_group
+
+sourceSets {
+    main {
+        resources {
+            srcDirs '../_GlobalRsc/common/'
+        }
+        resources {
+            srcDirs '../_GlobalRsc/1.18.2/'
+        }
+    }
+}
 
 base {
 	archivesName = project.archives_base_name + "-fabric"
@@ -97,9 +112,9 @@ dependencies {
     modRuntimeOnly("com.terraformersmc:cinderscapes-common:${cinderscapes_version}")
     modRuntimeOnly("com.terraformersmc:terrestria-common:${terrestria_version}")
 
-    //modRuntimeOnly("com.terraformersmc:traverse-client:${traverse_version}")
-    //modRuntimeOnly("com.terraformersmc:cinderscapes-client:${cinderscapes_version}")
-    //modRuntimeOnly("com.terraformersmc:terrestria-client:${terrestria_version}")
+    modRuntimeOnly("com.terraformersmc:traverse-client:${traverse_version}")
+    modRuntimeOnly("com.terraformersmc:cinderscapes-client:${cinderscapes_version}")
+    modRuntimeOnly("com.terraformersmc:terrestria-client:${terrestria_version}")
 
     modImplementation("com.terraformersmc:biolith:${biolith_fabric_version}")
     modImplementation("me.shedaniel.cloth:cloth-config-fabric:${cloth_config_version}")
