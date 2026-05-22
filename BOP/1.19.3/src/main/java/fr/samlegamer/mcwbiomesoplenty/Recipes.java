@@ -26,8 +26,8 @@ public class Recipes extends McwRecipes
 
         List<McwWoodMat<Block>> woodMats = getWoodMats();
 
-        registerAllMcwWood(consumer, McwBOP.MODID, BiomesOPlenty.MOD_ID, McwBOP.WOOD, woodMats);
-        registerMcwHedge(consumer, McwBOP.MODID, BiomesOPlenty.MOD_ID, McwBOP.LEAVES, leave);
+        recipesUtils.registerAllMcwWood(consumer, McwBOP.MODID, BiomesOPlenty.MOD_ID, McwBOP.WOOD, woodMats);
+        recipesUtils.registerMcwHedge(consumer, McwBOP.MODID, BiomesOPlenty.MOD_ID, McwBOP.LEAVES, leave);
     }
 
     private List<McwWoodMat<Block>> getWoodMats()

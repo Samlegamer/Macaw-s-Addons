@@ -2,13 +2,13 @@ modLoader="javafml"
 loaderVersion="[44,)"
 
 license="${mod_license}"
-issueTrackerURL="https://github.com/Samlegamer/Macaw-s-Addons/issues"
+issueTrackerURL="${issues_link}"
 
 [[mods]]
 modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
-displayURL="https://www.curseforge.com/minecraft/mc-mods/macaws-biomes-o-plenty"
+displayURL="${website_link}"
 logoFile="logo.png"
 #credits=""
 authors="${mod_authors}"
@@ -38,6 +38,6 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="addonslib"
 mandatory=true
-versionRange="[1.19.3-1.7,)"
+versionRange="[1.19.3-1.10,)"
 ordering="BEFORE"
 side="BOTH"

@@ -1,6 +1,7 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
 import fr.addonslib.api.data.ModType;
+import fr.samlegamer.addonslib.RegistrationForge;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
@@ -13,6 +14,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -27,8 +29,7 @@ import java.util.concurrent.CompletableFuture;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.tab.NewIconRandom;
+import fr.samlegamer.addonslib.tab.IconRandomForge;
 import org.jetbrains.annotations.NotNull;
 
 @Mod(McwBOP.MODID)
@@ -39,16 +40,16 @@ public class McwBOP extends McwMod
 	public static final List<String> WOOD = List.of("cherry", "dead", "fir", "hellbark", "jacaranda", "magic", "mahogany", "palm", "redwood", "umbran", "willow");
 	public static final List<String> LEAVES = List.of("pink_cherry", "dead", "fir", "hellbark", "jacaranda", "magic", "mahogany", "palm", "redwood", "umbran", "willow", "maple", 
 	"orange_autumn", "yellow_autumn", "white_cherry", "flowering_oak", "rainbow_birch", "origin");
-    private static final DeferredRegister<Block> block = Registration.blocks(MODID);
-    private static final DeferredRegister<Item> item = Registration.items(MODID);
+    private static final DeferredRegister<Block> block = RegistrationForge.blocks(MODID);
+    private static final DeferredRegister<Item> item = RegistrationForge.items(MODID);
 	public static CreativeModeTab MCWBOP_TAB;
 	
     public McwBOP()
     {
         LOGGER.info("Macaw's Biomes O' Plenty Loading...");
-    	Registration.init(block, item);
+    	RegistrationForge.init(block, item);
 
-        McwRegistry.setRegistriesWood(WOOD, block, item, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(WOOD, block, item, ModType.getAllModTypeWood());
         McwRegistry.setRegistriesLeave(LEAVES, block, item);
         
         bus().addListener(this::clientSetup);
@@ -62,15 +63,15 @@ public class McwBOP extends McwMod
 
     @Override
     public void clientSetup(FMLClientSetupEvent event) {
-        APIRenderTypes.initAllWood(event, MODID, WOOD, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, WOOD, ModType.getAllModTypeWood());
         APIRenderTypes.initAllLeave(event, MODID, LEAVES);
     }
 
     @Override
     public void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            McwLootTables.addBlockAllWood(MODID, WOOD);
-            McwLootTables.addBlockHedges(MODID, LEAVES);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, LEAVES);
         });
     }
 
@@ -86,7 +87,7 @@ public class McwBOP extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(output, lookupProvider, MODID, existingFileHelper) {
                 @Override
                 protected void addTags(HolderLookup.@NotNull Provider p_256380_) {
-                    addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOOD, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(MODID, LEAVES);
                 }
             };
@@ -96,7 +97,7 @@ public class McwBOP extends McwMod
             generator.addProvider(true, new McwItemTags(output, lookupProvider, mcwBlockTags, MODID, existingFileHelper) {
                 @Override
                 protected void addTags(HolderLookup.@NotNull Provider p_256380_) {
-                    addAllMcwTagsWood(MODID, WOOD, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOOD, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(MODID, LEAVES);
                 }
             });
@@ -105,26 +106,23 @@ public class McwBOP extends McwMod
 
     @Override
     public void tabRegistry(CreativeModeTabEvent.Register event) {
-        NewIconRandom.NewProperties woodProperties = new NewIconRandom.NewProperties(Finder.findBlock(MODID, "cherry_roof"), Finder.findBlock(MODID, "cherry_picket_fence"), Finder.findBlock(MODID, "cherry_wardrobe"),
-                Finder.findBlock(MODID, "cherry_log_bridge_middle"), Finder.findBlock(MODID, "cherry_window"), Finder.findBlock(MODID, "cherry_japanese_door"), Finder.findBlock(MODID, "cherry_glass_trapdoor"),
-                Finder.findBlock(MODID, "cherry_planks_path"), Finder.findBlock(MODID, "cherry_loft_stairs"));
-        woodProperties
-                .addType(ModType.ROOFS)
-                .addType(ModType.FENCES)
-                .addType(ModType.FURNITURES)
-                .addType(ModType.BRIDGES)
-                .addType(ModType.WINDOWS)
-                .addType(ModType.DOORS)
-                .addType(ModType.TRAPDOORS)
-                .addType(ModType.PATHS)
-                .addType(ModType.STAIRS);
-        final Block icon = woodProperties.buildIcon(ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.BRIDGES, ModType.WINDOWS, ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.STAIRS);
-        MCWBOP_TAB = Registration.tabs(event, MODID, "tab", icon);
+        final ItemStack icon = IconRandomForge.buildIcon(
+                Finder.findBlock(MODID, "cherry_roof"),
+                Finder.findBlock(MODID, "cherry_picket_fence"),
+                Finder.findBlock(MODID, "cherry_wardrobe"),
+                Finder.findBlock(MODID, "cherry_log_bridge_middle"),
+                Finder.findBlock(MODID, "cherry_window"),
+                Finder.findBlock(MODID, "cherry_japanese_door"),
+                Finder.findBlock(MODID, "cherry_glass_trapdoor"),
+                Finder.findBlock(MODID, "cherry_planks_path"),
+                Finder.findBlock(MODID, "cherry_loft_stairs"),
+                ModType.getAllModTypeWood());
+        MCWBOP_TAB = RegistrationForge.tabs(event, MODID, "tab", icon.getItem());
     }
 
     @Override
     public void tabSetup(CreativeModeTabEvent.BuildContents event) {
-        APICreativeTab.initAllWood(event, MODID, WOOD, MCWBOP_TAB, Registration.getAllModTypeWood());
+        APICreativeTab.initAllWood(event, MODID, WOOD, MCWBOP_TAB, ModType.getAllModTypeWood());
         APICreativeTab.initAllLeave(event, MODID, LEAVES, MCWBOP_TAB);
     }
 }
