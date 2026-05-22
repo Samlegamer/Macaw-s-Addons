@@ -17,6 +17,7 @@ def loadExtraProperties(String relPath) {
 }
 
 loadExtraProperties('../../_properties/1.19.3forgegradle.properties')
+loadExtraProperties('../_GlobalRsc/globalgradle.properties')
 
 version = mod_version
 group = mod_group_id // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -126,6 +127,17 @@ minecraft {
                     source sourceSets.main
                 }
             }
+        }
+    }
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs '../_GlobalRsc/common/'
+        }
+        resources {
+            srcDirs '../_GlobalRsc/1.17.1/'
         }
     }
 }
