@@ -1,6 +1,7 @@
 package fr.samlegamer.mcwaurora;
 
 import fr.addonslib.api.data.ModType;
+import fr.samlegamer.addonslib.RegistrationForge;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
@@ -28,12 +29,10 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.tab.NewIconRandom;
+import fr.samlegamer.addonslib.tab.IconRandomForge;
 import org.jetbrains.annotations.NotNull;
 
 @Mod(McwAurora.MODID)
@@ -44,9 +43,9 @@ public class McwAurora extends McwMod
     
     public static final List<String> WOOD_ENHANCED_MUSH = List.of("mushroom"); // enhanced_mushrooms
 
-    private static final DeferredRegister<Block> block = Registration.blocks(MODID);
-    private static final DeferredRegister<Item> item = Registration.items(MODID);
-    public static final DeferredRegister<CreativeModeTab> ct = Registration.creativeModeTab(MODID);
+    private static final DeferredRegister<Block> block = RegistrationForge.blocks(MODID);
+    private static final DeferredRegister<Item> item = RegistrationForge.items(MODID);
+    public static final DeferredRegister<CreativeModeTab> ct = RegistrationForge.creativeModeTab(MODID);
 
 	public static final RegistryObject<CreativeModeTab> MCWAURORA_TAB = ct.register("tab", () -> CreativeModeTab.builder()
 	        .icon(McwAurora::getIcon).title(Component.translatable(MODID+".tab")).build());
@@ -55,9 +54,9 @@ public class McwAurora extends McwMod
     {
         super(javaModLoadingContext);
         LOGGER.info("Macaw's Aurora Mod Loading...");
-    	Registration.init(javaModLoadingContext, block, item, ct);
+        RegistrationForge.init(block, item, ct);
 
-        McwRegistry.setRegistriesWood(WOOD_ENHANCED_MUSH, block, item, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(WOOD_ENHANCED_MUSH, block, item, ModType.getAllModTypeWood());
 
         javaModLoadingContext.getModEventBus().addListener(this::clientSetup);
         javaModLoadingContext.getModEventBus().addListener(this::commonSetup);
@@ -70,13 +69,13 @@ public class McwAurora extends McwMod
     @Override
     public void clientSetup(FMLClientSetupEvent event)
 	{
-		APIRenderTypes.initAllWood(event, MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());
+		APIRenderTypes.initAllWood(event, MODID, WOOD_ENHANCED_MUSH, ModType.getAllModTypeWood());
 	}
 
     @Override
     public void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            McwLootTables.addBlockAllWood(MODID, WOOD_ENHANCED_MUSH);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD_ENHANCED_MUSH);
         });
     }
 
@@ -90,14 +89,14 @@ public class McwAurora extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(output, lookupProvider, MODID, existingFileHelper) {
                 @Override
                 protected void addTags(HolderLookup.@NotNull Provider provider) {
-                    addAllMcwTagsWood(MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOOD_ENHANCED_MUSH, ModType.getAllModTypeWood());
                 }
             };
             generator.addProvider(true, mcwBlockTags);
             generator.addProvider(true, new McwItemTags(output, lookupProvider, mcwBlockTags.contentsGetter(), MODID, existingFileHelper) {
                 @Override
                 protected void addTags(HolderLookup.@NotNull Provider provider) {
-                    addAllMcwTagsWood(MODID, WOOD_ENHANCED_MUSH, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOOD_ENHANCED_MUSH, ModType.getAllModTypeWood());
                 }
             });
             generator.addProvider(true, new Recipes(output));
@@ -106,33 +105,21 @@ public class McwAurora extends McwMod
 
     @Override
     public void tabSetup(BuildCreativeModeTabContentsEvent event) {
-        APICreativeTab.initAllWood(event, MODID, WOOD_ENHANCED_MUSH, "enhanced_mushrooms", MCWAURORA_TAB.get(), Registration.getAllModTypeWood());
+        APICreativeTab.initAllWood(event, MODID, WOOD_ENHANCED_MUSH, "enhanced_mushrooms", MCWAURORA_TAB.get(), ModType.getAllModTypeWood());
     }
     
     private static ItemStack getIcon()
     {
-		NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
-				Finder.findBlock(MODID, "mushroom_roof"),
-				Finder.findBlock(MODID, "mushroom_picket_fence"),
-				Finder.findBlock(MODID, "mushroom_wardrobe"),
-				Finder.findBlock(MODID, "mushroom_log_bridge_middle"),
-				Finder.findBlock(MODID, "mushroom_pane_window"),
-				Finder.findBlock(MODID, "mushroom_modern_door"),
-				Finder.findBlock(MODID, "mushroom_mystic_trapdoor"),
-				Finder.findBlock(MODID, "mushroom_planks_path"),
-				Finder.findBlock(MODID, "mushroom_skyline_stairs"));
-
-		prop.addType(ModType.BRIDGES)
-				.addType(ModType.ROOFS)
-				.addType(ModType.FENCES)
-				.addType(ModType.FURNITURES)
-				.addType(ModType.STAIRS)
-				.addType(ModType.PATHS)
-				.addType(ModType.WINDOWS)
-				.addType(ModType.DOORS)
-				.addType(ModType.TRAPDOORS);
-		Block icon = prop.buildIcon(ModType.BRIDGES, ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.STAIRS,
-				ModType.PATHS, ModType.WINDOWS, ModType.DOORS, ModType.TRAPDOORS);
-    	return new ItemStack(icon);
+    	return IconRandomForge.buildIcon(
+                Finder.findBlock(MODID, "mushroom_roof"),
+                Finder.findBlock(MODID, "mushroom_picket_fence"),
+                Finder.findBlock(MODID, "mushroom_wardrobe"),
+                Finder.findBlock(MODID, "mushroom_log_bridge_middle"),
+                Finder.findBlock(MODID, "mushroom_pane_window"),
+                Finder.findBlock(MODID, "mushroom_modern_door"),
+                Finder.findBlock(MODID, "mushroom_mystic_trapdoor"),
+                Finder.findBlock(MODID, "mushroom_planks_path"),
+                Finder.findBlock(MODID, "mushroom_skyline_stairs"),
+                ModType.getAllModTypeWood());
     }
 }
