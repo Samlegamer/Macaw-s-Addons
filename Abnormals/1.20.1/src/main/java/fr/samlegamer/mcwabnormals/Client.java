@@ -1,11 +1,8 @@
 package fr.samlegamer.mcwabnormals;
 
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import fr.addonslib.api.client.McwColors;
-import fr.samlegamer.addonslib.Finder;
+import java.util.*;
+
+import fr.addonslib.api.client.ObjectColor;
 import fr.samlegamer.addonslib.client.ColorRegistry;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
@@ -16,38 +13,38 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 @Mod.EventBusSubscriber(modid = McwAbnormals.MODID, bus = Bus.MOD, value = Dist.CLIENT)
 public class Client
 {
-	private static final ColorRegistry COLOR_AVERAGE = new ColorRegistry(new McwColors(getLeavesNoColorCustom()));
-	private static final ColorRegistry COLOR_CUSTOM = new ColorRegistry(new McwColors(getLeavesColorsCustom()));
+	private static final ColorRegistry COLOR_AVERAGE = new ColorRegistry(getLeavesNoColorCustom());
+	private static final ColorRegistry COLOR_CUSTOM = new ColorRegistry(getLeavesColorsCustom());
 
 	/*
 	 * Copied parameter for match to original leaves
 	 * See original here : https://github.com/team-abnormals/autumnity/blob/1.20.x/src/main/java/com/teamabnormals/autumnity/core/other/AutumnityClientCompat.java#L47
 	 * See : https://github.com/team-abnormals/environmental/blob/1.20.x/src/main/java/com/teamabnormals/environmental/core/other/EnvironmentalClientCompat.java#L25
 	 */
-	private static Map<String, Integer> getLeavesColorsCustom()
+	private static List<ObjectColor> getLeavesColorsCustom()
 	{
-		Map<String, Integer> map = new LinkedHashMap<>();
-		map.put(Finder.makeIdHedge(McwAbnormals.MODID, "red_maple"), 12665871);
-		map.put(Finder.makeIdHedge(McwAbnormals.MODID, "orange_maple"), 16745768);
-		map.put(Finder.makeIdHedge(McwAbnormals.MODID, "yellow_maple"), 16760576);
-		map.put(Finder.makeIdHedge(McwAbnormals.MODID, "pine"), 7578444);
-		map.put(Finder.makeIdHedge(McwAbnormals.MODID, "willow"), 6975545);
-		return map;
+		List<ObjectColor> list = new ArrayList<>();
+		list.add(new ObjectColor(McwAbnormals.MODID, "red_maple", 12665871));
+		list.add(new ObjectColor(McwAbnormals.MODID, "orange_maple", 16745768));
+		list.add(new ObjectColor(McwAbnormals.MODID, "yellow_maple", 16760576));
+		list.add(new ObjectColor(McwAbnormals.MODID, "pine", 7578444));
+		list.add(new ObjectColor(McwAbnormals.MODID, "willow", 6975545));
+		return list;
 	}
 
-	private static List<String> getLeavesNoColorCustom()
+	private static List<ObjectColor> getLeavesNoColorCustom()
 	{
 		return Arrays.asList(
-				Finder.makeIdHedge(McwAbnormals.MODID, "river"),
-				Finder.makeIdHedge(McwAbnormals.MODID, "rosewood"),
-				Finder.makeIdHedge(McwAbnormals.MODID, "morado"));
+				new ObjectColor(McwAbnormals.MODID, "river"),
+				new ObjectColor(McwAbnormals.MODID, "rosewood"),
+				new ObjectColor(McwAbnormals.MODID, "morado"));
 	}
 
 
 	@SubscribeEvent
 	public static void colorsBlock(RegisterColorHandlersEvent.Block event)
 	{
-		COLOR_AVERAGE.registryBlockColorsAverage(event);
+		COLOR_AVERAGE.registryBlockColors(event);
 		COLOR_CUSTOM.registryBlockColors(event);
 	}
 	
