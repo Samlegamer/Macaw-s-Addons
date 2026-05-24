@@ -7,6 +7,7 @@ import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.world.level.block.Block;
 import static net.regions_unexplored.block.RuBlocks.*;
 import net.regions_unexplored.RegionsUnexploredMod;
+import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
@@ -18,9 +19,9 @@ public class Recipes extends McwRecipes
     }
 
     @Override
-    protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
-        registerAllMcwWood(consumer, McwRegionsUnexplored.MODID, RegionsUnexploredMod.MOD_ID, McwRegionsUnexplored.WOOD, getWoodMat());
-        registerMcwHedge(consumer, McwRegionsUnexplored.MODID, RegionsUnexploredMod.MOD_ID, McwRegionsUnexplored.LEAVES, getLeavesMat());
+    protected void buildRecipes(@NotNull Consumer<FinishedRecipe> consumer) {
+        recipesUtils.registerAllMcwWood(consumer, McwRegionsUnexplored.MODID, RegionsUnexploredMod.MOD_ID, McwRegionsUnexplored.WOOD, getWoodMat());
+        recipesUtils.registerMcwHedge(consumer, McwRegionsUnexplored.MODID, RegionsUnexploredMod.MOD_ID, McwRegionsUnexplored.LEAVES, getLeavesMat());
     }
 
     private List<Block> getLeavesMat()
