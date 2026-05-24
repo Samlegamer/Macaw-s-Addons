@@ -21,9 +21,9 @@ public class Recipes extends McwRecipes {
 
     @Override
     protected void buildRecipes(@NotNull Consumer<FinishedRecipe> output) {
-        registerAllMcwWood(output, McwByg.MODID, BiomesWeveGone.MOD_ID, McwByg.WOOD, getWoodMat());
-        registerMcwHedge(output, McwByg.MODID, BiomesWeveGone.MOD_ID, McwByg.LEAVES, getLeaveMat());
-        registerAllMcwStone(output, McwByg.MODID, BiomesWeveGone.MOD_ID, McwByg.STONE, getStoneMat());
+        recipesUtils.registerAllMcwWood(output, McwByg.MODID, BiomesWeveGone.MOD_ID, McwByg.WOOD, getWoodMat());
+        recipesUtils.registerMcwHedge(output, McwByg.MODID, BiomesWeveGone.MOD_ID, McwByg.LEAVES, getLeaveMat());
+        recipesUtils.registerAllMcwStone(output, McwByg.MODID, BiomesWeveGone.MOD_ID, McwByg.STONE, getStoneMat());
     }
 
     private List<Block> getLeaveMat()
