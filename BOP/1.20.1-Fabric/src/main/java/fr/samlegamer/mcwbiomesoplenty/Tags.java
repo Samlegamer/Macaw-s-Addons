@@ -1,5 +1,6 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
@@ -18,7 +19,7 @@ public class Tags
 
         @Override
         protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-            addAllMcwTagsWood(McwBOP.MODID, McwBOP.WOOD, Registration.getAllModTypeWood());
+            addAllMcwTagsWood(McwBOP.MODID, McwBOP.WOOD, ModType.getAllModTypeWood());
             addAllMcwTagsLeave(McwBOP.MODID, McwBOP.LEAVES);
         }
     }
@@ -31,7 +32,7 @@ public class Tags
 
         @Override
         protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-            addAllMcwTagsWood(McwBOP.MODID, McwBOP.WOOD, Registration.getAllModTypeWood());
+            addAllMcwTagsWood(McwBOP.MODID, McwBOP.WOOD, ModType.getAllModTypeWood());
             addAllMcwTagsLeave(McwBOP.MODID, McwBOP.LEAVES);
         }
     }

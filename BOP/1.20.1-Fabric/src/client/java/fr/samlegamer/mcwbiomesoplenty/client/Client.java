@@ -1,9 +1,8 @@
 package fr.samlegamer.mcwbiomesoplenty.client;
 
-import java.util.Arrays;
-import fr.addonslib.api.client.McwColors;
-import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.Registration;
+import java.util.List;
+import fr.addonslib.api.client.ObjectColor;
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.client.ColorRegistry;
 import fr.samlegamer.mcwbiomesoplenty.McwBOP;
@@ -14,20 +13,20 @@ import net.fabricmc.api.Environment;
 @Environment(EnvType.CLIENT)
 public class Client implements ClientModInitializer
 {
-	private static final ColorRegistry COLOR = new ColorRegistry(new McwColors(Arrays.asList(
-			Finder.makeIdHedge(McwBOP.MODID, "pine"),
-			Finder.makeIdHedge(McwBOP.MODID, "mahogany"),
-			Finder.makeIdHedge(McwBOP.MODID, "willow"),
-			Finder.makeIdHedge(McwBOP.MODID, "palm"),
-			Finder.makeIdHedge(McwBOP.MODID, "flowering_oak")
-	)));
+	private static final ColorRegistry COLOR = new ColorRegistry(List.of(
+			new ObjectColor(McwBOP.MODID, "pine"),
+			new ObjectColor(McwBOP.MODID, "mahogany"),
+			new ObjectColor(McwBOP.MODID, "willow"),
+			new ObjectColor(McwBOP.MODID, "palm"),
+			new ObjectColor(McwBOP.MODID, "flowering_oak")
+	));
 
 	@Override
 	public void onInitializeClient()
 	{
-		COLOR.registryBlockColorsAverage();
+		COLOR.registryBlockColors();
 		COLOR.registryItemColors();
-        APIRenderTypes.initAllWood(McwBOP.MODID, McwBOP.WOOD, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(McwBOP.MODID, McwBOP.WOOD, ModType.getAllModTypeWood());
         APIRenderTypes.initAllLeave(McwBOP.MODID, McwBOP.LEAVES);
 	}
 }
