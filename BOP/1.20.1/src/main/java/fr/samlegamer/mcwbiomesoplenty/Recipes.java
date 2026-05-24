@@ -24,8 +24,8 @@ public class Recipes extends McwRecipes {
                 PALM_LEAVES, REDWOOD_LEAVES, UMBRAN_LEAVES, WILLOW_LEAVES, EMPYREAL_LEAVES, PINE_LEAVES, ORANGE_MAPLE_LEAVES,
                 RED_MAPLE_LEAVES, YELLOW_MAPLE_LEAVES, CYPRESS_LEAVES, SNOWBLOSSOM_LEAVES, FLOWERING_OAK_LEAVES, RAINBOW_BIRCH_LEAVES, ORIGIN_LEAVES);
         List<McwWoodMat<Block>> woodMats = getWoodMats();
-        registerAllMcwWood(recipeOutput, McwBOP.MODID, BiomesOPlenty.MOD_ID, McwBOP.WOOD, woodMats);
-        registerMcwHedge(recipeOutput, McwBOP.MODID, BiomesOPlenty.MOD_ID, McwBOP.LEAVE, leave);
+        recipesUtils.registerAllMcwWood(recipeOutput, McwBOP.MODID, BiomesOPlenty.MOD_ID, McwBOP.WOOD, woodMats);
+        recipesUtils.registerMcwHedge(recipeOutput, McwBOP.MODID, BiomesOPlenty.MOD_ID, McwBOP.LEAVE, leave);
     }
 
     private List<McwWoodMat<Block>> getWoodMats() {
