@@ -1,5 +1,6 @@
 package fr.samlegamer.mcwregionsunexplored;
 
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
@@ -17,7 +18,7 @@ public class Tags
 
         @Override
         protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-            addAllMcwTagsWood(McwRegionsUnexplored.MODID, McwRegionsUnexplored.WOOD, Registration.getAllModTypeWood());
+            addAllMcwTagsWood(McwRegionsUnexplored.MODID, McwRegionsUnexplored.WOOD, ModType.getAllModTypeWood());
             addAllMcwTagsLeave(McwRegionsUnexplored.MODID, McwRegionsUnexplored.LEAVES);
         }
     }
@@ -30,7 +31,7 @@ public class Tags
 
         @Override
         protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-            addAllMcwTagsWood(McwRegionsUnexplored.MODID, McwRegionsUnexplored.WOOD, Registration.getAllModTypeWood());
+            addAllMcwTagsWood(McwRegionsUnexplored.MODID, McwRegionsUnexplored.WOOD, ModType.getAllModTypeWood());
             addAllMcwTagsLeave(McwRegionsUnexplored.MODID, McwRegionsUnexplored.LEAVES);
         }
     }

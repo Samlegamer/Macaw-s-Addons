@@ -2,7 +2,6 @@
 	"schemaVersion": 1,
   "id": "${archives_base_name}",
   "version": "${version}",
-
   "name": "${mod_name}",
   "description": "${mod_description}",
   "authors": [
@@ -12,10 +11,8 @@
     "homepage": "${mod_project_url}",
     "issues": "${mod_issue_tracker}"
   },
-
   "license": "${mod_license}",
   "icon": "logo.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -33,7 +30,7 @@
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*",
-        "addonslib": ">=1.20.1-1.9",
+        "addonslib": ">=1.20.1-1.10",
         "regions_unexplored": "*"
 	},
 	"suggests": {

@@ -19,8 +19,8 @@ public class Recipes extends McwRecipes
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> consumer) {
-        registerAllMcwWood(consumer, McwRegionsUnexplored.MODID, RegionsUnexplored.MODID, McwRegionsUnexplored.WOOD, getWoodMat());
-        registerMcwHedge(consumer, McwRegionsUnexplored.MODID, RegionsUnexplored.MODID, McwRegionsUnexplored.LEAVES, getLeavesMat());
+        recipesUtils.registerAllMcwWood(consumer, McwRegionsUnexplored.MODID, RegionsUnexplored.MODID, McwRegionsUnexplored.WOOD, getWoodMat());
+        recipesUtils.registerMcwHedge(consumer, McwRegionsUnexplored.MODID, RegionsUnexplored.MODID, McwRegionsUnexplored.LEAVES, getLeavesMat());
     }
 
     private List<Block> getLeavesMat()
