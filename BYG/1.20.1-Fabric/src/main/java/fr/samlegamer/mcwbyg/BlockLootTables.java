@@ -11,9 +11,9 @@ public class BlockLootTables extends McwLootTables
 
     @Override
     public void generate() {
-        addBlockAllWood(McwByg.MODID, McwByg.WOOD);
-        addBlockAllStone(McwByg.MODID, McwByg.STONE);
-        addBlockHedges(McwByg.MODID, McwByg.LEAVES);
+        lootTableUtils.addBlockAllWood(McwByg.MODID, McwByg.WOOD);
+        lootTableUtils.addBlockAllStone(McwByg.MODID, McwByg.STONE);
+        lootTableUtils.addBlockHedges(McwByg.MODID, McwByg.LEAVES);
         makeLootTables();
     }
 }

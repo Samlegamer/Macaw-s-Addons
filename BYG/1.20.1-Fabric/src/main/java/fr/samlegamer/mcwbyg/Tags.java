@@ -1,5 +1,6 @@
 package fr.samlegamer.mcwbyg;
 
+import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
@@ -18,8 +19,8 @@ public class Tags
 
         @Override
         protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-            addAllMcwTagsWood(McwByg.MODID, McwByg.WOOD, Registration.getAllModTypeWood());
-            addAllMcwTagsStone(McwByg.MODID, McwByg.STONE, Registration.getAllModTypeStone());
+            addAllMcwTagsWood(McwByg.MODID, McwByg.WOOD, ModType.getAllModTypeWood());
+            addAllMcwTagsStone(McwByg.MODID, McwByg.STONE, ModType.getAllModTypeStone());
             addAllMcwTagsLeave(McwByg.MODID, McwByg.LEAVES);
         }
     }
@@ -32,8 +33,8 @@ public class Tags
 
         @Override
         protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-            addAllMcwTagsWood(McwByg.MODID, McwByg.WOOD, Registration.getAllModTypeWood());
-            addAllMcwTagsStone(McwByg.MODID, McwByg.STONE, Registration.getAllModTypeStone());
+            addAllMcwTagsWood(McwByg.MODID, McwByg.WOOD, ModType.getAllModTypeWood());
+            addAllMcwTagsStone(McwByg.MODID, McwByg.STONE, ModType.getAllModTypeStone());
             addAllMcwTagsLeave(McwByg.MODID, McwByg.LEAVES);
         }
     }

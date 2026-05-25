@@ -21,9 +21,9 @@ public class Recipes extends McwRecipes
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-        registerAllMcwWood(exporter, McwByg.MODID, BiomesWeveGone.MOD_ID, McwByg.WOOD, getWoodMat());
-        registerMcwHedge(exporter, McwByg.MODID, BiomesWeveGone.MOD_ID, McwByg.LEAVES, getLeaveMat());
-        registerAllMcwStone(exporter, McwByg.MODID, BiomesWeveGone.MOD_ID, McwByg.STONE, getStoneMat());
+        recipesUtils.registerAllMcwWood(exporter, McwByg.MODID, BiomesWeveGone.MOD_ID, McwByg.WOOD, getWoodMat());
+        recipesUtils.registerMcwHedge(exporter, McwByg.MODID, BiomesWeveGone.MOD_ID, McwByg.LEAVES, getLeaveMat());
+        recipesUtils.registerAllMcwStone(exporter, McwByg.MODID, BiomesWeveGone.MOD_ID, McwByg.STONE, getStoneMat());
     }
 
     private List<Block> getLeaveMat()
