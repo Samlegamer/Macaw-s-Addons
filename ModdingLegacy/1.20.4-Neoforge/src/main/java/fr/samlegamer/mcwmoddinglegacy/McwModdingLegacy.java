@@ -2,6 +2,7 @@ package fr.samlegamer.mcwmoddinglegacy;
 
 import fr.addonslib.api.data.McwBlocksIdBase;
 import fr.addonslib.api.data.ModType;
+import fr.samlegamer.addonslib.RegistrationNeoForge;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
@@ -31,10 +32,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.tab.NewIconRandom;
+import fr.samlegamer.addonslib.tab.IconRandomForge;
 import org.jetbrains.annotations.NotNull;
-
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -46,9 +45,9 @@ public class McwModdingLegacy extends McwMod
 	public static final String MODID = "mcwmoddinglegacy";
     private static final Logger LOGGER = LogManager.getLogger();
 
-    private static final DeferredRegister.Blocks block = Registration.blocks(MODID);
-    private static final DeferredRegister.Items item = DeferredRegister.createItems(MODID);
-	public static final DeferredRegister<CreativeModeTab> ct = Registration.creativeModeTab(McwModdingLegacy.MODID);
+    private static final DeferredRegister.Blocks block = RegistrationNeoForge.blocks(MODID);
+    private static final DeferredRegister.Items item = RegistrationNeoForge.items(MODID);
+	public static final DeferredRegister<CreativeModeTab> ct = RegistrationNeoForge.creativeModeTab(McwModdingLegacy.MODID);
 
     public static final List<String> wood_blue_skies = List.of("bsky_bluebright", "bsky_comet", "bsky_dusk", "bsky_frostbright", "bsky_lunar", "bsky_maple", "bsky_starlit");
     public static final List<String> wood_premium_wood = List.of("pwood_magic", "pwood_maple", "pwood_purple_heart", "pwood_silverbell", "pwood_tiger", "pwood_willow");
@@ -65,14 +64,14 @@ public class McwModdingLegacy extends McwMod
     {
         super(bus);
         LOGGER.info("Macaw's Modding Legacy Mod Loading...");
-    	Registration.init(bus, block, item, ct);
+    	RegistrationNeoForge.init(bus, block, item, ct);
 
 		Map<String, SoundType> mapCrystallized = McwRegistry.makeDefaultFromList(wood_crystallized, SoundType.GLASS);
-		McwRegistry.setRegistriesWood(wood_blue_skies, block, item, Registration.getAllModTypeWood());
+		McwRegistry.setRegistriesWood(wood_blue_skies, block, item, ModType.getAllModTypeWood());
 		McwRegistry.setRegistriesLeave(wood_blue_skies, block, item);
 		McwRegistry.setRegistriesWood(mapCrystallized, block, item, ModType.BRIDGES, ModType.ROOFS);
 		McwRegistry.setRegistriesLeave(mapCrystallized, block, item);
-		McwRegistry.setRegistriesWood(wood_premium_wood, block, item, Registration.getAllModTypeWood());
+		McwRegistry.setRegistriesWood(wood_premium_wood, block, item, ModType.getAllModTypeWood());
 		McwRegistry.setRegistriesLeave(wood_premium_wood, block, item);
 
 		bridges_Bsky.missingnoWoodBlock(block);
@@ -91,9 +90,9 @@ public class McwModdingLegacy extends McwMod
 
     @Override
     public void clientSetup(FMLClientSetupEvent event) {
-        APIRenderTypes.initAllWood(event, MODID, wood_blue_skies, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, wood_blue_skies, ModType.getAllModTypeWood());
         APIRenderTypes.initAllWood(event, MODID, wood_blue_skies, RenderType.translucent(), ModType.ROOFS, ModType.BRIDGES);
-        APIRenderTypes.initAllWood(event, MODID, wood_premium_wood, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, wood_premium_wood, ModType.getAllModTypeWood());
 
         APIRenderTypes.initAllLeave(event, MODID, wood_blue_skies);
         APIRenderTypes.initAllLeave(event, MODID, wood_crystallized, RenderType.translucent());
@@ -103,15 +102,15 @@ public class McwModdingLegacy extends McwMod
     @Override
     public void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            McwLootTables.addBlockAllWood(MODID, wood_blue_skies);
-            McwLootTables.addBlockAllWood(MODID, wood_premium_wood);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, wood_blue_skies);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, wood_premium_wood);
 
-            McwLootTables.addBlock(MODID, wood_crystallized, McwBlocksIdBase.BRIDGES_WOOD_BLOCKS);
-            McwLootTables.addBlock(MODID, wood_crystallized, McwBlocksIdBase.ROOFS_WOOD_BLOCKS);
+            McwLootTables.LOOT_TABLE_UTILS.addBlock(MODID, wood_crystallized, McwBlocksIdBase.BRIDGES_WOOD_BLOCKS);
+            McwLootTables.LOOT_TABLE_UTILS.addBlock(MODID, wood_crystallized, McwBlocksIdBase.ROOFS_WOOD_BLOCKS);
 
-            McwLootTables.addBlockHedges(MODID, wood_blue_skies);
-            McwLootTables.addBlockHedges(MODID, wood_crystallized);
-            McwLootTables.addBlockHedges(MODID, wood_premium_wood);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, wood_blue_skies);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, wood_crystallized);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, wood_premium_wood);
         });
     }
 
@@ -125,10 +124,10 @@ public class McwModdingLegacy extends McwMod
         McwBlockTags mcwBlockTags = new McwBlockTags(output, registries, MODID, existingFileHelper) {
             @Override
             protected void addTags(HolderLookup.@NotNull Provider provider) {
-				addAllMcwTagsWood(MODID, wood_blue_skies, Registration.getAllModTypeWood());
+				addAllMcwTagsWood(MODID, wood_blue_skies, ModType.getAllModTypeWood());
 				addAllMcwTagsLeave(MODID, wood_blue_skies);
 
-				addAllMcwTagsWood(MODID, wood_premium_wood, Registration.getAllModTypeWood());
+				addAllMcwTagsWood(MODID, wood_premium_wood, ModType.getAllModTypeWood());
 				addAllMcwTagsLeave(MODID, wood_premium_wood);
 
 				addAllMcwTagsWood(MODID, wood_crystallized, ModType.BRIDGES, ModType.ROOFS);
@@ -140,10 +139,10 @@ public class McwModdingLegacy extends McwMod
         generator.addProvider(true, new McwItemTags(output, registries, mcwBlockTags.contentsGetter(), MODID, existingFileHelper) {
             @Override
             protected void addTags(HolderLookup.@NotNull Provider provider) {
-				addAllMcwTagsWood(MODID, wood_blue_skies, Registration.getAllModTypeWood());
+				addAllMcwTagsWood(MODID, wood_blue_skies, ModType.getAllModTypeWood());
 				addAllMcwTagsLeave(MODID, wood_blue_skies);
 
-				addAllMcwTagsWood(MODID, wood_premium_wood, Registration.getAllModTypeWood());
+				addAllMcwTagsWood(MODID, wood_premium_wood, ModType.getAllModTypeWood());
 				addAllMcwTagsLeave(MODID, wood_premium_wood);
 
 				addAllMcwTagsWood(MODID, wood_crystallized, ModType.BRIDGES, ModType.ROOFS);
@@ -159,7 +158,7 @@ public class McwModdingLegacy extends McwMod
 
         if(modList.isLoaded("blue_skies"))
         {
-            APICreativeTab.initAllWood(event, MODID, wood_blue_skies, MCWMODDINGLEGACY_TAB.get(), Registration.getAllModTypeWood());
+            APICreativeTab.initAllWood(event, MODID, wood_blue_skies, MCWMODDINGLEGACY_TAB.get(), ModType.getAllModTypeWood());
             APICreativeTab.initAllLeave(event, MODID, wood_blue_skies, MCWMODDINGLEGACY_TAB.get());
             APICreativeTab.initAllWood(event, MODID, wood_crystallized, MCWMODDINGLEGACY_TAB.get(), ModType.ROOFS, ModType.BRIDGES);
             APICreativeTab.initAllLeave(event, MODID, wood_crystallized, MCWMODDINGLEGACY_TAB.get());
@@ -167,14 +166,14 @@ public class McwModdingLegacy extends McwMod
 
         if(modList.isLoaded("premium_wood"))
         {
-            APICreativeTab.initAllWood(event, MODID, wood_premium_wood, MCWMODDINGLEGACY_TAB.get(), Registration.getAllModTypeWood());
+            APICreativeTab.initAllWood(event, MODID, wood_premium_wood, MCWMODDINGLEGACY_TAB.get(), ModType.getAllModTypeWood());
             APICreativeTab.initAllLeave(event, MODID, wood_premium_wood, MCWMODDINGLEGACY_TAB.get());
         }
     }
 
 	private static ItemStack getIcon()
 	{
-		NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(
+		return IconRandomForge.buildIcon(
 				Finder.findBlock(MODID, randomNaming()+"_roof"),
 				Finder.findBlock(MODID, randomNaming()+"_picket_fence"),
 				Finder.findBlock(MODID, randomNaming()+"_wardrobe"),
@@ -183,19 +182,8 @@ public class McwModdingLegacy extends McwMod
 				Finder.findBlock(MODID, randomNaming()+"_mystic_door"),
 				Finder.findBlock(MODID, randomNaming()+"_barrel_trapdoor"),
 				Finder.findBlock(MODID, randomNaming()+"_planks_path"),
-				Finder.findBlock(MODID, randomNaming()+"_skyline_stairs"));
-
-		prop.addType(ModType.BRIDGES)
-				.addType(ModType.FENCES)
-				.addType(ModType.FURNITURES)
-				.addType(ModType.ROOFS)
-				.addType(ModType.STAIRS)
-				.addType(ModType.WINDOWS)
-				.addType(ModType.DOORS)
-				.addType(ModType.TRAPDOORS)
-				.addType(ModType.PATHS);
-		return new ItemStack(prop.buildIcon(ModType.BRIDGES, ModType.FENCES, ModType.FURNITURES, ModType.ROOFS, ModType.STAIRS
-				, ModType.WINDOWS, ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS));
+				Finder.findBlock(MODID, randomNaming()+"_skyline_stairs"),
+				ModType.getAllModTypeWood());
 	}
 
 	private static String randomNaming()
