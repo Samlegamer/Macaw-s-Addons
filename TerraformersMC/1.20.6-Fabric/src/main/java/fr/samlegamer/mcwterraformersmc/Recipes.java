@@ -25,15 +25,15 @@ public class Recipes extends McwRecipes
 
     @Override
     public void generate(RecipeExporter recipeExporter) {
-        registerAllMcwWood(recipeExporter, McwTerraformersMC.MODID, Traverse.MOD_ID, McwTerraformersMC.WOODS_TRAVERSE, getWoodMatsTraverse());
-        registerMcwHedge(recipeExporter, McwTerraformersMC.MODID, Traverse.MOD_ID, McwTerraformersMC.LEAVES_TRAVERSE, getLeavesMatsTraverse());
+        recipesUtils.registerAllMcwWood(recipeExporter, McwTerraformersMC.MODID, Traverse.MOD_ID, McwTerraformersMC.WOODS_TRAVERSE, getWoodMatsTraverse());
+        recipesUtils.registerMcwHedge(recipeExporter, McwTerraformersMC.MODID, Traverse.MOD_ID, McwTerraformersMC.LEAVES_TRAVERSE, getLeavesMatsTraverse());
 
-        registerAllMcwWood(recipeExporter, McwTerraformersMC.MODID, Cinderscapes.NAMESPACE, McwTerraformersMC.WOODS_CINDERSCAPES, getWoodMatsCinderscapes());
-        registerAllMcwStone(recipeExporter, McwTerraformersMC.MODID, Cinderscapes.NAMESPACE, McwTerraformersMC.ROCKS_CINDERSCAPES, getRockMatsCinderscapes());
+        recipesUtils.registerAllMcwWood(recipeExporter, McwTerraformersMC.MODID, Cinderscapes.NAMESPACE, McwTerraformersMC.WOODS_CINDERSCAPES, getWoodMatsCinderscapes());
+        recipesUtils.registerAllMcwStone(recipeExporter, McwTerraformersMC.MODID, Cinderscapes.NAMESPACE, McwTerraformersMC.ROCKS_CINDERSCAPES, getRockMatsCinderscapes());
 
-        registerAllMcwWood(recipeExporter, McwTerraformersMC.MODID, Terrestria.MOD_ID, McwTerraformersMC.WOODS_TERRESTRIA, getWoodMatsTerrestria());
-        registerAllMcwStone(recipeExporter, McwTerraformersMC.MODID, Terrestria.MOD_ID, McwTerraformersMC.ROCKS_TERRESTRIA, getRockMatsTerrestria());
-        registerMcwHedge(recipeExporter, McwTerraformersMC.MODID, Terrestria.MOD_ID, McwTerraformersMC.LEAVES_TERRESTRIA, getLeavesMatsTerrestria());
+        recipesUtils.registerAllMcwWood(recipeExporter, McwTerraformersMC.MODID, Terrestria.MOD_ID, McwTerraformersMC.WOODS_TERRESTRIA, getWoodMatsTerrestria());
+        recipesUtils.registerAllMcwStone(recipeExporter, McwTerraformersMC.MODID, Terrestria.MOD_ID, McwTerraformersMC.ROCKS_TERRESTRIA, getRockMatsTerrestria());
+        recipesUtils.registerMcwHedge(recipeExporter, McwTerraformersMC.MODID, Terrestria.MOD_ID, McwTerraformersMC.LEAVES_TERRESTRIA, getLeavesMatsTerrestria());
     }
 
     private List<Block> getLeavesMatsTerrestria()
