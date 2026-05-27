@@ -32,7 +32,7 @@ import java.util.concurrent.CompletableFuture;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.tab.IconRandomForge;
+import fr.samlegamer.addonslib.tab.IconRandomNeoForge;
 import org.jetbrains.annotations.NotNull;
 
 @Mod(McwBOP.MODID)
@@ -145,7 +145,7 @@ public class McwBOP extends McwMod
 
     private static ItemStack getIcon()
     {
-    	return IconRandomForge.buildIcon(
+    	return IconRandomNeoForge.buildIcon(
 				Finder.findBlock(MODID, "redwood_roof"),
 				Finder.findBlock(MODID, "redwood_picket_fence"),
 				Finder.findBlock(MODID, "redwood_wardrobe"),

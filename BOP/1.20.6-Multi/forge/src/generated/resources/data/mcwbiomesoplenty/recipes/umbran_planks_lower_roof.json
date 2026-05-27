@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwroofs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "planks_lower_roof",
+        "key": {
+          "A": {
+            "item": "biomesoplenty:umbran_planks"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " AA",
+          "AAB"
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbiomesoplenty:umbran_planks_lower_roof"
+        }
+      }
+    }
+  ]
+}

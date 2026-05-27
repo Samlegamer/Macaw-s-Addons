@@ -32,7 +32,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.tab.IconRandomForge;
+import fr.samlegamer.addonslib.tab.IconRandomNeoForge;
 import org.jetbrains.annotations.NotNull;
 import java.util.List;
 import java.util.Map;
@@ -173,7 +173,7 @@ public class McwModdingLegacy extends McwMod
 
 	private static ItemStack getIcon()
 	{
-		return IconRandomForge.buildIcon(
+		return IconRandomNeoForge.buildIcon(
 				Finder.findBlock(MODID, randomNaming()+"_roof"),
 				Finder.findBlock(MODID, randomNaming()+"_picket_fence"),
 				Finder.findBlock(MODID, randomNaming()+"_wardrobe"),
