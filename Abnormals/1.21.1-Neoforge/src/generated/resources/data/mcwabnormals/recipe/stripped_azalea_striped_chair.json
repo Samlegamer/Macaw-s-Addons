@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "caverns_and_chasms"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_striped_chairs",
+  "key": {
+    "A": {
+      "item": "caverns_and_chasms:stripped_azalea_log"
+    },
+    "B": {
+      "item": "caverns_and_chasms:azalea_slab"
+    },
+    "C": {
+      "item": "caverns_and_chasms:azalea_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwabnormals:stripped_azalea_striped_chair"
+  }
+}

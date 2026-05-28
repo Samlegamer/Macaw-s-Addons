@@ -6,6 +6,8 @@ import com.teamabnormals.autumnity.core.Autumnity;
 import com.teamabnormals.autumnity.core.registry.AutumnityBlocks;
 import com.teamabnormals.buzzier_bees.core.BuzzierBees;
 import com.teamabnormals.buzzier_bees.core.registry.BBBlocks;
+import com.teamabnormals.caverns_and_chasms.core.CavernsAndChasms;
+import com.teamabnormals.caverns_and_chasms.core.registry.CCBlocks;
 import com.teamabnormals.environmental.core.Environmental;
 import com.teamabnormals.environmental.core.registry.EnvironmentalBlocks;
 import com.teamabnormals.upgrade_aquatic.core.UpgradeAquatic;
@@ -32,20 +34,45 @@ public class Recipes extends McwRecipes
 
     @Override
     protected void buildRecipes(@NotNull RecipeOutput output) {
-        registerAllMcwStone(output, McwAbnormals.MODID, BuzzierBees.MOD_ID, McwAbnormals.ROCK_BB, getBB());
-        registerAllMcwStone(output, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.ROCK_ATMO, getAtmoRock());
-        registerAllMcwStone(output, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.ROCK_AUTU, getAutuRock());
+        recipesUtils.registerAllMcwStone(output, McwAbnormals.MODID, BuzzierBees.MOD_ID, McwAbnormals.ROCK_BB, getBB());
+        recipesUtils.registerAllMcwStone(output, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.ROCK_ATMO, getAtmoRock());
+        recipesUtils.registerAllMcwStone(output, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.ROCK_AUTU, getAutuRock());
+        recipesUtils.registerAllMcwStone(output, McwAbnormals.MODID, CavernsAndChasms.MOD_ID, McwAbnormals.ROCK_CAVERNSCHASMS, getCavernAndChasmStone());
 
-        registerAllMcwWood(output, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.WOOD_AUTU, getAutuWood());
-        registerAllMcwWood(output, McwAbnormals.MODID, Environmental.MOD_ID, McwAbnormals.WOOD_ENVI, getEnviWood());
-        registerAllMcwWood(output, McwAbnormals.MODID, UpgradeAquatic.MOD_ID, McwAbnormals.WOOD_UAQUA, getUAquaWood());
-        registerAllMcwWood(output, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.WOOD_ATMO, getAtmoWood());
-//        registerAllMcwWood(consumer, McwAbnormals.MODID, EndergeticExpansion.MOD_ID, McwAbnormals.WOOD_ENDER, getEnderWood());
+        recipesUtils.registerAllMcwWood(output, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.WOOD_AUTU, getAutuWood());
+        recipesUtils.registerAllMcwWood(output, McwAbnormals.MODID, Environmental.MOD_ID, McwAbnormals.WOOD_ENVI, getEnviWood());
+        recipesUtils.registerAllMcwWood(output, McwAbnormals.MODID, UpgradeAquatic.MOD_ID, McwAbnormals.WOOD_UAQUA, getUAquaWood());
+        recipesUtils.registerAllMcwWood(output, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.WOOD_ATMO, getAtmoWood());
+//        recipesUtils.registerAllMcwWood(consumer, McwAbnormals.MODID, EndergeticExpansion.MOD_ID, McwAbnormals.WOOD_ENDER, getEnderWood());
+        recipesUtils.registerAllMcwWood(output, McwAbnormals.MODID, CavernsAndChasms.MOD_ID, McwAbnormals.WOOD_CAVERNSCHASMS, getCavernAndChasmWood());
 
-        registerMcwHedge(output, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.LEAVES_ATMO, getAtmoLeaves());
-        registerMcwHedge(output, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.LEAVES_AUTU, getAutuLeaves());
-        registerMcwHedge(output, McwAbnormals.MODID, Environmental.MOD_ID, McwAbnormals.LEAVES_ENVI, getEnviLeaves());
-        registerMcwHedge(output, McwAbnormals.MODID, UpgradeAquatic.MOD_ID, McwAbnormals.LEAVES_UAQUA, getUAquaLeaves());
+        recipesUtils.registerMcwHedge(output, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.LEAVES_ATMO, getAtmoLeaves());
+        recipesUtils.registerMcwHedge(output, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.LEAVES_AUTU, getAutuLeaves());
+        recipesUtils.registerMcwHedge(output, McwAbnormals.MODID, Environmental.MOD_ID, McwAbnormals.LEAVES_ENVI, getEnviLeaves());
+        recipesUtils.registerMcwHedge(output, McwAbnormals.MODID, UpgradeAquatic.MOD_ID, McwAbnormals.LEAVES_UAQUA, getUAquaLeaves());
+    }
+
+    private List<McwWoodMat<Block>> getCavernAndChasmWood()
+    {
+        List<McwWoodMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwWoodMat<>(CCBlocks.AZALEA_LOG.get(), CCBlocks.AZALEA_PLANKS.get(), CCBlocks.STRIPPED_AZALEA_LOG.get(),
+                CCBlocks.AZALEA_SLAB.get(), CCBlocks.AZALEA_FENCE.get(), CCBlocks.AZALEA_TRAPDOOR.get()));
+        return mats;
+    }
+
+    private List<McwStoneMat<Block>> getCavernAndChasmStone()
+    {
+        List<McwStoneMat<Block>> mats = new ArrayList<>();
+        mats.add(new McwStoneMat<>(CCBlocks.CUT_AMETHYST_BRICKS.get(), CCBlocks.CUT_AMETHYST_BRICK_WALL.get(), CCBlocks.CUT_AMETHYST_BRICK_SLAB.get(), CCBlocks.CUT_AMETHYST.get()));
+        mats.add(new McwStoneMat<>(CCBlocks.SPINEL_BRICKS.get(), CCBlocks.SPINEL_BRICK_WALL.get(), CCBlocks.SPINEL_BRICK_SLAB.get(), CCBlocks.SPINEL_BLOCK.get()));
+        mats.add(new McwStoneMat<>(CCBlocks.SANGUINE_TILES.get(), CCBlocks.SANGUINE_TILE_WALL.get(), CCBlocks.SANGUINE_TILE_SLAB.get(), CCBlocks.SANGUINE_BLOCK.get()));
+        mats.add(new McwStoneMat<>(CCBlocks.LAPIS_LAZULI_BRICKS.get(), CCBlocks.LAPIS_LAZULI_BRICK_WALL.get(), CCBlocks.LAPIS_LAZULI_BRICK_SLAB.get(), Blocks.LAPIS_BLOCK));
+        mats.add(new McwStoneMat<>(CCBlocks.COBBLESTONE_BRICKS.get(), CCBlocks.COBBLESTONE_BRICK_WALL.get(), CCBlocks.COBBLESTONE_BRICK_SLAB.get(), CCBlocks.COBBLESTONE_TILES.get()));
+        mats.add(new McwStoneMat<>(CCBlocks.POLISHED_CALCITE.get(), CCBlocks.CALCITE_WALL.get(), CCBlocks.CALCITE_SLAB.get(), Blocks.CALCITE));
+        mats.add(new McwStoneMat<>(CCBlocks.COBBLED_DEEPSLATE_BRICKS.get(), CCBlocks.COBBLED_DEEPSLATE_BRICK_WALL.get(), CCBlocks.COBBLED_DEEPSLATE_BRICK_SLAB.get(), Blocks.COBBLED_DEEPSLATE));
+        mats.add(new McwStoneMat<>(CCBlocks.MOSSY_COBBLESTONE_BRICKS.get(), CCBlocks.MOSSY_COBBLESTONE_BRICK_WALL.get(), CCBlocks.MOSSY_COBBLESTONE_BRICK_SLAB.get(), CCBlocks.MOSSY_COBBLESTONE_TILES.get()));
+        mats.add(new McwStoneMat<>(CCBlocks.FLOODED_DRIPSTONE_SHINGLES.get(), CCBlocks.DRIPSTONE_SHINGLE_WALL.get(), CCBlocks.DRIPSTONE_SHINGLE_SLAB.get(), Blocks.DRIPSTONE_BLOCK));
+        return mats;
     }
 
     private List<Block> getUAquaLeaves()

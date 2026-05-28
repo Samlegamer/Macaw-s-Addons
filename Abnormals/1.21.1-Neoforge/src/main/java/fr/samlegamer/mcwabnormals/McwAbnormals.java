@@ -1,10 +1,13 @@
 package fr.samlegamer.mcwabnormals;
 
+import fr.addonslib.api.data.ModType;
+import fr.samlegamer.addonslib.RegistrationNeoForge;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import fr.samlegamer.addonslib.registry.McwRegistry;
+import fr.samlegamer.addonslib.registry.RegistryUtils;
 import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.util.McwCommon;
 import fr.samlegamer.addonslib.util.McwMod;
@@ -29,9 +32,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import fr.samlegamer.addonslib.Registration;
 import org.jetbrains.annotations.NotNull;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -59,9 +60,9 @@ public class McwAbnormals extends McwMod
     public static final List<String> LEAVES_ENVI = List.of("plum", "blue_wisteria", "pink_wisteria", "white_wisteria", "purple_wisteria", "willow", "pine");
     public static final List<String> LEAVES_UAQUA = List.of("river");
     
-    private static final DeferredRegister.Blocks block = Registration.blocks(MODID);
-    private static final DeferredRegister.Items item = Registration.items(MODID);
-    public static final DeferredRegister<CreativeModeTab> ct = Registration.creativeModeTab(MODID);
+    private static final DeferredRegister.Blocks block = RegistrationNeoForge.blocks(MODID);
+    private static final DeferredRegister.Items item = RegistrationNeoForge.items(MODID);
+    public static final DeferredRegister<CreativeModeTab> ct = RegistrationNeoForge.creativeModeTab(MODID);
 
 	public static final DeferredItem<Item> LOGO = item.register("logo", () -> new Item(new Item.Properties()));
 	
@@ -72,9 +73,9 @@ public class McwAbnormals extends McwMod
     {
         super(bus);
         LOGGER.info("Macaw's Abnormals Mod Loading...");
-    	Registration.init(bus, block, item, ct);
+    	RegistrationNeoForge.init(bus, block, item, ct);
 
-        Map<String, SoundType> mapBuzzierBees = McwRegistry.makeDefaultFromList(ROCK_BB, SoundType.CORAL_BLOCK);
+        Map<String, SoundType> mapBuzzierBees = RegistryUtils.makeDefaultFromList(ROCK_BB, SoundType.CORAL_BLOCK);
         Map<String, SoundType> cavern_and_chasm_stone_map = new HashMap<>();
         cavern_and_chasm_stone_map.put("cut_amethyst_bricks", SoundType.AMETHYST);
         cavern_and_chasm_stone_map.put("spinel_bricks", SoundType.STONE);
@@ -87,20 +88,20 @@ public class McwAbnormals extends McwMod
         cavern_and_chasm_stone_map.put("flooded_dripstone_shingles", SoundType.DRIPSTONE_BLOCK);
 
 
-        McwRegistry.setRegistriesStone(mapBuzzierBees, block, item, Registration.getAllModTypeStone());
-        McwRegistry.setRegistriesWood(WOOD_ATMO, block, item, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesStone(mapBuzzierBees, block, item, ModType.getAllModTypeStone());
+        McwRegistry.setRegistriesWood(WOOD_ATMO, block, item, ModType.getAllModTypeWood());
         McwRegistry.setRegistriesLeave(LEAVES_ATMO, block, item);
-        McwRegistry.setRegistriesStone(ROCK_ATMO, block, item, Registration.getAllModTypeStone());
-        McwRegistry.setRegistriesWood(WOOD_AUTU, block, item, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesStone(ROCK_ATMO, block, item, ModType.getAllModTypeStone());
+        McwRegistry.setRegistriesWood(WOOD_AUTU, block, item, ModType.getAllModTypeWood());
         McwRegistry.setRegistriesLeave(LEAVES_AUTU, block, item);
-        McwRegistry.setRegistriesStone(ROCK_AUTU, block, item, Registration.getAllModTypeStone());
-        McwRegistry.setRegistriesWood(WOOD_ENVI, block, item, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesStone(ROCK_AUTU, block, item, ModType.getAllModTypeStone());
+        McwRegistry.setRegistriesWood(WOOD_ENVI, block, item, ModType.getAllModTypeWood());
         McwRegistry.setRegistriesLeave(LEAVES_ENVI, block, item);
-        McwRegistry.setRegistriesWood(WOOD_UAQUA, block, item, Registration.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(WOOD_UAQUA, block, item, ModType.getAllModTypeWood());
         McwRegistry.setRegistriesLeave(LEAVES_UAQUA, block, item);
-        McwRegistry.setRegistriesWood(WOOD_ENDER, block, item, Registration.getAllModTypeWood());
-        McwRegistry.setRegistriesWood(WOOD_CAVERNSCHASMS, block, item, Registration.getAllModTypeWood());
-        McwRegistry.setRegistriesStone(cavern_and_chasm_stone_map, block, item, Registration.getAllModTypeStone());
+        McwRegistry.setRegistriesWood(WOOD_ENDER, block, item, ModType.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(WOOD_CAVERNSCHASMS, block, item, ModType.getAllModTypeWood());
+        McwRegistry.setRegistriesStone(cavern_and_chasm_stone_map, block, item, ModType.getAllModTypeStone());
 
 
         bus.addListener(this::addToBlockEntity);
@@ -113,43 +114,43 @@ public class McwAbnormals extends McwMod
 
     @Override
     public void clientSetup(FMLClientSetupEvent event) {
-        APIRenderTypes.initAllWood(event, MODID, WOOD_ATMO, Registration.getAllModTypeWood());
-        APIRenderTypes.initAllWood(event, MODID, WOOD_AUTU, Registration.getAllModTypeWood());
-        APIRenderTypes.initAllWood(event, MODID, WOOD_ENVI, Registration.getAllModTypeWood());
-        APIRenderTypes.initAllWood(event, MODID, WOOD_UAQUA, Registration.getAllModTypeWood());
-        APIRenderTypes.initAllWood(event, MODID, WOOD_ENDER, Registration.getAllModTypeWood());
-        APIRenderTypes.initAllWood(event, MODID, WOOD_CAVERNSCHASMS, Registration.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, WOOD_ATMO, ModType.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, WOOD_AUTU, ModType.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, WOOD_ENVI, ModType.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, WOOD_UAQUA, ModType.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, WOOD_ENDER, ModType.getAllModTypeWood());
+        APIRenderTypes.initAllWood(event, MODID, WOOD_CAVERNSCHASMS, ModType.getAllModTypeWood());
 
         APIRenderTypes.initAllLeave(event, MODID, LEAVES_ATMO);
         APIRenderTypes.initAllLeave(event, MODID, LEAVES_AUTU);
         APIRenderTypes.initAllLeave(event, MODID, LEAVES_ENVI);
         APIRenderTypes.initAllLeave(event, MODID, LEAVES_UAQUA);
 
-        APIRenderTypes.initAllStone(event, MODID, ROCK_BB, Registration.getAllModTypeStone());
-        APIRenderTypes.initAllStone(event, MODID, ROCK_ATMO, Registration.getAllModTypeStone());
-        APIRenderTypes.initAllStone(event, MODID, ROCK_AUTU, Registration.getAllModTypeStone());
-        APIRenderTypes.initAllStone(event, MODID, ROCK_CAVERNSCHASMS, Registration.getAllModTypeStone());
+        APIRenderTypes.initAllStone(event, MODID, ROCK_BB, ModType.getAllModTypeStone());
+        APIRenderTypes.initAllStone(event, MODID, ROCK_ATMO, ModType.getAllModTypeStone());
+        APIRenderTypes.initAllStone(event, MODID, ROCK_AUTU, ModType.getAllModTypeStone());
+        APIRenderTypes.initAllStone(event, MODID, ROCK_CAVERNSCHASMS, ModType.getAllModTypeStone());
     }
 
     @Override
     public void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            McwLootTables.addBlockAllWood(MODID, WOOD_ATMO);
-            McwLootTables.addBlockAllWood(MODID, WOOD_AUTU);
-            McwLootTables.addBlockAllWood(MODID, WOOD_ENVI);
-            McwLootTables.addBlockAllWood(MODID, WOOD_UAQUA);
-            McwLootTables.addBlockAllWood(MODID, WOOD_ENDER);
-            McwLootTables.addBlockAllWood(MODID, WOOD_CAVERNSCHASMS);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD_ATMO);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD_AUTU);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD_ENVI);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD_UAQUA);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD_ENDER);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD_CAVERNSCHASMS);
 
-            McwLootTables.addBlockHedges(MODID, LEAVES_ATMO);
-            McwLootTables.addBlockHedges(MODID, LEAVES_AUTU);
-            McwLootTables.addBlockHedges(MODID, LEAVES_ENVI);
-            McwLootTables.addBlockHedges(MODID, LEAVES_UAQUA);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, LEAVES_ATMO);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, LEAVES_AUTU);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, LEAVES_ENVI);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, LEAVES_UAQUA);
 
-            McwLootTables.addBlockAllStone(MODID, ROCK_BB);
-            McwLootTables.addBlockAllStone(MODID, ROCK_ATMO);
-            McwLootTables.addBlockAllStone(MODID, ROCK_AUTU);
-            McwLootTables.addBlockAllStone(MODID, ROCK_CAVERNSCHASMS);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllStone(MODID, ROCK_BB);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllStone(MODID, ROCK_ATMO);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllStone(MODID, ROCK_AUTU);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllStone(MODID, ROCK_CAVERNSCHASMS);
         });
     }
 
@@ -165,26 +166,26 @@ public class McwAbnormals extends McwMod
             McwBlockTags mcwBlockTags = new McwBlockTags(output, registries, MODID, existingFileHelper) {
                 @Override
                 protected void addTags(HolderLookup.@NotNull Provider provider) {
-                    addAllMcwTagsStone(MODID, ROCK_BB, Registration.getAllModTypeStone());
+                    addAllMcwTagsStone(MODID, ROCK_BB, ModType.getAllModTypeStone());
 
-                    addAllMcwTagsWood(MODID, WOOD_ATMO, Registration.getAllModTypeWood());
-                    addAllMcwTagsStone(MODID, ROCK_ATMO, Registration.getAllModTypeStone());
+                    addAllMcwTagsWood(MODID, WOOD_ATMO, ModType.getAllModTypeWood());
+                    addAllMcwTagsStone(MODID, ROCK_ATMO, ModType.getAllModTypeStone());
                     addAllMcwTagsLeave(MODID, LEAVES_ATMO);
 
-                    addAllMcwTagsWood(MODID, WOOD_AUTU, Registration.getAllModTypeWood());
-                    addAllMcwTagsStone(MODID, ROCK_AUTU, Registration.getAllModTypeStone());
+                    addAllMcwTagsWood(MODID, WOOD_AUTU, ModType.getAllModTypeWood());
+                    addAllMcwTagsStone(MODID, ROCK_AUTU, ModType.getAllModTypeStone());
                     addAllMcwTagsLeave(MODID, LEAVES_AUTU);
 
-                    addAllMcwTagsWood(MODID, WOOD_ENVI, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOOD_ENVI, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(MODID, LEAVES_ENVI);
 
-                    addAllMcwTagsWood(MODID, WOOD_UAQUA, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOOD_UAQUA, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(MODID, LEAVES_UAQUA);
 
-                    addAllMcwTagsWood(MODID, WOOD_ENDER, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOOD_ENDER, ModType.getAllModTypeWood());
 
-                    addAllMcwTagsWood(MODID, WOOD_CAVERNSCHASMS, Registration.getAllModTypeWood());
-                    addAllMcwTagsStone(MODID, ROCK_CAVERNSCHASMS, Registration.getAllModTypeStone());
+                    addAllMcwTagsWood(MODID, WOOD_CAVERNSCHASMS, ModType.getAllModTypeWood());
+                    addAllMcwTagsStone(MODID, ROCK_CAVERNSCHASMS, ModType.getAllModTypeStone());
                 }
             };
             generator.addProvider(true, new Recipes(output, registries));
@@ -192,26 +193,26 @@ public class McwAbnormals extends McwMod
             generator.addProvider(true, new McwItemTags(output, registries, mcwBlockTags.contentsGetter(), MODID, existingFileHelper) {
                 @Override
                 protected void addTags(HolderLookup.@NotNull Provider provider) {
-                    addAllMcwTagsStone(MODID, ROCK_BB, Registration.getAllModTypeStone());
+                    addAllMcwTagsStone(MODID, ROCK_BB, ModType.getAllModTypeStone());
 
-                    addAllMcwTagsWood(MODID, WOOD_ATMO, Registration.getAllModTypeWood());
-                    addAllMcwTagsStone(MODID, ROCK_ATMO, Registration.getAllModTypeStone());
+                    addAllMcwTagsWood(MODID, WOOD_ATMO, ModType.getAllModTypeWood());
+                    addAllMcwTagsStone(MODID, ROCK_ATMO, ModType.getAllModTypeStone());
                     addAllMcwTagsLeave(MODID, LEAVES_ATMO);
 
-                    addAllMcwTagsWood(MODID, WOOD_AUTU, Registration.getAllModTypeWood());
-                    addAllMcwTagsStone(MODID, ROCK_AUTU, Registration.getAllModTypeStone());
+                    addAllMcwTagsWood(MODID, WOOD_AUTU, ModType.getAllModTypeWood());
+                    addAllMcwTagsStone(MODID, ROCK_AUTU, ModType.getAllModTypeStone());
                     addAllMcwTagsLeave(MODID, LEAVES_AUTU);
 
-                    addAllMcwTagsWood(MODID, WOOD_ENVI, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOOD_ENVI, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(MODID, LEAVES_ENVI);
 
-                    addAllMcwTagsWood(MODID, WOOD_UAQUA, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOOD_UAQUA, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(MODID, LEAVES_UAQUA);
 
-                    addAllMcwTagsWood(MODID, WOOD_ENDER, Registration.getAllModTypeWood());
+                    addAllMcwTagsWood(MODID, WOOD_ENDER, ModType.getAllModTypeWood());
 
-                    addAllMcwTagsWood(MODID, WOOD_CAVERNSCHASMS, Registration.getAllModTypeWood());
-                    addAllMcwTagsStone(MODID, ROCK_CAVERNSCHASMS, Registration.getAllModTypeStone());
+                    addAllMcwTagsWood(MODID, WOOD_CAVERNSCHASMS, ModType.getAllModTypeWood());
+                    addAllMcwTagsStone(MODID, ROCK_CAVERNSCHASMS, ModType.getAllModTypeStone());
                 }
             });
         }
@@ -219,22 +220,22 @@ public class McwAbnormals extends McwMod
 
     @Override
     public void tabSetup(BuildCreativeModeTabContentsEvent e) {
-        APICreativeTab.initAllWood(e, MODID, WOOD_ATMO, "atmospheric", MCWABNORMALS_TAB.get(), Registration.getAllModTypeWood());
-        APICreativeTab.initAllWood(e, MODID, WOOD_AUTU, "autumnity", MCWABNORMALS_TAB.get(), Registration.getAllModTypeWood());
-        APICreativeTab.initAllWood(e, MODID, WOOD_ENVI, "environmental", MCWABNORMALS_TAB.get(), Registration.getAllModTypeWood());
-        APICreativeTab.initAllWood(e, MODID, WOOD_UAQUA, "upgrade_aquatic", MCWABNORMALS_TAB.get(), Registration.getAllModTypeWood());
-        APICreativeTab.initAllWood(e, MODID, WOOD_ENDER, "endergetic", MCWABNORMALS_TAB.get(), Registration.getAllModTypeWood());
-        APICreativeTab.initAllWood(e, MODID, WOOD_CAVERNSCHASMS, "caverns_and_chasms", MCWABNORMALS_TAB.get(), Registration.getAllModTypeWood());
+        APICreativeTab.initAllWood(e, MODID, WOOD_ATMO, "atmospheric", MCWABNORMALS_TAB.get(), ModType.getAllModTypeWood());
+        APICreativeTab.initAllWood(e, MODID, WOOD_AUTU, "autumnity", MCWABNORMALS_TAB.get(), ModType.getAllModTypeWood());
+        APICreativeTab.initAllWood(e, MODID, WOOD_ENVI, "environmental", MCWABNORMALS_TAB.get(), ModType.getAllModTypeWood());
+        APICreativeTab.initAllWood(e, MODID, WOOD_UAQUA, "upgrade_aquatic", MCWABNORMALS_TAB.get(), ModType.getAllModTypeWood());
+        APICreativeTab.initAllWood(e, MODID, WOOD_ENDER, "endergetic", MCWABNORMALS_TAB.get(), ModType.getAllModTypeWood());
+        APICreativeTab.initAllWood(e, MODID, WOOD_CAVERNSCHASMS, "caverns_and_chasms", MCWABNORMALS_TAB.get(), ModType.getAllModTypeWood());
 
         APICreativeTab.initAllLeave(e, MODID, LEAVES_ATMO, "atmospheric", MCWABNORMALS_TAB.get());
         APICreativeTab.initAllLeave(e, MODID, LEAVES_AUTU, "autumnity", MCWABNORMALS_TAB.get());
         APICreativeTab.initAllLeave(e, MODID, LEAVES_ENVI, "environmental", MCWABNORMALS_TAB.get());
         APICreativeTab.initAllLeave(e, MODID, LEAVES_UAQUA, "upgrade_aquatic", MCWABNORMALS_TAB.get());
 
-        APICreativeTab.initAllStone(e, MODID, ROCK_BB, "buzzier_bees", MCWABNORMALS_TAB.get(), Registration.getAllModTypeStone());
-        APICreativeTab.initAllStone(e, MODID, ROCK_ATMO, "atmospheric", MCWABNORMALS_TAB.get(), Registration.getAllModTypeStone());
-        APICreativeTab.initAllStone(e, MODID, ROCK_AUTU, "autumnity", MCWABNORMALS_TAB.get(), Registration.getAllModTypeStone());
-        APICreativeTab.initAllStone(e, MODID, ROCK_CAVERNSCHASMS, "caverns_and_chasms", MCWABNORMALS_TAB.get(), Registration.getAllModTypeStone());
+        APICreativeTab.initAllStone(e, MODID, ROCK_BB, "buzzier_bees", MCWABNORMALS_TAB.get(), ModType.getAllModTypeStone());
+        APICreativeTab.initAllStone(e, MODID, ROCK_ATMO, "atmospheric", MCWABNORMALS_TAB.get(), ModType.getAllModTypeStone());
+        APICreativeTab.initAllStone(e, MODID, ROCK_AUTU, "autumnity", MCWABNORMALS_TAB.get(), ModType.getAllModTypeStone());
+        APICreativeTab.initAllStone(e, MODID, ROCK_CAVERNSCHASMS, "caverns_and_chasms", MCWABNORMALS_TAB.get(), ModType.getAllModTypeStone());
     }
 
     private void addToBlockEntity(BlockEntityTypeAddBlocksEvent event)

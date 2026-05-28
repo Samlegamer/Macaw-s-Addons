@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "caverns_and_chasms"
+        }
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sanguine_tiles": {
+      "conditions": {
+        "items": [
+          {
+            "items": "caverns_and_chasms:sanguine_tiles"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwabnormals:sanguine_tiles_upper_lower_roof_stonecutter"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sanguine_tiles"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwabnormals:sanguine_tiles_upper_lower_roof_stonecutter"
+    ]
+  }
+}

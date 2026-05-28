@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "caverns_and_chasms"
+        }
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mossy_cobblestone_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "caverns_and_chasms:mossy_cobblestone_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwabnormals:mossy_cobblestone_bricks_bridge_pier_stonecutter"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mossy_cobblestone_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwabnormals:mossy_cobblestone_bricks_bridge_pier_stonecutter"
+    ]
+  }
+}
