@@ -22,8 +22,8 @@ public class Recipes extends McwRecipes
 
     @Override
     protected void buildRecipes(@NotNull RecipeOutput output) {
-        registerAllMcwWood(output, McwAurora.MODID, NoMansLand.MODID, McwAurora.WOOD_NOMANSLAND, getNMLWoodMat());
-        registerMcwHedge(output, McwAurora.MODID, NoMansLand.MODID, McwAurora.LEAVE_NOMANSLAND, getNMLLeaveMat());
+        recipesUtils.registerAllMcwWood(output, McwAurora.MODID, NoMansLand.MODID, McwAurora.WOOD_NOMANSLAND, getNMLWoodMat());
+        recipesUtils.registerMcwHedge(output, McwAurora.MODID, NoMansLand.MODID, McwAurora.LEAVE_NOMANSLAND, getNMLLeaveMat());
     }
 
     private List<Block> getNMLLeaveMat()
