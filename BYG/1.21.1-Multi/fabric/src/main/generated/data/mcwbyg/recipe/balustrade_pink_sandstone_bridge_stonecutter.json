@@ -1,0 +1,19 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "biomeswevegone",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "biomeswevegone:pink_sandstone"
+  },
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:balustrade_pink_sandstone_bridge"
+  }
+}
