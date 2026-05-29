@@ -1,7 +1,5 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
-import com.mcwbridges.kikoz.init.BlockInit;
-import com.mcwbridges.kikoz.util.FuelBlockItemWithInfo;
 import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.RegistrationNeoForge;
 import fr.samlegamer.addonslib.client.APIRenderTypes;

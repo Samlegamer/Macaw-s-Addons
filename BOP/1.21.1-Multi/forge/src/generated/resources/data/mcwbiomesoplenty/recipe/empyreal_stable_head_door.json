@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "stable_head",
+        "ingredients": [
+          {
+            "item": "mcwbiomesoplenty:empyreal_stable_door"
+          }
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbiomesoplenty:empyreal_stable_head_door"
+        }
+      }
+    }
+  ]
+}

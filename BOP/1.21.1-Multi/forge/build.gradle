@@ -1,0 +1,135 @@
+plugins {
+    id 'multiloader-loader'
+    id 'net.minecraftforge.gradle' version '[6.0.24,6.2)'
+    //id 'org.spongepowered.mixin' version '0.7-SNAPSHOT'
+}
+
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
+    }
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
+}
+
+loadExtraProperties('../../../_properties/1.21.1forgegradle.properties')
+
+base {
+    archivesName = "${mod_id}-forge"
+}
+
+minecraft {
+    mappings channel: 'official', version: minecraft_version
+
+    copyIdeResources = true //Calls processResources when in dev
+
+    reobf = false // Forge 1.20.6+ uses official mappings at runtime, so we shouldn't reobf from official to SRG
+
+    // Automatically enable forge AccessTransformers if the file exists
+    // This location is hardcoded in Forge and can not be changed.
+    // https://github.com/MinecraftForge/MinecraftForge/blob/be1698bb1554f9c8fa2f58e32b9ab70bc4385e60/fmlloader/src/main/java/net/minecraftforge/fml/loading/moddiscovery/ModFile.java#L123
+    // Forge still uses SRG names during compile time, so we cannot use the common AT's
+    def at = file('src/main/resources/META-INF/accesstransformer.cfg')
+    if (at.exists()) {
+        accessTransformer = at
+    }
+
+    runs {
+        client {
+            workingDirectory file('runs/client')
+            ideaModule "${rootProject.name}.${project.name}.main"
+            taskName 'Client'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            property 'mixin.env.disableRefMap', 'true'
+            mods {
+                modClientRun {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory file('runs/server')
+            ideaModule "${rootProject.name}.${project.name}.main"
+            taskName 'Server'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            property 'mixin.env.disableRefMap', 'true'
+            mods {
+                modServerRun {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        data {
+            workingDirectory file('runs/data')
+            ideaModule "${rootProject.name}.${project.name}.main"
+            args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            taskName 'Data'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            property 'mixin.env.disableRefMap', 'true'
+            mods {
+                modDataRun {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+sourceSets.main.resources.srcDir 'src/generated/resources'
+
+repositories {
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    //annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
+    implementation "curse.maven:addonslib-1090999:${addonslib_version}"
+    implementation "curse.maven:jei-238222:${jei_version}"
+
+    implementation "curse.maven:macaws-roofs-352039:${roofs_version}"
+    implementation "curse.maven:macaws-fences-and-walls-453925:${fences_version}"
+    implementation "curse.maven:macaws-doors-378646:${doors_version}"
+    implementation "curse.maven:macaws-bridges-351725:${bridges_version}"
+    implementation "curse.maven:macaws-windows-363569:${windows_version}"
+    implementation "curse.maven:macaws-paths-and-pavings-629153:${paths_version}"
+    implementation "curse.maven:macaws-trapdoors-400933:${trapdoors_version}"
+    implementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
+    implementation "curse.maven:macaws-furniture-359540:${furniture_version}"
+
+    implementation "curse.maven:biomes-o-plenty-220318:${bop_version_forge}"
+    implementation "curse.maven:glitchcore-955399:${glichcore_version_forge}"
+    implementation "curse.maven:terrablender-563928:${terrablender_version_forge}"
+
+    // Forge's hack fix
+    implementation('net.sf.jopt-simple:jopt-simple:5.0.4') { version { strictly '5.0.4' } }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            fg.component(it)
+        }
+    }
+}
+
+sourceSets.each {
+    def dir = layout.buildDirectory.dir("sourcesSets/$it.name")
+    it.output.resourcesDir = dir
+    it.java.destinationDirectory = dir
+}

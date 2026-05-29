@@ -16,7 +16,6 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -39,7 +38,7 @@ public class McwBOPForge extends McwMod
     public static final DeferredRegister<CreativeModeTab> ct = RegistrationForge.creativeModeTab(McwBOP.MODID);
 
 	public static final RegistryObject<CreativeModeTab> MCWBOP_TAB = ct.register("tab", () -> CreativeModeTab.builder()
-	        .icon(McwBOPForge::getIcon).title(Component.translatable(McwBOP.MODID+".tab")).build());
+	        .icon(() -> McwBOP.getIcon(new ModListForge())).title(Component.translatable(McwBOP.MODID+".tab")).build());
 
     public McwBOPForge(FMLJavaModLoadingContext context)
     {
@@ -110,9 +109,4 @@ public class McwBOPForge extends McwMod
         APICreativeTab.initAllWood(event, McwBOP.MODID, McwBOP.WOOD, MCWBOP_TAB.get(), ModType.getAllModTypeWood());
         APICreativeTab.initAllLeave(event, McwBOP.MODID, McwBOP.LEAVES, MCWBOP_TAB.get());
     }
-    
-    private static ItemStack getIcon()
-	{
-		return McwBOP.getIcon(new ModListForge());
-	}
 }

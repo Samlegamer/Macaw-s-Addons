@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "picket",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "biomesoplenty:maple_planks"
+          },
+          "C": {
+            "item": "biomesoplenty:maple_log"
+          }
+        },
+        "pattern": [
+          "CBC",
+          "CAC"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwbiomesoplenty:maple_picket_fence"
+        }
+      }
+    }
+  ]
+}
