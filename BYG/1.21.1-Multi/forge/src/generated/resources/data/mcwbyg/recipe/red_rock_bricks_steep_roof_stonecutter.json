@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwroofs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "biomeswevegone:red_rock_bricks"
+        },
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:red_rock_bricks_steep_roof"
+        }
+      }
+    }
+  ]
+}

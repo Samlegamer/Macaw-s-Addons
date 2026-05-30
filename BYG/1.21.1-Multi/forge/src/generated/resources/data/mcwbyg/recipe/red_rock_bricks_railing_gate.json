@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "railing_gate",
+        "key": {
+          "A": {
+            "item": "minecraft:iron_bars"
+          },
+          "B": {
+            "item": "biomeswevegone:red_rock_bricks"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "ABA"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:red_rock_bricks_railing_gate"
+        }
+      }
+    }
+  ]
+}

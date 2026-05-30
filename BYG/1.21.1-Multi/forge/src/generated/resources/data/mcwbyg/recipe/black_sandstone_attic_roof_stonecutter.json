@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwroofs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "biomeswevegone:black_sandstone"
+        },
+        "result": {
+          "count": 1,
+          "id": "mcwbyg:black_sandstone_attic_roof"
+        }
+      }
+    }
+  ]
+}

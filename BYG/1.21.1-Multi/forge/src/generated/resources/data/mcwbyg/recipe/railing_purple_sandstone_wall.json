@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "railing_wall",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:smooth_purple_sandstone"
+          },
+          "B": {
+            "item": "minecraft:iron_bars"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "id": "mcwbyg:railing_purple_sandstone_wall"
+        }
+      }
+    }
+  ]
+}

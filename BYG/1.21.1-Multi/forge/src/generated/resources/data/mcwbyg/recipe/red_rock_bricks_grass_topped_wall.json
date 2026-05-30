@@ -1,0 +1,44 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfences"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "grass_topped",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:red_rock_bricks"
+          },
+          "B": {
+            "item": "biomeswevegone:red_rock_bricks"
+          },
+          "C": {
+            "item": "minecraft:dirt"
+          }
+        },
+        "pattern": [
+          "BCB",
+          "AAA"
+        ],
+        "result": {
+          "count": 6,
+          "id": "mcwbyg:red_rock_bricks_grass_topped_wall"
+        }
+      }
+    }
+  ]
+}

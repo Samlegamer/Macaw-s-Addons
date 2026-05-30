@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "striped_chairs",
+  "key": {
+    "A": {
+      "item": "biomeswevegone:willow_log"
+    },
+    "B": {
+      "item": "biomeswevegone:willow_slab"
+    },
+    "C": {
+      "item": "biomeswevegone:willow_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:willow_striped_chair"
+  }
+}

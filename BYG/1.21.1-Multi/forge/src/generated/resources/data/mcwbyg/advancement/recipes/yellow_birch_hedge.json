@@ -1,0 +1,49 @@
+{
+  "advancements": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbyg:yellow_birch_hedge"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_yellow_birch_leaves": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomeswevegone:yellow_birch_leaves"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfences"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_yellow_birch_leaves"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbyg:yellow_birch_hedge"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwbridges"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "balustrade_bridges",
+        "key": {
+          "A": {
+            "item": "biomeswevegone:windswept_sandstone_slab"
+          },
+          "B": {
+            "item": "biomeswevegone:windswept_sandstone_wall"
+          }
+        },
+        "pattern": [
+          "BBB",
+          "AAA"
+        ],
+        "result": {
+          "count": 5,
+          "id": "mcwbyg:balustrade_windswept_sandstone_bridge"
+        }
+      }
+    }
+  ]
+}
