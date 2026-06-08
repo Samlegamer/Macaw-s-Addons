@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_cupboard_counters",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:green_bioshroom_slab"
+    },
+    "B": {
+      "item": "mcwregionsunexplored:stripped_green_bioshroom_wardrobe"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwregionsunexplored:stripped_green_bioshroom_cupboard_counter"
+  }
+}

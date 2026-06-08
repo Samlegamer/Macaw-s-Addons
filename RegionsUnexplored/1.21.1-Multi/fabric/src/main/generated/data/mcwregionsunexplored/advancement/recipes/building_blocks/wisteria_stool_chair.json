@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwregionsunexplored:wisteria_stool_chair"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wisteria_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "regions_unexplored:wisteria_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_wisteria_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwregionsunexplored:wisteria_stool_chair"
+    ]
+  }
+}

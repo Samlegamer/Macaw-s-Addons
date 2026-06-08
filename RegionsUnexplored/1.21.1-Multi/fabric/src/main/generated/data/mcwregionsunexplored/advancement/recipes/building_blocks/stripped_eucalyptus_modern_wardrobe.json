@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_eucalyptus_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "regions_unexplored:eucalyptus_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwregionsunexplored:stripped_eucalyptus_modern_wardrobe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_eucalyptus_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwregionsunexplored:stripped_eucalyptus_modern_wardrobe"
+    ]
+  }
+}

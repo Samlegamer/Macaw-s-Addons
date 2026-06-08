@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfences"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_brimwood_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "regions_unexplored:brimwood_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwregionsunexplored:brimwood_pyramid_gate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_brimwood_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwregionsunexplored:brimwood_pyramid_gate"
+    ]
+  }
+}

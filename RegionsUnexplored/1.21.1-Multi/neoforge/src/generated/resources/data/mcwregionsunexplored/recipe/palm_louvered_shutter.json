@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:palm_slab"
+    },
+    {
+      "item": "regions_unexplored:palm_slab"
+    },
+    {
+      "item": "regions_unexplored:palm_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwregionsunexplored:palm_louvered_shutter"
+  }
+}

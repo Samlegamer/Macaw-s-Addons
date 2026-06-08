@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_chairs",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:stripped_blue_bioshroom_stem"
+    },
+    "B": {
+      "item": "regions_unexplored:blue_bioshroom_slab"
+    },
+    "C": {
+      "item": "regions_unexplored:blue_bioshroom_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwregionsunexplored:stripped_blue_bioshroom_chair"
+  }
+}

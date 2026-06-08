@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_chairs",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:yellow_bioshroom_stem"
+    },
+    "B": {
+      "item": "regions_unexplored:yellow_bioshroom_slab"
+    },
+    "C": {
+      "item": "regions_unexplored:yellow_bioshroom_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwregionsunexplored:yellow_bioshroom_modern_chair"
+  }
+}

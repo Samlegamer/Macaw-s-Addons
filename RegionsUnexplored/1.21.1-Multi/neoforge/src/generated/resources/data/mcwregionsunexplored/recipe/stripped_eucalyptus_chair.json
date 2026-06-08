@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_chairs",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:stripped_eucalyptus_log"
+    },
+    "B": {
+      "item": "regions_unexplored:eucalyptus_slab"
+    },
+    "C": {
+      "item": "regions_unexplored:eucalyptus_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwregionsunexplored:stripped_eucalyptus_chair"
+  }
+}

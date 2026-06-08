@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stable_head",
+  "ingredients": [
+    {
+      "item": "mcwregionsunexplored:palm_stable_door"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwregionsunexplored:palm_stable_head_door"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_modern_chairs",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:stripped_yellow_bioshroom_stem"
+    },
+    "B": {
+      "item": "regions_unexplored:yellow_bioshroom_slab"
+    },
+    "C": {
+      "item": "regions_unexplored:yellow_bioshroom_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwregionsunexplored:stripped_yellow_bioshroom_modern_chair"
+  }
+}

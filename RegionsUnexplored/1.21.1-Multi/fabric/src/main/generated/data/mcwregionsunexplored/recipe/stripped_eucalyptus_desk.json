@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "regions_unexplored",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_desks",
+  "key": {
+    "A": {
+      "item": "regions_unexplored:stripped_eucalyptus_log"
+    },
+    "B": {
+      "item": "regions_unexplored:eucalyptus_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwregionsunexplored:stripped_eucalyptus_desk"
+  }
+}
