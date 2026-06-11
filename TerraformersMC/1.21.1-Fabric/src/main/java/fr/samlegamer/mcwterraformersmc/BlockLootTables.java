@@ -14,13 +14,13 @@ public class BlockLootTables extends McwLootTables
 
     @Override
     public void generate() {
-        addBlockAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
-        addBlockAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
-        addBlockAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
-        addBlockHedges(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE);
-        addBlockHedges(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA);
-        addBlockAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES);
-        addBlockAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA);
+        lootTableUtils.addBlockAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TRAVERSE);
+        lootTableUtils.addBlockAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_CINDERSCAPES);
+        lootTableUtils.addBlockAllWood(McwTerraformersMC.MODID, McwTerraformersMC.WOODS_TERRESTRIA);
+        lootTableUtils.addBlockHedges(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TRAVERSE);
+        lootTableUtils.addBlockHedges(McwTerraformersMC.MODID, McwTerraformersMC.LEAVES_TERRESTRIA);
+        lootTableUtils.addBlockAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_CINDERSCAPES);
+        lootTableUtils.addBlockAllStone(McwTerraformersMC.MODID, McwTerraformersMC.ROCKS_TERRESTRIA);
         makeLootTables();
     }
 }
