@@ -2,7 +2,7 @@ package fr.samlegamer.mcwregionsunexplored;
 
 import java.awt.*;
 import java.util.List;
-import fr.addonslib.api.client.McwColors;
+import fr.addonslib.api.client.ObjectColor;
 import fr.samlegamer.addonslib.client.ColorRegistry;
 import fr.samlegamer.addonslib.Finder;
 import net.minecraft.world.level.FoliageColor;
@@ -17,27 +17,27 @@ import static net.regions_unexplored.client.color.RuColorHandler.getEnchantedAsp
 @Mod.EventBusSubscriber(modid = McwRegionsUnexplored.MODID, bus = Bus.MOD, value = Dist.CLIENT)
 public class Client
 {
-	private static final ColorRegistry COLOR = new ColorRegistry(new McwColors(List.of(
-			Finder.makeIdHedge(McwRegionsUnexplored.MODID, "baobab"),
-			Finder.makeIdHedge(McwRegionsUnexplored.MODID, "cypress"),
-			Finder.makeIdHedge(McwRegionsUnexplored.MODID, "eucalyptus"),
-			Finder.makeIdHedge(McwRegionsUnexplored.MODID, "joshua"),
-			Finder.makeIdHedge(McwRegionsUnexplored.MODID, "maple"),
-			Finder.makeIdHedge(McwRegionsUnexplored.MODID, "palm"),
-			Finder.makeIdHedge(McwRegionsUnexplored.MODID, "pine"),
-			Finder.makeIdHedge(McwRegionsUnexplored.MODID, "redwood"),
-			Finder.makeIdHedge(McwRegionsUnexplored.MODID, "willow"),
-			Finder.makeIdHedge(McwRegionsUnexplored.MODID, "socotra"),
-			Finder.makeIdHedge(McwRegionsUnexplored.MODID, "kapok"),
-			Finder.makeIdHedge(McwRegionsUnexplored.MODID, "magnolia")
-	)));
+	private static final ColorRegistry COLOR = new ColorRegistry(List.of(
+			new ObjectColor(McwRegionsUnexplored.MODID, "baobab"),
+			new ObjectColor(McwRegionsUnexplored.MODID, "cypress"),
+			new ObjectColor(McwRegionsUnexplored.MODID, "eucalyptus"),
+			new ObjectColor(McwRegionsUnexplored.MODID, "joshua"),
+			new ObjectColor(McwRegionsUnexplored.MODID, "maple"),
+			new ObjectColor(McwRegionsUnexplored.MODID, "palm"),
+			new ObjectColor(McwRegionsUnexplored.MODID, "pine"),
+			new ObjectColor(McwRegionsUnexplored.MODID, "redwood"),
+			new ObjectColor(McwRegionsUnexplored.MODID, "willow"),
+			new ObjectColor(McwRegionsUnexplored.MODID, "socotra"),
+			new ObjectColor(McwRegionsUnexplored.MODID, "kapok"),
+			new ObjectColor(McwRegionsUnexplored.MODID, "magnolia")
+	));
 
 	@SubscribeEvent
 	public static void colorsBlock(RegisterColorHandlersEvent.Block event)
 	{
-		COLOR.registryBlockColorsAverage(event);
-		event.register((bs, world, pos, index) -> world != null && pos != null ? getAspenColor(world, pos) : FoliageColor.getDefaultColor(), Finder.findBlock(Finder.makeIdHedge(McwRegionsUnexplored.MODID, "silver_birch")));
-		event.register((bs, world, pos, index) -> world != null && pos != null ? getEnchantedAspenColor(world, pos) : FoliageColor.getDefaultColor(), Finder.findBlock(Finder.makeIdHedge(McwRegionsUnexplored.MODID, "enchanted_birch")));
+		COLOR.registryBlockColors(event);
+		event.register((bs, world, pos, index) -> world != null && pos != null ? getAspenColor(world, pos) : FoliageColor.getDefaultColor(), Finder.findBlock(McwRegionsUnexplored.MODID, "silver_birch_hedge"));
+		event.register((bs, world, pos, index) -> world != null && pos != null ? getEnchantedAspenColor(world, pos) : FoliageColor.getDefaultColor(), Finder.findBlock(McwRegionsUnexplored.MODID, "enchanted_birch_hedge"));
 	}
 
 	@SubscribeEvent
@@ -45,8 +45,8 @@ public class Client
 	{
 		COLOR.registryItemColors(event);
 		event.register((stack, tintIndex) -> Color.getHSBColor(0.15F, 0.8F, 1.0F).getRGB(),
-			Finder.findBlock(Finder.makeIdHedge(McwRegionsUnexplored.MODID, "silver_birch")));
+			Finder.findBlock(McwRegionsUnexplored.MODID, "silver_birch_hedge"));
 		event.register((stack, tintIndex) -> Color.getHSBColor(0.58F, 0.8F, 1.0F).getRGB(),
-			Finder.findBlock(Finder.makeIdHedge(McwRegionsUnexplored.MODID, "enchanted_birch")));
+			Finder.findBlock(McwRegionsUnexplored.MODID, "enchanted_birch_hedge"));
 	}
 }
