@@ -1,0 +1,17 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cinderscapes",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": "cinderscapes:rose_quartz_bricks",
+  "result": {
+    "count": 1,
+    "id": "mcwterraformersmc:balustrade_rose_quartz_bricks_bridge"
+  }
+}

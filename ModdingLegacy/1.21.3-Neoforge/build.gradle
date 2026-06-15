@@ -18,6 +18,7 @@ def loadExtraProperties(String relPath) {
 }
 
 loadExtraProperties('../../_properties/1.21.3neogradle.properties')
+loadExtraProperties('../_GlobalRsc/globalgradle.properties')
 
 tasks.named('wrapper', Wrapper).configure {
     // Define wrapper values here so as to not have to always do so when updating gradlew.properties.
@@ -138,6 +139,17 @@ repositories
             maven { url "https://maven.shedaniel.me" }
         }
 
+sourceSets {
+    main {
+        resources {
+            srcDirs '../_GlobalRsc/common/'
+        }
+        resources {
+            srcDirs '../_GlobalRsc/1.20.1/'
+        }
+    }
+}
+
 dependencies {
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
@@ -192,7 +204,9 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             mod_license            : mod_license,
             mod_version            : mod_version,
             mod_authors            : mod_authors,
-            mod_description        : mod_description
+            mod_description        : mod_description,
+            website_link : website_link,
+            issues_link : issues_link
     ]
     inputs.properties replaceProperties
     expand replaceProperties
