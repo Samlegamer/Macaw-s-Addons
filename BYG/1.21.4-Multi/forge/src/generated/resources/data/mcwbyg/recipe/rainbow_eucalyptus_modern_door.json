@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern",
+        "key": {
+          "A": "biomeswevegone:rainbow_eucalyptus_planks",
+          "B": "minecraft:glass_pane"
+        },
+        "pattern": [
+          "AB",
+          "AA",
+          "AB"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwbyg:rainbow_eucalyptus_modern_door"
+        }
+      }
+    }
+  ]
+}

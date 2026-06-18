@@ -1,0 +1,49 @@
+{
+  "forge:conditional": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbyg:witch_hazel_plank_pane_window"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_witch_hazel_log": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomeswevegone:witch_hazel_log"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwwindows"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_witch_hazel_log"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbyg:witch_hazel_plank_pane_window"
+        ]
+      }
+    }
+  ]
+}

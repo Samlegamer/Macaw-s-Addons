@@ -1,0 +1,49 @@
+{
+  "forge:conditional": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbyg:willow_double_drawer_counter"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_willow_log": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomeswevegone:willow_log"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwfurnitures"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_willow_log"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbyg:willow_double_drawer_counter"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_desks",
+  "key": {
+    "A": "biomeswevegone:rainbow_eucalyptus_log",
+    "B": "biomeswevegone:rainbow_eucalyptus_fence",
+    "C": "minecraft:stick"
+  },
+  "pattern": [
+    "AAA",
+    "BCB"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwbyg:rainbow_eucalyptus_modern_desk"
+  }
+}

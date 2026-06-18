@@ -1,0 +1,49 @@
+{
+  "forge:conditional": [
+    {
+      "parent": "minecraft:recipes/root",
+      "criteria": {
+        "has_the_recipe": {
+          "conditions": {
+            "recipe": "mcwbyg:zelkova_steep_roof"
+          },
+          "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_zelkova_log": {
+          "conditions": {
+            "items": [
+              {
+                "items": "biomeswevegone:zelkova_log"
+              }
+            ]
+          },
+          "trigger": "minecraft:inventory_changed"
+        }
+      },
+      "forge:condition": {
+        "type": "forge:and",
+        "values": [
+          {
+            "type": "forge:mod_loaded",
+            "modid": "mcwroofs"
+          },
+          {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
+        ]
+      },
+      "requirements": [
+        [
+          "has_the_recipe",
+          "has_zelkova_log"
+        ]
+      ],
+      "rewards": {
+        "recipes": [
+          "mcwbyg:zelkova_steep_roof"
+        ]
+      }
+    }
+  ]
+}

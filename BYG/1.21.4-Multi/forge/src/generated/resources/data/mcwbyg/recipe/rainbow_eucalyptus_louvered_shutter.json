@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwwindows"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomeswevegone"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "shutters",
+        "ingredients": [
+          "biomeswevegone:rainbow_eucalyptus_slab",
+          "biomeswevegone:rainbow_eucalyptus_slab",
+          "biomeswevegone:rainbow_eucalyptus_slab"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwbyg:rainbow_eucalyptus_louvered_shutter"
+        }
+      }
+    }
+  ]
+}

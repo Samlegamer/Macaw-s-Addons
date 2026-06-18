@@ -1,0 +1,15 @@
+{
+    "variants": {                                                                        
+        "facing=north,powered=false":  { "model": "mcwbyg:block/bridge/rail/baobab", "y": 90},
+		"facing=east,powered=false":  { "model": "mcwbyg:block/bridge/rail/baobab"},
+		"facing=south,powered=false":  { "model": "mcwbyg:block/bridge/rail/baobab", "y": 90},
+		"facing=west,powered=false":  { "model": "mcwbyg:block/bridge/rail/baobab"},
+
+		"facing=north,powered=true":  { "model": "mcwbyg:block/bridge/rail/baobab_powered", "y": 90},
+		"facing=east,powered=true":  { "model": "mcwbyg:block/bridge/rail/baobab_powered"},
+		"facing=south,powered=true":  { "model": "mcwbyg:block/bridge/rail/baobab_powered", "y": 90},
+		"facing=west,powered=true":  { "model": "mcwbyg:block/bridge/rail/baobab_powered"}			
+    }
+}
+
+

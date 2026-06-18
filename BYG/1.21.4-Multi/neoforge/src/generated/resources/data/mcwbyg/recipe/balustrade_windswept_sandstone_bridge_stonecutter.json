@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "biomeswevegone"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": "biomeswevegone:windswept_sandstone",
+  "result": {
+    "count": 1,
+    "id": "mcwbyg:balustrade_windswept_sandstone_bridge"
+  }
+}
