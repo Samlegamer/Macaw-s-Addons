@@ -1,39 +1,38 @@
 {
 	"schemaVersion": 1,
-  "id": "${archives_base_name}",
-  "version": "${version}",
-
-  "name": "${mod_name}",
-  "description": "${mod_description}",
-  "authors": [
-    "${mod_authors}"
-  ],
-  "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/macaws-terraformersmc",
-    "sources": "https://github.com/Samlegamer/Macaw-s-Addons"
-  },
-  "license": "${mod_license}",
-  "icon": "logo.png",
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "${mod_init}"
+    "id": "${archives_base_name}",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${mod_description}",
+    "authors": [
+      "${mod_authors}"
     ],
-    "client": [
-      "${mod_init_client}"
-    ],
-    "fabric-datagen": [
-      "${mod_init_datagen}"
-    ]
-  },
-  "depends": {
-		"fabricloader": ">=0.17.3",
-		"minecraft": "~1.21.4",
-		"java": ">=21",
-		"fabric-api": "*",
-        "addonslib": ">=1.21.4-1.6"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+    "contact": {
+      "homepage": "${mod_project_url}",
+      "sources": "${mod_issue_tracker}"
+    },
+    "license": "${mod_license}",
+    "icon": "logo.png",
+    "environment": "*",
+    "entrypoints": {
+      "main": [
+        "${mod_init}"
+      ],
+      "client": [
+        "${mod_init_client}"
+      ],
+      "fabric-datagen": [
+        "${mod_init_datagen}"
+      ]
+    },
+    "depends": {
+          "fabricloader": ">=0.17.3",
+          "minecraft": "~1.21.4",
+          "java": ">=21",
+          "fabric-api": "*",
+          "addonslib": ">=1.21.4-1.8"
+      },
+      "suggests": {
+          "another-mod": "*"
+      }
 }
