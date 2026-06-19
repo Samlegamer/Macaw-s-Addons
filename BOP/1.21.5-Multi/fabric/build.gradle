@@ -1,0 +1,95 @@
+plugins {
+    id 'multiloader-loader'
+    id 'fabric-loom'
+}
+
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
+    }
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
+}
+
+loadExtraProperties('../../../_properties/1.21.5fabricgradle.properties')
+
+repositories {
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    maven { url "https://maven.shedaniel.me" }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    mappings loom.layered {
+        officialMojangMappings()
+        parchment("org.parchmentmc.data:parchment-${parchment_minecraft}:${parchment_version}@zip")
+    }
+    modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
+
+    modImplementation "curse.maven:addonslib-1090999:${addonslib_version}"
+
+    modImplementation "curse.maven:macaws-roofs-352039:${roofs_version}"
+    modImplementation "curse.maven:macaws-fences-and-walls-453925:${fences_version}"
+    modImplementation "curse.maven:macaws-doors-378646:${doors_version}"
+    modImplementation "curse.maven:macaws-bridges-351725:${bridges_version}"
+    modImplementation "curse.maven:macaws-windows-363569:${windows_version}"
+    modImplementation "curse.maven:macaws-paths-and-pavings-629153:${paths_version}"
+    modImplementation "curse.maven:macaws-trapdoors-400933:${trapdoors_version}"
+    modImplementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
+    modImplementation "curse.maven:macaws-furniture-359540:${furniture_version}"
+
+    modImplementation "curse.maven:biomes-o-plenty-220318:${bop_version_fabric}"
+    modImplementation "curse.maven:glitchcore-955399:${glitch_core_version_fabric}"
+    modImplementation "curse.maven:terrablender-fabric-565956:${terrablender_version_fabric}"
+    include implementation("com.electronwill.night-config:toml:${nightconfig_version}")
+    include implementation("com.electronwill.night-config:core:${nightconfig_version}")
+    include implementation("net.jodah:typetools:0.6.3")
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir "src/main/generated"
+        }
+    }
+}
+
+loom {
+    def aw = project(':common').file("src/main/resources/${mod_id}.accesswidener")
+    if (aw.exists()) {
+        accessWidenerPath.set(aw)
+    }
+    runs {
+        client {
+            client()
+            setConfigName('Fabric Client')
+            ideConfigGenerated(true)
+            runDir('runs/client')
+        }
+        server {
+            server()
+            setConfigName('Fabric Server')
+            ideConfigGenerated(true)
+            runDir('runs/server')
+        }
+        datagen {
+            inherit client
+            name "Data Generation"
+            vmArg "-Dfabric-api.datagen"
+            vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
+            vmArg "-Dfabric-api.datagen.modid=${mod_id}"
+            ideConfigGenerated(true)
+            runDir("runs/datagen")
+        }
+    }
+}

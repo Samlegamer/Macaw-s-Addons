@@ -25,7 +25,7 @@ def loadExtraProperties(String relPath) {
     props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
     return true
 }
-0
+
 loadExtraProperties('../../../_properties/1.21.4forgegradle.properties')
 
 neoForge {
