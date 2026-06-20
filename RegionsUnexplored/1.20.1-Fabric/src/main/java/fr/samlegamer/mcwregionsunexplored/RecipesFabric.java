@@ -11,16 +11,16 @@ import java.util.List;
 import java.util.function.Consumer;
 import static io.github.uhq_games.regions_unexplored.block.RuBlocks.*;
 
-public class Recipes extends McwRecipes
+public class RecipesFabric extends McwRecipes
 {
-    public Recipes(FabricDataOutput dataGenerator) {
+    public RecipesFabric(FabricDataOutput dataGenerator) {
         super(dataGenerator);
     }
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> consumer) {
-        recipesUtils.registerAllMcwWood(consumer, McwRegionsUnexplored.MODID, RegionsUnexplored.MODID, McwRegionsUnexplored.WOOD, getWoodMat());
-        recipesUtils.registerMcwHedge(consumer, McwRegionsUnexplored.MODID, RegionsUnexplored.MODID, McwRegionsUnexplored.LEAVES, getLeavesMat());
+        recipesUtils.registerAllMcwWood(consumer, McwRegionsUnexploredFabric.MODID, RegionsUnexplored.MODID, McwRegionsUnexploredFabric.WOOD, getWoodMat());
+        recipesUtils.registerMcwHedge(consumer, McwRegionsUnexploredFabric.MODID, RegionsUnexplored.MODID, McwRegionsUnexploredFabric.LEAVES, getLeavesMat());
     }
 
     private List<Block> getLeavesMat()

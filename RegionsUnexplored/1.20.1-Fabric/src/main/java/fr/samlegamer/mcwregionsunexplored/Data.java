@@ -9,14 +9,14 @@ public class Data implements DataGeneratorEntrypoint
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
-        pack.addProvider(Recipes::new);
+        pack.addProvider(RecipesFabric::new);
         pack.addProvider(LootTables::new);
-        pack.addProvider(Tags.Blocks::new);
-        pack.addProvider(Tags.Items::new);
+        pack.addProvider(TagsFabric.Blocks::new);
+        pack.addProvider(TagsFabric.Items::new);
     }
 
     @Override
     public @Nullable String getEffectiveModId() {
-        return McwRegionsUnexplored.MODID;
+        return McwRegionsUnexploredFabric.MODID;
     }
 }

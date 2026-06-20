@@ -13,7 +13,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.util.List;
 
-public class McwRegionsUnexplored implements ModInitializer {
+public class McwRegionsUnexploredFabric implements ModInitializer {
     public static final String MODID = "mcwregionsunexplored";
     public static final Logger LOGGER = LogManager.getLogger();
     public static final List<String> WOOD = List.of("baobab", "blackwood", "cypress", "dead", "eucalyptus", "joshua",
@@ -24,7 +24,7 @@ public class McwRegionsUnexplored implements ModInitializer {
             "dead_pine", "silver_birch", "bamboo", "socotra", "kapok", "enchanted_birch", "blue_magnolia", "magnolia", "pink_magnolia",
             "white_magnolia", "brimwood");
 
-    public static final ItemGroup MCWREGIONUNEXPLORED_TAB = APICreativeTab.initGroup(MODID, McwRegionsUnexplored::makeIcon);
+    public static final ItemGroup MCWREGIONUNEXPLORED_TAB = APICreativeTab.initGroup(MODID, McwRegionsUnexploredFabric::makeIcon);
 
     @Override
     public void onInitialize() {

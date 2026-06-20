@@ -1,14 +1,13 @@
 package fr.samlegamer.mcwregionsunexplored;
 
 import fr.addonslib.api.data.ModType;
-import fr.samlegamer.addonslib.Registration;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.registry.RegistryWrapper;
 import java.util.concurrent.CompletableFuture;
 
-public class Tags
+public class TagsFabric
 {
     public static class Blocks extends McwBlockTags
     {
@@ -18,8 +17,8 @@ public class Tags
 
         @Override
         protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-            addAllMcwTagsWood(McwRegionsUnexplored.MODID, McwRegionsUnexplored.WOOD, ModType.getAllModTypeWood());
-            addAllMcwTagsLeave(McwRegionsUnexplored.MODID, McwRegionsUnexplored.LEAVES);
+            addAllMcwTagsWood(McwRegionsUnexploredFabric.MODID, McwRegionsUnexploredFabric.WOOD, ModType.getAllModTypeWood());
+            addAllMcwTagsLeave(McwRegionsUnexploredFabric.MODID, McwRegionsUnexploredFabric.LEAVES);
         }
     }
 
@@ -31,8 +30,8 @@ public class Tags
 
         @Override
         protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-            addAllMcwTagsWood(McwRegionsUnexplored.MODID, McwRegionsUnexplored.WOOD, ModType.getAllModTypeWood());
-            addAllMcwTagsLeave(McwRegionsUnexplored.MODID, McwRegionsUnexplored.LEAVES);
+            addAllMcwTagsWood(McwRegionsUnexploredFabric.MODID, McwRegionsUnexploredFabric.WOOD, ModType.getAllModTypeWood());
+            addAllMcwTagsLeave(McwRegionsUnexploredFabric.MODID, McwRegionsUnexploredFabric.LEAVES);
         }
     }
 }
