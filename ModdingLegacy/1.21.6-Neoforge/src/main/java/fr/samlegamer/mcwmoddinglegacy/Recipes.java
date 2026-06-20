@@ -23,14 +23,14 @@ public class Recipes extends McwRecipes
     @Override
     protected void buildRecipes() {
 //        registerAllMcwWood(output, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_blue_skies, getWoodBS());
-        registerAllMcwWood(output, McwModdingLegacy.MODID, PremiumWoodMod.MODID, McwModdingLegacy.wood_premium_wood, getWoodPW());
+        recipesUtils.registerAllMcwWood(output, McwModdingLegacy.MODID, PremiumWoodMod.MODID, McwModdingLegacy.wood_premium_wood, getWoodPW());
 
 //        onRegisterMcwWood(ModType.BRIDGES, output, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_crystallized, getWoodBSCrystallized());
 //        onRegisterMcwWood(ModType.ROOFS, output, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_crystallized, getWoodBSCrystallized());
 //        registerMcwHedge(output, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_crystallized, getLeavesBSCrystallized());
 
 //        registerMcwHedge(output, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_blue_skies, getLeavesBS());
-        registerMcwHedge(output, McwModdingLegacy.MODID, PremiumWoodMod.MODID, McwModdingLegacy.wood_premium_wood, getLeavesPW());
+        recipesUtils.registerMcwHedge(output, McwModdingLegacy.MODID, PremiumWoodMod.MODID, McwModdingLegacy.wood_premium_wood, getLeavesPW());
     }
 
     private List<McwWoodMat<Block>> getWoodPW()
