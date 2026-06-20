@@ -18,12 +18,14 @@ def loadExtraProperties(String relPath) {
 }
 
 loadExtraProperties('../../../_properties/1.21.8forgegradle.properties')
+loadExtraProperties('../../_GlobalRsc/globalgradle.properties')
+loadExtraProperties('../../../_versions/1.21.6gradle.properties')
 
 version = mod_version
 group = mod_group_id
 
 base {
-    archivesName = mod_id
+    archivesName = mod_id + "-forge"
 }
 
 // Mojang ships Java 21 to end users in 1.20.5+, so your mod should target Java 21.
@@ -149,6 +151,20 @@ repositories {
     }
 }
 
+sourceSets {
+    main {
+        java {
+            srcDirs '../../1.21.4-Multi/common/src/main/java/'
+        }
+        resources {
+            srcDirs '../../_GlobalRsc/common/'
+        }
+        resources {
+            srcDirs '../../_GlobalRsc/1.21.4/'
+        }
+    }
+}
+
 dependencies {
     // Specify the version of Minecraft to use.
     // Any artifact can be supplied so long as it has a "userdev" classifier artifact and is a compatible patcher artifact.
@@ -206,7 +222,10 @@ tasks.named('processResources', ProcessResources) {
             forge_version: forge_version, forge_version_range: forge_version_range,
             loader_version_range: loader_version_range,
             mod_id: mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
-            mod_authors: mod_authors, mod_description: mod_description,
+            mod_authors: mod_authors, mod_description2: mod_description2,
+            "website_link": website_link,
+            "issues_link": issues_link,
+            'addonslib_last_version_forge'             : addonslib_last_version_forge
     ]
     inputs.properties replaceProperties
 
