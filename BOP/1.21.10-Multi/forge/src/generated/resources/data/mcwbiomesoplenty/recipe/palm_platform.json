@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwstairs"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "mcwstairs_platform",
+        "key": {
+          "A": "biomesoplenty:palm_log",
+          "B": "biomesoplenty:palm_slab"
+        },
+        "pattern": [
+          " BB",
+          " AA",
+          "   "
+        ],
+        "result": {
+          "count": 12,
+          "id": "mcwbiomesoplenty:palm_platform"
+        }
+      }
+    }
+  ]
+}
