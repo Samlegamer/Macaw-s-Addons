@@ -25,14 +25,14 @@ public class Recipes extends McwRecipes
     @ParametersAreNonnullByDefault
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer)
     {
-        registerAllMcwWood(consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_blue_skies, getWoodBS());
-        registerAllMcwWood(consumer, McwModdingLegacy.MODID, PremiumWoodMod.MODID, McwModdingLegacy.wood_premium_wood, getWoodPW());
+        recipesUtils.registerAllMcwWood(consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_blue_skies, getWoodBS());
+        recipesUtils.registerAllMcwWood(consumer, McwModdingLegacy.MODID, PremiumWoodMod.MODID, McwModdingLegacy.wood_premium_wood, getWoodPW());
 
-        registerMcwWood(consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_crystallized, getWoodBSCrystallized(), ModType.BRIDGES, ModType.ROOFS);
-        registerMcwHedge(consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_crystallized, getLeavesBSCrystallized());
+        recipesUtils.registerMcwWood(consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_crystallized, getWoodBSCrystallized(), ModType.BRIDGES, ModType.ROOFS);
+        recipesUtils.registerMcwHedge(consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_crystallized, getLeavesBSCrystallized());
 
-        registerMcwHedge(consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_blue_skies, getLeavesBS());
-        registerMcwHedge(consumer, McwModdingLegacy.MODID, PremiumWoodMod.MODID, McwModdingLegacy.wood_premium_wood, getLeavesPW());
+        recipesUtils.registerMcwHedge(consumer, McwModdingLegacy.MODID, BlueSkies.MODID, McwModdingLegacy.wood_blue_skies, getLeavesBS());
+        recipesUtils.registerMcwHedge(consumer, McwModdingLegacy.MODID, PremiumWoodMod.MODID, McwModdingLegacy.wood_premium_wood, getLeavesPW());
     }
 
     private List<Block> getLeavesBS()
