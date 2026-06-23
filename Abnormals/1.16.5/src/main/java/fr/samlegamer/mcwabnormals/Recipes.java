@@ -33,20 +33,20 @@ public class Recipes extends McwRecipes
     @Override
     @ParametersAreNonnullByDefault
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer) {
-        registerAllMcwStone(consumer, McwAbnormals.MODID, BuzzierBees.MOD_ID, McwAbnormals.ROCK_BB, getBB());
-        registerAllMcwStone(consumer, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.ROCK_ATMO, getAtmoRock());
-        registerAllMcwStone(consumer, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.ROCK_AUTU, getAutuRock());
+        recipesUtils.registerAllMcwStone(consumer, McwAbnormals.MODID, BuzzierBees.MOD_ID, McwAbnormals.ROCK_BB, getBB());
+        recipesUtils.registerAllMcwStone(consumer, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.ROCK_ATMO, getAtmoRock());
+        recipesUtils.registerAllMcwStone(consumer, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.ROCK_AUTU, getAutuRock());
 
-        registerAllMcwWood(consumer, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.WOOD_AUTU, getAutuWood());
-        registerAllMcwWood(consumer, McwAbnormals.MODID, Environmental.MOD_ID, McwAbnormals.WOOD_ENVI, getEnviWood());
-        registerAllMcwWood(consumer, McwAbnormals.MODID, UpgradeAquatic.MOD_ID, McwAbnormals.WOOD_UAQUA, getUAquaWood());
-        registerAllMcwWood(consumer, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.WOOD_ATMO, getAtmoWood());
-        registerAllMcwWood(consumer, McwAbnormals.MODID, EndergeticExpansion.MOD_ID, McwAbnormals.WOOD_ENDER, getEnderWood());
+        recipesUtils.registerAllMcwWood(consumer, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.WOOD_AUTU, getAutuWood());
+        recipesUtils.registerAllMcwWood(consumer, McwAbnormals.MODID, Environmental.MOD_ID, McwAbnormals.WOOD_ENVI, getEnviWood());
+        recipesUtils.registerAllMcwWood(consumer, McwAbnormals.MODID, UpgradeAquatic.MOD_ID, McwAbnormals.WOOD_UAQUA, getUAquaWood());
+        recipesUtils.registerAllMcwWood(consumer, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.WOOD_ATMO, getAtmoWood());
+        recipesUtils.registerAllMcwWood(consumer, McwAbnormals.MODID, EndergeticExpansion.MOD_ID, McwAbnormals.WOOD_ENDER, getEnderWood());
 
-        registerMcwHedge(consumer, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.LEAVES_ATMO, getAtmoLeaves());
-        registerMcwHedge(consumer, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.LEAVES_AUTU, getAutuLeaves());
-        registerMcwHedge(consumer, McwAbnormals.MODID, Environmental.MOD_ID, McwAbnormals.LEAVES_ENVI, getEnviLeaves());
-        registerMcwHedge(consumer, McwAbnormals.MODID, UpgradeAquatic.MOD_ID, McwAbnormals.LEAVES_UAQUA, getUAquaLeaves());
+        recipesUtils.registerMcwHedge(consumer, McwAbnormals.MODID, Atmospheric.MOD_ID, McwAbnormals.LEAVES_ATMO, getAtmoLeaves());
+        recipesUtils.registerMcwHedge(consumer, McwAbnormals.MODID, Autumnity.MOD_ID, McwAbnormals.LEAVES_AUTU, getAutuLeaves());
+        recipesUtils.registerMcwHedge(consumer, McwAbnormals.MODID, Environmental.MOD_ID, McwAbnormals.LEAVES_ENVI, getEnviLeaves());
+        recipesUtils.registerMcwHedge(consumer, McwAbnormals.MODID, UpgradeAquatic.MOD_ID, McwAbnormals.LEAVES_UAQUA, getUAquaLeaves());
     }
 
     private List<Block> getUAquaLeaves()

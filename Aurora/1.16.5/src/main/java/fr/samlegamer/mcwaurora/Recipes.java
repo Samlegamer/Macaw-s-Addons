@@ -26,12 +26,12 @@ public class Recipes extends McwRecipes
     @Override
     @ParametersAreNonnullByDefault
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer) {
-        registerAllMcwWood(consumer, McwAurora.MODID, EnhancedMushrooms.MODID, McwAurora.WOOD_ENHANCED_MUSH, getEM());
-        registerAllMcwWood(consumer, McwAurora.MODID, BayouBlues.MODID, McwAurora.WOOD_BAYOU, getBayouWood());
-        registerAllMcwWood(consumer, McwAurora.MODID, Abundance.MODID, McwAurora.WOOD_ABUNDANCE, getAbunWood());
+        recipesUtils.registerAllMcwWood(consumer, McwAurora.MODID, EnhancedMushrooms.MODID, McwAurora.WOOD_ENHANCED_MUSH, getEM());
+        recipesUtils.registerAllMcwWood(consumer, McwAurora.MODID, BayouBlues.MODID, McwAurora.WOOD_BAYOU, getBayouWood());
+        recipesUtils.registerAllMcwWood(consumer, McwAurora.MODID, Abundance.MODID, McwAurora.WOOD_ABUNDANCE, getAbunWood());
 
-        registerMcwHedge(consumer, McwAurora.MODID, BayouBlues.MODID, McwAurora.WOOD_BAYOU, Arrays.asList(BayouBluesBlocks.CYPRESS_LEAVES.get()));
-        registerMcwHedge(consumer, McwAurora.MODID, Abundance.MODID, McwAurora.WOOD_ABUNDANCE, Arrays.asList(AbundanceBlocks.JACARANDA_LEAVES.get(), AbundanceBlocks.REDBUD_LEAVES.get()));
+        recipesUtils.registerMcwHedge(consumer, McwAurora.MODID, BayouBlues.MODID, McwAurora.WOOD_BAYOU, Arrays.asList(BayouBluesBlocks.CYPRESS_LEAVES.get()));
+        recipesUtils.registerMcwHedge(consumer, McwAurora.MODID, Abundance.MODID, McwAurora.WOOD_ABUNDANCE, Arrays.asList(AbundanceBlocks.JACARANDA_LEAVES.get(), AbundanceBlocks.REDBUD_LEAVES.get()));
     }
 
     private List<McwWoodMat<Block>> getBayouWood()
