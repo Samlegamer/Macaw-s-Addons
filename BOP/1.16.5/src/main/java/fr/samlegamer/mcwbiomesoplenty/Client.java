@@ -1,7 +1,6 @@
 package fr.samlegamer.mcwbiomesoplenty;
 
-import fr.addonslib.api.client.McwColors;
-import fr.samlegamer.addonslib.Finder;
+import fr.addonslib.api.client.ObjectColor;
 import fr.samlegamer.addonslib.client.ColorRegistry;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
@@ -14,17 +13,17 @@ import java.util.List;
 @Mod.EventBusSubscriber(modid = McwBOP.MODID, bus = Bus.MOD, value = Dist.CLIENT)
 public class Client
 {
-    public static final List<String> colorList = Arrays.asList(
-            Finder.makeIdHedge(McwBOP.MODID, "mahogany"),
-            Finder.makeIdHedge(McwBOP.MODID, "willow"),
-            Finder.makeIdHedge(McwBOP.MODID, "palm"),
-            Finder.makeIdHedge(McwBOP.MODID, "flowering_oak"));
-    private static final ColorRegistry COLOR = new ColorRegistry(new McwColors(colorList));
+    public static final List<ObjectColor> colorList = Arrays.asList(
+            new ObjectColor(McwBOP.MODID, "mahogany"),
+			new ObjectColor(McwBOP.MODID, "willow"),
+			new ObjectColor(McwBOP.MODID, "palm"),
+			new ObjectColor(McwBOP.MODID, "flowering_oak"));
+    private static final ColorRegistry COLOR = new ColorRegistry(colorList);
 
 	@SubscribeEvent
 	public static void colorsBlock(ColorHandlerEvent.Block event)
 	{
-		COLOR.registryBlockColorsAverage(event);
+		COLOR.registryBlockColors(event);
     }
 	
 	@SubscribeEvent
