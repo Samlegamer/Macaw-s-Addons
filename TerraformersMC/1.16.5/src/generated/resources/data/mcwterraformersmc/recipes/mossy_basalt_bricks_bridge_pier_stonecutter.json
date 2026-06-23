@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "terrestria",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "ingredient": {
+          "item": "terrestria:mossy_basalt_bricks"
+        },
+        "result": "mcwterraformersmc:mossy_basalt_bricks_bridge_pier",
+        "count": 1
+      }
+    }
+  ]
+}

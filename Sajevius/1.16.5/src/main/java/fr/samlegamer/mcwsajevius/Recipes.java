@@ -27,14 +27,14 @@ public class Recipes extends McwRecipes
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer)
     {
         mkRecipesWood(consumer, betterlands, McwSajevius.wood_betterlands, woodBetterlands());
-        registerMcwHedge(consumer, McwSajevius.MODID, betterlands, McwSajevius.wood_betterlands, Arrays.asList(Finder.findBlock(betterlands, "juniper_leaves")));
-        registerAllMcwStone(consumer, McwSajevius.MODID, betterlands, McwSajevius.stone_betterlands, stoneBetterlands());
+        recipesUtils.registerMcwHedge(consumer, McwSajevius.MODID, betterlands, McwSajevius.wood_betterlands, Arrays.asList(Finder.findBlock(betterlands, "juniper_leaves")));
+        recipesUtils.registerAllMcwStone(consumer, McwSajevius.MODID, betterlands, McwSajevius.stone_betterlands, stoneBetterlands());
         mkRecipesWood(consumer, shroomed, McwSajevius.wood_shroomed, woodShroomed());
     }
 
     private void mkRecipesWood(Consumer<IFinishedRecipe> consumer, String original, List<String> mat, List<McwWoodMat<Block>> mcwWoodMats)
     {
-        registerMcwWood(consumer, McwSajevius.MODID, original, mat, mcwWoodMats, McwSajevius.WOOD_MOD_TYPES);
+        recipesUtils.registerMcwWood(consumer, McwSajevius.MODID, original, mat, mcwWoodMats, McwSajevius.WOOD_MOD_TYPES);
     }
 
     private List<McwWoodMat<Block>> woodShroomed()

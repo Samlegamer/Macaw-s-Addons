@@ -29,8 +29,8 @@ import java.util.Random;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.tab.NewIconRandom;
+import fr.samlegamer.addonslib.RegistrationForge;
+import fr.samlegamer.addonslib.tab.IconRandomForge;
 
 @Mod(McwSajevius.MODID)
 public class McwSajevius extends McwMod
@@ -58,31 +58,36 @@ public class McwSajevius extends McwMod
 	"white_terracotta_bricks",
 	"yellow_terracotta_bricks");
 	
-    private static final DeferredRegister<Block> block = Registration.blocks(MODID);
-    private static final DeferredRegister<Item> item = Registration.items(MODID);
+    private static final DeferredRegister<Block> block = RegistrationForge.blocks(MODID);
+    private static final DeferredRegister<Item> item = RegistrationForge.items(MODID);
 
     public static final ItemGroup MCWSAJEVIUS_TAB = new ItemGroup(MODID + ".tab") {
 	    @Override
         @MethodsReturnNonnullByDefault
 	    public ItemStack makeIcon() {
-	    	NewIconRandom.NewProperties prop = new NewIconRandom.NewProperties(Finder.findBlock(MODID, randomNaming()+"_roof"), Finder.findBlock(MODID, randomNaming()+"_picket_fence"), Finder.findBlock(MODID, randomNaming()+"_wardrobe"), 
-	        Finder.findBlock(MODID, randomNaming()+"_log_bridge_middle"), Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Blocks.CRAFTING_TABLE, Finder.findBlock(MODID, randomNaming()+"_skyline_stairs"));
-	        
-	    	prop.addType(ModType.ROOFS).addType(ModType.BRIDGES).addType(ModType.FENCES).addType(ModType.FURNITURES).addType(ModType.STAIRS);
-	    	Block icon = prop.buildIcon(ModType.ROOFS, ModType.BRIDGES, ModType.FENCES, ModType.FURNITURES, ModType.STAIRS);
-	    	return new ItemStack(icon);
+	    	return IconRandomForge.buildIcon(
+                    Finder.findBlock(MODID, randomNaming()+"_roof"),
+                    Finder.findBlock(MODID, randomNaming()+"_picket_fence"),
+                    Finder.findBlock(MODID, randomNaming()+"_wardrobe"),
+                    Finder.findBlock(MODID, randomNaming()+"_log_bridge_middle"),
+                    Blocks.CRAFTING_TABLE,
+                    Blocks.CRAFTING_TABLE,
+                    Blocks.CRAFTING_TABLE,
+                    Blocks.CRAFTING_TABLE,
+                    Finder.findBlock(MODID, randomNaming()+"_skyline_stairs"),
+                    WOOD_MOD_TYPES);
 	    }
 	};
 
     public McwSajevius()
     {
     	LOGGER.info("Macaw's Sajevius Mod Loading...");
-    	Registration.init(block, item);
+        RegistrationForge.init(block, item);
 
         McwRegistry.setRegistriesWood(wood_shroomed, block, item, "shroomed", MCWSAJEVIUS_TAB, WOOD_MOD_TYPES);
         McwRegistry.setRegistriesWood(wood_betterlands, block, item, "betterlands", MCWSAJEVIUS_TAB, WOOD_MOD_TYPES);
         McwRegistry.setRegistriesLeave(wood_betterlands, block, item, "betterlands", MCWSAJEVIUS_TAB);
-        McwRegistry.setRegistriesStone(stone_betterlands, block, item, "betterlands", MCWSAJEVIUS_TAB, Registration.getAllModTypeStone());
+        McwRegistry.setRegistriesStone(stone_betterlands, block, item, "betterlands", MCWSAJEVIUS_TAB, ModType.getAllModTypeStone());
 
     	bus().addListener(this::clientSetup);
         bus().addListener(this::commonSetup);
@@ -94,19 +99,19 @@ public class McwSajevius extends McwMod
     @Override
     public void commonSetup(FMLCommonSetupEvent fmlCommonSetupEvent) {
         fmlCommonSetupEvent.enqueueWork(() -> {
-            McwLootTables.addBlockAllStone(MODID, stone_betterlands);
-            McwLootTables.addBlockHedges(MODID, wood_betterlands);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllStone(MODID, stone_betterlands);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, wood_betterlands);
             mkDrop(wood_betterlands);
             mkDrop(wood_shroomed);
         });
     }
 
     private void mkDrop(List<String> list) {
-        McwLootTables.addBlock(MODID, list, McwBlocksIdBase.BRIDGES_WOOD_BLOCKS);
-        McwLootTables.addBlock(MODID, list, McwBlocksIdBase.ROOFS_WOOD_BLOCKS);
-        McwLootTables.addBlock(MODID, list, McwBlocksIdBase.FENCES_WOOD_BLOCKS);
-        McwLootTables.addBlock(MODID, list, McwBlocksIdBase.FURNITURES_WOOD_BLOCKS);
-        McwLootTables.addBlock(MODID, list, McwBlocksIdBase.STAIRS_WOOD_BLOCKS);
+        McwLootTables.LOOT_TABLE_UTILS.addBlock(MODID, list, McwBlocksIdBase.BRIDGES_WOOD_BLOCKS);
+        McwLootTables.LOOT_TABLE_UTILS.addBlock(MODID, list, McwBlocksIdBase.ROOFS_WOOD_BLOCKS);
+        McwLootTables.LOOT_TABLE_UTILS.addBlock(MODID, list, McwBlocksIdBase.FENCES_WOOD_BLOCKS);
+        McwLootTables.LOOT_TABLE_UTILS.addBlock(MODID, list, McwBlocksIdBase.FURNITURES_WOOD_BLOCKS);
+        McwLootTables.LOOT_TABLE_UTILS.addBlock(MODID, list, McwBlocksIdBase.STAIRS_WOOD_BLOCKS);
     }
 
     @Override
@@ -121,7 +126,7 @@ public class McwSajevius extends McwMod
                 protected void addTags() {
                     addAllMcwTagsWood(MODID, wood_betterlands, WOOD_MOD_TYPES);
                     addAllMcwTagsWood(MODID, wood_shroomed, WOOD_MOD_TYPES);
-                    addAllMcwTagsStone(MODID, stone_betterlands, Registration.getAllModTypeStone());
+                    addAllMcwTagsStone(MODID, stone_betterlands, ModType.getAllModTypeStone());
                     addAllMcwTagsLeave(MODID, wood_betterlands);
                 }
             };
@@ -131,7 +136,7 @@ public class McwSajevius extends McwMod
                 protected void addTags() {
                     addAllMcwTagsWood(MODID, wood_betterlands, WOOD_MOD_TYPES);
                     addAllMcwTagsWood(MODID, wood_shroomed, WOOD_MOD_TYPES);
-                    addAllMcwTagsStone(MODID, stone_betterlands, Registration.getAllModTypeStone());
+                    addAllMcwTagsStone(MODID, stone_betterlands, ModType.getAllModTypeStone());
                     addAllMcwTagsLeave(MODID, wood_betterlands);
                 }
             });
@@ -142,9 +147,9 @@ public class McwSajevius extends McwMod
     @Override
     public void clientSetup(FMLClientSetupEvent e)
     {
-		APIRenderTypes.initAllWood(e, MODID, wood_betterlands, ModType.BRIDGES, ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.STAIRS);
+		APIRenderTypes.initAllWood(e, MODID, wood_betterlands, WOOD_MOD_TYPES);
 		APIRenderTypes.initAllLeave(e, MODID, wood_betterlands);
-		APIRenderTypes.initAllStone(e, MODID, stone_betterlands, Registration.getAllModTypeStone());
+		APIRenderTypes.initAllStone(e, MODID, stone_betterlands, ModType.getAllModTypeStone());
     }
     
 	private static String randomNaming()
