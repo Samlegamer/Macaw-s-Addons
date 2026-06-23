@@ -24,10 +24,10 @@ public class Recipes extends McwRecipes
     @ParametersAreNonnullByDefault
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer)
     {
-        registerAllMcwWood(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.WOOD, getWood());
-        registerMcwHedge(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.LEAVES, getLeaves());
-        registerMcwStone(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.bridges_rockable, getStoneBridges(), ModType.BRIDGES);
-        registerMcwStone(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.fences_rockable, getStoneFencesAndRoofs(), ModType.ROOFS, ModType.FENCES);
+        recipesUtils.registerAllMcwWood(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.WOOD, getWood());
+        recipesUtils.registerMcwHedge(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.LEAVES, getLeaves());
+        recipesUtils.registerMcwStone(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.bridges_rockable, getStoneBridges(), ModType.BRIDGES);
+        recipesUtils.registerMcwStone(consumer, McwByg.MODID, BYG.MOD_ID, McwByg.fences_rockable, getStoneFencesAndRoofs(), ModType.ROOFS, ModType.FENCES);
     }
 
     private static List<Block> getLeaves()
