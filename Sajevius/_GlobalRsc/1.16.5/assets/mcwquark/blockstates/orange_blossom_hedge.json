@@ -1,0 +1,48 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "mcwquark:block/hedges/orange_blossom_wall_post"
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "mcwquark:block/hedges/orange_blossom_wall_side_tall",
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "mcwquark:block/hedges/orange_blossom_wall_side_tall",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "mcwquark:block/hedges/orange_blossom_wall_side_tall",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "mcwquark:block/hedges/orange_blossom_wall_side_tall",
+        "y": 270,
+        "uvlock": false
+      }
+    }
+  ]
+}

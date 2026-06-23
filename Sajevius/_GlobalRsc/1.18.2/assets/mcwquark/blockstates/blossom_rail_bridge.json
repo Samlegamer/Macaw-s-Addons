@@ -1,0 +1,15 @@
+{
+    "variants": {                                                                        
+        "facing=north,powered=false":  { "model": "mcwquark:block/bridge/rail/blossom", "y": 90},
+		"facing=east,powered=false":  { "model": "mcwquark:block/bridge/rail/blossom"},
+		"facing=south,powered=false":  { "model": "mcwquark:block/bridge/rail/blossom", "y": 90},
+		"facing=west,powered=false":  { "model": "mcwquark:block/bridge/rail/blossom"},
+
+		"facing=north,powered=true":  { "model": "mcwquark:block/bridge/rail/blossom_powered", "y": 90},
+		"facing=east,powered=true":  { "model": "mcwquark:block/bridge/rail/blossom_powered"},
+		"facing=south,powered=true":  { "model": "mcwquark:block/bridge/rail/blossom_powered", "y": 90},
+		"facing=west,powered=true":  { "model": "mcwquark:block/bridge/rail/blossom_powered"}			
+    }
+}
+
+

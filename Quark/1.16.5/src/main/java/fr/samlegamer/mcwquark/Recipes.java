@@ -23,8 +23,8 @@ public class Recipes extends McwRecipes
     @Override
     @ParametersAreNonnullByDefault
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer) {
-        registerAllMcwStone(consumer, McwQuark.MODID, Quark.MOD_ID, McwQuark.stone, getStone());
-        registerMcwHedge(consumer, McwQuark.MODID, Quark.MOD_ID, McwQuark.leaves, getLeaves());
+        recipesUtils.registerAllMcwStone(consumer, McwQuark.MODID, Quark.MOD_ID, McwQuark.stone, getStone());
+        recipesUtils.registerMcwHedge(consumer, McwQuark.MODID, Quark.MOD_ID, McwQuark.leaves, getLeaves());
     }
 
     private List<Block> getLeaves()

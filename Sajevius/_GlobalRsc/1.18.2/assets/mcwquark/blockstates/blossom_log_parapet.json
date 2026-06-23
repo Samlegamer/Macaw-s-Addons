@@ -1,0 +1,40 @@
+{
+  "multipart": [
+    {
+      "when": { "AND": [  {"facing": "west"} ]},
+      "apply": { "model": "mcwquark:block/parapet/blossom_log_parapet", "y": 180}
+    },
+    {
+      "when": { "AND": [  {"facing": "north"} ]},
+      "apply": { "model": "mcwquark:block/parapet/blossom_log_parapet", "y": 270}
+    },
+	{
+      "when": { "AND": [  {"facing": "east"} ]},
+      "apply": { "model": "mcwquark:block/parapet/blossom_log_parapet"}
+    },
+	{
+      "when": { "AND": [  {"facing": "south"} ]},
+      "apply": { "model": "mcwquark:block/parapet/blossom_log_parapet", "y": 90}
+    },
+    {
+      "when": { "AND": [  {"facing": "west","part": "flower"} ]},
+      "apply": { "model": "mcwquark:block/parapet/blossom_log_support", "y": 180}
+    },
+    {
+      "when": { "AND": [  {"facing": "north","part": "flower"} ]},
+      "apply": { "model": "mcwquark:block/parapet/blossom_log_support", "y": 270}
+    },
+	{
+      "when": { "AND": [  {"facing": "east","part": "flower"} ]},
+      "apply": { "model": "mcwquark:block/parapet/blossom_log_support"}
+    },
+	{
+      "when": { "AND": [  {"facing": "south","part": "flower"} ]},
+      "apply": { "model": "mcwquark:block/parapet/blossom_log_support", "y": 90}
+    }
+    
+  ]
+}
+
+
+                                                            
