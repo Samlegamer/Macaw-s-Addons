@@ -21,8 +21,8 @@ public class Recipes extends McwRecipes
 
     @Override
     protected void buildShapelessRecipes(@Nonnull Consumer<IFinishedRecipe> consumer) {
-        registerAllMcwWood(consumer, McwMysticBiomes.MODID, MysticsBiomes.MOD_ID, McwMysticBiomes.WOOD, getWoodMat());
-        registerMcwHedge(consumer, McwMysticBiomes.MODID, MysticsBiomes.MOD_ID, McwMysticBiomes.LEAVES, getLeavesMat());
+        recipesUtils.registerAllMcwWood(consumer, McwMysticBiomes.MODID, MysticsBiomes.MOD_ID, McwMysticBiomes.WOOD, getWoodMat());
+        recipesUtils.registerMcwHedge(consumer, McwMysticBiomes.MODID, MysticsBiomes.MOD_ID, McwMysticBiomes.LEAVES, getLeavesMat());
     }
 
     private List<Block> getLeavesMat()

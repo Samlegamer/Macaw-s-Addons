@@ -1,6 +1,7 @@
 package fr.samlegamer.mcwmysticbiomes;
 
 import fr.addonslib.api.data.ModType;
+import fr.samlegamer.addonslib.RegistrationForge;
 import fr.samlegamer.addonslib.client.APIRenderTypes;
 import fr.samlegamer.addonslib.generation.loot_tables.McwLootTables;
 import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
@@ -19,14 +20,15 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.registries.DeferredRegister;
+
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import fr.samlegamer.addonslib.Finder;
-import fr.samlegamer.addonslib.Registration;
-import fr.samlegamer.addonslib.tab.NewIconRandom;
+import fr.samlegamer.addonslib.tab.IconRandomForge;
 import org.jetbrains.annotations.NotNull;
 
 @Mod(McwMysticBiomes.MODID)
@@ -37,13 +39,13 @@ public class McwMysticBiomes extends McwMod
     public static final List<String> WOOD = List.of("cherry", "jacaranda", "strawberry", "peach", "maple", "sea_foam", "tropical");
     public static final List<String> LEAVES = List.of("jacaranda_blossoms", "jacaranda", "pink_cherry_blossoms", "white_cherry_blossoms",
             "strawberry_blossoms", "budding_peony", "peony", "peach", "maple", "orange_maple", "yellow_maple", "sea_shrub", "tropical", "hydrangea");
-    private static final DeferredRegister<Block> block = Registration.blocks(MODID);
-    private static final DeferredRegister<Item> item = Registration.items(MODID);
+    private static final DeferredRegister<Block> block = RegistrationForge.blocks(MODID);
+    private static final DeferredRegister<Item> item = RegistrationForge.items(MODID);
 
     public static final CreativeModeTab MCWMYSTICBIOMES_TAB = new CreativeModeTab(MODID + ".tab") {
         @Override
         public @NotNull ItemStack makeIcon() {
-            NewIconRandom.NewProperties woodProperties = new NewIconRandom.NewProperties(
+            return IconRandomForge.buildIcon(
                     Finder.findBlock(MODID, "peach_roof"),
                     Finder.findBlock(MODID, "strawberry_blossom_hedge"),
                     Finder.findBlock(MODID, "sea_foam_wardrobe"),
@@ -52,37 +54,25 @@ public class McwMysticBiomes extends McwMod
                     Finder.findBlock(MODID, "maple_japanese_door"),
                     Finder.findBlock(MODID, "cherry_glass_trapdoor"),
                     Finder.findBlock(MODID, "tropical_planks_path"),
-                    Finder.findBlock(MODID, "strawberry_loft_stairs")
-            );
-            woodProperties
-                    .addType(ModType.ROOFS)
-                    .addType(ModType.FENCES)
-                    .addType(ModType.FURNITURES)
-                    .addType(ModType.BRIDGES)
-                    .addType(ModType.WINDOWS)
-                    .addType(ModType.DOORS)
-                    .addType(ModType.TRAPDOORS)
-                    .addType(ModType.PATHS)
-                    .addType(ModType.STAIRS);
-            Block icon = woodProperties.buildIcon(ModType.ROOFS, ModType.FENCES, ModType.FURNITURES, ModType.BRIDGES, ModType.WINDOWS,
-                    ModType.DOORS, ModType.TRAPDOORS, ModType.PATHS, ModType.STAIRS);
-            return new ItemStack(icon);
+                    Finder.findBlock(MODID, "strawberry_loft_stairs"),
+                    ModType.getAllModTypeWood());
         }
     };
 
     public McwMysticBiomes()
     {
         LOGGER.info("Macaw's Mystic's Biomes Loading...");
-        Registration.init(block, item);
+        RegistrationForge.init(block, item);
         McwRegistry.setRegistriesWood(WOOD, block, item, MCWMYSTICBIOMES_TAB, ModType.getAllModTypeWood());
-        McwRegistry.setRegistriesLeave(getLeaves(), block, item, MCWMYSTICBIOMES_TAB);
+        McwRegistry.setRegistriesLeave(getLeavesSpecialSound(), block, item, MCWMYSTICBIOMES_TAB);
+        McwRegistry.setRegistriesLeave(getLeavesVanillaSound(), block, item, MCWMYSTICBIOMES_TAB);
         bus().addListener(this::clientSetup);
         bus().addListener(this::commonSetup);
         bus().addListener(this::dataSetup);
         LOGGER.info("Macaw's Mystic's Biomes Is Charged !");
     }
 
-    private static Map<String, SoundType> getLeaves()
+    private static Map<String, SoundType> getLeavesSpecialSound()
     {
         Map<String, SoundType> map = new HashMap<>();
         map.put("jacaranda_blossoms", SoundType.AZALEA_LEAVES);
@@ -95,6 +85,19 @@ public class McwMysticBiomes extends McwMod
         return map;
     }
 
+    private static List<String> getLeavesVanillaSound()
+    {
+        List<String> list = new ArrayList<>();
+        list.add("peach");
+        list.add("maple");
+        list.add("orange_maple");
+        list.add("yellow_maple");
+        list.add("sea_shrub");
+        list.add("tropical");
+        list.add("hydrangea");
+        return list;
+    }
+
     @Override
     public void clientSetup(FMLClientSetupEvent fmlClientSetupEvent) {
         APIRenderTypes.initAllWood(fmlClientSetupEvent, MODID, WOOD, ModType.getAllModTypeWood());
@@ -104,8 +107,8 @@ public class McwMysticBiomes extends McwMod
     @Override
     public void commonSetup(FMLCommonSetupEvent fmlCommonSetupEvent) {
         fmlCommonSetupEvent.enqueueWork(() -> {
-            McwLootTables.addBlockAllWood(MODID, WOOD);
-            McwLootTables.addBlockHedges(MODID, LEAVES);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockAllWood(MODID, WOOD);
+            McwLootTables.LOOT_TABLE_UTILS.addBlockHedges(MODID, LEAVES);
         });
     }
 
