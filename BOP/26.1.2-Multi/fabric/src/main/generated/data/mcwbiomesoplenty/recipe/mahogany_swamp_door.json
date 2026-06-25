@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "biomesoplenty",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "swamp",
+  "key": {
+    "A": "biomesoplenty:mahogany_planks",
+    "B": "mcwdoors:print_swamp"
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "id": "mcwbiomesoplenty:mahogany_swamp_door"
+  }
+}

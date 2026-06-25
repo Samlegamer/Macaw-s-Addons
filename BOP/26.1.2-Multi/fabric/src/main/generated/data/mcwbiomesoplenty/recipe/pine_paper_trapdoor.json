@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "biomesoplenty",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "paper_trapdoors",
+  "key": {
+    "A": "biomesoplenty:pine_planks",
+    "B": "mcwtrpdoors:print_paper"
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "id": "mcwbiomesoplenty:pine_paper_trapdoor"
+  }
+}

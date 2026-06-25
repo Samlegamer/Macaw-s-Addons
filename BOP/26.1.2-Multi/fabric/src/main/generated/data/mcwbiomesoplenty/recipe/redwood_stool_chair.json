@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "biomesoplenty",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stool_chairs",
+  "key": {
+    "A": "biomesoplenty:redwood_log",
+    "B": "biomesoplenty:redwood_fence"
+  },
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "result": {
+    "id": "mcwbiomesoplenty:redwood_stool_chair"
+  }
+}

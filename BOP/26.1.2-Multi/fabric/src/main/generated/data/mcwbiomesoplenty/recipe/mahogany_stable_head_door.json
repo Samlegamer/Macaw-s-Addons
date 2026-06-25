@@ -1,0 +1,20 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "biomesoplenty",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stable_head",
+  "ingredients": [
+    "mcwbiomesoplenty:mahogany_stable_door"
+  ],
+  "result": {
+    "id": "mcwbiomesoplenty:mahogany_stable_head_door"
+  }
+}

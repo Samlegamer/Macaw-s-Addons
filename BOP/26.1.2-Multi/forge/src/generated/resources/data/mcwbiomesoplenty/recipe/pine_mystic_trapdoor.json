@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwtrpdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "mystic_trapdoors",
+        "key": {
+          "A": "biomesoplenty:pine_planks",
+          "B": "mcwtrpdoors:print_mystic"
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "id": "mcwbiomesoplenty:pine_mystic_trapdoor"
+        }
+      }
+    }
+  ]
+}

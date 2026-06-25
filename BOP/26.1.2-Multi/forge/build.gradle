@@ -1,0 +1,177 @@
+plugins {
+    id 'multiloader-loader'
+    id 'net.minecraftforge.gradle'
+}
+
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
+    }
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
+}
+
+loadExtraProperties('../../../_properties/26.1.2forgegradle.properties')
+
+base.archivesName.set("${mod_id}-forge")
+
+// Include generated resources
+sourceSets.main.resources {
+    srcDir 'src/generated/resources'
+}
+
+// ─── Fix: FML scans each classpath directory independently.
+// build/resources/main has mods.toml but no @Mod class → "mods not found".
+// Solution: generate expanded mods.toml directly into build/classes/java/main
+// (where @Mod lives), and exclude it from build/resources/main.
+tasks.register('generateModsToml') {
+    def inputFile  = file('src/main/resources/META-INF/mods.toml')
+    def outputFile = file("${buildDir}/classes/java/main/META-INF/mods.toml")
+    inputs.file inputFile
+    outputs.file outputFile
+    doLast {
+        outputFile.parentFile.mkdirs()
+        def content = inputFile.text
+        [
+            'version'                    : project.version.toString(),
+            'minecraft_version'          : minecraft_version,
+            'minecraft_version_range'    : minecraft_version_range,
+            'mod_id'                     : mod_id,
+            'mod_name'                   : mod_name,
+            'mod_license'                : mod_license,
+            'mod_authors'                : mod_authors,
+            'mod_description'            : mod_description,
+            'website_link'               : website_link,
+            'issues_link'                : issues_link,
+            'addonslib_last_version_forge'  : addonslib_last_version_forge,
+            'forge_version'              : forge_version,
+            'forge_loader_version_range' : forge_loader_version_range,
+            'java_version'               : java_version,
+        ].each { k, v -> content = content.replace('${' + k + '}', v.toString()) }
+        outputFile.text = content
+    }
+}
+
+tasks.named('classes').configure { dependsOn 'generateModsToml' }
+
+// Copy resources to classes directory for runtime ONLY
+tasks.register('copyResourcesToClasses', Copy) {
+    from processResources
+    into sourceSets.main.java.classesDirectory
+    dependsOn processResources
+}
+
+// Make ONLY run tasks depend on resource copying (not jar/assemble)
+tasks.configureEach { task ->
+    if (task.name.startsWith('run')) {
+        task.dependsOn 'copyResourcesToClasses'
+    }
+}
+
+// Handle duplicate resources in jar (from common + forge)
+tasks.named('jar', Jar) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+// Exclude mods.toml from processResources output so build/resources/main
+// does NOT have it → FML won't treat it as a standalone mod file.
+processResources { exclude 'META-INF/mods.toml' }
+
+minecraft {
+    def at = file('src/main/resources/META-INF/accesstransformer.cfg')
+    if (at.exists()) {
+        accessTransformers = files('src/main/resources/META-INF/accesstransformer.cfg')
+    }
+
+    runs {
+        configureEach {
+            systemProperty 'eventbus.api.strictRuntimeChecks', 'true'
+            systemProperty 'forge.enabledGameTestNamespaces', mod_id
+            
+            // Include common resources at runtime
+            mods {
+                "${mod_id}" {
+                    source sourceSets.main
+                    source project(':common').sourceSets.main
+                }
+            }
+        }
+
+        register('client') {
+            workingDir = layout.projectDirectory.dir('runs/client')
+        }
+
+        register('server') {
+            workingDir = layout.projectDirectory.dir('runs/server')
+            args '--nogui'
+        }
+
+        register('data') {
+            workingDir = layout.projectDirectory.dir('runs/data')
+            args '--mod', mod_id, '--all',
+                    '--output', layout.projectDirectory.dir('src/generated/resources'),
+                    '--existing', layout.projectDirectory.dir('src/main/resources')
+        }
+    }
+}
+
+repositories {
+    minecraft.mavenizer(it)
+    maven fg.forgeMaven
+    maven fg.minecraftLibsMaven
+    mavenCentral()
+}
+
+repositories {
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+
+dependencies {
+    implementation minecraft.dependency("net.minecraftforge:forge:${forge_version}")
+    annotationProcessor 'net.minecraftforge:eventbus-validator:7.0.1'
+
+    implementation "curse.maven:addonslib-1090999:${addonslib_version}"
+    //implementation "curse.maven:jei-238222:${jei_version}"
+
+    implementation "curse.maven:macaws-roofs-352039:${roofs_version}"
+    implementation "curse.maven:macaws-fences-and-walls-453925:${fences_version}"
+    implementation "curse.maven:macaws-doors-378646:${doors_version}"
+    implementation "curse.maven:macaws-bridges-351725:${bridges_version}"
+    implementation "curse.maven:macaws-windows-363569:${windows_version}"
+    implementation "curse.maven:macaws-paths-and-pavings-629153:${paths_version}"
+    implementation "curse.maven:macaws-trapdoors-400933:${trapdoors_version}"
+    implementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
+    implementation "curse.maven:macaws-furniture-359540:${furniture_version}"
+
+    implementation "curse.maven:biomes-o-plenty-220318:${bop_version_forge}"
+    implementation "curse.maven:glitchcore-955399:${glichcore_version_forge}"
+    implementation "curse.maven:terrablender-563928:${terrablender_version_forge}"
+}
+
+// Implement mcgradleconventions loader attribute
+def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', String)
+['apiElements', 'runtimeElements', 'sourcesElements', 'javadocElements'].each { variant ->
+    configurations.named(variant) {
+        attributes {
+            attribute(loaderAttribute, 'forge')
+        }
+    }
+}
+sourceSets.configureEach {
+    [it.compileClasspathConfigurationName, it.runtimeClasspathConfigurationName].each { variant ->
+        configurations.named(variant) {
+            attributes {
+                attribute(loaderAttribute, 'forge')
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwbridges"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "recyclable_bridges_recycle",
+        "ingredients": [
+          "mcwbiomesoplenty:jacaranda_log_bridge_stair"
+        ],
+        "result": {
+          "id": "mcwbiomesoplenty:jacaranda_log_bridge_middle"
+        }
+      }
+    }
+  ]
+}

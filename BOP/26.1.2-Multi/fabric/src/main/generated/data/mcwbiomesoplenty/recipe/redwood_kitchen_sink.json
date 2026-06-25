@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "biomesoplenty",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "kitchen_sinks",
+  "key": {
+    "A": "biomesoplenty:redwood_log",
+    "B": "minecraft:water_bucket",
+    "C": "biomesoplenty:redwood_slab",
+    "D": "minecraft:cauldron"
+  },
+  "pattern": [
+    "CDC",
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "id": "mcwbiomesoplenty:redwood_kitchen_sink"
+  }
+}

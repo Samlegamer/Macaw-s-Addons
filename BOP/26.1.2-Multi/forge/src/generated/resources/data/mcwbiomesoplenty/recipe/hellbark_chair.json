@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chairs",
+        "key": {
+          "A": "biomesoplenty:hellbark_log",
+          "B": "biomesoplenty:hellbark_slab",
+          "C": "biomesoplenty:hellbark_fence"
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "id": "mcwbiomesoplenty:hellbark_chair"
+        }
+      }
+    }
+  ]
+}

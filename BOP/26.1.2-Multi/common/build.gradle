@@ -1,0 +1,102 @@
+plugins {
+    id 'multiloader-common'
+    id 'net.neoforged.moddev'
+}
+
+repositories {
+    maven {
+        name = "CurseForge"
+        url = "https://minecraft.curseforge.com/api/maven/"
+    }
+    maven {
+        name = "CurseMaven"
+        url = "https://www.cursemaven.com"
+    }
+}
+
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
+    }
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
+}
+
+loadExtraProperties('../../../_properties/26.1.2forgegradle.properties')
+
+neoForge {
+    neoFormVersion = neo_form_version
+    // Automatically enable AccessTransformers if the file exists
+    def at = file('src/main/resources/META-INF/accesstransformer.cfg')
+    if (at.exists()) {
+        accessTransformers.from(at.absolutePath)
+    }
+}
+
+def addonslib_version_ = "${addonslib_version}"
+
+dependencies {
+    // Fabric and NeoForge both bundle Fabric Mixin, so it is safe to use it in common
+    // If you need to update, check what version they are using to see what is compatible
+    // https://github.com/neoforged/NeoForge/blob/26.1.x/gradle.properties#L37
+    // https://github.com/FabricMC/fabric-loader/blob/master/gradle.properties#L12
+    compileOnly('net.fabricmc:sponge-mixin:0.17.3+mixin.0.8.7')
+    // Fabric and NeoForge both bundle MixinExtras, so it is safe to use it in common
+    compileOnly(annotationProcessor('io.github.llamalad7:mixinextras-common:0.5.3'))
+
+    implementation "curse.maven:biomes-o-plenty-220318:${bop_version_forge}"
+    implementation "curse.maven:addonslib-1090999:${addonslib_version_}"
+}
+
+configurations {
+    commonJava {
+        canBeResolved = false
+        canBeConsumed = true
+    }
+    commonResources {
+        canBeResolved = false
+        canBeConsumed = true
+    }
+}
+
+artifacts {
+    commonJava sourceSets.main.java.sourceDirectories.singleFile
+    commonResources sourceSets.main.resources.sourceDirectories.singleFile
+    commonResources file('src/main/resources')
+    commonResources file('../../_GlobalRsc/common/')
+    commonResources file('../../_GlobalRsc/1.21.10/')
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs '../../_GlobalRsc/common/'
+        }
+        resources {
+            srcDirs '../../_GlobalRsc/1.21.10/'
+        }
+    }
+}
+
+// Implement mcgradleconventions loader attribute
+def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', String)
+['apiElements', 'runtimeElements', 'sourcesElements', 'javadocElements'].each { variant ->
+    configurations.named(variant) {
+        attributes {
+            attribute(loaderAttribute, 'common')
+        }
+    }
+}
+sourceSets.configureEach {
+    [it.compileClasspathConfigurationName, it.runtimeClasspathConfigurationName].each { variant->
+        configurations.named(variant) {
+            attributes {
+                attribute(loaderAttribute, 'common')
+            }
+        }
+    }
+}
