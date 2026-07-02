@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chairs",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:black_cherry_log"
+          },
+          "B": {
+            "item": "mysticsbiomes:black_cherry_slab"
+          },
+          "C": {
+            "item": "mysticsbiomes:black_cherry_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:black_cherry_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

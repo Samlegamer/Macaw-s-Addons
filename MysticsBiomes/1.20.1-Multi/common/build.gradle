@@ -46,10 +46,10 @@ def addonslib_version_ = "${addonslib_version}"
 
 dependencies {
     implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
-    implementation "curse.maven:addonslib-1090999:${addonslib_version_}"
+    modImplementation "curse.maven:addonslib-1090999:${addonslib_version_}"
 
-    compileOnly "blank:mysticsbiomes-1.20.1-3.5.2:${mystics_biomes_version_forge}"
-    runtimeOnly "blank:mysticsbiomes-1.20.1-3.5.2:${mystics_biomes_version_forge}"
+    modCompileOnly "blank:mysticsbiomes-1.20.1-3.5.2:${mystics_biomes_version_forge}"
+    modRuntimeOnly "blank:mysticsbiomes-1.20.1-3.5.2:${mystics_biomes_version_forge}"
 }
 
 configurations {
@@ -67,17 +67,17 @@ artifacts {
     commonJava sourceSets.main.java.sourceDirectories.singleFile
     commonResources sourceSets.main.resources.sourceDirectories.singleFile
     commonResources file('src/main/resources')
-    commonResources file('../../../_GlobalRsc/common/')
-    commonResources file('../../../_GlobalRsc/1.19.2/')
+    commonResources file('../../_GlobalRsc/common/')
+    commonResources file('../../_GlobalRsc/1.20.1/')
 }
 
 sourceSets {
     main {
         resources {
-            srcDirs '../../../_GlobalRsc/common/'
+            srcDirs '../../_GlobalRsc/common/'
         }
         resources {
-            srcDirs '../../../_GlobalRsc/1.19.2/'
+            srcDirs '../../_GlobalRsc/1.20.1/'
         }
     }
 }

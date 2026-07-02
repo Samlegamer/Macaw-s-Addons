@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwmysticbiomes:tropical_mystic_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tropical_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mysticsbiomes:tropical_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tropical_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwmysticbiomes:tropical_mystic_door"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_counters",
+  "key": {
+    "A": {
+      "item": "mysticsbiomes:peach_slab"
+    },
+    "B": {
+      "item": "mysticsbiomes:stripped_peach_log"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwmysticbiomes:stripped_peach_counter"
+  },
+  "show_notification": true
+}

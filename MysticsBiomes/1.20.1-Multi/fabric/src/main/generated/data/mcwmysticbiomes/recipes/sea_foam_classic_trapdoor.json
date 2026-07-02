@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "classic_trapdoors",
+  "key": {
+    "A": {
+      "item": "mysticsbiomes:sea_foam_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_classic"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwmysticbiomes:sea_foam_classic_trapdoor"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "striped_chairs",
+  "key": {
+    "A": {
+      "item": "mysticsbiomes:vanilla_log"
+    },
+    "B": {
+      "item": "mysticsbiomes:vanilla_slab"
+    },
+    "C": {
+      "item": "mysticsbiomes:vanilla_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwmysticbiomes:vanilla_striped_chair"
+  }
+}

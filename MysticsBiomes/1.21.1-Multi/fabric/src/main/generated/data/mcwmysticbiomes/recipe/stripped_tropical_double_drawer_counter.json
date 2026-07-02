@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_double_drawer_counters",
+  "key": {
+    "A": {
+      "item": "mysticsbiomes:tropical_slab"
+    },
+    "B": {
+      "item": "mcwmysticbiomes:stripped_tropical_double_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwmysticbiomes:stripped_tropical_double_drawer_counter"
+  }
+}

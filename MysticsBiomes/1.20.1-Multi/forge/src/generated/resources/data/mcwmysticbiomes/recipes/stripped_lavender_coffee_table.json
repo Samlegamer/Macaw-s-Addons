@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_coffee_tables",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:stripped_lavender_log"
+          },
+          "B": {
+            "item": "mysticsbiomes:lavender_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:stripped_lavender_coffee_table"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "beach",
+  "key": {
+    "A": {
+      "item": "mysticsbiomes:peach_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_jungle"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwmysticbiomes:peach_beach_door"
+  },
+  "show_notification": true
+}

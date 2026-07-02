@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwfences"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hydrangea_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mysticsbiomes:hydrangea_leaves"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwmysticbiomes:hydrangea_hedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hydrangea_leaves"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwmysticbiomes:hydrangea_hedge"
+    ]
+  }
+}

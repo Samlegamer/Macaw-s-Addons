@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_striped_chairs",
+  "key": {
+    "A": {
+      "item": "mysticsbiomes:stripped_strawberry_log"
+    },
+    "B": {
+      "item": "mysticsbiomes:strawberry_slab"
+    },
+    "C": {
+      "item": "mysticsbiomes:strawberry_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwmysticbiomes:stripped_strawberry_striped_chair"
+  },
+  "show_notification": true
+}

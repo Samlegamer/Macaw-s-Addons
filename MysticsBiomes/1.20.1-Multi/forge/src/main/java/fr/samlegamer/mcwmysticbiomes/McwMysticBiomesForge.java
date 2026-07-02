@@ -9,6 +9,7 @@ import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.tab.APICreativeTab;
 import fr.samlegamer.addonslib.util.McwMod;
+import fr.samlegamer.addonslib.util.ModListForge;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -26,6 +27,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import java.util.concurrent.CompletableFuture;
 import net.minecraftforge.registries.RegistryObject;
+import org.checkerframework.checker.nullness.qual.NonNull;
 
 @Mod(McwMysticBiomes.MODID)
 public class McwMysticBiomesForge extends McwMod
@@ -35,19 +37,21 @@ public class McwMysticBiomesForge extends McwMod
     public static final DeferredRegister<CreativeModeTab> ct = RegistrationForge.creativeModeTab(McwMysticBiomes.MODID);
 
     public static final RegistryObject<CreativeModeTab> MCWMYSTICBIOMES_TAB = ct.register("tab", () -> CreativeModeTab.builder()
-            .icon(McwMysticBiomes::icon).title(Component.translatable(McwMysticBiomes.MODID+".tab")).build());
+            .icon(() -> McwMysticBiomes.icon(new ModListForge())).title(Component.translatable(McwMysticBiomes.MODID+".tab")).build());
 
-    public McwMysticBiomesForge()
+    public McwMysticBiomesForge(FMLJavaModLoadingContext javaModLoadingContext)
     {
-        super(FMLJavaModLoadingContext.get());
+        super(javaModLoadingContext);
         McwMysticBiomes.startLog();
         RegistrationForge.init(block, item, ct);
-        McwRegistry.setRegistriesWood(McwMysticBiomes.WOOD, block, item, ModType.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(McwMysticBiomes.getWoodSpecialSound(), block, item, ModType.getAllModTypeWood());
+        McwRegistry.setRegistriesWood(McwMysticBiomes.getWoodVanillaSound(), block, item, ModType.getAllModTypeWood());
         McwRegistry.setRegistriesLeave(McwMysticBiomes.getLeavesSpecialSound(), block, item);
         McwRegistry.setRegistriesLeave(McwMysticBiomes.getLeavesVanillaSound(), block, item);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::dataSetup);
+        javaModLoadingContext.getModEventBus().addListener(this::clientSetup);
+        javaModLoadingContext.getModEventBus().addListener(this::commonSetup);
+        javaModLoadingContext.getModEventBus().addListener(this::dataSetup);
+        javaModLoadingContext.getModEventBus().addListener(this::tabSetup);
         McwMysticBiomes.chargedLog();
     }
 
@@ -75,7 +79,7 @@ public class McwMysticBiomesForge extends McwMod
         if (gatherDataEvent.includeServer()) {
             McwBlockTags mcwBlockTags = new McwBlockTags(packOutput, registries, McwMysticBiomes.MODID, existingFileHelper) {
                 @Override
-                protected void addTags(HolderLookup.Provider provider) {
+                protected void addTags(HolderLookup.@NonNull Provider provider) {
                     addAllMcwTagsWood(McwMysticBiomes.MODID, McwMysticBiomes.WOOD, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(McwMysticBiomes.MODID, McwMysticBiomes.LEAVES);
                 }
@@ -84,7 +88,7 @@ public class McwMysticBiomesForge extends McwMod
             generator.addProvider(true, mcwBlockTags);
             generator.addProvider(true, new McwItemTags(packOutput, registries, mcwBlockTags.contentsGetter(), McwMysticBiomes.MODID, existingFileHelper) {
                 @Override
-                protected void addTags(HolderLookup.Provider provider) {
+                protected void addTags(HolderLookup.@NonNull Provider provider) {
                     addAllMcwTagsWood(McwMysticBiomes.MODID, McwMysticBiomes.WOOD, ModType.getAllModTypeWood());
                     addAllMcwTagsLeave(McwMysticBiomes.MODID, McwMysticBiomes.LEAVES);
                 }

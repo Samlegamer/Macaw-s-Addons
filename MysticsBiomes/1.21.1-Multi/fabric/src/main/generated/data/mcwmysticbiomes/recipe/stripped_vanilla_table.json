@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_tables",
+  "key": {
+    "A": {
+      "item": "mcwmysticbiomes:stripped_vanilla_coffee_table"
+    },
+    "B": {
+      "item": "mysticsbiomes:vanilla_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwmysticbiomes:stripped_vanilla_table"
+  }
+}

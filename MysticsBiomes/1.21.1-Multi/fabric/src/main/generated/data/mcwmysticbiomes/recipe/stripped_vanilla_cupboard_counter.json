@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_cupboard_counters",
+  "key": {
+    "A": {
+      "item": "mysticsbiomes:vanilla_slab"
+    },
+    "B": {
+      "item": "mcwmysticbiomes:stripped_vanilla_wardrobe"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwmysticbiomes:stripped_vanilla_cupboard_counter"
+  }
+}

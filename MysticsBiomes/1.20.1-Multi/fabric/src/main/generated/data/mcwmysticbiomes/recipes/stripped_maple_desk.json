@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_desks",
+  "key": {
+    "A": {
+      "item": "mysticsbiomes:stripped_maple_log"
+    },
+    "B": {
+      "item": "mysticsbiomes:maple_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwmysticbiomes:stripped_maple_desk"
+  },
+  "show_notification": true
+}

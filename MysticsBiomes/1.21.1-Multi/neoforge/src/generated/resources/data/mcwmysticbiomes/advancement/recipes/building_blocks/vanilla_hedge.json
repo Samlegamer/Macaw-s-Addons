@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwmysticbiomes:vanilla_hedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_vanilla_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mysticsbiomes:vanilla_leaves"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_vanilla_leaves"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwmysticbiomes:vanilla_hedge"
+    ]
+  }
+}

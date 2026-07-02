@@ -1,7 +1,6 @@
 plugins {
     id 'multiloader-loader'
     id 'net.neoforged.moddev.legacyforge'
-    id "org.spongepowered.mixin" version "0.7-SNAPSHOT"
 }
 
 def loadExtraProperties(String relPath) {
@@ -69,27 +68,23 @@ repositories {
 
 dependencies {
     compileOnly project(":common")
+
+    modImplementation "curse.maven:addonslib-1090999:${addonslib_version}"
+    modImplementation "curse.maven:jei-238222:${jei_version}"
+
+    modImplementation "curse.maven:macaws-roofs-352039:${roofs_version}"
+    modImplementation "curse.maven:macaws-fences-and-walls-453925:${fences_version}"
+    modImplementation "curse.maven:macaws-doors-378646:${doors_version}"
+    modImplementation "curse.maven:macaws-bridges-351725:${bridges_version}"
+    modImplementation "curse.maven:macaws-windows-363569:${windows_version}"
+    modImplementation "curse.maven:macaws-paths-and-pavings-629153:${paths_version}"
+    modImplementation "curse.maven:macaws-trapdoors-400933:${trapdoors_version}"
+    modImplementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
+    modImplementation "curse.maven:macaws-furniture-359540:${furniture_version}"
+
+    modCompileOnly "blank:mysticsbiomes-1.20.1-3.5.2:${mystics_biomes_version_forge}"
+    modRuntimeOnly "blank:mysticsbiomes-1.20.1-3.5.2:${mystics_biomes_version_forge}"
+    modRuntimeOnly "curse.maven:terrablender-563928:${terrablender_version_forge}"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
-    implementation "curse.maven:addonslib-1090999:${addonslib_version}"
-    implementation "curse.maven:jei-238222:${jei_version}"
-
-    implementation "curse.maven:macaws-roofs-352039:${roofs_version}"
-    implementation "curse.maven:macaws-fences-and-walls-453925:${fences_version}"
-    implementation "curse.maven:macaws-doors-378646:${doors_version}"
-    implementation "curse.maven:macaws-bridges-351725:${bridges_version}"
-    implementation "curse.maven:macaws-windows-363569:${windows_version}"
-    implementation "curse.maven:macaws-paths-and-pavings-629153:${paths_version}"
-    implementation "curse.maven:macaws-trapdoors-400933:${trapdoors_version}"
-    implementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
-    implementation "curse.maven:macaws-furniture-359540:${furniture_version}"
-
-    compileOnly "blank:mysticsbiomes-1.20.1-3.5.2:${mystics_biomes_version_forge}"
-    runtimeOnly "blank:mysticsbiomes-1.20.1-3.5.2:${mystics_biomes_version_forge}"
-    runtimeOnly "curse.maven:terrablender-563928:${terrablender_version_forge}"
-
-}
-
-jar {
-    finalizedBy('reobfJar')
 }

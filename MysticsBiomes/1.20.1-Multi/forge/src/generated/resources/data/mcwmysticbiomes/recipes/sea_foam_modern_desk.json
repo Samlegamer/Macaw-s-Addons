@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_desks",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:sea_foam_log"
+          },
+          "B": {
+            "item": "mysticsbiomes:sea_foam_fence"
+          },
+          "C": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BCB"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwmysticbiomes:sea_foam_modern_desk"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

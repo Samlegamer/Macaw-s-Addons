@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "waffle",
+  "key": {
+    "A": {
+      "item": "mysticsbiomes:maple_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_waffle"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwmysticbiomes:maple_waffle_door"
+  },
+  "show_notification": true
+}

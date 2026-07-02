@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "striped_chairs",
+  "key": {
+    "A": {
+      "item": "mysticsbiomes:sea_foam_log"
+    },
+    "B": {
+      "item": "mysticsbiomes:sea_foam_slab"
+    },
+    "C": {
+      "item": "mysticsbiomes:sea_foam_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwmysticbiomes:sea_foam_striped_chair"
+  },
+  "show_notification": true
+}

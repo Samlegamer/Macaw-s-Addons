@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stable_head",
+  "ingredients": [
+    {
+      "item": "mcwmysticbiomes:black_cherry_stable_door"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwmysticbiomes:black_cherry_stable_head_door"
+  }
+}

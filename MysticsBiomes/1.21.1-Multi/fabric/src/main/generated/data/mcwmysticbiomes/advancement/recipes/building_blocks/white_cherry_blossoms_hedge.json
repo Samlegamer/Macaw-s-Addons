@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwfences"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwmysticbiomes:white_cherry_blossoms_hedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_cherry_blossoms": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mysticsbiomes:white_cherry_blossoms"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_white_cherry_blossoms"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwmysticbiomes:white_cherry_blossoms_hedge"
+    ]
+  }
+}

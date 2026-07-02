@@ -1,0 +1,44 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwmysticbiomes:stripped_vanilla_double_drawer_counter"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_vanilla_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mysticsbiomes:vanilla_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_vanilla_log",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwmysticbiomes:stripped_vanilla_double_drawer_counter"
+    ]
+  },
+  "sends_telemetry_event": false
+}

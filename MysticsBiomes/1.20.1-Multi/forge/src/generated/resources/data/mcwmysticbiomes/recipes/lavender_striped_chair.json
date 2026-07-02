@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "striped_chairs",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:lavender_log"
+          },
+          "B": {
+            "item": "mysticsbiomes:lavender_slab"
+          },
+          "C": {
+            "item": "mysticsbiomes:lavender_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:lavender_striped_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

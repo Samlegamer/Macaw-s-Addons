@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_coffee_tables",
+        "key": {
+          "A": {
+            "item": "mysticsbiomes:stripped_vanilla_log"
+          },
+          "B": {
+            "item": "mysticsbiomes:vanilla_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwmysticbiomes:stripped_vanilla_coffee_table"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

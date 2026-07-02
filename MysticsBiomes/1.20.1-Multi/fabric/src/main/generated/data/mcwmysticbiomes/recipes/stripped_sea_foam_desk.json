@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mysticsbiomes",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_desks",
+  "key": {
+    "A": {
+      "item": "mysticsbiomes:stripped_sea_foam_log"
+    },
+    "B": {
+      "item": "mysticsbiomes:sea_foam_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwmysticbiomes:stripped_sea_foam_desk"
+  },
+  "show_notification": true
+}
