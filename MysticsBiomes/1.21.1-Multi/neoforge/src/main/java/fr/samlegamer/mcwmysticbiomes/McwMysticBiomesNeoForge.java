@@ -8,6 +8,7 @@ import fr.samlegamer.addonslib.generation.tags.McwBlockTags;
 import fr.samlegamer.addonslib.generation.tags.McwItemTags;
 import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.tab.APICreativeTab;
+import fr.samlegamer.addonslib.util.McwCommon;
 import fr.samlegamer.addonslib.util.McwMod;
 import fr.samlegamer.addonslib.util.ModListNeoForge;
 import net.minecraft.core.HolderLookup;
@@ -22,6 +23,7 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
+import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -50,7 +52,13 @@ public class McwMysticBiomesNeoForge extends McwMod
         bus.addListener(this::commonSetup);
         bus.addListener(this::dataSetup);
         bus.addListener(this::tabSetup);
+        bus.addListener(this::furnitureStorageSetup);
         McwMysticBiomes.chargedLog();
+    }
+
+    private void furnitureStorageSetup(BlockEntityTypeAddBlocksEvent event)
+    {
+        McwCommon.addCompatibleBlocksToFurnitureStorage(event, McwMysticBiomes.MODID, McwMysticBiomes.WOOD);
     }
 
     @Override

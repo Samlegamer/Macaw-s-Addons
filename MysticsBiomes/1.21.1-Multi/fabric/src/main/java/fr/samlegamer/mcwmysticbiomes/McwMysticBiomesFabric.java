@@ -4,6 +4,7 @@ import fr.addonslib.api.data.ModType;
 import fr.samlegamer.addonslib.fuel.APIFuels;
 import fr.samlegamer.addonslib.registry.McwRegistry;
 import fr.samlegamer.addonslib.tab.APICreativeTab;
+import fr.samlegamer.addonslib.util.McwCommon;
 import fr.samlegamer.addonslib.util.ModListFabric;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.world.item.CreativeModeTab;
@@ -28,6 +29,8 @@ public class McwMysticBiomesFabric implements ModInitializer
 
         APIFuels.initAllWood(McwMysticBiomes.MODID, McwMysticBiomes.WOOD, ModType.getAllModTypeWood());
         APIFuels.initAllLeave(McwMysticBiomes.MODID, McwMysticBiomes.LEAVES);
+
+        McwCommon.addCompatibleBlocksToFurnitureStorage(McwMysticBiomes.MODID, McwMysticBiomes.WOOD);
 
         McwMysticBiomes.chargedLog();
     }
