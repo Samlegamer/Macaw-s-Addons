@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stockade",
+  "key": {
+    "A": {
+      "item": "natures_spirit:saxaul_log"
+    },
+    "B": {
+      "item": "natures_spirit:saxaul_planks"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BAB"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwnaturesspirit:saxaul_stockade_fence"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bookshelf_cupboards",
+  "key": {
+    "A": {
+      "item": "natures_spirit:wisteria_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    },
+    "C": {
+      "item": "minecraft:book"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BAC",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwnaturesspirit:wisteria_bookshelf_cupboard"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "end_tables",
+        "key": {
+          "A": {
+            "item": "mcwnaturesspirit:wisteria_table"
+          },
+          "B": {
+            "item": "natures_spirit:wisteria_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:wisteria_end_table"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

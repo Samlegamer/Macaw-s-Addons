@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "covered_desks",
+        "key": {
+          "A": {
+            "item": "natures_spirit:coconut_log"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "A A"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwnaturesspirit:coconut_covered_desk"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

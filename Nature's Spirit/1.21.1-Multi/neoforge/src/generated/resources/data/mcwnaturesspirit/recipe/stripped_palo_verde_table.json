@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_tables",
+  "key": {
+    "A": {
+      "item": "mcwnaturesspirit:stripped_palo_verde_coffee_table"
+    },
+    "B": {
+      "item": "natures_spirit:palo_verde_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwnaturesspirit:stripped_palo_verde_table"
+  }
+}

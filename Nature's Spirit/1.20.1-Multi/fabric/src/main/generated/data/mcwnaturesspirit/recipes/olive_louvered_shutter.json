@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "natures_spirit:olive_slab"
+    },
+    {
+      "item": "natures_spirit:olive_slab"
+    },
+    {
+      "item": "natures_spirit:olive_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwnaturesspirit:olive_louvered_shutter"
+  }
+}

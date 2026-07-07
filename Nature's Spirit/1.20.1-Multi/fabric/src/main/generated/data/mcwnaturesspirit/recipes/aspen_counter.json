@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "counters",
+  "key": {
+    "A": {
+      "item": "natures_spirit:aspen_slab"
+    },
+    "B": {
+      "item": "natures_spirit:aspen_log"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwnaturesspirit:aspen_counter"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stable_head",
+  "ingredients": [
+    {
+      "item": "mcwnaturesspirit:saxaul_stable_door"
+    }
+  ],
+  "result": {
+    "item": "mcwnaturesspirit:saxaul_stable_head_door"
+  }
+}

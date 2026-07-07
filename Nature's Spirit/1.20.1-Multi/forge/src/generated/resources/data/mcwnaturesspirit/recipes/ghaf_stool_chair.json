@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stool_chairs",
+        "key": {
+          "A": {
+            "item": "natures_spirit:ghaf_log"
+          },
+          "B": {
+            "item": "natures_spirit:ghaf_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:ghaf_stool_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

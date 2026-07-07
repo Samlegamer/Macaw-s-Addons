@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_drawer_counters",
+  "key": {
+    "A": {
+      "item": "natures_spirit:larch_slab"
+    },
+    "B": {
+      "item": "mcwnaturesspirit:larch_double_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwnaturesspirit:larch_double_drawer_counter"
+  }
+}

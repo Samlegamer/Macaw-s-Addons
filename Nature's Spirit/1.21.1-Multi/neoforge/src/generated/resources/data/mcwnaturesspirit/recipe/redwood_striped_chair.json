@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "striped_chairs",
+  "key": {
+    "A": {
+      "item": "natures_spirit:redwood_log"
+    },
+    "B": {
+      "item": "natures_spirit:redwood_slab"
+    },
+    "C": {
+      "item": "natures_spirit:redwood_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwnaturesspirit:redwood_striped_chair"
+  }
+}

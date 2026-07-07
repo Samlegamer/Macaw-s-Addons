@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "striped_chairs",
+        "key": {
+          "A": {
+            "item": "natures_spirit:aspen_log"
+          },
+          "B": {
+            "item": "natures_spirit:aspen_slab"
+          },
+          "C": {
+            "item": "natures_spirit:aspen_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:aspen_striped_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

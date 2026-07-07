@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_wardrobes",
+        "key": {
+          "A": {
+            "item": "natures_spirit:willow_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "AAB",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwnaturesspirit:willow_modern_wardrobe"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

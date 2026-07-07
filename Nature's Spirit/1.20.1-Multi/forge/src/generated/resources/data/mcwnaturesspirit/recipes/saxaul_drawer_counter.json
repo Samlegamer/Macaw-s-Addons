@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "drawer_counters",
+        "key": {
+          "A": {
+            "item": "natures_spirit:saxaul_slab"
+          },
+          "B": {
+            "item": "mcwnaturesspirit:saxaul_drawer"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:saxaul_drawer_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

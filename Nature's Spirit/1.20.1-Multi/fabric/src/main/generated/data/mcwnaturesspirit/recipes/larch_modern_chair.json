@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_chairs",
+  "key": {
+    "A": {
+      "item": "natures_spirit:larch_log"
+    },
+    "B": {
+      "item": "natures_spirit:larch_slab"
+    },
+    "C": {
+      "item": "natures_spirit:larch_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwnaturesspirit:larch_modern_chair"
+  },
+  "show_notification": true
+}

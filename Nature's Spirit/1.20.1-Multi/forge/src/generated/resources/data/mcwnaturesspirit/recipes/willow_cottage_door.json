@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "cottage",
+        "key": {
+          "A": {
+            "item": "natures_spirit:willow_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_spruce"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:willow_cottage_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

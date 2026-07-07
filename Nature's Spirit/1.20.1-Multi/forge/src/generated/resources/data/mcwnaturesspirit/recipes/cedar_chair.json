@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chairs",
+        "key": {
+          "A": {
+            "item": "natures_spirit:cedar_log"
+          },
+          "B": {
+            "item": "natures_spirit:cedar_slab"
+          },
+          "C": {
+            "item": "natures_spirit:cedar_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:cedar_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

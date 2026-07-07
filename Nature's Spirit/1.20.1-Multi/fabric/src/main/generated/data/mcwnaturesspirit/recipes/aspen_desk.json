@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "desks",
+  "key": {
+    "A": {
+      "item": "natures_spirit:aspen_log"
+    },
+    "B": {
+      "item": "natures_spirit:aspen_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwnaturesspirit:aspen_desk"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chairs",
+        "key": {
+          "A": {
+            "item": "natures_spirit:sugi_log"
+          },
+          "B": {
+            "item": "natures_spirit:sugi_slab"
+          },
+          "C": {
+            "item": "natures_spirit:sugi_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:sugi_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "tropical_trapdoors",
+        "key": {
+          "A": {
+            "item": "natures_spirit:cypress_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_tropical"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:cypress_tropical_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

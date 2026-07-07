@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bamboo_trapdoors",
+  "key": {
+    "A": {
+      "item": "natures_spirit:sugi_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_bamboo"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwnaturesspirit:sugi_bamboo_trapdoor"
+  },
+  "show_notification": true
+}

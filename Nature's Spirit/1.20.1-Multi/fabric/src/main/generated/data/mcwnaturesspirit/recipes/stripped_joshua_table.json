@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_tables",
+  "key": {
+    "A": {
+      "item": "mcwnaturesspirit:stripped_joshua_coffee_table"
+    },
+    "B": {
+      "item": "natures_spirit:joshua_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwnaturesspirit:stripped_joshua_table"
+  },
+  "show_notification": true
+}

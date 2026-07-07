@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "recyclable_bridges_recycle",
+  "ingredients": [
+    {
+      "item": "mcwnaturesspirit:coconut_rope_bridge_stair"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwnaturesspirit:rope_coconut_bridge"
+  }
+}

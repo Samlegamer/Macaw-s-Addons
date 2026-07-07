@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "striped_chairs",
+        "key": {
+          "A": {
+            "item": "natures_spirit:larch_log"
+          },
+          "B": {
+            "item": "natures_spirit:larch_slab"
+          },
+          "C": {
+            "item": "natures_spirit:larch_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:larch_striped_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

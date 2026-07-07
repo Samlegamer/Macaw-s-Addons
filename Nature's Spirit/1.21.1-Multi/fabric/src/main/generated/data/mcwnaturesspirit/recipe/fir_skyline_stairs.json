@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwstairs"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "skyline_stairs",
+  "key": {
+    "A": {
+      "item": "natures_spirit:stripped_fir_log"
+    },
+    "B": {
+      "item": "natures_spirit:fir_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA "
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwnaturesspirit:fir_skyline_stairs"
+  }
+}

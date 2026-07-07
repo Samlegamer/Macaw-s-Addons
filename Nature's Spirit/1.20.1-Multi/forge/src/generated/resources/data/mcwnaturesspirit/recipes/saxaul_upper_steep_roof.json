@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwroofs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "upper_steep_roof",
+        "key": {
+          "A": {
+            "item": "natures_spirit:saxaul_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          " A",
+          " A",
+          "AB"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwnaturesspirit:saxaul_upper_steep_roof"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

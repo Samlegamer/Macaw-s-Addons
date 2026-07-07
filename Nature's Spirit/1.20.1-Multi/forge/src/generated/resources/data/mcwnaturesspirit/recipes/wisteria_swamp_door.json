@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "swamp",
+        "key": {
+          "A": {
+            "item": "natures_spirit:wisteria_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_swamp"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:wisteria_swamp_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

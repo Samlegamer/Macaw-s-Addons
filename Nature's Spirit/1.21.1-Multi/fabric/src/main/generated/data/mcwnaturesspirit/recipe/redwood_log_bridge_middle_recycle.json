@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "recyclable_bridges_recycle",
+  "ingredients": [
+    {
+      "item": "mcwnaturesspirit:redwood_log_bridge_stair"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwnaturesspirit:redwood_log_bridge_middle"
+  }
+}

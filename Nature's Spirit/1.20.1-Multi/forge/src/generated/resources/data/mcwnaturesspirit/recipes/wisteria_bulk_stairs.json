@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bulk_stairs",
+        "key": {
+          "A": {
+            "item": "natures_spirit:stripped_wisteria_log"
+          },
+          "B": {
+            "item": "natures_spirit:wisteria_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          "BBA"
+        ],
+        "result": {
+          "count": 6,
+          "item": "mcwnaturesspirit:wisteria_bulk_stairs"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

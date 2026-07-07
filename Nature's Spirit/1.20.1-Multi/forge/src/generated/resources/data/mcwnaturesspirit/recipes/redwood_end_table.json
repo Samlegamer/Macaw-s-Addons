@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "end_tables",
+        "key": {
+          "A": {
+            "item": "mcwnaturesspirit:redwood_table"
+          },
+          "B": {
+            "item": "natures_spirit:redwood_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:redwood_end_table"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

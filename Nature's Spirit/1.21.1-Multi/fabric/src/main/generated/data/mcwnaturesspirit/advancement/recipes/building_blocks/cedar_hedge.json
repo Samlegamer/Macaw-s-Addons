@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwfences"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cedar_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": "natures_spirit:cedar_leaves"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwnaturesspirit:cedar_hedge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cedar_leaves"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwnaturesspirit:cedar_hedge"
+    ]
+  }
+}

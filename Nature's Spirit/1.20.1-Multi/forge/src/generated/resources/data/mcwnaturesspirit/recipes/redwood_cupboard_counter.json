@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "cupboard_counters",
+        "key": {
+          "A": {
+            "item": "natures_spirit:redwood_slab"
+          },
+          "B": {
+            "item": "mcwnaturesspirit:redwood_wardrobe"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:redwood_cupboard_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

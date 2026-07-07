@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_coffee_tables",
+  "key": {
+    "A": {
+      "item": "natures_spirit:stripped_redwood_log"
+    },
+    "B": {
+      "item": "natures_spirit:redwood_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwnaturesspirit:stripped_redwood_coffee_table"
+  }
+}

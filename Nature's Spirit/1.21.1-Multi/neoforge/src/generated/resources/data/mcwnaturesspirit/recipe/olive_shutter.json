@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "natures_spirit:olive_trapdoor"
+    },
+    {
+      "item": "natures_spirit:olive_trapdoor"
+    },
+    {
+      "item": "natures_spirit:olive_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwnaturesspirit:olive_shutter"
+  }
+}

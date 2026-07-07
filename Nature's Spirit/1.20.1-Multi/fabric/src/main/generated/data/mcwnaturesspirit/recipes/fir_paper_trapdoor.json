@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "paper_trapdoors",
+  "key": {
+    "A": {
+      "item": "natures_spirit:fir_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_paper"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwnaturesspirit:fir_paper_trapdoor"
+  },
+  "show_notification": true
+}

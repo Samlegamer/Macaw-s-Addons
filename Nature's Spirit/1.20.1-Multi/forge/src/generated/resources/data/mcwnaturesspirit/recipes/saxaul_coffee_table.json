@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "coffee_tables",
+        "key": {
+          "A": {
+            "item": "natures_spirit:saxaul_log"
+          },
+          "B": {
+            "item": "natures_spirit:saxaul_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:saxaul_coffee_table"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

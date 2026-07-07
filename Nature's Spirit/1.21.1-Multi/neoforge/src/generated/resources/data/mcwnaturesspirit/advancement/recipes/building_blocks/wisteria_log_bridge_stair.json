@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwnaturesspirit:wisteria_log_bridge_stair"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wisteria_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "natures_spirit:wisteria_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_wisteria_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwnaturesspirit:wisteria_log_bridge_stair"
+    ]
+  }
+}

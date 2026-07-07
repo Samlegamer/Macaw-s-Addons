@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_modern_chairs",
+        "key": {
+          "A": {
+            "item": "natures_spirit:stripped_wisteria_log"
+          },
+          "B": {
+            "item": "natures_spirit:wisteria_slab"
+          },
+          "C": {
+            "item": "natures_spirit:wisteria_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:stripped_wisteria_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

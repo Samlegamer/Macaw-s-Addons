@@ -1,0 +1,44 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwnaturesspirit:willow_japanese_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_willow_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "natures_spirit:willow_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_willow_log",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwnaturesspirit:willow_japanese_door"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_desks",
+        "key": {
+          "A": {
+            "item": "natures_spirit:stripped_fir_log"
+          },
+          "B": {
+            "item": "natures_spirit:fir_fence"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwnaturesspirit:stripped_fir_desk"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

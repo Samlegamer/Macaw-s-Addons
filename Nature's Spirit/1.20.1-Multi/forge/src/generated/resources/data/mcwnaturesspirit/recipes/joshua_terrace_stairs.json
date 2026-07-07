@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "terrace_stairs",
+        "key": {
+          "A": {
+            "item": "natures_spirit:stripped_joshua_log"
+          },
+          "B": {
+            "item": "natures_spirit:joshua_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwnaturesspirit:joshua_terrace_stairs"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

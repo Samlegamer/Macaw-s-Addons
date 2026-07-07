@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chairs",
+        "key": {
+          "A": {
+            "item": "natures_spirit:fir_log"
+          },
+          "B": {
+            "item": "natures_spirit:fir_slab"
+          },
+          "C": {
+            "item": "natures_spirit:fir_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:fir_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

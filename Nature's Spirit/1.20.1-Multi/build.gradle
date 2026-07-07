@@ -1,0 +1,19 @@
+plugins {
+    id 'fabric-loom' version '1.9-SNAPSHOT' apply(false)
+    id 'net.neoforged.moddev.legacyforge' version '2.0.77' apply(false)
+}
+
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
+    }
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
+}
+
+loadExtraProperties('../_GlobalRsc/globalgradle.properties')
+loadExtraProperties('../../_versions/1.20.1gradle.properties')

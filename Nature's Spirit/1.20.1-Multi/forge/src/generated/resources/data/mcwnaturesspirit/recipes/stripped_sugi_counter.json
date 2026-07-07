@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_counters",
+        "key": {
+          "A": {
+            "item": "natures_spirit:sugi_slab"
+          },
+          "B": {
+            "item": "natures_spirit:stripped_sugi_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:stripped_sugi_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

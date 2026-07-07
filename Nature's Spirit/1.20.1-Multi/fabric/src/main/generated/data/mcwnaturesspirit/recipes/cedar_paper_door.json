@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "paper",
+  "key": {
+    "A": {
+      "item": "natures_spirit:cedar_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_birch"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwnaturesspirit:cedar_paper_door"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_striped_chairs",
+        "key": {
+          "A": {
+            "item": "natures_spirit:stripped_mahogany_log"
+          },
+          "B": {
+            "item": "natures_spirit:mahogany_slab"
+          },
+          "C": {
+            "item": "natures_spirit:mahogany_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:stripped_mahogany_striped_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

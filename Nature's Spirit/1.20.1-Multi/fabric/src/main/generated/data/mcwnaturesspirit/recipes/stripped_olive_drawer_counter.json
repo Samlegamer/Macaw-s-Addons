@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_drawer_counters",
+  "key": {
+    "A": {
+      "item": "natures_spirit:olive_slab"
+    },
+    "B": {
+      "item": "mcwnaturesspirit:stripped_olive_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwnaturesspirit:stripped_olive_drawer_counter"
+  },
+  "show_notification": true
+}

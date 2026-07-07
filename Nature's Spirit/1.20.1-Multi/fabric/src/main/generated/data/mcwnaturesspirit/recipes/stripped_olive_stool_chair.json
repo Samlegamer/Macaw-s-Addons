@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_stool_chairs",
+  "key": {
+    "A": {
+      "item": "natures_spirit:stripped_olive_log"
+    },
+    "B": {
+      "item": "natures_spirit:olive_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwnaturesspirit:stripped_olive_stool_chair"
+  },
+  "show_notification": true
+}

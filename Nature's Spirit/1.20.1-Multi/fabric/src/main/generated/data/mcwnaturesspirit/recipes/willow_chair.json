@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "natures_spirit",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chairs",
+  "key": {
+    "A": {
+      "item": "natures_spirit:willow_log"
+    },
+    "B": {
+      "item": "natures_spirit:willow_slab"
+    },
+    "C": {
+      "item": "natures_spirit:willow_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwnaturesspirit:willow_chair"
+  },
+  "show_notification": true
+}

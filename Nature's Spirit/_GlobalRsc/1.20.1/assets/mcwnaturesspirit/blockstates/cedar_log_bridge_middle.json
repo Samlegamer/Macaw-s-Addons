@@ -1,0 +1,18 @@
+{
+    "variants": {                     
+		"connection=base":  { "model": "mcwnaturesspirit:block/bridge/bridge_wood/cedar_base","uvlock": true},
+		
+        "connection=middle_ns":  { "model": "mcwnaturesspirit:block/bridge/bridge_wood/cedar_middle", "y": 90,"uvlock": true},
+		"connection=middle_ew":  { "model": "mcwnaturesspirit:block/bridge/bridge_wood/cedar_middle","uvlock": true},
+
+		"connection=corner_nw":  { "model": "mcwnaturesspirit:block/bridge/bridge_wood/cedar_corner", "y": 180,"uvlock": true},
+		"connection=corner_ne":  { "model": "mcwnaturesspirit:block/bridge/bridge_wood/cedar_corner", "y": 270,"uvlock": true},
+		"connection=corner_se":  { "model": "mcwnaturesspirit:block/bridge/bridge_wood/cedar_corner","uvlock": true},
+		"connection=corner_sw":  { "model": "mcwnaturesspirit:block/bridge/bridge_wood/cedar_corner", "y": 90,"uvlock": true},	
+		
+		"connection=side_s":  { "model": "mcwnaturesspirit:block/bridge/bridge_wood/cedar_side","uvlock": true},
+		"connection=side_n":  { "model": "mcwnaturesspirit:block/bridge/bridge_wood/cedar_side", "y": 180,"uvlock": true},
+		"connection=side_w":  { "model": "mcwnaturesspirit:block/bridge/bridge_wood/cedar_side", "y": 90,"uvlock": true},
+		"connection=side_e":  { "model": "mcwnaturesspirit:block/bridge/bridge_wood/cedar_side", "y": 270,"uvlock": true}
+    }
+}

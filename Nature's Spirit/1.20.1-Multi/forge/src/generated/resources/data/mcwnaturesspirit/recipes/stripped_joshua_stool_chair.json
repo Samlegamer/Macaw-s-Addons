@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "natures_spirit"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_stool_chairs",
+        "key": {
+          "A": {
+            "item": "natures_spirit:stripped_joshua_log"
+          },
+          "B": {
+            "item": "natures_spirit:joshua_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwnaturesspirit:stripped_joshua_stool_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}
