@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:umbrella_tree_log"
+          },
+          "B": {
+            "item": "betterendforge:umbrella_tree_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:umbrella_tree_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

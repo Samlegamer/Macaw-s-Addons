@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwbetters:mushroom_fir_double_kitchen_cabinet"
+          ]
+        },
+        "criteria": {
+          "has_mushroom_fir_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betternether:mushroom_fir_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwbetters:mushroom_fir_double_kitchen_cabinet"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_mushroom_fir_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

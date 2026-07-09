@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "cottage_trapdoors",
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:end_lotus_planks"
+          },
+          "B": {
+            "item": "mcwtrpdoors:print_cottage"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:end_lotus_cottage_trapdoor"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern_chairs",
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:umbrella_tree_log"
+          },
+          "B": {
+            "item": "betterendforge:umbrella_tree_slab"
+          },
+          "C": {
+            "item": "betterendforge:umbrella_tree_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:umbrella_tree_modern_chair"
+        }
+      }
+    }
+  ]
+}

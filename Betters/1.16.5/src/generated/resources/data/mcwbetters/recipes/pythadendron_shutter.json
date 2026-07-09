@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "betterendforge:pythadendron_trapdoor"
+          },
+          {
+            "item": "betterendforge:pythadendron_trapdoor"
+          },
+          {
+            "item": "betterendforge:pythadendron_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwbetters:pythadendron_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

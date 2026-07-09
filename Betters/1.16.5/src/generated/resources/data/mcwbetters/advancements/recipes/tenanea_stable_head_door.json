@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwbetters:tenanea_stable_head_door"
+          ]
+        },
+        "criteria": {
+          "has_tenanea_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betterendforge:tenanea_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwbetters:tenanea_stable_head_door"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_tenanea_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

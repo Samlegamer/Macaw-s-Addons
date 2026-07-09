@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "ranch_trapdoors",
+        "pattern": [
+          "ABA",
+          "BBB",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "betternether:nether_sakura_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:nether_sakura_ranch_trapdoor",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

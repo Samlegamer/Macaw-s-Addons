@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwbetters:stripped_rubeus_modern_desk"
+          ]
+        },
+        "criteria": {
+          "has_rubeus_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betternether:rubeus_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwbetters:stripped_rubeus_modern_desk"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_rubeus_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

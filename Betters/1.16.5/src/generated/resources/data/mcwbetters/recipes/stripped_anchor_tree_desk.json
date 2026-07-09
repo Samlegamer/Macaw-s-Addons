@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_desks",
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "key": {
+          "A": {
+            "item": "betternether:striped_log_anchor_tree"
+          },
+          "B": {
+            "item": "betternether:anchor_tree_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:stripped_anchor_tree_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

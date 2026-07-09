@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "kitchen_sinks",
+        "pattern": [
+          "CDC",
+          "ABA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "betternether:stalagnate_log"
+          },
+          "B": {
+            "item": "minecraft:water_bucket"
+          },
+          "C": {
+            "item": "betternether:stalagnate_planks_slab"
+          },
+          "D": {
+            "item": "minecraft:cauldron"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:stalagnate_kitchen_sink"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "terrace_stairs",
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "key": {
+          "A": {
+            "item": "betternether:striped_log_wart"
+          },
+          "B": {
+            "item": "betternether:wart_log"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:wart_terrace_stairs",
+          "count": 5
+        }
+      }
+    }
+  ]
+}

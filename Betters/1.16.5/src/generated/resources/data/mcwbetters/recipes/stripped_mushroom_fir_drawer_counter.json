@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_drawer_counters",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "betternether:mushroom_fir_slab"
+          },
+          "B": {
+            "item": "mcwbetters:stripped_mushroom_fir_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:stripped_mushroom_fir_drawer_counter"
+        }
+      }
+    }
+  ]
+}

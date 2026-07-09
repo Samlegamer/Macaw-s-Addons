@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwtrpdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwbetters:nether_sakura_bamboo_trapdoor"
+          ]
+        },
+        "criteria": {
+          "has_nether_sakura_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betternether:nether_sakura_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwbetters:nether_sakura_bamboo_trapdoor"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_nether_sakura_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

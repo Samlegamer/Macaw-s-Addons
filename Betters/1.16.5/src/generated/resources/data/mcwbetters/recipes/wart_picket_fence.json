@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "picket",
+        "pattern": [
+          "CBC",
+          "CAC"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "betternether:wart_planks"
+          },
+          "C": {
+            "item": "betternether:wart_log"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:wart_picket_fence",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

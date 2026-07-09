@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "wooden_piers",
+        "pattern": [
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "betternether:nether_sakura_log"
+          },
+          "B": {
+            "item": "betternether:nether_sakura_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:nether_sakura_bridge_pier",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

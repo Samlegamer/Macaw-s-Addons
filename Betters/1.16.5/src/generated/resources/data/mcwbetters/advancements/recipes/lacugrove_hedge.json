@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwbetters:lacugrove_hedge"
+          ]
+        },
+        "criteria": {
+          "has_lacugrove_leaves": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betterendforge:lacugrove_leaves"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwbetters:lacugrove_hedge"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_lacugrove_leaves",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_platform",
+        "pattern": [
+          " BB",
+          " AA",
+          "   "
+        ],
+        "key": {
+          "A": {
+            "item": "betternether:nether_sakura_log"
+          },
+          "B": {
+            "item": "betternether:nether_sakura_slab"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:nether_sakura_platform",
+          "count": 12
+        }
+      }
+    }
+  ]
+}

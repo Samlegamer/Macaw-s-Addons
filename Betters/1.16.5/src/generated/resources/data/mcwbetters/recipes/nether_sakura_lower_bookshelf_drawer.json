@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "lower_bookshelf_drawers",
+        "pattern": [
+          "AAA",
+          "ACA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "betternether:nether_sakura_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          },
+          "C": {
+            "item": "minecraft:book"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:nether_sakura_lower_bookshelf_drawer",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

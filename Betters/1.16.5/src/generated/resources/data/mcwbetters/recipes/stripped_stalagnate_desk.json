@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_desks",
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "key": {
+          "A": {
+            "item": "betternether:striped_log_stalagnate"
+          },
+          "B": {
+            "item": "betternether:stalagnate_planks_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:stripped_stalagnate_desk",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

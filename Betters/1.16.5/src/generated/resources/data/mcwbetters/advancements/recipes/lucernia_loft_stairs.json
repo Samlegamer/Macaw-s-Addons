@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwbetters:lucernia_loft_stairs"
+          ]
+        },
+        "criteria": {
+          "has_lucernia_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betterendforge:lucernia_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwbetters:lucernia_loft_stairs"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_lucernia_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

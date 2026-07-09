@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "parapets",
+        "pattern": [
+          "AAA",
+          "ABA"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "betterendforge:helix_tree_planks"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:helix_tree_plank_parapet",
+          "count": 5
+        }
+      }
+    }
+  ]
+}

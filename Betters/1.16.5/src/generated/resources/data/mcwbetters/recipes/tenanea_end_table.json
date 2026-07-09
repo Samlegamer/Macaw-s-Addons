@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "end_tables",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwbetters:tenanea_table"
+          },
+          "B": {
+            "item": "betterendforge:tenanea_log"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:tenanea_end_table"
+        }
+      }
+    }
+  ]
+}

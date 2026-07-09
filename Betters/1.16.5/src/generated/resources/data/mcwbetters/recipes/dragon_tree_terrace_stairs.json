@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "terrace_stairs",
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:dragon_tree_stripped_log"
+          },
+          "B": {
+            "item": "betterendforge:dragon_tree_log"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:dragon_tree_terrace_stairs",
+          "count": 5
+        }
+      }
+    }
+  ]
+}

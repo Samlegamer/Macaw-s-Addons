@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "betternether:nether_sakura_trapdoor"
+          },
+          {
+            "item": "betternether:nether_sakura_trapdoor"
+          },
+          {
+            "item": "betternether:nether_sakura_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwbetters:nether_sakura_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

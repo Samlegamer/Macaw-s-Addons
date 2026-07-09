@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "lower_roof",
+        "pattern": [
+          " AA",
+          "AAB"
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:pythadendron_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:pythadendron_lower_roof",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

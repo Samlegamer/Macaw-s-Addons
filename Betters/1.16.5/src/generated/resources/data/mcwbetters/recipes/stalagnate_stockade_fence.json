@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stockade",
+        "pattern": [
+          "ABA",
+          "BAB"
+        ],
+        "key": {
+          "A": {
+            "item": "betternether:stalagnate_log"
+          },
+          "B": {
+            "item": "betternether:stalagnate_planks"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:stalagnate_stockade_fence",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

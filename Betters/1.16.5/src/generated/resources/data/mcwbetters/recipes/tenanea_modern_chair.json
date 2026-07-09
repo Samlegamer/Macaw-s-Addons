@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern_chairs",
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:tenanea_log"
+          },
+          "B": {
+            "item": "betterendforge:tenanea_slab"
+          },
+          "C": {
+            "item": "betterendforge:tenanea_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:tenanea_modern_chair"
+        }
+      }
+    }
+  ]
+}

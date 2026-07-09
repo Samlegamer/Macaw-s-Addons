@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_cupboard_counters",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:tenanea_slab"
+          },
+          "B": {
+            "item": "mcwbetters:stripped_tenanea_wardrobe"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:stripped_tenanea_cupboard_counter"
+        }
+      }
+    }
+  ]
+}

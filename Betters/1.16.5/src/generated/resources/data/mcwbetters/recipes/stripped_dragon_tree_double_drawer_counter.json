@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "stripped_double_drawer_counters",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:dragon_tree_slab"
+          },
+          "B": {
+            "item": "mcwbetters:stripped_dragon_tree_double_drawer"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:stripped_dragon_tree_double_drawer_counter"
+        }
+      }
+    }
+  ]
+}

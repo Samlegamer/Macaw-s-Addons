@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "cupboard_counters",
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:umbrella_tree_slab"
+          },
+          "B": {
+            "item": "mcwbetters:umbrella_tree_wardrobe"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:umbrella_tree_cupboard_counter"
+        }
+      }
+    }
+  ]
+}

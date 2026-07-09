@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "betternether:stalagnate_planks_slab"
+          },
+          {
+            "item": "betternether:stalagnate_planks_slab"
+          },
+          {
+            "item": "betternether:stalagnate_planks_slab"
+          }
+        ],
+        "result": {
+          "item": "mcwbetters:stalagnate_louvered_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

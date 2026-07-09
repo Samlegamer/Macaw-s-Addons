@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "betterendforge:end_lotus_trapdoor"
+          },
+          {
+            "item": "betterendforge:end_lotus_trapdoor"
+          },
+          {
+            "item": "betterendforge:end_lotus_trapdoor"
+          }
+        ],
+        "result": {
+          "item": "mcwbetters:end_lotus_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

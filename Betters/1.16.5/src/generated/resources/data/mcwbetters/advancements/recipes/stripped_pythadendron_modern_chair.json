@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwbetters:stripped_pythadendron_modern_chair"
+          ]
+        },
+        "criteria": {
+          "has_pythadendron_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betterendforge:pythadendron_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwbetters:stripped_pythadendron_modern_chair"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_pythadendron_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "log_bridges",
+        "pattern": [
+          "B B",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "betternether:stalagnate_planks_slab"
+          },
+          "B": {
+            "item": "betternether:stalagnate_planks_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:stalagnate_log_bridge_middle",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "chairs",
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:helix_tree_log"
+          },
+          "B": {
+            "item": "betterendforge:helix_tree_slab"
+          },
+          "C": {
+            "item": "betterendforge:helix_tree_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:helix_tree_chair"
+        }
+      }
+    }
+  ]
+}

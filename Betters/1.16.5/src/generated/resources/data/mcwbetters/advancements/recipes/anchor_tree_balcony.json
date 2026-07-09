@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betternether",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwbetters:anchor_tree_balcony"
+          ]
+        },
+        "criteria": {
+          "has_anchor_tree_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betternether:anchor_tree_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwbetters:anchor_tree_balcony"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_anchor_tree_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "western",
+        "pattern": [
+          "  A",
+          "ABA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:lacugrove_planks"
+          },
+          "B": {
+            "item": "betterendforge:lacugrove_slab"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:lacugrove_western_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

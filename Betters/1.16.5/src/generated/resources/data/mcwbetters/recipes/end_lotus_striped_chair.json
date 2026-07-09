@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "striped_chairs",
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:end_lotus_log"
+          },
+          "B": {
+            "item": "betterendforge:end_lotus_slab"
+          },
+          "C": {
+            "item": "betterendforge:end_lotus_fence"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:end_lotus_striped_chair"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfences",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "picket",
+        "pattern": [
+          "CBC",
+          "CAC"
+        ],
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "betterendforge:umbrella_tree_planks"
+          },
+          "C": {
+            "item": "betterendforge:umbrella_tree_log"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:umbrella_tree_picket_fence",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

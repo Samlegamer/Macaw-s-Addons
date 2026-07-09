@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwbridges",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "rope_stairs",
+        "pattern": [
+          "  A",
+          " AA",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "mcwbetters:rope_mossy_glowshroom_bridge"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:mossy_glowshroom_rope_bridge_stair",
+          "count": 6
+        }
+      }
+    }
+  ]
+}

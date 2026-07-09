@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwpaths",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "planks_paths",
+        "ingredients": [
+          {
+            "item": "betterendforge:umbrella_tree_slab"
+          }
+        ],
+        "result": {
+          "item": "mcwbetters:umbrella_tree_planks_path",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

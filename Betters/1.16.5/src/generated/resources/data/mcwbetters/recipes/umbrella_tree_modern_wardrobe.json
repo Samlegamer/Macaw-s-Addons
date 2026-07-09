@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "modern_wardrobes",
+        "pattern": [
+          "AAA",
+          "AAB",
+          "AAA"
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:umbrella_tree_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:umbrella_tree_modern_wardrobe",
+          "count": 4
+        }
+      }
+    }
+  ]
+}

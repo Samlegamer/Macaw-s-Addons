@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwroofs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwbetters:dragon_tree_planks_steep_roof"
+          ]
+        },
+        "criteria": {
+          "has_dragon_tree_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betterendforge:dragon_tree_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwbetters:dragon_tree_planks_steep_roof"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_dragon_tree_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

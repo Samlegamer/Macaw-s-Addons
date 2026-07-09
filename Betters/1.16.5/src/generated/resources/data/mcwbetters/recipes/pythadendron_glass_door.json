@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwdoors",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "glassed",
+        "pattern": [
+          "AB",
+          "BB",
+          "AB"
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:pythadendron_planks"
+          },
+          "B": {
+            "item": "minecraft:glass_pane"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:pythadendron_glass_door",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

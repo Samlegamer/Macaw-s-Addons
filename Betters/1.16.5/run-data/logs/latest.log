@@ -1,0 +1,47 @@
+[08juil.2026 18:43:24.338] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--mod, mcwbetters, --all, --output, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Betters\1.16.5\src\generated\resources, --existing, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Betters\1.16.5\src\main\resources, --gameDir, ., --launchTarget, fmluserdevdata, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 36.2.42, --assetIndex, 1.16, --assetsDir, C:\Users\Samle\.gradle\caches\forge_gradle\assets]
+[08juil.2026 18:43:24.342] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.1.3+8.1.3+main-8.1.x.c94d18ec starting: java version 1.8.0_472 by Temurin
+[08juil.2026 18:43:24.670] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[08juil.2026 18:43:24.711] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/C:/Users/Samle/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.4/4ec7d77d9ab32596ca0b78bb123956734767e3a/mixin-0.8.4.jar Service=ModLauncher Env=CLIENT
+[08juil.2026 18:43:24.752] [main/WARN] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Configuration file C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Betters\1.16.5\run-data\config\fml.toml is not correct. Correcting
+[08juil.2026 18:43:24.758] [main/WARN] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [defaultConfigPath] was corrected from null to defaultconfigs
+[08juil.2026 18:43:25.956] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [someoneelse.betternetherreforged.mixin.MixinConnector]
+[08juil.2026 18:43:25.961] [main/INFO] [someoneelse.betternetherreforged.BetterNether/]: Better Nether: Mixin Connected!
+[08juil.2026 18:43:25.961] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevdata' with arguments [--gameDir, ., --assetsDir, C:\Users\Samle\.gradle\caches\forge_gradle\assets, --mod, mcwbetters, --all, --output, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Betters\1.16.5\src\generated\resources, --existing, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Betters\1.16.5\src\main\resources, --assetIndex, 1.16]
+[08juil.2026 18:43:26.092] [main/INFO] [mixin/]: Remapping refMap betternether_reforged.refmap.json using C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Betters\1.16.5\build/createSrgToMcp/output.srg
+[08juil.2026 18:43:26.095] [main/INFO] [mixin/]: Remapping refMap betterendforge.refmap.json using C:\Users\Samle\Music\McwMods\Macaw-s-Addons\Betters\1.16.5\build/createSrgToMcp/output.srg
+[08juil.2026 18:43:26.347] [main/INFO] [net.minecraftforge.fml.DatagenModLoader/]: Initializing Data Gatherer for mods [mcwbetters]
+[08juil.2026 18:43:30.609] [modloading-worker-9/INFO] [fr.samlegamer.mcwbetters.McwBetters/]: Macaw's Betters Mod Loading...
+[08juil.2026 18:43:30.621] [modloading-worker-14/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.42, for MC 1.16.5 with MCP 20210115.111550
+[08juil.2026 18:43:30.622] [modloading-worker-14/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.42 Initialized
+[08juil.2026 18:43:30.860] [modloading-worker-10/INFO] [fr.samlegamer.addonslib.AddonsLib/]: AddonsLib Forge !
+[08juil.2026 18:43:30.984] [modloading-worker-9/INFO] [fr.samlegamer.mcwbetters.McwBetters/]: Macaw's Betters Mod Finish !
+[08juil.2026 18:43:31.934] [modloading-worker-3/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `nether_wastes`, expected `betternether`. This could be a intended override, but in most cases indicates a broken mod.
+[08juil.2026 18:43:32.008] [modloading-worker-3/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `crimson_forest`, expected `betternether`. This could be a intended override, but in most cases indicates a broken mod.
+[08juil.2026 18:43:32.047] [modloading-worker-3/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `warped_forest`, expected `betternether`. This could be a intended override, but in most cases indicates a broken mod.
+[08juil.2026 18:43:32.085] [modloading-worker-3/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `basalt_deltas`, expected `betternether`. This could be a intended override, but in most cases indicates a broken mod.
+[08juil.2026 18:43:37.647] [main/WARN] [net.minecraftforge.common.ForgeHooks/]: Called deprecated GlobalEntityTypeAttributes#put for betternether:chair, use EntityAttributeCreationEvent instead.
+[08juil.2026 18:43:37.647] [main/WARN] [net.minecraftforge.common.ForgeHooks/]: Called deprecated GlobalEntityTypeAttributes#put for betternether:naga_projectile, use EntityAttributeCreationEvent instead.
+[08juil.2026 18:43:37.648] [main/WARN] [net.minecraftforge.common.ForgeHooks/]: Called deprecated GlobalEntityTypeAttributes#put for betternether:firefly, use EntityAttributeCreationEvent instead.
+[08juil.2026 18:43:37.648] [main/WARN] [net.minecraftforge.common.ForgeHooks/]: Called deprecated GlobalEntityTypeAttributes#put for betternether:naga, use EntityAttributeCreationEvent instead.
+[08juil.2026 18:43:37.648] [main/WARN] [net.minecraftforge.common.ForgeHooks/]: Called deprecated GlobalEntityTypeAttributes#put for betternether:flying_pig, use EntityAttributeCreationEvent instead.
+[08juil.2026 18:43:37.648] [main/WARN] [net.minecraftforge.common.ForgeHooks/]: Called deprecated GlobalEntityTypeAttributes#put for betternether:jungle_skeleton, use EntityAttributeCreationEvent instead.
+[08juil.2026 18:43:37.648] [main/WARN] [net.minecraftforge.common.ForgeHooks/]: Called deprecated GlobalEntityTypeAttributes#put for betternether:hydrogen_jellyfish, use EntityAttributeCreationEvent instead.
+[08juil.2026 18:43:37.648] [main/WARN] [net.minecraftforge.common.ForgeHooks/]: Called deprecated GlobalEntityTypeAttributes#put for betternether:skull, use EntityAttributeCreationEvent instead.
+[08juil.2026 18:43:37.790] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/biome: The object minecraft:the_end has been registered twice for the same name minecraft:the_end.
+[08juil.2026 18:43:37.790] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/biome: The object minecraft:end_barrens has been registered twice for the same name minecraft:end_barrens.
+[08juil.2026 18:43:37.790] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/biome: The object minecraft:small_end_islands has been registered twice for the same name minecraft:small_end_islands.
+[08juil.2026 18:43:37.790] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/biome: The object minecraft:end_midlands has been registered twice for the same name minecraft:end_midlands.
+[08juil.2026 18:43:37.790] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/biome: The object minecraft:end_highlands has been registered twice for the same name minecraft:end_highlands.
+[08juil.2026 18:43:37.798] [main/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'mod.beethoven92.betterendforge.common.init.ModStructurePieces$$Lambda$6499/2145062725@46490306' to registry
+[08juil.2026 18:43:37.800] [main/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'mod.beethoven92.betterendforge.common.init.ModStructurePieces$$Lambda$6500/1473968312@48aa6a8e' to registry
+[08juil.2026 18:43:37.800] [main/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'mod.beethoven92.betterendforge.common.init.ModStructurePieces$$Lambda$6501/576157369@645c9eaf' to registry
+[08juil.2026 18:43:37.800] [main/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'mod.beethoven92.betterendforge.common.init.ModStructurePieces$$Lambda$6502/759460512@4397d8b0' to registry
+[08juil.2026 18:43:37.800] [main/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'mod.beethoven92.betterendforge.common.init.ModStructurePieces$$Lambda$6503/1968429461@19c368f2' to registry
+[08juil.2026 18:43:37.801] [main/ERROR] [net.minecraft.util.registry.SimpleRegistry/]: Adding duplicate value 'mod.beethoven92.betterendforge.common.init.ModStructurePieces$$Lambda$6504/1453592853@17b6b497' to registry
+[08juil.2026 18:43:37.930] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block Tags
+[08juil.2026 18:43:38.045] [main/INFO] [net.minecraft.data.DataGenerator/]: Block Tags finished after 113 ms
+[08juil.2026 18:43:38.045] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Tags
+[08juil.2026 18:43:38.051] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Tags finished after 6 ms
+[08juil.2026 18:43:38.051] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[08juil.2026 18:43:41.203] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 3151 ms
+[08juil.2026 18:43:41.203] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 3273 ms

@@ -1,0 +1,48 @@
+{
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwfurnitures",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "rewards": {
+          "recipes": [
+            "mcwbetters:stripped_helix_tree_glass_table"
+          ]
+        },
+        "criteria": {
+          "has_helix_tree_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "item": "betterendforge:helix_tree_log"
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "mcwbetters:stripped_helix_tree_glass_table"
+            }
+          }
+        },
+        "requirements": [
+          [
+            "has_helix_tree_log",
+            "has_the_recipe"
+          ]
+        ]
+      }
+    }
+  ]
+}

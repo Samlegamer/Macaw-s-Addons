@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwwindows",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "betterendforge:tenanea_slab"
+          },
+          {
+            "item": "betterendforge:tenanea_slab"
+          },
+          {
+            "item": "betterendforge:tenanea_slab"
+          }
+        ],
+        "result": {
+          "item": "mcwbetters:tenanea_louvered_shutter",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

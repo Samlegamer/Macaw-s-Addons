@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "mcwstairs",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "modid": "betterendforge",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "group": "mcwstairs_platform",
+        "pattern": [
+          " BB",
+          " AA",
+          "   "
+        ],
+        "key": {
+          "A": {
+            "item": "betterendforge:pythadendron_log"
+          },
+          "B": {
+            "item": "betterendforge:pythadendron_slab"
+          }
+        },
+        "result": {
+          "item": "mcwbetters:pythadendron_platform",
+          "count": 12
+        }
+      }
+    }
+  ]
+}
