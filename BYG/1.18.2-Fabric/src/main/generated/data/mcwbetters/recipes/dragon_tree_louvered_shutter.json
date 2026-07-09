@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "betterend:dragon_tree_slab"
+    },
+    {
+      "item": "betterend:dragon_tree_slab"
+    },
+    {
+      "item": "betterend:dragon_tree_slab"
+    }
+  ],
+  "result": {
+    "item": "mcwbetters:dragon_tree_louvered_shutter",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwwindows"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_piers",
+  "pattern": [
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "betterend:pythadendron_log"
+    },
+    "B": {
+      "item": "betterend:pythadendron_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:pythadendron_bridge_pier",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwbridges"
+      ]
+    }
+  ]
+}

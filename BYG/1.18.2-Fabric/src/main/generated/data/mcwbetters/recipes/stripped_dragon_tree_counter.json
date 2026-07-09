@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stripped_counters",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "betterend:dragon_tree_slab"
+    },
+    "B": {
+      "item": "betterend:dragon_tree_stripped_log"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:stripped_dragon_tree_counter"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

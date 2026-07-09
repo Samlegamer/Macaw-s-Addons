@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bulk_stairs",
+  "pattern": [
+    "A  ",
+    "BA ",
+    "BBA"
+  ],
+  "key": {
+    "A": {
+      "item": "betternether:wart_stripped_log"
+    },
+    "B": {
+      "item": "betternether:wart_log"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:wart_bulk_stairs",
+    "count": 6
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwstairs"
+      ]
+    }
+  ]
+}

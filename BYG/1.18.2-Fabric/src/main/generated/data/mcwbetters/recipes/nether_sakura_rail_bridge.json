@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "rail_bridges",
+  "pattern": [
+    "B B",
+    "BAB"
+  ],
+  "key": {
+    "A": {
+      "item": "betternether:nether_sakura_slab"
+    },
+    "B": {
+      "item": "betternether:nether_sakura_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:nether_sakura_rail_bridge",
+    "count": 4
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwbridges"
+      ]
+    }
+  ]
+}

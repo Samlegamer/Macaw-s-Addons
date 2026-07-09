@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "attic_roof",
+  "pattern": [
+    " A",
+    "AB"
+  ],
+  "key": {
+    "A": {
+      "item": "betternether:anchor_tree_log"
+    },
+    "B": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:anchor_tree_attic_roof",
+    "count": 2
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwroofs"
+      ]
+    }
+  ]
+}

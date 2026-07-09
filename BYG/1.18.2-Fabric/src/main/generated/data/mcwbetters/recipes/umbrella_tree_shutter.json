@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "betterend:umbrella_tree_trapdoor"
+    },
+    {
+      "item": "betterend:umbrella_tree_trapdoor"
+    },
+    {
+      "item": "betterend:umbrella_tree_trapdoor"
+    }
+  ],
+  "result": {
+    "item": "mcwbetters:umbrella_tree_shutter",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwwindows"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "modern_chairs",
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "key": {
+    "A": {
+      "item": "betterend:tenanea_log"
+    },
+    "B": {
+      "item": "betterend:tenanea_slab"
+    },
+    "C": {
+      "item": "betterend:tenanea_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:tenanea_modern_chair"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "modern_chairs",
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "key": {
+    "A": {
+      "item": "betterend:end_lotus_log"
+    },
+    "B": {
+      "item": "betterend:end_lotus_slab"
+    },
+    "C": {
+      "item": "betterend:end_lotus_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:end_lotus_modern_chair"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

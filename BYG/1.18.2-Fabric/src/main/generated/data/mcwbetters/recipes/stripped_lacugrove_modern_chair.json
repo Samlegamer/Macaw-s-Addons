@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stripped_modern_chairs",
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "key": {
+    "A": {
+      "item": "betterend:lacugrove_stripped_log"
+    },
+    "B": {
+      "item": "betterend:lacugrove_slab"
+    },
+    "C": {
+      "item": "betterend:lacugrove_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:stripped_lacugrove_modern_chair"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

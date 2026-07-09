@@ -1,0 +1,15 @@
+{
+    "variants": {                                                                        
+        "facing=north,powered=false":  { "model": "mcwbetters:block/bridge/rail/stalagnate", "y": 90},
+		"facing=east,powered=false":  { "model": "mcwbetters:block/bridge/rail/stalagnate"},
+		"facing=south,powered=false":  { "model": "mcwbetters:block/bridge/rail/stalagnate", "y": 90},
+		"facing=west,powered=false":  { "model": "mcwbetters:block/bridge/rail/stalagnate"},
+
+		"facing=north,powered=true":  { "model": "mcwbetters:block/bridge/rail/stalagnate_powered", "y": 90},
+		"facing=east,powered=true":  { "model": "mcwbetters:block/bridge/rail/stalagnate_powered"},
+		"facing=south,powered=true":  { "model": "mcwbetters:block/bridge/rail/stalagnate_powered", "y": 90},
+		"facing=west,powered=true":  { "model": "mcwbetters:block/bridge/rail/stalagnate_powered"}			
+    }
+}
+
+

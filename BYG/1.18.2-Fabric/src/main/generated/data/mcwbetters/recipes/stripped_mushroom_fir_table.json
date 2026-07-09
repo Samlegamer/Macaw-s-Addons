@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stripped_tables",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "mcwbetters:stripped_mushroom_fir_coffee_table"
+    },
+    "B": {
+      "item": "betternether:mushroom_fir_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:stripped_mushroom_fir_table"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

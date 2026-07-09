@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "betternether:stalagnate_trapdoor"
+    },
+    {
+      "item": "betternether:stalagnate_trapdoor"
+    },
+    {
+      "item": "betternether:stalagnate_trapdoor"
+    }
+  ],
+  "result": {
+    "item": "mcwbetters:stalagnate_shutter",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwwindows"
+      ]
+    }
+  ]
+}
