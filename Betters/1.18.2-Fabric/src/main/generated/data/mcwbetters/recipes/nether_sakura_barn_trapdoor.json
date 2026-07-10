@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "barn_trapdoors",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "betternether:nether_sakura_planks"
+    },
+    "B": {
+      "item": "mcwbetters:nether_sakura_glass_trapdoor"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:nether_sakura_barn_trapdoor"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwtrpdoors"
+      ]
+    }
+  ]
+}

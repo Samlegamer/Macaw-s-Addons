@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stripped_stool_chairs",
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "betternether:nether_sakura_stripped_log"
+    },
+    "B": {
+      "item": "betternether:nether_sakura_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:stripped_nether_sakura_stool_chair"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "roof",
+  "pattern": [
+    " A",
+    "AB"
+  ],
+  "key": {
+    "A": {
+      "item": "betterend:mossy_glowshroom_log"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:mossy_glowshroom_roof",
+    "count": 2
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwroofs"
+      ]
+    }
+  ]
+}

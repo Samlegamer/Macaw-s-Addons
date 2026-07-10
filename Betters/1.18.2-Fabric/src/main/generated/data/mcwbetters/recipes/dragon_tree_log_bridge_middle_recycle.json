@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "recyclable_bridges_recycle",
+  "ingredients": [
+    {
+      "item": "mcwbetters:dragon_tree_log_bridge_stair"
+    }
+  ],
+  "result": {
+    "item": "mcwbetters:dragon_tree_log_bridge_middle"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwbridges"
+      ]
+    }
+  ]
+}

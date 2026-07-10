@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mcwstairs_platform",
+  "pattern": [
+    " BB",
+    " AA",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "betternether:nether_sakura_log"
+    },
+    "B": {
+      "item": "betternether:nether_sakura_slab"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:nether_sakura_platform",
+    "count": 12
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwstairs"
+      ]
+    }
+  ]
+}

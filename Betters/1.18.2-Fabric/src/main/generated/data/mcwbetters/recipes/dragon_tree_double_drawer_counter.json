@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "double_drawer_counters",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "betterend:dragon_tree_slab"
+    },
+    "B": {
+      "item": "mcwbetters:dragon_tree_double_drawer"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:dragon_tree_double_drawer_counter"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

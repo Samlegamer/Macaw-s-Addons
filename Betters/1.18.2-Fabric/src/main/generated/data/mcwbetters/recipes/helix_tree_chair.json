@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chairs",
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "key": {
+    "A": {
+      "item": "betterend:helix_tree_log"
+    },
+    "B": {
+      "item": "betterend:helix_tree_slab"
+    },
+    "C": {
+      "item": "betterend:helix_tree_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:helix_tree_chair"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stripped_end_tables",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "mcwbetters:stripped_anchor_tree_table"
+    },
+    "B": {
+      "item": "betternether:anchor_tree_stripped_log"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:stripped_anchor_tree_end_table"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

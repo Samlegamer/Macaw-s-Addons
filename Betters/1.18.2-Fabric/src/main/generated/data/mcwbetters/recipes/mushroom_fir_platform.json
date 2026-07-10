@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mcwstairs_platform",
+  "pattern": [
+    " BB",
+    " AA",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "betternether:mushroom_fir_log"
+    },
+    "B": {
+      "item": "betternether:mushroom_fir_slab"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:mushroom_fir_platform",
+    "count": 12
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwstairs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stripped_tables",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "mcwbetters:stripped_umbrella_tree_coffee_table"
+    },
+    "B": {
+      "item": "betterend:umbrella_tree_fence"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:stripped_umbrella_tree_table"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

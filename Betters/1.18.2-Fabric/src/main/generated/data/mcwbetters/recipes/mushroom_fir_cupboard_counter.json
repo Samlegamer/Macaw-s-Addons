@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cupboard_counters",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "betternether:mushroom_fir_slab"
+    },
+    "B": {
+      "item": "mcwbetters:mushroom_fir_wardrobe"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:mushroom_fir_cupboard_counter"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ]
+}

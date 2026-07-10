@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "picket",
+  "pattern": [
+    "CBC",
+    "CAC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "betterend:jellyshroom_planks"
+    },
+    "C": {
+      "item": "betterend:jellyshroom_log"
+    }
+  },
+  "result": {
+    "item": "mcwbetters:jellyshroom_picket_fence",
+    "count": 3
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfences"
+      ]
+    }
+  ]
+}
