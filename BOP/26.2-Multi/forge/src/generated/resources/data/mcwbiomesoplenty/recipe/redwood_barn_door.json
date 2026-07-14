@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "barn",
+        "key": {
+          "A": "biomesoplenty:redwood_planks",
+          "B": "minecraft:stick"
+        },
+        "pattern": [
+          "BB",
+          "AA",
+          "AA"
+        ],
+        "result": {
+          "count": 2,
+          "id": "mcwbiomesoplenty:redwood_barn_door"
+        }
+      }
+    }
+  ]
+}

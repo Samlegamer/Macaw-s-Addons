@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "western",
+        "key": {
+          "A": "biomesoplenty:fir_planks",
+          "B": "biomesoplenty:fir_slab"
+        },
+        "pattern": [
+          "  A",
+          "ABA",
+          "AAA"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwbiomesoplenty:fir_western_door"
+        }
+      }
+    }
+  ]
+}

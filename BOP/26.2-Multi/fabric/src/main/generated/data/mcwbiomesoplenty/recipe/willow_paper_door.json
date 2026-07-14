@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "biomesoplenty",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "paper",
+  "key": {
+    "A": "biomesoplenty:willow_planks",
+    "B": "mcwdoors:print_birch"
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "id": "mcwbiomesoplenty:willow_paper_door"
+  }
+}

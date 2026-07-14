@@ -1,0 +1,555 @@
+[14juil.2026 13:25:29.334] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, forge_userdev_data, --assetIndex, 32, --assetsDir, C:\Users\Samle\AppData\Roaming\.minecraft\assets, --mod, mcwbiomesoplenty, --all, --output, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\src\generated\resources, --existing, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\src\main\resources]
+[14juil.2026 13:25:29.336] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 25.0.2+10-LTS
+[14juil.2026 13:25:29.336] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.4 starting: java version 25.0.2 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[14juil.2026 13:25:29.351] [main/DEBUG] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Found launch services [minecraft,forge_userdev_server_gametest,forge_dev_client,forge_userdev_data,forge_dev_server_gametest,forge_dev_client_data,forge_userdev_server,forge_client,forge_server,forge_userdev_client_data,forge_userdev_client,forge_dev_data,forge_dev,testharness,forge_userdev,forge_dev_server]
+[14juil.2026 13:25:29.355] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Found naming services : [srgtomcp]
+[14juil.2026 13:25:29.366] [main/DEBUG] [cpw.mods.modlauncher.LaunchPluginHandler/MODLAUNCHER]: Found launch plugins: [mixin,slf4jfixer,runtime_enum_extender,capability_token_subclass,accesstransformer,runtimedistcleaner]
+[14juil.2026 13:25:29.372] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Discovering transformation services
+[14juil.2026 13:25:29.373] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path GAMEDIR is C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\run-data
+[14juil.2026 13:25:29.374] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path MODSDIR is C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\run-data\mods
+[14juil.2026 13:25:29.374] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path CONFIGDIR is C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\run-data\config
+[14juil.2026 13:25:29.374] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path FMLCONFIG is C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\run-data\config\fml.toml
+[14juil.2026 13:25:29.394] [main/WARN] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Configuration file C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\run-data\config\fml.toml is not correct. Correcting
+[14juil.2026 13:25:29.395] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSkipGLVersions] was corrected from null to []
+[14juil.2026 13:25:29.395] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowLogHelpMessage] was corrected from null to true
+[14juil.2026 13:25:29.395] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSquir] was corrected from null to false
+[14juil.2026 13:25:29.395] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowShowCPU] was corrected from null to false
+[14juil.2026 13:25:29.404] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[14juil.2026 13:25:29.426] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found transformer service: fml: /
+[14juil.2026 13:25:29.428] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found transformer service: forge: /
+[14juil.2026 13:25:29.429] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found transformer service: mixin: /
+[14juil.2026 13:25:29.429] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading
+[14juil.2026 13:25:29.430] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service mixin
+[14juil.2026 13:25:29.430] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service mixin
+[14juil.2026 13:25:29.430] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service fml
+[14juil.2026 13:25:29.433] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Detected version data : VersionInfo[forgeVersion=65.0.3, mcVersion=26.2, mcpVersion=20260616.103818, forgeGroup=net.minecraftforge]
+[14juil.2026 13:25:29.434] [main/DEBUG] [net.minecraftforge.fml.loading.LauncherVersion/CORE]: Found FMLLauncher version 65.0.3
+[14juil.2026 13:25:29.434] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML 65.0.3 loading
+[14juil.2026 13:25:29.434] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found ModLauncher version: 10.2.4
+[14juil.2026 13:25:29.434] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found AccessTransformer version: 8.2.2
+[14juil.2026 13:25:29.434] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found RuntimeDistCleaner version: 65.0.3
+[14juil.2026 13:25:29.434] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found ForgeSPI version: 8.0.0
+[14juil.2026 13:25:29.434] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service fml
+[14juil.2026 13:25:29.434] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service forge
+[14juil.2026 13:25:29.435] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service forge
+[14juil.2026 13:25:29.435] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Configuring option handling for services
+[14juil.2026 13:25:29.439] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services initializing
+[14juil.2026 13:25:29.439] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service mixin
+[14juil.2026 13:25:29.458] [main/DEBUG] [mixin/]: MixinService [ModLauncher] was successfully booted in SecureModuleClassLoader[SECURE-BOOTSTRAP]@391877669
+[14juil.2026 13:25:29.466] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/Samle/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[14juil.2026 13:25:29.468] [main/DEBUG] [mixin/]: Initialising Mixin Platform Manager
+[14juil.2026 13:25:29.468] [main/DEBUG] [mixin/]: Adding mixin platform agents for container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[14juil.2026 13:25:29.468] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[14juil.2026 13:25:29.468] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[14juil.2026 13:25:29.468] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[14juil.2026 13:25:29.468] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[14juil.2026 13:25:29.469] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service mixin
+[14juil.2026 13:25:29.469] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service fml
+[14juil.2026 13:25:29.469] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Setting up basic FML game directories
+[14juil.2026 13:25:29.470] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path GAMEDIR is C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\run-data
+[14juil.2026 13:25:29.470] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path MODSDIR is C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\run-data\mods
+[14juil.2026 13:25:29.470] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path CONFIGDIR is C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\run-data\config
+[14juil.2026 13:25:29.470] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path FMLCONFIG is C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\run-data\config\fml.toml
+[14juil.2026 13:25:29.471] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Loading configuration
+[14juil.2026 13:25:29.473] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Preparing ModFile
+[14juil.2026 13:25:29.474] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Preparing launch handler
+[14juil.2026 13:25:29.474] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Using forge_userdev_data as launch service
+[14juil.2026 13:25:29.479] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service fml
+[14juil.2026 13:25:29.479] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service forge
+[14juil.2026 13:25:29.479] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service forge
+[14juil.2026 13:25:29.479] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Current naming domain is 'mcp'
+[14juil.2026 13:25:29.479] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Identified name mapping providers {srg=net.minecraftforge.fml.loading.MCPNamingService@58faa93b}
+[14juil.2026 13:25:29.479] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services begin scanning
+[14juil.2026 13:25:29.479] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service mixin
+[14juil.2026 13:25:29.479] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service mixin
+[14juil.2026 13:25:29.480] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service fml
+[14juil.2026 13:25:29.480] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Initiating mod scan
+[14juil.2026 13:25:29.489] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Mod Locators : (mods folder:null),(minecraft:null),(classpath:null),(forge_dev_locator:null),(forge_userdev_locator:null)
+[14juil.2026 13:25:29.489] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Dependency Locators : (JarInJar:null)
+[14juil.2026 13:25:29.765] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file union:/C:/Users/Samle/Music/McwMods/Macaw-s-Addons/BOP/26.2-Multi/.gradle/mavenizer/repo/net/minecraftforge/forge/26.2-65.0.3/forge-26.2-65.0.3.jar%230!/ with {minecraft} mods - versions {26.2}
+[14juil.2026 13:25:29.976] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Found JarJar Option: C:\Users\Samle\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-forge\0.5.3\fe08b69a00bf9fe41dd37eab99b2661f655e23f0\mixinextras-forge-0.5.3.jar
+[14juil.2026 13:25:29.981] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\curse.maven\addonslib-1090999\8424889\ee8b6e08c325337f6bc433733e5b4d37e2d5a34a\addonslib-1090999-8424889.jar
+[14juil.2026 13:25:29.985] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file addonslib-1090999-8424889.jar with {addonslib} mods - versions {26.2-1.0}
+[14juil.2026 13:25:29.992] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\build\classes\java\main
+[14juil.2026 13:25:29.993] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\build\classes\java\main with {mcwbiomesoplenty} mods - versions {26.2-1.6}
+[14juil.2026 13:25:30.002] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\curse.maven\macaws-bridges-351725\8286536\5f6c700e408c24f9498cde8e64974e2a96fd67c0\macaws-bridges-351725-8286536.jar
+[14juil.2026 13:25:30.002] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-bridges-351725-8286536.jar with {mcwbridges} mods - versions {3.1.2}
+[14juil.2026 13:25:30.011] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\curse.maven\macaws-stairs-1119394\8286538\d1164771f87b628480bc455d9350b04c4e491a1d\macaws-stairs-1119394-8286538.jar
+[14juil.2026 13:25:30.012] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-stairs-1119394-8286538.jar with {mcwstairs} mods - versions {1.0.2}
+[14juil.2026 13:25:30.026] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\curse.maven\macaws-fences-and-walls-453925\8286535\7571a8734b0cb7621f8301800dfc3a1396310169\macaws-fences-and-walls-453925-8286535.jar
+[14juil.2026 13:25:30.026] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-fences-and-walls-453925-8286535.jar with {mcwfences} mods - versions {1.2.1}
+[14juil.2026 13:25:30.049] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\curse.maven\macaws-roofs-352039\8286531\60cda90c46a3b4a344eb52ff49e3e40634617cfa\macaws-roofs-352039-8286531.jar
+[14juil.2026 13:25:30.050] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-roofs-352039-8286531.jar with {mcwroofs} mods - versions {2.3.3}
+[14juil.2026 13:25:30.066] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\curse.maven\macaws-windows-363569\8286528\f2328f7134f9f11d014181b66714bfafc54da9f8\macaws-windows-363569-8286528.jar
+[14juil.2026 13:25:30.067] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-windows-363569-8286528.jar with {mcwwindows} mods - versions {2.4.2}
+[14juil.2026 13:25:30.080] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\curse.maven\macaws-doors-378646\8286532\714e5dbabcbc4e6c7ccd62a31e44e04b2af56c65\macaws-doors-378646-8286532.jar
+[14juil.2026 13:25:30.081] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-doors-378646-8286532.jar with {mcwdoors} mods - versions {1.1.5}
+[14juil.2026 13:25:30.099] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\curse.maven\biomes-o-plenty-220318\8384501\e826009453d28678c2f89f2b5bf9af8f8f3786c5\biomes-o-plenty-220318-8384501.jar
+[14juil.2026 13:25:30.100] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file biomes-o-plenty-220318-8384501.jar with {biomesoplenty} mods - versions {26.1.2.0.42}
+[14juil.2026 13:25:30.106] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\curse.maven\glitchcore-955399\8332870\408ee5c6833ae999b6c670893b2e8c5cc5086287\glitchcore-955399-8332870.jar
+[14juil.2026 13:25:30.106] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file glitchcore-955399-8332870.jar with {glitchcore} mods - versions {26.2.0.0.0}
+[14juil.2026 13:25:30.112] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\curse.maven\terrablender-563928\8384515\d920d650da4441f079b73cb3ce10dbdc855946ee\terrablender-563928-8384515.jar
+[14juil.2026 13:25:30.113] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file terrablender-563928-8384515.jar with {terrablender} mods - versions {26.2.0.0.2}
+[14juil.2026 13:25:30.132] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\curse.maven\macaws-furniture-359540\8286526\187439bad61ab58a96ced344b11758272131184e\macaws-furniture-359540-8286526.jar
+[14juil.2026 13:25:30.133] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-furniture-359540-8286526.jar with {mcwfurnitures} mods - versions {3.4.2}
+[14juil.2026 13:25:30.147] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\.gradle\caches\modules-2\files-2.1\curse.maven\macaws-trapdoors-400933\8286537\e54466d5b726fd8e61d7dff8cf37aa712bf14028\macaws-trapdoors-400933-8286537.jar
+[14juil.2026 13:25:30.149] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file macaws-trapdoors-400933-8286537.jar with {mcwtrpdoors} mods - versions {1.1.5}
+[14juil.2026 13:25:30.158] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\libs\mcw-paths-1.1.1-mc26.2forge.jar
+[14juil.2026 13:25:30.159] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file mcw-paths-1.1.1-mc26.2forge.jar with {mcwpaths} mods - versions {1.1.1}
+[14juil.2026 13:25:30.216] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate /
+[14juil.2026 13:25:30.217] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file union:/C:/Users/Samle/Music/McwMods/Macaw-s-Addons/BOP/26.2-Multi/.gradle/mavenizer/repo/net/minecraftforge/forge/26.2-65.0.3/forge-26.2-65.0.3.jar%231!/ with {forge} mods - versions {65.0.3}
+[14juil.2026 13:25:30.223] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from macaws-bridges-351725-8286536.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from , it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from macaws-stairs-1119394-8286538.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from terrablender-563928-8384515.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from glitchcore-955399-8332870.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from javafmllanguage-26.2-65.0.3.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from biomes-o-plenty-220318-8384501.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from macaws-roofs-352039-8286531.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from mclanguage-26.2-65.0.3.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from macaws-doors-378646-8286532.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from macaws-trapdoors-400933-8286537.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from macaws-furniture-359540-8286526.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from macaws-fences-and-walls-453925-8286535.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from fmlcore-26.2-65.0.3.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from addonslib-1090999-8424889.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from macaws-windows-363569-8286528.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.226] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from , it does not contain dependency information.
+[14juil.2026 13:25:30.227] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from main, it does not contain dependency information.
+[14juil.2026 13:25:30.227] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from lowcodelanguage-26.2-65.0.3.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.227] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from mcw-paths-1.1.1-mc26.2forge.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.241] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Failed to load resource META-INF/jarjar/metadata.json from mixinextras-forge-0.5.3.jar!/META-INF/jars/MixinExtras-0.5.3.jar, it does not contain dependency information.
+[14juil.2026 13:25:30.243] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: JarJar Candidated for com.github.LlamaLad7:MixinExtras
+[14juil.2026 13:25:30.243] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: 	*mixinextras-forge-0.5.3.jar!/META-INF/jars/MixinExtras-0.5.3.jar
+[14juil.2026 13:25:30.243] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: JarJar Candidated for io.github.llamalad7:mixinextras-forge
+[14juil.2026 13:25:30.243] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: 	*mixinextras-forge-0.5.3.jar
+[14juil.2026 13:25:30.244] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/JAR-JAR]: Found 2 dependencies adding them to mods collection
+[14juil.2026 13:25:30.251] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file union:/C:/Users/Samle/Music/McwMods/Macaw-s-Addons/BOP/26.2-Multi/.gradle/mavenizer/repo/net/minecraftforge/forge/26.2-65.0.3/forge-26.2-65.0.3.jar%230!/ with languages [LanguageSpec[languageName=minecraft, acceptedVersions=1]]
+[14juil.2026 13:25:30.251] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file macaws-bridges-351725-8286536.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[14juil.2026 13:25:30.251] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file macaws-stairs-1119394-8286538.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[14juil.2026 13:25:30.251] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file terrablender-563928-8384515.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[65,)]]
+[14juil.2026 13:25:30.252] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file glitchcore-955399-8332870.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[65,)]]
+[14juil.2026 13:25:30.252] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file biomes-o-plenty-220318-8384501.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[65,)]]
+[14juil.2026 13:25:30.252] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file macaws-roofs-352039-8286531.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[14juil.2026 13:25:30.252] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file macaws-doors-378646-8286532.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[14juil.2026 13:25:30.252] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file macaws-fences-and-walls-453925-8286535.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[14juil.2026 13:25:30.252] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file macaws-furniture-359540-8286526.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[14juil.2026 13:25:30.252] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file macaws-trapdoors-400933-8286537.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[14juil.2026 13:25:30.253] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file addonslib-1090999-8424889.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[65,)]]
+[14juil.2026 13:25:30.253] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file macaws-windows-363569-8286528.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[14juil.2026 13:25:30.253] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file union:/C:/Users/Samle/Music/McwMods/Macaw-s-Addons/BOP/26.2-Multi/.gradle/mavenizer/repo/net/minecraftforge/forge/26.2-65.0.3/forge-26.2-65.0.3.jar%231!/ with languages [LanguageSpec[languageName=javafml, acceptedVersions=[24,]]]
+[14juil.2026 13:25:30.253] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\build\classes\java\main with languages [LanguageSpec[languageName=javafml, acceptedVersions=[65,)]]
+[14juil.2026 13:25:30.253] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file mcw-paths-1.1.1-mc26.2forge.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[28,)]]
+[14juil.2026 13:25:30.254] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file mixinextras-forge-0.5.3.jar with languages []
+[14juil.2026 13:25:30.254] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file /MixinExtras-0.5.3.jar with languages []
+[14juil.2026 13:25:30.254] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service fml
+[14juil.2026 13:25:30.254] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service forge
+[14juil.2026 13:25:30.254] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service forge
+[14juil.2026 13:25:30.267] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found 3 language providers
+[14juil.2026 13:25:30.267] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider minecraft, version 1.0
+[14juil.2026 13:25:30.268] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider lowcodefml, version 65
+[14juil.2026 13:25:30.268] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider javafml, version 65.0.3
+[14juil.2026 13:25:30.270] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Configured system mods: [minecraft, forge]
+[14juil.2026 13:25:30.270] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Found system mod: minecraft
+[14juil.2026 13:25:30.270] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Found system mod: forge
+[14juil.2026 13:25:30.271] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Found 11 mod requirements (11 mandatory, 0 optional)
+[14juil.2026 13:25:30.271] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Found 0 mod requirements missing (0 mandatory, 0 optional)
+[14juil.2026 13:25:30.302] [main/DEBUG] [net.minecraftforge.fml.loading.MCPNamingService/CORE]: Loaded 0 method mappings from methods.csv
+[14juil.2026 13:25:30.303] [main/DEBUG] [net.minecraftforge.fml.loading.MCPNamingService/CORE]: Loaded 0 field mappings from fields.csv
+[14juil.2026 13:25:30.328] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading transformers
+[14juil.2026 13:25:30.328] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service mixin
+[14juil.2026 13:25:30.328] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service mixin
+[14juil.2026 13:25:30.328] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service fml
+[14juil.2026 13:25:30.328] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service fml
+[14juil.2026 13:25:30.328] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service forge
+[14juil.2026 13:25:30.339] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer FieldToMethodTransformer[className=net.minecraft.world.level.biome.Biome, fields={climateSettings=getModifiedClimateSettings, specialEffects=getModifiedSpecialEffects}] to Target : CLASS {Lnet/minecraft/world/level/biome/Biome;} {} {V}
+[14juil.2026 13:25:30.340] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer FieldToMethodTransformer[className=net.minecraft.world.level.block.FlowerPotBlock, fields={potted=getPotted}] to Target : CLASS {Lnet/minecraft/world/level/block/FlowerPotBlock;} {} {V}
+[14juil.2026 13:25:30.340] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer FieldToMethodTransformer[className=net.minecraft.world.level.block.LiquidBlock, fields={fluid=getFluid}] to Target : CLASS {Lnet/minecraft/world/level/block/LiquidBlock;} {} {V}
+[14juil.2026 13:25:30.340] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer FieldToMethodTransformer[className=net.minecraft.world.effect.MobEffectInstance, fields={effect=getEffect}] to Target : CLASS {Lnet/minecraft/world/effect/MobEffectInstance;} {} {V}
+[14juil.2026 13:25:30.340] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer FieldToMethodTransformer[className=net.minecraft.world.item.BucketItem, fields={content=getFluid}] to Target : CLASS {Lnet/minecraft/world/item/BucketItem;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/gametest/framework/GameTestEntityBuilder;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces$OceanRuinPiece;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/entity/animal/equine/SkeletonTrapGoal;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/WoodlandMansionPieces$WoodlandMansionPiece;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/level/levelgen/PatrolSpawner;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/level/levelgen/PhantomSpawner;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/entity/monster/spider/Spider;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/level/NaturalSpawner;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/entity/animal/equine/ZombieHorse;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/level/block/entity/trialspawner/TrialSpawner;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/server/commands/SummonCommand;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/entity/monster/zombie/Husk;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/entity/monster/illager/Evoker$EvokerSummonSpellGoal;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/entity/monster/Strider;} {} {V}
+[14juil.2026 13:25:30.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/entity/ai/village/VillageSiege;} {} {V}
+[14juil.2026 13:25:30.343] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/entity/raid/Raid;} {} {V}
+[14juil.2026 13:25:30.343] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/entity/npc/CatSpawner;} {} {V}
+[14juil.2026 13:25:30.343] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/server/commands/RaidCommand;} {} {V}
+[14juil.2026 13:25:30.343] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/SwampHutPiece;} {} {V}
+[14juil.2026 13:25:30.343] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/OceanMonumentPieces$OceanMonumentPiece;} {} {V}
+[14juil.2026 13:25:30.343] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/entity/EntityType;} {} {V}
+[14juil.2026 13:25:30.343] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/entity/monster/zombie/Drowned;} {} {V}
+[14juil.2026 13:25:30.343] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer MethodRedirector[] to Target : CLASS {Lnet/minecraft/world/entity/monster/zombie/Zombie;} {} {V}
+[14juil.2026 13:25:30.343] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service forge
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: Processing launch tasks for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mixin.synthetic)
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mixin.synthetic)
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mixin.synthetic)
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mixin.synthetic)
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mixin.synthetic)
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mixin.synthetic)]
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwbridges)
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwbridges)
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwbridges)
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwbridges)
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwbridges)
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwbridges)]
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(minecraft)
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(minecraft)
+[14juil.2026 13:25:30.406] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(minecraft)
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(minecraft)
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(minecraft)
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwstairs)
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwstairs)
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwstairs)
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwstairs)
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwstairs)
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwstairs)]
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(terrablender)
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(terrablender)
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(terrablender)
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(terrablender)
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(terrablender)
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(terrablender)]
+[14juil.2026 13:25:30.408] [main/DEBUG] [mixin/]: Registering mixin config: terrablender.mixins.json source=SecureJarResource(terrablender)
+[14juil.2026 13:25:30.415] [main/DEBUG] [mixin/]: Compatibility level JAVA_17 specified by terrablender.mixins.json is higher than the maximum level supported by this version of mixin (JAVA_13).
+[14juil.2026 13:25:30.419] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[14juil.2026 13:25:30.420] [main/DEBUG] [mixin/]: Registering mixin config: terrablender.forge.mixins.json source=SecureJarResource(terrablender)
+[14juil.2026 13:25:30.420] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(glitchcore)
+[14juil.2026 13:25:30.421] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(glitchcore)
+[14juil.2026 13:25:30.421] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(glitchcore)
+[14juil.2026 13:25:30.421] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(glitchcore)
+[14juil.2026 13:25:30.421] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(glitchcore)
+[14juil.2026 13:25:30.421] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(glitchcore)]
+[14juil.2026 13:25:30.421] [main/DEBUG] [mixin/]: Registering mixin config: glitchcore.mixins.json source=SecureJarResource(glitchcore)
+[14juil.2026 13:25:30.422] [main/DEBUG] [mixin/]: Registering mixin config: glitchcore.forge.mixins.json source=SecureJarResource(glitchcore)
+[14juil.2026 13:25:30.423] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwroofs)
+[14juil.2026 13:25:30.423] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwroofs)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwroofs)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwroofs)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwroofs)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwroofs)]
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwdoors)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwdoors)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwdoors)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwdoors)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwdoors)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwdoors)]
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwtrpdoors)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwtrpdoors)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwtrpdoors)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwtrpdoors)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwtrpdoors)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwtrpdoors)]
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwfurnitures)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwfurnitures)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwfurnitures)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwfurnitures)
+[14juil.2026 13:25:30.424] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwfurnitures)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwfurnitures)]
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwfences)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwfences)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwfences)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwfences)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwfences)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwfences)]
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwwindows)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwwindows)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwwindows)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwwindows)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwwindows)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwwindows)]
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(net.minecraftforge.forge)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(net.minecraftforge.forge)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(net.minecraftforge.forge)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(net.minecraftforge.forge)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(net.minecraftforge.forge)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(net.minecraftforge.forge)]
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwbiomesoplenty)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwbiomesoplenty)
+[14juil.2026 13:25:30.425] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwbiomesoplenty)
+[14juil.2026 13:25:30.426] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwbiomesoplenty)
+[14juil.2026 13:25:30.426] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwbiomesoplenty)
+[14juil.2026 13:25:30.426] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwbiomesoplenty)]
+[14juil.2026 13:25:30.426] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(biomesoplenty)
+[14juil.2026 13:25:30.426] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(biomesoplenty)
+[14juil.2026 13:25:30.426] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(biomesoplenty)
+[14juil.2026 13:25:30.426] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(biomesoplenty)
+[14juil.2026 13:25:30.426] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(biomesoplenty)
+[14juil.2026 13:25:30.426] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(biomesoplenty)]
+[14juil.2026 13:25:30.426] [main/DEBUG] [mixin/]: Registering mixin config: biomesoplenty.mixins.json source=SecureJarResource(biomesoplenty)
+[14juil.2026 13:25:30.427] [main/DEBUG] [mixin/]: Registering mixin config: biomesoplenty.forge.mixins.json source=SecureJarResource(biomesoplenty)
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(addonslib)
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(addonslib)
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(addonslib)
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(addonslib)
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(addonslib)
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(addonslib)]
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mcwpaths)
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mcwpaths)
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mcwpaths)
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mcwpaths)
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mcwpaths)
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwpaths)]
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mixinextras)
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mixinextras)
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mixinextras)
+[14juil.2026 13:25:30.428] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mixinextras)
+[14juil.2026 13:25:30.429] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mixinextras)
+[14juil.2026 13:25:30.429] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mixinextras)]
+[14juil.2026 13:25:30.429] [main/DEBUG] [mixin/]: Registering mixin config: mixinextras.init.mixins.json source=SecureJarResource(mixinextras)
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(MixinExtras)
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(MixinExtras)
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(MixinExtras)
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(MixinExtras)
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(MixinExtras)
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(MixinExtras)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: inject() running with 20 agents
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mixin.synthetic)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwbridges)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwstairs)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(terrablender)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(glitchcore)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwroofs)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwdoors)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwtrpdoors)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwfurnitures)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwfences)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwwindows)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(net.minecraftforge.forge)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwbiomesoplenty)]
+[14juil.2026 13:25:30.430] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(biomesoplenty)]
+[14juil.2026 13:25:30.431] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(addonslib)]
+[14juil.2026 13:25:30.431] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mcwpaths)]
+[14juil.2026 13:25:30.431] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mixinextras)]
+[14juil.2026 13:25:30.431] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(MixinExtras)]
+[14juil.2026 13:25:30.431] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\Samle\AppData\Roaming\.minecraft\assets, --assetIndex, 32, --mod, mcwbiomesoplenty, --all, --output, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\src\generated\resources, --existing, C:\Users\Samle\Music\McwMods\Macaw-s-Addons\BOP\26.2-Multi\forge\src\main\resources]
+[14juil.2026 13:25:30.452] [main/DEBUG] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
+[14juil.2026 13:25:30.452] [main/DEBUG] [mixin/]: Selecting config terrablender.mixins.json
+[14juil.2026 13:25:30.456] [main/DEBUG] [mixin/]: Selecting config terrablender.forge.mixins.json
+[14juil.2026 13:25:30.457] [main/DEBUG] [mixin/]: Selecting config glitchcore.mixins.json
+[14juil.2026 13:25:30.458] [main/WARN] [mixin/]: Reference map 'glitchcore.refmap.json' for glitchcore.mixins.json could not be read. If this is a development environment you can ignore this message
+[14juil.2026 13:25:30.458] [main/DEBUG] [mixin/]: Selecting config glitchcore.forge.mixins.json
+[14juil.2026 13:25:30.459] [main/WARN] [mixin/]: Reference map 'glitchcore.refmap.json' for glitchcore.forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[14juil.2026 13:25:30.459] [main/DEBUG] [mixin/]: Selecting config biomesoplenty.mixins.json
+[14juil.2026 13:25:30.460] [main/WARN] [mixin/]: Reference map 'biomesoplenty.refmap.json' for biomesoplenty.mixins.json could not be read. If this is a development environment you can ignore this message
+[14juil.2026 13:25:30.461] [main/DEBUG] [mixin/]: Selecting config biomesoplenty.forge.mixins.json
+[14juil.2026 13:25:30.462] [main/WARN] [mixin/]: Reference map 'biomesoplenty.refmap.json' for biomesoplenty.forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[14juil.2026 13:25:30.462] [main/DEBUG] [mixin/]: Selecting config mixinextras.init.mixins.json
+[14juil.2026 13:25:30.487] [main/DEBUG] [MixinExtras|Service/]: com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3) is taking over from null
+[14juil.2026 13:25:30.507] [main/DEBUG] [mixin/]: Registering new injector for @Inject with org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo
+[14juil.2026 13:25:30.508] [main/DEBUG] [mixin/]: Registering new injector for @ModifyArg with org.spongepowered.asm.mixin.injection.struct.ModifyArgInjectionInfo
+[14juil.2026 13:25:30.508] [main/DEBUG] [mixin/]: Registering new injector for @ModifyArgs with org.spongepowered.asm.mixin.injection.struct.ModifyArgsInjectionInfo
+[14juil.2026 13:25:30.510] [main/DEBUG] [mixin/]: Registering new injector for @Redirect with org.spongepowered.asm.mixin.injection.struct.RedirectInjectionInfo
+[14juil.2026 13:25:30.511] [main/DEBUG] [mixin/]: Registering new injector for @ModifyVariable with org.spongepowered.asm.mixin.injection.struct.ModifyVariableInjectionInfo
+[14juil.2026 13:25:30.512] [main/DEBUG] [mixin/]: Registering new injector for @ModifyConstant with org.spongepowered.asm.mixin.injection.struct.ModifyConstantInjectionInfo
+[14juil.2026 13:25:30.519] [main/DEBUG] [mixin/]: Preparing terrablender.mixins.json (11)
+[14juil.2026 13:25:30.559] [main/WARN] [mixin/]: Mixin environment was unable to detect the current side, sided mixins will not be applied
+[14juil.2026 13:25:30.559] [main/DEBUG] [mixin/]: Preparing terrablender.forge.mixins.json (0)
+[14juil.2026 13:25:30.559] [main/WARN] [mixin/]: Mixin environment was unable to detect the current side, sided mixins will not be applied
+[14juil.2026 13:25:30.559] [main/DEBUG] [mixin/]: Preparing glitchcore.mixins.json (5)
+[14juil.2026 13:25:30.570] [main/WARN] [mixin/]: Mixin environment was unable to detect the current side, sided mixins will not be applied
+[14juil.2026 13:25:30.571] [main/DEBUG] [mixin/]: Preparing glitchcore.forge.mixins.json (7)
+[14juil.2026 13:25:30.579] [main/WARN] [mixin/]: Mixin environment was unable to detect the current side, sided mixins will not be applied
+[14juil.2026 13:25:30.580] [main/DEBUG] [mixin/]: Preparing biomesoplenty.mixins.json (0)
+[14juil.2026 13:25:30.580] [main/WARN] [mixin/]: Mixin environment was unable to detect the current side, sided mixins will not be applied
+[14juil.2026 13:25:30.580] [main/DEBUG] [mixin/]: Preparing biomesoplenty.forge.mixins.json (2)
+[14juil.2026 13:25:30.581] [main/WARN] [mixin/]: Mixin environment was unable to detect the current side, sided mixins will not be applied
+[14juil.2026 13:25:30.581] [main/DEBUG] [mixin/]: Preparing mixinextras.init.mixins.json (0)
+[14juil.2026 13:25:30.581] [main/WARN] [mixin/]: Mixin environment was unable to detect the current side, sided mixins will not be applied
+[14juil.2026 13:25:30.598] [main/DEBUG] [mixin/]: Inner class glitchcore/forge/mixin/impl/MixinPacketHandler$1 in glitchcore/forge/mixin/impl/MixinPacketHandler on glitchcore/network/PacketHandler gets unique name glitchcore/network/PacketHandler$Anonymous$28a6dfff60cb4db1a128370f10dc09eb
+[14juil.2026 13:25:30.690] [main/DEBUG] [io.netty.util.internal.logging.InternalLoggerFactory/]: Using SLF4J as the default logging framework
+[14juil.2026 13:25:30.691] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.level: simple
+[14juil.2026 13:25:30.691] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.targetRecords: 4
+[14juil.2026 13:25:30.776] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
+[14juil.2026 13:25:30.778] [main/DEBUG] [mixin/]: Registering new injector for @SugarWrapper with com.llamalad7.mixinextras.sugar.impl.SugarWrapperInjectionInfo
+[14juil.2026 13:25:30.778] [main/DEBUG] [mixin/]: Registering new injector for @FactoryRedirectWrapper with com.llamalad7.mixinextras.wrapper.factory.FactoryRedirectWrapperInjectionInfo
+[14juil.2026 13:25:30.778] [main/DEBUG] [mixin/]: Registering new injector for @ExpressionInjectorWrapper with com.llamalad7.mixinextras.expression.impl.wrapper.ExpressionInjectorWrapperInjectionInfo
+[14juil.2026 13:25:30.785] [main/DEBUG] [mixin/]: Mixing MixinBuiltInRegistries from terrablender.mixins.json into net.minecraft.core.registries.BuiltInRegistries
+[14juil.2026 13:25:30.786] [main/DEBUG] [mixin/]: terrablender.mixins.json:MixinBuiltInRegistries: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:30.789] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$registerSimple$0(Lnet/minecraft/core/registries/BuiltInRegistries$RegistryBootstrap;Lnet/minecraft/core/Registry;)Ljava/lang/Object; to md2a8178$terrablender$lambda$registerSimple$0$0 in terrablender.mixins.json:MixinBuiltInRegistries
+[14juil.2026 13:25:30.907] [main/DEBUG] [mixin/]: Mixing MixinServerLevel from glitchcore.mixins.json into net.minecraft.server.level.ServerLevel
+[14juil.2026 13:25:30.912] [main/DEBUG] [mixin/]: glitchcore.mixins.json:MixinServerLevel: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:30.948] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/EntityType.create
+[14juil.2026 13:25:31.967] [main/DEBUG] [mixin/]: Mixing MixinItemStack from glitchcore.mixins.json into net.minecraft.world.item.ItemStack
+[14juil.2026 13:25:31.967] [main/DEBUG] [mixin/]: glitchcore.mixins.json:MixinItemStack: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:32.441] [main/DEBUG] [mixin/]: Mixing MixinServerPlayer from glitchcore.forge.mixins.json into net.minecraft.server.level.ServerPlayer
+[14juil.2026 13:25:32.448] [main/DEBUG] [mixin/]: glitchcore.forge.mixins.json:MixinServerPlayer: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:32.504] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/monster/spider/Spider.finalizeSpawn
+[14juil.2026 13:25:32.525] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/monster/zombie/Drowned.finalizeSpawn
+[14juil.2026 13:25:32.526] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/monster/zombie/Zombie.hurtServer
+[14juil.2026 13:25:32.526] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/monster/zombie/Zombie.finalizeSpawn
+[14juil.2026 13:25:32.526] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/monster/zombie/Zombie.lambda$convertVillagerToZombieVillager$1
+[14juil.2026 13:25:32.551] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/monster/illager/Evoker$EvokerSummonSpellGoal.performSpellCasting
+[14juil.2026 13:25:32.578] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/monster/zombie/Husk.finalizeSpawn
+[14juil.2026 13:25:32.578] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/monster/zombie/Husk.finalizeSpawn
+[14juil.2026 13:25:32.633] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/animal/equine/SkeletonTrapGoal.createHorse
+[14juil.2026 13:25:32.633] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/animal/equine/SkeletonTrapGoal.createSkeleton
+[14juil.2026 13:25:32.638] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/monster/Strider.spawnJockey
+[14juil.2026 13:25:32.665] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/animal/equine/ZombieHorse.finalizeSpawn
+[14juil.2026 13:25:33.146] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces$OceanRuinPiece.handleDataMarker
+[14juil.2026 13:25:33.149] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/level/levelgen/structure/structures/SwampHutPiece.postProcess
+[14juil.2026 13:25:33.149] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/level/levelgen/structure/structures/SwampHutPiece.spawnCat
+[14juil.2026 13:25:33.150] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/level/levelgen/structure/structures/OceanMonumentPieces$OceanMonumentPiece.spawnElder
+[14juil.2026 13:25:33.154] [main/DEBUG] [net.minecraftforge.forge.transformers.MethodRedirector/]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/level/levelgen/structure/structures/WoodlandMansionPieces$WoodlandMansionPiece.handleDataMarker
+[14juil.2026 13:25:33.198] [main/DEBUG] [mixin/]: Mixing MixinBiomeSource from terrablender.mixins.json into net.minecraft.world.level.biome.BiomeSource
+[14juil.2026 13:25:33.199] [main/DEBUG] [mixin/]: terrablender.mixins.json:MixinBiomeSource: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:33.199] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$appendDeferredBiomesList$0(Ljava/util/List;)Ljava/util/Set; to md2a8178$terrablender$lambda$appendDeferredBiomesList$0$0 in terrablender.mixins.json:MixinBiomeSource
+[14juil.2026 13:25:33.232] [main/DEBUG] [mixin/]: Mixing MixinMultiNoiseBiomeSource from terrablender.mixins.json into net.minecraft.world.level.biome.MultiNoiseBiomeSource
+[14juil.2026 13:25:33.232] [main/DEBUG] [mixin/]: terrablender.mixins.json:MixinMultiNoiseBiomeSource: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:33.235] [main/DEBUG] [mixin/]: Mixing MultiNoiseBiomeSourceAccess from terrablender.mixins.json into net.minecraft.world.level.biome.MultiNoiseBiomeSource
+[14juil.2026 13:25:33.235] [main/DEBUG] [mixin/]: terrablender.mixins.json:MultiNoiseBiomeSourceAccess: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:33.246] [main/DEBUG] [mixin/]: Mixing MixinParameterList from terrablender.mixins.json into net.minecraft.world.level.biome.Climate$ParameterList
+[14juil.2026 13:25:33.246] [main/DEBUG] [mixin/]: terrablender.mixins.json:MixinParameterList: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:33.246] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$initializeForTerraBlender$1(Lnet/minecraft/core/Registry;Ljava/util/List;Lcom/mojang/datafixers/util/Pair;)V to md2a8178$terrablender$lambda$initializeForTerraBlender$1$0 in terrablender.mixins.json:MixinParameterList
+[14juil.2026 13:25:33.246] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$initializeForTerraBlender$0(Lterrablender/api/RegionType;JLterrablender/worldgen/noise/InitialLayer;)Lterrablender/worldgen/noise/Area; to md2a8178$terrablender$lambda$initializeForTerraBlender$0$1 in terrablender.mixins.json:MixinParameterList
+[14juil.2026 13:25:33.263] [main/DEBUG] [mixin/]: Mixing MixinTheEndBiomeSource from terrablender.mixins.json into net.minecraft.world.level.biome.TheEndBiomeSource
+[14juil.2026 13:25:33.263] [main/DEBUG] [mixin/]: terrablender.mixins.json:MixinTheEndBiomeSource: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:33.263] [main/DEBUG] [mixin/]: Renaming synthetic method lambda$initializeForTerraBlender$0(Lnet/minecraft/resources/ResourceKey;)V to md2a8178$terrablender$lambda$initializeForTerraBlender$0$0 in terrablender.mixins.json:MixinTheEndBiomeSource
+[14juil.2026 13:25:33.275] [main/DEBUG] [mixin/]: Mixing MixinNoiseBasedChunkGenerator from terrablender.mixins.json into net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator
+[14juil.2026 13:25:33.275] [main/DEBUG] [mixin/]: terrablender.mixins.json:MixinNoiseBasedChunkGenerator: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:33.279] [main/DEBUG] [mixin/]: Mixing MixinChunkGenerator from terrablender.mixins.json into net.minecraft.world.level.chunk.ChunkGenerator
+[14juil.2026 13:25:33.279] [main/DEBUG] [mixin/]: terrablender.mixins.json:MixinChunkGenerator: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:33.283] [main/DEBUG] [mixin/]: Mixing MixinNoiseGeneratorSettings from terrablender.mixins.json into net.minecraft.world.level.levelgen.NoiseGeneratorSettings
+[14juil.2026 13:25:33.283] [main/DEBUG] [mixin/]: terrablender.mixins.json:MixinNoiseGeneratorSettings: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:33.584] [main/DEBUG] [net.minecraftforge.fml.ModWorkManager/LOADING]: Using 16 threads for parallel mod-loading
+[14juil.2026 13:25:33.588] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.591] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwbridges.kikoz.MacawsBridges
+[14juil.2026 13:25:33.592] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass mcwbridges/com.mcwbridges.kikoz.MacawsBridges with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.592] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.592] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwstairs.kikoz.MacawsStairs
+[14juil.2026 13:25:33.592] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass mcwstairs/com.mcwstairs.kikoz.MacawsStairs with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.592] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.592] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for terrablender.core.TerraBlenderForge
+[14juil.2026 13:25:33.594] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass terrablender/terrablender.core.TerraBlenderForge with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.594] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.594] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for glitchcore.forge.GlitchCoreForge
+[14juil.2026 13:25:33.594] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass glitchcore/glitchcore.forge.GlitchCoreForge with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.594] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.594] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwroofs.kikoz.MacawsRoofs
+[14juil.2026 13:25:33.594] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass mcwroofs/com.mcwroofs.kikoz.MacawsRoofs with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.594] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.594] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwdoors.kikoz.MacawsDoors
+[14juil.2026 13:25:33.594] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass mcwdoors/com.mcwdoors.kikoz.MacawsDoors with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.594] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.594] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwtrpdoors.kikoz.MacawsTrapdoors
+[14juil.2026 13:25:33.595] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass mcwtrpdoors/com.mcwtrpdoors.kikoz.MacawsTrapdoors with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.595] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.595] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwfurnitures.kikoz.MacawsFurnitures
+[14juil.2026 13:25:33.595] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass mcwfurnitures/com.mcwfurnitures.kikoz.MacawsFurnitures with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.595] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.595] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwfences.kikoz.MacawsFences
+[14juil.2026 13:25:33.595] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass mcwfences/com.mcwfences.kikoz.MacawsFences with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.595] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.595] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwwindows.kikoz.MacawsWindows
+[14juil.2026 13:25:33.595] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass mcwwindows/com.mcwwindows.kikoz.MacawsWindows with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.595] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.595] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.minecraftforge.common.ForgeMod
+[14juil.2026 13:25:33.596] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass net.minecraftforge.forge/net.minecraftforge.common.ForgeMod with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.596] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.596] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for fr.samlegamer.mcwbiomesoplenty.McwBOPForge
+[14juil.2026 13:25:33.597] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass mcwbiomesoplenty/fr.samlegamer.mcwbiomesoplenty.McwBOPForge with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.597] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.597] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for biomesoplenty.forge.core.BiomesOPlentyForge
+[14juil.2026 13:25:33.597] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass biomesoplenty/biomesoplenty.forge.core.BiomesOPlentyForge with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.597] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.597] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for fr.samlegamer.addonslib.AddonsLibForge
+[14juil.2026 13:25:33.597] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass addonslib/fr.samlegamer.addonslib.AddonsLibForge with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.597] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@71148574 - got SecureModuleClassLoader[LAYER PLUGIN]@1018067851
+[14juil.2026 13:25:33.597] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for com.mcwpaths.kikoz.MacawsPaths
+[14juil.2026 13:25:33.597] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Loaded modclass mcwpaths/com.mcwpaths.kikoz.MacawsPaths with TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.610] [modloading-worker-0/DEBUG] [mixin/]: Mixing impl.MixinPacketHandler from glitchcore.forge.mixins.json into glitchcore.network.PacketHandler
+[14juil.2026 13:25:33.610] [modloading-worker-0/DEBUG] [mixin/]: glitchcore.forge.mixins.json:impl.MixinPacketHandler: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:33.611] [modloading-worker-0/DEBUG] [mixin/]: Renaming synthetic method lambda$register$0(Lglitchcore/network/CustomPacket;Lglitchcore/network/CustomPacket;Lnet/minecraftforge/event/network/CustomPayloadEvent$Context;)V to md2a8178$glitchcore$lambda$register$0$0 in glitchcore.forge.mixins.json:impl.MixinPacketHandler
+[14juil.2026 13:25:33.611] [modloading-worker-0/DEBUG] [mixin/]: Renaming synthetic method lambda$register$1(Lglitchcore/network/CustomPacket;Lglitchcore/network/CustomPacket;Lnet/minecraftforge/event/network/CustomPayloadEvent$Context;)V to md2a8178$glitchcore$lambda$register$1$1 in glitchcore.forge.mixins.json:impl.MixinPacketHandler
+[14juil.2026 13:25:33.613] [modloading-worker-0/DEBUG] [mixin/]: Renaming synthetic method lambda$static$0(Lnet/minecraftforge/network/PacketDistributor;Lnet/minecraft/server/network/ServerGamePacketListenerImpl;)Ljava/util/function/Consumer; to md2a8178$glitchcore$lambda$static$0$2 in glitchcore.forge.mixins.json:impl.MixinPacketHandler
+[14juil.2026 13:25:33.631] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for terrablender
+[14juil.2026 13:25:33.635] [modloading-worker-0/INFO] [fr.samlegamer.mcwbiomesoplenty.McwBOP/]: Macaw's Biomes O' Plenty Loading...
+[14juil.2026 13:25:33.647] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Forge Version package package net.minecraftforge.versions.forge, Forge, version 65.0 from TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.648] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge version 65.0.3
+[14juil.2026 13:25:33.648] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge spec 65.0
+[14juil.2026 13:25:33.648] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge group net.minecraftforge
+[14juil.2026 13:25:33.648] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: MCP Version package package net.minecraftforge.versions.mcp, Minecraft, version 26.2 from TransformingClassLoader[TRANSFORMER]@71148574
+[14juil.2026 13:25:33.648] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: Found MC version information 26.2
+[14juil.2026 13:25:33.648] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: Found MCP version information 20260616.103818
+[14juil.2026 13:25:33.648] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 65.0.3, for MC 26.2 with MCP 20260616.103818
+[14juil.2026 13:25:33.649] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v65.0.3 Initialized
+[14juil.2026 13:25:33.652] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for glitchcore
+[14juil.2026 13:25:33.654] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing glitchcore.forge.handlers.TooltipEventHandler to BOTH
+[14juil.2026 13:25:33.657] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[14juil.2026 13:25:33.658] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing glitchcore.forge.handlers.ToolModificationEventHandler to FORGE
+[14juil.2026 13:25:33.661] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing glitchcore.forge.handlers.TickEventHandler to FORGE
+[14juil.2026 13:25:33.663] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing glitchcore.forge.handlers.TagsUpdatedEventHandler to FORGE
+[14juil.2026 13:25:33.664] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing glitchcore.forge.handlers.RemapperEventHandler to FORGE
+[14juil.2026 13:25:33.664] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing glitchcore.forge.handlers.RegistryEventHandler to MOD
+[14juil.2026 13:25:33.665] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing glitchcore.forge.handlers.RegisterParticleProvidersEventHandler to BOTH
+[14juil.2026 13:25:33.666] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing glitchcore.forge.handlers.RegisterCommandsEventHandler to FORGE
+[14juil.2026 13:25:33.667] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing glitchcore.forge.handlers.InteractionEventHandler to FORGE
+[14juil.2026 13:25:33.670] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing glitchcore.forge.handlers.EntityRenderersEventHandler to BOTH
+[14juil.2026 13:25:33.671] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing glitchcore.forge.handlers.ColorsEventHandler to BOTH
+[14juil.2026 13:25:33.694] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwbridges
+[14juil.2026 13:25:33.699] [modloading-worker-0/DEBUG] [net.minecraftforge.network.NetworkInitialization/FORGE_NETWORK]: Registering Network forge:login v0
+[14juil.2026 13:25:33.699] [modloading-worker-0/DEBUG] [net.minecraftforge.network.NetworkInitialization/FORGE_NETWORK]: Registering Network forge:handshake v0
+[14juil.2026 13:25:33.700] [modloading-worker-0/DEBUG] [net.minecraftforge.network.NetworkInitialization/FORGE_NETWORK]: Registering Network forge:handshake v0
+[14juil.2026 13:25:33.700] [modloading-worker-0/DEBUG] [net.minecraftforge.network.NetworkInitialization/FORGE_NETWORK]: Registering Network forge:channel_registration v0
+[14juil.2026 13:25:33.706] [modloading-worker-0/INFO] [fr.samlegamer.mcwbiomesoplenty.McwBOP/]: Macaw's Biomes O' Plenty Is Charged !
+[14juil.2026 13:25:33.706] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwbiomesoplenty
+[14juil.2026 13:25:33.706] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing fr.samlegamer.mcwbiomesoplenty.ClientForge to BOTH
+[14juil.2026 13:25:33.708] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwtrpdoors
+[14juil.2026 13:25:33.708] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing fr.samlegamer.mcwbiomesoplenty.MappingForge to FORGE
+[14juil.2026 13:25:33.709] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwfences
+[14juil.2026 13:25:33.712] [modloading-worker-0/DEBUG] [mixin/]: Mixing impl.MixinEnvironment from glitchcore.forge.mixins.json into glitchcore.util.Environment
+[14juil.2026 13:25:33.712] [modloading-worker-0/DEBUG] [mixin/]: glitchcore.forge.mixins.json:impl.MixinEnvironment: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:33.719] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file addonslib-common.toml for addonslib tracking
+[14juil.2026 13:25:33.720] [modloading-worker-0/INFO] [fr.samlegamer.addonslib.AddonsLib/]: AddonsLib Forge !
+[14juil.2026 13:25:33.722] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwstairs
+[14juil.2026 13:25:33.722] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.mcwstairs.kikoz.MacawsStairs$ClientModEvents to BOTH
+[14juil.2026 13:25:33.722] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for addonslib
+[14juil.2026 13:25:33.724] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-client.toml for forge tracking
+[14juil.2026 13:25:33.724] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-server.toml for forge tracking
+[14juil.2026 13:25:33.724] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-common.toml for forge tracking
+[14juil.2026 13:25:33.725] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwdoors
+[14juil.2026 13:25:33.734] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for forge
+[14juil.2026 13:25:33.734] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.model.data.ModelDataManager to FORGE
+[14juil.2026 13:25:33.735] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.ClientForgeMod to BOTH
+[14juil.2026 13:25:33.738] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwwindows
+[14juil.2026 13:25:33.746] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwpaths
+[14juil.2026 13:25:33.746] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.mcwpaths.kikoz.MacawsPaths$ClientModEvents to BOTH
+[14juil.2026 13:25:33.751] [modloading-worker-0/DEBUG] [mixin/]: Mixing MixinBloodFluid from biomesoplenty.forge.mixins.json into biomesoplenty.block.BloodFluid
+[14juil.2026 13:25:33.752] [modloading-worker-0/DEBUG] [mixin/]: biomesoplenty.forge.mixins.json:MixinBloodFluid: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:33.754] [modloading-worker-0/DEBUG] [mixin/]: Mixing MixinLiquidNullFluid from biomesoplenty.forge.mixins.json into biomesoplenty.block.LiquidNullFluid
+[14juil.2026 13:25:33.754] [modloading-worker-0/DEBUG] [mixin/]: biomesoplenty.forge.mixins.json:MixinLiquidNullFluid: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:33.775] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwroofs
+[14juil.2026 13:25:33.786] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for biomesoplenty
+[14juil.2026 13:25:33.800] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mcwfurnitures
+[14juil.2026 13:25:33.809] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/energy/IEnergyStorage;
+[14juil.2026 13:25:33.809] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/fluids/capability/IFluidHandler;
+[14juil.2026 13:25:33.809] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/fluids/capability/IFluidHandlerItem;
+[14juil.2026 13:25:33.809] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/items/IItemHandler;
+[14juil.2026 13:25:34.716] [main/DEBUG] [mixin/]: Mixing impl.MixinBlockHelper from glitchcore.forge.mixins.json into glitchcore.util.BlockHelper
+[14juil.2026 13:25:34.717] [main/DEBUG] [mixin/]: glitchcore.forge.mixins.json:impl.MixinBlockHelper: Class version 69 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[14juil.2026 13:25:34.854] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [mcwbiomesoplenty]
+[14juil.2026 13:25:34.894] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Samle/Music/McwMods/Macaw-s-Addons/BOP/26.2-Multi/.gradle/mavenizer/repo/net/minecraftforge/forge/26.2-65.0.3/forge-26.2-65.0.3.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[14juil.2026 13:25:34.894] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Samle/Music/McwMods/Macaw-s-Addons/BOP/26.2-Multi/.gradle/mavenizer/repo/net/minecraftforge/forge/26.2-65.0.3/forge-26.2-65.0.3.jar%230!/data/.mcassetsroot' uses unexpected schema
+[14juil.2026 13:25:34.966] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: McwBOP Recipes
+[14juil.2026 13:25:35.918] [main/INFO] [net.minecraft.data.DataGenerator/]: McwBOP Recipes finished after 951 ms
+[14juil.2026 13:25:35.918] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id mcwbiomesoplenty
+[14juil.2026 13:25:35.960] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id mcwbiomesoplenty finished after 42 ms
+[14juil.2026 13:25:35.960] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id mcwbiomesoplenty
+[14juil.2026 13:25:35.964] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id mcwbiomesoplenty finished after 3 ms
+[14juil.2026 13:25:35.964] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 999 ms
+[14juil.2026 13:25:36.011] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 4232, old count: 0, new count: 4232, removed stale: 0, written: 4232

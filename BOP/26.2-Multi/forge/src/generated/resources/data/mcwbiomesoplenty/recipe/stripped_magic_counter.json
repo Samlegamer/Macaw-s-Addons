@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_counters",
+        "key": {
+          "A": "biomesoplenty:magic_slab",
+          "B": "biomesoplenty:stripped_magic_log"
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "id": "mcwbiomesoplenty:stripped_magic_counter"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "biomesoplenty",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_chairs",
+  "key": {
+    "A": "biomesoplenty:pine_log",
+    "B": "biomesoplenty:pine_slab",
+    "C": "biomesoplenty:pine_fence"
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "id": "mcwbiomesoplenty:pine_modern_chair"
+  }
+}
