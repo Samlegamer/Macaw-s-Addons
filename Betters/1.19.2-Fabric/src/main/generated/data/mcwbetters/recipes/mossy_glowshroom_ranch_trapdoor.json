@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "group": "ranch_trapdoors",
+  "key": {
+    "A": {
+      "item": "betterend:mossy_glowshroom_log"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BBB",
+    "ABA"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbetters:mossy_glowshroom_ranch_trapdoor"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "group": "barn_trapdoors",
+  "key": {
+    "A": {
+      "item": "betterend:lucernia_planks"
+    },
+    "B": {
+      "item": "mcwbetters:lucernia_glass_trapdoor"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:lucernia_barn_trapdoor"
+  }
+}

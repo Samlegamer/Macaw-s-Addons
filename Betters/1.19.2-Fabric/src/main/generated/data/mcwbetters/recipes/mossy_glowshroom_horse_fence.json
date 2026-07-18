@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfences"
+      ]
+    }
+  ],
+  "group": "horse",
+  "key": {
+    "A": {
+      "item": "betterend:mossy_glowshroom_log"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BAB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:mossy_glowshroom_horse_fence"
+  }
+}

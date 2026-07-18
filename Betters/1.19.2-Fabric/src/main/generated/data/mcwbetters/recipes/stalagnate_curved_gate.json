@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfences"
+      ]
+    }
+  ],
+  "group": "curved_gate",
+  "key": {
+    "A": {
+      "item": "betternether:stalagnate_planks"
+    },
+    "B": {
+      "item": "betternether:stalagnate_log"
+    }
+  },
+  "pattern": [
+    "B A",
+    "BAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbetters:stalagnate_curved_gate"
+  }
+}

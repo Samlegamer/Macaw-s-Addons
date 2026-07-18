@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "betterend:lacugrove_trapdoor"
+    },
+    {
+      "item": "betterend:lacugrove_trapdoor"
+    },
+    {
+      "item": "betterend:lacugrove_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:lacugrove_shutter"
+  }
+}

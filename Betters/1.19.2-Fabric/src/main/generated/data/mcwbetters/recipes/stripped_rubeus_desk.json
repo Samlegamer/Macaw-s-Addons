@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "stripped_desks",
+  "key": {
+    "A": {
+      "item": "betternether:rubeus_stripped_log"
+    },
+    "B": {
+      "item": "betternether:rubeus_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbetters:stripped_rubeus_desk"
+  }
+}

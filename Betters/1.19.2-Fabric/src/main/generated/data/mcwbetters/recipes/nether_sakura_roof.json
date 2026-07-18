@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwroofs"
+      ]
+    }
+  ],
+  "group": "roof",
+  "key": {
+    "A": {
+      "item": "betternether:nether_sakura_log"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " A",
+    "AB"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbetters:nether_sakura_roof"
+  }
+}

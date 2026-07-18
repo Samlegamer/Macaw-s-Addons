@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfences"
+      ]
+    }
+  ],
+  "group": "stockade",
+  "key": {
+    "A": {
+      "item": "betterend:helix_tree_log"
+    },
+    "B": {
+      "item": "betterend:helix_tree_planks"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BAB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:helix_tree_stockade_fence"
+  }
+}

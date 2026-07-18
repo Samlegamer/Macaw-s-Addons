@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "cottage",
+  "key": {
+    "A": {
+      "item": "betterend:jellyshroom_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_spruce"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbetters:jellyshroom_cottage_door"
+  }
+}

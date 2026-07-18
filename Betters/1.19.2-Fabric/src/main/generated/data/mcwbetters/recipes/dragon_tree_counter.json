@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "counters",
+  "key": {
+    "A": {
+      "item": "betterend:dragon_tree_slab"
+    },
+    "B": {
+      "item": "betterend:dragon_tree_log"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:dragon_tree_counter"
+  }
+}

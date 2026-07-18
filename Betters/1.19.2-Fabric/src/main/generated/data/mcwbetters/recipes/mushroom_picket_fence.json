@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfences"
+      ]
+    }
+  ],
+  "group": "picket",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "betternether:nether_mushroom_planks"
+    },
+    "C": {
+      "item": "betternether:nether_mushroom_stem"
+    }
+  },
+  "pattern": [
+    "CBC",
+    "CAC"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:mushroom_picket_fence"
+  }
+}

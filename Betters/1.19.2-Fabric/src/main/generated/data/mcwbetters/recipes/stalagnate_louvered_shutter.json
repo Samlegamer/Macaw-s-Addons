@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "betternether:stalagnate_slab"
+    },
+    {
+      "item": "betternether:stalagnate_slab"
+    },
+    {
+      "item": "betternether:stalagnate_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:stalagnate_louvered_shutter"
+  }
+}

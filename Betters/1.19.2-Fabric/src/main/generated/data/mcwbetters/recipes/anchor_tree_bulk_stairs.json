@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwstairs"
+      ]
+    }
+  ],
+  "group": "bulk_stairs",
+  "key": {
+    "A": {
+      "item": "betternether:anchor_tree_stripped_log"
+    },
+    "B": {
+      "item": "betternether:anchor_tree_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA ",
+    "BBA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwbetters:anchor_tree_bulk_stairs"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "double_wardrobes",
+  "key": {
+    "A": {
+      "item": "betterend:mossy_glowshroom_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BAB",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbetters:mossy_glowshroom_double_wardrobe"
+  }
+}

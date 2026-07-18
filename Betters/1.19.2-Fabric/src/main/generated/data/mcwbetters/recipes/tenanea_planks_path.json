@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwpaths"
+      ]
+    }
+  ],
+  "group": "planks_paths",
+  "ingredients": [
+    {
+      "item": "betterend:tenanea_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:tenanea_planks_path"
+  }
+}

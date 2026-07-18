@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "betterend:tenanea_slab"
+    },
+    {
+      "item": "betterend:tenanea_slab"
+    },
+    {
+      "item": "betterend:tenanea_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:tenanea_louvered_shutter"
+  }
+}

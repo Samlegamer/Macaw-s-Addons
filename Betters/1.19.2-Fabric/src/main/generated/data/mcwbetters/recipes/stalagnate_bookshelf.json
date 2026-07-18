@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "bookshelves",
+  "key": {
+    "A": {
+      "item": "betternether:stalagnate_log"
+    },
+    "B": {
+      "item": "minecraft:book"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BBB",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbetters:stalagnate_bookshelf"
+  }
+}

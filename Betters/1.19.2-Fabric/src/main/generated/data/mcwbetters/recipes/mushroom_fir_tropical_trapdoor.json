@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "group": "tropical_trapdoors",
+  "key": {
+    "A": {
+      "item": "betternether:mushroom_fir_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_tropical"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbetters:mushroom_fir_tropical_trapdoor"
+  }
+}

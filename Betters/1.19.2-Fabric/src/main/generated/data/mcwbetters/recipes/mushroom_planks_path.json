@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwpaths"
+      ]
+    }
+  ],
+  "group": "planks_paths",
+  "ingredients": [
+    {
+      "item": "betternether:nether_mushroom_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:mushroom_planks_path"
+  }
+}

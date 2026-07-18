@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfences"
+      ]
+    }
+  ],
+  "group": "curved_gate",
+  "key": {
+    "A": {
+      "item": "betterend:end_lotus_planks"
+    },
+    "B": {
+      "item": "betterend:end_lotus_log"
+    }
+  },
+  "pattern": [
+    "B A",
+    "BAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbetters:end_lotus_curved_gate"
+  }
+}

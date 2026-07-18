@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "end_tables",
+  "key": {
+    "A": {
+      "item": "mcwbetters:lucernia_table"
+    },
+    "B": {
+      "item": "betterend:lucernia_log"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:lucernia_end_table"
+  }
+}

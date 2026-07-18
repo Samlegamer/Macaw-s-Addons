@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwstairs"
+      ]
+    }
+  ],
+  "group": "compact_stairs",
+  "key": {
+    "A": {
+      "item": "betterend:umbrella_tree_stripped_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwbetters:umbrella_tree_compact_stairs"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "desks",
+  "key": {
+    "A": {
+      "item": "betternether:anchor_tree_log"
+    },
+    "B": {
+      "item": "betternether:anchor_tree_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbetters:anchor_tree_desk"
+  }
+}

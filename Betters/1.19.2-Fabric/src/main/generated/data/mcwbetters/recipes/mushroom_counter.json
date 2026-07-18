@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "counters",
+  "key": {
+    "A": {
+      "item": "betternether:nether_mushroom_slab"
+    },
+    "B": {
+      "item": "betternether:nether_mushroom_stem"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:mushroom_counter"
+  }
+}

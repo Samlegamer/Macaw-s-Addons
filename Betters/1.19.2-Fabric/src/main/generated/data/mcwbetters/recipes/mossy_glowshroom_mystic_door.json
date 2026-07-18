@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "mystic",
+  "key": {
+    "A": {
+      "item": "betterend:mossy_glowshroom_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_mystic"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbetters:mossy_glowshroom_mystic_door"
+  }
+}

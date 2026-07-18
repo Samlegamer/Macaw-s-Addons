@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "desks",
+  "key": {
+    "A": {
+      "item": "betternether:mushroom_fir_log"
+    },
+    "B": {
+      "item": "betternether:mushroom_fir_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbetters:mushroom_fir_desk"
+  }
+}

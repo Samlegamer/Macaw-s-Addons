@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "stool_chairs",
+  "key": {
+    "A": {
+      "item": "betternether:willow_log"
+    },
+    "B": {
+      "item": "betternether:willow_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:willow_stool_chair"
+  }
+}

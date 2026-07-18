@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "stripped_double_wardrobes",
+  "key": {
+    "A": {
+      "item": "betternether:anchor_tree_stripped_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BAB",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbetters:stripped_anchor_tree_double_wardrobe"
+  }
+}

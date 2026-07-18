@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfences"
+      ]
+    }
+  ],
+  "group": "stockade",
+  "key": {
+    "A": {
+      "item": "betterend:pythadendron_log"
+    },
+    "B": {
+      "item": "betterend:pythadendron_planks"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BAB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:pythadendron_stockade_fence"
+  }
+}

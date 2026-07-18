@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwroofs"
+      ]
+    }
+  ],
+  "group": "planks_top_roof",
+  "key": {
+    "A": {
+      "item": "betterend:mossy_glowshroom_planks"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbetters:mossy_glowshroom_planks_top_roof"
+  }
+}

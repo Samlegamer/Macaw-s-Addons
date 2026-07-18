@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_jellyshroom_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "betterend:jellyshroom_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbetters:jellyshroom_blinds"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "requirements": [
+    [
+      "has_jellyshroom_log",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbetters:jellyshroom_blinds"
+    ]
+  }
+}

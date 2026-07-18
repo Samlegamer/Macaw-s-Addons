@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "counters",
+  "key": {
+    "A": {
+      "item": "betterend:mossy_glowshroom_slab"
+    },
+    "B": {
+      "item": "betterend:mossy_glowshroom_log"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:mossy_glowshroom_counter"
+  }
+}

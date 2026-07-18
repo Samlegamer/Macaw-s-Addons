@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "double_drawers",
+  "key": {
+    "A": {
+      "item": "betterend:end_lotus_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_drawer"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbetters:end_lotus_double_drawer"
+  }
+}

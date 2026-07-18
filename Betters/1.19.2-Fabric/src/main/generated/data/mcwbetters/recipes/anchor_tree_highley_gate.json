@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfences"
+      ]
+    }
+  ],
+  "group": "highley",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "betternether:anchor_tree_log"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "item": "mcwbetters:anchor_tree_highley_gate"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "bookshelf_cupboards",
+  "key": {
+    "A": {
+      "item": "betterend:tenanea_log"
+    },
+    "B": {
+      "item": "mcwfurnitures:cabinet_door"
+    },
+    "C": {
+      "item": "minecraft:book"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BAC",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbetters:tenanea_bookshelf_cupboard"
+  }
+}

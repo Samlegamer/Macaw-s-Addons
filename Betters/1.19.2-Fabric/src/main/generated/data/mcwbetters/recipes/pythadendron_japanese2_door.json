@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "shoji_two",
+  "key": {
+    "A": {
+      "item": "betterend:pythadendron_slab"
+    },
+    "B": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    "BB",
+    "BB",
+    "AA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:pythadendron_japanese2_door"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "betternether:mushroom_fir_slab"
+    },
+    {
+      "item": "betternether:mushroom_fir_slab"
+    },
+    {
+      "item": "betternether:mushroom_fir_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:mushroom_fir_louvered_shutter"
+  }
+}

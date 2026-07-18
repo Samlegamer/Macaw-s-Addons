@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbetters:wart_louvered_shutter"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wart_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "betternether:wart_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "requirements": [
+    [
+      "has_wart_log",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbetters:wart_louvered_shutter"
+    ]
+  }
+}

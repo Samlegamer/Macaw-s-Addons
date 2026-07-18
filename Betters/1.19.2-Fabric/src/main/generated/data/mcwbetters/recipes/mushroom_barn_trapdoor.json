@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "group": "barn_trapdoors",
+  "key": {
+    "A": {
+      "item": "betternether:nether_mushroom_planks"
+    },
+    "B": {
+      "item": "mcwbetters:mushroom_glass_trapdoor"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:mushroom_barn_trapdoor"
+  }
+}

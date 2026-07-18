@@ -7,15 +7,14 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
-import paulevs.betternether.BetterNether;
-import ru.betterend.BetterEnd;
+import org.betterx.betterend.BetterEnd;
+import org.betterx.betternether.BetterNether;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
-
-import static paulevs.betternether.registry.NetherBlocks.*;
-import static ru.betterend.registry.EndBlocks.*;
+import static org.betterx.betterend.registry.EndBlocks.*;
+import static org.betterx.betternether.registry.NetherBlocks.*;
 
 public class RecipesFabric extends McwRecipes
 {

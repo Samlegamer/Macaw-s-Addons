@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "stripped_glass_tables",
+  "key": {
+    "A": {
+      "item": "mcwbetters:stripped_lucernia_end_table"
+    },
+    "B": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:stripped_lucernia_glass_table"
+  }
+}

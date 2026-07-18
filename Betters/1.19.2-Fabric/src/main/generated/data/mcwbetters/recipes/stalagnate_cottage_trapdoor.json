@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "group": "cottage_trapdoors",
+  "key": {
+    "A": {
+      "item": "betternether:stalagnate_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_cottage"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbetters:stalagnate_cottage_trapdoor"
+  }
+}

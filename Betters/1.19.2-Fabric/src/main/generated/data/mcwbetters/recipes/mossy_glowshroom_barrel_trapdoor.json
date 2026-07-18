@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "group": "barrel_trapdoors",
+  "key": {
+    "A": {
+      "item": "betterend:mossy_glowshroom_planks"
+    },
+    "B": {
+      "item": "minecraft:barrel"
+    }
+  },
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbetters:mossy_glowshroom_barrel_trapdoor"
+  }
+}

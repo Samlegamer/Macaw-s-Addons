@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "mystic",
+  "key": {
+    "A": {
+      "item": "betternether:nether_sakura_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_mystic"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbetters:nether_sakura_mystic_door"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "stripped_kitchen_sinks",
+  "key": {
+    "A": {
+      "item": "betterend:helix_tree_stripped_log"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "item": "betterend:helix_tree_slab"
+    },
+    "D": {
+      "item": "minecraft:cauldron"
+    }
+  },
+  "pattern": [
+    "CDC",
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "item": "mcwbetters:stripped_helix_tree_kitchen_sink"
+  }
+}

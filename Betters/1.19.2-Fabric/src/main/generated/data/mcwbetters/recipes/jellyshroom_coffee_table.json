@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "coffee_tables",
+  "key": {
+    "A": {
+      "item": "betterend:jellyshroom_log"
+    },
+    "B": {
+      "item": "betterend:jellyshroom_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:jellyshroom_coffee_table"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "western",
+  "key": {
+    "A": {
+      "item": "betternether:wart_planks"
+    },
+    "B": {
+      "item": "betternether:wart_slab"
+    }
+  },
+  "pattern": [
+    "  A",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:wart_western_door"
+  }
+}

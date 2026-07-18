@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "group": "recyclable_bridges_recycle",
+  "ingredients": [
+    {
+      "item": "mcwbetters:rubeus_log_bridge_stair"
+    }
+  ],
+  "result": {
+    "item": "mcwbetters:rubeus_log_bridge_middle"
+  }
+}

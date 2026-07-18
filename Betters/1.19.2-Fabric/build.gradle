@@ -16,7 +16,7 @@ def loadExtraProperties(String relPath) {
 }
 
 loadExtraProperties('../../_properties/1.19.2fabricgradle.properties')
-loadExtraProperties('../../_versions/1.19gradle.properties.properties')
+loadExtraProperties('../../_versions/1.19gradle.properties')
 loadExtraProperties('../_GlobalRsc/globalgradle.properties')
 
 version = project.mod_version
@@ -73,6 +73,7 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	modImplementation "curse.maven:addonslib-1090999:${addonslib_version}"
+	modImplementation "curse.maven:jei-238222:${jei_version}"
 
 	modImplementation "curse.maven:macaws-roofs-352039:${roofs_version}"
 	modImplementation "curse.maven:macaws-fences-and-walls-453925:${fences_version}"

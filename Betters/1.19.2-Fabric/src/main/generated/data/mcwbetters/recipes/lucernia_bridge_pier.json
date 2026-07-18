@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "group": "wooden_piers",
+  "key": {
+    "A": {
+      "item": "betterend:lucernia_log"
+    },
+    "B": {
+      "item": "betterend:lucernia_fence"
+    }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:lucernia_bridge_pier"
+  }
+}

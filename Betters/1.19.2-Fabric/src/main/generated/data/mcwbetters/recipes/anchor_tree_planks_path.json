@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwpaths"
+      ]
+    }
+  ],
+  "group": "planks_paths",
+  "ingredients": [
+    {
+      "item": "betternether:anchor_tree_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:anchor_tree_planks_path"
+  }
+}

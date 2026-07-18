@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "group": "curtain_rods",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "betternether:willow_log"
+    }
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "count": 5,
+    "item": "mcwbetters:willow_curtain_rod"
+  }
+}

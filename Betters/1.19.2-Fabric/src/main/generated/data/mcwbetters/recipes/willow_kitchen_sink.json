@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "kitchen_sinks",
+  "key": {
+    "A": {
+      "item": "betternether:willow_log"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "item": "betternether:willow_slab"
+    },
+    "D": {
+      "item": "minecraft:cauldron"
+    }
+  },
+  "pattern": [
+    "CDC",
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "item": "mcwbetters:willow_kitchen_sink"
+  }
+}

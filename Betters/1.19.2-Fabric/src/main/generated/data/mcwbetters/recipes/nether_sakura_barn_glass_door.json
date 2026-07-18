@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "barn_glass",
+  "key": {
+    "A": {
+      "item": "betternether:nether_sakura_planks"
+    },
+    "B": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "pattern": [
+    "BB",
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:nether_sakura_barn_glass_door"
+  }
+}

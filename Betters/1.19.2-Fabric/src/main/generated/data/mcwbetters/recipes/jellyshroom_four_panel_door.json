@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "four_panel",
+  "key": {
+    "A": {
+      "item": "betterend:jellyshroom_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_dark_oak"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbetters:jellyshroom_four_panel_door"
+  }
+}

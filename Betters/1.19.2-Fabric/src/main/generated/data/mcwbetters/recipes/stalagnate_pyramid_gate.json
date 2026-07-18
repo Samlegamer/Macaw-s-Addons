@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfences"
+      ]
+    }
+  ],
+  "group": "pyramid",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "betternether:stalagnate_log"
+    },
+    "C": {
+      "item": "betternether:stalagnate_planks"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "ACA"
+  ],
+  "result": {
+    "item": "mcwbetters:stalagnate_pyramid_gate"
+  }
+}

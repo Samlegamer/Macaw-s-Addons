@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "double_drawer_counters",
+  "key": {
+    "A": {
+      "item": "betternether:wart_slab"
+    },
+    "B": {
+      "item": "mcwbetters:wart_double_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:wart_double_drawer_counter"
+  }
+}

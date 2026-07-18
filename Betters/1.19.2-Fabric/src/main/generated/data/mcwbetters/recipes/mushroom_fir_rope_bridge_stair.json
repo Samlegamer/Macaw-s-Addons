@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "group": "rope_stairs",
+  "key": {
+    "A": {
+      "item": "mcwbetters:rope_mushroom_fir_bridge"
+    }
+  },
+  "pattern": [
+    "  A",
+    " AA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mcwbetters:mushroom_fir_rope_bridge_stair"
+  }
+}

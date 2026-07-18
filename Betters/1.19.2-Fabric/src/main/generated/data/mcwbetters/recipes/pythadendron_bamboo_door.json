@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "bamboo",
+  "key": {
+    "A": {
+      "item": "betterend:pythadendron_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_bamboo"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbetters:pythadendron_bamboo_door"
+  }
+}

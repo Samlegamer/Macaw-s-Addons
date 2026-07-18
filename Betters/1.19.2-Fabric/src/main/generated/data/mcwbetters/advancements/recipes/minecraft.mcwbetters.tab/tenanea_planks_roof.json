@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_tenanea_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "betterend:tenanea_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbetters:tenanea_planks_roof"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwroofs"
+      ]
+    }
+  ],
+  "requirements": [
+    [
+      "has_tenanea_log",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbetters:tenanea_planks_roof"
+    ]
+  }
+}

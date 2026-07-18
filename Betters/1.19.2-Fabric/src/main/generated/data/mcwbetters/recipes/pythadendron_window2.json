@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "group": "windows_two",
+  "key": {
+    "A": {
+      "item": "mcwwindows:window_half_bar_base"
+    },
+    "B": {
+      "item": "betterend:pythadendron_log"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 8,
+    "item": "mcwbetters:pythadendron_window2"
+  }
+}

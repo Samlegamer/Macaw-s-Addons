@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "group": "classic",
+  "key": {
+    "A": {
+      "item": "betterend:dragon_tree_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_oak"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbetters:dragon_tree_classic_door"
+  }
+}

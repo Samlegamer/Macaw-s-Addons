@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "group": "log_bridges",
+  "key": {
+    "A": {
+      "item": "betternether:anchor_tree_slab"
+    },
+    "B": {
+      "item": "betternether:anchor_tree_fence"
+    }
+  },
+  "pattern": [
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbetters:anchor_tree_log_bridge_middle"
+  }
+}

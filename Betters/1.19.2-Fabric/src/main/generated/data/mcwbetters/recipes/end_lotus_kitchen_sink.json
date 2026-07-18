@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "group": "kitchen_sinks",
+  "key": {
+    "A": {
+      "item": "betterend:end_lotus_log"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "item": "betterend:end_lotus_slab"
+    },
+    "D": {
+      "item": "minecraft:cauldron"
+    }
+  },
+  "pattern": [
+    "CDC",
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "item": "mcwbetters:end_lotus_kitchen_sink"
+  }
+}
