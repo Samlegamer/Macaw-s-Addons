@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_modern_chairs",
+        "key": {
+          "A": {
+            "item": "betternether:mushroom_fir_stripped_log"
+          },
+          "B": {
+            "item": "betternether:mushroom_fir_slab"
+          },
+          "C": {
+            "item": "betternether:mushroom_fir_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbetters:stripped_mushroom_fir_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

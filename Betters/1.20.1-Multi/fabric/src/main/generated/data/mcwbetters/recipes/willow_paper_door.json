@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "paper",
+  "key": {
+    "A": {
+      "item": "betternether:willow_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_birch"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbetters:willow_paper_door"
+  },
+  "show_notification": true
+}

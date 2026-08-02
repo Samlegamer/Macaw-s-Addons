@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "rail_bridges",
+        "key": {
+          "A": {
+            "item": "betterend:end_lotus_slab"
+          },
+          "B": {
+            "item": "betterend:end_lotus_fence"
+          }
+        },
+        "pattern": [
+          "B B",
+          "BAB"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbetters:end_lotus_rail_bridge"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

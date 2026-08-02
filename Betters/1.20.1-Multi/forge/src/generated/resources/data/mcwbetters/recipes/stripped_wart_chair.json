@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_chairs",
+        "key": {
+          "A": {
+            "item": "betternether:wart_stripped_log"
+          },
+          "B": {
+            "item": "betternether:wart_slab"
+          },
+          "C": {
+            "item": "betternether:wart_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbetters:stripped_wart_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

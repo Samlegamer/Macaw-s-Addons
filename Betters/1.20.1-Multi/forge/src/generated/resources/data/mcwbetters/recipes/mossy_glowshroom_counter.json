@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "counters",
+        "key": {
+          "A": {
+            "item": "betterend:mossy_glowshroom_slab"
+          },
+          "B": {
+            "item": "betterend:mossy_glowshroom_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbetters:mossy_glowshroom_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chairs",
+        "key": {
+          "A": {
+            "item": "betterend:end_lotus_log"
+          },
+          "B": {
+            "item": "betterend:end_lotus_slab"
+          },
+          "C": {
+            "item": "betterend:end_lotus_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbetters:end_lotus_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

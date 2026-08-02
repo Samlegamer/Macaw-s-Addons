@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "rail_bridges",
+        "key": {
+          "A": {
+            "item": "betterend:lacugrove_slab"
+          },
+          "B": {
+            "item": "betterend:lacugrove_fence"
+          }
+        },
+        "pattern": [
+          "B B",
+          "BAB"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbetters:lacugrove_rail_bridge"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

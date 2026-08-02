@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "striped_chairs",
+        "key": {
+          "A": {
+            "item": "betterend:pythadendron_log"
+          },
+          "B": {
+            "item": "betterend:pythadendron_slab"
+          },
+          "C": {
+            "item": "betterend:pythadendron_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbetters:pythadendron_striped_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

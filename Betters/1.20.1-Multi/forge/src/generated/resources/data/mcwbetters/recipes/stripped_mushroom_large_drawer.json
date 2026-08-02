@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_large_drawers",
+        "key": {
+          "A": {
+            "item": "minecraft:mushroom_stem"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_drawer"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "AAA",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbetters:stripped_mushroom_large_drawer"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

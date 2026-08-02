@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "curved_gate",
+        "key": {
+          "A": {
+            "item": "betterend:jellyshroom_planks"
+          },
+          "B": {
+            "item": "betterend:jellyshroom_log"
+          }
+        },
+        "pattern": [
+          "B A",
+          "BAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbetters:jellyshroom_curved_gate"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

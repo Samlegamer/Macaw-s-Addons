@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_drawer_counters",
+        "key": {
+          "A": {
+            "item": "betterend:end_lotus_slab"
+          },
+          "B": {
+            "item": "mcwbetters:stripped_end_lotus_drawer"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbetters:stripped_end_lotus_drawer_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

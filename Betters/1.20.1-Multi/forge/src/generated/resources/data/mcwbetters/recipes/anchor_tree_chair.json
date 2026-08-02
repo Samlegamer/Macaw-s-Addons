@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chairs",
+        "key": {
+          "A": {
+            "item": "betternether:anchor_tree_log"
+          },
+          "B": {
+            "item": "betternether:anchor_tree_slab"
+          },
+          "C": {
+            "item": "betternether:anchor_tree_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbetters:anchor_tree_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

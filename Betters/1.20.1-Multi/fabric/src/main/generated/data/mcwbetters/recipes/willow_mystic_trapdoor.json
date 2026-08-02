@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mystic_trapdoors",
+  "key": {
+    "A": {
+      "item": "betternether:willow_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_mystic"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbetters:willow_mystic_trapdoor"
+  },
+  "show_notification": true
+}

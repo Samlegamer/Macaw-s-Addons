@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chairs",
+        "key": {
+          "A": {
+            "item": "betterend:jellyshroom_log"
+          },
+          "B": {
+            "item": "betterend:jellyshroom_slab"
+          },
+          "C": {
+            "item": "betterend:jellyshroom_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbetters:jellyshroom_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

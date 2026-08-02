@@ -1,0 +1,92 @@
+plugins {
+    id 'multiloader-common'
+    id 'net.neoforged.moddev.legacyforge'
+}
+
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
+    }
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
+}
+
+loadExtraProperties('../../../_properties/1.20.1forgegradle.properties')
+
+legacyForge {
+    mcpVersion = minecraft_version
+    if (file("src/main/resources/META-INF/accesstransformer.cfg").exists()) {
+        accessTransformers = ["src/main/resources/META-INF/accesstransformer.cfg"]
+    }
+    parchment {
+        minecraftVersion = parchment_minecraft
+        mappingsVersion = parchment_version
+    }
+}
+
+repositories {
+    maven {
+        name = "CurseForge"
+        url = "https://minecraft.curseforge.com/api/maven/"
+    }
+    maven {
+        name = "CurseMaven"
+        url = "https://www.cursemaven.com"
+    }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+def addonslib_version_ = "${addonslib_version}"
+
+dependencies {
+    compileOnly group: 'org.spongepowered', name: 'mixin', version: '0.8.5'
+    implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
+
+    modImplementation "curse.maven:addonslib-1090999:${addonslib_version_}"
+
+    //modCompileOnly("blank:betternether-1.20.1-1.0:${better_nether_version_forge}")
+    //modCompileOnly("blank:betterend-1.20.1-1.0:${better_end_version_forge}")
+    //modRuntimeOnly("blank:betternether-1.20.1-1.0:${better_nether_version_forge}")
+    //modRuntimeOnly("blank:betterend-1.20.1-1.0:${better_end_version_forge}")
+
+    modCompileOnly("curse.maven:betternether-forge-1436171:${better_nether_version_forge}")
+    modCompileOnly("curse.maven:betterend-forge-1435127:${better_end_version_forge}")
+    modCompileOnly("curse.maven:bclib-forge-1435106:${bclib_version_forge}")
+    //modImplementation("curse.maven:wunderlib-forge-1435097:${wunderlib_version_forge}")
+}
+
+configurations {
+    commonJava {
+        canBeResolved = false
+        canBeConsumed = true
+    }
+    commonResources {
+        canBeResolved = false
+        canBeConsumed = true
+    }
+}
+
+artifacts {
+    commonJava sourceSets.main.java.sourceDirectories.singleFile
+    commonResources sourceSets.main.resources.sourceDirectories.singleFile
+    commonResources file('src/main/resources')
+    commonResources file('../../_GlobalRsc/common/')
+    commonResources file('../../_GlobalRsc/1.18.2/')
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs '../../_GlobalRsc/common/'
+        }
+        resources {
+            srcDirs '../../_GlobalRsc/1.18.2/'
+        }
+    }
+}

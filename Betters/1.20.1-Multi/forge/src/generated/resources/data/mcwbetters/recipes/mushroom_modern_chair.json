@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chairs",
+        "key": {
+          "A": {
+            "item": "betternether:nether_mushroom_stem"
+          },
+          "B": {
+            "item": "betternether:nether_mushroom_slab"
+          },
+          "C": {
+            "item": "betternether:nether_mushroom_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbetters:mushroom_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

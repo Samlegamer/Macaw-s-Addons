@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfences"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wired",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "betterend:mossy_glowshroom_log"
+    },
+    "C": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "ABA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:mossy_glowshroom_wired_fence"
+  },
+  "show_notification": true
+}

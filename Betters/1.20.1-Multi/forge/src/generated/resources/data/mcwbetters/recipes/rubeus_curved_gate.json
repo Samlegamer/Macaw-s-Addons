@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "curved_gate",
+        "key": {
+          "A": {
+            "item": "betternether:rubeus_planks"
+          },
+          "B": {
+            "item": "betternether:rubeus_log"
+          }
+        },
+        "pattern": [
+          "B A",
+          "BAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbetters:rubeus_curved_gate"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

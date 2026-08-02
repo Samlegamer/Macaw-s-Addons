@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_covered_desks",
+        "key": {
+          "A": {
+            "item": "betternether:rubeus_stripped_log"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "A A"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwbetters:stripped_rubeus_covered_desk"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

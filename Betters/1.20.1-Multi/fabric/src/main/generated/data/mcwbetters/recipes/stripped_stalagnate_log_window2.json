@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "windows_two",
+  "key": {
+    "A": {
+      "item": "mcwwindows:window_half_bar_base"
+    },
+    "B": {
+      "item": "betternether:stalagnate_stripped_log"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 8,
+    "item": "mcwbetters:stripped_stalagnate_log_window2"
+  },
+  "show_notification": true
+}

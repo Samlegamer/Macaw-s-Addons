@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_tables",
+        "key": {
+          "A": {
+            "item": "mcwbetters:stripped_tenanea_coffee_table"
+          },
+          "B": {
+            "item": "betterend:tenanea_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbetters:stripped_tenanea_table"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

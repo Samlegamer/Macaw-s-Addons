@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stool_chairs",
+        "key": {
+          "A": {
+            "item": "betterend:lucernia_log"
+          },
+          "B": {
+            "item": "betterend:lucernia_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbetters:lucernia_stool_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "desks",
+        "key": {
+          "A": {
+            "item": "betterend:dragon_tree_log"
+          },
+          "B": {
+            "item": "betterend:dragon_tree_fence"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "B B"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwbetters:dragon_tree_desk"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

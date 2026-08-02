@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "log_bridges",
+  "key": {
+    "A": {
+      "item": "betterend:end_lotus_slab"
+    },
+    "B": {
+      "item": "betterend:end_lotus_fence"
+    }
+  },
+  "pattern": [
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbetters:end_lotus_log_bridge_middle"
+  },
+  "show_notification": true
+}

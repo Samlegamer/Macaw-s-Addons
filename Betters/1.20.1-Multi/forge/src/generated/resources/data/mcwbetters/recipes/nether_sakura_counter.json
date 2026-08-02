@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "counters",
+        "key": {
+          "A": {
+            "item": "betternether:nether_sakura_slab"
+          },
+          "B": {
+            "item": "betternether:nether_sakura_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbetters:nether_sakura_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

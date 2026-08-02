@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_tables",
+  "key": {
+    "A": {
+      "item": "mcwbetters:stripped_anchor_tree_coffee_table"
+    },
+    "B": {
+      "item": "betternether:anchor_tree_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:stripped_anchor_tree_table"
+  },
+  "show_notification": true
+}

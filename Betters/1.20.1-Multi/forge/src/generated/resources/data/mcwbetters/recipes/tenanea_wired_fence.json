@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfences"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "wired",
+        "key": {
+          "A": {
+            "item": "minecraft:stick"
+          },
+          "B": {
+            "item": "betterend:tenanea_log"
+          },
+          "C": {
+            "item": "minecraft:iron_bars"
+          }
+        },
+        "pattern": [
+          "ACA",
+          "ABA"
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbetters:tenanea_wired_fence"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "bookshelves",
+        "key": {
+          "A": {
+            "item": "betternether:nether_mushroom_stem"
+          },
+          "B": {
+            "item": "minecraft:book"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "BBB",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbetters:mushroom_bookshelf"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

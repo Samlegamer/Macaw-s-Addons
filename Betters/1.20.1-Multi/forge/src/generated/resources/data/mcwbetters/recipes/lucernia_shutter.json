@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "betterend:lucernia_trapdoor"
+          },
+          {
+            "item": "betterend:lucernia_trapdoor"
+          },
+          {
+            "item": "betterend:lucernia_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbetters:lucernia_shutter"
+        }
+      }
+    }
+  ]
+}

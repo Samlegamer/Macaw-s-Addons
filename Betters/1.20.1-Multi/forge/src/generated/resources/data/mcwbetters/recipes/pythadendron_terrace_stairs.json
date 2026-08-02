@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "terrace_stairs",
+        "key": {
+          "A": {
+            "item": "betterend:pythadendron_stripped_log"
+          },
+          "B": {
+            "item": "betterend:pythadendron_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA ",
+          " BA"
+        ],
+        "result": {
+          "count": 5,
+          "item": "mcwbetters:pythadendron_terrace_stairs"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

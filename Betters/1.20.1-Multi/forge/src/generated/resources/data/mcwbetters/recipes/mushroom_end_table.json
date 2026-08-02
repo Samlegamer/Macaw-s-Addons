@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "end_tables",
+        "key": {
+          "A": {
+            "item": "mcwbetters:mushroom_table"
+          },
+          "B": {
+            "item": "betternether:nether_mushroom_stem"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbetters:mushroom_end_table"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

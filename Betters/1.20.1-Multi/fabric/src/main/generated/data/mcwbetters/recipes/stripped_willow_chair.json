@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_chairs",
+  "key": {
+    "A": {
+      "item": "betternether:willow_stripped_log"
+    },
+    "B": {
+      "item": "betternether:willow_slab"
+    },
+    "C": {
+      "item": "betternether:willow_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwbetters:stripped_willow_chair"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "counters",
+        "key": {
+          "A": {
+            "item": "betterend:umbrella_tree_slab"
+          },
+          "B": {
+            "item": "betterend:umbrella_tree_log"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbetters:umbrella_tree_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

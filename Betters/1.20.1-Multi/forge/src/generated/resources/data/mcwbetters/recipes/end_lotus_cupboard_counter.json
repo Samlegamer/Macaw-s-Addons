@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "cupboard_counters",
+        "key": {
+          "A": {
+            "item": "betterend:end_lotus_slab"
+          },
+          "B": {
+            "item": "mcwbetters:end_lotus_wardrobe"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbetters:end_lotus_cupboard_counter"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

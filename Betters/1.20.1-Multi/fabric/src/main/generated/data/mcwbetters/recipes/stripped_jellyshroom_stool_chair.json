@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_stool_chairs",
+  "key": {
+    "A": {
+      "item": "betterend:jellyshroom_stripped_log"
+    },
+    "B": {
+      "item": "betterend:jellyshroom_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:stripped_jellyshroom_stool_chair"
+  },
+  "show_notification": true
+}

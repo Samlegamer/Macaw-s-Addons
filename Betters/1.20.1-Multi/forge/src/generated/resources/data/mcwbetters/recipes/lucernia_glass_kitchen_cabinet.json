@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "glass_kitchen_cabinets",
+        "key": {
+          "A": {
+            "item": "betterend:lucernia_log"
+          },
+          "B": {
+            "item": "minecraft:glass"
+          },
+          "C": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AA",
+          "BC",
+          "AA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbetters:lucernia_glass_kitchen_cabinet"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

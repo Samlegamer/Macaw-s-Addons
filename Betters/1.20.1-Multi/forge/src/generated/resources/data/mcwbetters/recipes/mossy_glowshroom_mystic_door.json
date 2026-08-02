@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "mystic",
+        "key": {
+          "A": {
+            "item": "betterend:mossy_glowshroom_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_mystic"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbetters:mossy_glowshroom_mystic_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

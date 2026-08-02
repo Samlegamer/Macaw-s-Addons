@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "barn_trapdoors",
+        "key": {
+          "A": {
+            "item": "betternether:stalagnate_planks"
+          },
+          "B": {
+            "item": "mcwbetters:stalagnate_glass_trapdoor"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbetters:stalagnate_barn_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcwbetters:willow_cottage_trapdoor"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_willow_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "betternether:willow_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_willow_log",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbetters:willow_cottage_trapdoor"
+    ]
+  },
+  "sends_telemetry_event": false
+}

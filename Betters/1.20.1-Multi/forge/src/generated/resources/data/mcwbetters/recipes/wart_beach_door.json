@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "beach",
+        "key": {
+          "A": {
+            "item": "betternether:wart_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_jungle"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbetters:wart_beach_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

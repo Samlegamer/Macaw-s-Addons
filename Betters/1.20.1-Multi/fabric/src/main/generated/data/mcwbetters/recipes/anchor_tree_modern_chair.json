@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_chairs",
+  "key": {
+    "A": {
+      "item": "betternether:anchor_tree_log"
+    },
+    "B": {
+      "item": "betternether:anchor_tree_slab"
+    },
+    "C": {
+      "item": "betternether:anchor_tree_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwbetters:anchor_tree_modern_chair"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chairs",
+        "key": {
+          "A": {
+            "item": "betterend:mossy_glowshroom_log"
+          },
+          "B": {
+            "item": "betterend:mossy_glowshroom_slab"
+          },
+          "C": {
+            "item": "betterend:mossy_glowshroom_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbetters:mossy_glowshroom_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

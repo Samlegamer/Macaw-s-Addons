@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "modern_chairs",
+        "key": {
+          "A": {
+            "item": "betternether:stalagnate_log"
+          },
+          "B": {
+            "item": "betternether:stalagnate_slab"
+          },
+          "C": {
+            "item": "betternether:stalagnate_fence"
+          }
+        },
+        "pattern": [
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbetters:stalagnate_modern_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

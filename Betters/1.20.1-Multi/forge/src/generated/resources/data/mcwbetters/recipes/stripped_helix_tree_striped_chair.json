@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_striped_chairs",
+        "key": {
+          "A": {
+            "item": "betterend:helix_tree_stripped_log"
+          },
+          "B": {
+            "item": "betterend:helix_tree_slab"
+          },
+          "C": {
+            "item": "betterend:helix_tree_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbetters:stripped_helix_tree_striped_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

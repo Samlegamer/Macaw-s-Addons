@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwstairs"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "loft_stairs",
+  "key": {
+    "A": {
+      "item": "minecraft:mushroom_stem"
+    }
+  },
+  "pattern": [
+    "A  ",
+    " A ",
+    "  A"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:mushroom_loft_stairs"
+  },
+  "show_notification": true
+}

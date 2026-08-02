@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_stool_chairs",
+        "key": {
+          "A": {
+            "item": "betternether:willow_stripped_log"
+          },
+          "B": {
+            "item": "betternether:willow_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbetters:stripped_willow_stool_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_modern_chairs",
+  "key": {
+    "A": {
+      "item": "betterend:umbrella_tree_stripped_log"
+    },
+    "B": {
+      "item": "betterend:umbrella_tree_slab"
+    },
+    "C": {
+      "item": "betterend:umbrella_tree_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "item": "mcwbetters:stripped_umbrella_tree_modern_chair"
+  },
+  "show_notification": true
+}

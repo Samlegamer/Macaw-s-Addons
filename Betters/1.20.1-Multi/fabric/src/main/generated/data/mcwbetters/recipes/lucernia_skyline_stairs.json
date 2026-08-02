@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwstairs"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "skyline_stairs",
+  "key": {
+    "A": {
+      "item": "betterend:lucernia_stripped_log"
+    },
+    "B": {
+      "item": "betterend:lucernia_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA "
+  ],
+  "result": {
+    "count": 4,
+    "item": "mcwbetters:lucernia_skyline_stairs"
+  },
+  "show_notification": true
+}

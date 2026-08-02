@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_drawer_counters",
+  "key": {
+    "A": {
+      "item": "betternether:nether_mushroom_slab"
+    },
+    "B": {
+      "item": "mcwbetters:stripped_mushroom_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:stripped_mushroom_drawer_counter"
+  },
+  "show_notification": true
+}

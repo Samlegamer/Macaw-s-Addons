@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_modern_wardrobes",
+        "key": {
+          "A": {
+            "item": "betternether:rubeus_stripped_log"
+          },
+          "B": {
+            "item": "mcwfurnitures:cabinet_door"
+          }
+        },
+        "pattern": [
+          "AAA",
+          "AAB",
+          "AAA"
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbetters:stripped_rubeus_modern_wardrobe"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

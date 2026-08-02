@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "drawer_counters",
+  "key": {
+    "A": {
+      "item": "betterend:tenanea_slab"
+    },
+    "B": {
+      "item": "mcwbetters:tenanea_drawer"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:tenanea_drawer_counter"
+  },
+  "show_notification": true
+}

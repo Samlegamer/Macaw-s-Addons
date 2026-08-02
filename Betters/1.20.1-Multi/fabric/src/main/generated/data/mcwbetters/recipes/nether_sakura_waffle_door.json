@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "waffle",
+  "key": {
+    "A": {
+      "item": "betternether:nether_sakura_planks"
+    },
+    "B": {
+      "item": "mcwdoors:print_waffle"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbetters:nether_sakura_waffle_door"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_desks",
+  "key": {
+    "A": {
+      "item": "betterend:helix_tree_stripped_log"
+    },
+    "B": {
+      "item": "betterend:helix_tree_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mcwbetters:stripped_helix_tree_desk"
+  },
+  "show_notification": true
+}

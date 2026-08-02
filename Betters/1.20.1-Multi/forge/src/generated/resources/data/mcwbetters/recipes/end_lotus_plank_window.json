@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "windows",
+        "key": {
+          "A": {
+            "item": "mcwwindows:window_base"
+          },
+          "B": {
+            "item": "betterend:end_lotus_planks"
+          }
+        },
+        "pattern": [
+          " A ",
+          "ABA",
+          " A "
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbetters:end_lotus_plank_window"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

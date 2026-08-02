@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwstairs"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "skyline_stairs",
+        "key": {
+          "A": {
+            "item": "betterend:end_lotus_stripped_log"
+          },
+          "B": {
+            "item": "betterend:end_lotus_log"
+          }
+        },
+        "pattern": [
+          "A  ",
+          "BA "
+        ],
+        "result": {
+          "count": 4,
+          "item": "mcwbetters:end_lotus_skyline_stairs"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

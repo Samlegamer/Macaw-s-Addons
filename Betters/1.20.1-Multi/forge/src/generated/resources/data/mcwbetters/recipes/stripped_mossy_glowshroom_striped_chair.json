@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_striped_chairs",
+        "key": {
+          "A": {
+            "item": "betterend:mossy_glowshroom_stripped_log"
+          },
+          "B": {
+            "item": "betterend:mossy_glowshroom_slab"
+          },
+          "C": {
+            "item": "betterend:mossy_glowshroom_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BC",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbetters:stripped_mossy_glowshroom_striped_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

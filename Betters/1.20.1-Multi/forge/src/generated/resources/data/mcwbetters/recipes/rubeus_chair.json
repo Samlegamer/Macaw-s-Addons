@@ -1,0 +1,42 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "chairs",
+        "key": {
+          "A": {
+            "item": "betternether:rubeus_log"
+          },
+          "B": {
+            "item": "betternether:rubeus_slab"
+          },
+          "C": {
+            "item": "betternether:rubeus_fence"
+          }
+        },
+        "pattern": [
+          " A",
+          "BA",
+          "CC"
+        ],
+        "result": {
+          "item": "mcwbetters:rubeus_chair"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

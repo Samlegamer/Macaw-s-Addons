@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "coffee_tables",
+        "key": {
+          "A": {
+            "item": "betterend:helix_tree_log"
+          },
+          "B": {
+            "item": "betterend:helix_tree_fence"
+          }
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "item": "mcwbetters:helix_tree_coffee_table"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

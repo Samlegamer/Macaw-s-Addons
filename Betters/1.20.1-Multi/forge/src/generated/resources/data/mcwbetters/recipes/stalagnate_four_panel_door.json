@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "four_panel",
+        "key": {
+          "A": {
+            "item": "betternether:stalagnate_planks"
+          },
+          "B": {
+            "item": "mcwdoors:print_dark_oak"
+          }
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "item": "mcwbetters:stalagnate_four_panel_door"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

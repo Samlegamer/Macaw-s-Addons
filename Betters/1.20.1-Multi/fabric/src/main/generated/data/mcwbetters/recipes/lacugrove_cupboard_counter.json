@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cupboard_counters",
+  "key": {
+    "A": {
+      "item": "betterend:lacugrove_slab"
+    },
+    "B": {
+      "item": "mcwbetters:lacugrove_wardrobe"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "mcwbetters:lacugrove_cupboard_counter"
+  },
+  "show_notification": true
+}

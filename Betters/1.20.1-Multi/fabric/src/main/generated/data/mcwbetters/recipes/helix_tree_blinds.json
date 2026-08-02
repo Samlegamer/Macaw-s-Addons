@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "blinds",
+  "key": {
+    "A": {
+      "item": "betterend:helix_tree_slab"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BBB",
+    "BBB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:helix_tree_blinds"
+  },
+  "show_notification": true
+}

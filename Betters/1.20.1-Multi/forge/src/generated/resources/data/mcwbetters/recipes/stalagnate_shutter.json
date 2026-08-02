@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betternether"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "building",
+        "group": "shutters",
+        "ingredients": [
+          {
+            "item": "betternether:stalagnate_trapdoor"
+          },
+          {
+            "item": "betternether:stalagnate_trapdoor"
+          },
+          {
+            "item": "betternether:stalagnate_trapdoor"
+          }
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwbetters:stalagnate_shutter"
+        }
+      }
+    }
+  ]
+}

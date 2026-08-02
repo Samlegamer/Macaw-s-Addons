@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "betterend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "ranch_trapdoors",
+        "key": {
+          "A": {
+            "item": "betterend:mossy_glowshroom_log"
+          },
+          "B": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "ABA",
+          "BBB",
+          "ABA"
+        ],
+        "result": {
+          "count": 2,
+          "item": "mcwbetters:mossy_glowshroom_ranch_trapdoor"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

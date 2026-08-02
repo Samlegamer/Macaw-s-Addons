@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mystic_trapdoors",
+  "key": {
+    "A": {
+      "item": "betterend:umbrella_tree_planks"
+    },
+    "B": {
+      "item": "mcwtrpdoors:print_mystic"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "mcwbetters:umbrella_tree_mystic_trapdoor"
+  },
+  "show_notification": true
+}

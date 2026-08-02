@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "blinds",
+  "key": {
+    "A": {
+      "item": "betternether:nether_sakura_slab"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BBB",
+    "BBB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "mcwbetters:nether_sakura_blinds"
+  },
+  "show_notification": true
+}
