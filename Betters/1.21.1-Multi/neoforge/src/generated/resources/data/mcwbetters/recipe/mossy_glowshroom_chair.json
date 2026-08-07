@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "betterend"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chairs",
+  "key": {
+    "A": {
+      "item": "betterend:mossy_glowshroom_log"
+    },
+    "B": {
+      "item": "betterend:mossy_glowshroom_slab"
+    },
+    "C": {
+      "item": "betterend:mossy_glowshroom_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbetters:mossy_glowshroom_chair"
+  }
+}

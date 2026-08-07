@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwroofs"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "planks_upper_steep_roof",
+  "key": {
+    "A": {
+      "item": "betterend:helix_tree_planks"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " A",
+    " A",
+    "AB"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbetters:helix_tree_planks_upper_steep_roof"
+  }
+}

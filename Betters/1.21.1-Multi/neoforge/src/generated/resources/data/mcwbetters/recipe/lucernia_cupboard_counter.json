@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "betterend"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cupboard_counters",
+  "key": {
+    "A": {
+      "item": "betterend:lucernia_slab"
+    },
+    "B": {
+      "item": "mcwbetters:lucernia_wardrobe"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbetters:lucernia_cupboard_counter"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "betterend"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "betterend:tenanea_slab"
+    },
+    {
+      "item": "betterend:tenanea_slab"
+    },
+    {
+      "item": "betterend:tenanea_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbetters:tenanea_louvered_shutter"
+  }
+}

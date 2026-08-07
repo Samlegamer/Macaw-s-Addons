@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwtrpdoors"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "betternether"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "barn_trapdoors",
+  "key": {
+    "A": {
+      "item": "betternether:mushroom_fir_planks"
+    },
+    "B": {
+      "item": "mcwbetters:mushroom_fir_glass_trapdoor"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbetters:mushroom_fir_barn_trapdoor"
+  }
+}

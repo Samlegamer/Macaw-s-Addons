@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "betterend"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cupboard_counters",
+  "key": {
+    "A": {
+      "item": "betterend:mossy_glowshroom_slab"
+    },
+    "B": {
+      "item": "mcwbetters:mossy_glowshroom_wardrobe"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbetters:mossy_glowshroom_cupboard_counter"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "betterend"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "log_bridges",
+  "key": {
+    "A": {
+      "item": "betterend:end_lotus_slab"
+    },
+    "B": {
+      "item": "betterend:end_lotus_fence"
+    }
+  },
+  "pattern": [
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbetters:end_lotus_log_bridge_middle"
+  }
+}

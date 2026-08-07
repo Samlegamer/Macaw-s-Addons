@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_coffee_tables",
+  "key": {
+    "A": {
+      "item": "betterend:end_lotus_stripped_log"
+    },
+    "B": {
+      "item": "betterend:end_lotus_fence"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbetters:stripped_end_lotus_coffee_table"
+  }
+}

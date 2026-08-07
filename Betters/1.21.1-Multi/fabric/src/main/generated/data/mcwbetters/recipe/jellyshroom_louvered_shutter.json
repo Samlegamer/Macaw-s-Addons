@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "betterend:jellyshroom_slab"
+    },
+    {
+      "item": "betterend:jellyshroom_slab"
+    },
+    {
+      "item": "betterend:jellyshroom_slab"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbetters:jellyshroom_louvered_shutter"
+  }
+}

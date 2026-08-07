@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "betterend:dragon_tree_trapdoor"
+    },
+    {
+      "item": "betterend:dragon_tree_trapdoor"
+    },
+    {
+      "item": "betterend:dragon_tree_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbetters:dragon_tree_shutter"
+  }
+}

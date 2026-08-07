@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "betternether"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "betternether:rubeus_trapdoor"
+    },
+    {
+      "item": "betternether:rubeus_trapdoor"
+    },
+    {
+      "item": "betternether:rubeus_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbetters:rubeus_shutter"
+  }
+}

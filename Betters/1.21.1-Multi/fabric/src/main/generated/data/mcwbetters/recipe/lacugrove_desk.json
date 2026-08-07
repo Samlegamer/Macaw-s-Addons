@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "desks",
+  "key": {
+    "A": {
+      "item": "betterend:lacugrove_log"
+    },
+    "B": {
+      "item": "betterend:lacugrove_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwbetters:lacugrove_desk"
+  }
+}

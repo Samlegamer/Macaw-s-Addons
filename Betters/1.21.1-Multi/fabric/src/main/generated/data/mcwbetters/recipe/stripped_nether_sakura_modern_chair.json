@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_modern_chairs",
+  "key": {
+    "A": {
+      "item": "betternether:nether_sakura_stripped_log"
+    },
+    "B": {
+      "item": "betternether:nether_sakura_slab"
+    },
+    "C": {
+      "item": "betternether:nether_sakura_fence"
+    }
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbetters:stripped_nether_sakura_modern_chair"
+  }
+}

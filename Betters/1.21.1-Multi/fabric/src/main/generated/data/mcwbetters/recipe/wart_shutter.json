@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    {
+      "item": "betternether:wart_trapdoor"
+    },
+    {
+      "item": "betternether:wart_trapdoor"
+    },
+    {
+      "item": "betternether:wart_trapdoor"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbetters:wart_shutter"
+  }
+}

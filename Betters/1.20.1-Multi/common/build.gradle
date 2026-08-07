@@ -49,16 +49,9 @@ dependencies {
     implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
 
     modImplementation "curse.maven:addonslib-1090999:${addonslib_version_}"
-
-    //modCompileOnly("blank:betternether-1.20.1-1.0:${better_nether_version_forge}")
-    //modCompileOnly("blank:betterend-1.20.1-1.0:${better_end_version_forge}")
-    //modRuntimeOnly("blank:betternether-1.20.1-1.0:${better_nether_version_forge}")
-    //modRuntimeOnly("blank:betterend-1.20.1-1.0:${better_end_version_forge}")
-
     modCompileOnly("curse.maven:betternether-forge-1436171:${better_nether_version_forge}")
     modCompileOnly("curse.maven:betterend-forge-1435127:${better_end_version_forge}")
     modCompileOnly("curse.maven:bclib-forge-1435106:${bclib_version_forge}")
-    //modImplementation("curse.maven:wunderlib-forge-1435097:${wunderlib_version_forge}")
 }
 
 configurations {

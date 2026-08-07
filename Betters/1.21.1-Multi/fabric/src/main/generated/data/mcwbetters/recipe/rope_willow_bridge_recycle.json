@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "recyclable_bridges_recycle",
+  "ingredients": [
+    {
+      "item": "mcwbetters:willow_rope_bridge_stair"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbetters:rope_willow_bridge"
+  }
+}

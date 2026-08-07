@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "betternether"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chairs",
+  "key": {
+    "A": {
+      "item": "betternether:rubeus_log"
+    },
+    "B": {
+      "item": "betternether:rubeus_slab"
+    },
+    "C": {
+      "item": "betternether:rubeus_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbetters:rubeus_chair"
+  }
+}

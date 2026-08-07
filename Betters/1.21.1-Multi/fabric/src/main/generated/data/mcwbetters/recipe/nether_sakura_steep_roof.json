@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwroofs"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "steep_roof",
+  "key": {
+    "A": {
+      "item": "betternether:nether_sakura_log"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " A",
+    "AA",
+    "AB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbetters:nether_sakura_steep_roof"
+  }
+}

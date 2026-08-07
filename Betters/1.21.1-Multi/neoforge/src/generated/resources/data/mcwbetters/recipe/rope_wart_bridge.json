@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwbridges"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "betternether"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "rope_bridges",
+  "key": {
+    "A": {
+      "item": "betternether:wart_slab"
+    },
+    "B": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbetters:rope_wart_bridge"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwstairs"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "terrace_stairs",
+  "key": {
+    "A": {
+      "item": "betternether:nether_sakura_stripped_log"
+    },
+    "B": {
+      "item": "betternether:nether_sakura_log"
+    }
+  },
+  "pattern": [
+    "A  ",
+    "BA ",
+    " BA"
+  ],
+  "result": {
+    "count": 5,
+    "id": "mcwbetters:nether_sakura_terrace_stairs"
+  }
+}

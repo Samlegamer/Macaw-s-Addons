@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwstairs"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mcwstairs_balcony",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "betternether:anchor_tree_fence"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mcwbetters:anchor_tree_balcony"
+  }
+}

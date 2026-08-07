@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chairs",
+  "key": {
+    "A": {
+      "item": "betternether:nether_mushroom_stem"
+    },
+    "B": {
+      "item": "betternether:nether_mushroom_slab"
+    },
+    "C": {
+      "item": "betternether:nether_mushroom_fence"
+    }
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbetters:mushroom_chair"
+  }
+}
