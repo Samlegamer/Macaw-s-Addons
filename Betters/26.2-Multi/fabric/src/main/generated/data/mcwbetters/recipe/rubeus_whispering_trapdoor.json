@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "whispering_trapdoors",
+  "key": {
+    "A": "betternether:rubeus_planks",
+    "B": "mcwtrpdoors:print_whispering"
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "id": "mcwbetters:rubeus_whispering_trapdoor"
+  }
+}

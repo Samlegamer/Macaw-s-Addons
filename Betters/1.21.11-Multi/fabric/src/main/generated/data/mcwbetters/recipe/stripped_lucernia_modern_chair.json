@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_modern_chairs",
+  "key": {
+    "A": "betterend:lucernia_stripped_log",
+    "B": "betterend:lucernia_slab",
+    "C": "betterend:lucernia_fence"
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcwbetters:stripped_lucernia_modern_chair"
+  }
+}

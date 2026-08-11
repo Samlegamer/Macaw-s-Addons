@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_double_wardrobes",
+  "key": {
+    "A": "betternether:gloomwood_dark_stripped_log",
+    "B": "mcwfurnitures:cabinet_door"
+  },
+  "pattern": [
+    "AAA",
+    "BAB",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbetters:stripped_dark_gloomwood_double_wardrobe"
+  }
+}

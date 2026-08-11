@@ -1,0 +1,15 @@
+{
+    "variants": {                                                                        
+        "facing=north,powered=false":  { "model": "mcwbetters:block/bridge/rail/mushroom", "y": 90},
+		"facing=east,powered=false":  { "model": "mcwbetters:block/bridge/rail/mushroom"},
+		"facing=south,powered=false":  { "model": "mcwbetters:block/bridge/rail/mushroom", "y": 90},
+		"facing=west,powered=false":  { "model": "mcwbetters:block/bridge/rail/mushroom"},
+
+		"facing=north,powered=true":  { "model": "mcwbetters:block/bridge/rail/mushroom_powered", "y": 90},
+		"facing=east,powered=true":  { "model": "mcwbetters:block/bridge/rail/mushroom_powered"},
+		"facing=south,powered=true":  { "model": "mcwbetters:block/bridge/rail/mushroom_powered", "y": 90},
+		"facing=west,powered=true":  { "model": "mcwbetters:block/bridge/rail/mushroom_powered"}			
+    }
+}
+
+

@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_lower_bookshelf_drawers",
+  "key": {
+    "A": "betterend:pythadendron_stripped_log",
+    "B": "mcwfurnitures:cabinet_drawer",
+    "C": "minecraft:book"
+  },
+  "pattern": [
+    "AAA",
+    "ACA",
+    "ABA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbetters:stripped_pythadendron_lower_bookshelf_drawer"
+  }
+}

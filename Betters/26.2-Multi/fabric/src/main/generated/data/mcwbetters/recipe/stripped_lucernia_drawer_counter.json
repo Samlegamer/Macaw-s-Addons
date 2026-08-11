@@ -1,0 +1,25 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_drawer_counters",
+  "key": {
+    "A": "betterend:lucernia_slab",
+    "B": "mcwbetters:stripped_lucernia_drawer"
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "id": "mcwbetters:stripped_lucernia_drawer_counter"
+  }
+}

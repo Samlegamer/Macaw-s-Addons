@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mystic_trapdoors",
+  "key": {
+    "A": "betternether:nether_sakura_planks",
+    "B": "mcwtrpdoors:print_mystic"
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "id": "mcwbetters:nether_sakura_mystic_trapdoor"
+  }
+}

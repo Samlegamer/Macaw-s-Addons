@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "modern_desks",
+  "key": {
+    "A": "betternether:gloomwood_log",
+    "B": "betternether:gloomwood_fence",
+    "C": "minecraft:stick"
+  },
+  "pattern": [
+    "AAA",
+    "BCB"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwbetters:gloomwood_modern_desk"
+  }
+}

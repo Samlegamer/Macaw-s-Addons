@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "betterend"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    "betterend:dragon_tree_trapdoor",
+    "betterend:dragon_tree_trapdoor",
+    "betterend:dragon_tree_trapdoor"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbetters:dragon_tree_shutter"
+  }
+}

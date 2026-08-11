@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_modern_chairs",
+  "key": {
+    "A": "betterend:tenanea_stripped_log",
+    "B": "betterend:tenanea_slab",
+    "C": "betterend:tenanea_fence"
+  },
+  "pattern": [
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "id": "mcwbetters:stripped_tenanea_modern_chair"
+  }
+}

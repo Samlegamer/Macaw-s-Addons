@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    "betternether:willow_trapdoor",
+    "betternether:willow_trapdoor",
+    "betternether:willow_trapdoor"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbetters:willow_shutter"
+  }
+}

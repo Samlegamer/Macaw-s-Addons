@@ -1,0 +1,25 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_cupboard_counters",
+  "key": {
+    "A": "betternether:gloomwood_slab",
+    "B": "mcwbetters:stripped_gloomwood_wardrobe"
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "id": "mcwbetters:stripped_gloomwood_cupboard_counter"
+  }
+}

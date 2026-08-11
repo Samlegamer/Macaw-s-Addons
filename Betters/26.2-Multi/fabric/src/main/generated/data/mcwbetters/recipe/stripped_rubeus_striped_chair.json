@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_striped_chairs",
+  "key": {
+    "A": "betternether:rubeus_stripped_log",
+    "B": "betternether:rubeus_slab",
+    "C": "betternether:rubeus_fence"
+  },
+  "pattern": [
+    " A",
+    "BC",
+    "CC"
+  ],
+  "result": {
+    "id": "mcwbetters:stripped_rubeus_striped_chair"
+  }
+}

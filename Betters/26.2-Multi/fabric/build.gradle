@@ -1,0 +1,134 @@
+plugins {
+    id 'multiloader-loader'
+    id 'net.fabricmc.fabric-loom'
+}
+
+def loadExtraProperties(String relPath) {
+    def f = file(relPath)
+    if (!f.exists()) {
+        println "WARNING: Properties file not found: ${f.absolutePath}"
+        return false
+    }
+    def props = new Properties()
+    f.withInputStream { props.load(it) }
+    props.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+    return true
+}
+
+loadExtraProperties('../../../_properties/26.2fabricgradle.properties')
+
+repositories {
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    maven { url 'https://maven.ambertation.de/releases' }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    minecraft("com.mojang:minecraft:${minecraft_version}")
+    implementation("net.fabricmc:fabric-loader:${fabric_loader_version}")
+    implementation("net.fabricmc.fabric-api:fabric-api:${fabric_version}")
+
+    implementation "curse.maven:addonslib-1090999:${addonslib_version}"
+    implementation "curse.maven:jei-238222:${jei_version}"
+
+    implementation "curse.maven:macaws-roofs-352039:${roofs_version}"
+    implementation "curse.maven:macaws-fences-and-walls-453925:${fences_version}"
+    implementation(files("libs/mcw-doors-1.1.5-mc26.2fabric.jar"))
+    //implementation "curse.maven:macaws-doors-378646:${doors_version}"
+    implementation "curse.maven:macaws-bridges-351725:${bridges_version}"
+    implementation "curse.maven:macaws-windows-363569:${windows_version}"
+    implementation "curse.maven:macaws-paths-and-pavings-629153:${paths_version}"
+    implementation "curse.maven:macaws-trapdoors-400933:${trapdoors_version}"
+    implementation "curse.maven:macaws-stairs-1119394:${stairs_version}"
+    implementation "curse.maven:macaws-furniture-359540:${furniture_version}"
+
+    compileOnly "curse.maven:betterend-neoforge-1422294:${better_end_version_fabric}"
+    compileOnly "curse.maven:betternether-neoforge-1422293:${better_nether_version_fabric}"
+    compileOnly "curse.maven:bclib-neoforge-1422283:${bclib_version_fabric}"
+
+    runtimeOnly "curse.maven:betterend-neoforge-1422294:${better_end_version_fabric}"
+    runtimeOnly "curse.maven:betternether-neoforge-1422293:${better_nether_version_fabric}"
+    runtimeOnly "curse.maven:bclib-neoforge-1422283:${bclib_version_fabric}"
+    runtimeOnly "curse.maven:wunderlib-neoforge-1422273:${wunderlib_version_fabric}"
+    runtimeOnly "curse.maven:worldweaver-neoforge-1422284:${worldweaver_version_fabric}"
+
+    /*runtimeOnly files("libs/wover-biome-21.11.3-8722e0c62e680cf0.jar")
+    runtimeOnly files("libs/wover-block-21.11.3-fc87d49ac3eabe52.jar")
+    runtimeOnly files("libs/wover-common-21.11.3-92daf6fe9823c75a.jar")
+    runtimeOnly files("libs/wover-core-21.11.3-f40fd7642cfc78f0.jar")
+    runtimeOnly files("libs/wover-datagen-21.11.3-b9979093bb757403.jar")
+    runtimeOnly files("libs/wover-events-21.11.3-b14823c60baa7ad5.jar")
+    runtimeOnly files("libs/wover-feature-21.11.3-ea8a00d4b6d02b8a.jar")
+    runtimeOnly files("libs/wover-generator-21.11.3-bbeb1ee6e8769faf.jar")
+    runtimeOnly files("libs/wover-item-21.11.3-452f1d98ca1e4daf.jar")
+    runtimeOnly files("libs/wover-math-21.11.3-566377404e918775.jar")
+    runtimeOnly files("libs/wover-pottable-21.11.3-978e4c5dd24a0604.jar")
+    runtimeOnly files("libs/wover-preset-21.11.3-589ea85818eaad5c.jar")
+    runtimeOnly files("libs/wover-recipe-21.11.3-a5ba2221e9bf98fa.jar")
+    runtimeOnly files("libs/wover-structure-21.11.3-4252fc7ee520c60e.jar")
+    runtimeOnly files("libs/wover-surface-21.11.3-1be0d011bb9c46dd.jar")
+    runtimeOnly files("libs/wover-tag-21.11.3-a4fcbb214f0ced92.jar")
+    runtimeOnly files("libs/wover-ui-21.11.3-358742f42ff86b22.jar")*/
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir "src/main/generated"
+        }
+    }
+}
+
+loom {
+    def aw = project(':common').file("src/main/resources/${mod_id}.accesswidener")
+    if (aw.exists()) {
+        accessWidenerPath.set(aw)
+    }
+    runs {
+        client {
+            client()
+            setConfigName('Fabric Client')
+            ideConfigGenerated(true)
+            runDir('runs/client')
+        }
+        server {
+            server()
+            setConfigName('Fabric Server')
+            ideConfigGenerated(true)
+            runDir('runs/server')
+        }
+        datagen {
+            inherit client
+            name "Data Generation"
+            vmArg "-Dfabric-api.datagen"
+            vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
+            vmArg "-Dfabric-api.datagen.modid=${mod_id}"
+            ideConfigGenerated(true)
+            runDir("runs/datagen")
+        }
+    }
+}
+
+// Implement mcgradleconventions loader attribute
+def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', String)
+['apiElements', 'runtimeElements', 'sourcesElements', 'javadocElements', 'includeInternal', 'modCompileClasspath'].each { variant ->
+    configurations.named(variant) {
+        attributes {
+            attribute(loaderAttribute, 'fabric')
+        }
+    }
+}
+sourceSets.configureEach {
+    [it.compileClasspathConfigurationName, it.runtimeClasspathConfigurationName].each { variant->
+        configurations.named(variant) {
+            attributes {
+                attribute(loaderAttribute, 'fabric')
+            }
+        }
+    }
+}

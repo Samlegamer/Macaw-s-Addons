@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "swamp_trapdoors",
+  "key": {
+    "A": "betternether:anchor_tree_planks",
+    "B": "mcwtrpdoors:print_swamp"
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "id": "mcwbetters:anchor_tree_swamp_trapdoor"
+  }
+}

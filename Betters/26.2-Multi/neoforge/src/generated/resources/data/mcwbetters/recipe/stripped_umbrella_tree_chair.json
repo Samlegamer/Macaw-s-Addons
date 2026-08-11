@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwfurnitures"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "betterend"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_chairs",
+  "key": {
+    "A": "betterend:umbrella_tree_stripped_log",
+    "B": "betterend:umbrella_tree_slab",
+    "C": "betterend:umbrella_tree_fence"
+  },
+  "pattern": [
+    " A",
+    "BA",
+    "CC"
+  ],
+  "result": {
+    "id": "mcwbetters:stripped_umbrella_tree_chair"
+  }
+}

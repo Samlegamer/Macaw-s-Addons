@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwroofs"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "upper_steep_roof",
+  "key": {
+    "A": "betternether:mushroom_fir_log",
+    "B": "minecraft:stick"
+  },
+  "pattern": [
+    " A",
+    " A",
+    "AB"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbetters:mushroom_fir_upper_steep_roof"
+  }
+}

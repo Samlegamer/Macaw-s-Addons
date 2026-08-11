@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwwindows"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    "betterend:mossy_glowshroom_trapdoor",
+    "betterend:mossy_glowshroom_trapdoor",
+    "betterend:mossy_glowshroom_trapdoor"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbetters:mossy_glowshroom_shutter"
+  }
+}

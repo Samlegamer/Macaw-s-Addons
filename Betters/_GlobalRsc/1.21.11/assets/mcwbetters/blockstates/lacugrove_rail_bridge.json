@@ -1,0 +1,15 @@
+{
+    "variants": {                                                                        
+        "facing=north,powered=false":  { "model": "mcwbetters:block/bridge/rail/lacugrove", "y": 90},
+		"facing=east,powered=false":  { "model": "mcwbetters:block/bridge/rail/lacugrove"},
+		"facing=south,powered=false":  { "model": "mcwbetters:block/bridge/rail/lacugrove", "y": 90},
+		"facing=west,powered=false":  { "model": "mcwbetters:block/bridge/rail/lacugrove"},
+
+		"facing=north,powered=true":  { "model": "mcwbetters:block/bridge/rail/lacugrove_powered", "y": 90},
+		"facing=east,powered=true":  { "model": "mcwbetters:block/bridge/rail/lacugrove_powered"},
+		"facing=south,powered=true":  { "model": "mcwbetters:block/bridge/rail/lacugrove_powered", "y": 90},
+		"facing=west,powered=true":  { "model": "mcwbetters:block/bridge/rail/lacugrove_powered"}			
+    }
+}
+
+

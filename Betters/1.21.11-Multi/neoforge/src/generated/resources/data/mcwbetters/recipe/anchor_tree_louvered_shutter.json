@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "betternether"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    "betternether:anchor_tree_slab",
+    "betternether:anchor_tree_slab",
+    "betternether:anchor_tree_slab"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbetters:anchor_tree_louvered_shutter"
+  }
+}

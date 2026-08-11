@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "mcwwindows"
+        },
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "betterend"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "shutters",
+  "ingredients": [
+    "betterend:mossy_glowshroom_trapdoor",
+    "betterend:mossy_glowshroom_trapdoor",
+    "betterend:mossy_glowshroom_trapdoor"
+  ],
+  "result": {
+    "count": 3,
+    "id": "mcwbetters:mossy_glowshroom_shutter"
+  }
+}

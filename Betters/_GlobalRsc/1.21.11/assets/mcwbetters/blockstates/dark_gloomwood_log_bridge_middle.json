@@ -1,0 +1,18 @@
+{
+    "variants": {                     
+		"connection=base":  { "model": "mcwbetters:block/bridge/bridge_wood/dark_gloomwood_base","uvlock": true},
+		
+        "connection=middle_ns":  { "model": "mcwbetters:block/bridge/bridge_wood/dark_gloomwood_middle", "y": 90,"uvlock": true},
+		"connection=middle_ew":  { "model": "mcwbetters:block/bridge/bridge_wood/dark_gloomwood_middle","uvlock": true},
+
+		"connection=corner_nw":  { "model": "mcwbetters:block/bridge/bridge_wood/dark_gloomwood_corner", "y": 180,"uvlock": true},
+		"connection=corner_ne":  { "model": "mcwbetters:block/bridge/bridge_wood/dark_gloomwood_corner", "y": 270,"uvlock": true},
+		"connection=corner_se":  { "model": "mcwbetters:block/bridge/bridge_wood/dark_gloomwood_corner","uvlock": true},
+		"connection=corner_sw":  { "model": "mcwbetters:block/bridge/bridge_wood/dark_gloomwood_corner", "y": 90,"uvlock": true},	
+		
+		"connection=side_s":  { "model": "mcwbetters:block/bridge/bridge_wood/dark_gloomwood_side","uvlock": true},
+		"connection=side_n":  { "model": "mcwbetters:block/bridge/bridge_wood/dark_gloomwood_side", "y": 180,"uvlock": true},
+		"connection=side_w":  { "model": "mcwbetters:block/bridge/bridge_wood/dark_gloomwood_side", "y": 90,"uvlock": true},
+		"connection=side_e":  { "model": "mcwbetters:block/bridge/bridge_wood/dark_gloomwood_side", "y": 270,"uvlock": true}
+    }
+}
