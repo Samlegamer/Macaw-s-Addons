@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "biomesoplenty",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bamboo_trapdoors",
+  "key": {
+    "A": "biomesoplenty:mahogany_planks",
+    "B": "mcwtrpdoors:print_bamboo"
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "id": "mcwbiomesoplenty:mahogany_bamboo_trapdoor"
+  }
+}

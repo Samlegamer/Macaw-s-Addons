@@ -1,0 +1,18 @@
+{
+    "variants": {                     
+		"connection=base":  { "model": "mcwbiomesoplenty:block/bridge/bridge_wood/willow_base","uvlock": true},
+		
+        "connection=middle_ns":  { "model": "mcwbiomesoplenty:block/bridge/bridge_wood/willow_middle", "y": 90,"uvlock": true},
+		"connection=middle_ew":  { "model": "mcwbiomesoplenty:block/bridge/bridge_wood/willow_middle","uvlock": true},
+
+		"connection=corner_nw":  { "model": "mcwbiomesoplenty:block/bridge/bridge_wood/willow_corner", "y": 180,"uvlock": true},
+		"connection=corner_ne":  { "model": "mcwbiomesoplenty:block/bridge/bridge_wood/willow_corner", "y": 270,"uvlock": true},
+		"connection=corner_se":  { "model": "mcwbiomesoplenty:block/bridge/bridge_wood/willow_corner","uvlock": true},
+		"connection=corner_sw":  { "model": "mcwbiomesoplenty:block/bridge/bridge_wood/willow_corner", "y": 90,"uvlock": true},	
+		
+		"connection=side_s":  { "model": "mcwbiomesoplenty:block/bridge/bridge_wood/willow_side","uvlock": true},
+		"connection=side_n":  { "model": "mcwbiomesoplenty:block/bridge/bridge_wood/willow_side", "y": 180,"uvlock": true},
+		"connection=side_w":  { "model": "mcwbiomesoplenty:block/bridge/bridge_wood/willow_side", "y": 90,"uvlock": true},
+		"connection=side_e":  { "model": "mcwbiomesoplenty:block/bridge/bridge_wood/willow_side", "y": 270,"uvlock": true}
+    }
+}

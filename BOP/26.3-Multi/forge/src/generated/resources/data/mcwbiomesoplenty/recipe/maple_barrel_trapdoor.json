@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwtrpdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "barrel_trapdoors",
+        "key": {
+          "A": "biomesoplenty:maple_planks",
+          "B": "minecraft:barrel"
+        },
+        "pattern": [
+          " A ",
+          "ABA",
+          " A "
+        ],
+        "result": {
+          "count": 4,
+          "id": "mcwbiomesoplenty:maple_barrel_trapdoor"
+        }
+      }
+    }
+  ]
+}

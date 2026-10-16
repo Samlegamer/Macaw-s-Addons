@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stripped_drawer_counters",
+        "key": {
+          "A": "biomesoplenty:willow_slab",
+          "B": "mcwbiomesoplenty:stripped_willow_drawer"
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "id": "mcwbiomesoplenty:stripped_willow_drawer_counter"
+        }
+      }
+    }
+  ]
+}

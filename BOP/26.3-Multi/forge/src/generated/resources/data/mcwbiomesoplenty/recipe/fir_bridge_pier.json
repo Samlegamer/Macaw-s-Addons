@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwbridges"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "wooden_piers",
+        "key": {
+          "A": "biomesoplenty:fir_log",
+          "B": "biomesoplenty:fir_fence"
+        },
+        "pattern": [
+          "ABA"
+        ],
+        "result": {
+          "count": 3,
+          "id": "mcwbiomesoplenty:fir_bridge_pier"
+        }
+      }
+    }
+  ]
+}

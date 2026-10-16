@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwdoors"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "whispering",
+        "key": {
+          "A": "biomesoplenty:willow_planks",
+          "B": "mcwdoors:print_whispering"
+        },
+        "pattern": [
+          "A",
+          "B",
+          "A"
+        ],
+        "result": {
+          "id": "mcwbiomesoplenty:willow_whispering_door"
+        }
+      }
+    }
+  ]
+}

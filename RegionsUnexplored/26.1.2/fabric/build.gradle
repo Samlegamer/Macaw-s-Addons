@@ -54,9 +54,9 @@ dependencies {
     implementation "curse.maven:macaws-furniture-359540:${furniture_version}"
 
     implementation "curse.maven:regions-unexplored-659110:${regionunexp_version_fabric}"
-    //implementation "curse.maven:terrablender-fabric-565956:${terrablender_version_fabric}"
+    implementation "curse.maven:terrablender-fabric-565956:${terrablender_version_fabric}"
     //api "fuzs.forgeconfigapiport:forgeconfigapiport-fabric:${forge_cfg_version_fabric}"
-    //implementation "curse.maven:lithostitched-936015:${lithostitched_version_fabric}"
+    implementation "curse.maven:lithostitched-936015:${lithostitched_version_fabric}"
     //implementation("de.marhali:json5-java:3.0.0")
     include implementation("net.jodah:typetools:0.6.3")
 

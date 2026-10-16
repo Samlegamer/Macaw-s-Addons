@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "forge:condition": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "mcwfurnitures"
+      },
+      {
+        "type": "forge:mod_loaded",
+        "modid": "biomesoplenty"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "cupboard_counters",
+        "key": {
+          "A": "biomesoplenty:mahogany_slab",
+          "B": "mcwbiomesoplenty:mahogany_wardrobe"
+        },
+        "pattern": [
+          "A",
+          "B"
+        ],
+        "result": {
+          "id": "mcwbiomesoplenty:mahogany_cupboard_counter"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "biomesoplenty",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "whispering",
+  "key": {
+    "A": "biomesoplenty:empyreal_planks",
+    "B": "mcwdoors:print_whispering"
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "id": "mcwbiomesoplenty:empyreal_whispering_door"
+  }
+}
