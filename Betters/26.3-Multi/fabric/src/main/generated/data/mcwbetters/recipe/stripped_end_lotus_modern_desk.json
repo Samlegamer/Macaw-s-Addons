@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stripped_modern_desks",
+  "key": {
+    "A": "betterend:end_lotus_stripped_log",
+    "B": "betterend:end_lotus_fence",
+    "C": "minecraft:stick"
+  },
+  "pattern": [
+    "AAA",
+    "BCB"
+  ],
+  "result": {
+    "count": 2,
+    "id": "mcwbetters:stripped_end_lotus_modern_desk"
+  }
+}

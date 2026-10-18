@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "double_wardrobes",
+  "key": {
+    "A": "betternether:anchor_tree_log",
+    "B": "mcwfurnitures:cabinet_door"
+  },
+  "pattern": [
+    "AAA",
+    "BAB",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mcwbetters:anchor_tree_double_wardrobe"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwfurnitures"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stool_chairs",
+  "key": {
+    "A": "betterend:umbrella_tree_log",
+    "B": "betterend:umbrella_tree_fence"
+  },
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "result": {
+    "id": "mcwbetters:umbrella_tree_stool_chair"
+  }
+}

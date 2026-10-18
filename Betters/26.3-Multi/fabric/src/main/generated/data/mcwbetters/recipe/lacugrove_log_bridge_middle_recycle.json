@@ -1,0 +1,20 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwbridges"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "recyclable_bridges_recycle",
+  "ingredients": [
+    "mcwbetters:lacugrove_log_bridge_stair"
+  ],
+  "result": {
+    "id": "mcwbetters:lacugrove_log_bridge_middle"
+  }
+}

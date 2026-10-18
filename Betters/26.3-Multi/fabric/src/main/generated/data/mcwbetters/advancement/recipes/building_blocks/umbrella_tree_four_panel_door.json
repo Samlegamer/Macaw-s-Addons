@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "mcwbetters:umbrella_tree_four_panel_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_umbrella_tree_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "betterend:umbrella_tree_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_umbrella_tree_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbetters:umbrella_tree_four_panel_door"
+    ]
+  }
+}

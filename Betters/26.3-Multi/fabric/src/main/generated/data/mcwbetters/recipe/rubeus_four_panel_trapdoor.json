@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwtrpdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "four_panel_trapdoors",
+  "key": {
+    "A": "betternether:rubeus_planks",
+    "B": "mcwtrpdoors:print_four_panel"
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "id": "mcwbetters:rubeus_four_panel_trapdoor"
+  }
+}

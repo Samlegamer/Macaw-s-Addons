@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "condition": {
+            "type": "minecraft:match_block",
+            "blocks": "mcwbetters:mossy_glowshroom_barn_glass_door",
+            "state": {
+              "half": "lower"
+            }
+          },
+          "name": "mcwbetters:mossy_glowshroom_barn_glass_door"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

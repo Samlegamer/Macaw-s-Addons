@@ -1,0 +1,41 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stalagnate_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "betternether:stalagnate_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "mcwbetters:stalagnate_swamp_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stalagnate_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcwbetters:stalagnate_swamp_door"
+    ]
+  }
+}

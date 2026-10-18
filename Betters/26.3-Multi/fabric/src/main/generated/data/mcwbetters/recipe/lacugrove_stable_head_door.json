@@ -1,0 +1,20 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend",
+        "mcwdoors"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stable_head",
+  "ingredients": [
+    "mcwbetters:lacugrove_stable_door"
+  ],
+  "result": {
+    "id": "mcwbetters:lacugrove_stable_head_door"
+  }
+}
